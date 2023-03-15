@@ -21,6 +21,6 @@ a = 'Hello, world!'
 
 New paragraph.
 
-> Blockquote example
+> Blockquote example with very very very very very very very very very very very very looooooooooooooooooooooooong line!  
 
 It's the link to [Install section](/learn/install.md).
