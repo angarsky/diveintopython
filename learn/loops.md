@@ -19,6 +19,8 @@ Code example:
 a = 'Hello, world!'
 ```
 
+New paragraph.
+
 > Blockquote example
 
 It's the link to [Install section](/learn/install.md).
