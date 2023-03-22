@@ -24,14 +24,14 @@ squares = [x**2 for x in numbers]
 print(squares)
 ```
 
-In this case, the expression is x\*\*2, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: `[1, 4, 9, 16, 25]`.
+In this case, the expression is `x**2`, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: `[1, 4, 9, 16, 25]`.
 
 ### `For` Loop with Index
 
 In this example, the `loop` iterates over the `cars` list and prints the index and value of each element:
 
 ```python
-cars = ['bwm', 'audi', 'reno']
+cars = ["bwm", "audi", "reno"]
 for i in range(len(cars)):
     print(i, car[i])
 ```
