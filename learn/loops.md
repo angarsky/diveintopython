@@ -7,7 +7,7 @@ The `for` loop is used for iterating over a sequence (that is either a list, a t
 An example how to use the `for` for a looping through a list in Python:
 
 ```python
-cars = ["bwm", "audi", "reno"]
+cars = ["bmw", "audi", "renault"]
 for car in cars:
     print(car)
 ```
@@ -31,7 +31,7 @@ In this case, the expression is `x**2`, which is the square of the current numbe
 In this example, the `loop` iterates over the `cars` list and prints the index and value of each element:
 
 ```python
-cars = ["bwm", "audi", "reno"]
+cars = ["bmw", "audi", "renault"]
 for i in range(len(cars)):
     print(i, car[i])
 ```
