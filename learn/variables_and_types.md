@@ -192,3 +192,51 @@ PI = 3.14159
 In the above example, `age` is a variable that can be changed, while `PI` is a constant variable that cannot be changed once assigned a value.
 
 It is important to note that this convention does not actually make the variable constant, and it is still possible to modify the value of a constant variable in Python. However, following this convention helps in distinguishing between variables that are intended to be changed during the program execution and those that are intended to be constant.
+
+## Global and Local Variables Defining
+
+There are two types of variables in Python: **global** and **local**.
+
+A global variable in Python is a variable that is defined outside a function and can be accessed by any part of the program, including functions. Global variables in Python have a global scope, which means they are accessible from anywhere in the code.
+
+Here's an example how to set a global variable in Python:
+
+```python
+x = 10
+
+def my_function():
+    print(x)
+
+my_function() # output: 10
+```
+
+In the example above, `x` is a global variable that can be accessed by the `my_function` function. When the function is called, it prints the value of `x`.
+
+A local variable is a variable that is defined inside a function and can only be accessed within that function. Local variables have a local scope, which means they are only accessible within the block of code where they are defined.
+
+Here's an example of defining a local variable in Python:
+
+```python
+def my_function():
+    y = 5
+    print(y)
+
+my_function() # output: 5
+```
+
+In the example above, `y` is a local variable that can only be accessed within the `my_function` function. When the function is called, it prints the value of `y`.
+
+It's important to note that if you define a local variable with the same name as a global variable, the local variable will take precedence within the function. Here's an example:
+
+```python
+x = 10
+
+def my_function():
+    x = 5
+    print(x)
+
+my_function() # output: 5
+print(x) # output: 10
+```
+
+In the example above, `my_function` defines a local variable `x` with a value of `5`. When the function is called, it prints the value of the local variable, which is `5`. However, the global variable `x` still has a value of `10`, which is printed when it is called outside of the function.
