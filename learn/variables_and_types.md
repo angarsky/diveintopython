@@ -2,21 +2,9 @@ Variables play a crucial role in Python, as they provide a way to store and mani
 
 ## Variable Definition
 
-What is a variable in Python? It is a named location in the computer's memory that stores a value. It is like a container that can hold different types of data, such as numbers, strings or booleans.
+Let's define what a variable is in Python. It is a named location in the computer's memory that stores a value. It is like a container that can hold different types of data, such as numbers, strings or booleans.
 
 To create a variable in Python, you need to give it a name and assign a value to it using the assignment operator `=`.
-
-Here's an example of a variable declaring in Python:
-
-```python
-# create a variable called "my_variable" and assign the value 10 to it
-my_variable = 10
-
-# print the value of "my_variable"
-print(my_variable) # Output: 10
-```
-
-In this example we initialised the variable - created a variable named `my_variable` and assigned it the value `10`. We then printed the value of `my_variable` using the `print()` function. The output of the program was `10`, which is the value stored in the variable `my_variable`.
 
 ## Variable Declaration
 
@@ -85,7 +73,7 @@ Strings are used to represent text data in Python. They are enclosed in quotes (
 
 ```python
 a = "Hello, World!"
-b = 'Python is cool’
+b = 'Python is cool'
 ```
 
 ### List Type
@@ -94,7 +82,7 @@ Lists are used to store a collection of items. They can contain any type of data
 
 ```python
 a = [1, 2, 3, 4, 5]
-b = ['apple', 'banana', ‘cherry']
+b = ['mango', 'pineapple', 'orange']
 ```
 
 ### Tuple Type
@@ -103,7 +91,7 @@ Tuples are similar to lists, but they are immutable, meaning their contents cann
 
 ```python
 a = (1, 2, 3)
-b = ('red', 'green', ‘blue')
+b = ('red', 'green', 'blue')
 ```
 
 ### Set Type
@@ -112,7 +100,7 @@ Sets are used to store unique values. They are denoted by curly braces.
 
 ```python
 a = {1, 2, 3, 4, 5}
-b = {'apple', 'banana', ‘cherry'}
+b = {'mango', 'pineapple', 'orange'}
 ```
 
 ### Dictionary Type
@@ -121,7 +109,7 @@ Dictionaries are used to store key-value pairs. Each key is associated with a va
 
 ```python
 a = {'name': 'John', 'age': 30, 'city': 'New York'}
-b = {'apple': 1.99, 'banana': 0.99, 'cherry': 2.99}
+b = {'mango': 1.99, 'pineapple': 0.99, 'orange': 2.99}
 ```
 
 ### None Type
@@ -132,7 +120,9 @@ None is a special data type in Python that represents the absence of a value.
 a = None
 ```
 
-> Note: In Python, you can declare a variable without assigning it a value by simply using the variable name followed by an equal sign (=), like so:
+> Note: In Python, you can declare a variable without assigning it a value by simply using the variable name followed by an equal sign (=).
+
+Let's see how to define a variable in Python without assigning it a value:
 
 ```python
 variable_name =
@@ -156,7 +146,7 @@ You can also use indexing to extract a single character from a string variable. 
 
 ```python
 string = "hello"
-char = string[0]   # ‘h'
+char = string[0]   # 'h'
 ```
 
 In the example above, `char` is a character variable that stores the first character of the string `hello`.
