@@ -6,6 +6,39 @@ Let's define what a variable is in Python. It is a named location in the compute
 
 To create a variable in Python, you need to give it a name and assign a value to it using the assignment operator `=`.
 
+## Variable Naming Convention
+
+In Python, variable names are case sensitive and can be any combination of letters, numbers, and underscores. However, there are guidelines and variable naming conventions in Python  that make your code more readable and maintainable:
+
+- Use lowercase letters for variable names. In Python, it is customary to use lowercase letters for variable names.
+- Use underscores to separate words in variable names. If a variable name consists of more than one word, use underscores to separate them. For example, `first_name` is a better variable name than `firstname`
+- Avoid using reserved keywords. Python has reserved keywords that have special meaning in the language, such as `if`, `else`, `while`, and `for`. Avoid using these keywords as variable names.
+- Use descriptive names for variables. Choose descriptive names that reflect the purpose of the variable. For example, `count` is a better variable name than `c`
+- Use singular nouns for variable names. For example, `student` is a better variable name than `students`.
+- Be consistent with naming conventions within your code and across your team.
+
+Here are some examples of good variable names in Python:
+
+```python
+first_name
+last_name
+age
+is_student
+num_of_courses
+```
+
+And some examples of poor variable names:
+
+```python
+fn
+ln
+a
+s
+n
+```
+
+Remember that good variable naming conventions not only help you set a valid variable name, but also make your code more readable, maintainable, and reduce the risk of bugs.
+
 ## Variable Declaration
 
 In Python, you don't need to explicitly declare a variable before using it. You can create a variable simply by assigning a value to it.
