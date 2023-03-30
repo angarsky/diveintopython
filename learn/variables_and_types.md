@@ -212,6 +212,8 @@ my_function() # output: 10
 
 In the example above, `x` is a global variable that can be accessed by the `my_function` function. When the function is called, it prints the value of `x`.
 
+Now let's see what a local variable is in Python.
+
 A local variable is a variable that is defined inside a function and can only be accessed within that function. Local variables have a local scope, which means they are only accessible within the block of code where they are defined.
 
 Here's an example of defining a local variable in Python:
