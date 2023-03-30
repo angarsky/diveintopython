@@ -9,9 +9,7 @@ Here's an example of a variable declaring in Python:
 ```python
 # create a variable called "my_variable" and assign the value 10 to it
 my_variable = 10
-```
 
-```python
 # print the value of "my_variable"
 print(my_variable) # Output: 10
 ```
@@ -25,9 +23,7 @@ In Python, you don't need to explicitly declare a variable before using it. You 
 ```python
 # create a variable called "x" and assign the value 5 to it
 x = 5
-```
 
-```python
 # print the value of "x"
 print(x) # Output: 5
 ```
@@ -39,14 +35,10 @@ However, it is important to note that variables in Python are dynamically typed,
 ```python
 # create a variable called "y" and assign the value 5 to it
 y = 5
-```
 
-```python
 # change the value of "y" to a string
 y = “hello"
-```
 
-```python
 # print the value of "y"
 print(y) # Output: hello
 ```
@@ -60,7 +52,9 @@ In this example, we first created a variable named `y` and assigned it the value
 Numeric types are used to represent numbers in Python. There are three types of numeric data types in Python:
 
 Integer: Integers are whole numbers without any decimal point. Example: 5, 10, -3.
+
 Float: Floats are numbers with decimal points. Example: 2.5, -0.1, 3.14.
+
 Complex: Complex numbers are numbers with a real and imaginary part. They are denoted by adding a `j` at the end of the imaginary part. Example: 2 + 3j, -4j.
 
 ```python
@@ -152,7 +146,7 @@ char2 = "b"
 char3 = '''c'''
 ```
 
-In the examples above, `char1`, `char2`, and `char3` are all character variables that store the characters 'a', 'b', and 'c', respectively.
+In the examples above, `char1`, `char2`, and `char3` are all character variables that store the characters `a`, `b`, and `c`, respectively.
 
 You can also use indexing to extract a single character from a string variable. For example:
 
@@ -165,7 +159,7 @@ In the example above, `char` is a character variable that stores the first chara
 
 ## Declaring Variables’ Types
 
-Python is a dynamically typed language, which means that you do not need to declare the type of a variable explicitly. Instead, the type of a variable is determined at runtime based on the value it is assigned.
+As it was mentioned above, Python is a dynamically typed language, which means that you do not need to declare the type of a variable explicitly. Instead, the type of a variable is determined at runtime based on the value it is assigned.
 
 However, starting from Python 3.5, the language includes a syntax for type annotations, which allow you to specify the expected type of a variable. This can be useful for improving code readability, documentation, and type checking.
 
@@ -196,9 +190,7 @@ For example, let's say we want to declare a variable to store the age of a perso
 ```python
 # variable to store age
 age = 30
-```
 
-```python
 # constant variable to store pi value
 PI = 3.14159
 ```
