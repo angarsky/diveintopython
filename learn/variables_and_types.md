@@ -1,3 +1,5 @@
+Variables play a crucial role in Python, as they provide a way to store and manipulate data throughout a program. By assigning values to variables, we can easily refer to and update data as needed, making our code more efficient and readable. Overall, variables are a fundamental concept in Python programming and are essential for any kind of data manipulation and analysis. Let's review this topic in details.
+
 ## Variable Definition
 
 What is a variable in Python? It is a named location in the computer's memory that stores a value. It is like a container that can hold different types of data, such as numbers, strings or booleans.
@@ -18,17 +20,7 @@ In this example we initialised the variable - created a variable named `my_varia
 
 ## Variable Declaration
 
-In Python, you don't need to explicitly declare a variable before using it. You can create a variable simply by assigning a value to it. Here's an example:
-
-```python
-# create a variable called "x" and assign the value 5 to it
-x = 5
-
-# print the value of "x"
-print(x) # Output: 5
-```
-
-In this example, we created a variable named `x` and assigned it the value `5`. The variable `x` is automatically created when the assignment statement is executed.
+In Python, you don't need to explicitly declare a variable before using it. You can create a variable simply by assigning a value to it.
 
 However, it is important to note that variables in Python are dynamically typed, which means that the data type of a variable is determined at runtime based on the type of the value assigned to it. This means that the same variable can hold different types of values at different times. For example:
 
@@ -47,15 +39,27 @@ In this example, we first created a variable named `y` and assigned it the value
 
 ## Data Types
 
+There are nine data types in Python:
+
+- Integers
+- Floating-point numbers
+- Complex
+- Strings
+- Booleans
+- Lists
+- Tuples
+- Sets
+- Dictionaries
+
+The first three types can conditionally be combined into numeric group.
+
 ### Numeric Types
 
 Numeric types are used to represent numbers in Python. There are three types of numeric data types in Python:
 
-Integer: Integers are whole numbers without any decimal point. Example: 5, 10, -3.
-
-Float: Floats are numbers with decimal points. Example: 2.5, -0.1, 3.14.
-
-Complex: Complex numbers are numbers with a real and imaginary part. They are denoted by adding a `j` at the end of the imaginary part. Example: 2 + 3j, -4j.
+- **Integer**: Integers are whole numbers without any decimal point. Example: 5, 10, -3.
+- **Float**: Floats are numbers with decimal points. Example: 2.5, -0.1, 3.14.
+- **Complex**: Complex numbers are numbers with a real and imaginary part. They are denoted by adding a `j` at the end of the imaginary part. Example: 2 + 3j, -4j.
 
 ```python
 # integer
