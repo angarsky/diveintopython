@@ -1,3 +1,3 @@
 # How to install Python
 
-@todo: add content.
+@todo: add content about how to install `Python`.
