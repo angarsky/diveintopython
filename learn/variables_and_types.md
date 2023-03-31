@@ -27,16 +27,6 @@ is_student
 num_of_courses
 ```
 
-And some examples of poor variable names:
-
-```python
-fn
-ln
-a
-s
-n
-```
-
 Remember that good variable naming conventions not only help you set a valid variable name, but also make your code more readable, maintainable, and reduce the risk of bugs.
 
 ## Variable Declaration
@@ -46,13 +36,9 @@ In Python, you don't need to explicitly declare a variable before using it. You 
 However, it is important to note that variables in Python are dynamically typed, which means that the data type of a variable is determined at runtime based on the type of the value assigned to it. This means that the same variable can hold different types of values at different times. For example:
 
 ```python
-# create a variable called "y" and assign the value 5 to it
 y = 5
+y = "hello"
 
-# change the value of "y" to a string
-y = “hello"
-
-# print the value of "y"
 print(y) # Output: hello
 ```
 
@@ -179,7 +165,7 @@ You can also use indexing to extract a single character from a string variable. 
 
 ```python
 string = "hello"
-char = string[0]   # 'h'
+char = string[0]   # Output: 'h'
 ```
 
 In the example above, `char` is a character variable that stores the first character of the string `hello`.
