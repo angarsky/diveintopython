@@ -35,4 +35,18 @@ print(f"My name is {name} and I am {age} years old.")
 
 With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces {}. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
 
+Another option for formatted printing is the use of curly braces. You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+
+```python
+name = "John"
+age = 30
+location = "New York"
+
+print("My name is {}, I'm {} years old, and I live in {}.".format(name, age, location))
+```
+
+This code will output: `My name is John, I'm 30 years old, and I live in New York.`
+
+In this example, the string `"My name is {}, I'm {} years old, and I live in {}."` contains three curly brackets `{}` to indicate where the variable values should be inserted. The `format()` method is called on the string, and the variables `name`, `age`, and `location` are passed as arguments to the method.
+
 You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream. You can learn more about these options in the Python documentation.
