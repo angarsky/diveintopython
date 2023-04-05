@@ -101,3 +101,31 @@ print(f"My name is {name} and I'm {age} years old.") # Output: My name is John a
 ```
 
 Here, the placeholders `{}` are replaced by values inside the curly braces `{}` preceded by the letter `f`.
+
+### String Subset
+
+To check if a Python string contains a specific substring, you can use the `in` keyword or the `find()` method.
+
+Here's an example using the in keyword:
+
+```python
+my_string = "Hello, world!"
+if "world" in my_string:
+    print("Substring found!")
+else:
+    print("Substring not found.")
+# Output: Substring found!
+```
+
+Here's an example using the `find()` method:
+
+```python
+my_string = "Hello, world!"
+if my_string.find("world") != -1:
+    print("Substring found!")
+else:
+    print("Substring not found.")
+# Output: Substring found!
+```
+
+In both examples, we check if the substring `"world"` is present in the string `my_string`. If the substring is found, we print `"Substring found!"`, otherwise we print `"Substring not found."`.
