@@ -293,7 +293,7 @@ In this example, the `split()` method is called on the string `s`, which contain
 
 ## String Substitution
 
-The `replace()` method is used to replace a specific substring with a new substring in a given string. The syntax for this method is:
+The `replace()` method is used to replace a specific substring with a new substring in a given string. You can also use this mrthod to remove a specific character or substring from a string. The syntax for this method is:
 
 ```python
 string.replace(old, new[, count])
