@@ -453,3 +453,26 @@ print(result)  # Output: "mango, pineapple, banana"
 In this example, the `join()` method is called on the separator string, with the `my_list` list as the iterable argument. The resulting string is assigned to the result variable and printed to the console.
 
 Note that the `join()` method can also be used with other types of iterables, such as tuples or sets. Additionally, you can use an empty string as the separator if you want to join the elements without any separation.
+
+## Inicode to String
+
+In Python, you can convert a Unicode string to a regular string (also known as a byte string) using the `encode` method.
+
+Here's an example:
+
+```python
+unicode_string = "Hello, World! 🌍"
+byte_string = unicode_string.encode("utf-8")
+print(byte_string) # Output: b'Hello, World! \xf0\x9f\x8c\x8d'
+```
+
+In this example, the `encode` method is used to convert the `unicode_string` to a byte string encoded in UTF-8 format. The resulting `byte_string` variable contains the byte representation of the original string.
+
+Note that the `b` prefix in the output indicates that the value is a byte string, rather than a regular string. If you want to convert the byte string back to a regular string, you can use the decode method:
+
+```python
+new_unicode_string = byte_string.decode("utf-8")
+print(new_unicode_string) # Output: Hello, World! 🌍
+```
+
+In this example, the `decode` method is used to convert the byte string back to a Unicode string encoded in UTF-8 format. The resulting `new_unicode_string` variable contains the original string.
