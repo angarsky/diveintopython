@@ -311,6 +311,8 @@ print(new_string) # Output: Hi World
 
 In this example, the `replace()` method is used for replacement the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
 
+Also you can use `replace()` method for replacing a single character in a string.
+
 Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
 
 ## The `lower()` and `upper()` Methods
