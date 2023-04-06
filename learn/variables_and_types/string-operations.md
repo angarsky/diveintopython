@@ -66,6 +66,14 @@ In the third example, we use slicing to extract every other character from the s
 
 In the fourth example, we use slicing to extract the substring `"llo, world"` from the `my_string` variable by specifying the starting index `2` and the ending index `-1`. The `-1` specifies the second-to-last character in the string as the ending index.
 
+String slicing also can be used to remove the last character from a string. Here is an example:
+
+```python
+my_string = "Hello World!"
+new_string = my_string[:-1]
+print(new_string)  # Output: "Hello World"
+```
+
 ## String Formatting
 
 String formatting (also known as interpolation) is the process of inserting variables or values into a string. There are several ways to format strings in Python:
