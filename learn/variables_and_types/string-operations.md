@@ -372,3 +372,27 @@ print(sentence.find("cat"))   # Output: -1
 ```
 
 In the first line, we define a string sentence. Then we use the `find()` function to search for the substring `"fox"` in the `sentence` string. Since `"fox"` is found at index 16 in the `sentence` string, the `find()` function returns `16`. In the second line, we search for the substring `"cat"`, which is not found in the `sentence` string, so the `find()` function returns `-1`.
+
+## The `strip()` Method
+
+This is a built-in string method that returns a copy of the string with leading and trailing characters removed. The `strip()` method can be used to remove whitespace characters such as spaces, tabs, and newlines.
+
+Here's an example:
+
+```python
+string = "  hello world  "
+new_string = string.strip()
+print(new_string) # Output: "hello world"
+```
+
+As you can see, the `strip()` method removed the leading and trailing spaces from the original string. If you want to remove only the leading or trailing spaces, you can use the `lstrip()` or `rstrip()` methods, respectively.
+
+For example:
+
+```python
+string = "  hello world  "
+new_string = string.lstrip()
+print(new_string) # Output: "hello world  "
+```
+
+In this case, only the leading spaces were removed, and the trailing spaces remained. Similarly, if you use `rstrip()` instead of `lstrip()`, only the trailing spaces would be removed.
