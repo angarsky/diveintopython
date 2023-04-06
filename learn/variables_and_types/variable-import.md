@@ -1,4 +1,4 @@
-## Import Variable from Another File
+## Import of a Variable from Another File
 
 To import a variable from another file in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`. Here's how you can import `my_variable` in another Python file named `file2.py`:
 
