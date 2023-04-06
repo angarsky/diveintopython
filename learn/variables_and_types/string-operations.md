@@ -1,6 +1,6 @@
 Previously we've touched the topic of operations with variables. In this part we will dive into operations with strings.
 
-## String Operations
+## Operations with Strings
 
 Python provides a wide range of built-in functions and methods for working with strings. Let's review in step by step.
 
@@ -129,3 +129,49 @@ else:
 ```
 
 In both examples, we check if the substring `"world"` is present in the string `my_string`. If the substring is found, we print `"Substring found!"`, otherwise we print `"Substring not found."`.
+
+### String Indices
+
+In Python, a string is a sequence of characters and each character in the string has a unique index number starting from 0 to n-1, where n is the length of the string.
+
+You can access a specific character in a string by referring to its index using square brackets []. For example, if you have a string `str = "Hello, World!"`, you can access the first character `"H"` by using `str[0]`, the second character `"e"` by using `str[1]`, and so on.
+
+Here's an example:
+
+```python
+str = "Hello, World!"
+print(str[0])   # Output: "H"
+print(str[7])   # Output: "W"
+```
+
+### String Reverse
+
+There are several ways to reverse a string in Python. Here are a few examples:
+
+- Using slicing:
+
+```python
+string = "hello"
+reversed_string = string[::-1]
+print(reversed_string)  # Output: "olleh"
+```
+
+- Using a loop:
+
+```python
+string = "hello"
+reversed_string = ""
+for char in string:
+    reversed_string = char + reversed_string
+print(reversed_string)  # Output: "olleh"
+```
+
+- Using the reversed() function:
+
+```python
+string = "hello"
+reversed_string = "".join(reversed(string))
+print(reversed_string)  # Output: "olleh"
+```
+
+All of these methods will produce the same result, which is the reversed version of the original string.
