@@ -280,11 +280,11 @@ In the above example, the `split()` method is called on the string `s`, which co
 You can also specify a different separator using the `split()` method. For example:
 
 ```python
-s = "mango,ananas,banana"
+s = "mango,pineapple,banana"
 
 fruits = s.split(",")
 
-print(fruits)   # Output: ['mango', 'ananas', 'banana']
+print(fruits)   # Output: ['mango', 'pineapple', 'banana']
 ```
 
 In this example, the `split()` method is called on the string `s`, which contains comma-separated fruit names. The resulting list fruits contains all the fruit names as separate elements, with the comma used as the separator.
@@ -396,3 +396,60 @@ print(new_string) # Output: "hello world  "
 ```
 
 In this case, only the leading spaces were removed, and the trailing spaces remained. Similarly, if you use `rstrip()` instead of `lstrip()`, only the trailing spaces would be removed.
+
+## String to List Conversion
+
+To convert a string to a list of its individual letters in Python, you can use the built-in `list()` function. Here's an example:
+
+```python
+my_string = "hello"
+letters_list = list(my_string)
+print(letters_list)
+```
+
+This will output:
+
+```python
+['h', 'e', 'l', 'l', 'o']
+```
+
+Alternatively, you could use a loop to iterate over the string and append each letter to a new list:
+
+```python
+my_string = "hello"
+letters_list = []
+for letter in my_string:
+    letters_list.append(letter)
+print(letters_list)
+```
+
+This will also output:
+
+```python
+['h', 'e', 'l', 'l', 'o']
+```
+
+## The `join()` Method
+
+This method allows you to join elements of an iterable (such as a list, tuple, or string) into a single string using a separator string.
+
+The syntax for using the `join()` method is as follows:
+
+```python
+separator_string.join(iterable)
+```
+
+Here, `separator_string` is the string that you want to use to separate the elements in the iterable, and `iterable` is the sequence of elements that you want to join.
+
+For example, if you have a list of strings and you want to join them into a single string separated by commas, you could use the following code:
+
+```python
+my_list = ['mango', 'pineapple', 'banana']
+separator = ', '
+result = separator.join(my_list)
+print(result)  # Output: "mango, pineapple, banana"
+```
+
+In this example, the `join()` method is called on the separator string, with the `my_list` list as the iterable argument. The resulting string is assigned to the result variable and printed to the console.
+
+Note that the `join()` method can also be used with other types of iterables, such as tuples or sets. Additionally, you can use an empty string as the separator if you want to join the elements without any separation.
