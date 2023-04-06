@@ -379,7 +379,7 @@ In the first line, we define a string sentence. Then we use the `find()` functio
 
 ## The `strip()` Method
 
-This is a built-in string method that returns a copy of the string with leading and trailing characters removed. The `strip()` method can be used to remove whitespace characters such as spaces, tabs, and newlines.
+This is a built-in string method that returns a copy of the string with leading and trailing characters removed. The `strip()` method can be used to remove whitespace characters such as spaces, tabs, and newlines. In some other languages known as `trim()` method.
 
 Here's an example:
 
