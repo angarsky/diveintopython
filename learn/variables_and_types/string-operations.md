@@ -1,4 +1,4 @@
-Previously we've touched the topic of operations with variables. In this part we will dive into operations with strings.
+Previously we've touched the topic of operations with variables. In this part we will dive into operations and methods with strings.
 
 ## String Concatenation
 
