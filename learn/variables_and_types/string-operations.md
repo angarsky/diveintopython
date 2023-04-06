@@ -476,3 +476,103 @@ print(new_unicode_string) # Output: Hello, World! 🌍
 ```
 
 In this example, the `decode` method is used to convert the byte string back to a Unicode string encoded in UTF-8 format. The resulting `new_unicode_string` variable contains the original string.
+
+## `replace()` Method
+
+In Python, strings are immutable, which means that you cannot change a string once it has been created. However, you can create a new string that contains a modified version of the original string.
+
+To remove a specific character or a substring from a string in Python, you can use the `replace()` method or string slicing.
+
+Here is an example of using the replace() method to remove a specific character:
+
+```python
+my_string = "Hello, World!"
+new_string = my_string.replace("o", "")
+print(new_string) # Output: Hell, Wrld!
+```
+
+Here, we replaced the character `"o"` with an empty string, effectively removing it from the original string.
+
+## String Comparison
+
+In Python, you can use various comparison operators to compare strings. Here are some examples:
+
+- == operator: This operator checks if two strings are equal.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 == str2:
+    print("The two strings are equal.")
+else:
+    print("The two strings are not equal.")
+# Output: The two strings are not equal.
+```
+
+- != operator: This operator checks if two strings are not equal.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 != str2:
+    print("The two strings are not equal.")
+else:
+    print("The two strings are equal.")
+# Output: The two strings are not equal.
+```
+
+- < operator: This operator checks if the first string is less than the second string in lexicographical order.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 < str2:
+    print("The first string comes before the second string.")
+else:
+    print("The second string comes before the first string.")
+# Output: The first string comes before the second string.
+```
+
+- > operator: This operator checks if the first string is greater than the second string in lexicographical order.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 > str2:
+    print("The first string comes after the second string.")
+else:
+    print("The second string comes after the first string.")
+# Output: The second string comes after the first string.
+```
+
+- <= operator: This operator checks if the first string is less than or equal to the second string in lexicographical order.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 <= str2:
+    print("The first string comes before or is equal to the second string.")
+else:
+    print("The second string comes before the first string.")
+# Output: The first string comes before or is equal to the second string.
+```
+
+- >= operator: This operator checks if the first string is greater than or equal to the second string in lexicographical order.
+
+```python
+str1 = "mango"
+str2 = "pineapple"
+
+if str1 >= str2:
+    print("The first string comes after or is equal to the second string.")
+else:
+    print("The second string comes after the first string.")
+# Output: The second string comes after the first string.
+```
+
+Note that when comparing strings in Python, the comparison is done in lexicographical order, which means that the comparison is based on the ASCII values of the characters in the strings.
