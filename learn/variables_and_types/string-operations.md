@@ -312,3 +312,63 @@ print(new_string) # Output: Hi World
 In this example, the `replace()` method is used to replace the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
 
 Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
+
+## The `lower()` and `upper()` methods
+
+These methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
+
+The `lower()` method converts all uppercase characters in the string to their lowercase equivalents, while leaving any existing lowercase characters unchanged. The method has the following syntax:
+
+```python
+string.lower()
+```
+
+Here, `string` is the original string to be converted to lowercase. The method returns a new string with all the uppercase characters converted to lowercase.
+
+For example, consider the following code snippet:
+
+```python
+string = "Hello World"
+new_string = string.lower()
+print(new_string) # Output: hello world
+```
+
+In this example, the `lower()` method is used to convert all the uppercase characters in the string variable to lowercase. The resulting lowercase string is then printed out using the `print()` function.
+
+Similarly, the `upper()` method converts all lowercase characters in the string to their uppercase equivalents, while leaving any existing uppercase characters unchanged. The method has the following syntax:
+
+```python
+string.upper()
+```
+
+Here, `string` is the original string to be converted to uppercase. The method returns a new string with all the lowercase characters converted to uppercase.
+
+For example, consider the following code snippet:
+
+```python
+string = "Hello World"
+new_string = string.upper()
+print(new_string) # Output: HELLO WORLD
+```
+
+In this example, the `upper()` method is used to convert all the lowercase characters in the `string` variable to uppercase. The resulting uppercase string is then printed out using the print() function.
+
+## The `string.find()` function
+
+This is built-in Python function that returns the index of the first occurrence of a substring within a given string. If the substring is not found, it returns `-1`. The syntax for using `string.find()` is as follows:
+
+```python
+string.find(substring, start=0, end=len(string))
+```
+
+where `string` is the string to search in, `substring` is the string to search for, `start` is the starting index of the search (default is 0), and `end` is the ending index of the search (default is the length of the string).
+
+Here is an example:
+
+```python
+sentence = "The quick brown fox jumps over the lazy dog"
+print(sentence.find("fox"))   # Output: 16
+print(sentence.find("cat"))   # Output: -1
+```
+
+In the first line, we define a string sentence. Then we use the `find()` function to search for the substring `"fox"` in the `sentence` string. Since `"fox"` is found at index 16 in the `sentence` string, the `find()` function returns `16`. In the second line, we search for the substring `"cat"`, which is not found in the `sentence` string, so the `find()` function returns `-1`.
