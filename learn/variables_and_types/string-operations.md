@@ -128,7 +128,7 @@ In both examples, we check if the substring `"world"` is present in the string `
 
 ## String Indices
 
-In Python, a string is a sequence of characters and each character in the string has a unique index number starting from 0 to n-1, where n is the length of the string.
+In Python, a string is a sequence of characters and each character in the string has a unique index number starting from 0 to n-1, where n is the length of the string, so you can access individual characters of a string using indexing.
 
 You can access a specific character in a string by referring to its index using square brackets []. For example, if you have a string `str = "Hello, World!"`, you can access the first character `"H"` by using `str[0]`, the second character `"e"` by using `str[1]`, and so on.
 
