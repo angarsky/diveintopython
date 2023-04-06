@@ -624,3 +624,21 @@ print(sorted_s)  # Output: " dehllloorw"
 ```
 
 In the example above, `s` is the input string. We use the `sorted()` function to sort the characters of the string and get a sorted list of characters. We then use the `join()` method to join the sorted list of characters back into a string. The resulting string is stored in the `sorted_s` variable, which is then printed to the console.
+
+## `count()` Method
+
+You can use the built-in `count` method to count the number of occurrences of a substring within a string.
+
+Here's a counter of substring `"is"`:
+
+python
+Copy code
+string = "Hello, world! This is a sample string."
+substring = "is"
+
+count = string.count(substring)
+
+print(count) # Output: 2
+In this example, we have a string "Hello, world! This is a sample string." and we want to count the number of occurrences of the substring "is". We use the count method to count the number of times the substring appears in the string.
+
+The output of this program will be 2, because the substring "is" appears twice in the string.
