@@ -66,7 +66,7 @@ In the fourth example, we use slicing to extract the substring `"llo, world"` fr
 
 ## String Formatting
 
-String formatting is the process of inserting variables or values into a string. There are several ways to format strings in Python:
+String formatting (also known as interpolation) is the process of inserting variables or values into a string. There are several ways to format strings in Python:
 
 - Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
 
