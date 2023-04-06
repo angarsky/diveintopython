@@ -13,7 +13,7 @@ result = str1 + " " + str2
 print(result) # Output: Hello World
 ```
 
-In the example above, we have created two string variables `str1` and `str2` containing the strings "Hello" and "World" respectively. We then use the `+` operator to add one string to another, along with a space character, to create a single string result. Finally, we print the value of result to the console, which outputs "Hello World".
+In the example above, we have created two string variables `str1` and `str2` containing the strings "Hello" and "World" respectively. We then use the `+` operator to add one string to another, along with a space character, to create a single string result. Finally, we print the result of adding to the console, which outputs "Hello World".
 
 ## String Length
 
