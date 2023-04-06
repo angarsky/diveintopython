@@ -309,7 +309,7 @@ new_string = string.replace("Hello", "Hi")
 print(new_string) # Output: Hi World
 ```
 
-In this example, the `replace()` method is used to replace the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
+In this example, the `replace()` method is used for replacement the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
 
 Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
 
