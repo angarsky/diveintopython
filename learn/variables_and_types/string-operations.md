@@ -178,7 +178,7 @@ All of these methods will produce the same result, which is the reversed version
 
 ## Convert to String
 
-To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples:
+To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples how to cast data:
 
 ```python
 # convert an integer to a string
