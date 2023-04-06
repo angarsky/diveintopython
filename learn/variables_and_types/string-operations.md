@@ -666,3 +666,27 @@ print(random_string)
 In this example, `length` defines the length of the random string to generate. The `string.ascii_letters` constant contains all ASCII letters (both lowercase and uppercase), and `string.digits` contains all digits. These two constants are concatenated together to form the `characters` pool.
 
 The `random.choice()` function is used to randomly select a character from the `characters` pool, and the resulting characters are concatenated together using the `join()` function. The final result is a random string of length `length`.
+
+## Matching Strings
+
+Python allows you to match strings using regular expressions by importing the `re` module. Here's an example:
+
+```python
+import re
+
+# define the regular expression pattern
+pattern = r"hello"
+
+# define the string to search
+string = "Hello, world! Hello, Python!"
+
+# perform the search
+matches = re.findall(pattern, string, re.IGNORECASE)
+
+# print the matches
+print(matches) # Output: ['Hello', 'Hello']
+```
+
+In this example, the `re.findall()` function is used to find all occurrences of the `pattern` in the `string`. The `re.IGNORECASE` flag is used to make the search case-insensitive. The `matches` variable will contain a list of all matches found.
+
+You can also use other regular expression functions in the `re` module, such as `re.match()` or `re.search()`, depending on your specific needs.
