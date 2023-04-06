@@ -175,3 +175,76 @@ print(reversed_string)  # Output: "olleh"
 ```
 
 All of these methods will produce the same result, which is the reversed version of the original string.
+
+### Convert to string
+
+To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples:
+
+```python
+# convert an integer to a string
+num = 42
+str_num = str(num)
+print(str_num)  # outputs "42"
+print(type(str_num))  # outputs "<class 'str'>"
+
+# convert a float to a string
+pi = 3.14159
+str_pi = str(pi)
+print(str_pi)  # outputs "3.14159"
+print(type(str_pi))  # outputs "<class 'str'>"
+
+# convert a boolean to a string
+flag = True
+str_flag = str(flag)
+print(str_flag)  # outputs "True"
+print(type(str_flag))  # outputs "<class 'str'>"
+```
+
+Note that if you try to convert an object that doesn't have a defined string representation, you may get a `TypeError` exception.
+
+### The `startswith()` and `endswith()` Methods
+
+In Python, `startswith()` and `endswith()` are two string methods that are used to check whether a string starts or ends with a specific prefix or suffix, respectively. Here is an overview of these methods:
+
+The `startswith()` method is used to check whether a string starts with a specific prefix. The method takes one or more prefixes as an argument and returns `True` if the string starts with any of them, and `False` otherwise. Here's the syntax for the `startswith()` method:
+
+```python
+string.startswith(prefix, start=0, end=len(string))
+```
+
+where:
+
+- `prefix` is the prefix to check.
+- `start` is an optional parameter that specifies the starting index of the string to search. By default, `start` is set to 0, which means the entire string will be searched.
+- `end` is an optional parameter that specifies the ending index of the string to search. By default, `end` is set to the length of the string.
+
+Here's an example of using the startswith() method:
+
+```python
+s = "Python is a great programming language"
+print(s.startswith("Python"))  # True
+print(s.startswith("Java"))    # False
+print(s.startswith(("Java", "Python")))  # True (checking multiple prefixes)
+```
+
+`The endswith()` method is used to check whether a string ends with a specific suffix. The method takes one or more suffixes as an argument and returns `True` if the string ends with any of them, and `False` otherwise. Here's the syntax for the `endswith()` method:
+
+```python
+string.endswith(suffix, start=0, end=len(string))
+```
+
+where:
+
+- `suffix` is the suffix to check.
+- `start` and `end` parameters have the same meaning as in the `startswith()` method.
+- 
+Here's an example of using the endswith() method:
+
+```python
+s = "Python is a great programming language"
+print(s.endswith("language"))  # True
+print(s.endswith("Python"))    # False
+print(s.endswith(("Python", "language")))  # True (checking multiple suffixes)
+```
+
+In both methods, you can pass a tuple of prefixes or suffixes to check multiple possibilities. The `start` and `end` parameters are optional and can be used to search only a part of the string.
