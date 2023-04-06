@@ -263,7 +263,7 @@ In the above example, the `isnumeric()` method is called on two different string
 
 ## The `split()` Method
 
-It is also a built-in method in Python that is used to split a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
+It is also a built-in method in Python that is used for splitting a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
 
 Here's an example:
 
