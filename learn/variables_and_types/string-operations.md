@@ -1,10 +1,8 @@
 Previously we've touched the topic of operations with variables. In this part we will dive into operations with strings.
 
-## Operations with Strings
-
 Python provides a wide range of built-in functions and methods for working with strings. Let's review in step by step.
 
-### String Concatenation
+## String Concatenation
 
 String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator.
 
@@ -19,7 +17,7 @@ print(result) # Output: Hello World
 
 In the example above, we have created two string variables `str1` and `str2` containing the strings "Hello" and "World" respectively. We then use the `+` operator to concatenate the two strings, along with a space character, to create a single string result. Finally, we print the value of result to the console, which outputs "Hello World".
 
-### String Length
+## String Length
 
 You can get the length of a string using the built-in function `len()`. Here's an example:
 
@@ -40,7 +38,7 @@ print(len(whitespace_string))  # Output: 3
 
 In both cases, the `len()` function returns the length of the string, which is 0 for the empty string and 3 for the string containing whitespace.
 
-### String Slicing
+## String Slicing
 
 String slicing is the process of creating a new substring from an existing string in Python. You can slice a string using the syntax `[start:end]` to extract a portion of the string that starts at the `start` index and ends at the `end` index (not inclusive). Here are some examples:
 
@@ -68,7 +66,7 @@ In the third example, we use slicing to extract every other character from the s
 
 In the fourth example, we use slicing to extract the substring `"llo, world"` from the `my_string` variable by specifying the starting index `2` and the ending index `-1`. The `-1` specifies the second-to-last character in the string as the ending index.
 
-### String Formatting
+## String Formatting
 
 String formatting is the process of inserting variables or values into a string. There are several ways to format strings in Python:
 
@@ -102,7 +100,7 @@ print(f"My name is {name} and I'm {age} years old.") # Output: My name is John a
 
 Here, the placeholders `{}` are replaced by values inside the curly braces `{}` preceded by the letter `f`.
 
-### String Subset
+## String Subset
 
 To check if a Python string contains a specific substring, you can use the `in` keyword or the `find()` method.
 
@@ -130,7 +128,7 @@ else:
 
 In both examples, we check if the substring `"world"` is present in the string `my_string`. If the substring is found, we print `"Substring found!"`, otherwise we print `"Substring not found."`.
 
-### String Indices
+## String Indices
 
 In Python, a string is a sequence of characters and each character in the string has a unique index number starting from 0 to n-1, where n is the length of the string.
 
@@ -144,7 +142,7 @@ print(str[0])   # Output: "H"
 print(str[7])   # Output: "W"
 ```
 
-### String Reverse
+## String Reverse
 
 There are several ways to reverse a string in Python. Here are a few examples:
 
@@ -176,7 +174,7 @@ print(reversed_string)  # Output: "olleh"
 
 All of these methods will produce the same result, which is the reversed version of the original string.
 
-### Convert to string
+## Convert to string
 
 To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples:
 
@@ -202,7 +200,7 @@ print(type(str_flag))  # outputs "<class 'str'>"
 
 Note that if you try to convert an object that doesn't have a defined string representation, you may get a `TypeError` exception.
 
-### The `startswith()` and `endswith()` Methods
+## The `startswith()` and `endswith()` Methods
 
 In Python, `startswith()` and `endswith()` are two string methods that are used to check whether a string starts or ends with a specific prefix or suffix, respectively. Here is an overview of these methods:
 
@@ -248,3 +246,71 @@ print(s.endswith(("Python", "language")))  # True (checking multiple suffixes)
 ```
 
 In both methods, you can pass a tuple of prefixes or suffixes to check multiple possibilities. The `start` and `end` parameters are optional and can be used to search only a part of the string.
+
+## Method `isnumeric()`
+
+This is a built-in method in Python that returns `True` if all characters in a string are numeric characters, and `False` otherwise.
+
+Here's an example:
+
+```python
+s1 = "12345"    # All characters are numeric
+s2 = "12345a"   # Last character is not numeric
+
+print(s1.isnumeric())    # Output: True
+print(s2.isnumeric())    # Output: False
+```
+
+In the above example, the `isnumeric()` method is called on two different strings `s1` and `s2`. `s1` contains only numeric characters, so `isnumeric()` returns `True`. However, `s2` contains a non-numeric character `a`, so `isnumeric()` returns `False`.
+
+## The `split()` method
+
+It is also a built-in method in Python that is used to split a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
+
+Here's an example:
+
+```python
+s = "Hello World! How are you?"
+
+words = s.split()
+
+print(words)   # Output: ['Hello', 'World!', 'How', 'are', 'you?']
+```
+
+In the above example, the `split()` method is called on the string `s`, which contains whitespace-separated words. The resulting list words contains all the words in the original string as separate elements.
+
+You can also specify a different separator using the `split()` method. For example:
+
+```python
+s = "mango,ananas,banana"
+
+fruits = s.split(",")
+
+print(fruits)   # Output: ['mango', 'ananas', 'banana']
+```
+
+In this example, the `split()` method is called on the string `s`, which contains comma-separated fruit names. The resulting list fruits contains all the fruit names as separate elements, with the comma used as the separator.
+
+## String Substitution
+
+The `replace()` method is used to replace a specific substring with a new substring in a given string. The syntax for this method is:
+
+```python
+string.replace(old, new[, count])
+```
+
+Here, `string` is the original string, `old` is the substring that needs to be replaced, `new` is the new substring that will replace the old substring, and `count` (optional) is the number of times the replacement should be done.
+
+The `replace()` method returns a new string with the specified replacements made.
+
+For example, consider the following code snippet:
+
+```python
+string = "Hello World"
+new_string = string.replace("Hello", "Hi")
+print(new_string) # Output: Hi World
+```
+
+In this example, the `replace()` method is used to replace the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
+
+Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
