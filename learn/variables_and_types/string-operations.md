@@ -17,7 +17,9 @@ In the example above, we have created two string variables `str1` and `str2` con
 
 ## String Length
 
-You can get the length of a string using the built-in function `len()`. Here's an example:
+You can get the length of a string using the built-in function `len()`. You can also check if a string is empty using this method.
+
+Here is an example of calculating the characters that a string contains:
 
 ```python
 my_string = "Hello, world!"
