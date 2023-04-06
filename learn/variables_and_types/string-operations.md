@@ -172,7 +172,7 @@ print(reversed_string)  # Output: "olleh"
 
 All of these methods will produce the same result, which is the reversed version of the original string.
 
-## Convert to string
+## Convert to String
 
 To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples:
 
@@ -261,7 +261,7 @@ print(s2.isnumeric())    # Output: False
 
 In the above example, the `isnumeric()` method is called on two different strings `s1` and `s2`. `s1` contains only numeric characters, so `isnumeric()` returns `True`. However, `s2` contains a non-numeric character `a`, so `isnumeric()` returns `False`.
 
-## The `split()` method
+## The `split()` Method
 
 It is also a built-in method in Python that is used to split a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
 
@@ -313,7 +313,7 @@ In this example, the `replace()` method is used to replace the substring `"Hello
 
 Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
 
-## The `lower()` and `upper()` methods
+## The `lower()` and `upper()` Methods
 
 These methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
 
@@ -353,7 +353,7 @@ print(new_string) # Output: HELLO WORLD
 
 In this example, the `upper()` method is used to convert all the lowercase characters in the `string` variable to uppercase. The resulting uppercase string is then printed out using the print() function.
 
-## The `string.find()` function
+## The `string.find()` Function
 
 This is built-in Python function that returns the index of the first occurrence of a substring within a given string. If the substring is not found, it returns `-1`. The syntax for using `string.find()` is as follows:
 
