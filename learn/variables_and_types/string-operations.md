@@ -1,7 +1,5 @@
 Previously we've touched the topic of operations with variables. In this part we will dive into operations with strings.
 
-Python provides a wide range of built-in functions and methods for working with strings. Let's review in step by step.
-
 ## String Concatenation
 
 String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator.
