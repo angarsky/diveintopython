@@ -142,7 +142,9 @@ print(str[7])   # Output: "W"
 
 ## String Reverse
 
-There are several ways of reversing a string in Python. Here are a few examples:
+There are several ways of reversing a string in Python. 
+
+Let's see how to reverse a string in python with examples::
 
 - Using slicing:
 
