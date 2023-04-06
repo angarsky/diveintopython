@@ -610,3 +610,17 @@ or double quotes.
 ```
 
 Note that any whitespace, including newlines, in the triple-quoted string will be included in the string. If you want to exclude the whitespace at the beginning or end of a line, you can use string methods like strip() or rstrip().
+
+## `sorted()` Method
+
+You can sort a string using the `sorted()` function, which returns a sorted list of characters from the input string. You can then join the sorted list to create a sorted string.
+
+Here's an example:
+
+```python
+s = "hello world"
+sorted_s = ''.join(sorted(s))
+print(sorted_s)  # Output: " dehllloorw"
+```
+
+In the example above, `s` is the input string. We use the `sorted()` function to sort the characters of the string and get a sorted list of characters. We then use the `join()` method to join the sorted list of characters back into a string. The resulting string is stored in the `sorted_s` variable, which is then printed to the console.
