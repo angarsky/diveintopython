@@ -580,3 +580,31 @@ else:
 ```
 
 Note that when comparing strings in Python, the comparison is done in lexicographical order, which means that the comparison is based on the ASCII values of the characters in the strings.
+
+## Multiline String
+
+You can create a multiline string by enclosing the text in triple quotes, either triple single quotes (''') or triple double quotes (""").
+
+For example:
+
+```python
+multiline_string = '''
+This is a multiline string
+that spans multiple lines.
+You can use single quotes
+or double quotes.
+'''
+
+print(multiline_string)
+```
+
+```python
+# Output:
+
+This is a multiline string
+that spans multiple lines.
+You can use single quotes
+or double quotes.
+```
+
+Note that any whitespace, including newlines, in the triple-quoted string will be included in the string. If you want to exclude the whitespace at the beginning or end of a line, you can use string methods like strip() or rstrip().
