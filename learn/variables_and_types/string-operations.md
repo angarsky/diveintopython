@@ -2,7 +2,7 @@ Previously we've touched the topic of operations with variables. In this part we
 
 ## String Concatenation
 
-String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator.
+String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator. One more option to append a string is using `+=` operator.
 
 Here's an example:
 
