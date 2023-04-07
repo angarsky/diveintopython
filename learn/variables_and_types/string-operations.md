@@ -309,7 +309,7 @@ The `replace()` method is used to replace a specific substring with a new substr
 string.replace(old, new[, count])
 ```
 
-Here, `string` is the original string, `old` is the substring that needs to be replaced, `new` is the new substring that will replace the old substring, and `count` (optional) is the number of times the replacement should be done.
+Here, `string` is the original string, `old` is the substring that needs to be replaced, `new` is the new substring that will substitute the old substring, and `count` (optional) is the number of times the replacement should be done.
 
 The `replace()` method returns a new string with the specified replacements made.
 
