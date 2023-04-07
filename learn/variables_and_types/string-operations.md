@@ -798,3 +798,96 @@ hex_string = ''.join([hex(ord(c))[2:] for c in string])
 
 print(hex_string) #Output: 48656c6c6f2c20776f726c6421
 ```
+
+## Iterate on Chars
+
+There are several ways of iterating over the characters in a string in Python. Here are a few examples:
+
+- Using a for loop:
+
+```python
+my_string = "Hello, world!"
+for char in my_string:
+    print(char)
+```
+
+- Using a while loop:
+
+```python
+my_string = "Hello, world!"
+i = 0
+while i < len(my_string):
+    print(my_string[i])
+    i += 1
+```
+
+- Using a list comprehension:
+
+```python
+my_string = "Hello, world!"
+char_list = [char for char in my_string]
+print(char_list)
+```
+
+- Using the map() function:
+
+```python
+my_string = "Hello, world!"
+char_list = list(map(str, my_string))
+print(char_list)
+```
+
+- Using the enumerate() function:
+
+```python
+my_string = "Hello, world!"
+for index, char in enumerate(my_string):
+    print(f"Character at index {index}: {char}")
+```
+
+All of these methods will allow you to iterate over the characters in a string and perform operations on them. Choose the one that suits your needs best!
+
+## Binary String
+
+A binary string can be represented using the prefix `0b` followed by a sequence of `0` and `1` digits. For example, the binary string `1101` can be represented as `0b1101`. Here are some examples of how to create and manipulate binary strings in Python:
+
+- Creating a binary string:
+
+```python
+binary_str = '0b1101'
+```
+
+- Converting a decimal integer to a binary string:
+
+```python
+decimal_num = 13
+binary_str = bin(decimal_num)
+```
+
+- Converting a binary string to a decimal integer:
+
+```python
+binary_str = '0b1101'
+decimal_num = int(binary_str, 2)
+```
+
+- Bitwise operations on binary strings:
+
+```python
+binary_str1 = '0b1101'
+binary_str2 = '0b1010'
+
+# Bitwise AND
+result = int(binary_str1, 2) & int(binary_str2, 2)
+print(bin(result))  # Output: 0b1000
+
+# Bitwise OR
+result = int(binary_str1, 2) | int(binary_str2, 2)
+print(bin(result))  # Output: 0b1111
+
+# Bitwise XOR
+result = int(binary_str1, 2) ^ int(binary_str2, 2)
+print(bin(result))  # Output: 0b0111
+```
+
+Note that when performing bitwise operations, we need to convert the binary strings to decimal integers using the `int()` function with a second argument specifying the base (`2` in this case), and then convert the result back to a binary string using the `bin()` function.
