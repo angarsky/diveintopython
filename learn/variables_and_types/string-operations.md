@@ -66,6 +66,21 @@ In the third example, we use slicing to extract every other character from the s
 
 In the fourth example, we use slicing to extract the substring `"llo, world"` from the `my_string` variable by specifying the starting index `2` and the ending index `-1`. The `-1` specifies the second-to-last character in the string as the ending index.
 
+To split a string on a delimiter, you can also use the `split()` method. This method takes one argument, which is the delimiter character or string that you want to use to split the string. Here's an example:
+
+```python
+my_string = "Hello,world"
+my_list = my_string.split(",")
+print(my_list) # Output: ['Hello', 'world']
+
+You can remove the first character from a string in Python using string slicing. Here's an example:
+
+```python
+string = "hello"
+new_string = string[1:]
+print(new_string) # Output: ello
+```
+
 String slicing also can be used to remove the last character from a string. Here is an example:
 
 ```python
@@ -450,6 +465,40 @@ This will also output:
 ['h', 'e', 'l', 'l', 'o']
 ```
 
+## String to Boolean Conversion
+
+You can convert a string to a boolean value using the built-in `bool()` function.
+
+By default, the following strings are considered as `True`:
+
+- Any non-empty string
+- The string "True" (case-insensitive)
+
+On the other hand, the following strings are considered as `False`:
+
+- An empty string
+- The string "False" (case-insensitive)
+- Any numeric value equal to 0 (i.e., "0" or "0.0")
+
+Here are some examples:
+
+```python
+>>> bool("hello")
+True
+>>> bool("")
+False
+>>> bool("True")
+True
+>>> bool("false")
+False
+>>> bool("0")
+False
+>>> bool("1")
+True
+```
+
+If you have a string that is not one of the above values and you want to treat it as a boolean, you can define your own rules for conversion using an `if` statement or a conditional expression.
+
 ## The `join()` Method
 
 This method allows you to join elements of an iterable (such as a list, tuple, or string) into a single string using a separator string.
@@ -799,7 +848,7 @@ In the code above, we first define a string called `string_with_newline` which c
 
 ## String to Hex
 
-You can convert a string to its hexadecimal representation in Python using the `encode()` method and the `'hex'` encoding. Here's an example:
+You can convert a string to its hexadecimal representation in Python using the `encode()` method and the `'hex'` encoding. Let's see how to encode with an example:
 
 ```python
 string = "Hello, world!"
@@ -909,3 +958,22 @@ print(bin(result))  # Output: 0b0111
 ```
 
 Note that when performing bitwise operations, we need to convert the binary strings to decimal integers using the `int()` function with a second argument specifying the base (`2` in this case), and then convert the result back to a binary string using the `bin()` function.
+
+## String Truncation
+
+You can truncate a string by specifying the maximum length of the string you want to keep.
+
+Here's an example:
+
+```python
+text = "This is a long text that needs to be truncated."
+max_length = 20
+truncated_text = text[:max_length] + "..." if len(text) > max_length else text
+print(truncated_text) # Output: This is a long text...
+```
+
+In this example, we first define a string `text` that we want to truncate. We also specify the maximum length of the truncated string using the `max_length` variable.
+
+We then use slicing to get the first `max_length` characters of the string. If the length of the original string is greater than `max_length`, we append an ellipsis to the end of the truncated string using string concatenation. If the length of the original string is less than or equal to `max_length`, we simply assign the original string to the `truncated_text` variable.
+
+Finally, we print the truncated string using the `print()` function.
