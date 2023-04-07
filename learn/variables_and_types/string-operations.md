@@ -1,4 +1,4 @@
-Previously we've touched the topic of operations with variables. In this part we will dive into operations and methods with strings.
+Previously we've touched the topic of operations with variables. In this part we will dive into operations and methods with strings. This is not the whole list of possible string manipulations.
 
 ## String Concatenation
 
@@ -696,6 +696,17 @@ print(matches) # Output: ['Hello', 'Hello']
 ```
 
 In this example, the `re.findall()` function is used to find all occurrences of the `pattern` in the `string`. The `re.IGNORECASE` flag is used to make the search case-insensitive. The `matches` variable will contain a list of all matches found.
+
+You can also extract numbers from a string using `re.findall()`. Here's an example:
+
+```python
+import re
+
+text = "I have 3 apples and 2 oranges."
+numbers = re.findall('\d+', text)
+
+print(numbers)  # Output: ['3', '2']
+```
 
 You can also use other regular expression functions in the `re` module, such as `re.match()` or `re.search()`, depending on your specific needs.
 
