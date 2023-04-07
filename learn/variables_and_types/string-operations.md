@@ -327,9 +327,9 @@ Also you can use `replace()` method for replacing a single character in a string
 
 Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
 
-## The `lower()` and `upper()` Methods
+## The `lower()`, `upper()` and `capitalize()` Methods
 
-These methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
+The `lower()` and `upper()` methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
 
 The `lower()` method converts all uppercase characters in the string to their lowercase equivalents, while leaving any existing lowercase characters unchanged. The method has the following syntax:
 
@@ -366,6 +366,13 @@ print(new_string) # Output: HELLO WORLD
 ```
 
 In this example, the `upper()` method is used to convert all the lowercase characters in the `string` variable to uppercase. The resulting uppercase string is then printed out using the print() function.
+
+The `capitalize()` method only capitalizes the first letter of the string, and leaves the rest of the letters in lowercase. Here's an example:
+
+```python
+string = "hello world"
+capitalized_string = string.capitalize()
+print(capitalized_string) # Output: Hello world
 
 ## The `string.find()` Function
 
@@ -491,7 +498,7 @@ print(new_unicode_string) # Output: Hello, World! 🌍
 
 In this example, the `decode` method is used to convert the byte string back to a Unicode string encoded in UTF-8 format. The resulting `new_unicode_string` variable contains the original string.
 
-## `replace()` Method
+## The `replace()` Method
 
 In Python, strings are immutable, which means that you cannot change a string once it has been created. However, you can create a new string that contains a modified version of the original string.
 
@@ -619,7 +626,7 @@ or double quotes.
 
 Note that any whitespace, including newlines, in the triple-quoted string will be included in the string. If you want to exclude the whitespace at the beginning or end of a line, you can use string methods like strip() or rstrip().
 
-## `sorted()` Method
+## The `sorted()` Method
 
 You can sort a string using the `sorted()` function, which returns a sorted list of characters from the input string. You can then join the sorted list to create a sorted string.
 
@@ -633,7 +640,7 @@ print(sorted_s)  # Output: " dehllloorw"
 
 In the example above, `s` is the input string. We use the `sorted()` function to sort the characters of the string and get a sorted list of characters. We then use the `join()` method to join the sorted list of characters back into a string. The resulting string is stored in the `sorted_s` variable, which is then printed to the console.
 
-## `count()` Method
+## The `count()` Method
 
 You can use the built-in `count` method to count the number of occurrences of a substring within a string.
 
