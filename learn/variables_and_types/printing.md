@@ -25,6 +25,7 @@ Python also allows printing multiple variables:
 ```python
 # Print multiple items
 print("The answer is:", 42)
+```
 
 ## Formatting
 
