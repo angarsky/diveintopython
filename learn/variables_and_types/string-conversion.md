@@ -134,3 +134,28 @@ hex_string = ''.join([hex(ord(c))[2:] for c in string])
 
 print(hex_string) #Output: 48656c6c6f2c20776f726c6421
 ```
+
+# The `join()` Method
+
+This method allows you to join elements of an iterable (such as a list, tuple, or string) into a single string using a separator string.
+
+The syntax for using the `join()` method is as follows:
+
+```python
+separator_string.join(iterable)
+```
+
+Here, `separator_string` is the string that you want to use to separate the elements in the iterable, and `iterable` is the sequence of elements that you want to join.
+
+For example, if you have a list of strings and you want to join them into a single string separated by commas, you could use the following code:
+
+```python
+my_list = ['mango', 'pineapple', 'banana']
+separator = ', '
+result = separator.join(my_list)
+print(result)  # Output: "mango, pineapple, banana"
+```
+
+In this example, the `join()` method is called on the separator string, with the `my_list` list as the iterable argument. The resulting string is assigned to the result variable and printed to the console.
+
+Note that the `join()` method can also be used with other types of iterables, such as tuples or sets. Additionally, you can use an empty string as the separator if you want to join the elements without any separation.
