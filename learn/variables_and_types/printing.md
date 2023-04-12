@@ -1,4 +1,5 @@
 Printing refers to the process of displaying the output of a program on the console or terminal. It is an essential operation that allows you to communicate with the user or to debug your code by showing the values of variables, the results of calculations, or other information.
+There is also such a thing as formatting, which is often used in printing. String formatting (also known as interpolation) is the process of inserting variables or values into a string.
 
 ## Printing
 
@@ -19,12 +20,19 @@ print(43)
 print(3.14)
 ```
 
-Python also allows printing strings with variables and printing multiple variables:
+Python also allows printing multiple variables:
 
 ```python
 # Print multiple items
 print("The answer is:", 42)
 
+## Formatting
+
+There are several ways to format strings in Python, let's go through this one by one with examples.
+
+- Using f-strings: This method involves using placeholders in a string, which are then replaced by values inside curly braces `{}` preceded by the letter `f`. For example:
+
+```python
 # Print using formatted strings
 name = "Tom"
 age = 32
@@ -35,7 +43,7 @@ print(f"My name is {name} and I am {age} years old.")
 
 With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces {}. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
 
-Another option for formatted printing is the use of curly braces. You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+- Using the format() method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
 
 ```python
 name = "John"
@@ -48,5 +56,15 @@ print("My name is {}, I'm {} years old, and I live in {}.".format(name, age, loc
 This code will output: `My name is John, I'm 30 years old, and I live in New York.`
 
 In this example, the string `"My name is {}, I'm {} years old, and I live in {}."` contains three curly brackets `{}` to indicate where the variable values should be inserted. The `format()` method is called on the string, and the variables `name`, `age`, and `location` are passed as arguments to the method.
+
+- Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
+
+```python
+name = "John"
+age = 25
+print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
+```
+
+Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
 
 You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream. You can learn more about these options in the Python documentation.
