@@ -737,29 +737,6 @@ print(numbers)  # Output: ['3', '2']
 
 You can also use other regular expression functions in the `re` module, such as `re.match()` or `re.search()`, depending on your specific needs.
 
-## Raw String
-
-A raw string is a string that is prefixed with the letter `"r"` or `"R"`. When a string is defined as a raw string, it tells Python not to interpret backslashes () as escape sequences. Instead, backslashes are treated as regular characters.
-
-Here's an example:
-
-```python
-path = r'C:\Users\John\Documents\file.txt'
-print(path)
-```
-
-In this example, the `"r"` prefix tells Python that the backslashes in the string are to be treated as regular characters and not escape sequences. So the output will be:
-
-```python
-C:\Users\John\Documents\file.txt
-```
-
-Note that if you don't use a raw string prefix and instead try to use backslashes as escape sequences, you'll get a syntax error if the escape sequence is not recognized. For example:
-
-```python
-path = 'C:\Users\John\Documents\file.txt'  # This will give a syntax error
-```
-
 ## String Template
 
 String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
