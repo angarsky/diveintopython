@@ -272,22 +272,6 @@ print(s.endswith(("Python", "language")))  # True (checking multiple suffixes)
 
 In both methods, you can pass a tuple of prefixes or suffixes to check multiple possibilities. The `start` and `end` parameters are optional and can be used to search only a part of the string.
 
-## Method `isnumeric()`
-
-This is a built-in method in Python that returns `True` if all characters in a string are numeric characters, and `False` otherwise.
-
-Here's an example:
-
-```python
-s1 = "12345"    # All characters are numeric
-s2 = "12345a"   # Last character is not numeric
-
-print(s1.isnumeric())    # Output: True
-print(s2.isnumeric())    # Output: False
-```
-
-In the above example, the `isnumeric()` method is called on two different strings `s1` and `s2`. `s1` contains only numeric characters, so `isnumeric()` returns `True`. However, `s2` contains a non-numeric character `a`, so `isnumeric()` returns `False`.
-
 ## The `split()` Method
 
 It is also a built-in method in Python that is used for splitting and parsing a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
