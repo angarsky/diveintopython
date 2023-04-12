@@ -89,40 +89,6 @@ new_string = my_string[:-1]
 print(new_string)  # Output: "Hello World"
 ```
 
-## String Formatting
-
-String formatting (also known as interpolation) is the process of inserting variables or values into a string. There are several ways to format strings in Python:
-
-- Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
-
-```python
-name = "John"
-age = 25
-print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
-```
-
-Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
-
-- Using the `format()` method: This method involves using placeholders in a string, which are then replaced by values using the `format()` method. For example:
-
-```python
-name = "John"
-age = 25
-print("My name is {} and I'm {} years old.".format(name, age)) # Output: My name is John and I'm 25 years old.
-```
-
-Here, the placeholders `{}` are replaced by values in the order they appear in the `format()` method.
-
-- Using f-strings: This method involves using placeholders in a string, which are then replaced by values inside curly braces `{}` preceded by the letter `f`. For example:
-
-```python
-name = "John"
-age = 25
-print(f"My name is {name} and I'm {age} years old.") # Output: My name is John and I'm 25 years old.
-```
-
-Here, the placeholders `{}` are replaced by values inside the curly braces `{}` preceded by the letter `f`.
-
 ## String Subset
 
 To check if a Python string contains a specific substring, you can use the `in` keyword or the `find()` method.
