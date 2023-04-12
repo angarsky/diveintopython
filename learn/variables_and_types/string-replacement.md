@@ -1,4 +1,4 @@
-Quite often we need to replace one or more occurrences of a particular substring or character within a string with a different substring or character. This is a commonly used operation in computer programming and text processing, as it allows for the manipulation of text data in a flexible and efficient way.
+Quite often we need to replace one or more occurrences of a particular substring or character within a string with a different substring or character. This is a commonly used operation in computer programming and text processing, as it allows for the manipulation of text data in a flexible and efficient way. Here are some methods which can help with it.
 
 ## String Substitution
 
