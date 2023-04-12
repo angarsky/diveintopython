@@ -15,32 +15,6 @@ print(str[0])   # Output: "H"
 print(str[7])   # Output: "W"
 ```
 
-## Convert to String
-
-To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples how to cast data:
-
-```python
-# convert an integer to a string
-num = 42
-str_num = str(num)
-print(str_num)  # outputs "42"
-print(type(str_num))  # outputs "<class 'str'>"
-
-# convert a float to a string
-pi = 3.14159
-str_pi = str(pi)
-print(str_pi)  # outputs "3.14159"
-print(type(str_pi))  # outputs "<class 'str'>"
-
-# convert a boolean to a string
-flag = True
-str_flag = str(flag)
-print(str_flag)  # outputs "True"
-print(type(str_flag))  # outputs "<class 'str'>"
-```
-
-Note that if you try to convert an object that doesn't have a defined string representation, you may get a `TypeError` exception.
-
 ## String Substitution
 
 The `replace()` method is used to replace a specific substring with a new substring in a given string. You can also use this method to remove a specific character or substring from a string. The syntax for this method is:
@@ -139,72 +113,6 @@ print(new_string) # Output: "hello world  "
 
 In this case, only the leading spaces were removed, and the trailing spaces remained. Similarly, if you use `rstrip()` instead of `lstrip()`, only the trailing spaces would be removed.
 
-## String to List Conversion
-
-To convert a string to a list of its individual letters in Python, you can use the built-in `list()` function. Here's an example:
-
-```python
-my_string = "hello"
-letters_list = list(my_string)
-print(letters_list)
-```
-
-This will output:
-
-```python
-['h', 'e', 'l', 'l', 'o']
-```
-
-Alternatively, you could use a loop to iterate over the string and append each letter to a new list:
-
-```python
-my_string = "hello"
-letters_list = []
-for letter in my_string:
-    letters_list.append(letter)
-print(letters_list)
-```
-
-This will also output:
-
-```python
-['h', 'e', 'l', 'l', 'o']
-```
-
-## String to Boolean Conversion
-
-You can convert a string to a boolean value using the built-in `bool()` function.
-
-By default, the following strings are considered as `True`:
-
-- Any non-empty string
-- The string "True" (case-insensitive)
-
-On the other hand, the following strings are considered as `False`:
-
-- An empty string
-- The string "False" (case-insensitive)
-- Any numeric value equal to 0 (i.e., "0" or "0.0")
-
-Here are some examples:
-
-```python
->>> bool("hello")
-True
->>> bool("")
-False
->>> bool("True")
-True
->>> bool("false")
-False
->>> bool("0")
-False
->>> bool("1")
-True
-```
-
-If you have a string that is not one of the above values and you want to treat it as a boolean, you can define your own rules for conversion using an `if` statement or a conditional expression.
-
 ## The `join()` Method
 
 This method allows you to join elements of an iterable (such as a list, tuple, or string) into a single string using a separator string.
@@ -229,29 +137,6 @@ print(result)  # Output: "mango, pineapple, banana"
 In this example, the `join()` method is called on the separator string, with the `my_list` list as the iterable argument. The resulting string is assigned to the result variable and printed to the console.
 
 Note that the `join()` method can also be used with other types of iterables, such as tuples or sets. Additionally, you can use an empty string as the separator if you want to join the elements without any separation.
-
-## Unicode to String
-
-In Python, you can convert a Unicode string to a regular string (also known as a byte string) using the `encode` method.
-
-Here's an example:
-
-```python
-unicode_string = "Hello, World! 🌍"
-byte_string = unicode_string.encode("utf-8")
-print(byte_string) # Output: b'Hello, World! \xf0\x9f\x8c\x8d'
-```
-
-In this example, the `encode` method is used to convert the `unicode_string` to a byte string encoded in UTF-8 format. The resulting `byte_string` variable contains the byte representation of the original string.
-
-Note that the `b` prefix in the output indicates that the value is a byte string, rather than a regular string. If you want to convert the byte string back to a regular string, you can use the decode method:
-
-```python
-new_unicode_string = byte_string.decode("utf-8")
-print(new_unicode_string) # Output: Hello, World! 🌍
-```
-
-In this example, the `decode` method is used to convert the byte string back to a Unicode string encoded in UTF-8 format. The resulting `new_unicode_string` variable contains the original string.
 
 ## Reading file into string
 
@@ -281,23 +166,3 @@ print(string_without_newline) # Output: This is a stringwith a newline character
 ```
 
 In the code above, we first define a string called `string_with_newline` which contains a newline character (`\n`). We then use the `replace()` method to replace all occurrences of the newline character with an empty string (`""`). The resulting string, `string_without_newline`, does not contain any newline characters. We then print the resulting string using the `print()` function.
-
-## String to Hex
-
-You can convert a string to its hexadecimal representation in Python using the `encode()` method and the `'hex'` encoding. Let's see how to encode with an example:
-
-```python
-string = "Hello, world!"
-hex_string = string.encode('hex')
-
-print(hex_string) # Output: 48656c6c6f2c20776f726c6421
-```
-
-In Python 3, the `hex()` method can be used to convert a string to its hexadecimal representation. Here's an example:
-
-```python
-string = "Hello, world!"
-hex_string = ''.join([hex(ord(c))[2:] for c in string])
-
-print(hex_string) #Output: 48656c6c6f2c20776f726c6421
-```
