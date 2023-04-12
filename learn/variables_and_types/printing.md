@@ -7,7 +7,7 @@ To print output in Python, you can use the `print()` function.
 
 The `print()` function takes one or more arguments separated by commas and displays them on the console or terminal.
 
-Let's look at an example of how to print a variable and string in Python:
+Let's look at examples of how to print a variable and string in Python:
 
 ```python
 # Print a string
