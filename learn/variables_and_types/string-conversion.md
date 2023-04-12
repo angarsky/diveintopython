@@ -135,7 +135,7 @@ hex_string = ''.join([hex(ord(c))[2:] for c in string])
 print(hex_string) #Output: 48656c6c6f2c20776f726c6421
 ```
 
-# The `join()` Method
+## The `join()` Method
 
 This method allows you to join elements of an iterable (such as a list, tuple, or string) into a single string using a separator string.
 
