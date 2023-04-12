@@ -25,7 +25,7 @@ print(file1.my_variable)
 
 In this case, we are importing the entire `file1.py` module using the import statement. Then we access the `my_variable` variable using the module name prefix `file1`.
 
-## Wxport a String to a File
+## Export a String to a File
 
 To write a string to a file in Python, you can use the built-in `open()` function in combination with the `write()` method. Here's an example:
 
