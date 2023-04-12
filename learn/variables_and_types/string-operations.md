@@ -645,41 +645,6 @@ In this example, we have a string `"Hello, world! This is a sample string."` and
 
 The output of this program will be `2`, because the substring `"is"` appears twice in the string.
 
-## Matching Strings
-
-Python allows you to match strings using regular expressions by importing the `re` module. Here's an example:
-
-```python
-import re
-
-# define the regular expression pattern
-pattern = r"hello"
-
-# define the string to search
-string = "Hello, world! Hello, Python!"
-
-# perform the search
-matches = re.findall(pattern, string, re.IGNORECASE)
-
-# print the matches
-print(matches) # Output: ['Hello', 'Hello']
-```
-
-In this example, the `re.findall()` function is used to find all occurrences of the `pattern` in the `string`. The `re.IGNORECASE` flag is used to make the search case-insensitive. The `matches` variable will contain a list of all matches found.
-
-You can also extract numbers from a string using `re.findall()`. Here's an example:
-
-```python
-import re
-
-text = "I have 3 apples and 2 oranges."
-numbers = re.findall('\d+', text)
-
-print(numbers)  # Output: ['3', '2']
-```
-
-You can also use other regular expression functions in the `re` module, such as `re.match()` or `re.search()`, depending on your specific needs.
-
 ## String Template
 
 String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
