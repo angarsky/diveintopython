@@ -44,7 +44,7 @@ print(f"My name is {name} and I am {age} years old.")
 
 With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces {}. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
 
-- Using the format() method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+- Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
 
 ```python
 name = "John"
