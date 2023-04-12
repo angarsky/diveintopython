@@ -388,6 +388,7 @@ The `capitalize()` method only capitalizes the first letter of the string, and l
 string = "hello world"
 capitalized_string = string.capitalize()
 print(capitalized_string) # Output: Hello world
+```
 
 ## The `string.find()` Function
 
@@ -524,7 +525,7 @@ In this example, the `join()` method is called on the separator string, with the
 
 Note that the `join()` method can also be used with other types of iterables, such as tuples or sets. Additionally, you can use an empty string as the separator if you want to join the elements without any separation.
 
-## Inicode to String
+## Unicode to String
 
 In Python, you can convert a Unicode string to a regular string (also known as a byte string) using the `encode` method.
 
