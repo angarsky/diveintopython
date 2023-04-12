@@ -632,14 +632,15 @@ You can use the built-in `count` method to count the number of occurrences of a 
 
 Here's a counter of substring `"is"`:
 
-python
-Copy code
+```python
 string = "Hello, world! This is a sample string."
 substring = "is"
 
 count = string.count(substring)
 
 print(count) # Output: 2
+```
+
 In this example, we have a string "Hello, world! This is a sample string." and we want to count the number of occurrences of the substring "is". We use the count method to count the number of times the substring appears in the string.
 
 The output of this program will be 2, because the substring "is" appears twice in the string.
