@@ -645,30 +645,6 @@ In this example, we have a string `"Hello, world! This is a sample string."` and
 
 The output of this program will be `2`, because the substring `"is"` appears twice in the string.
 
-## Random String Generation
-
-To generate a random string in Python, you can use the `random` module along with the `string` module. Here's an example:
-
-```python
-import random
-import string
-
-# define the length of the random string
-length = 10
-
-# define the pool of characters to choose from
-characters = string.ascii_letters + string.digits
-
-# generate the random string
-random_string = ''.join(random.choice(characters) for i in range(length))
-
-print(random_string)
-```
-
-In this example, `length` defines the length of the random string to generate. The `string.ascii_letters` constant contains all ASCII letters (both lowercase and uppercase), and `string.digits` contains all digits. These two constants are concatenated together to form the `characters` pool.
-
-The `random.choice()` function is used to randomly select a character from the `characters` pool, and the resulting characters are concatenated together using the `join()` function. The final result is a random string of length `length`.
-
 ## Matching Strings
 
 Python allows you to match strings using regular expressions by importing the `re` module. Here's an example:
