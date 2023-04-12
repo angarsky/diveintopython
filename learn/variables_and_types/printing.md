@@ -69,3 +69,32 @@ print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is 
 ```
 
 Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
+
+## String Template
+
+String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
+
+To use string templates in Python, you can use the `string.Template` class. Here's an example:
+
+```python
+from string import Template
+
+name = "Alice"
+age = 30
+
+# Create a string template with placeholders for the name and age
+template_str = "My name is ${name} and I am ${age} years old."
+
+# Create a template object from the template string
+template = Template(template_str)
+
+# Substitute the values for the placeholders
+result = template.substitute(name=name, age=age)
+
+print(result)  # Output: My name is Alice and I am 30 years old.
+```
+
+In the above example, we first create a string template with placeholders for the name and age using the `${}` syntax. We then create a `Template` object from the template string and use the `substitute` method to replace the placeholders with actual values. Finally, we print the resulting string.
+
+Note that you need to pass the values for the placeholders as keyword arguments to the `substitute` method.
+
