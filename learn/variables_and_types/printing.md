@@ -27,6 +27,8 @@ Python also allows printing multiple variables:
 print("The answer is:", 42)
 ```
 
+You can also use various options with the print() function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
+
 ## Formatting
 
 There are several ways to format strings in Python, let's go through this one by one with examples.
@@ -67,5 +69,3 @@ print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is 
 ```
 
 Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
-
-You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream. You can learn more about these options in the Python documentation.
