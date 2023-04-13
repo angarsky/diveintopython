@@ -3,7 +3,7 @@ There is also such a thing as formatting, which is often used in printing. Strin
 
 ## Printing
 
-To print output in Python, you can use the `print()` function.
+To print variable in Python, you can use the `print()` function.
 
 The `print()` function takes one or more arguments separated by commas and displays them on the console or terminal.
 
