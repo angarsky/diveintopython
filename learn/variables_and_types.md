@@ -88,7 +88,7 @@ b = False
 
 ### String Type
 
-Strings are used to represent text data in Python. They are enclosed in quotes (single or double) and can contain letters, numbers, and special characters.
+Strings (also known as string literal) are used to represent text data in Python. They are enclosed in quotes (single or double) and can contain letters, numbers, and special characters. Let's see what a string is with an example:
 
 ```python
 a = "Hello, World!"
