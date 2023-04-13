@@ -1,4 +1,4 @@
-Python provides various operations and methods for working with data and performing various tasks. Let's review the most popular which relate to all vriable types.
+Python provides various operations and methods for working with data and performing various tasks. Let's review the most popular which relate to all variable types.
 
 ## Type Definition
 
