@@ -1,6 +1,6 @@
 There are some methods in Python which are commonly used to normalize string inputs, to convert strings to uppercase or lowercase, and to capitalize the first letter of a sentence or word. These methods can be particularly useful when dealing with user input or when working with text data that needs to be standardized or formatted consistently.
 
-## The `lower()`, `upper()` and `capitalize()` Methods
+## String to lowercase
 
 The `lower()` and `upper()` methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
 
@@ -22,6 +22,8 @@ print(new_string) # Output: hello world
 
 In this example, the `lower()` method is used to convert all the uppercase characters in the string variable to lowercase. The resulting lowercase string is then printed out using the `print()` function.
 
+## String to uppercase
+
 Similarly, the `upper()` method converts all lowercase characters in the string to their uppercase equivalents, while leaving any existing uppercase characters unchanged. The method has the following syntax:
 
 ```python
@@ -39,6 +41,8 @@ print(new_string) # Output: HELLO WORLD
 ```
 
 In this example, the `upper()` method is used to convert all the lowercase characters in the `string` variable to uppercase. The resulting uppercase string is then printed out using the print() function.
+
+## Capitalize a string in Python
 
 The `capitalize()` method only capitalizes the first letter of the string, and leaves the rest of the letters in lowercase. Here's an example:
 
