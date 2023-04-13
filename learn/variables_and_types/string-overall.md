@@ -60,7 +60,7 @@ In both cases, the `len()` function returns the length of the string, which is 0
 
 In Python, you can use various comparison operators to compare strings. Here are some examples:
 
-== operator: This operator checks if two strings are equal.
+The `==` operator: checks if two strings are equal.
 
 ```python
 str1 = "mango"
@@ -73,7 +73,7 @@ else:
 # Output: The two strings are not equal.
 ```
 
-!= operator: This operator checks if two strings are not equal.
+The `!=` operator: checks if two strings are not equal.
 
 ```python
 str1 = "mango"
@@ -86,7 +86,7 @@ else:
 # Output: The two strings are not equal.
 ```
 
-< operator: This operator checks if the first string is less than the second string in lexicographical order.
+The `<` operator: checks if the first string is less than the second string in lexicographical order.
 
 ```python
 str1 = "mango"
@@ -99,7 +99,7 @@ else:
 # Output: The first string comes before the second string.
 ```
 
-> operator: This operator checks if the first string is greater than the second string in lexicographical order.
+The `>` operator: checks if the first string is greater than the second string in lexicographical order.
 
 ```python
 str1 = "mango"
@@ -112,7 +112,7 @@ else:
 # Output: The second string comes after the first string.
 ```
 
-<= operator: This operator checks if the first string is less than or equal to the second string in lexicographical order.
+The `<=` operator: checks if the first string is less than or equal to the second string in lexicographical order.
 
 ```python
 str1 = "mango"
@@ -125,7 +125,7 @@ else:
 # Output: The first string comes before or is equal to the second string.
 ```
 
->= operator: This operator checks if the first string is greater than or equal to the second string in lexicographical order.
+The `>=` operator: checks if the first string is greater than or equal to the second string in lexicographical order.
 
 ```python
 str1 = "mango"
