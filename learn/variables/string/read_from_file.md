@@ -1,5 +1,3 @@
-## Reading file into string
-
 To read a file into a string in Python, you can use the built-in `open()` function to open the file and read its contents using the `read()` method. Here is an example:
 
 ```python
