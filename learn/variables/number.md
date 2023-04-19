@@ -1,0 +1,1 @@
+Python supports several numeric data types that are used for various mathematical operations in programming. These data types include integers, floating-point numbers, and complex numbers. Understanding these data types and their characteristics is essential for any programmer who wants to work with numeric data in Python.
