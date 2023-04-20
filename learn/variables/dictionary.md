@@ -63,7 +63,7 @@ print(my_dict['apple'])  # Output: 3
 print(my_dict['banana']) # Output: 5
 ```
 
-## Dictionary of Dictionaries in Python
+## Dictionary of Dictionaries
 
 You can nest a dictionary into a dictionary by simply using a dictionary as a value in another dictionary. Here's an example:
 
