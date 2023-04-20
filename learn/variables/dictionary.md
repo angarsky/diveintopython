@@ -20,7 +20,7 @@ student = {
 
 ## Creating a Dictionary
 
-Let's take a look at how to create a dictionary in Python. You can do it using curly braces `{}` or by using the `dict()` function. Here are some examples:
+Let's take a look at how to create or initialize a dictionary in Python. You can do it using curly braces `{}` or by using the `dict()` function. Here are some examples:
 
 - Using curly braces:
 
@@ -49,6 +49,19 @@ mixed_dict = dict(name='John', age=30, scores=[85, 90, 95])
 ```
 
 In both cases, the dictionary is created with a set of key-value pairs. The keys must be unique and immutable data types (such as strings, numbers, or tuples), while the values can be any data type, including lists, dictionaries, and other objects.
+
+## Dictionary Access in Python
+
+You can access a dictionary using its keys to retrieve the corresponding values. Here's an example:
+
+```python
+# Creating a dictionary
+my_dict = {'apple': 3, 'banana': 5, 'orange': 2}
+
+# Accessing a value using its key
+print(my_dict['apple'])  # Output: 3
+print(my_dict['banana']) # Output: 5
+```
 
 ## Dictionary of Dictionaries in Python
 
@@ -116,4 +129,3 @@ people = {
 print(people["person1"].name)   # outputs "Alice"
 print(people["person2"].age)    # outputs 30
 ```
-
