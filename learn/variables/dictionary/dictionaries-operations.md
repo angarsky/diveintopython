@@ -24,6 +24,25 @@ print(my_dict) # Output: {'name': 'John'}.
 
 If the key already exists in the dictionary, its value will be updated to the new value. If the key does not exist, a new key-value pair will be added to the dictionary.
 
+## Deleting an Element from a Dictionary
+
+To delete an element from a dictionary in Python, you can use the `del` keyword along with the dictionary key.
+
+Here's an example:
+
+```python
+# create a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# delete an element with key 'b'
+del my_dict['b']
+
+# print the updated dictionary
+print(my_dict) # Output: {'a': 1, 'c': 3}
+```
+
+In the example above, the del keyword is used to delete the key-value pair with key `'b'` from the dictionary `my_dict`. The resulting dictionary only contains the elements with keys `'a'` and `'c'`.
+
 ### The `update()` Method
 
 The `update()` method takes another dictionary as an argument and adds its key-value pairs to the original dictionary. If a key already exists in the original dictionary, its value will be updated to the value from the new dictionary.
