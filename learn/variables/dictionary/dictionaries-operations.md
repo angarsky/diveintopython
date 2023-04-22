@@ -1,4 +1,4 @@
-To get the most from dictionaries you need to know to know at least basic operations which can be performed on it. Let's dive into most common and widely used functional to get the flavour of its possibilities.
+Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's review some common operations and methods you can perform on dictionaries in Python.
 
 ## Adding an Element to a Dictionary
 
@@ -59,3 +59,67 @@ print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 ```
 
 > Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
+
+## Dictionary Iteration in Python
+
+We will show you how to iterate over a dictionary in Python using a `for` loop. Here are a few ways of iterating:
+
+- Iterate over the keys:
+
+```python
+# create a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# iterate over the keys and print them
+for key in my_dict:
+    print(key)
+```
+
+Output:
+
+```python
+a
+b
+c
+```
+
+- Iterate over the values:
+
+```python
+# create a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# iterate over the values and print them
+for value in my_dict.values():
+    print(value)
+```
+
+Output:
+
+```python
+1
+2
+3
+```
+
+- Iterate over the key-value pairs:
+
+```python
+# create a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# iterate over the key-value pairs and print them
+for key, value in my_dict.items():
+    print(key, value)
+```
+
+Output:
+
+```python
+a 1
+b 2
+c 3
+```
+
+In the third example, we use the `items()` method of the dictionary to get a list of the key-value pairs. We then use tuple unpacking to extract the key and value from each pair and print them.
+
