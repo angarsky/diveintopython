@@ -1,0 +1,1 @@
+In Python, dictionaries are one of the most commonly used data structures, as they allow for fast and efficient lookups of values based on keys. While dictionaries are commonly created manually in Python code, it is often useful to convert data from other formats, such as lists or JSON, into dictionaries. Let's review the examples of conversion
