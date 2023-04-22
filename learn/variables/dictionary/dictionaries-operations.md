@@ -1,4 +1,4 @@
-Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's review some common operations and methods you can perform on dictionaries in Python.
+To get the most from dictionaries you need to know to know at least basic operations which can be performed on it. Let's dive into most common and widely used functional to get the flavour of its possibilities.
 
 ## Adding an Element to a Dictionary
 
