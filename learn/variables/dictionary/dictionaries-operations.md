@@ -60,7 +60,7 @@ print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 > Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
 
-## Dictionary Iteration in Python
+## Dictionary Iteration or Looping in Python
 
 We will show you how to iterate over a dictionary in Python using a `for` loop. Here are a few ways of iterating:
 
@@ -122,4 +122,6 @@ c 3
 ```
 
 In the third example, we use the `items()` method of the dictionary to get a list of the key-value pairs. We then use tuple unpacking to extract the key and value from each pair and print them.
+
+We used `for` in our examples, but, of course, you can use also `while` to python loop through a dictionary in Python.
 
