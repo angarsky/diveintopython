@@ -50,6 +50,19 @@ mixed_dict = dict(name='John', age=30, scores=[85, 90, 95])
 
 In both cases, the dictionary is created with a set of key-value pairs. The keys must be unique and immutable data types (such as strings, numbers, or tuples), while the values can be any data type, including lists, dictionaries, and other objects.
 
+## Deleting a Dictionary
+
+In Python, you can delete a dictionary using the `del` keyword followed by the dictionary variable name. Here's an example:
+
+```python
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+del my_dict
+```
+
+In the above example, we created a dictionary `my_dict` with two key-value pairs. The `del` keyword is used to delete the dictionary by specifying the variable name `my_dict`.
+
+After executing the del statement, the dictionary `my_dict` will be completely removed from memory, and any attempts to access it will result in a `NameError` because the variable no longer exists.
+
 ## Dictionary Access in Python
 
 You can access a dictionary using its keys to retrieve the corresponding values. Here's an example:
