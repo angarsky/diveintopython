@@ -1,5 +1,32 @@
 In Python, dictionaries are one of the most commonly used data structures, as they allow for fast and efficient lookups of values based on keys. While dictionaries are commonly created manually in Python code, it is often useful to convert data from other formats, such as lists or JSON, into dictionaries. Let's review the examples of conversion
 
+## Dictionary Creation using Variables
+
+Let's look at the example of how to convert variables into a dictionary in Python:
+
+```python
+# define variables
+name = "John"
+age = 25
+gender = "male"
+
+# create dictionary
+my_dict = {
+    "name": name,
+    "age": age,
+    "gender": gender
+}
+
+# print dictionary
+print(my_dict)
+```
+
+In this example, we define three variables: `name`, `age`, and `gender`. Then, we create a dictionary called `my_dict` and assign each variable to a key in the dictionary. Finally, we print the dictionary to verify that it contains the correct key-value pairs. The output should be:
+
+```python
+{'name': 'John', 'age': 25, 'gender': 'male'}
+```
+
 ## List to Dictionary Conversion
 
 To convert a list to a dictionary in Python, you can use the `dict()` constructor function. The list should contain tuples where each tuple contains a key-value pair. Here is an example:
