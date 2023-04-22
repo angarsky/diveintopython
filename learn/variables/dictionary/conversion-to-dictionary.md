@@ -12,7 +12,7 @@ print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
 
 In this example, the list `my_list` contains three tuples, each of which represents a key-value pair. The `dict()` constructor function is used to convert the list into a dictionary, and the resulting dictionary is stored in the variable `my_dict`. The output shows the contents of the resulting dictionary.
 
-## List to Dictionary Conversion
+## String to Dictionary Conversion
 
 You can convert a string to a dictionary in Python using the `json` module, which is built-in to Python.
 
@@ -38,3 +38,26 @@ Output:
 ```
 
 In this example, the `json.loads()` method is used to convert the string to a dictionary. The resulting dictionary is stored in the `dictionary` variable and then printed.
+
+## Tuple to Dictionary Conversion
+
+In Python, you can convert a tuple to a dictionary using the `dict()` function which we mentioned earlier. Here's an example:
+
+```python
+# Define a tuple
+my_tuple = ('apple', 'pineapple', 'cherry')
+
+# Convert the tuple to a dictionary
+my_dict = dict(zip(range(len(my_tuple)), my_tuple))
+
+# Print the dictionary
+print(my_dict)
+```
+
+Output:
+
+```python
+{0: 'apple', 1: 'pineapple', 2: 'cherry'}
+```
+
+In this example, the `zip()` function is used to combine the tuple elements with the indices of each element. Then, the `dict()` function is used to convert the zipped object into a dictionary.
