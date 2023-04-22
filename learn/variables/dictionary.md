@@ -61,7 +61,7 @@ del my_dict
 
 In the above example, we created a dictionary `my_dict` with two key-value pairs. The `del` keyword is used to delete the dictionary by specifying the variable name `my_dict`.
 
-After executing the del statement, the dictionary `my_dict` will be completely removed from memory, and any attempts to access it will result in a `NameError` because the variable no longer exists.
+After executing the `del` statement, the dictionary `my_dict` will be completely removed from memory, and any attempts to access it will result in a `NameError` because the variable no longer exists.
 
 ## Dictionary Access in Python
 
