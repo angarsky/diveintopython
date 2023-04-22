@@ -1,4 +1,4 @@
-Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's revew some common operations you can perform on dictionaries in Python.
+Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's revew some common operations and methods you can perform on dictionaries in Python.
 
 ## Adding an Element to a Dictionary
 
