@@ -76,6 +76,21 @@ print(my_dict['apple'])  # Output: 3
 print(my_dict['banana']) # Output: 5
 ```
 
+You can also get the value associated with a key in a dictionary using the `get()` method. Here's an example:
+
+```python
+# create a dictionary
+my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
+
+# get the value associated with the 'apple' key
+apple_value = my_dict.get('apple')
+
+# print the value
+print(apple_value) # Output: 1
+```
+
+If the key is not found in the dictionary, `get()` returns None by default.
+
 ## Dictionary of Dictionaries
 
 You can nest a dictionary into a dictionary by simply using a dictionary as a value in another dictionary. Here's an example:
