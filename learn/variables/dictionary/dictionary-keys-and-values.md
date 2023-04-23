@@ -19,7 +19,7 @@ Note that `keys()` returns a view object, which is a dynamic view on the diction
 
 ## Checking For the Key Presence
 
-In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a key is present in a dictionary. Here's an example:
+In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Here's an example:
 
 ```python
 # Creating a dictionary
