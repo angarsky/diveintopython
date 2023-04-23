@@ -200,3 +200,45 @@ apple : 1
 pineapple : 2
 orange : 3
 ```
+
+## Dictionary to JSON Conversion in Python
+
+You can use the built-in `json` module in Python to convert a dictionary to JSON format.
+
+Here is an example code snippet:
+
+```python
+import json
+
+# sample dictionary
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# convert dictionary to JSON
+json_obj = json.dumps(my_dict)
+
+# print the JSON object
+print(json_obj)
+```
+
+In this example, the `json.dumps()` function is used to convert the dictionary `my_dict` to a JSON object `json_obj`. The `print()` function is used to display the JSON object on the console.
+
+Output:
+
+```python
+{"name": "John", "age": 30, "city": "New York"}
+```
+
+You can also save the JSON object to a file by using the `json.dump()` function. Here is an example:
+
+```python
+import json
+
+# sample dictionary
+my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+
+# save dictionary to a JSON file
+with open('data.json', 'w') as f:
+    json.dump(my_dict, f)
+```
+
+In this example, the `json.dump()` function is used to save the dictionary `my_dict` to a file named `data.json`. The file is opened in write mode using the with statement.
