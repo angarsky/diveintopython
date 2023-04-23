@@ -87,3 +87,19 @@ print(my_dict)  # Output: {"a": 1, "c": 3}
 ```
 
 In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `pop()` method. The `pop()` method also returns the value associated with the deleted key, which can be useful if you need to perform some additional processing based on that value.
+
+## Conversion  of Dictionary Values to List
+
+You can use the `values()` method of a Python dictionary to get a list of its values.
+
+Here's an example:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+values_list = list(my_dict.values())
+print(values_list) # Output: [1, 2, 3]
+```
+
+In the above code, we create a dictionary `my_dict` with three key-value pairs. We then call the `values()` method on the dictionary to get a view object of its values, and convert it into a list using the `list()` constructor. Finally, we print the resulting list of values.
+
+Note that the order of the values in the list is not guaranteed to be the same as the order of the keys in the dictionary, since dictionaries are unordered in Python.
