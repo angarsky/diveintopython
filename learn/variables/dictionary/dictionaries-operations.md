@@ -24,6 +24,23 @@ print(my_dict) # Output: {'name': 'John'}.
 
 If the key already exists in the dictionary, its value will be updated to the new value. If the key does not exist, a new key-value pair will be added to the dictionary.
 
+### The `update()` Method
+
+The `update()` method takes another dictionary as an argument and adds its key-value pairs to the original dictionary. If a key already exists in the original dictionary, its value will be updated to the value from the new dictionary.
+
+Here's an example:
+
+```python
+my_dict = {'a': 1, 'b': 2}
+new_dict = {'c': 3, 'd': 4}
+
+my_dict.update(new_dict)
+
+print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+```
+
+> Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
+
 ## Deleting an Element from a Dictionary
 
 To delete an element from a dictionary in Python, you can use the `del` keyword along with the dictionary key.
@@ -42,23 +59,6 @@ print(my_dict) # Output: {'a': 1, 'c': 3}
 ```
 
 In the example above, the del keyword is used to delete the key-value pair with key `'b'` from the dictionary `my_dict`. The resulting dictionary only contains the elements with keys `'a'` and `'c'`.
-
-### The `update()` Method
-
-The `update()` method takes another dictionary as an argument and adds its key-value pairs to the original dictionary. If a key already exists in the original dictionary, its value will be updated to the value from the new dictionary.
-
-Here's an example:
-
-```python
-my_dict = {'a': 1, 'b': 2}
-new_dict = {'c': 3, 'd': 4}
-
-my_dict.update(new_dict)
-
-print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
-```
-
-> Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
 
 ## Dictionary Iteration or Looping in Python
 
