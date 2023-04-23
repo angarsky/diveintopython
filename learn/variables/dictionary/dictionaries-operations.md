@@ -125,3 +125,21 @@ In the third example, we use the `items()` method of the dictionary to get a lis
 
 We used `for` in our examples, but, of course, you can use also `while` to python loop through a dictionary in Python.
 
+## Merging Dictionaries in Python
+
+You can merge two dictionaries using the `update()` method which we mentioned earlier. The `update()` method adds the key-value pairs from one dictionary into another dictionary. If a key already exists in the target dictionary, the corresponding value will be updated with the new value.
+
+Here's an example:
+
+```python
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+
+dict1.update(dict2)
+
+print(dict1) # Output: {'a': 1, 'b': 3, 'c': 4}
+```
+
+In this example, we have two dictionaries `dict1` and `dict2`. We use the `update()` method to merge `dict2` into `dict1`. The resulting dictionary is `{'a': 1, 'b': 3, 'c': 4}`.
+
+> Note: when the `update()` method is called, it modifies the dictionary on which it is called. If you don't want to modify the original dictionary, you can create a new dictionary and use the `update()` method to merge the two dictionaries.
