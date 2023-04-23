@@ -19,7 +19,7 @@ Note that `keys()` returns a view object, which is a dynamic view on the diction
 
 ## Checking For the Key Presence
 
-In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Here's an example:
+In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Let's see how to check if key exists in dictionary in Python:
 
 ```python
 # Creating a dictionary
@@ -45,3 +45,33 @@ The key 'country' is not present in the dictionary
 ```
 
 Note that the `in` operator checks if the key is present in the dictionary, not if the key's value is `None`. If you need to check for the presence of a key's value in a dictionary, you can use the `get()` method.
+
+## Deleting a Key from Dictionary
+
+In Python, you can delete a key from a dictionary using the del statement or the pop() method.
+
+Here is an example using the del statement to delete a key from a dictionary:
+
+```python
+Copy code
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+del my_dict["b"]
+
+print(my_dict)  # Output: {"a": 1, "c": 3}
+```
+
+In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `del` statement.
+
+Here is an example using the `pop()` method to delete a key from a dictionary:
+
+```python
+Copy code
+my_dict = {"a": 1, "b": 2, "c": 3}
+
+my_dict.pop("b")
+
+print(my_dict)  # Output: {"a": 1, "c": 3}
+```
+
+In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `pop()` method. The `pop()` method also returns the value associated with the deleted key, which can be useful if you need to perform some additional processing based on that value.
