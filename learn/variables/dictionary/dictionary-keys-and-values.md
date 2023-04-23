@@ -17,6 +17,18 @@ print(keys) # Output: dict_keys(['name', 'age', 'city'])
 
 Note that `keys()` returns a view object, which is a dynamic view on the dictionary's keys. This means that if the dictionary is modified, the view object will reflect those changes. If you need to work with the keys as a list, you can convert the view object to a list.
 
+## Converting Dictionary Keys to List
+
+To convert dictionary keys to list in Python, you can use the `keys()` method and the `list()` function. Here's an example:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+keys_list = list(my_dict.keys())
+print(keys_list)  # Output: ['a', 'b', 'c']
+```
+
+In the code above, `my_dict.keys()` returns a `dict_keys` object containing the keys of `my_dict`. The `list()` function is used to convert this object into a list, which is assigned to the variable `keys_list`. Finally, `keys_list` is printed to the console.
+
 ## Checking For the Key Presence
 
 In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Let's see how to check if key exists in dictionary in Python:
