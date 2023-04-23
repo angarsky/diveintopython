@@ -65,7 +65,7 @@ After executing the `del` statement, the dictionary `my_dict` will be completely
 
 ## Dictionary Access in Python
 
-You can access a dictionary using its keys to retrieve the corresponding values. Here's an example:
+You can get value from dictionary using its keys. Here's an example:
 
 ```python
 # Creating a dictionary
