@@ -44,4 +44,4 @@ The key 'name' is present in the dictionary
 The key 'country' is not present in the dictionary
 ```
 
-Note that the `in` operator checks if the key is present in the dictionary, not if the key's value is None. If you need to check for the presence of a key's value in a dictionary, you can use the `get()` method.
+Note that the `in` operator checks if the key is present in the dictionary, not if the key's value is `None`. If you need to check for the presence of a key's value in a dictionary, you can use the `get()` method.
