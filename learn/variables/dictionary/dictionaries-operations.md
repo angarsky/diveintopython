@@ -143,3 +143,60 @@ print(dict1) # Output: {'a': 1, 'b': 3, 'c': 4}
 In this example, we have two dictionaries `dict1` and `dict2`. We use the `update()` method to merge `dict2` into `dict1`. The resulting dictionary is `{'a': 1, 'b': 3, 'c': 4}`.
 
 > Note: when the `update()` method is called, it modifies the dictionary on which it is called. If you don't want to modify the original dictionary, you can create a new dictionary and use the `update()` method to merge the two dictionaries.
+
+## Ordered or Sorted Dictionary
+
+In Python 3.7 and later versions, dictionaries are guaranteed to maintain the order of their items as they were added. This means that the items in a dictionary will be iterated over in the same order as they were inserted.
+
+Prior to Python 3.7, dictionaries did not preserve the order of their items, and iterating over a dictionary would return its items in an arbitrary order.
+
+You can get dictionary sorted its keys or values. Dictionary ordering can be done using the built-in `sorted()` function, which returns a list of the dictionary's keys or values in sorted order. For example:
+
+```python
+my_dict = {'c': 3, 'a': 1, 'b': 2}
+
+# sort by keys
+sorted_dict_by_keys = {k: my_dict[k] for k in sorted(my_dict)}
+
+# sort by values
+sorted_dict_by_values = {k: v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
+```
+
+Note that in the above example, the original dictionary `my_dict` is not modified, and two new dictionaries `sorted_dict_by_keys` and `sorted_dict_by_values` are created instead.
+
+## Printing a Dictionary
+
+To print a dictionary in Python, you can use the built-in `print()` function. There are different ways to print a dictionary depending on how you want to format the output.
+
+Here is an example of how to print a dictionary:
+
+```python
+my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
+
+# Print the dictionary using the print() function
+print(my_dict)
+```
+
+This will output the following:
+
+```python
+{'apple': 1, 'pineapple': 2, 'orange': 3}
+```
+
+If you want to print each key-value pair of the dictionary on a separate line, you can use a `for` loop to iterate over the dictionary and print each item:
+
+```python
+my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
+
+# Print each key-value pair on a separate line
+for key, value in my_dict.items():
+    print(key, ":", value)
+```
+
+This will output the following:
+
+```python
+apple : 1
+pineapple : 2
+orange : 3
+```
