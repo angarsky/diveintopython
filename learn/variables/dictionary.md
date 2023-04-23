@@ -157,3 +157,17 @@ people = {
 print(people["person1"].name)   # outputs "Alice"
 print(people["person2"].age)    # outputs 30
 ```
+
+## Reverse of Keys and Values in Dictionary
+
+Let's review an example of how to reverse keys and values in dictionary in Python. For this purpose you can use a dictionary comprehension and swap the keys and values in each key-value pair:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+reversed_dict = {value: key for key, value in my_dict.items()}
+
+print(reversed_dict) # Output: {1: 'a', 2: 'b', 3: 'c'}
+```
+
+In the above code, we first define a dictionary `my_dict` with some key-value pairs. Then we create a new dictionary `reversed_dict` by using a dictionary comprehension. In the comprehension, we iterate over the `my_dict` dictionary using the `items()` method, which returns a list of (key, value) pairs. For each key-value pair, we swap the positions of the key and value, and add the new (value, key) pair to the `reversed_dict`.
