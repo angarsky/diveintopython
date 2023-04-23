@@ -41,11 +41,11 @@ print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 
 > Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
 
-## Deleting an Element from a Dictionary
+## Deleting an Element From a Dictionary
 
-To delete an element from a dictionary in Python, you can use the `del` keyword along with the dictionary key.
+To delete an item from a dictionary in Python, you can use the `del` keyword along with the dictionary key.
 
-Here's an example:
+Here is an example of how to remove a key from dictionary along with its value:
 
 ```python
 # create a dictionary
@@ -58,7 +58,7 @@ del my_dict['b']
 print(my_dict) # Output: {'a': 1, 'c': 3}
 ```
 
-In the example above, the del keyword is used to delete the key-value pair with key `'b'` from the dictionary `my_dict`. The resulting dictionary only contains the elements with keys `'a'` and `'c'`.
+In the example above, the `del` keyword is used to delete the key-value pair with key `'b'` from the dictionary `my_dict`. The resulting dictionary only contains the elements with keys `'a'` and `'c'`.
 
 ## Dictionary Iteration or Looping in Python
 
