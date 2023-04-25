@@ -25,7 +25,7 @@ student = {
 }
 ```
 
-## Creating a Dictionary in Python
+## How to Create a Dictionary in Python
 
 Let's take a look at how to create or initialize a dictionary in Python. You can do it using curly braces `{}` or by using the `dict()` function. Here are some examples:
 
