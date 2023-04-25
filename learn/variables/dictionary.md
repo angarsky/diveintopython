@@ -1,4 +1,11 @@
-Python provides several built-in collection types to store and manipulate data. Some of the commonly used collection types in Python are Lists, Tuples, Sets, Dictionaries, Arrays, Deques
+Python provides several built-in collection types to store and manipulate data. Some of the commonly used collection types in Python are:
+
+* Lists
+* Tuples
+* Sets
+* Dictionaries
+* Arrays
+* Deques
 
 There are also other less commonly used collection types in Python, such as namedtuples, default dictionaries, and heaps, which are specialized versions of the basic collection types listed above.
 
@@ -18,7 +25,7 @@ student = {
 }
 ```
 
-## Creating a Dictionary
+## Creating a Dictionary in Python
 
 Let's take a look at how to create or initialize a dictionary in Python. You can do it using curly braces `{}` or by using the `dict()` function. Here are some examples:
 
