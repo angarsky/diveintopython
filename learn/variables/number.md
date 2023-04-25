@@ -4,9 +4,9 @@ Python supports several numeric data types that are used for various mathematica
 
 In Python, there are several number types that can be used for different purposes. The most common number types in Python are:
 
-- Integer number (int): This is a whole number without any decimal point. For example, 1, 2, 3, etc. are integers.
-- Float number: This is a decimal number. For example, 1.2, 3.14159, etc. are floats.
-- Complex number: This is a number with a real and imaginary part. For example, 1 + 2j, 3.14 - 4j, etc. are complex numbers.
+- **Integer number** (int): This is a whole number without any decimal point. For example, `1`, `2`, `3`, etc. are integers.
+- **Float number**: This is a decimal number. For example, `1.2`, `3.14159`, etc. are floats.
+- **Complex number**: This is a number with a real and imaginary part. For example, `1 + 2j`, `3.14 - 4j`, etc. are complex numbers.
 
 Here are some examples of how to define these number types in Python:
 
@@ -63,7 +63,7 @@ print(rounded_x) # Output: 2
 
 In Python, there are several ways to format numbers. Here are some examples:
 
-- Using the built-in `format()` function:
+### Using the built-in `format()` function
 
 ```python
 x = 3.14159
@@ -71,7 +71,7 @@ print("{:.2f}".format(x))  # Output: 3.14
 ```
 The `"{:.2f}"` string inside the `format()` function tells Python to format the number as a float with 2 decimal places.
 
-- Using f-strings (Python 3.6 and above):
+### Using f-strings (Python 3.6 and above)
 
 ```python
 x = 3.14159
@@ -79,7 +79,7 @@ print(f"{x:.2f}")  # Output: 3.14
 ```
 The `f` before the string indicates that it is an f-string, and the `"{x:.2f}"` inside the string tells Python to format the value of `x` as a float with 2 decimal places.
 
-- Using the % operator:
+### Using the `%` operator:
 
 ```python
 x = 3.14159
@@ -92,7 +92,7 @@ The `%.2f` string inside the `%` operator tells Python to format the number as a
 
 You can check if a string is a number in Python using various methods. Here are a few examples:
 
-- Using `isnumeric()` method:
+### Using `isnumeric()` method
 
 ```python
 my_string = "123"
@@ -101,7 +101,7 @@ if my_string.isnumeric():
 else:
     print("String is not a number") # Output: String is a number
 
-- Using `isdigit()` method:
+### Using `isdigit()` method
 
 ```python
 my_string = "456"
@@ -111,7 +111,7 @@ else:
     print("String is not a number") # Output: String is a number
  ```
 
-- Using try-except block to convert string to float:
+### Using try-except block to convert string to float
 
 ```python
 my_string = "789.12"
@@ -122,7 +122,7 @@ except ValueError:
     print("String is not a number") # Output: String is a number
 ```
 
-Note that if the string contains a non-numeric character, the first two methods will return `False` and the third method will raise a `ValueError`.
+> Note that if the string contains a non-numeric character, the first two methods will return `False` and the third method will raise a `ValueError`.
 
 ## Check If a Number is Whole
 
