@@ -88,7 +88,7 @@ print(my_dict)  # Output: {"a": 1, "c": 3}
 
 In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `pop()` method. The `pop()` method also returns the value associated with the deleted key, which can be useful if you need to perform some additional processing based on that value.
 
-## Conversion  of Dictionary Values to List
+## Conversion of Dictionary Values to List
 
 You can use the `values()` method of a Python dictionary to get a list of its values.
 
