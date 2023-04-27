@@ -1,6 +1,6 @@
 A list in Python is a collection of values or items that are ordered, changeable, and allow duplicates. Lists are one of the most commonly used data structures in Python.
 
-## Creating a List in Python
+## Creating a List
 
 Here's an example of how to create a list in Python:
 
@@ -16,11 +16,17 @@ my_list = []
 
 Let's review some basic operations that can be performed on lists in Python.
 
-## Accessing Items In a List Using an Index
+## Indices of List in Python & Items Accessing
+
+The indices of a list are the numerical positions of the elements within the list. The index of the first element in a list is always 0, the index of the second element is 1, and so on. You can access the element at a specific index by using square brackets and specifying the index number.
+
+Here's an example:
 
 ```python
-my_list = [1, 2, 3, 4, 5]
-print(my_list[0]) # Output: 1
+my_list = ['apple', 'banana', 'orange']
+print(my_list[0])  # output: 'apple'
+print(my_list[1])  # output: 'banana'
+print(my_list[2])  # output: 'orange'
 ```
 
 ## Changing an Item In a List
