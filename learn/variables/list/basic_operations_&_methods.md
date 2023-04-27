@@ -1,4 +1,4 @@
-Python lists are versatile and commonly used data structures that allow you to store collections of elements, including numbers, strings, and even other lists. They support various basic operations and methods that enable you to manipulate and work with the list elements easily. Some of the commonly used operations and methods for lists include indexing, slicing, appending, inserting, deleting, sorting, and searching for elements. Let's review the basics step by step.
+Python lists are versatile and commonly used data structures that allow you to store collections of elements, including numbers, strings, and even other lists. They support various basic operations and methods that enable you to manipulate and work with the list elements easily. Some of the commonly used operations and methods for lists include indexing, slicing, appending, inserting, deleting, sorting, and searching for elements. Let's review the basic list methods and operations step by step.
 
 ## Defining an Index of an Element
 
