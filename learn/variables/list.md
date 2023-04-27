@@ -145,5 +145,22 @@ my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 sorted_list = sorted(my_list)
 
 print(sorted_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
 
 ## List Copying
+
+To copy a list in Python, you can use the slice operator or the `copy()` method. Here's an example using both methods:
+
+```python
+# Using the slice operator
+original_list = [1, 2, 3, 4, 5]
+new_list = original_list[:]
+print(new_list)  # Output: [1, 2, 3, 4, 5]
+
+# Using the copy() method
+original_list = [1, 2, 3, 4, 5]
+new_list = original_list.copy()
+print(new_list)  # Output: [1, 2, 3, 4, 5]
+```
+
+Both methods create a new list object that contains the same elements as the original list. However, it's important to note that if the original list contains mutable objects (e.g. other lists or dictionaries), the copy will only be shallow, meaning that the new list will contain references to the same mutable objects as the original list, rather than new copies of those objects. In such cases, you may need to use a deep copy to ensure that all nested objects are also copied.
