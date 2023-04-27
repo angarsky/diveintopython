@@ -22,6 +22,7 @@ The index() method raises a `ValueError` if the element is not found in the list
 
 ## List Comprehension in Python
 
+Let's review what is list comprehension in Python.
 List comprehension is a concise way to create a new list in Python by applying an expression to each element of an existing list or iterable. The basic syntax of a list comprehension is:
 
 ```python
@@ -119,5 +120,25 @@ def is_even(num):
 
 even_numbers = list(filter(is_even, numbers))
 print(even_numbers)  # Output: [2, 4, 6, 8, 10]
+```
+
+## List Concatenation or Joining
+
+In Python, you can concatenate two or more lists using the `+` operator. Here's an example of merging two lists:
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+concatenated_list = list1 + list2
+print(concatenated_list) # Output: [1, 2, 3, 4, 5, 6]
+```
+
+One more way of joining the lists is `extend()` method:
+
+```python
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.extend(list2)
+print(list1) # Output: [1, 2, 3, 4, 5, 6]
 ```
 
