@@ -101,3 +101,22 @@ if len(my_list) == 0:
 else:
     print("The list is not empty")
 ```
+
+## List Filtering in Python
+
+In Python, you can use the `filter()` function to filter a list, i.e. to create a new list that contains only the elements from an existing list that satisfy a certain condition.
+
+The `filter()` function takes two arguments: a function and an iterable. The function should return True or False for each element in the iterable. The `filter()` function then returns a new iterable that contains only the elements for which the function returned True.
+
+Here's an example that filters a list of numbers to only include the even ones:
+
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+def is_even(num):
+    return num % 2 == 0
+
+even_numbers = list(filter(is_even, numbers))
+print(even_numbers)  # Output: [2, 4, 6, 8, 10]
+```
+
