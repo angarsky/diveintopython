@@ -182,3 +182,12 @@ my_list = [1, 2, 3, 4]
 my_list.clear()
 print(my_list)  # Output: []
 ```
+
+## Deleting a List
+
+In Python, you can delete a list using the `del` keyword. Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+del my_list
+```
