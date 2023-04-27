@@ -89,6 +89,7 @@ To count the number of elements in a list in Python, you can use the `len()` fun
 my_list = [1, 2, 3, 4, 5]
 count = len(my_list)
 print(count) # Output: 5
+```
 
 You can also use the `len()` function to check if a Python list is empty, as there is no `isEmpty()` method in Python.
 
