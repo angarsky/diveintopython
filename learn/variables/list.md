@@ -114,3 +114,34 @@ my_list = [1, 2, 3, 4, 5]
 my_list.pop(0)
 print(my_list) # Output: [2, 3, 4, 5]
 ```
+
+## Python List Sorting
+
+You can sort a list in Python using the `sort()` method, which sorts the elements of the list in ascending order by default. Here's an example:
+
+```python
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+
+my_list.sort()
+
+print(my_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
+```
+
+If you want to sort the list in descending order, you can pass the `reverse=True` argument to the `sort()` method:
+
+```python
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+
+my_list.sort(reverse=True)
+
+print(my_list) # Output: [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
+```
+
+You can also use the built-in `sorted()` function to sort a list, which returns a new sorted list and leaves the original list unchanged:
+
+```python
+my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
+
+sorted_list = sorted(my_list)
+
+print(sorted_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
