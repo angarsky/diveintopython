@@ -4,6 +4,8 @@ Python lists are versatile and commonly used data structures that allow you to s
 
 A list is an ordered collection of elements that can be of any type. Each element in a list has a unique index, which represents its position in the list. List indexes start at 0, which means that the first element in a list has an index of 0, the second element has an index of 1, and so on.
 
+Let's look at ways of getting index of item in Python list.
+
 There is no direct method called `indexof()` for finding the index of an element in a list. However, you can use the `index()` method that is built into Python to get index of item in list.
 
 The `index()` method takes an element as an argument and returns the index of the first occurrence of that element in the list. For example, let's say you have a list of strings:
@@ -18,7 +20,7 @@ You can find the index of the first occurrence of the element 'banana' using the
 index_of_banana = my_list.index('banana')   # 1
 ```
 
-The index() method raises a `ValueError` if the element is not found in the list.
+The `index()` method raises a `ValueError` if the element is not found in the list.
 
 ## List Comprehension in Python
 
