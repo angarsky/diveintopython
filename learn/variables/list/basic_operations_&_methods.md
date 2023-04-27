@@ -34,17 +34,58 @@ Where:
 - `item` is the variable that represents each element of the iterable.
 - `iterable` is a sequence of elements, such as a list or a range.
 - `condition` is an optional expression that filters the elements based on a condition.
-- 
+
 For example, to create a new list with the squares of the numbers from 1 to 5, you can use a list comprehension like this:
 
-python
-Copy code
+```python
 squares = [x**2 for x in range(1, 6)]
 print(squares)  # Output: [1, 4, 9, 16, 25]
-You can also use an if statement to filter the elements based on a condition. For example, to create a new list with the even numbers from 1 to 10, you can use a list comprehension like this:
+```
 
-python
-Copy code
+You can also use an `if` statement to filter the elements based on a condition. For example, to create a new list with the even numbers from 1 to 10, you can use a list comprehension like this:
+
+```python
 evens = [x for x in range(1, 11) if x % 2 == 0]
 print(evens)  # Output: [2, 4, 6, 8, 10]
-List comprehension is a powerful tool in Python that allows you to create new lists in a concise and readable way. It can also be used with other data structures, such as sets and dictionaries.
+```
+
+## Determining the Length of a List
+
+In Python, you can get the length of a list by using the built-in `len()` function.
+
+Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+length = len(my_list)
+print(length)  # Output: 5
+```
+
+## List Reversing
+
+To reverse a list in Python, you can use the built-in `reverse()` method or slicing notation. Here are examples of both:
+
+Using the `reverse()` method:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+my_list.reverse()
+print(my_list) # Output: [5, 4, 3, 2, 1]
+```
+
+Using slicing notation:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+reversed_list = my_list[::-1]
+print(reversed_list) # Output: [5, 4, 3, 2, 1]
+```
+
+## Counting the Elements of a List
+
+To count the number of elements in a list in Python, you can use the `len()` function. Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+count = len(my_list)
+print(count) # Output: 5
