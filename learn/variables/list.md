@@ -20,7 +20,7 @@ Let's review some basic operations that can be performed on lists in Python.
 
 The indices of a list are the numerical positions of the elements within the list. The index of the first element in a list is always 0, the index of the second element is 1, and so on. You can access the element at a specific index by using square brackets and specifying the index number.
 
-Here's an example:
+Here's an example of indexing usage:
 
 ```python
 my_list = ['apple', 'banana', 'orange']
