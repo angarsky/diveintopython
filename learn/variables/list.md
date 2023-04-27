@@ -29,6 +29,8 @@ print(my_list[1])  # output: 'banana'
 print(my_list[2])  # output: 'orange'
 ```
 
+If the list index is out of range, Python will return an error.
+
 ## Changing an Item In a List
 
 ```python
@@ -97,7 +99,7 @@ my_list.remove(3)
 print(my_list) # Output: [1, 2, 4, 5]
 ```
 
-There is also the `del` statement, whic can be used to remove an item from a list. Here is an example:
+There is also the `del` statement, whic can be used to remove an item from a list. Here is an example of item deleting:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -105,7 +107,7 @@ del my_list[2]
 print(my_list)
 ```
 
-In this example, we have a list my_list with five elements. We want to remove the element with index 2, which has the value 3. We use the del statement and specify the index of the item we want to remove. After removing the element, we print the updated list.
+In this example, we have a list `my_list` with five elements. We want to remove the element with index 2, which has the value 3. We use the `del` statement and specify the index of the item we want to remove. After removing the element, we print the updated list.
 
 The output of this code will be:
 
