@@ -122,6 +122,12 @@ my_list = [1, 2, 3, 4, 5]
 my_list.pop(0)
 print(my_list) # Output: [2, 3, 4, 5]
 ```
+Let's also see on the example how to remove `None` from list in Python useing a list comprehension:
+
+```python
+original_list = [1, None, "hello", None, 5.7, None, "world"]
+new_list = [item for item in original_list if item is not None]
+print(new_list) # Output: [1, 'hello', 5.7, 'world']
 
 ## Python List Sorting
 
