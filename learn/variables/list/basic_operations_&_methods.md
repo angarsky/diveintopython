@@ -83,7 +83,7 @@ print(reversed_list) # Output: [5, 4, 3, 2, 1]
 
 ## Counting the Elements of a List
 
-To count the number of elements in a list in Python, you can use the `len()` function. Here's an example:
+To count the number of elements in a list in Python, you can use the `len()` function. Here's an example of size definition:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
