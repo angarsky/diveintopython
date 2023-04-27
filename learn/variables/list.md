@@ -164,3 +164,15 @@ print(new_list)  # Output: [1, 2, 3, 4, 5]
 ```
 
 Both methods create a new list object that contains the same elements as the original list. However, it's important to note that if the original list contains mutable objects (e.g. other lists or dictionaries), the copy will only be shallow, meaning that the new list will contain references to the same mutable objects as the original list, rather than new copies of those objects. In such cases, you may need to use a deep copy to ensure that all nested objects are also copied.
+
+## List Clearing
+
+In Python, list.clear() is a built-in method that removes all items from a list.
+
+Here's an example og how to clear a list:
+
+```python
+my_list = [1, 2, 3, 4]
+my_list.clear()
+print(my_list)  # Output: []
+```
