@@ -128,6 +128,7 @@ Let's also see on the example how to remove `None` from list in Python useing a 
 original_list = [1, None, "hello", None, 5.7, None, "world"]
 new_list = [item for item in original_list if item is not None]
 print(new_list) # Output: [1, 'hello', 5.7, 'world']
+```
 
 ## Python List Sorting
 
