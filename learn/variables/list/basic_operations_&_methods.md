@@ -244,3 +244,21 @@ You can also replace multiple elements using slicing. Here's an example:
 ```python
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 my_list[3:6] = [0] # Output: [0, 1, 2, 0, 6, 7, 8, 9]
+```
+
+## Lists Comparison
+
+In Python, you can compare two lists using the comparison operators (<, <=, >, >=, ==, !=). Here's an example of two lists comparing:
+
+```python
+list1 = [1, 2, 3]
+list2 = [1, 2, 4]
+
+if list1 == list2:
+    print("The two lists are equal")
+elif list1 < list2:
+    print("list1 is less than list2")
+else:
+    print("list1 is greater than list2")
+```
+
