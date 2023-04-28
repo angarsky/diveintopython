@@ -305,3 +305,20 @@ new_list = map(double, my_list)
 print(list(new_list))
 # Output: [2, 4, 6, 8, 10]
 ```
+
+## Splitting Elements of a List
+
+You can split a list in Python using the `split()` method, which is available for strings but not for lists. However, you can use slicing to extract a portion of a list and create a new list with those elements.
+
+Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+split_index = 5
+
+list_a = my_list[:split_index]
+list_b = my_list[split_index:]
+
+print(list_a) # Output: [1, 2, 3, 4, 5]
+print(list_b) # Output: [6, 7, 8, 9, 10]
+```
