@@ -262,3 +262,46 @@ else:
     print("list1 is greater than list2")
 ```
 
+## Checking If a List Contains an Element
+
+In Python, the list data type is a built-in type that represents a collection of ordered items. The `contains` method is not a built-in method for Python lists, but you can check whether an item is in a list using the `in` keyword or the `index` method.
+
+The `in` keyword returns True if the item is in the list and False otherwise. Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+if 3 in my_list:
+    print("3 is in the list")
+else:
+    print("3 is not in the list") # Output: 3 is in the list
+```
+
+The index method returns the index of the first occurrence of the item in the list. If the item is not in the list, it raises a `ValueError`. Here's an example:
+
+```python
+my_list = ["apple", "banana", "cherry"]
+index = my_list.index("banana")
+print(index)  # Output: 1
+```
+
+## List Mapping
+
+In Python, `map()` is a built-in function that applies a function to each element of an iterable (like a list, tuple, or set) and returns a new iterable with the transformed values.
+
+Here's an example of how to use `map()` to apply a function to every element of a list:
+
+```python
+# Define a function to apply to each element of the list
+def double(x):
+    return x * 2
+
+# Define a list
+my_list = [1, 2, 3, 4, 5]
+
+# Use map() to apply the function to each element of the list
+new_list = map(double, my_list)
+
+# Convert the result to a list and print it
+print(list(new_list))
+# Output: [2, 4, 6, 8, 10]
+```
