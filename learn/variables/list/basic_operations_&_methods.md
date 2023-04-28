@@ -244,4 +244,3 @@ You can also replace multiple elements using slicing. Here's an example:
 ```python
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 my_list[3:6] = [0] # Output: [0, 1, 2, 0, 6, 7, 8, 9]
-
