@@ -144,3 +144,31 @@ list1.extend(list2)
 print(list1) # Output: [1, 2, 3, 4, 5, 6]
 ```
 
+## Joining List Items
+
+To join a Python list into a string, you can use the `join()` method. Here's an example:
+
+```python
+my_list = ['apple', 'banana', 'orange']
+my_string = ', '.join(my_list)
+print(my_string) # Output: apple, banana, orange
+```
+
+You can use any separator string you like in the `join()` method, including an empty string if you want to concatenate the elements together without any separator.
+
+## List of Lists in Python
+
+In Python, a list of lists can be created by nesting one or more lists inside another list. Here is an example of creating lists inside a list:
+
+```python
+list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+```
+
+You can access elements of the list within list using nested indexing. For example, to access the second element of the third sub-list, you would use the following code:
+
+```python
+element = list_of_lists[2][1]
+```
+
+This would set the variable `element` to the value 8.
+
