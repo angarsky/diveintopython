@@ -31,7 +31,7 @@ print(my_list[2])  # output: 'orange'
 
 If the list index is out of range, Python will return an error.
 
-## Changing an Item In a List
+## Changing or Replacing an Item of a List
 
 ```python
 my_list = [1, 2, 3, 4, 5]
