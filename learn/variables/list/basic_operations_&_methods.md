@@ -322,3 +322,13 @@ list_b = my_list[split_index:]
 print(list_a) # Output: [1, 2, 3, 4, 5]
 print(list_b) # Output: [6, 7, 8, 9, 10]
 ```
+
+## Removing Duplicates from List in Python
+
+To remove duplicates from a Python list, you can use the built-in `set()` function. Here's an example:
+
+```python
+my_list = [1, 2, 3, 3, 4, 5, 5, 5, 6]
+new_list = list(set(my_list))
+print(new_list) # Output: [1, 2, 3, 4, 5, 6]
+```
