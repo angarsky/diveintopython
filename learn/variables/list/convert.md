@@ -1,7 +1,5 @@
 In Python, it's common to convert data to and from lists, as lists are a versatile data structure that can hold multiple items of varying data types. In some cases we need to change the type of data stored in a list. Let's review the most common cases of conversion.
 
-
-
 ## List to String Conversion in Python
 
 To convert a list to a string in Python, you can use the `join()` method. Here's an example:
