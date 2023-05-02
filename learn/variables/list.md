@@ -8,7 +8,7 @@ Here's an example of how to create a list in Python:
 my_list = [1, 2, 3, 4, 5]
 ```
 
-As you can see, creation of list is is a fairly simple process. To create an empty list, you can simply use the following syntax:
+As you can see, creation of list is a fairly simple process. To create an empty list, you can simply use the following syntax:
 
 ```python
 my_list = []
@@ -16,9 +16,9 @@ my_list = []
 
 Let's review some basic operations that can be performed on lists in Python.
 
-## Indices of List in Python & Items Accessing
+## Indices of List & Items Accessing
 
-The indices of a list are the numerical positions of the elements within the list. The index of the first element in a list is always 0, the index of the second element is 1, and so on. You can access the element at a specific index by using square brackets and specifying the index number.
+The indices of a list are the numerical positions of the elements within the list. The index of the first element in a list is always `0`, the index of the second element is `1`, and so on. You can access the element at a specific index by using square brackets and specifying the index number.
 
 Here's an example of indexing usage:
 
