@@ -79,7 +79,7 @@ Another advantage of returning a function from another function is that it can s
 
 Here are two examples of returning a function from a function in Python:
 
-1. Returning a function that multiplies any number by a given factor:
+#### Example 1: Returning a function that multiplies any number by a given factor:
 
 ```python
 def multiply(factor):
@@ -96,7 +96,7 @@ print(triple(5)) #output: 15
 
 In the above example, the outer function multiply returns an inner function that multiplies any number by the factor passed to the outer function. By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by `2` or `3`.
 
-2. Returning a function that performs mathematical operations:
+#### Example 2: Returning a function that performs mathematical operations:
 
 ```python
 def operate(operation):
@@ -118,7 +118,7 @@ print(add_func(10, 5)) #output: 15
 print(subtract_func(10, 5)) #output: 5
 ```
 In the above example, the outer function operate returns an inner function that performs mathematical operations based on the operation passed to the outer function. By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.  
-### 4. Understanding the different ways of defining and returning functions in Python  
+### Understanding the different ways of defining and returning functions in Python  
 Returning a function from a function can be useful in situations where we need to create functions dynamically based on certain conditions.
 
 Example 1:
@@ -136,7 +136,7 @@ print(add5(10)) # Output: 15
 In this example, we define a function called `create_adder` that takes a `num` parameter. Within the `create_adder` function, we define another function called `adder` that takes an `x` parameter and returns the sum of `num` and `x`. Finally, we return the `adder` function as an output. 
 
 We then assign the output of `create_adder(5)` to a variable called `add5`. This means that `add5` is now a function that takes a parameter `x` and returns the sum of `5` and `x`. When we call `add5(10)`, it returns `15`.
-### 5. Exploring the use arguments in returned functions  
+### Exploring the use arguments in returned functions  
 
 #### Example 1:
 ```python
