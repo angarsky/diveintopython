@@ -1,4 +1,4 @@
-Functions are a key concept in the programming world, and Python is no exception. A function is a block of code that performs a specific task and can be reused throughout a program.  
+A function is a block of code that performs a specific task and can be reused throughout a program.  
 
 There are many reasons to use functions in Python. They allow you to break down a complex program into smaller, more manageable pieces. Functions also make it easier to debug code and make changes, since you can modify the code in a single function without affecting the rest of the program. Furthermore, functions help improve the efficiency of code by reducing code duplication.
 
@@ -13,7 +13,7 @@ add_numbers(2, 3)
 # Output: The sum is: 5
 ```
 
-In this example, the function is called "add_numbers". It takes two arguments, "x" and "y". Inside the function, their sum is calculated and printed using the `print` function. To call the function, you simply provide values for "x" and "y" as arguments:
+In this example, the function is called `add_numbers`. It takes two arguments, `x` and `y`. Inside the function, their sum is calculated and printed using the `print` function. To call the function, you simply provide values for `x` and `y` as arguments:
 This will output the value 5, which is the sum of 2 and 3. Note that you can call the function with any two numbers and it will calculate and print their sum.
 
 Another example of a Python function is a function that calculates the area of a circle. Here is the code for a function that takes the radius of a circle and returns its area:
