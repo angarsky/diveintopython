@@ -66,21 +66,6 @@ In this example, a lambda function is used as the key parameter in the 'sort' me
 
 Additionally, Lambda functions can be defined and used within Python functions or imported from another Python file.
 
-Here are two examples of Lambda functions in Python:
-
-1. Using Lambda function within a Python function:
-
-```python 
- def multiply(n):
-     return lambda x: x * n
-
- double = multiply(2)
- triple = multiply(3)
-
- print(double(5))  # Output: 10
- print(triple(5))  # Output: 15
-```
-
 ### Differences between Lambda and regular functions in Python  
 The Lambda function in Python is an anonymous function that can have any number of arguments but can only have one expression. It is used where a function is required for a short period of time and doesn't need a name. Lambda functions are written in a single line of code and can be easily interpreted. A Python function, on the other hand, is a named block of code that performs a specific task and can take any number of arguments.
 
@@ -116,8 +101,7 @@ Differences between Lambda and regular functions in Python:
 3. Name: Lambda functions are anonymous, meaning they don't have a name. Regular functions have a name that is used to call the function.
 
 4. Scope: Lambda functions are limited in terms of scope and can only access global variables. Regular functions have a wider scope and can access both local and global variables.  
-### Best practices for using Lambda functions in Python  
-Lambda functions in Python are anonymous functions that can take any number of arguments, but can only have one expression. These functions are often used for short, simple operations and can be called inline with other code. Here are some best practices for using Lambda functions in Python:
+### Best practices for using `lambda` functions in Python  
 
 1. Keep your Lambda functions short and simple: Lambda functions are best used for small operations that can be written concisely in a single line of code. If your function is too long or complex, it might be better to write a regular Python function.
 
@@ -125,20 +109,6 @@ Lambda functions in Python are anonymous functions that can take any number of a
 
 3. Don't overuse Lambda functions: While Lambda functions can be useful for certain tasks, they can also make your code less readable if overused. If your Lambda expression is getting too long, it might be better to write a regular Python function instead.
 
-Here are two simple examples of Lambda functions in Python:
-#### Example 1: Using Lambda with `map()`
-```python 
-
-nums = [1, 2, 3, 4, 5]
-squared = list(map(lambda x: x**2, nums))
-print(squared) # Output: [1, 4, 9, 16, 25]
-```
-#### Example 2: Using Lambda as a power function in Python using a loop
-```python 
-power = lambda x, n: x**n
-for i in range(1, 6):
-    print(power(2, i)) # Output: 2, 4, 8, 16, 32
-```  
 ### Advanced lambda concepts, such as `map()`, `reduce()`, and `filter()`  
 
 The `map()` function is used to apply a given lambda function to each element in a collection. The result is a new collection with the lambda function applied to every element. Here is an example of using the map function to add a constant value to each element in a list using a lambda function:
