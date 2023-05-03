@@ -44,7 +44,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 In this example, a lambda function is used as the key parameter in the 'sort' method to sort a list of integers. The lambda function checks if each number is even or odd by using the modulo operator. The list is then sorted with odd numbers appearing before even numbers.  
 ### Examples and use cases for Lambda functions in Python  
 
-1. Sorting a list of tuples: Lambda functions can be used as a key argument in the sorted() function to sort a list of tuples based on a specific element in the tuple.
+1. Sorting a list of tuples: Lambda functions can be used as a key argument in the `sorted()` function to sort a list of tuples based on a specific element in the tuple.
 
 ```python 
  # Sorting a list of tuples based on the age of a person
@@ -54,7 +54,7 @@ In this example, a lambda function is used as the key parameter in the 'sort' me
  # Output: [('Kate', 18), ('John', 19), ('Jane', 23), ('Adam', 25)]
 ```
 
-2. Filtering a list: Lambda functions can be used with filter() to create a new list that satisfies a specific condition.
+2. Filtering a list: Lambda functions can be used with `filter()` to create a new list that satisfies a specific condition.
 
 ```python 
  # Filter a list of numbers greater than 5
