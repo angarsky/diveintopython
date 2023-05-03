@@ -41,7 +41,6 @@ print(x(5)) # output: 15
 
 In this example, a `lambda` function is defined with the parameter `a`. The function adds 10 to the parameter and returns the result. The `lambda` function is then called with the parameter `5`, which results in the output of `15`.
 
-In this example, a lambda function is used as the key parameter in the 'sort' method to sort a list of integers. The lambda function checks if each number is even or odd by using the modulo operator. The list is then sorted with odd numbers appearing before even numbers.  
 ### Examples and use cases for Lambda functions in Python  
 
 1. Sorting a list of tuples: Lambda functions can be used as a key argument in the `sorted()` function to sort a list of tuples based on a specific element in the tuple.
@@ -64,10 +63,8 @@ In this example, a lambda function is used as the key parameter in the 'sort' me
  # Output: [6, 7, 8, 9, 10]
 ```
 
-Additionally, Lambda functions can be defined and used within Python functions or imported from another Python file.
-
 ### Differences between Lambda and regular functions in Python  
-The Lambda function in Python is an anonymous function that can have any number of arguments but can only have one expression. It is used where a function is required for a short period of time and doesn't need a name. Lambda functions are written in a single line of code and can be easily interpreted. A Python function, on the other hand, is a named block of code that performs a specific task and can take any number of arguments.
+The Lambda function in Python is an anonymous function that can have any number of arguments but can only have one expression. It is used where a function is required for a short period of time and doesn't need a name. Lambda functions are written in a single line of code and can be easily interpreted. A regular function, on the other hand, is a named block of code that performs a specific task and can take any number of arguments.
 
 Code examples:
 
@@ -79,10 +76,7 @@ x = lambda a,b : a + b
 print(x(3,4))
 # Output: 7
 ```
-
-
-
-Python function:
+Regular function:
 
 ```python 
 def add(a,b):
@@ -90,7 +84,6 @@ def add(a,b):
 print(add(3,4))
 # Output: 7
 ```
-
 
 Differences between Lambda and regular functions in Python:
 
