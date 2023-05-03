@@ -1,6 +1,6 @@
 Generator functions in Python are special kinds of functions that can be used to create iterators. They generate a sequence of values on-the-fly as required, rather than returning a value all at once like regular functions. This makes them more memory-efficient and faster than other methods of producing iterators. Benefits of using generator functions include improved performance efficiency, better memory management, and the ability to handle large and infinite data sets.
 
-#### Example 1: Regular Python Function to Calculate Power Function Using a Loop
+#### Example 1: Regular Python function
 
 ```python 
 def power(n):
@@ -12,7 +12,7 @@ def power(n):
 print(power(5)) # Output: [1, 2, 4, 8, 16]
 ```
 
-#### Example 2: Python Function Generator to Calculate Power Function Using a Loop
+#### Example 2: Python generator function 
 
 ```python 
 def power(n):
