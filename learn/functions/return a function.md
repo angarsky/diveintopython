@@ -94,7 +94,7 @@ print(double(5)) #output: 10
 print(triple(5)) #output: 15
 ```
 
-In the above example, the outer function multiply returns an inner function that multiplies any number by the factor passed to the outer function. By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by `2` or `3`.
+By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by `2` or `3`.
 
 #### Example 2: Returning a function that performs mathematical operations:
 
@@ -117,7 +117,7 @@ subtract_func = operate('subtract')
 print(add_func(10, 5)) #output: 15
 print(subtract_func(10, 5)) #output: 5
 ```
-In the above example, the outer function operate returns an inner function that performs mathematical operations based on the operation passed to the outer function. By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.  
+By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.  
 ### Understanding the different ways of defining and returning functions in Python  
 Returning a function from a function can be useful in situations where we need to create functions dynamically based on certain conditions.
 
