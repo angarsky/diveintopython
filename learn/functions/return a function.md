@@ -52,7 +52,7 @@ print(add5(3))    # Output: 8
 ```
 In this example, we define a function `create_adder` that takes a parameter `num`. Inside `create_adder`, we define another function `adder` that takes a parameter `x` and returns the sum of `num` and `x`. Finally, `create_adder` returns `adder`.
 
-We then create a new function `add5` by calling `create_adder(5)`. This means that `add5` is now a reference to `adder` with `num` set to 5. When we call `add5(3)`, we pass the parameter `x` as 3, which results in the output 8.
+We then create a new function `add5` by calling `create_adder(5)`. This means that `add5` is now a reference to `adder` with `num` set to 5. When we call `add5(3)`, we pass the parameter `x` as `3`, which results in the output `8`.
 
 #### Example 2: Nested functions
 
@@ -70,7 +70,7 @@ print(add5(10))    # Output: 15
 ```
 In this example, we define a function `outer_function` that takes a parameter `num`. Inside `outer_function`, we define another function `inner_function` that takes a parameter `x` and returns the sum of `num` and `x`. Finally, `outer_function` returns `inner_function`.
 
-We then create two new functions `add3` and `add5` by calling `outer_function(3)` and `outer_function(5)` respectively. This means that `add3` is now a reference to `inner_function` with `num` set to 3, and `add5` is a reference to `inner_function` with `num` set to 5. When we call `add3(10)` and `add5(10)`, we pass the parameter `x` as 10, which results in the output 13 and 15 respectively.  
+We then create two new functions `add3` and `add5` by calling `outer_function(3)` and `outer_function(5)` respectively. This means that `add3` is now a reference to `inner_function` with `num` set to 3, and `add5` is a reference to `inner_function` with `num` set to 5. When we call `add3(10)` and `add5(10)`, we pass the parameter `x` as `10`, which results in the output `13` and `15` respectively.  
 ### Understanding the advantages of returning a function from another function  
 
 One of the significant benefits of returning a function from another function in Python is that it provides flexibility. By returning a function, the programmer can create a more specific and customized function based on the inputs passed to the original function. It also allows for efficient code reuse.
@@ -94,7 +94,7 @@ print(double(5)) #output: 10
 print(triple(5)) #output: 15
 ```
 
-In the above example, the outer function multiply returns an inner function that multiplies any number by the factor passed to the outer function. By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by 2 or 3.
+In the above example, the outer function multiply returns an inner function that multiplies any number by the factor passed to the outer function. By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by `2` or `3`.
 
 2. Returning a function that performs mathematical operations:
 
@@ -119,7 +119,7 @@ print(subtract_func(10, 5)) #output: 5
 ```
 In the above example, the outer function operate returns an inner function that performs mathematical operations based on the operation passed to the outer function. By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.  
 ### 4. Understanding the different ways of defining and returning functions in Python  
-Returning a function from a function is a feature of Python that allows us to use higher-order functions. It involves defining a function within a function and returning it as an output. This can be useful in situations where we need to create functions dynamically based on certain conditions.
+Returning a function from a function can be useful in situations where we need to create functions dynamically based on certain conditions.
 
 Example 1:
 
@@ -136,7 +136,7 @@ print(add5(10)) # Output: 15
 In this example, we define a function called `create_adder` that takes a `num` parameter. Within the `create_adder` function, we define another function called `adder` that takes an `x` parameter and returns the sum of `num` and `x`. Finally, we return the `adder` function as an output. 
 
 We then assign the output of `create_adder(5)` to a variable called `add5`. This means that `add5` is now a function that takes a parameter `x` and returns the sum of `5` and `x`. When we call `add5(10)`, it returns `15`.
-### 5. Exploring the use of parameters and arguments in returned functions  
+### 5. Exploring the use arguments in returned functions  
 
 #### Example 1:
 ```python
@@ -181,30 +181,3 @@ print(division(5, 3)) # Output: 1.6666666666666667
 print(operation('%')(5, 3)) # Output: Invalid operator
 ```
 In this example, the `operation` function takes an `operator` parameter and returns the `calculate` function. The `calculate` function performs the arithmetic operation specified by the `operator` parameter on two number arguments. Four variables `addition`, `subtraction`, `multiplication`, and `division` are assigned by calling the `operation` function with different operator values. The final print statement shows what occurs when an invalid operator is used as an argument.  
-### Best practices and common pitfalls to avoid when working with returned functions in Python.  
-
-In Python, we can return a function from another function using the `return` keyword. Best practices include ensuring clear and concise code, using descriptive function and variable names, properly handling errors, and avoiding excessive use of returned functions. Common pitfalls to avoid include incorrect function calling syntax, confusing function returns, and potential memory leaks.
-
-#### Example 1: 
-```python 
-def greet(name):
-    def message():
-        return f"Hello, {name}!"
-    return message
-
-x = greet("Alice")
-print(x())
-```
-In this example, the `greet` function returns the `message` function, which is then called and prints "Hello, Alice!" to the console.
-
-#### Example 2:
-```python 
-def add_numbers(x):
-    def add(y):
-        return x + y
-    return add
-
-add_five = add_numbers(5)
-print(add_five(3))
-```
-In this example, the `add_numbers` function returns the `add` function, which is assigned to a variable `add_five` and called with an argument of 3 to print the result 8 to the console.  
