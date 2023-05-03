@@ -46,7 +46,7 @@ def string_generator(string):
 ```
 
 The generator function `string_generator()` creates a new generator object that produces one character at a time from the input string. The yield statement is used to temporarily pause the execution of the function and return the current character before resuming execution.  
-### Understanding the yield statement in generator functions  
+### Understanding the `yield` statement in generator functions  
 Generator function in Python is a special type of Python function that can return an iterator object. These iterator objects can be used to generate a sequence of values on the fly, rather than computing them all at once and storing them in a list. The yield statement is a crucial part of generator functions and allows the function to produce a value and pause its execution temporarily.
 
 #### Example 1: Simple generator function in Python
@@ -127,16 +127,7 @@ def read_chunks(file_path, chunk_size=1024):
             yield chunk
 ```
 The `read_chunks()` function reads a file in chunks of size `chunk_size` and yields each chunk until the end of the file is reached. This allows the programmer to process large files without loading the entire file into memory.
-#### Example 2: Function to generate the first n Fibonacci numbers
 
-```python
-def fibonacci(n):
-    a, b = 0, 1
-    for i in range(n):
-        yield a
-        a, b = b, a + b
-```
-The `fibonacci()` function uses the `yield` statement to generate the first `n` Fibonacci numbers one at a time. This allows the programmer to generate large sequences without needing to create a list or array that holds all of the values.  
 ### Advanced techniques for working with generator functions  
 Generator functions in Python are special types of functions that allow you to generate and yield values on-the-fly rather than returning all values at once. By utilizing the advanced techniques discussed below, you can manipulate and optimize the output of generator functions in your code.
 
