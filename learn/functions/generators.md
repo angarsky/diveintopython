@@ -35,9 +35,9 @@ def count_up_to(n):
         i += 1
 ```
 
-In this example, the generator function "count_up_to" generates a sequence of numbers from 1 up to a given value n. When called, it returns a generator object that can be iterated over to get the next value in the sequence.
+In this example, the generator function `count_up_to()` generates a sequence of numbers from 1 up to a given value n. When called, it returns a generator object that can be iterated over to get the next value in the sequence.
 
-Another example of a generator function is the "string_generator" function that takes a string as input and returns each character of the string one at a time using the yield statement.
+Another example of a generator function is the `string_generator()` function that takes a string as input and returns each character of the string one at a time using the yield statement.
 
 ```python 
 def string_generator(string):
@@ -45,7 +45,7 @@ def string_generator(string):
         yield char
 ```
 
-The generator function "string_generator" creates a new generator object that produces one character at a time from the input string. The yield statement is used to temporarily pause the execution of the function and return the current character before resuming execution.  
+The generator function `string_generator()` creates a new generator object that produces one character at a time from the input string. The yield statement is used to temporarily pause the execution of the function and return the current character before resuming execution.  
 ### Understanding the yield statement in generator functions  
 Generator function in Python is a special type of Python function that can return an iterator object. These iterator objects can be used to generate a sequence of values on the fly, rather than computing them all at once and storing them in a list. The yield statement is a crucial part of generator functions and allows the function to produce a value and pause its execution temporarily.
 
