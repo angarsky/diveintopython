@@ -36,7 +36,7 @@ else:
     print("The two tuples are not equal")
 ```
 
-## Indexing a Tuples in Python
+## Tuples Indexing in Python
 
 Tuples can be indexed using square brackets [] and an index number. The index number starts from 0 for the first element and increases by 1 for each subsequent element. For example, consider the following tuple:
 
