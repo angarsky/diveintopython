@@ -57,3 +57,28 @@ tuple1 = (1, 2, 3)
 tuple2 = tuple1 * 2
 print(tuple2) # Output: (1, 2, 3, 1, 2, 3)
 ```
+
+## Named Tuple in Python
+
+A named tuple is a subclass of the built-in tuple data type that allows for fields to be accessed by name as well as by index position.
+
+Named tuples are created using the `collections.namedtuple` function. Here's an example:
+
+```python
+from collections import namedtuple
+
+# create a named tuple with two fields: 'x' and 'y'
+Point = namedtuple('Point', ['x', 'y'])
+
+# create an instance of the named tuple
+p = Point(1, 2)
+
+# access fields by index
+print(p[0])  # prints 1
+
+# access fields by name
+print(p.x)   # prints 1
+print(p.y)   # prints 2
+```
+
+Named tuples are similar to regular tuples, but with the added benefit of having named fields that can make the code more readable and self-documenting. They are immutable, like regular tuples, so their fields cannot be changed once they are created.
