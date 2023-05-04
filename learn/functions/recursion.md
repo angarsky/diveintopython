@@ -46,7 +46,7 @@ In this example, the `fibonacci()` function takes an integer `n` as input and re
 
 1. **Clearly define the base case**: The base case is the condition under which the function should stop calling itself recursively and return a value. Make sure that the base case is clearly defined and that the function eventually reaches it to avoid infinite recursion.
 
-2. **Watch out for recursion depth**: Recursion depth refers to the number of times a function calls itself recursively. Python has a default recursion depth limit of 1000, so make sure to keep your recursive functions within the limit or adjust the recursion depth limit using the sys module.
+2. **Watch out for recursion depth**: Recursion depth refers to the number of times a function calls itself recursively. Python has a default recursion depth **limit of 1000**, so make sure to keep your recursive functions within the limit or adjust the recursion depth limit using the sys module.
 
 3. **Consider using memoization**: Memoization is a technique used to cache the results of expensive function calls and reuse them when the same inputs occur again. This can significantly improve the performance of recursive functions in python by avoiding duplicate computations.
 
