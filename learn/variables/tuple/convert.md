@@ -123,3 +123,23 @@ print(my_tuple) # Output: ('apple', 'banana', 'cherry')
 ```
 
 > Note: the `split()` method returns a list of strings. If the original tuple contained non-string elements, you need to convert them back to their original data types after creating the tuple.
+
+## Tuple to Dictionary Conversion in Python
+
+To convert a Python tuple to a dictionary, you can use the `dict()` constructor function. Here's an example:
+
+```python
+my_tuple = ('a', 1), ('b', 2), ('c', 3)
+my_dict = dict(my_tuple)
+print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
+```
+
+## Dictionary to Tuple Conversion
+
+To convert a Python dictionary back to a tuple, you can use the `items()` method of the dictionary object to get a list of (key, value) pairs, and then convert that list to a tuple using the `tuple()` constructor function. Here's an example:
+
+```python
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+my_tuple = tuple(my_dict.items())
+print(my_tuple) # Output: (('a', 1), ('b', 2), ('c', 3))
+```
