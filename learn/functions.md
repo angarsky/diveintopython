@@ -84,3 +84,21 @@ def calculate_area(width, height):
 def get_student_details(name, age, student_id):
     return name, age, student_id
 ```
+
+In Python, variable-length function arguments are denoted using the `*` symbol. Here's an example of a Python function that takes variable-length arguments:
+
+```python
+def calculate_sum(*numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+# Here's how you can call the calculate_sum function with different numbers of arguments:
+sum1 = calculate_sum(1, 2, 3)   # sum1 is 6
+sum2 = calculate_sum(10, 20)    # sum2 is 30
+sum3 = calculate_sum(5)         # sum3 is 5
+```
+
+In this example, the `*` numbers syntax in the function definition tells Python to allow any number of arguments to be passed to the function. The function then uses a loop to iterate over all of the arguments and calculate their sum.
+
+As you can see, you can pass any number of arguments to the `calculate_sum` function, and it will work correctly.
