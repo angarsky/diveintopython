@@ -89,3 +89,25 @@ sorted_list = sorted(my_list, key=lambda x: x[1], reverse=True)
 print(sorted_list) # Output: [(2, 4), (1, 2), (3, 1)]
 ```
 
+## Appending a Tuple
+
+To append a tuple to a list in Python, you can use the `append()` method. Here's an example:
+
+```python
+my_list = [(1, 2), (3, 4)]
+new_tuple = (5, 6)
+my_list.append(new_tuple)
+print(my_list) # Output: [(1, 2), (3, 4), (5, 6)]
+```
+
+## Tuple to String Conversion in Python
+
+You can convert a Python tuple to a string using the `join()` method. Here's an example:
+
+```python
+my_tuple = ('apple', 'banana', 'cherry')
+my_string = ', '.join(my_tuple)
+print(my_string) # Output: apple, banana, cherry
+```
+
+> Note: the `join()` method works only with strings. If the tuple contains non-string elements, you need to convert them to strings first using the `str()` function.
