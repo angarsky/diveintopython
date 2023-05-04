@@ -1,4 +1,4 @@
-Generator functions in Python are special kinds of functions that can be used to create iterators. They generate a sequence of values on-the-fly as required, rather than returning a value all at once like regular functions. This makes them more memory-efficient and faster than other methods of producing iterators. 
+**Generator functions** in Python are special kinds of functions that can be used to create **iterators**. They generate a sequence of values on-the-fly as required, rather than returning a value all at once like regular functions. This makes them more memory-efficient and faster than other methods of producing iterators. 
 
 ## Introduction to generators
 
@@ -26,11 +26,11 @@ def power(n):
 print(list(power(5))) # Output: [1, 2, 4, 8, 16]
 ``` 
 
-In the second example, the generator function is used to create an iterator that generates each value on-the-fly as needed, rather than creating and storing a list of values in memory like the first example. This can be a much more efficient way of working with large data sets or calculations that may not need to be stored in memory all at once.  
+In the second example, the generator function is used to create an **iterator** that generates each value on-the-fly as needed, rather than creating and storing a list of values in memory like the first example. This can be a much more efficient way of working with large data sets or calculations that may not need to be stored in memory all at once.  
 
 ## Syntax and structure of generator functions  
 
-It uses the `yield` keyword to return a value and temporarily suspend the function's execution. The syntax of a generator function in Python is similar to a regular function, but with the addition of the `yield` statement.
+It uses the `yield` keyword to return a value and temporarily suspend the function's execution. The **syntax** of a generator function in Python is **similar** to a regular function, but with the addition of the `yield` statement.
 
 Syntax of a generator function in Python:
 
@@ -88,9 +88,9 @@ Generator functions in Python are a special type of function that allows us to r
 
 Here are some differences between Python functions and generator functions:
 
-1. Execution: A regular Python function runs until it reaches the end or a return statement. A generator function, on the other hand, yields a value and then goes into a suspended state until another value is requested.
+1. **Execution:** A regular Python function runs until it reaches the end or a return statement. A generator function, on the other hand, yields a value and then goes into a suspended state until another value is requested.
 
-2. Memory Usage: Regular functions can return a large output, which can consume a lot of memory. In contrast, generator functions use a minimum amount of memory because they lazily compute the values as and when needed.
+2. **Memory Usage:** Regular functions can return a large output, which can consume a lot of memory. In contrast, generator functions use a minimum amount of memory because they lazily compute the values as and when needed.
 
 Here's an example of a regular Python function:
 
@@ -119,9 +119,9 @@ In summary, while regular Python functions are used to return a value and then e
 
 Common use cases for generator functions in Python include:
 
-1. Parsing large files or datasets - Generator functions can be used to read in chunks of a file or dataset at a time, rather than loading the entire file into memory at once.
+1. **Parsing large files or datasets** - Generator functions can be used to read in chunks of a file or dataset at a time, rather than loading the entire file into memory at once.
 
-2. Generating infinite sequences - Generator functions can be used to generate infinite sequences of numbers, such as the Fibonacci sequence, without requiring the programmer to create a large list or array.
+2. **Generating infinite sequences** - Generator functions can be used to generate infinite sequences of numbers, such as the Fibonacci sequence, without requiring the programmer to create a large list or array.
 
 ### Example: Function to read a large file in chunks
 
@@ -139,11 +139,11 @@ The `read_chunks()` function reads a file in chunks of size `chunk_size` and yie
 
 ## Advanced techniques for working with generator functions
 
-Generator functions in Python are special types of functions that allow you to generate and yield values on-the-fly rather than returning all values at once. By utilizing the advanced techniques discussed below, you can manipulate and optimize the output of generator functions in your code.
+By utilizing the **advanced techniques** discussed below, you can **manipulate** and **optimize** the output of generator functions in your code.
 
 ### Lazy Execution:
 
-One of the primary benefits of generator functions is the ability to delay execution on the fly until the output is actually needed. This can significantly improve the performance of your code by avoiding the need to generate and store all output in memory.
+One of the primary benefits of generator functions is the **ability to delay execution on the fly** until the output is actually needed. This can significantly improve the performance of your code by avoiding the need to generate and store all output in memory.
 
 ```python 
 def fibonacci(n):
@@ -159,7 +159,7 @@ for num in gen:
 
 ### Threading with Generators:
 
-You can even combine generators with threads to asynchronously execute code, allowing for multiple processes to be executed simultaneously and further improving the performance of your code.
+You can even **combine generators with threads** to **asynchronously** execute code, allowing for **multiple processes** to be executed simultaneously and further improving the performance of your code.
 
 ```python 
 from threading import Thread
@@ -185,17 +185,15 @@ for thread in threads:
 
 In this example, we create a generator function that creates multiple threads using the `Thread` module in Python. The `countdown` function is executed within each generated thread, asynchronously counting down from the specified value. By utilizing generator functions and threads together, we can create more efficient and performant code that takes advantage of multiple processors simultaneously.
 
-Overall, generator functions offer an incredibly powerful tool for working with Python functions. By mastering the advanced techniques discussed above, you can improve the efficiency, performance, and functionality of your code to achieve even more impressive results.
-
 ## Best practices and tips for writing efficient and effective generator functions  
 
-1. Use a generator function instead of a list comprehension or loop, when generating large sequences of data. This is because a generator function produces values on-the-fly, while a list comprehension or loop creates the entire sequence in memory before returning it.
+1. **Use a generator function instead of a list comprehension or loop**, when generating large sequences of data. This is because a generator function produces values on-the-fly, while a list comprehension or loop creates the entire sequence in memory before returning it.
 
-2. Use the `yield` keyword instead of `return` when producing values in a generator function. This allows the function to pause execution and return a value, without terminating the function. The function can then be resumed from where it left off later on.
+2. **Use the `yield` keyword instead of `return` when producing values** in a generator function. This allows the function to pause execution and return a value, without terminating the function. The function can then be resumed from where it left off later on.
 
-3. Use the `next()` function to advance through the sequence generated by a generator function. This function retrieves the next value produced by the function and moves the function's execution state forward.
+3. **Use the `next()` function** to advance through the sequence generated by a generator function. This function retrieves the next value produced by the function and moves the function's execution state forward.
 
-4. Use the `send()` function to send a value back into a generator function and resume its execution. This function allows a client code to pass values into a generator function, which can then use those values to produce new values. 
+4. **Use the `send()` function** to send a value back into a generator function and resume its execution. This function allows a client code to pass values into a generator function, which can then use those values to produce new values. 
 
 ### Example: A generator function that produces values in a geometric sequence
 
@@ -217,4 +215,4 @@ print(next(g))  # Prints 162
 
 ```
 
-In example, the generator function produces an infinite sequence of values. However, the `yield` keyword allows the function to produce values on-demand, and the client code can consume these values one at a time, without storing the entire sequence in memory.  
+In example, the generator function produces an infinite sequence of values. However, the `yield` keyword allows the function to **produce values on-demand**, and the client code can consume these values one at a time, **without storing the entire sequence in memory**.  
