@@ -25,7 +25,7 @@ print(squared_list) # output: [1, 4, 9, 16, 25]
 
 In the first example, a `lambda` function `multiply` is defined that **takes in two parameters** and returns their product. In the second example, the lambda function **is used as an argument** to the `map()` function to square each element in the list. Lambda functions are often used in conjunction with other functions **to make code more concise and readable.**
 
-## Benefits and reasons to use `lambda` functions in Python programming  
+## Benefits and reasons to use lambda functions in Python programming  
 
 1. **Concise code**: Lambda functions can be defined in a single line of code, making them easy to use and read.
 
@@ -42,7 +42,7 @@ print(x(5)) # output: 15
 
 In this example, a `lambda` function is defined with the parameter `a`. The function adds `10` to the parameter and returns the result. The `lambda` function is then called with the parameter `5`, which results in the output of `15`.
 
-## Examples and use cases for Lambda functions in Python  
+## Examples and use cases for lambda functions in Python  
 
 1. **Sorting a list of tuples**: Lambda functions can be used as a **key argument** in the `sorted()` function to sort a list of tuples based on a specific element in the tuple.
 
@@ -64,7 +64,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
  # Output: [6, 7, 8, 9, 10]
 ```
 
-## Differences between Lambda and regular functions in Python
+## Differences between lambda and regular functions in Python
 
 1. **Syntax**: Lambda functions are written in a single line of code and don't require the `def` keyword. Regular functions are defined using the `def` keyword and can be written in multiple lines.
 
@@ -74,7 +74,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 
 4. **Scope**: Lambda functions are limited in terms of scope and can only access global variables. Regular functions have a wider scope and can access both local and global variables.
   
-## Best practices for using `lambda` functions in Python  
+## Best practices for using lambda functions in Python  
 
 1. Keep your Lambda functions **short and simple**: Lambda functions are best used for small operations that can be written concisely in a single line of code. If your function is too long or complex, it might be better to write a regular Python function.
 
@@ -112,7 +112,7 @@ result = filter(is_even, numbers)
 print(list(result)) # [2, 4]
 ``` 
 
-## Exploring the limitations and caveats of using Lambda functions in Python code  
+## Exploring the limitations and caveats of using lambda functions in Python code  
 
 One limitation of lambda functions is that they are **restricted to a single expression**. This means that more complex operations, such as a loop or multiple statements, cannot be performed within a lambda function. For example, if we wanted to create a power function in Python using a loop, we cannot use lambda functions.
 
