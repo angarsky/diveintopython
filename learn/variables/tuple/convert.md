@@ -111,3 +111,15 @@ print(my_string) # Output: apple, banana, cherry
 ```
 
 > Note: the `join()` method works only with strings. If the tuple contains non-string elements, you need to convert them to strings first using the `str()` function.
+
+## String to Tuple Conversion
+
+To convert a string back to a tuple in Python, you can use the `split()` method. Here's an example:
+
+```python
+my_string = 'apple, banana, cherry'
+my_tuple = tuple(my_string.split(', '))
+print(my_tuple) # Output: ('apple', 'banana', 'cherry')
+```
+
+> Note: the `split()` method returns a list of strings. If the original tuple contained non-string elements, you need to convert them back to their original data types after creating the tuple.
