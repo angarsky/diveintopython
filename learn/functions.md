@@ -102,3 +102,22 @@ sum3 = calculate_sum(5)         # sum3 is 5
 In this example, the `*` numbers syntax in the function definition tells Python to allow any number of arguments to be passed to the function. The function then uses a loop to iterate over all of the arguments and calculate their sum.
 
 As you can see, you can pass any number of arguments to the `calculate_sum` function, and it will work correctly.
+
+## How to properly name a function in Python
+
+1. Function names must **start with a letter or underscore** `_`, followed by any combination of letters, numbers, or underscores.
+Example: `def my_function():`
+
+2. Function names should be **descriptive** and convey the purpose of the function.
+Example: `def calculate_total():`
+
+3. Function names are **case-sensitive**, meaning `my_function` and `My_Function` are different names.
+Example: `def my_function():` and `def My_Function():` are two different functions.
+
+4. Function names should not be the same as a **Python keyword**, such as `print` or `if`.
+Example: `def print():` is not a valid function name.
+
+5. Function names should follow the **"snake_case"** naming convention, where words are separated by underscores. This convention makes function names more readable and easier to understand.
+Example: `def calculate_total_with_discount():`
+
+Overall, it is recommended to choose a function name that is **descriptive**, **easy to understand**, and follows the naming conventions for Python functions.
