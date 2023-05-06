@@ -26,5 +26,39 @@ my_set.add(4)  # add a new value to the set
 print(my_set)  # output: {1, 2, 3, 4}
 ```
 
-> Note: in Python, set objects do not have an `append()` method since they are unordered collections of unique elements.
+> Note: set objects do not have an `append()` method since they are unordered collections of unique elements.
 
+## Removing an Element to a Set
+
+In Python, the `set` data type represents a collection of unique elements. The `remove` method is used to remove a specific element from a set.
+
+Here is an example:
+
+```python
+# create a set
+my_set = {1, 2, 3, 4, 5}
+
+# remove an element from the set
+my_set.remove(3)
+
+print(my_set) # Output: {1, 2, 4, 5}
+```
+
+It's important to note that if the element to be removed is not in the set, the `remove` method will raise a `KeyError` exception. If you want to avoid this, you can use the `discard` method instead, which removes an element from the set if it is present, and does nothing if the element is not in the set.
+
+Here's an example of using the discard method in Python:
+
+```python
+# create a set
+my_set = {1, 2, 3, 4, 5}
+
+# discard an element from the set
+my_set.discard(3)
+
+print(my_set) # Output: {1, 2, 4, 5}
+
+# try to discard an element that is not in the set
+my_set.discard(10)
+
+print(my_set) # Output: {1, 2, 4, 5}
+```
