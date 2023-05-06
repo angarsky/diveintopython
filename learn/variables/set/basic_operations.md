@@ -41,3 +41,86 @@ sorted_list_desc.sort(reverse=True)
 sorted_set_desc = set(sorted_list_desc)
 print(sorted_set_desc)   # Output: {5, 4, 3, 2, 1}
 ```
+
+## The `update` Method for Set in Python
+
+The `update` method of a set allows you to add multiple elements to a set at once.
+
+Here is the syntax for using the update method:
+
+```python
+set.update(iterable)
+```
+
+The `iterable` argument can be any iterable object, such as a list, tuple, set, or even a string. The `update` method adds all the elements in the `iterable` to the set, while removing any duplicates.
+
+Here's an example that demonstrates the update method:
+
+```python
+>>> s1 = {1, 2, 3}
+>>> s2 = {3, 4, 5}
+>>> s1.update(s2)
+>>> print(s1)
+{1, 2, 3, 4, 5}
+```
+
+##  Intersection of Sets in Python
+
+In Python intersection of sets can be found using the `intersection()` method.
+
+Let's see how to get intersection of two sets in Python:
+
+```python
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+set3 = {4, 5, 6, 7}
+
+intersection_set = set1.intersection(set2, set3)
+
+print(intersection_set)  # Output: {4}
+```
+
+## Sets' Difference in Python
+
+The difference of sets in Python ca be find using the "-" operator or the `difference()` method. Here's an example:
+
+```python
+set1 = {1, 2, 3, 4, 5}
+set2 = {3, 4, 5, 6, 7}
+
+# Using the "-" operator
+diff = set1 - set2
+print(diff) # Output: {1, 2}
+
+# Using the `difference()` method
+diff = set1.difference(set2)
+print(diff) # Output: {1, 2}
+```
+
+## Sets' Union in Python
+
+Uion of sets in Python can be obtained using the `union()` method or the pipe (`|`) operator.
+
+Here is an example of using the `union()` method:
+
+```python
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+set3 = {3, 4, 5}
+
+union_set = set1.union(set2, set3)
+print(union_set)  # Output: {1, 2, 3, 4, 5}
+```
+
+Alternatively, we can use the pipe (`|`) operator to achieve the same result:
+
+```python
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+set3 = {3, 4, 5}
+
+union_set = set1 | set2 | set3
+print(union_set)  # Output: {1, 2, 3, 4, 5}
+```
+
+## 
