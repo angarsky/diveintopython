@@ -92,3 +92,22 @@ print(set_of_lists) # {(1, 2, 3), (4, 5, 6)}
 
 ## List to Set Addition
 
+To add a list to a set in Python, you can use the `update()` method or the `|` operator.
+
+Here's an example using the `update()` method:
+
+```python
+my_set = {1, 2, 3}
+my_list = [4, 5, 6]
+my_set.update(my_list)
+print(my_set)  # output: {1, 2, 3, 4, 5, 6}
+```
+
+And here's an example using the `|` operator:
+
+```python
+my_set = {1, 2, 3}
+my_list = [4, 5, 6]
+my_set |= set(my_list)
+print(my_set)  # output: {1, 2, 3, 4, 5, 6}
+```
