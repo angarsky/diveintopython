@@ -67,7 +67,7 @@ print(my_set) # Output: {1, 2, 4, 5}
 
 Sets are unordered collections of unique elements. Therefore, they do not support indexing by integer values like lists or tuples.
 
-If you need to access a specific element in a set, you can use the `in` keyword to check if the element exists in the set, or you can use the `for` loop to iterate over the elements of the set.
+If you need to access a specific element in a set, you can use the `in` keyword to check if python set contains an element, or you can use the `for` loop to iterate over the elements of the set.
 
 Here are some examples:
 
