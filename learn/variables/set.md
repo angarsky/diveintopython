@@ -1,4 +1,4 @@
-What is a set? Python set is a data structure that allows you to work with collections of unique elements. Sets are useful for tasks such as removing duplicates from a list, testing membership of an element, and performing set operations such as union and intersection. In Python, sets are mutable and iterable, making them versatile and easy to work with. Let's explore the basics of Python sets and some advanced techniques to help you make the most of this data structure in your programming projects.
+What is a set? Python set is a data structure that allows you to work with collections of unique elements. Sets are useful for tasks such as removing duplicates from a list, testing membership of an element, and performing set operations such as union and intersection. In Python, sets are mutable and iterable, making them versatile and easy to work with. Let's explore the basics of Python sets as well as main python set methods to help you make the most of this data structure in your programming projects.
 
 ## Creating Sets in Python
 
