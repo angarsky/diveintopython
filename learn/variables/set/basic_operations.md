@@ -123,4 +123,15 @@ union_set = set1 | set2 | set3
 print(union_set)  # Output: {1, 2, 3, 4, 5}
 ```
 
-## 
+## The `pop()` Method
+
+The `pop()` method in Python's set data type removes and returns an arbitrary element from the set. If the set is empty, a `KeyError` is raised.
+
+Here is an example usage:
+
+```python
+my_set = {1, 2, 3, 4}
+popped_element = my_set.pop()
+print(popped_element)  # output: an arbitrary element from the set, e.g. 1
+print(my_set)  # output: the remaining elements in the set, e.g. {2, 3, 4}
+```
