@@ -158,7 +158,7 @@ print(len(my_set)) # Output: 5
 
 Sets are unordered collections of unique elements, which means the order of elements is not preserved in a set, so final output can not be a sorted set.
 
-In Python, you can sort a set using the built-in `sorted()` function or the `sort()` method.
+In Python, you can sort a set using the built-in `sorted()` function or the `sort()` method. So using this method we convert a set to a list.
 
 Using `sorted()` function:
 
