@@ -29,7 +29,7 @@ In the first example, a `lambda` function `multiply` is defined that **takes in 
 
 1. **Concise code**: Lambda functions can be defined in a single line of code, making them easy to use and read.
 
-2. Easy to **use functions from another python file**: You can use `lambda` functions to define a function that can be used from another python file.
+2. Easy to **use functions from another Python file**: You can use `lambda` functions to define a function that can be used from another Python file.
 
 3. **Functional programming**: Lambda functions enable Python programmers to use functional programming techniques, making it easier to write pure and modular code.
 
