@@ -82,3 +82,23 @@ print(p.y)   # prints 2
 ```
 
 Named tuples are similar to regular tuples, but with the added benefit of having named fields that can make the code more readable and self-documenting. They are immutable, like regular tuples, so their fields cannot be changed once they are created.
+
+## Tuple Inside a List in Python
+
+In some cases we need to make a list of tuples, for example for grouping related data. So you can create a list that contains tuples using the following syntax:
+
+```python
+my_list = [(item1, item2), (item3, item4), (item5, item6)]
+```
+
+Each tuple in the list can contain multiple items, which can be of any data type, including strings, numbers, and other tuples. Here's an example of a list containing tuples with different data types:
+
+```python
+my_list = [("apple", 2), ("orange", 3), ("banana", 4.5), ("grape", ("red", "green"))]
+```
+
+You can access the items in a tuple inside a list using indexing. For example, to access the second item in the first tuple in the list above, you can use the following code:
+
+```python
+print(my_list[0][1])   # Output: 2
+```
