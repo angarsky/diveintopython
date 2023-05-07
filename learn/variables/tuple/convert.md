@@ -43,32 +43,6 @@ my_tuple = tuple(my_list)
 print(my_tuple) # Output: (1, 2, 3, 4, 5)
 ```
 
-## Sorted List of Tuples
-
-You can sort a list of tuples in Python using the sorted function, and passing a key argument that specifies how to compare the elements in each tuple. Here's an example:
-
-```python
-# define a list of tuples
-my_list = [(1, 2), (3, 1), (2, 4)]
-
-# sort the list by the first element in each tuple
-sorted_list = sorted(my_list, key=lambda x: x[0])
-
-print(sorted_list) # Output: [(1, 2), (2, 4), (3, 1)]
-```
-
-You can also sort the list of tuples in reverse order by setting the reverse argument to True:
-
-```python
-# define a list of tuples
-my_list = [(1, 2), (3, 1), (2, 4)]
-
-# sort the list by the second element in each tuple in reverse order
-sorted_list = sorted(my_list, key=lambda x: x[1], reverse=True)
-
-print(sorted_list) # Output: [(2, 4), (1, 2), (3, 1)]
-```
-
 ## Appending a Tuple
 
 To append a tuple to a list in Python, you can use the `append()` method. Here's an example:
