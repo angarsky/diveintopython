@@ -82,8 +82,10 @@ def even_numbers(maximum):
 
 In this example, the `even_numbers()` generator function takes a `maximum` parameter, indicating the maximum number of even numbers to generate. The function uses a `while` loop to iterate from 0 to `maximum` and uses an `if` statement to check whether the current number is even. If the number is even, the function yields the value. The function will continue to generate even numbers until it has met the `maximum` limit, or until the iterator's `__next__()` method is no longer called. 
 
-Overall, generator functions in Python are a powerful tool to generate a sequence of values on the fly, which saves computational memory and offers improved performance over traditional methods of generating large sequences of data.  
-## Differences between generators and regular functions in python  
+Overall, generator functions in Python are a powerful tool to generate a sequence of values on the fly, which saves computational memory and offers improved performance over traditional methods of generating large sequences of data.
+
+## Differences between generators and regular functions in python
+
 Generator functions in Python are a special type of function that allows us to return an iterator object. The generator function returns a generator object that can be iterated upon. Regular functions, on the other hand, return a value and then exit.
 
 Here are some differences between Python functions and generator functions:
@@ -115,6 +117,7 @@ def square_numbers(nums):
 This generator function also takes a list of numbers as input and generates their squares as output.
 
 In summary, while regular Python functions are used to return a value and then exit, generator functions are intended to produce a sequence of values that can be iterated upon.  
+
 ## Common use cases for generator functions  
 
 Common use cases for generator functions in Python include:
@@ -141,7 +144,7 @@ The `read_chunks()` function reads a file in chunks of size `chunk_size` and yie
 
 By utilizing the **advanced techniques** discussed below, you can **manipulate** and **optimize** the output of generator functions in your code.
 
-### Lazy Execution:
+### Lazy Execution
 
 One of the primary benefits of generator functions is the **ability to delay execution on the fly** until the output is actually needed. This can significantly improve the performance of your code by avoiding the need to generate and store all output in memory.
 
@@ -157,7 +160,7 @@ for num in gen:
     print(num) # Executes code as needed.
 ```
 
-### Threading with Generators:
+### Threading with Generators
 
 You can even **combine generators with threads** to **asynchronously** execute code, allowing for **multiple processes** to be executed simultaneously and further improving the performance of your code.
 
