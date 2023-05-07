@@ -1,6 +1,6 @@
 Nested functions are a **powerful tool** available in Python programming that allows one to define functions inside other functions. Such a concept of nesting one function inside another can create more organized and manageable code. With the help of nested functions, the code becomes easier to read and is also more efficient. In this article, we will take a closer look at what are nested functions and why they are used in Python.  
   
-## Understanding python's nested functions  
+## Understanding Python's nested functions  
 
 Nested functions in Python refer to creating functions inside another function. In other words, a function can be defined inside another function, and it can access the variables declared in its outer function.
 
@@ -37,7 +37,7 @@ In this example, we define an `outer_function` that initializes a variable `x` t
 
 When we call `outer_function()`, we get `3` as the result, which is the sum of `x` and `y`. The `inner_function` is called within the scope of the `outer_function`, and it has access to the variable `x` declared in the `outer_function`.  
   
-## Advantages of using nested functions in python  
+## Advantages of using nested functions in Python  
 
 **Nested functions** in Python provide several advantages, including the ability to create a powerful and flexible programming structure, improved code readability, and the ability to create modular code that is easier to maintain.
 
@@ -74,7 +74,7 @@ print(cube(2)) # Output: 9
 
 Here, we create a `power_function` that takes a base and returns a new function, `exponent_power`, which can calculate the power of the base raised to any given exponent. We then create two new functions, `square` and `cube`, each of which is created using the `power_function` and having a different base. Because of the nested structure, the `exponent_power` function has access to the `base` variable of the enclosing `power_function` function, allowing us to create these new functions more easily.  
   
-## Creating nested functions in python
+## Creating nested functions in Python
 
 Nested functions in Python refer to the process of creating a function inside another function. This process allows for better organization and readability of code. To create a nested function in Python, follow these steps:
 
@@ -84,7 +84,7 @@ Nested functions in Python refer to the process of creating a function inside an
 
 In conclusion, creating nested functions in Python is a useful technique for organizing and streamlining code. It allows for better readability and can streamline complex processes.  
   
-## Examples of python nested functions in real-world applications  
+## Examples of Python nested functions in real-world applications  
 
 Nested functions are functions **inside other functions**. These functions are particularly useful in programming. They can be used in real-world applications in Python. For instance, a nested function could define a function that calls another function. Or, a nested function could define a function that uses a previously defined function. In addition, a nested function could provide a local scope.
 
@@ -124,7 +124,7 @@ print(exponential(2))
 
 In this example, `square` is a nested function. It is defined inside `exponential`. `exponential` takes in a parameter `x`. `exponential` returns the square of `x` raised to the fourth power. `square` takes in a parameter `y`. It returns the square of `y`. When we run `exponential(2)`, we get 16 as the result.  
   
-## Best practices for using nested functions in python  
+## Best practices for using nested functions in Python  
 
 Nested functions refer to defining a function within another function in Python. This can be useful for code organization and encapsulation. Best practices for using nested functions include avoiding excessive nesting, ensuring each function has a clear and specific purpose, and using appropriate variable scopes.
 
@@ -164,7 +164,7 @@ In the first example, a power function is created using nested functions. The ou
 
 In the second example, a list of functions is generated using a loop and nested functions. The inner function is defined within the loop, giving it access to the loop variable `i`. The resulting list of functions can then be used to perform calculations using different values of `i`.  
   
-## Differences between nested functions and anonymous functions in python  
+## Differences between nested functions and anonymous functions in Python  
 
 Nested functions are functions that are defined inside another function. These functions are only accessible from within the outer containing function. On the other hand, anonymous functions are functions without names that are defined using the lambda keyword. These functions can be defined anywhere in the program and can be passed as arguments to other functions.
 
@@ -192,7 +192,7 @@ print(new_list)  # Output: [2, 4, 6, 8, 10]
 
 In this example, we use an anonymous function defined by the `lambda` keyword and passed it as an argument to the `map` function. This function multiplies each element of `list_nums` by `2` and returns a new list with the mapped results stored in `new_list`.  
   
-## Common errors to avoid when using nested functions in python programming  
+## Common errors to avoid when using nested functions in Python programming  
 
 To avoid common errors when using nested functions in Python programming, it is important to ensure that function names and variables are **not repeated** within a nested function and its parent function, as this may cause confusion and errors.
 
