@@ -3,6 +3,8 @@ Returning a function from a function means that a function is created and return
 
 ## Return function in Python
 
+In next example, `function1` returns a function `function2` that multiplies its argument by `a`. When `function1(5)` is called, it returns `function2` with `a` set to `5`. This returned function is stored in the variable `multiply_by_5`. We can then call `multiply_by_5(3)` to get the result of `15`.
+
 ### Example 1: Simple use of function return
 
 ```python 
@@ -15,9 +17,8 @@ multiply_by_5 = function1(5)
 result = multiply_by_5(3)
 print(result) # Output: 15
 ```
-In this example, `function1` returns a function `function2` that multiplies its argument by `a`. When `function1(5)` is called, it returns `function2` with `a` set to `5`. This returned function is stored in the variable `multiply_by_5`. We can then call `multiply_by_5(3)` to get the result of `15`.
 
-#### Example 2: Add or multiply
+### Example 2: Add or multiply
 
 ```python 
 def function3(operation):
