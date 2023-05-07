@@ -66,7 +66,7 @@ if __name__ == "__main__":
     main()
 ```  
   
-## Function typing in python: types of arguments and return values  
+## Function typing in Python: types of arguments and return values  
 
 Function typing specifies the types of arguments and the expected return value of a function. Python supports positional, keyword, default and variable-length arguments for a function. Function arguments refer to the values passed to a function, and return values are the results of the executed code. 
 
