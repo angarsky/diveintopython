@@ -1,8 +1,8 @@
-**Recursive programming** is a technique in programming where a function **calls itself repeatedly** until it reaches a base or terminal case. It is a powerful tool when dealing with certain types of problems that can be naturally defined in a recursive manner. In Python, we can implement this technique through **recursive functions.**
+**Recursive programming** is a technique in programming where a function **calls itself repeatedly** until it reaches a base or terminal case. It is a powerful tool when dealing with certain types of problems that can be naturally defined in a recursive manner. In Python, we can implement this technique through recursive functions.
 
 ## Python recursive functions
 
-Recursive functions are functions that **call themselves** during execution to solve a problem by breaking it down into smaller sub-problems. Recursion in Python involves **two main steps**: defining the **base** case(s) and the **recursive** case(s).
+Recursive functions are functions that **call themselves** during execution to solve a problem by breaking it down into smaller sub-problems. Recursion in Python involves two main steps: defining the base case(s) and the recursive case(s).
 
 ### Example 1: Factorial calculation using recursion
 
@@ -121,4 +121,4 @@ In the above code, `sum_n()` is a **recursive function** that calculates the sum
 
 In each recursive call, the function adds the current value of `n` to the accumulator and passes the result to the next recursive call, without keeping the previous call's stack frame in memory. This way, the function uses a constant amount of memory on the call stack, and avoids the risk of stack overflow for large values of `n`.
 
-Note that tail recursion optimization can only be applied to recursive functions that have a tail call, i.e., a recursive call that occurs at the end of the function's execution.
+>Note that tail recursion optimization can only be applied to recursive functions that have a tail call, i.e., a recursive call that occurs at the end of the function's execution.
