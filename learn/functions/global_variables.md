@@ -1,7 +1,7 @@
 In Python, variables are used to store values that can be accessed and manipulated within a program. However, the scope of a variable can differ depending on whether it is a global variable or a local variable. Global variables can be accessed from any part of the program, while local variables are limited to the function or block in which they are defined. Understanding the differences between variable scopes is important for developing efficient and effective Python code.  
   
   
-## Scope of global variables in python  
+## Scope of global variables in Python  
 
 **Global variables** are the variables that are defined outside of any function in a program. They can be accessed and modified by any function or module in the program. 
 
@@ -39,7 +39,7 @@ print(x)    #accessing the global variable outside the function
 
 In this example, the function `func` is creating a new local variable `x` by assigning it a value of `10`. So, the `print` statement inside the function is referring to the local variable and not the global variable. However, when the `print` statement is called outside the function, it refers to the global variable `x`.  
   
-## How global variables work in python  
+## How global variables work in Python  
 
 **Global variables** are variables that can be accessed and modified throughout the code, regardless of where they are declared. The **variable scopes** in Python determine the accessibility of variables in different parts of the code. Python supports three variable scopes - **local, global, and nonlocal**. **Local variables** are variables that are declared and used within a particular function or block of code, and their scope is limited to that particular function or block of code.
 
@@ -81,7 +81,7 @@ func()
 
 In the above code, `local_var` is a **local variable** declared and initialized within the `func()` function. The scope of this variable is limited to the function only. When the function is called, the value of `local_var` is printed. However, when we try to access this variable outside the function, we get a `NameError` as the variable is not defined in that scope.  
   
-## The role of non-local variables in python  
+## The role of non-local variables in Python  
 
 Global variables are variables that can be accessed and modified from anywhere in the program, whereas local variables are only accessible within a specific function or block of code. The scope of a variable refers to the area in which it can be accessed. 
 
@@ -159,7 +159,7 @@ In this example, we declare the global variable `count` outside the function `my
 
 Overall, it is generally best to avoid global variables in favor of local variables with more limited scope. However, in some cases, global variables may be necessary or useful, and we can use them carefully with the `global` keyword to access them inside functions.  
   
-## Advanced tips for python variable scopes and naming conventions  
+## Advanced tips for Python variable scopes and naming conventions  
 
 Advanced tips for Python variable scopes include avoiding global variables as much as possible to prevent naming conflicts and unexpected behavior. It is also recommended to use descriptive variable names that follow the [PEP 8 naming conventions](https://peps.python.org/pep-0008/#naming-conventions), such as using lowercase letters and underscores to separate words.
 
