@@ -1,6 +1,6 @@
 Python offers a range of functions to developers. Partial functions in Python are an exciting addition that can be extremely useful, particularly when dealing with complex code. A partial function is a function that has some of its arguments already defined, making it easier to call. In this article, we explore the concept of partial functions in Python and how they can be used effectively in different programming scenarios.  
   
-## Understanding python partial functions: a beginner's guide to function modification  
+## Understanding Python partial functions: a beginner's guide to function modification  
 
 A **partial function** in Python is a function that is defined with some of its arguments already set. This allows us to create new functions from existing ones that have some of the arguments pre-configured. The resulting function is called a partial function. 
 
@@ -31,7 +31,7 @@ print(mod(3)) # Output: 8
 
 In this example, we have created a new partial function called `mod` which takes a number and computes its modulo with 2. 
   
-## How to use partial functions in python to simplify recurring code snippets  
+## How to use partial functions in Python to simplify recurring code snippets  
 
 Partial functions are functions that are defined with some of its arguments already set, which reduces the need to repeat code snippets in Python. They are created using the `functools` module's `partial()` method and can be used to simplify complex code.
 
@@ -76,7 +76,7 @@ print(url1) # https://example.com/search?q=Python
 print(url2) # https://example.com/search?q=Java&sort=date
 ```  
   
-## Exploring the advantages of partial functions in python: a practical example  
+## Exploring the advantages of partial functions in Python: a practical example  
 
 Partial functions in Python are functions that are partially defined and contain fixed values for certain parameters. These functions offer several advantages, such as enhanced reusability and reduced code redundancy. A practical example of using partial functions in Python is the implementation of the exponential function, where a partial function can be created to predefine the base of the exponent.
 
@@ -128,7 +128,7 @@ print(list(result))    # Output: [2, 4, 6, 8, 10]
 
 In this example, the `multiply` function is defined as a partial function that accepts two arguments, `x` and `y`. The first argument `x` is fixed to the value `2`, and the second argument `y` is passed as a variable parameter using `map` function to multiply each item in the list by `2` and return the result. This results in a more concise and readable code.  
   
-## When to use partial functions vs. lambdas in python: key differences and similarities  
+## When to use partial functions vs. lambdas in Python: key differences and similarities  
 
 Partial functions are functions that have a fixed set of predefined arguments, and the rest of the arguments can be passed at a later time. On the other hand, lambda functions are anonymous functions that can be defined on the fly.
 
@@ -161,7 +161,7 @@ add = lambda x, y: x + y
 print(add(2, 3))   # Output: 5
 ```  
   
-## How to create partial functions in python: a step-by-step tutorial  
+## How to create partial functions in Python: a step-by-step tutorial  
 
 To create a partial function in Python, you need to follow the following steps:
 
@@ -196,7 +196,7 @@ print(cube(5)) #Output: 125
 
 In this example, partial functions called `square` and `cube` are created using the `power()` function, with the exponent parameter set to 2 and 3, respectively. When `square(5)` is called, it returns 25, and when `cube(5)` is called, it returns 125.  
   
-## Enhancing code readability with partial functions in python: tips and tricks  
+## Enhancing code readability with partial functions in Python: tips and tricks  
 
 One way to use partial functions is to reduce code duplication. For example, suppose we have two functions that compute the `average` of two numbers: 
 
