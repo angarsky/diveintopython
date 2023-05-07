@@ -4,10 +4,10 @@ Sometimes it is necessary to convert a tuple to a different data type, such as a
 
 In Python, both tuples and lists are used to store collections of items, but there are some key differences between them. Here are some of the main differences:
 
-- Mutability: Lists are mutable, which means that their contents can be changed, added, or removed after they are created. Tuples, on the other hand, are immutable, which means that their contents cannot be changed once they are created.
-- Syntax: Lists are created using square brackets [] and tuples are created using parentheses ().
-- Usage: Lists are typically used for collections of related items that need to be changed or updated over time, while tuples are often used for collections of related items that are meant to be read-only or are static.
-- Performance: Tuples are generally faster than lists, since they are smaller and their immutability allows for some optimizations in memory usage and performance.
+- **Mutability**: Lists are mutable, which means that their contents can be changed, added, or removed after they are created. Tuples, on the other hand, are immutable, which means that their contents cannot be changed once they are created.
+- **Syntax**: Lists are created using square brackets [] and tuples are created using parentheses ().
+- **Usage**: Lists are typically used for collections of related items that need to be changed or updated over time, while tuples are often used for collections of related items that are meant to be read-only or are static.
+- **Performance**: Tuples are generally faster than lists, since they are smaller and their immutability allows for some optimizations in memory usage and performance.
 
 ## Tuple to List Conversion in Python
 
