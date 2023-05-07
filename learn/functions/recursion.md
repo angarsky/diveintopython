@@ -48,7 +48,7 @@ In this example, the `fibonacci()` function takes an integer `n` as input and re
 
 2. **Watch out for recursion depth**: Recursion depth refers to the number of times a function calls itself recursively. Python has a default recursion depth **limit of 1000**, so make sure to keep your recursive functions within the limit or adjust the recursion depth limit using the sys module.
 
-3. **Consider using memoization**: Memoization is a technique used to cache the results of expensive function calls and reuse them when the same inputs occur again. This can significantly improve the performance of recursive functions in python by avoiding duplicate computations.
+3. **Consider using memoization**: Memoization is a technique used to cache the results of expensive function calls and reuse them when the same inputs occur again. This can significantly improve the performance of recursive functions in Python by avoiding duplicate computations.
 
 4. **Test and debug carefully**: Recursive functions can be difficult to debug due to their complex nature. Make sure to test your function with various input values and take time to understand how it works before deploying it to production.
 
@@ -73,7 +73,7 @@ This recursive function performs **binary search** on a sorted array by **callin
 
 ## Common mistakes and pitfalls in Python Recursion
 
-Python recursive functions can be a powerful tool in solving complex problems, but they can also be prone to common mistakes and pitfalls. Here are some common mistakes to avoid when using python recursion:
+Python recursive functions can be a powerful tool in solving complex problems, but they can also be prone to common mistakes and pitfalls. Here are some common mistakes to avoid when using Python recursion:
 
 1. **Infinite loops**: It is easy to create infinite loops in recursive functions if you don't have a base case that ultimately breaks the recursion. Be sure to define a base case that will stop the recursion.
 
