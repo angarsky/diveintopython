@@ -128,3 +128,14 @@ You can access the items in a tuple inside a list using indexing. For example, t
 ```python
 print(my_list[0][1])   # Output: 2
 ```
+
+## Appending a Tuple
+
+To append a tuple to a list in Python, you can use the `append()` method. Here's an example:
+
+```python
+my_list = [(1, 2), (3, 4)]
+new_tuple = (5, 6)
+my_list.append(new_tuple)
+print(my_list) # Output: [(1, 2), (3, 4), (5, 6)]
+```
