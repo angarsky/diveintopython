@@ -78,7 +78,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 
 1. Keep your Lambda functions **short and simple**: Lambda functions are best used for small operations that can be written concisely in a single line of code. If your function is too long or complex, it might be better to write a regular Python function.
 
-2. Use Lambda functions with **`map()`, `filter()`, and `reduce()`**: These higher-order functions require a function argument, and Lambda functions are a great way to create **simple functions on the fly**.
+2. Use Lambda functions with `map()`, `filter()`, and `reduce()`: These higher-order functions require a function argument, and Lambda functions are a great way to create simple functions on the fly.
 
 3. **Don't overuse Lambda functions**: While Lambda functions can be useful for certain tasks, they can also make your code less readable if overused. If your Lambda expression is getting too long, it might be better to write a regular Python function instead.
 
