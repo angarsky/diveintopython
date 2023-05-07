@@ -1,6 +1,6 @@
 Functions in Python play a crucial role in programming as they serve as reusable blocks of code that can perform specific tasks. Once defined, you can call a function in Python by using its name and passing arguments (optional) in parentheses. Python lets you create multiple functions, each with their specific functionality, making it easier to organize and structure your code. Function typing and function documentation are essential elements that can make your code more readable and easier to debug, especially when working with larger projects.
   
-## How to define and declare a function in python  
+## How to Define and Declare a Function in Python  
 
 In Python, a function is defined using the `def` keyword, followed by the name of the function, and a set of parentheses that may contain parameters. The code block that performs the task is indented under the `def` statement.
 
