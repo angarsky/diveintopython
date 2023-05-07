@@ -64,9 +64,9 @@ my_set = {1, 2, 3}
 
 As above, you can create a set in Python by using a set literal or the `set()` function.
 
-## Adding an Element to a Set in Python
+## How to Add to a Set in Python
 
-In Python, you can add elements to a set using the `add()` method. Here's an example of number addition to a set:
+In Python, you can add to a set an element using the `add()` method. Here's an example of adding to a set:
 
 ```python
 my_set = {1, 2, 3}  # create a set with initial values
@@ -80,7 +80,7 @@ print(my_set)  # output: {1, 2, 3, 4}
 
 In Python, the `set` data type represents a collection of unique elements. The `remove` method is used to remove a specific element from a set.
 
-Here is an example:
+Here is an example of how to remove from a set:
 
 ```python
 # create a set
@@ -182,7 +182,7 @@ print(sorted_set)   # Output: {1, 2, 3, 4, 5}
 
 > Note: the `sort()` method is only available for lists and cannot be used directly with a set. So, you need to first convert the set to a list, then use the `sort()` method, and then convert it back to a set.
 
-In both cases, the resulting set will be sorted in ascending order. If you want to sort in descending order, you can use the `reverse=True` argument in `sorted()` function or the `sort()` method's reverse parameter.
+In both cases, the resulting set will be sorted in ascending order. If you want to sort in descending order of a set, you can use the `reverse=True` argument in `sorted()` function or the `sort()` method's reverse parameter.
 
 ```python
 my_set = {4, 1, 3, 2, 5}
