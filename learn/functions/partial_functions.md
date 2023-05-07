@@ -2,9 +2,9 @@ Python offers a range of functions to developers. Partial functions in Python ar
   
 ## Understanding python partial functions: a beginner's guide to function modification  
 
-A **partial function** in Python is a function that is defined with some of its arguments already set. This allows us to create new functions from existing ones that have some of the arguments pre-configured. The resulting function is called a **partial function**. 
+A **partial function** in Python is a function that is defined with some of its arguments already set. This allows us to create new functions from existing ones that have some of the arguments pre-configured. The resulting function is called a partial function. 
 
-For example, consider the following normal **function** that adds two numbers. We can create a new **partial function** from this **function** by setting one of the arguments:
+For example, consider the following normal function that adds two numbers. We can create a new partial function from this function by setting one of the arguments:
 
 ```python
 from functools import partial
@@ -17,9 +17,9 @@ add_3 = partial(add, 3)
 print(add_3(4)) # Output: 7
 ```
 
-Here, we have created a new **partial function** called `add_3` which adds 3 to any number we pass to it. We did this by using the `partial` function from the `functools` module.
+Here, we have created a new partial function called `add_3` which adds 3 to any number we pass to it. We did this by using the `partial` function from the `functools` module.
 
-We can also use **partial functions** to modify an existing **function** by passing a new value for one of its arguments:
+We can also use partial functions to modify an existing function by passing a new value for one of its arguments:
 
 ```python
 from functools import partial
@@ -29,7 +29,7 @@ mod = partial(pow, 2)
 print(mod(3)) # Output: 8
 ```
 
-In this example, we have created a new **partial function** called `mod` which takes a number and computes its modulo with 2. 
+In this example, we have created a new partial function called `mod` which takes a number and computes its modulo with 2. 
   
 ## How to use partial functions in python to simplify recurring code snippets  
 
@@ -37,7 +37,7 @@ Partial functions are functions that are defined with some of its arguments alre
 
 The keywords used in this answer are function and partial function.
 
-### Two examples of using partial functions in Python:
+### Two examples of using partial functions in Python
 
 Suppose we have a function that calculates the area of a rectangle. We need to calculate the area of several rectangles with a fixed `width` of `10`. Instead of creating a new function, we can create a partial function with the fixed width argument:
 
@@ -140,7 +140,7 @@ Key differences and similarities:
 - Partial functions can have a fixed set of predefined arguments, while lambdas can have any number of arguments.
 - Both partial functions and lambdas can be used as arguments to other functions.
 
-### Example of using a partial function:
+### Example of using a partial function
 
 ```python
 import functools
@@ -153,7 +153,7 @@ double = functools.partial(multiply, y=2)
 print(double(3))   # Output: 6
 ```
 
-### Example of using a lambda function:
+### Example of using a lambda function
 
 ```python
 add = lambda x, y: x + y
@@ -164,6 +164,7 @@ print(add(2, 3))   # Output: 5
 ## How to create partial functions in python: a step-by-step tutorial  
 
 To create a partial function in Python, you need to follow the following steps:
+
 1. Import the `functools` module.
 2. Define the original function that you want to use as a partial function.
 3. Use the `partial()` function to create a new function that has some parameters already set.
