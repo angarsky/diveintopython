@@ -10,7 +10,7 @@ Alternatively, we can also import the entire module and access its functions usi
 
 By using the `import` function in Python, we can easily reuse code across multiple projects and improve our overall efficiency as developers.  
   
-## The different ways to import functions in python
+## The different ways to import functions in Python
 
 Importing functions in Python is a common practice to reuse code and improve code organization. There are different ways to import functions in Python, including importing a function from a file or importing a function as a module.
 
@@ -22,7 +22,7 @@ Alternatively, you can import a function as a module, which can be useful if you
 
 Overall, importing functions in Python is a powerful way to make your code more efficient and readable.  
   
-## Importing specific functions from a file in python
+## Importing specific functions from a file in Python
 
 Importing specific functions from a file in Python allows us to use these functions in our current Python code. The process involves using the 'from' and 'import' keywords.
 
@@ -34,7 +34,7 @@ To import multiple specific functions, say `add` and `subtract`, from `math_oper
 
 Now both the 'add' and 'subtract' functions from 'math_operations.py' can be called as follows: `print(add(2,3)) # Output: 5` and `print(subtract(5,3)) # Output: 2`
   
-## Common errors when importing functions in python and how to fix them  
+## Common errors when importing functions in Python and how to fix them  
 
 When importing functions in Python, common errors include **import errors**, **syntax errors**, and **module attribute errors**. 
 
@@ -48,7 +48,7 @@ For example, let's say you want to import the `runsqlscript` function from the `
 
 And here's how you could do it using the `import` keyword: `import sqlideutils` with `runsqlscript = sqlideutils.runsqlscript`
   
-## Organizing your python code: how to create a custom module with importable functions  
+## Organizing your Python code: how to create a custom module with importable functions  
 
 Organizing your Python code is crucial to make it readable, maintainable, and reusable. One way of achieving this is by creating a custom module containing **importable functions**.
 
@@ -60,7 +60,7 @@ To create a custom module with importable functions, follow these steps:
 4. **Import** the function(s) from the file into another Python script using the `import` keyword and the file name without the `.py` extension (e.g. `import myfunctions`).
 5. **Call** the imported function(s) in the script using the function name as defined in the file (e.g., `myfunctions.mod_function()`).
   
-## Advanced python techniques: how to build and import external packages with multiple functions.  
+## Advanced Python techniques: how to build and import external packages with multiple functions.  
 
 **Import functions** is an advanced Python technique that allows us to build and import external packages with **multiple functions**. It is a powerful feature that enhances code reusability and organization.
 
