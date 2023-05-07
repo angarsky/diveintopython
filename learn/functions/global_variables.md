@@ -11,7 +11,7 @@ In Python, global variables can be accessed and modified from any function or mo
 
 Here are some examples of how the scope of global variables works in Python:
 
-### Example 1: Accessing a global variable **inside** a function
+### Example 1: Accessing a global variable inside a function
 
 ```python
 x = 5    #global variable
@@ -24,7 +24,7 @@ func()   #calling the function
 
 In this example, the function `func` is accessing the global variable `x` which is defined outside of any function.
 
-### Example 2: Accessing the global variable **outside** the function
+### Example 2: Accessing the global variable outside the function
 
 ```python
 x = 5   #global variable
@@ -43,7 +43,7 @@ In this example, the function `func` is creating a new local variable `x` by ass
 
 **Global variables** are variables that can be accessed and modified throughout the code, regardless of where they are declared. The **variable scopes** in Python determine the accessibility of variables in different parts of the code. Python supports three variable scopes - **local, global, and nonlocal**. **Local variables** are variables that are declared and used within a particular function or block of code, and their scope is limited to that particular function or block of code.
 
-### Global variable example:
+### Global variable example
 
 ```python
 # declaring and initializing a global variable
@@ -63,7 +63,7 @@ print(global_var)    # Output: "I have been modified."
 
 In the above code, a **global variable** named `global_var` is declared and initialized outside the function. The `func()` function accesses and modifies the value of `global_var` using the `global` keyword. Finally, the modified value of the global variable is printed.
 
-### Local Variable Example:
+### Local Variable Example
 
 ```python
 def func():
@@ -140,7 +140,7 @@ print("Power of 5^4 is", calculate_power(5, 4))
 
 In this example, we declare a global variable `power` outside the function `calculate_power()`. Inside the function, we use this global variable to store the power of the number. We reset the value of the `power` variable to 1 for each new calculation.
 
-### Program to count the number of times a function is called:
+### Program to count the number of times a function is called
 
 ```python
 count = 0
@@ -161,9 +161,9 @@ Overall, it is generally best to avoid global variables in favor of local variab
   
 ## Advanced tips for python variable scopes and naming conventions  
 
-Advanced tips for Python variable scopes include avoiding global variables as much as possible to prevent naming conflicts and unexpected behavior. It is also recommended to use descriptive variable names that follow the PEP 8 naming conventions, such as using lowercase letters and underscores to separate words.
+Advanced tips for Python variable scopes include avoiding global variables as much as possible to prevent naming conflicts and unexpected behavior. It is also recommended to use descriptive variable names that follow the [PEP 8 naming conventions](https://peps.python.org/pep-0008/#naming-conventions), such as using lowercase letters and underscores to separate words.
 
-Function naming conventions in Python follow the same PEP 8 guidelines, using lowercase letters and underscores to separate words. Function names should also be descriptive and convey the purpose of the function.
+Function naming conventions in Python follow the same [PEP 8 guidelines](https://peps.python.org/pep-0008/#function-and-variable-names), using lowercase letters and underscores to separate words. Function names should also be descriptive and convey the purpose of the function.
 
 ```python
 # Local variable
