@@ -100,7 +100,7 @@ Cat.total() # There are 2 cats.
 
 In Python, **classes** are used for creating objects. An **object** is an instance of a class, and it can have **properties** and **methods**.
 
-Here is an example of how to create a `Person` class with a `name` property and a `greet()` method:
+Here is an example of how to create a class `Person` with a `name` property and a `greet()` method:
 
 ```python
 class Person:
@@ -174,7 +174,7 @@ class Person:
 
 This class defines a `Person` object with a `name` and `age` attribute and an `is_adult()` method that returns `True` if the age is greater or equal to 18. 
 
-## Python Class Inheritance
+## Python class inheritance
 
 **Python class inheritance** allows us to create new classes that inherit attributes and methods from another class, called the parent class. This allows us to build complex programs with parent-child relationships between classes.
 
