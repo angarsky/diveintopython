@@ -22,7 +22,7 @@ Alternatively, you can import a function as a module, which can be useful if you
 
 Overall, importing functions in Python is a powerful way to make your code more efficient and readable.  
   
-## Importing specific functions from a file in Python
+## Call a function from another file
 
 Importing specific functions from a file in Python allows us to use these functions in our current Python code. The process involves using the 'from' and 'import' keywords.
 
@@ -38,7 +38,7 @@ Now both the 'add' and 'subtract' functions from 'math_operations.py' can be cal
 
 When importing functions in Python, common errors include **import errors**, **syntax errors**, and **module attribute errors**. 
 
-If you encounter an error when importing a function, there are a few things you can try to fix it. First, make sure that the file you're trying to import from is located in the same directory as your Python script. If not, you may need to specify the path to the file.
+If you encounter an error when trying to call a function from another file, there are a few things you can try to fix it. First, make sure that the file you're trying to import from is located in the same directory as your Python script. If not, you may need to specify the path to the file.
 
 Next, check the syntax of the import statement to make sure it's correct. If you're using the `from` keyword, make sure you've included the correct function name. If you're using the `import` keyword, make sure you're referring to the correct module name.
 
