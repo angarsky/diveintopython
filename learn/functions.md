@@ -1,6 +1,6 @@
-Functions in Python play a crucial role in programming as they serve as reusable blocks of code that can perform specific tasks. Once defined, you can call a function in Python by using its name and passing arguments (optional) in parentheses. Python lets you create multiple functions, each with their specific functionality, making it easier to organize and structure your code. Function typing and function documentation are essential elements that can make your code more readable and easier to debug, especially when working with larger projects.
+Functions in Python play a crucial role in programming as they serve as reusable blocks of code that can perform specific tasks. Once defined, you can call a function in Python by using its name and passing arguments (optional) in parentheses. You can lets you create multiple functions, each with their specific functionality, making it easier to organize and structure your code. Function typing and function documentation are essential elements that can make your code more readable and easier to debug, especially when working with larger projects. From this article we will learn what is a function in Python and how to call a function.
   
-## How to Define and Declare a Function in Python  
+## How to write a function in python
 
 In Python, a function is defined using the `def` keyword, followed by the name of the function, and a set of parentheses that may contain parameters. The code block that performs the task is indented under the `def` statement.
 
@@ -15,7 +15,7 @@ def greet(name):
 greet("John") # Output: Hello, John
 ```
 
-### Function with a Return Value Example
+### Function with a return value example
 
 ```python
 def square(number):
@@ -27,7 +27,7 @@ print(result) # Output: 16
 
 When a function has a `return` statement, it can return a single value, or multiple values separated by commas. These values can then be assigned to a variable or used directly.
 
-In defining a function, it is good practice to specify **function typing** by adding type hints for parameters and return values. This makes it easier for other developers to understand the expected input and output of the function.
+When you create a function in Python, it is good practice to specify **function typing** by adding type hints for parameters and return values. This makes it easier for other developers to understand the expected input and output of the function.
 
 ```python
 def sum_numbers(num1: int, num2: int) -> int:
