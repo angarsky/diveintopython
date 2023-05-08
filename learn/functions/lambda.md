@@ -1,6 +1,6 @@
 **Lambda functions** in Python are **anonymous** functions that can be defined and declared **inline** with the rest of the code. 
 
-## Introduction to lambda functions
+## What is a lambda function in Python
 
 Lambda functions take in parameters and return a value like a regular Python function, but are **usually only used once** and therefore not given a name. Instead, they are **passed as an argument to other functions** or used in an expression.
 
