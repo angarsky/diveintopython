@@ -121,3 +121,29 @@ Example: `def print():` is not a valid function name.
 Example: `def calculate_total_with_discount():`
 
 Overall, it is recommended to choose a function name that is **descriptive**, **easy to understand**, and follows the naming conventions for Python functions.
+
+## Python function return multiple values 
+
+In Python, a function can only directly return a single value. However, you can return multiple values by packaging them into a data structure like a tuple, list, or dictionary. Here's an example of a function that returns multiple values using a tuple:
+
+```python
+def get_user_info():
+    name = "John Doe"
+    age = 30
+    email = "johndoe@example.com"
+    return name, age, email
+
+# Call the function and unpack the returned values
+user_name, user_age, user_email = get_user_info()
+
+print("Name:", user_name)
+print("Age:", user_age)
+print("Email:", user_email)
+
+# Output:
+# Name: John Doe
+# Age: 30
+# Email: johndoe@example.com
+```
+
+This function `get_user_info()` returns the `name`, `age`, and `email` of a user. By separating the variables with commas in the return statement, Python automatically creates a tuple containing these values. We can then unpack the tuple into separate variables during the function call.
