@@ -23,9 +23,9 @@ In this example, `a and b` evaluates to `False` because both `a` and `b` are not
 
 ## Examples of Boolean Variable Usage
 
-As we already mentioned, boolean variable is mainly used in:
+As we already mentioned, boolean variable is mainly used in the conditional and loop statements.
 
-- conditional statements:
+### Conditional statements
 
 ```python
 # Declaring a boolean variable
@@ -40,7 +40,7 @@ else:
 # Output: Bring an umbrella
 ```
 
-- loop statements:
+### Loop statements
 
 ```python
 # Declaring a boolean variable
