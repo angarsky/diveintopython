@@ -21,9 +21,7 @@ my_car.info()
 
 This creates a `Car` class with an `__init__` method that takes a color and brand as parameters, and an `info` method that prints out information about the car.
 
-To create an object of the `Car` class, use the class name followed by parentheses and any necessary arguments:
-
-This creates an object called `my_car` with the values of `color` and `brand` as passed arguments while creating the object. 
+To create an object of the `Car` class, use the class name followed by parentheses and any necessary arguments. This creates an object called `my_car` with the values of `color` and `brand` as passed arguments while creating the object. 
 
 To call the `info` method on the `my_car` object, use dot notation. This will print out the string `I am a red Toyota car` to the console.
 
@@ -155,32 +153,18 @@ my_dog.greet() # prints "Hi, my name is Max. I'm a Golden Retriever."
 ```
 
 In this example, we define the `Dog` class in a separate `dog.py` module and import it in the `main.py` module using the `from dog import Dog` statement. Finally, we create a `my_dog` object of `Dog` class and call its `greet` method.  
+  
+## Introduction to Python classes: understanding the basics of object-oriented programming  
+
+Pyton class inheritance, encapsulation, abstraction, and polymorphism are the core concepts of Object-Oriented Programming (OOP) which offers Python. With classes and objects in Python, we can create complex programs in an organized and scalable way.
+
+Here are the four main principles of OOP:
+
+ - Abstraction
+ - Encapsulation
+ - Inheritance
+ - Polymorphism
  
-## Python class inheritance
-
-Python class inheritance allows us to create new classes that inherit attributes and methods from another class, called the parent class. This allows us to build complex programs with parent-child relationships between classes.
-
-Here is an example of a parent class and a child class that inherits from it:
-
-```python
-class Animal:
-    def __init__(self, name):
-        self.name = name
-
-    def speak(self):
-        pass
-
-class Dog(Animal):
-    def speak(self):
-        return "Woof!"
-```
-
-The `Animal` class has a `name` attribute and a `speak()` method that doesn't do anything. The `Dog` class is a child class of `Animal` and inherits the `name` attribute. It also defines a `speak()` method that returns ``Woof!``.
-   
-## Introduction to Python classes: understanding the basics of object-oriented programming.  
-
-Class is a blueprint for creating objects that have similar attributes and methods. Classes provide a way to encapsulate data and behavior that belong together. Class in Python can be created using the `class` keyword.
-Pyton class inheritance, encapsulation, abstraction, and polymorphism are the core concepts of Object-Oriented Programming which offers Python. With classes and objects in Python, we can create complex programs in an organized and scalable way.
 
 ### Abstraction
 
@@ -274,7 +258,7 @@ class Rectangle(Shape):
 
 ```
 
-## Advanced Python classes: how to implement abstraction and encapsulation in your programming.  
+## Advanced Python classes: how to implement abstraction and encapsulation in your programming  
 
 In Python, classes are used for implementing complex data structures and for building large software systems. They are used for creating objects that represent a real-world entity. A class in Python is defined as a template or blueprint for creating objects.
 
@@ -296,30 +280,6 @@ class Vehicle(ABC):
 ```
 
 In the above example, `Vehicle` is an Python abstract class that declares two methods `start` and `stop`. Any subclass of `Vehicle` must implement these two methods.
-
-### Encapsulation
-
-Encapsulation is the process of hiding the internal working of a class and only exposing a public interface to the user. This helps in maintaining the invariants of the class and prevents unauthorized access to its data. In Python, encapsulation is achieved using private and protected variables and methods.
-
-```python
-class BankAccount:
-    def __init__(self, account_number, balance):
-        self.__account_number = account_number
-        self.__balance = balance
-        
-    def deposit(self, amount):
-        self.__balance += amount
-        
-    def withdraw(self, amount):
-        if amount > self.__balance:
-            raise ValueError("Insufficient balance")
-        self.__balance -= amount
-        
-    def get_balance(self):
-        return self.__balance
-```
-
-In the above example, `account_number` and `balance` are private variables that can only be accessed within the class. The methods `deposit`, `withdraw`, and `get_balance` provide a public interface to interact with the class.
 
 ## How to create a subclass in Python
 
@@ -375,7 +335,7 @@ class SavingsAccount(BankAccount):
 
 In the above example, `SavingsAccount` is a subclass of `BankAccount` and overrides the `withdraw` method to enforce a minimum balance of 500. The `super()` method is used to call the parent class method.  
   
-## Exploring the power of inheritance in Python classes: adding b functionality to your classes.  
+## Exploring the power of inheritance in Python classes: adding functionality to your classes  
 
 In Python, classes are used to create objects that have their own abstraction, encapsulation, inheritance, and polymorphism. Classes can inherit from other classes to create new classes with extended functionalities. This is called class inheritance.
 
@@ -432,7 +392,7 @@ c.start() # Output: Starting the red sedan...
 
 In the above example, the class `Car` is inheriting from the class `Vehicle`. This means that `Car` will have the `start()` method from `Vehicle` and also a new attribute `model`. The `start()` method of `Car` is overriding the `start()` method of `Vehicle`. However, it is still calling the `start()` method of `Vehicle` using `super().start()` to maintain the original functionality.  
   
-## The fascinating world of polymorphism in Python classes: making your objects flexible and adaptable.  
+## The fascinating world of polymorphism in Python classes: making your objects flexible and adaptable  
 
 Classes in Python provide a way to create *objects* that bundle together data and functionality. By implementing abstraction, encapsulation, inheritance, and polymorphism, programmers can build more flexible and adaptable systems. 
 
@@ -467,7 +427,7 @@ In this example, we define a base `Animal` class and two subclasses, `Dog` and `
 
 With the power of polymorphism, we can create more flexible, adaptable, and reusable code by leveraging the common interfaces provided by classes in Python.  
   
-## Python classes: the ultimate guide to creating and using custom data types in your code.  
+## Python classes: the ultimate guide to creating and using custom data types in your code  
 
 Classes in Python are custom data types that allow code to be organized and reused more efficiently. A class is defined using the `class` keyword, and instances of the class are created using the class name followed by parentheses.
 
@@ -486,7 +446,7 @@ class Person:
 
 In this example, the `Person` data class has `name` and `age` properties defined as variables. The `@dataclass` decorator automatically generates the `__init__`, `__repr__`, and `__eq__` methods for the class. 
 
-## The importance of encapsulation in Python classes: securing your data and preventing errors in your code.  
+## The importance of encapsulation in Python classes: securing your data and preventing errors in your code  
 
 Encapsulation is a key aspect of Python classes as it helps to secure your data and prevent errors in your code. It is achieved through the use of abstraction and encapsulation concepts in object-oriented programming. 
 
