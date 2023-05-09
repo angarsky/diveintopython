@@ -122,7 +122,7 @@ Example: `def calculate_total_with_discount():`
 
 Overall, it is recommended to choose a function name that is **descriptive**, **easy to understand**, and follows the naming conventions for Python functions.
 
-## Python function return multiple values 
+## How to return multiple values from a function
 
 In Python, a function can only directly return a single value. However, you can return multiple values by packaging them into a data structure like a tuple, list, or dictionary. Here's an example of a function that returns multiple values using a tuple:
 
