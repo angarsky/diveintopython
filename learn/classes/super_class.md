@@ -240,31 +240,6 @@ class Circle(Shape):
 ```
 
 In the above code, `Shape` is an abstract base class with an abstract method `draw()`. `Circle` is a subclass of `Shape` and its constructor overrides `super().__init__()` to call the `__init__()` method of `Shape`.
-
-### Python class super
-
-The `super()` method can also be used in regular classes in Python to call the methods of a parent or super class.
-
-```python
-class Animal:
-    def __init__(self, name):
-        self.name = name
-    
-    def speak(self):
-        pass
-
-class Dog(Animal):
-    def __init__(self, name, breed):
-        super().__init__(name)
-        self.breed = breed
-    
-    def speak(self):
-        print(f"{self.name} the {self.breed} says woof!")
-```
-
-In the above code, `Animal` is a parent class and `Dog` is a subclass of `Animal`. The `__init__()` method of `Dog` overrides `super().__init__()` to call the `__init__()` method of `Animal`. The `speak()` method is also overridden in `Dog` to print a specific message for dogs.
-
-Overall, the `super()` method is a powerful tool in Python for working with inheritance and subclassing. It allows subclasses to extend or override methods of their super class easily.  
   
 ## The power of Python's super class, demystified  
 
