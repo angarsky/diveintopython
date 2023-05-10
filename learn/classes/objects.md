@@ -97,7 +97,7 @@ print(p1.name, p1.position, p1.number)
 
 When working with class objects in Python, there may be some common issues that can occur. Here are some of the most common issues and their solutions:
 
-1. AttributeError: This error occurs when trying to access an attribute that does not exist in the class or object. To solve this error, make sure the attribute exists and has been properly defined.
+1. `AttributeError`: This error occurs when trying to access an attribute that does not exist in the class or object. To solve this error, make sure the attribute exists and has been properly defined.
 
 ```python
 class MyClass:
@@ -110,7 +110,7 @@ print(obj.value)  # Output: 5
 # print(obj.foo)  Output: AttributeError: 'MyClass' object has no attribute 'foo'
 ```
 
-2. TypeError: This error occurs when a function or method is called with the wrong number or type of arguments. To solve this error, make sure the function or method is called with the correct number and type of arguments.
+2. `TypeError`: This error occurs when a function or method is called with the wrong number or type of arguments. To solve this error, make sure the function or method is called with the correct number and type of arguments.
 
 ```python
 class MyClass:
