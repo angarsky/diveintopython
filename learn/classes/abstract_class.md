@@ -204,7 +204,7 @@ c.move() ### This will print "cat is jumping"
 
 ```
   
-## Using Python abstract base classes to simplify your code design  
+## Using Python abstract base classes
 
 Abstract classes in Python are classes that cannot be instantiated, and are meant to be inherited by other classes. They are useful for defining common methods and properties that should be implemented by their concrete subclasses. 
 
@@ -272,8 +272,6 @@ Overall, abstract base classes in Python provide a powerful tool for code design
 ## Best practices for designing Python abstract classes  
 
 When designing abstract classes in Python, it is important to follow best practices to ensure a maintainable and readable codebase. 
-
-### Best practices
 
 1. Use the `abc` module to define an abstract base class (ABC).
 
