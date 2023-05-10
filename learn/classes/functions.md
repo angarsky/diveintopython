@@ -3,27 +3,6 @@ This article explores the ins and outs of working with methods and functions in 
 ## Fundamentals of Python functions in a class: understanding the basics
 
 Python allows us to define functions inside a class. These functions are called methods, and they can access the attributes (variables) and methods of the class. A class constructor is a special method that is called when an object of a class is created. Here are some important concepts related to methods and functions in Python:
-
-### Example of Python abstract class method
-```python
-from abc import ABC, abstractmethod
-
-class Shape(ABC):
-    @abstractmethod
-    def area(self):
-        pass
-
-class Rectangle(Shape):
-    def __init__(self, length, breadth):
-        self.length = length
-        self.breadth = breadth
-
-    def area(self):
-        return self.length * self.breadth
-
-rectangle1 = Rectangle(10, 5)
-print(rectangle1.area())
-```  
   
 ## Mastering the Python class constructor   
 
