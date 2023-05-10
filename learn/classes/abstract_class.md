@@ -2,9 +2,9 @@ In object-oriented programming, an abstract class is a class that cannot be inst
   
 ## Introduction to Python abstract class  
 
-In Python, an `abstract class` is a class that is designed to be inherited by other classes. It cannot be instantiated on its own and its purpose is to provide a template for other classes to build on. 
+In Python, an **abstract class** is a class that is designed to be inherited by other classes. It cannot be instantiated on its own and its purpose is to provide a template for other classes to build on. 
 
-An `abstract base class` in Python is defined using the `abc` module. It allows us to specify that a class must implement specific methods, but it doesn't provide an implementation for those methods. Any class that inherits from an abstract base class must implement all the abstract methods. 
+An abstract base class in Python is defined using the `abc` module. It allows us to specify that a class must implement specific methods, but it doesn't provide an implementation for those methods. Any class that inherits from an abstract base class must implement all the abstract methods. 
 
 ```python
 from abc import ABC, abstractmethod
