@@ -206,21 +206,4 @@ print(result)
 
 In this example, we have created two static classes `StringUtils` and `TextUtils`. The `StringUtils` class contains a static method `reverse_string` that returns a reversed string. The `TextUtils` class contains a static method `reverse_and_uppercase` that calls the `reverse_string` method from the `StringUtils` class and returns the reversed string in uppercase. 
 
-By using static classes in Python, we can improve code organization, reusability, and readability.  
-  
-## Call static method in class
-
-To call a static method inside the class, you can use the class name followed by the method name, for example:
-
-```python
-class MyClass:
-    @staticmethod
-    def my_static_method(x):
-        return x * 2
-    
-    def my_instance_method(self, x):
-        return self.my_static_method(x)
-```
-
-Here, the method `my_static_method` is called from the `my_instance_method` method using `self.my_static_method`.
- 
+By using static classes in Python, we can improve code organization, reusability, and readability.    
