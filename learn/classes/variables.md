@@ -215,7 +215,7 @@ In the example, `x` is a global variable that can be accessed inside the class. 
 
 Variables in Python classes are attributes or properties that hold data and values. In a Python class, variables can be global, instance, or static. Instance variables are unique to each object created from a class, while static variables are shared among all objects of the same class. Global variables are accessible throughout the entire program.
 
-One important concept to note is the role of private variables in Python classes. Private variables are variables that are meant to be used only within the class and should not be accessed or modified from outside the class. In Python, private variables are denoted by adding two underscores (__) before the variable name.
+One important concept to note is the role of private variables in Python classes. Private variables are variables that are meant to be used only within the class and should not be accessed or modified from outside the class. In Python, private variables are denoted by adding two underscores `__` before the variable name.
 
 For example:
 
