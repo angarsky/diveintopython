@@ -137,32 +137,6 @@ StaticClass.my_static_method()
 ```
 
 In the above example, we have defined a static class `StaticClass` with a static method `my_static_method`. We can call this method without creating an instance of the class.
-
-### Python class static method
-
-```python
-class RegularClass:
-    def __init__(self, name):
-        self.name = name
-
-    def my_regular_method(self):
-        print(f"Hello, {self.name}!")
-
-    @staticmethod
-    def my_static_method():
-        print("This is a static method")
-
-# Call static method in class
-RegularClass.my_static_method()
-
-# Create object of class and call regular method
-obj = RegularClass("John")
-obj.my_regular_method()
-```
-
-In this example, we have defined a regular class `RegularClass` with two methods, a regular method `my_regular_method`, and a static method `my_static_method`. We can call the static method without creating an instance of the class, and we can call the regular method by creating an object of the class and accessing it using the object.
-
-In summary, using static classes can be useful if you need to define utility functions that can be accessed without creating an instance of the class. Regular classes are useful when you need to define data structures and operations that involve instances of those data structures.  
   
 ## Use static classes in Python
 
