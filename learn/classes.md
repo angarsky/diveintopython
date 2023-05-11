@@ -316,8 +316,6 @@ In the code above, the class `C` inherits from class `B`, which already inherits
 
 Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
 
-Example: 
-
 ```python
 class A:
     def hello(self):
