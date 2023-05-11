@@ -58,8 +58,6 @@ Object-oriented programming (OOP) is a programming paradigm that emphasizes the 
 
 In Python, a class is a blueprint for creating objects. It specifies the attributes and methods that the objects will have. Attributes are variables that hold data, while methods are functions that operate on the data.
 
-Here is an example of a simple Python class:
-
 ```python
 class Car:
     def __init__(self, make, model, year):
@@ -73,7 +71,6 @@ class Car:
 # To create an instance of this class, we can do the following:
 my_car = Car("Toyota", "Corolla", 2019)
 print(my_car.get_info())  ### Output
-
 ```
 
 This class defines a `Car` object with three attributes: `make`, `model`, and `year`. It also defines a method called `get_info` that returns a formatted string containing the car's make, model, and year.
