@@ -1,286 +1,349 @@
-In this article, we will explore what classes in Python are, why they are necessary in programming, and how you can use them in your applications.  
+Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we'll explore the basics of classes in Python and how to use them effectively in your projects.  
   
-## Advantages of Utilizing Classes in Python
+## Advantages of Utilizing Classes in Python  
 
-Python classes provide a way to bundle data and functionality together in a reusable and modular format. Here are some of the main advantages of utilizing classes in Python:
+Python class is a blueprint for creating objects that have a set of attributes and methods. It is a fundamental concept in object-oriented programming. Here are some benefits of utilizing classes in Python:
 
-1. **Encapsulation**: Classes allow you to encapsulate data and functionality within an object, so that it can only be accessed through a well-defined interface. This makes it easier to manage complexity and reduces the risk of naming conflicts and other issues.
+- **Code organization:** Classes allow you to group related data and functionality together in a single block of code. This improves code readability, reduces duplication, and makes it easier to maintain and update your code.
 
-2. **Modularity**: Classes provide a way to break up your code into smaller and more manageable pieces, which can be reused across multiple projects. This can save you time and effort, and make your code more readable and maintainable.
+- **Inheritance:** Classes can be used to create new classes that inherit properties and methods from existing ones. This allows you to reuse code and avoid writing redundant code.
 
-3. **Inheritance**: Classes support inheritance, which allows you to create new classes based on existing ones. This can help you to avoid duplicating code and to build more complex and sophisticated systems.
-
-4. **Polymorphism**: Classes support polymorphism, which allows you to use the same interface to represent different types of objects. This can help you to build more flexible and dynamic systems.
-
-### Example 1: Encapsulation
 ```python
-class BankAccount:
-    def __init__(self, balance=0):
-        self._balance = balance
-    
-    def deposit(self, amount):
-        self._balance += amount
-    
-    def withdraw(self, amount):
-        if amount > self._balance:
-            raise ValueError("Not enough funds")
-        self._balance -= amount
-    
-    def get_balance(self):
-        return self._balance
-```
+class Employee:
+    """A class representing an employee."""
 
-In this example, we define a `BankAccount` class that encapsulates the data and functionality related to a bank account. The account balance is stored in a private variable `_balance`, which can only be accessed through the public methods `deposit()`, `withdraw()`, and `get_balance()`. This allows us to manage the account balance in a controlled way, and to prevent unauthorized access to the balance variable.
-
-### Example 2: Inheritance
-```python
-class Animal:
-    def __init__(self, name):
+    def __init__(self, name, salary):
         self.name = name
-        
-    def speak(self):
-        pass
-    
-class Dog(Animal):
-    def speak(self):
-        return "Woof"
-    
-class Cat(Animal):
-    def speak(self):
-        return "Meow"
+        self.salary = salary
+
+    def get_salary(self):
+        return self.salary
+
+    def set_salary(self, new_salary):
+        self.salary = new_salary
+
+class Manager(Employee):
+    """A class representing a manager, inheriting from Employee."""
+
+    def __init__(self, name, salary, bonus):
+        super().__init__(name, salary)
+        self.bonus = bonus
+
+    def get_salary(self):
+        return self.salary + self.bonus
 ```
 
-In this example, we define an `Animal` class that provides a base for other animal classes. We define two subclasses `Dog` and `Cat` that inherit from `Animal`. Each subclass overrides the `speak()` method to provide a different sound. This allows us to create different types of animals that share common functionality, and to customize their behavior as needed.  
+In conclusion, classes in Python provide a powerful tool for organizing code and creating reusable components. With inheritance and other advanced features, classes can help you write more efficient and maintainable code.  
   
 ## Overview of Object-Oriented Programming  
 
-Object-oriented programming (OOP) is a programming paradigm that emphasizes the use of objects, which are instances of classes, to model real-world concepts and processes. Python is an object-oriented programming language that supports multiple programming paradigms. 
+Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports OOP concepts such as encapsulation, inheritance, and polymorphism.
 
-In Python, a class is a blueprint for creating objects. It specifies the attributes and methods that the objects will have. Attributes are variables that hold data, while methods are functions that operate on the data.
+### Python Class
 
-### Python class example
-
-```python
-class Car:
-    def __init__(self, make, model, year):
-        self.make = make
-        self.model = model
-        self.year = year
-        
-    def get_info(self):
-        return f"{self.make} {self.model} ({self.year})"
-
-# To create an instance of this class, we can do the following:
-my_car = Car("Toyota", "Corolla", 2019)
-print(my_car.get_info())  ### Output
-```
-
-This class defines a `Car` object with three attributes: `make`, `model`, and `year`. It also defines a method called `get_info` that returns a formatted string containing the car's make, model, and year.
-
-This code creates a `Car` object called `my_car` and prints its information using the `get_info` method.
-
-Another example of a Python class is a `Rectangle` class that calculates the area of a rectangle:
+A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class in Python. Here is an example of a simple `Person` class:
 
 ```python
-class Rectangle:
-    def __init__(self, length, width):
-        self.length = length
-        self.width = width
-        
-    def get_area(self):
-        return self.length * self.width
-# To create an instance of this class and calculate its area, we can do the following:
-my_rectangle = Rectangle(5, 10)
-print(my_rectangle.get_area())  ### Output 50
-```
-
-This code creates a `Rectangle` object called `my_rectangle` with length 5 and width 10. It then calls the `get_area` method to calculate and print the rectangle's area.
-
-In summary, Python supports OOP through the use of classes, which define the attributes and methods of objects. These objects can model real-world concepts and processes, making Python a versatile and powerful language for many applications.  
-   
-## Understanding Classes and Instances  
-
-In Python, classes are used to define objects with specific properties and behaviors. Instances, on the other hand, are individual objects created from a class.
-
-```python
-class Car:
-    def __init__(self, brand, model):
-        self.brand = brand
-        self.model = model
-
-    def drive(self):
-        print(f"The {self.brand} {self.model} is now driving.")
-
-# Creating instances of the Car class
-car1 = Car("Toyota", "Corolla")
-car2 = Car("Honda", "Civic")
-
-# Accessing instance attributes
-print(car1.brand)  # Output: Toyota
-print(car2.model)  # Output: Civic
-
-# Invoking instance methods
-car1.drive()  # Output: The Toyota Corolla is now driving.
-car2.drive()  # Output: The Honda Civic is now driving.
-```
-In this example, we have a Car class with an __init__ method (also known as a constructor) that initializes the attributes brand and model of a car object. The drive method is defined to simulate the action of driving a car.
-
-We create two instances of the Car class: car1 and car2, with different brand and model values. We can access the attributes of each instance using dot notation (instance.attribute). Additionally, we can invoke the drive method on each instance, which will print a message indicating that the car is driving.
-
-By using classes and instances, we can create multiple objects with similar characteristics and behaviors, allowing for efficient code organization and reuse.
-
-## Invoking Class Methods  
-
-Class methods are the methods which are bound to the class and not the instances of the class. These methods are defined using the `@classmethod` decorator in Python.
-
-A class method is invoked using the class name and not an instance of the class. The first parameter in a class method is always the class itself, which is conventionally named as `cls`. 
-
-```python
-# Example 1
-class MyClass:
-    @classmethod
-    def my_class_method(cls):
-        print("This is a class method")
-
-MyClass.my_class_method()
-# Output: `This is a class method` 
-```
-
-In this code example, the class method `my_class_method` is defined inside the class `MyClass`. The method is invoked using the `MyClass.my_class_method()` syntax. This will execute the code block inside the method and prints the string.
-
-```python
-# Example 2
-class Rectangle:
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
     
-    @classmethod
-    def square(cls, side):
-        return cls(side, side)
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 
-square_rect = Rectangle.square(5)
-print(square_rect.width)
-print(square_rect.height)
+person = Person("John", 30)
+person.greet()
 
 # Output:
-# 5
-# 5
+# 
+# Hello, my name is John and I am 30 years old.
 ```
 
-In this code example, the class method `square` is defined inside the `Rectangle` class. This method creates a new instance of the class `Rectangle` with equal width and height values. This class method is invoked using the `Rectangle.square(5)` syntax, which returns a new instance of the `Rectangle` class. 
+In this example, the `Person` class has two attributes `name` and `age`, and a method `greet` that prints a greeting message. The `__init__` method is a constructor that initializes the attributes of the object. To create an object of the `Person` class, we use the class constructor and pass in the required parameters.
 
-The new instance is then stored in the `square_rect` variable, and the width and height values of the new object are printed using the `print(square_rect.width)` and `print(square_rect.height)` statements, which outputs `5` for both. 
+Inheritance is a mechanism that allows a subclass to inherit the properties (methods and attributes) of its superclass. Polymorphism allows objects of different classes to be treated as if they are of the same type.
 
-Overall, class methods in Python are useful to execute operations on a class level, without the need for an instance of the class.  
-  
-## Implementing Class Trees in Coding  
+## Exploring Attribute Inheritance and Searching  
 
-Class trees in Python refer to the hierarchy of classes where one class can inherit properties and methods from another class. This feature enables code reuse, making it easier and more efficient to develop applications.
+In Python, attributes can be inherited from parent classes to child classes. Attribute inheritance allows child classes to access and use attributes defined in their parent classes. Python provides a built-in function `issubclass()` to check whether a given class is a subclass of another class.
 
-### Example 1: How to create a class tree
+### Example of a Class in Python
 
 ```python
-# Defining the Parent Class
 class Person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-    def print_person(self):
-        print("Name:", self.name)
-        print("Age:", self.age)
-
-# Defining the Child Class
 class Student(Person):
-    def __init__(self, name, age, grade):
+    def __init__(self, name, age, student_id):
         super().__init__(name, age)
-        self.grade = grade
-
-    def print_student(self):
-        self.print_person()
-        print("Grade:", self.grade)
-
-# Creating an Object of the Child Class
-student = Student("John", 15, "10th")
-student.print_student()
+        self.student_id = student_id
 ```
 
-In this example, the `Person` class is the parent class, and the `Student` class is the child class. The `Student` class inherits the `__init__` method from `Person` using the `super()` function. The `print_student` method in the `Student` class calls the inherited `print_person` method in the `Person` class to print the name and age of the student.
+In this example, `Student` is a child class of `Person`. The `Student` class inherits the `name` and `age` attributes from the `Person` class.
 
-### Example 2: How to create a multilevel class tree
+### Code example 1: Attribute inheritance
 
 ```python
-# Defining the Parent Class
-class Animal:
-    def __init__(self, name):
-        self.name = name
+class A:
+    x = 10
 
-    def print_name(self):
-        print("Name:", self.name)
+class B(A):
+    pass
 
-# Defining the Child Class
-class Mammal(Animal):
-    def __init__(self, name, mammal_type):
-        super().__init__(name)
-        self.mammal_type = mammal_type
+class C(B):
+    pass
 
-    def print_type(self):
-        print("Type:", self.mammal_type)
+print(B.x)   # 10
 
-# Defining the Grandchild Class
-class Dog(Mammal):
-    def __init__(self, name, mammal_type, breed):
-        super().__init__(name, mammal_type)
-        self.breed = breed
+print(C.x)   # 10
 
-    def print_breed(self):
-        print("Breed:", self.breed)
-
-# Creating an Object of the Grandchild Class
-dog = Dog("Buddy", "Dog", "Labrador")
-dog.print_name()
-dog.print_type()
-dog.print_breed()
 ```
 
-In this example, the `Animal` class is the parent class, the `Mammal` class is the child class that inherits from the `Animal` class, and the `Dog` class is the grandchild class that inherits from the `Mammal` class. The `Dog` class inherits the `print_name` and `print_type` methods from the `Animal` and `Mammal` classes, respectively, and defines its own `print_breed` method to print the breed of the dog.  
+In this example, `A` is the parent class, `B` is the child class and `C` is the grandchild class. The `x` attribute defined in the `A` class is inherited by both `B` and `C` classes.
+
+### Code example 2: Attribute search order
+
+```python
+class A:
+    x = 10
+
+class B(A):
+    x = 20
+
+class C(B):
+    pass
+
+print(C.x)   ### Output 20
+
+```
+
+In this example, `A` is the parent class, `B` is the child class and `C` is the grandchild class. Both `A` and `B` classes have an attribute named `x`. In this case, the attribute search order is from the current class (which is `C`), to its parent class `B` and finally to the grandparent class `A`. The value of `x` found in the closest ancestor (`B`) is printed as the output.  
   
-## The Essence of OOP: Code Reusability  
+## Defining Classes in Python  
 
-Object-oriented programming (OOP) is a programming paradigm that revolves around the idea of creating reusable code blocks called classes. In Python, classes allow developers to define custom data types, define methods that operate on these types, and create instances of these types.
+Creating a class in Python is done using the keyword `class`. Classes in Python allow for the creation of objects that have attributes and methods.
 
-The key benefit of OOP in Python is code reusability. Code written using OOP principles can be easily reused in other programs without having to repeatedly write the same code.
-
-### Python class
-
-A Python class is a blueprint for creating objects. In other words, a class is a template for creating objects that share the same attributes and methods.
-
-Here is an example of a Python class:
+The following code defines a simple class called `Car` and creates an instance of that class called `my_car`:
 
 ```python
+### Example 1
 class Car:
     def __init__(self, make, model, year):
         self.make = make
         self.model = model
         self.year = year
 
-    def start(self):
-        print("Engine started")
-
-    def stop(self):
-        print("Engine stopped")
-
-    def get_info(self):
-        return f"{self.make} {self.model} ({self.year})"
+my_car = Car("Toyota", "Corolla", 2022)
 ```
 
-This class represents a Car with properties like make, model, and year. It also has methods like start, stop, and get_info.
+In this example, the `__init__` method is defined, which initializes the object with the given attributes. The `self` parameter refers to the object instance being created. The `make`, `model`, and `year` parameters are attributes of the object that can be accessed and modified using dot notation. Finally, an instance of the `Car` class is created with the `my_car` variable, which is passed the arguments `Toyota`, `Corolla`, and 2022.
 
-### Importing Python class
+The following example defines a more complex class called `BankAccount`:
 
-Once you have defined a class in Python, you can use it in other programs by importing it. Here is an example of importing the Car class from the previous example `from car import Car`.
+```python
+### Example 2
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.balance = balance
+        self.transactions = []
 
-This code imports the Car class from a module named `car` and creates an instance of the class called `my_car`. It then calls the start method on the object and prints its info.
+    def deposit(self, amount):
+        self.balance += amount
+        self.transactions.append(("deposit", amount))
 
-By using OOP principles, developers can create reusable code blocks and improve code scalability. Code blocks like classes can be easily imported into other programs to create a better, more efficient codebase.  
+    def withdraw(self, amount):
+        if amount > self.balance:
+            raise ValueError("Not enough funds")
+        self.balance -= amount
+        self.transactions.append(("withdrawal", amount))
+
+my_account = BankAccount("123456", 500)
+my_account.deposit(200)
+my_account.withdraw(50)
+```
+
+In this example, the `BankAccount` class is defined with an `__init__` that sets the `account_number` and `balance` attributes. A `transactions` list is also initialized, which will keep track of all transactions on the account. The `deposit` and `withdraw` methods can be called on a `BankAccount` object to modify the account's balance and add a transaction. Finally, the `my_account` variable is created as a `BankAccount` object with an initial balance of `500`, and the account is modified with a `deposit` and a withdrawal.
+
+These examples illustrate the basics of defining classes in Python, including the use of the `class` keyword, the `__init__` method for initializing objects, and the creation of instance methods to modify object attributes.  
+   
+## Understanding Classes and Instances  
+
+Classes in Python are the blueprint for creating objects. An object is an instance of a class, and it can have attributes (variables) and methods (functions). 
+
+To create a class in Python, we use the `class` keyword followed by the name of the class. Here is an example:
+
+```python
+class Dog:
+   def __init__(self, name, breed):
+      self.name = name
+      self.breed = breed
+
+   def bark(self):
+      print("Woof!")
+
+my_dog = Dog("Fido", "Labrador")
+
+print(my_dog.name) 
+
+print(my_dog.breed) 
+
+my_dog.bark() 
+```
+
+In this example, we created a `Dog` class with two attributes (`name` and `breed`) and one method (`bark`). The `__init__` method is a special method that gets called when we create a new instance of the class. 
+
+To create a new instance of a class in Python, we can simply call the class like a function and pass in any necessary arguments.
+
+In this example, we created a new instance of the `Dog` class and assigned it to the variable `my_dog`. We passed in two arguments (``Fido`` and ``Labrador``) that were used to set the `name` and `breed` attributes of the object.
+
+We can then access the attributes and methods of the object using dot notation.
+
+In summary, classes in Python allow us to create objects with attributes and methods, and instances of a class are created by calling the class like a function.  
+  
+## Invoking Class Methods  
+
+In Python, class methods are defined using the `@classmethod` decorator. Class methods can be called by the class or an instance of the class.
+
+To invoke a class method in Python, you can use the following syntax:
+
+```python
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+
+    @classmethod
+    def greet(cls):
+        print(f"Hello from {cls.__name__}!")
+
+    def say_hello(self):
+        print(f"Hello, {self.name}!")
+
+# Invoking class method without creating an instance
+MyClass.greet()
+
+# Creating an instance and invoking instance method
+obj = MyClass("Alice")
+obj.say_hello()
+```
+
+In this example, we have a class called `MyClass` with two methods: `greet()` and `say_hello()`.
+
+The `greet()` method is a class method decorated with `@classmethod`. It takes the cls parameter, which refers to the class itself. It prints a greeting message along with the name of the class.
+
+The `say_hello()` method is an instance method. It takes the `self` parameter, which refers to the instance of the class. It prints a personalized greeting message using the `name` attribute of the instance.
+
+To invoke a class method, you can directly call it on the class itself, without creating an instance.
+
+## Implementing Class Trees in Coding  
+
+In Python programming, a class is a blueprint for creating objects with common attributes and methods. A class tree represents a hierarchy of classes, where each class inherits attributes and methods from its parent class or superclass.
+
+```python
+### Example 1
+class Animal:
+    def __init__(self, name, sound):
+        self.name = name
+        self.sound = sound
+
+    def make_sound(self):
+        return self.sound
+
+class Dog(Animal):
+    def __init__(self, name, sound):
+        Animal.__init__(self, name, sound)
+
+dog = Dog("Rufus", "Woof")
+print(dog.make_sound())   # Output: Woof
+```
+
+In this example, we define two classes, `Animal` and `Dog`. The `Dog` class inherits from the `Animal` class using the syntax `class Dog(Animal):`. The `Dog` class has its own constructor (`__init__`) but also calls the constructor of its parent class (`Animal.__init__(self, name, sound)`).
+
+```python
+### Example 2
+class A:
+    def method(self):
+        print("Method of class A")
+
+class B:
+    def method(self):
+        print("Method of class B")
+
+class C(A, B):
+    pass
+
+c = C()
+c.method()  # Output: Method of class A
+```
+
+In this example, we define three classes `A`, `B`, and `C`. The `C` class inherits from both `A` and `B` using the syntax `class C(A, B):`. When calling the `method` function on the `C` object, it resolves to the `A` method because `A` is listed first in the inheritance chain. 
+  
+## The Essence of OOP: Code Reusability  
+
+Object-oriented programming (OOP) is a popular software programming paradigm that emphasizes the creation of reusable code components. OOP programming is powerful in Python because of its ability to implement such reusable code in the form of classes and modules.
+
+### Python Class Import
+
+Python is an object-oriented language, which means that classes play a central role in its design. To access class methods and attributes from another module, the class must be imported using the `import` statement: `from module_name import Class_Name`.
+
+## Inheritance  
+
+In Python, inheritance allows a class to inherit properties and methods of another class. This helps in code reusability, making it easy to create new classes without having to rewrite the code from scratch.
+
+### Python inherits from two classes
+
+Python also allows a class to inherit from two classes and calls it a two-level inheritance. In this case, the new class inherits from a class that has already inherited from another class.
+
+```python
+class A:
+    def hello(self):
+        print("Hello from A")
+
+class B(A):
+    pass
+
+class C(B):
+    pass
+
+obj = C()
+obj.hello() # Output: Hello from A
+```
+
+In the code above, the class `C` inherits from class `B`, which already inherits from class `A`, and thus can access methods from both classes.
+
+### Python Inherits From Multiple Cclasses
+
+Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
+
+Example: 
+
+```python
+class A:
+    def hello(self):
+        print("Hello from A")
+
+class B:
+    def hi(self):
+        print("Hi from B")
+
+class C:
+    def greet(self):
+        print("Greet from C")
+
+class D:
+    def good_morning(self):
+        print("Good_morning from D")
+
+class E(A,B,C, D):
+    pass
+
+obj = E()
+obj.hello() # Output: Hello from A
+obj.hi() # Output : Hi from B
+obj.good_morning() # Output : Good_morning from D
+```
+
+In the code above, class `E` inherits from `A`, `B`, `C`, `D` classes and can access methods from all this classes.
