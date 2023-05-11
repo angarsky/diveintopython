@@ -1,6 +1,6 @@
 In this article, we will explore what classes in Python are, why they are necessary in programming, and how you can use them in your applications.  
   
-## Advantages of Utilizing Classes  
+## Advantages of Utilizing Classes in Python
 
 Python classes provide a way to bundle data and functionality together in a reusable and modular format. Here are some of the main advantages of utilizing classes in Python:
 
@@ -57,6 +57,8 @@ In this example, we define an `Animal` class that provides a base for other anim
 Object-oriented programming (OOP) is a programming paradigm that emphasizes the use of objects, which are instances of classes, to model real-world concepts and processes. Python is an object-oriented programming language that supports multiple programming paradigms. 
 
 In Python, a class is a blueprint for creating objects. It specifies the attributes and methods that the objects will have. Attributes are variables that hold data, while methods are functions that operate on the data.
+
+### Python class example
 
 ```python
 class Car:
