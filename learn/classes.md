@@ -82,7 +82,7 @@ class Student(Person):
 
 In this example, `Student` is a child class of `Person`. The `Student` class inherits the `name` and `age` attributes from the `Person` class.
 
-### Code example 1: Attribute inheritance
+### Attribute inheritance
 
 ```python
 class A:
@@ -102,7 +102,7 @@ print(C.x)   # 10
 
 In this example, `A` is the parent class, `B` is the child class and `C` is the grandchild class. The `x` attribute defined in the `A` class is inherited by both `B` and `C` classes.
 
-### Code example 2: Attribute search order
+### Attribute search order
 
 ```python
 class A:
