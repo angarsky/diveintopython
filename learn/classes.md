@@ -33,8 +33,6 @@ class Manager(Employee):
         return self.salary + self.bonus
 ```
 
-In conclusion, classes in Python provide a powerful tool for organizing code and creating reusable components. With inheritance and other advanced features, classes can help you write more efficient and maintainable code.  
-  
 ## Overview of Object-Oriented Programming  
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports OOP concepts such as encapsulation, inheritance, and polymorphism.
