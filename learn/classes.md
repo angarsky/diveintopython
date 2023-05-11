@@ -312,7 +312,7 @@ obj.hello() # Output: Hello from A
 
 In the code above, the class `C` inherits from class `B`, which already inherits from class `A`, and thus can access methods from both classes.
 
-### Python Inherits From Multiple Cclasses
+### Python Inherits From Multiple Classes
 
 Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
 
