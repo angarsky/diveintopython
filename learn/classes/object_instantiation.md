@@ -1,4 +1,4 @@
-Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. In Python, this process involves using constructors, which are special methods that define how new objects are initialized. This article explores the basics of object instantiation in Python and provides examples of how to create and use objects in your code.  
+Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. This process involves using constructors, which are special methods that define how new objects are initialized. This article explores the basics of object instantiation in Python and provides examples of how to create and use objects in your code.  
   
 ## Exploring Python's Class Constructors  
 
@@ -6,7 +6,7 @@ A class constructor in Python is a special method that is executed when an objec
 
 ### Instantiating a Class in Python
 
-To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple Python class and how to instantiate an object of that class.
+To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
 ```python
 class Person:
@@ -98,9 +98,9 @@ print(p1.name)  ### Output Alice
 print(p1.age)  ### Output 25
 ```
 
-In this example, the `Person` class has an `init` method that takes two arguments: `name` and `age`. When you create a new `Person` object, you pass in values for these arguments, and the `init` method sets the corresponding instance variables.
+In this example, the `Person` class has an `init` method that takes two arguments: `name` and `age`. When you create a new `Person` object, you pass in values for these arguments, and the `__init__()` method sets the corresponding instance variables.
 
-You can also have optional or default arguments in the `init` method:
+You can also have optional or default arguments in the `__init__()` method:
 
 ```python
 class Rectangle:
@@ -119,7 +119,7 @@ print(r2.width)  ### Output 10
 print(r2.height)  ### Output 20
 ```
 
-In this example, the `Rectangle` class has an `init` method that takes two optional arguments: `width` and `height`. If no arguments are provided, the default values of `0` are used. 
+In this example, the `Rectangle` class has an `__init__()` method that takes two optional arguments: `width` and `height`. If no arguments are provided, the default values of `0` are used. 
   
 ## Customizing Object Initialization  
 
@@ -143,7 +143,7 @@ print(my_car.make)  # Output: Toyota
 
 In this example, we defined a custom method `set_values()` to initialize the attributes `make`, `model`, and `year`. We then called this method on an object of the `Car` class to set the attribute values.
 
-### Creating Python Class with `__init__()`
+### Creating Class with `__init__()`
 
 Another way to customize object initialization is to use class-level attributes. These attributes can be set in the class definition and used to initialize the attributes of the object. Here is an example:
 
@@ -203,7 +203,7 @@ In the above example, we initialized the `Circle` object with flexible propertie
 
 ## Object Creation using the `__new__()` Method  
 
-The `__new__()` method is used in Python to create objects dynamically. It allows the developer to create a class object using the class name, and then add attributes to this object after initialization. 
+The `__new__()` method is used in Python to create objects dynamically. It allows the developer to create a class object using the class name, and then you can add attribute after init of python class. 
 
 ```python
 ### Code Example 1
