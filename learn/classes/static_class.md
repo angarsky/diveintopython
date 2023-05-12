@@ -1,4 +1,4 @@
-In Python, a static class provides a way to define a class-level functionality that can be accessed without creating an instance of the class. One of the advantages of using a static class is that it allows you to group related functions together within a class. To create a static method in a Python class, you can use the `@staticmethod` decorator. Once created, you can call the static method directly from the class without creating an instance of it. In this article, we will explore the concept of Python static classes and how to create and call a static method in a class.  
+In Python, a static class provides a way to define a class-level functionality that can be accessed without creating an instance of the class. One of the advantages of using a static class is that it allows you to group related functions together within a class. To create a static method in a class, you can use the `@staticmethod` decorator. Once created, you can call the static method directly from the class without creating an instance of it. In this article, we will explore the concept of static classes and how to create and call a static method in a class.  
   
 ## Understanding Python Static Classes  
 
@@ -29,11 +29,11 @@ print(result)   # Output: 8
 
 In the above example, the `add_numbers()` static method of `Calculator` class can be called directly using the class name `Calculator`. It takes two arguments `x` and `y` and returns their sum. 
 
-Overall, python static classes and static methods provide a way to represent functionality that doesn't depend on any instance or class variables, and can be used without creating an instance of a class.  
+Overall, static classes and static methods provide a way to represent functionality that doesn't depend on any instance or class variables, and can be used without creating an instance of a class.  
   
 ## Python Class Static Methods  
 
-Python allows us to create static classes and static methods within a class. A **static class in Python** is a class that doesn't require an instance of the class to be created before it is used. Meanwhile, a Python class static method is a method whose first parameter is the class itself rather than the instance of the class.
+Python allows us to create static classes and static methods within a class. A **static class in** is a class that doesn't require an instance of the class to be created before it is used. Meanwhile, a Python class static method is a method whose first parameter is the class itself rather than the instance of the class.
 
 To create static classes and static methods, we simply use the `@staticmethod` decorator in Python. Here are some examples:
 
@@ -79,9 +79,9 @@ print(Person.total_people())  # Output: There are 3 people.
 
 In this example, we created a `Person` class with a **class variable** called `count` that will track the number of instances of the class created. We also created a **Python class static method** called `total_people` that will return the total number of people created. We can call this static method directly from the class.
   
-## How to Call a Static Method in a Python Class  
+## How to Call a Static Method in a Class  
 
-To call a static method in a Python class, you need to define a static method using a built-in decorator `@staticmethod`. A static method doesn't require any instance to be called, instead, it is associated with the class itself. 
+To call a static method in a class, you need to define a static method using a built-in decorator `@staticmethod`. A static method doesn't require any instance to be called, instead, it is associated with the class itself. 
 
 ```python
 ### Example 1
@@ -120,7 +120,7 @@ print(Math.multiply(2, 3)) ### Output 6
 
 In the above examples, we can see how to define and call a static method using the `@staticmethod` decorator in Python.  
   
-## Python Static Classes vs. Regular Classes  
+## Static Classes vs. Regular Classes  
 
 Static classes in Python are classes that have class-level attributes and methods that can be accessed without creating an instance of the class. They are defined using the `@staticmethod` decorator. On the other hand, regular classes in Python are the ones that require an object of the class to access attribute or methods.
 
@@ -140,7 +140,7 @@ In the above example, we have defined a static class `StaticClass` with a static
   
 ## Use Static Classes in Python
 
-Static classes in Python are classes that are used to group functions that cannot be classified under existing classes. These classes do not require an instance of the class to be created in order to be accessed. Instead, static methods can be called directly from the class itself. Here are some of the top benefits of using static classes in Python:
+Static classes in Python are classes that are used to group functions that cannot be classified under existing classes. These classes do not require an instance of the class to be created in order to be accessed. Instead, static methods can be called directly from the class itself. Here are some of the top benefits of using static classes:
 
 1. **Namespace organization** - Static classes can be used to organize functions that do not fit well under any existing class. This helps in maintaining a clean and organized code structure.
 
@@ -180,7 +180,7 @@ print(result)
 
 In this example, we have created two static classes `StringUtils` and `TextUtils`. The `StringUtils` class contains a static method `reverse_string` that returns a reversed string. The `TextUtils` class contains a static method `reverse_and_uppercase` that calls the `reverse_string` method from the `StringUtils` class and returns the reversed string in uppercase. 
 
- ## Static Variables in Python Class
+ ## Static Variables in Class
  
 In Python, static variables are class-level variables that are shared among all instances of the class. These variables are defined within the class but outside any method, and they retain their value across different instances of the class.
 
