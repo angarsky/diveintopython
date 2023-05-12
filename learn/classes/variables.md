@@ -297,3 +297,55 @@ print(Person.planet) # output: Earth
 ```
 
 In this example, we have defined a class `Person` with a class variable `planet` and instance variables `name` and `age`. We use the `hasattr()` function to check if an attribute exists in the class and the `vars()` function to list all attributes of the class. We also use the syntax `Class.variable_name` to access the value of the class variable `planet`.  
+
+## Accessing Class Variables in Python
+
+In Python, class variables are variables that are shared among all instances of a class. These variables are defined within the class but outside any method, and they retain their value across different instances of the class. 
+
+### Example 1: Accessing Class Variables through the Class
+
+```python
+class Student:
+    # Class variable
+    class_name = "Python Programming"
+
+    def __init__(self, name):
+        self.name = name
+
+# Accessing the class variable using the class name
+print(Student.class_name)  # Output: Python Programming
+
+```
+
+In the above example, the `class_name` variable is a class variable that stores the name of the class. It is accessed using the class name (`Student.class_name`).
+
+### Example 2: Accessing Class Variables through Instances
+
+```python
+class Circle:
+    # Class variable
+    PI = 3.14159
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        # Accessing the class variable through an instance
+        area = self.radius * self.radius * Circle.PI
+        return area
+
+# Creating an instance of the Circle class
+circle = Circle(5)
+
+# Calling the instance method to calculate the area
+area = circle.calculate_area()
+
+print("Area:", area)  # Output: Area: 78.53975
+
+```
+
+In this example, the `PI` variable is a class variable that stores the value of pi. It is accessed through the `Circle` instance (`self.radius * self.radius * Circle.PI`) within the `calculate_area` method.
+
+Class variables can be accessed through the class name or through instances of the class. When accessed through instances, the variable can be referred to as `self.variable_name` or `instance_name.variable_name`.
+
+It's important to note that if an instance variable has the same name as a class variable, the instance variable takes precedence when accessed through the instance. To access the class variable specifically, the class name should be used.
