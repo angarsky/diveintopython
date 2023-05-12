@@ -4,7 +4,7 @@ Object instantiation is a fundamental concept in object-oriented programming tha
 
 A class constructor in Python is a special method that is executed when an object of a class is instantiated. It is used to initialize the attributes of the class. The constructor method in Python is called `__init__()` and it is defined within the class.
 
-### Instantiating a Class in Python
+### How to Instantiate Python Class
 
 To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
@@ -167,7 +167,7 @@ print(my_car.make)  # Output: Toyota
 
 In this example, we defined `make`, `model`, and `year` as class-level attributes and set their default values to an empty string and `0`. We then used these attributes to initialize the object's attributes in the `__init__()` method. We can later modify the attribute values of the object as in the previous example.  
   
-## Creating Objects with Flexible Initializers  
+## Creating Python Class Object with Flexible Initializers  
 
 Object-oriented programming allows us to create objects with different properties. We can initialize an object with fixed properties or flexible properties by passing different arguments to the constructor. In Python, we can use the `__init__()` method to initialize an object with flexible properties. 
 
