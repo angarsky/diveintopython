@@ -1,10 +1,10 @@
 In Python, a static class provides a way to define a class-level functionality that can be accessed without creating an instance of the class. One of the advantages of using a static class is that it allows you to group related functions together within a class. To create a static method in a Python class, you can use the `@staticmethod` decorator. Once created, you can call the static method directly from the class without creating an instance of it. In this article, we will explore the concept of Python static classes and how to create and call a static method in a class.  
   
-## Understanding Python static classes  
+## Understanding Python Static Classes  
 
 Python static class is a class that does not require an instance to be created. It is created using the `@staticmethod` decorator in a class definition. A static method doesn't have access to the instance, and it also can't modify the class itself. 
 
-### How to use a Python static class and call static method in class?
+### How to Use a Python Static Class and Call Static Method in Class?
 
 ```python
 class MyClass:
@@ -31,7 +31,7 @@ In the above example, the `add_numbers()` static method of `Calculator` class ca
 
 Overall, python static classes and static methods provide a way to represent functionality that doesn't depend on any instance or class variables, and can be used without creating an instance of a class.  
   
-## Python class static methods  
+## Python Class Static Methods  
 
 Python allows us to create static classes and static methods within a class. A **static class in Python** is a class that doesn't require an instance of the class to be created before it is used. Meanwhile, a Python class static method is a method whose first parameter is the class itself rather than the instance of the class.
 
@@ -79,7 +79,7 @@ print(Person.total_people())  # Output: There are 3 people.
 
 In this example, we created a `Person` class with a **class variable** called `count` that will track the number of instances of the class created. We also created a **Python class static method** called `total_people` that will return the total number of people created. We can call this static method directly from the class.
   
-## How to call a static method in a Python class  
+## How to Call a Static Method in a Python Class  
 
 To call a static method in a Python class, you need to define a static method using a built-in decorator `@staticmethod`. A static method doesn't require any instance to be called, instead, it is associated with the class itself. 
 
@@ -120,11 +120,11 @@ print(Math.multiply(2, 3)) ### Output 6
 
 In the above examples, we can see how to define and call a static method using the `@staticmethod` decorator in Python.  
   
-## Python static classes vs. regular classes  
+## Python Static Classes vs. Regular Classes  
 
 Static classes in Python are classes that have class-level attributes and methods that can be accessed without creating an instance of the class. They are defined using the `@staticmethod` decorator. On the other hand, regular classes in Python are the ones that require an object of the class to access attribute or methods.
 
-### Python static class
+### Python Static Class
 
 ```python
 class StaticClass:
@@ -138,7 +138,7 @@ StaticClass.my_static_method()
 
 In the above example, we have defined a static class `StaticClass` with a static method `my_static_method`. We can call this method without creating an instance of the class.
   
-## Use static classes in Python
+## Use Static Classes in Python
 
 Static classes in Python are classes that are used to group functions that cannot be classified under existing classes. These classes do not require an instance of the class to be created in order to be accessed. Instead, static methods can be called directly from the class itself. Here are some of the top benefits of using static classes in Python:
 
@@ -180,4 +180,66 @@ print(result)
 
 In this example, we have created two static classes `StringUtils` and `TextUtils`. The `StringUtils` class contains a static method `reverse_string` that returns a reversed string. The `TextUtils` class contains a static method `reverse_and_uppercase` that calls the `reverse_string` method from the `StringUtils` class and returns the reversed string in uppercase. 
 
-By using static classes in Python, we can improve code organization, reusability, and readability.    
+ ## Static Variables in Python Class
+ 
+In Python, static variables are class-level variables that are shared among all instances of the class. These variables are defined within the class but outside any method, and they retain their value across different instances of the class.
+
+Static variables are useful when you want to store data that is shared by all instances of a class or when you want to maintain a count or a common configuration across all instances.
+
+Here are two code examples that demonstrate the usage of static variables in Python classes:
+
+### Example 1: Counting Instances
+
+```python
+class Car:
+    # Static variable to keep track of the number of instances
+    count = 0
+
+    def __init__(self, name):
+        self.name = name
+        # Increment the count when a new instance is created
+        Car.count += 1
+
+# Creating instances of the Car class
+car1 = Car("Tesla")
+car2 = Car("BMW")
+car3 = Car("Audi")
+
+# Accessing the static variable using the class name
+print("Total cars:", Car.count)  # Output: Total cars: 3
+```
+
+In the above example, the `count` variable is a static variable that keeps track of the number of `Car` instances created. It is incremented in the constructor (`__init__`) whenever a new instance is created. The static variable is accessed using the class name (`Car.count`).
+
+### Example 2: Common Configuration
+
+```python
+Copy code
+class Circle:
+    # Class-level constant for pi
+    PI = 3.14159
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        # Accessing the static variable inside an instance method
+        area = Circle.PI * self.radius * self.radius
+        return area
+
+# Creating instances of the Circle class
+circle1 = Circle(5)
+circle2 = Circle(7)
+
+# Calling the instance method to calculate the area
+area1 = circle1.calculate_area()
+area2 = circle2.calculate_area()
+
+print("Area 1:", area1)  # Output: Area 1: 78.53975
+print("Area 2:", area2)  # Output: Area 2: 153.93791
+
+```
+
+In this example, the `PI` variable is a static variable that stores the value of `pi`. It is used inside the calculate_area method to calculate the area of a circle. The static variable is accessed using the class name (`Circle.PI`).
+
+Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
