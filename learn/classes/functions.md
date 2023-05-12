@@ -1,10 +1,10 @@
 This article explores the ins and outs of working with methods and functions in classes in Python. Specifically, we delve into the important concepts of the class constructor (or `__init__` method), abstract class methods, and the difference between class methods and static methods. So if you're looking to elevate your understanding of functions in a class, read on!  
   
-## Fundamentals of Python functions in a class: understanding the basics
+## Fundamentals of Python Functions in a Class
 
 Python allows us to define functions inside a class. These functions are called methods, and they can access the attributes (variables) and methods of the class. A class constructor is a special method that is called when an object of a class is created. Here are some important concepts related to methods and functions in Python:
   
-## Mastering the Python class constructor   
+## Mastering the Python Class Constructor   
 
 We can define functions in a class, known as methods. The class constructor or `__init__` method is a special method that is called when an object of the class is created. It is used to initialize the instance variables of a class.
 
@@ -82,7 +82,7 @@ my_square = Square(5)
 print(my_square.area()) # Output: 25
 ```
   
-## Distinguishing Class Method vs Static Method: Key Differences  
+## Distinguishing Class Method vs Static Method
 
 Abstract class method is defined as a method that is declared but contains no implementation. It is up to the subclass to provide the implementation. An abstract method is defined using the **@abstractmethod** decorator in Python.
 
