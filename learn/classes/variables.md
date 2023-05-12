@@ -6,7 +6,7 @@ Python is a powerful language that supports different types of variables and pro
 - **Attributes:** An attribute is a value associated with an object. Attributes can be accessed using the dot notation.
 - **Properties:** A property is a way to define a method as an attribute. Properties are created using the `@property` decorator.
 
-## Python Class Attributes
+## Class Attributes
 
 Class attributes are attributes that are shared by all instances of a class. They are defined at the class level, and can be accessed using the class name or any instance of the class.
 
@@ -81,7 +81,7 @@ else:
     print('Object does not have var attribute')
 ```
 
-## Python Print Class Attributes
+## How to Print Class Attributes
 
 Python does not have a built-in method for printing all attributes of a class. However, you can use a for loop to iterate through all attributes of a class and print their names and values.
 
@@ -112,7 +112,7 @@ print(dir(MyClass))
   
 ## Class Variables vs Instance Variables
 
-Variables, attributes, and properties are essential elements of any programming language. In Python, classes are used to define objects, and each object has its own set of attributes. Two types of variables can be defined in a Python class: class variables and instance variables. 
+Variables, attributes, and properties are essential elements of any programming language. Classes are used to define objects, and each object has its own set of attributes. Two types of variables can be defined in a class: class variables and instance variables. 
 
 ### Class Variables
 
@@ -133,7 +133,7 @@ print(obj1.y)   # prints 20 (now obj1 has its own y)
 
 In the example, `y` is a class variable, while `x` is an instance variable. `y` is accessed using the class name `MyClass.y`. 
 
-### Python Instance Variables
+### Instance Variables
 
 Python instance variables, on the other hand, are unique to each instance of a class. They are defined inside the `__init__` method of a class using the keyword `self`. 
 
@@ -213,7 +213,7 @@ In the example, `x` is a global variable that can be accessed inside the class. 
 
 ## The Role of Private Variables in Classes   
 
-Variables in classes are attributes or properties that hold data and values. In a Python class, variables can be global, instance, or static. Instance variables are unique to each object created from a class, while static variables are shared among all objects of the same class. Global variables are accessible throughout the entire program.
+Variables in classes are attributes or properties that hold data and values. In a class, variables can be global, instance, or static. Instance variables are unique to each object created from a class, while static variables are shared among all objects of the same class. Global variables are accessible throughout the entire program.
 
 One important concept to note is the role of private variables in classes. Private variables are variables that are meant to be used only within the class and should not be accessed or modified from outside the class. Private variables are denoted by adding two underscores `__` before the variable name.
 
