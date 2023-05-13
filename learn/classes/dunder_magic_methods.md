@@ -1,4 +1,4 @@
-Dunder (double underscore) or magic methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
+**Dunder** (double underscore) or magic methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
   
 ## Constructing Objects and Expressions  
 
@@ -235,7 +235,7 @@ sorted_fruits = sorted(fruits, key=lambda x: x.__lt__("c"))
 print(sorted_fruits)
 # Output:
 
-# ['banana', 'apple', 'orange', 'kiwi']
+# ['orange', 'kiwi', 'apple', 'banana']
 ```
 
 In the above example, we have sorted the list of fruits in ascending order based on whether the first character of each string is less than or greater than `c`. `lambda x: x.__lt__(`c`)` returns `True` if the first character of `x` is less than `c` and `False` otherwise.  
