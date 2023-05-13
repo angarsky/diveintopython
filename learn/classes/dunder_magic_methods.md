@@ -1,4 +1,4 @@
-Dunder (double underscore) or magic methods are special methods in Python that allow for customization of classes and objects. These methods are called `magic` because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
+Dunder (double underscore) or magic methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
   
 ## Constructing Objects and Expressions  
 
@@ -26,7 +26,7 @@ The `__init__` method is a special method that is called when an instance of a c
 
 ### Creating Instances of Classes in Python
 
-To create an instance of a class in Python, you call the class as if it were a function, passing any arguments that the `__init__` method requires. For example, the following code creates two instances of the `Person` class:
+To create an instance of a class, you call the class as if it were a function, passing any arguments that the `__init__` method requires. For example, the following code creates two instances of the `Person` class:
 
 ```python
 ### Example 1
@@ -78,7 +78,7 @@ An iterator is an object that enables sequential iteration (looping) over a coll
 
 ### Python Generator Class
 
-You can create an iterator using the generator class in Python. The generator class is a type of Python object that is used to create iterable objects using the `yield` statement.
+You can create an iterator using the generator class in Python. The generator class is a type of object that is used to create iterable objects using the `yield` statement.
 
 ```python
 class MyGenerator:
@@ -114,7 +114,7 @@ for x in gen:
 
 In this example, `MyGenerator` is a generator class that inherits from the built-in `object` class. It defines an `__init__()` method that initializes the `num` attribute to 0. It also defines `__iter__()` method that returns the iterator object (`self` in this case) and `__next__()` method that generates the next value in the sequence.
 
-You can also create an iterator using a Python function generator. A function generator is a Python function that contains the `yield` statement.
+You can also create an iterator using a Python function generator. A function generator is afunction that contains the `yield` statement.
 
 In this example, `my_generator` function is a function generator that uses the `yield` statement to generate the next value in the sequence. 
 
