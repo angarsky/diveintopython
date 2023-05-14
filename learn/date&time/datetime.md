@@ -139,4 +139,21 @@ epoch_time = int(dt.timestamp())
 print(epoch_time)  # Output: 1687877696
 ```
 
-In this example, the timestamp() method is called on the datetime object dt, and the resulting float value is converted to an integer using the int() function. The resulting integer value represents the number of seconds since January 1, 1970, 00:00:00 UTC.
+## Epoch to Datetime Conversion
+
+You can convert a Unix epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) to a Python `datetime` object using the `datetime.fromtimestamp()` method.
+
+Here's an example:
+
+```python
+import datetime
+
+# Unix epoch time for May 14, 2023 at 12:34:56 UTC
+epoch_time = 1687877696
+
+# Convert the epoch time to a datetime object
+dt = datetime.datetime.fromtimestamp(epoch_time)
+
+print(dt)  # Output: 2023-05-14 12:34:56
+```
+
