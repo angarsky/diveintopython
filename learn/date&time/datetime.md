@@ -157,3 +157,47 @@ dt = datetime.datetime.fromtimestamp(epoch_time)
 print(dt)  # Output: 2023-05-14 12:34:56
 ```
 
+## Parsing into a `datetime` Module
+
+To parse a date or time string into a `datetime` object, you can use the `datetime.datetime.strptime()` method.
+
+The `strptime()` method takes two arguments: the string you want to parse, and a format string that specifies the format of the input string. The format string uses special codes to represent different parts of the date and time, such as `%Y` for the year, `%m` for the month, `%d` for the day, `%H` for the hour, `%M` for the minute, and `%S` for the second.
+
+Here's an example of how to parse a date string in the format "YYYY-MM-DD":
+
+```python
+import datetime
+
+date_string = "2023-05-14"
+date_object = datetime.datetime.strptime(date_string, "%Y-%m-%d")
+
+print(date_object)
+```
+
+## Timezones & `datetime` Module in Python
+
+You can use the `datetime` module to work with dates, times, and timezones in Python.
+
+To work with timezones, you need to use the `pytz` library. This library provides a comprehensive database of timezones and tools for working with them.
+
+Here's an example of how you can work with timezones using the `datetime` module and `pytz` library in Python:
+
+```python
+import datetime
+import pytz
+
+# create a datetime object in UTC timezone
+utc_datetime = datetime.datetime.now(tz=pytz.utc)
+print("UTC datetime:", utc_datetime)
+
+# convert the datetime object to a different timezone
+local_timezone = pytz.timezone('America/New_York')
+local_datetime = utc_datetime.astimezone(local_timezone)
+print("Local datetime:", local_datetime)
+```
+
+In this example, we first create a `datetime` object in the UTC timezone using the `datetime.datetime.now()` method and passing in the `pytz.utc` timezone object as the `tz` parameter. We then print out the UTC datetime.
+
+Next, we create a `pytz.timezone` object representing the local timezone (America/New_York), and then use the `astimezone()` method to convert the UTC datetime object to the local timezone. Finally, we print out the local datetime.
+
+## 
