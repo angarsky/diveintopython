@@ -200,4 +200,81 @@ In this example, we first create a `datetime` object in the UTC timezone using t
 
 Next, we create a `pytz.timezone` object representing the local timezone (America/New_York), and then use the `astimezone()` method to convert the UTC datetime object to the local timezone. Finally, we print out the local datetime.
 
-## 
+## `datetime` Module & `timedelta` Class
+
+The `datetime` module in Python provides various classes for working with dates, times, and time intervals. One of the classes available in the module is `timedelta`, which represents a duration or difference between two dates or times.
+
+Here's an example of how to use `timedelta`:
+
+```python
+import datetime
+
+# create a datetime object for the current time
+now = datetime.datetime.now()
+
+# create a timedelta object representing a duration of 1 day
+one_day = datetime.timedelta(days=1)
+
+# calculate a new datetime object that is 1 day in the future
+tomorrow = now + one_day
+
+# print the result
+print(tomorrow)
+```
+
+The `timedelta` class provides several other arguments that can be used to specify different units of time, including `weeks`, `hours`, `minutes`, `seconds`, `microseconds`, and `milliseconds`.
+
+## `datetime` Objects Comparing
+
+In Python, you can compare `datetime` objects using the comparison operators (`<`, `>`, `<=`, `>=`, `==`, `!=`).
+
+Here's an example:
+
+```python
+from datetime import datetime
+
+# create datetime objects
+date1 = datetime(2021, 9, 1)
+date2 = datetime(2021, 9, 2)
+
+# compare datetime objects
+if date1 < date2:
+    print("date1 is before date2")
+else:
+    print("date1 is after date2")
+```
+
+You can also compare `datetime` objects with `date` objects. In that case, the `date` object is treated as if it has a time of midnight. For example:
+
+```python
+from datetime import datetime, date
+
+# create datetime and date objects
+date1 = datetime(2021, 9, 1, 10, 30)
+date2 = date(2021, 9, 2)
+
+# compare datetime and date objects
+if date1 < date2:
+    print("date1 is before date2")
+else:
+    print("date1 is after date2")
+```
+
+## How to Add Days to a `datetime` Object
+
+To add days to a Python `datetime` object, you can use the `timedelta` class from the `datetime` module.
+
+Here's an example code snippet that shows how to add 3 days to the current date:
+
+```python
+from datetime import datetime, timedelta
+
+current_date = datetime.now()
+print("Current date:", current_date)
+
+new_date = current_date + timedelta(days=3)
+print("New date:", new_date)
+```
+
+You can adjust the number of days to add by changing the value of the days argument when creating the `timedelta` object.
+
