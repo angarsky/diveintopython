@@ -89,7 +89,7 @@ print(my_list)
 
 Note that the `extend()` method modifies the original list in place and returns `None`. It does not create a new list.
 
-## Removing an Item From a List
+## Removing an Item from a List
 
 To remove an item from a list in Python, you can use the `remove()` method of the list object. Here is an example:
 
@@ -130,7 +130,7 @@ new_list = [item for item in original_list if item is not None]
 print(new_list) # Output: [1, 'hello', 5.7, 'world']
 ```
 
-## Python List Sorting
+## How to Sort a List in Python
 
 You can sort a list in Python using the `sort()` method, which sorts the elements of the list in ascending order by default. Here's an example:
 
@@ -192,7 +192,7 @@ my_list.clear()
 print(my_list)  # Output: []
 ```
 
-## Deleting a List
+## How to Delete a List
 
 In Python, you can delete a list using the `del` keyword. Here's an example:
 
