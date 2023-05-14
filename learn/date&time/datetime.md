@@ -20,7 +20,7 @@ Python's built-in `datetime` module serves for working with dates and times. Her
 
 ## Datetime Formatting in Python
 
-In Python, you can format dates and times using the `strftime()` method of a `datetime` object. This method allows you to specify a format string that defines how the date or time should be formatted.
+In Python, you can format dates and times as a string using the `strftime()` method of a `datetime` object. This method allows you to specify a format string that defines how the date or time should be formatted.
 
 Here are some common format codes:
 
