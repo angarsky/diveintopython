@@ -4,7 +4,7 @@ Python classes are an essential concept for beginner and advanced programmers. T
 
 When working with Python classes, it is common to make mistakes that can lead to unexpected results or errors. Here are some of the most common errors and how to avoid them:
 
-### Forgetting to add `self` parameter
+### Forgetting to add `self` Parameter
 
 When defining a method in a class, it is important to include the `self` parameter as the first argument. This parameter represents the instance of the class and allows the method to access and modify its attributes.
 
