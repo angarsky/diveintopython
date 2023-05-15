@@ -1,4 +1,4 @@
-Python is a powerful language that supports different types of variables and properties. This includes class variables, class static variable, class attributes, class variables vs instance variables, and class private variables. In this article, we will discuss variables, attributes, and properties in Python to help you understand them better.  
+Python is a powerful language that supports different types of variables and properties. In this article, we will discuss variables, attributes, and properties in Python to help you understand them better.  
   
 ## Understanding Variables, Attributes, and Properties   
 
@@ -6,7 +6,7 @@ Python is a powerful language that supports different types of variables and pro
 - **Attributes:** An attribute is a value associated with an object. Attributes can be accessed using the dot notation.
 - **Properties:** A property is a way to define a method as an attribute. Properties are created using the `@property` decorator.
 
-## Class Attributes
+### Class Attributes
 
 Class attributes are attributes that are shared by all instances of a class. They are defined at the class level, and can be accessed using the class name or any instance of the class.
 
@@ -18,7 +18,7 @@ obj = MyClass()
 print(obj.class_attr)  # 10
 ```
 
-## Class Property
+### Class Property
 
 Python class properties are methods that act like attributes. They are created using the `@property` decorator.
 
@@ -114,9 +114,9 @@ print(dir(MyClass))
 
 Variables, attributes, and properties are essential elements of any programming language. Classes are used to define objects, and each object has its own set of attributes. Two types of variables can be defined in a class: class variables and instance variables. 
 
-### Class Variables
+### Python Class Variables
 
-Python class variables are shared among all instances of a class. These variables are declared outside of any method of a class and are accessed using the class name. 
+Class variables are shared among all instances of a class. These variables are declared outside of any method of a class and are accessed using the class name. 
 
 ```python
 class MyClass:
@@ -150,7 +150,7 @@ print(obj1.y)   # prints 10
 
 In the example, both `x` and `y` are instance variables, as they are unique to each instance of `MyClass`.
 
-## Class Attributes and Properties
+## Class Attributes and Properties in Python
 
 Class attributes and properties work similarly to variables, but they are more powerful. Class attributes are defined outside of any method using the class name as with class variables. On the other hand, properties are defined using the `@property` decorator before a method.  
 
