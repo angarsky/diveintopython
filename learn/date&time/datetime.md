@@ -36,23 +36,11 @@ Here are some common format codes:
 
 - **`%S`**: second (zero-padded)
 
-Here's an example of how to format the current date and time:
-
-```python
-from datetime import datetime
-
-now = datetime.now()
-formatted_date = now.strftime("%Y-%m-%d %H:%M:%S")
-print(formatted_date)
-```
-
-This will output the current date and time in the format "YYYY-MM-DD HH:MM:SS".
-
 ## Datetime to String Conversion in Python
 
 To convert a Python `datetime` object to a string, you can use the `strftime()` method. The `strftime()` method takes a format string as an argument and returns a string representation of the datetime object according to the specified format.
 
-Here's an example:
+Here's an example of how to format the current date and time:
 
 ```python
 import datetime
