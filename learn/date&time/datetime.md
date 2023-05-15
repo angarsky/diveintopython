@@ -100,6 +100,15 @@ print(now)
 
 This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.mmmmmm.
 
+If you want to display only the current time without the date, you can use the `strftime()` method to format the output:
+
+```python
+current_time = datetime.datetime.now().strftime("%H:%M:%S")
+print("Current time:", current_time)
+```
+
+This will output the current time in the format HH:MM:SS.
+
 ## Extraction the Date from a `datetime` Object
 
 In Python, you can extract the date portion from a datetime object using the `.date()` method. Here's an example:
