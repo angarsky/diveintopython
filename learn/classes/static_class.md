@@ -138,7 +138,7 @@ StaticClass.my_static_method()
 
 In the above example, we have defined a static class `StaticClass` with a static method `my_static_method`. We can call this method without creating an instance of the class.
   
-## Use Static Classes in Python
+## How to use Static Classes in Python
 
 Static classes in Python are classes that are used to group functions that cannot be classified under existing classes. These classes do not require an instance of the class to be created in order to be accessed. Instead, static methods can be called directly from the class itself. Here are some of the top benefits of using static classes:
 
@@ -214,7 +214,6 @@ In the above example, the `count` variable is a static variable that keeps track
 ### Example 2: Common Configuration
 
 ```python
-Copy code
 class Circle:
     # Class-level constant for pi
     PI = 3.14159
@@ -243,3 +242,47 @@ print("Area 2:", area2)  # Output: Area 2: 153.93791
 In this example, the `PI` variable is a static variable that stores the value of `pi`. It is used inside the calculate_area method to calculate the area of a circle. The static variable is accessed using the class name (`Circle.PI`).
 
 Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
+
+## Python Class Method vs. Static Method
+
+In Python, class methods and static methods are different types of methods that can be defined within a class. They serve different purposes and have different behaviors when it comes to method invocation and access to class attributes.
+
+### Class Methods
+
+Class methods are methods that are bound to the class itself rather than to instances of the class. They have access to the class and can modify its state and access its attributes. Class methods are defined using the `@classmethod` decorator.
+
+```python
+class MathUtils:
+    PI = 3.14159
+
+    @classmethod
+    def circle_area(cls, radius):
+        return cls.PI * radius * radius
+
+# Calling the class method using the class name
+area = MathUtils.circle_area(5)
+print("Area:", area)  # Output: Area: 78.53975
+
+```
+
+In this example, the `circle_area` method is a class method that calculates the area of a circle. It has access to the `PI` class attribute using the `cls` parameter.
+
+### Static Methods
+
+Static methods, on the other hand, are methods that are bound to the class and do not have access to the class or its instances. They are defined using the `@staticmethod` decorator. Static methods are mainly used to group functions that belong to a class logically.
+
+```python
+class StringUtils:
+    @staticmethod
+    def is_palindrome(word):
+        return word == word[::-1]
+
+# Calling the static method using the class name
+result = StringUtils.is_palindrome("radar")
+print("Is Palindrome:", result)  # Output: Is Palindrome: True
+
+```
+
+In this example, the `is_palindrome` method is a static method that checks whether a word is a palindrome. It does not have access to any class attributes or instance-specific information.
+
+In summary, class methods are bound to the class and have access to class attributes, while static methods do not have access to the class or its instances. Class methods are typically used for methods that operate on the class or need access to class-specific data, while static methods are used for grouping related functions within a class.
