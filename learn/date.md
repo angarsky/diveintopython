@@ -37,3 +37,33 @@ print(calendar.monthrange(2023, 5))
 The `month()` function returns a formatted string representing the calendar for the given year and month. The `calendar()` function returns a multi-line string representing the calendar for the entire year. The `isleap()` function returns `True` if the given year is a leap year, and `False` otherwise. The `monthrange()` function returns a tuple containing the first weekday of the month and the number of days in the month.
 
 You can use these functions to generate calendars and manipulate them as needed for your Python applications.
+
+## Python `dateutil` Module
+
+The `dateutil` module is a third-party module in Python that provides various utilities for working with dates and times. It extends the functionality provided by the built-in `datetime` module and makes it easier to work with dates and times in Python.
+
+Here are some examples of what you can do with the `dateutil` module:
+
+```python
+from dateutil import parser
+from dateutil.relativedelta import relativedelta
+from dateutil.rrule import rrule, DAILY
+
+# Parse a string and convert it to a datetime object
+date_string = 'May 15, 2023'
+date = parser.parse(date_string)
+
+# Add or subtract time from a datetime object
+new_date = date + relativedelta(months=1)
+
+# Generate a sequence of dates using rrule
+dates = rrule(DAILY, count=7, dtstart=date)
+
+# Iterate over the sequence of dates
+for d in dates:
+    print(d)
+```
+
+The `parser.parse()` method is used to parse a string representation of a date or time and convert it to a `datetime` object. The `relativedelta` class is used to add or subtract a certain amount of time from a `datetime` object. The `rrule()` function is used to generate a sequence of dates according to a set of rules specified by the user.
+
+The `dateutil` module also provides many other useful features such as time zone support, parsing of relative dates and times, and working with time intervals.
