@@ -100,7 +100,7 @@ print(now)
 
 This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.mmmmmm.
 
-If you want to display only the current time without the date, you can use the `strftime()` method to format the output:
+If you want to display only the current time without the date, you can use the `strftime()` method to format the output before printing:
 
 ```python
 current_time = datetime.datetime.now().strftime("%H:%M:%S")
