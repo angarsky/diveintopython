@@ -97,18 +97,7 @@ This code will create a countdown timer for 60 seconds and print the remaining t
 
 ## `time` Finctions in Python
 
-In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions:
-
-- **`time()`** - This function returns the current time in seconds since the epoch (January 1, 1970, 00:00:00 UTC) as a floating-point number.
-
-Example usage:
-
-```python
-import time
-
-current_time = time.time()
-print("Current time: ", current_time)
-```
+In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
 
 - **`ctime()`** - This function takes a time in seconds and returns a string representation of that time in the format "Day Month Date Time Year".
 Example usage:
