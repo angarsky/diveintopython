@@ -1,4 +1,4 @@
-Zip in Python is a popular built-in function that allows users to combine two or more iterables into a single tuple. It is a useful tool for data manipulation and makes it easier to handle and manage large data sets. This function is an important component of Python programming, especially for those who work with data analysis or data science. In this article, we will take a closer look at the zip function and explore its functionalities.  
+Zipfile is a built-in module in Python that allows you to work with zip archives. It provides functionalities to create, extract, and manipulate zip files. Zip files are widely used for compressing and archiving multiple files into a single compressed file. 
   
 ## How to zip file in python  
 
