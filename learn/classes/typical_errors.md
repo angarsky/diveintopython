@@ -104,7 +104,7 @@ class MyClass:
 
 In summary, syntax and name errors can cause issues while working with Python classes. Ensure that you check your code carefully and watch out for these errors.  
   
-## Troubleshooting Attribute and Type Errors in Python Classes  
+## Attribute and Type Errors in Python Classes  
 
 Python is an object-oriented programming language where everything is an object or a data type. While working with Python classes, sometimes developers encounter attribute and type errors which can prevent the execution of code. These errors can occur due to many reasons like incorrect syntax, wrong data types, misspelled variables, etc. 
 
