@@ -60,7 +60,7 @@ In this example, we have a string `output` that contains the text we want to sav
 
 In either case, you can now open the file and see the text that was written. Although the examples are simple, you can modify them to suit more complex scenarios.  
   
-## How to Convert Numpy Files to Text Files in Python  
+## How to Convert Numpy Files to Text Files
 
 When working with numerical data, `Numpy` is one of the most popular libraries to manipulate arrays in Python. Sometimes, you may need to convert a `Numpy` file to a text file for sharing and collaboration purposes. Here are two ways to convert a `Numpy` file to a text file in Python:
 
