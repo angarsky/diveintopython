@@ -81,7 +81,7 @@ else:
     print('Object does not have var attribute')
 ```
 
-## How to Print Class Attributes
+## How to Print Class Attributes in Python
 
 Python does not have a built-in method for printing all attributes of a class. However, you can use a for loop to iterate through all attributes of a class and print their names and values.
 
