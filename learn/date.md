@@ -11,3 +11,29 @@ Python has several built-in modules for working with dates and times. Here are s
 3. **`calendar`** module: This module provides functions for working with calendars, such as getting the number of days in a month, determining the day of the week for a given date, and formatting dates in various ways.
 
 4. **`dateutil`** module: This module provides additional functionality for working with dates and times, including parsing dates and times from strings, handling time zones, and performing arithmetic with dates and times.
+
+## The `calendar` Module
+
+The `calendar` module in Python provides functions to work with calendars. It allows you to generate calendars for a specific month or year and provides methods to manipulate those calendars.
+
+Here is an example of how to use the `calendar` module:
+
+```python
+import calendar
+
+# Print the calendar for the current month
+print(calendar.month(2023, 5))
+
+# Print the calendar for the entire year
+print(calendar.calendar(2023))
+
+# Check if a year is a leap year
+print(calendar.isleap(2023))
+
+# Get the first weekday of a month
+print(calendar.monthrange(2023, 5))
+```
+
+The `month()` function returns a formatted string representing the calendar for the given year and month. The `calendar()` function returns a multi-line string representing the calendar for the entire year. The `isleap()` function returns `True` if the given year is a leap year, and `False` otherwise. The `monthrange()` function returns a tuple containing the first weekday of the month and the number of days in the month.
+
+You can use these functions to generate calendars and manipulate them as needed for your Python applications.
