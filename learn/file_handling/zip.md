@@ -1,4 +1,4 @@
-Zipfile is a built-in module in Python that allows you to work with zip archives. It provides functionalities to create, extract, and manipulate zip files. Zip files are widely used for compressing and archiving multiple files into a single compressed file. 
+Zip files are a popular way to compress and bundle multiple files into a single archive. They are commonly used for tasks such as file compression, data backup, and file distribution. 
   
 ## How to zip file in python  
 
