@@ -90,7 +90,7 @@ The `dt_object` variable now contains a datetime object that represents the date
 
 In Python, you can use the built-in `datetime` module to work with date and time values. To get the current date and time, you can use the `datetime.now()` method.
 
-Here's an example of getting date and time :
+In the following example first we get date and time and then print it:
 
 ```python
 from datetime import datetime
@@ -100,6 +100,23 @@ print("Current date and time:", now)
 ```
 
 This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.ssssss.
+
+## Extraction the Date from a `datetime` Object
+
+In Python, you can extract the date portion from a datetime object using the `.date()` method. Here's an example:
+
+```python
+import datetime
+
+# create a datetime object
+dt = datetime.datetime(2023, 5, 14, 10, 30, 0)
+
+# extract the date portion
+date = dt.date()
+
+# print the date
+print(date)  # output: 2023-05-14
+```
 
 ## How to Convert Unix Time to Datetime in Python
 
@@ -278,3 +295,20 @@ print("New date:", new_date)
 
 You can adjust the number of days to add by changing the value of the days argument when creating the `timedelta` object.
 
+## `datetime` Module & `isoformat()` Method in Python
+
+The `isoformat()` method is used to get the string representation of a date or time object in ISO 8601 format. Here's an example:
+
+```python
+import datetime
+
+# create a datetime object for May 14, 2023 at 2:30 PM
+dt = datetime.datetime(2023, 5, 14, 14, 30)
+
+# get the ISO 8601 string representation of the datetime object
+iso_str = dt.isoformat()
+
+print(iso_str)  # output: 2023-05-14T14:30:00
+```
+
+In the ISO 8601 format, the date and time are separated by the letter "T", and the time is given in 24-hour format. The string representation of the datetime object obtained using `isoformat()` method does not include timezone information. If you need to include timezone information, you can use the `strftime()` method with an appropriate format string.
