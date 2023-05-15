@@ -117,28 +117,6 @@ date = dt.date()
 print(date)  # output: 2023-05-14
 ```
 
-## How to Convert Unix Time to Datetime in Python
-
-In Python, you can use the `datetime` module to convert Unix time (also known as POSIX time) to a human-readable datetime format.
-
-Here's an example of Python timestamp to a datetime object conversion:
-
-```python
-import datetime
-
-unix_time = 1620982878  # example Unix time
-
-# convert Unix time to datetime object
-datetime_obj = datetime.datetime.fromtimestamp(unix_time)
-
-# format the datetime object
-datetime_str = datetime_obj.strftime('%Y-%m-%d %H:%M:%S')
-
-print(datetime_str)  # output: 2021-05-14 09:01:18
-```
-
-In this example, we first import the `datetime` module. Then, we define an example Unix time (`unix_time`). We use the `fromtimestamp` method of the `datetime` class to convert the Unix time to a datetime object (`datetime_obj`). Finally, we format the datetime object using the `strftime` method to get a human-readable datetime string (`datetime_str`), which we print to the console.
-
 ## Datetime to Epoch Conversion
 
 You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Here's an example:
@@ -159,7 +137,7 @@ print(epoch_time)  # Output: 1687877696
 
 You can convert a Unix epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) to a Python `datetime` object using the `datetime.fromtimestamp()` method.
 
-Here's an example:
+Here's an example of how to convert Unix time to datetime in Python:
 
 ```python
 import datetime
