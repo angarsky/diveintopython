@@ -101,6 +101,17 @@ print("Current date and time:", now)
 
 This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.ssssss.
 
+There is one more way to get the current date and time, you can use the datetime.today() method. Here's an example:
+
+```python
+import datetime
+
+now = datetime.datetime.today()
+print(now)
+```
+
+This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.mmmmmm.
+
 ## Extraction the Date from a `datetime` Object
 
 In Python, you can extract the date portion from a datetime object using the `.date()` method. Here's an example:
