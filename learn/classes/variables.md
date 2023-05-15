@@ -348,4 +348,146 @@ In this example, the `PI` variable is a class variable that stores the value of 
 
 Class variables can be accessed through the class name or through instances of the class. When accessed through instances, the variable can be referred to as `self.variable_name` or `instance_name.variable_name`.
 
-It's important to note that if an instance variable has the same name as a class variable, the instance variable takes precedence when accessed through the instance. To access the class variable specifically, the class name should be used.
+## Difference between Class Attributes and Properties in Python
+
+In Python, class attributes and properties are both mechanisms to store and access data within a class. However, they have some key differences in terms of their implementation and behavior.
+
+### Class Attributes
+Class attributes are variables that are defined within a class but outside any methods. They are shared among all instances of the class and can be accessed using the class name or through instances of the class. Class attributes are typically used to store data that is common to all instances of the class.
+
+```python
+class Circle:
+    # Class attribute
+    PI = 3.14159
+
+    def __init__(self, radius):
+        self.radius = radius
+
+    def calculate_area(self):
+        # Accessing the class attribute
+        area = Circle.PI * self.radius * self.radius
+        return area
+
+# Creating an instance of the Circle class
+circle = Circle(5)
+
+# Calling the instance method to calculate the area
+area = circle.calculate_area()
+
+print("Area:", area)  # Output: Area: 78.53975
+
+```
+
+In this example, `PI` is a class attribute that stores the value of pi. It is accessed using the class name `Circle.PI` within the `calculate_area` method.
+
+### Properties
+
+Properties, on the other hand, provide a way to define getter, setter, and deleter methods for accessing and modifying class attributes. They allow for more control and customization of attribute access. Properties are defined using the `@property decorator` for the getter method, and the `@attribute_name.setter` and `@attribute_name.deleter` decorators for the setter and deleter methods, respectively.
+
+```python
+class Rectangle:
+    def __init__(self, width, height):
+        self._width = width
+        self._height = height
+
+    @property
+    def width(self):
+        return self._width
+
+    @width.setter
+    def width(self, value):
+        if value > 0:
+            self._width = value
+
+    @property
+    def height(self):
+        return self._height
+
+    @height.setter
+    def height(self, value):
+        if value > 0:
+            self._height = value
+
+    def calculate_area(self):
+        area = self._width * self._height
+        return area
+
+# Creating an instance of the Rectangle class
+rectangle = Rectangle(5, 7)
+
+# Accessing and modifying attributes using properties
+print("Width:", rectangle.width)  # Output: Width: 5
+rectangle.width = 10
+print("Modified Width:", rectangle.width)  # Output: Modified Width: 10
+
+# Calling the instance method to calculate the area
+area = rectangle.calculate_area()
+
+print("Area:", area)  # Output: Area: 70
+
+```
+
+In this example, properties `width` and `height` are defined to provide controlled access to the corresponding attributes `_width` and `_height`. The `getter` methods retrieve the values, and the `setter` methods allow for validation and modification before assigning new values.
+
+In summary, class attributes are used to store shared data among instances, while properties provide a way to customize attribute access and modification using `getter`, `setter`, and `deleter` methods.
+
+## Public, Protected, and Private Attributes and Properties in Python
+
+In Python, attributes and properties can have different levels of visibility: public, protected, and private. These visibility levels indicate the intended accessibility and usage of the attributes and properties within a class.
+
+### Public Attributes and Properties
+Public attributes and properties have no special prefix and are accessible from anywhere, both within and outside the class. They can be freely accessed, modified, and assigned values.
+
+### Protected Attributes and Properties
+
+Protected attributes and properties are indicated by a single underscore prefix `_`. Although they can still be accessed and modified, it is considered a best practice to treat them as internal implementation details.
+
+```python
+class Person:
+    def __init__(self, _name):
+        self._name = _name
+
+    def display(self):
+        print("Name:", self._name)
+
+# Creating an instance of the Person class
+person = Person("John Doe")
+
+# Accessing and modifying protected attributes (not recommended)
+print(person._name)  # Output: John Doe
+person._name = "Jane Smith"
+
+# Displaying the person's information
+person.display()
+
+```
+
+In this example, the `_name` attribute is marked as protected. Although it can still be accessed directly from outside the class, it is recommended to treat it as an internal detail and rely on class methods or properties for access and manipulation.
+
+### Private Attributes and Properties
+
+Private attributes and properties are indicated by a double underscore prefix `__`. They are strongly discouraged from being accessed or modified from outside the class. Attempting to access or modify a private attribute or property directly from outside the class will result in a name mangling mechanism, which changes the attribute's name.
+
+```python
+class BankAccount:
+    def __init__(self, __account_number):
+        self.__account_number = __account_number
+
+    def display(self):
+        print("Account Number:", self.__account_number)
+
+# Creating an instance of the BankAccount class
+account = BankAccount("123456789")
+
+# Accessing and modifying private attributes (not recommended)
+print(account._BankAccount__account_number)  # Output: 123456789
+account._BankAccount__account_number = "987654321"
+
+# Displaying the account information
+account.display() # Output: Account Number: 987654321
+
+```
+
+In this example, the `__account_number` attribute is marked as private. Accessing it directly from outside the class is discouraged, but it can still be accessed using the name mangling mechanism.
+
+It's important to note that the use of protected and private attributes and properties in Python is based on conventions rather than strict access control mechanisms.
