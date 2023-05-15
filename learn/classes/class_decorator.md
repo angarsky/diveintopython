@@ -1,4 +1,4 @@
-Python class decorators are a powerful programming tool used to modify the behavior of classes in Python. One such decorator is the class decorator, which can be used to add functionality to a class. Another type of decorator is the class method decorator, which can be used to modify class methods. Additionally, the class property decorator can be used to create computed properties for classes. These decorators can quickly and easily modify the behavior of classes in Python, making them invaluable to developers.  
+Class decorators are a powerful programming tool used to modify the behavior of classes in Python. One such decorator is the class decorator, which can be used to add functionality to a class. Another type of decorator is the class method decorator, which can be used to modify class methods. Additionally, the class property decorator can be used to create computed properties for classes. These decorators can quickly and easily modify the behavior of classes in Python, making them invaluable to developers.  
   
 ## Introduction to Python Class Decorator  
 
@@ -6,11 +6,11 @@ A class decorator is a type of decorator in Python that is used to modify or enh
 
 Some common types of class decorators include:
 
-- **Python class decorator**: A class decorator that modifies the behavior of a class by adding or removing properties, methods, or attributes. 
+- **Class decorator**: A class decorator that modifies the behavior of a class by adding or removing properties, methods, or attributes. 
 
-- **Class method python decorator**: A Python decorator that modifies a class method by changing its behavior or adding additional functionality.
+- **Class method decorator**: A Python decorator that modifies a class method by changing its behavior or adding additional functionality.
 
-- **Python class property decorator**: A class decorator that modifies a class property by adding or removing attributes or methods.
+- **Class property decorator**: A class decorator that modifies a class property by adding or removing attributes or methods.
 
 Here are two examples of using class decorators in Python:
 
@@ -125,7 +125,7 @@ A Python class decorator is a feature which is simply a function that alters a c
 
 Python decorators are used to extend and modify the behavior or properties of a function, method, or class. Here are some benefits of using class decorator:
 
-1. **Class Method Python Decorator:** Python decorators provide an easy way to modify the behavior of a class method in some manner. Class method decorators can be used to verify inputs, output or modify behavior before class method responses.
+1. **Class Method Decorator:** Python decorators provide an easy way to modify the behavior of a class method in some manner. Class method decorators can be used to verify inputs, output or modify behavior before class method responses.
 
 ```python
 class Pizza:
@@ -142,7 +142,7 @@ print(Pizza.recommend().toppings)
 
 ```
 
-2. **Python Class Property Decorator:** class decorator can be used to define class properties in a concise and easy to read manner. For instance, they can be used to compute attributes that are not available when the class is first defined.
+2. **Class Property Decorator:** class decorator can be used to define class properties in a concise and easy to read manner. For instance, they can be used to compute attributes that are not available when the class is first defined.
 
 ```python
 class Person:
@@ -219,7 +219,7 @@ In conclusion, class decorator, class method decorator, and class property decor
   
 ## Real-world Applications of Python Class Property Decorator  
 
-One of the most common real-world applications of Python class property decorator is working with database queries. 
+One of the most common real-world applications of class property decorator is working with database queries. 
 
 ```python
 class User:
