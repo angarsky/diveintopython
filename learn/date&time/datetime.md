@@ -323,3 +323,20 @@ print(iso_str)  # output: 2023-05-14T14:30:00
 ```
 
 In the ISO 8601 format, the date and time are separated by the letter "T", and the time is given in 24-hour format. The string representation of the datetime object obtained using `isoformat()` method does not include timezone information. If you need to include timezone information, you can use the `strftime()` method with an appropriate format string.
+
+## `datetime.utcnow()` Method
+
+In Python, the `datetime` module provides a method called `datetime.utcnow()` that returns the current date and time as a datetime object in UTC (Coordinated Universal Time). 
+
+Here's an example:
+
+```python
+import datetime
+
+now_utc = datetime.datetime.utcnow()
+print(now_utc)
+```
+
+This will output the current UTC date and time in the format `YYYY-MM-DD HH:MM:SS.mmmmmm`.
+
+It's worth noting that `datetime.utcnow()` returns the current UTC time, which does not take into account any time zone offset. If you want to convert this time to a local time zone, you'll need to use the `datetime.astimezone()` method.
