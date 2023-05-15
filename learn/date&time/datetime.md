@@ -225,6 +225,24 @@ tomorrow = now + one_day
 print(tomorrow)
 ```
 
+Here's also an example of how to find time delta in Python:
+
+```python
+import datetime
+
+# create two datetime objects
+start_time = datetime.datetime(2023, 5, 15, 10, 30, 0)
+end_time = datetime.datetime(2023, 5, 15, 14, 45, 0)
+
+# calculate the time difference
+delta = end_time - start_time
+
+# print the result
+print(delta)  # prints: 4:15:00
+```
+
+This way you can measure execution time of any code snippet.
+
 The `timedelta` class provides several other arguments that can be used to specify different units of time, including `weeks`, `hours`, `minutes`, `seconds`, `microseconds`, and `milliseconds`.
 
 ## `datetime` Objects Comparing
