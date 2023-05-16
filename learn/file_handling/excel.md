@@ -56,7 +56,7 @@ cell_value = worksheet.cell_value(0, 0)
 In the example above, `xlrd` library is used to open the Excel file. `workbook.sheet_by_name` function is used to access the sheet named 'Sheet1'. `worksheet.cell_value` function is used to read data from the cells of the sheet. In the example, the value of cell A1 is read.  
 
  
-## How to Create a New Excel Sheet in Python  
+## Create a New Excel Sheet in Python  
 
 If you want to create a new Excel sheet in Python, you can use the `openpyxl` module. This module allows you to create, read, and modify Excel files.
 
@@ -95,7 +95,7 @@ workbook.save("new_excel_sheet.xls")
 
 Both of these examples will create a new Excel sheet with the name `New Sheet` and save it to a file. You can modify the code to create sheets with different names or add data to the sheets.  
   
-## How to Open Excel in Python Different Directory  
+## Open Excel in Python Different Directory  
 
 To open an Excel file from a different directory in Python, one can use the `os` module of Python and set the working directory to the desired directory. Then, use the `pandas` library to read the Excel file.
 
