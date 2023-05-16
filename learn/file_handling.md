@@ -1,4 +1,4 @@
-Python has a variety of built-in functions and libraries that make working with files a breeze, and in this article, we'll explore the different techniques and best practices for handling files in Python. Get ready to dive into the world of file handling in Python and learn how to make your code more efficient and effective!  
+Python has a variety of built-in functions and libraries that make working with files a breeze, and in this article, we'll explore the different techniques and best practices for handling files in Python.   
   
 ## Opening Files  
 
@@ -127,14 +127,6 @@ shutil.move("example.txt", "/path/to/new_folder/example.txt")
 ## Python File Methods  
 
 When working with files in Python, there are several built-in methods that enable you to read, write, and manipulate file contents. These methods provide flexible options for file handling. Here's a guide to some commonly used Python file methods:
-
-### `open()`
-
-The `open()` function is used to open a file and obtain a file object, which allows you to perform various operations on the file. It takes two parameters: the file name and the mode in which the file should be opened.
-
-```python
-file = open("example.txt", "w")
-```
 
 ### How to Read a File 
 
