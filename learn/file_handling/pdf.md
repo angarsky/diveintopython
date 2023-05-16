@@ -242,4 +242,4 @@ from weasyprint import HTML
 HTML('path/to/file.html').write_pdf('path/to/output.pdf')
 ```
 
-Both libraries provide the ability to convert `HTML` to PDF with just a few lines of code, making it easy to incorporate into any Python project. Don't forget to install the required libraries using pip before implementing the solution.``````
+Both libraries provide the ability to convert `HTML` to PDF with just a few lines of code, making it easy to incorporate into any Python project. Don't forget to install the required libraries using pip before implementing the solution.
