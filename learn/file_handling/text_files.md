@@ -48,7 +48,7 @@ Here, we create a new file called example.txt and assign it to the `file` variab
 
 ### How to Get Python Output in Text File  
 
-If you want to save the output of your Python code into a text file, you can use the `open()` function in Python. Here are two examples:
+If you want to save the output of your Python code into a text file, you can use the `open()` function in Python.
 
 ```python
 output = "Hello, world!"
