@@ -29,7 +29,7 @@ zip_object.close()
 
 In the above code, we first imported the `zipfile` module. Then we defined the name of the zip file and the name of the source file. We created a `ZipFile` object and added the source file to it using the `write()` method. We then closed the zip file using the `close()` method.
 
-### How to Zip Multiple Files
+### Zip Multiple Files
 
 You can also create a zip file containing multiple files. Here is an example:
 
