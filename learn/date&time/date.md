@@ -99,7 +99,7 @@ This code will create a countdown timer for 60 seconds and print the remaining t
 
 In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
 
-- **`ctime()`** - This function takes a time in seconds and returns a string representation of that time in the format "Day Month Date Time Year".
+- **ctime()** - This function takes a time in seconds and returns a string representation of that time in the format "Day Month Date Time Year".
 Example usage:
 
 ```python
@@ -110,7 +110,7 @@ time_string = time.ctime(current_time)
 print("Current time: ", time_string)
 ```
 
-- **`gmtime()`** - This function takes a time in seconds and returns a struct_time object representing the UTC time.
+- **gmtime()** - This function takes a time in seconds and returns a struct_time object representing the UTC time.
 Example usage:
 
 ```python
