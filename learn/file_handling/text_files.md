@@ -25,7 +25,7 @@ Here, `open()` function opens the file `filename.txt` in read mode and returns a
 
 In both the examples, you can replace `filename.txt` with the path of the actual text file you want to read.  
 
-## How to write to a text file in python  
+## Write to a Text File in Python  
 
 Writing to a text file in Python is a basic file operation that involves creating a new file, writing data to it, and optionally closing the file. Here are two examples of how to write to a text file in Python:
 
