@@ -4,7 +4,7 @@ Zip files are a popular way to compress and bundle multiple files into a single 
 
 The `zipfile` module in Python provides functionalities to create, read, write, append, and extract ZIP files.
 
-### How to Zip a Single File
+### Zip a Single File
 
 You can use the `zipfile` module to create a zip file containing a single file. Here is how you can do it:
 
@@ -60,7 +60,7 @@ In the above example, we defined the names of multiple source files in a list. W
 
 To compress the zip file even further, you can set the `compress_type` argument to `zipfile.ZIP_DEFLATED`. This applies the [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE) compression method to the files being zipped.  
   
-## How to Unzip File in Python  
+## Unzip File in Python  
 
 It is straightforward to extract zip files in Python using the `zipfile` module. Here are two ways to do it:
 
