@@ -6,7 +6,7 @@ Python is a great language to work with Excel. With the help of the Python Excel
 
 ### Reading and Writing Excel Files with `pandas`
 
-To read and write Excel files with Python, you can use the `pandas` library. To install use `pip install "pandas[excel]"`. Here's a code snippet that reads an Excel file and saves it as a new file:
+To read and write Excel files with Python, you can use the [`pandas`](https://pypi.org/project/pandas/) library. To install use `pip install "pandas[excel]"`. Here's a code snippet that reads an Excel file and saves it as a new file:
 
 ```python
 import pandas as pd
