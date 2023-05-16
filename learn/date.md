@@ -4,7 +4,7 @@ Python provides built-in modules that allow you to work with date and time value
 
 Python has several built-in modules for working with dates and times. Here are some of the most commonly used ones:
 
-1. **`datetime`** module: Python datetime module provides classes for working with dates and times. It includes classes such as datetime, date, time, and timedelta that can be used to represent and manipulate dates, times, and durations.
+1. **`datetime`** module: Python datetime module provides classes for working with dates and times. It includes classes such as datetime, date, time, and timedelta that can be used to represent and manipulate dates, times, and durations. For more details please check [datetime part](https://github.com/almargit/diveintopython/blob/datetime/learn/date/datetime.md).
 
 2. **`time`** module: This module provides functions to work with time-related functions, such as getting the current time, waiting for a certain amount of time, and converting between time representations.
 
