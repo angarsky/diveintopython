@@ -32,7 +32,7 @@ print(data)
 
 ### Writing JSON to file in Python
 
-To write JSON data to a file in Python, you can use the `dump()` function from the `json` module. Here's an example:
+To write JSON data to a file in Python, you can use the `json.dump()` function from the `json` module. Here's an example:
 
 ```python
 import json
