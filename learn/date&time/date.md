@@ -12,7 +12,7 @@ import time
 time.sleep(seconds)
 ```
 
-where `seconds` is the number of seconds for which the thread should be suspended.
+Where `seconds` is the number of seconds for which the thread should be suspended.
 
 Using `time.sleep()` function will help you to pause execution of the programm for the defined period of time. 
 
@@ -95,7 +95,7 @@ countdown(t)
 
 This code will create a countdown timer for 60 seconds and print the remaining time on the screen every second until the timer is completed. You can adjust the value of t to set the desired length of the timer.
 
-## `time` Finctions in Python
+## Time Finctions in Python
 
 In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
 
