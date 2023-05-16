@@ -95,10 +95,8 @@ There is one more way to get the current date and time, you can use the datetime
 import datetime
 
 now = datetime.datetime.today()
-print(now)
+print(now) # This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.mmmmmm.
 ```
-
-This will output the current date and time in the format YYYY-MM-DD HH:MM:SS.mmmmmm.
 
 If you want to display only the current time without the date, you can use the `strftime()` method to format the output before printing:
 
@@ -203,7 +201,7 @@ In this example, we first create a `datetime` object in the UTC timezone using t
 
 Next, we create a `pytz.timezone` object representing the local timezone (America/New_York), and then use the `astimezone()` method to convert the UTC datetime object to the local timezone. Finally, we print out the local datetime.
 
-## `datetime` Module & `timedelta` Class
+## Datetime Module & Timedelta Class
 
 The `datetime` module in Python provides various classes for working with dates, times, and time intervals. One of the classes available in the module is `timedelta`, which represents a duration or difference between two dates or times.
 
@@ -245,7 +243,7 @@ This way you can measure execution time of any code snippet.
 
 The `timedelta` class provides several other arguments that can be used to specify different units of time, including `weeks`, `hours`, `minutes`, `seconds`, `microseconds`, and `milliseconds`.
 
-## `datetime` Objects Comparing
+## Datetime Objects Comparing
 
 In Python, you can compare `datetime` objects using the comparison operators (`<`, `>`, `<=`, `>=`, `==`, `!=`).
 
@@ -281,7 +279,7 @@ else:
     print("date1 is after date2")
 ```
 
-## How to Add Days to a `datetime` Object
+## How to Add Days to a Datetime Object
 
 To add days to a Python `datetime` object, you can use the `timedelta` class from the `datetime` module.
 
@@ -299,7 +297,7 @@ print("New date:", new_date)
 
 You can adjust the number of days to add by changing the value of the days argument when creating the `timedelta` object.
 
-## `datetime` Module & `isoformat()` Method in Python
+## Datetime Module & `isoformat()` Method in Python
 
 The `isoformat()` method is used to get the string representation of a date or time object in ISO 8601 format. Here's an example:
 
