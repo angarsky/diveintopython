@@ -4,19 +4,19 @@ Python datetime module is a powerful tool for working with dates and times. It p
 
 Python's built-in `datetime` module serves for working with dates and times. Here are some common datetime formats in Python:
 
-1. **`YYYY-MM-DD`** : Year, month, and day separated by hyphens.
+1. **YYYY-MM-DD** : Year, month, and day separated by hyphens.
 
-2. **`YYYY/MM/DD`** : Year, month, and day separated by slashes.
+2. **YYYY/MM/DD** : Year, month, and day separated by slashes.
 
-3. **`MM/DD/YYYY`** : Month, day, and year separated by slashes.
+3. **MM/DD/YYYY** : Month, day, and year separated by slashes.
 
-4. **`DD-MM-YYYY`** : Day, month, and year separated by hyphens.
+4. **DD-MM-YYYY** : Day, month, and year separated by hyphens.
 
-5. **`DD/MM/YYYY`** : Day, month, and year separated by slashes.
+5. **DD/MM/YYYY** : Day, month, and year separated by slashes.
 
-6. **`YYYY-MM-DD HH:MM:SS`** : Year, month, and day separated by hyphens, followed by hours, minutes, and seconds separated by colons.
+6. **YYYY-MM-DD HH:MM:SS** : Year, month, and day separated by hyphens, followed by hours, minutes, and seconds separated by colons.
 
-7. **`YYYY-MM-DD HH:MM:SS.mmmmmm`** : Year, month, and day separated by hyphens, followed by hours, minutes, and seconds separated by colons, and microseconds separated by a dot.
+7. **YYYY-MM-DD HH:MM:SS.mmmmmm** : Year, month, and day separated by hyphens, followed by hours, minutes, and seconds separated by colons, and microseconds separated by a dot.
 
 ## Datetime Formatting in Python
 
@@ -24,17 +24,17 @@ In Python, you can format dates and times as a string using the `strftime()` met
 
 Here are some common format codes:
 
-- **`%Y`**: year (4 digits)
+- **%Y**: year (4 digits)
 
-- **`%m`**: month (zero-padded)
+- **%m**: month (zero-padded)
 
-- **`%d`**: day of the month (zero-padded)
+- **%d**: day of the month (zero-padded)
 
-- **`%H`**: hour (24-hour clock)
+- **%H**: hour (24-hour clock)
 
-- **`%M`**: minute (zero-padded)
+- **%M**: minute (zero-padded)
 
-- **`%S`**: second (zero-padded)
+- **%S**: second (zero-padded)
 
 ## Datetime to String Conversion in Python
 
