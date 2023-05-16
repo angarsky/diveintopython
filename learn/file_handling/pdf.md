@@ -6,7 +6,7 @@ To work with PDF files in Python, there are various libraries available. Some of
 
 ### Reading PDF with Python
 
-To read a PDF `file,` you can use the [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example:
+To read a PDF `file`, you can use the [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example:
 
 ```python
 import json
@@ -226,7 +226,7 @@ With these simple solutions, you can easily remove watermarks from PDF files usi
 
 Converting `HTML` to PDF is a common task in web development. Fortunately, Python provides several libraries to accomplish this task effortlessly. Here are two examples of how to convert `HTML` to PDF using popular Python libraries:
 
-### Using the [pdfkit](https://pypi.org/project/pdfkit/) library
+### Using the `pdfkit` library
 
 ```python
 import pdfkit
@@ -234,7 +234,7 @@ import pdfkit
 pdfkit.from_file('path/to/file.html', 'path/to/output.pdf')
 ```
 
-### Using the [weasyprint](https://pypi.org/project/weasyprint/) library
+### Using the `weasyprint` library
 
 ```python
 from weasyprint import HTML
