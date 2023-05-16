@@ -35,7 +35,7 @@ In this example, we're loading an existing workbook with `load_workbook()`, crea
 
 ### Reading and Writing Excel Files with `xlrd`
 
-`Xlrd` is a library for reading data and formatting information from Excel files in the historical `.xls` format. Here is an example code snippet to read an Excel file using `xlrd`:
+[Xlrd](https://pypi.org/project/xlrd/1.1.0/) is a library for reading data and formatting information from Excel files in the historical `.xls` format. Here is an example code snippet to read an Excel file using `xlrd`:
 
 ```python
 import xlrd
