@@ -6,7 +6,7 @@ To read data from an XML file with Python, you can use in-built XML parser modul
 
 ### Using lxml library
 
-The `lxml` library is popular and efficient for parsing XML files. You can install the `lxml` library by using the pip command.
+The `lxml` library is popular and efficient for parsing XML files. You can install the `lxml` library by using the `pip` command.
 
 ```python
 from lxml import etree
