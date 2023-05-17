@@ -1,12 +1,12 @@
-[JSON](https://en.wikipedia.org/wiki/JSON) files in Python have become increasingly popular in recent years due to their compatibility with web-based systems. JSON, or JavaScript Object Notation, is a lightweight format for data exchange, making it a popular choice for web applications. Python, a popular programming language, has powerful tools for working with JSON files. In this article, we will explore how to read and manipulate JSON files in Python, and how to use JSON files in practical applications.  
+[JSON](https://en.wikipedia.org/wiki/JSON) files have become increasingly popular in recent years due to their compatibility with web-based systems. JSON, or JavaScript Object Notation, is a lightweight format for data exchange, making it a popular choice for web applications. Python has powerful tools for working with JSON files. In this article, we will explore how to read and manipulate JSON files, and how to use JSON files in practical applications.  
   
 ## Use JSON with Python   
 
 To read, parse, and write JSON files, you can use Python's built-in `json` module. Here are some examples:
 
-### Reading JSON file in Python
+### Reading JSON file
 
-To read a JSON file in Python, you can use the `load()` function from the `json` module. Here's an example that reads a JSON file called `data.json`:
+To read a JSON file, you can use the `load()` function from the `json` module. Here's an example that reads a JSON file called `data.json`:
 
 ```python
 import json
@@ -17,7 +17,7 @@ with open('data.json') as f:
 print(data)
 ```
 
-### Parsing JSON in Python
+### Parsing JSON
 
 If you have a JSON string and want to parse it in Python, you can use the `loads()` function from the `json` module. Here's an example:
 
@@ -30,9 +30,9 @@ data = json.loads(json_string)
 print(data)
 ```
 
-### Writing JSON to file in Python
+### Writing JSON to file
 
-To write JSON data to a file in Python, you can use the `json.dump()` function from the `json` module. Here's an example:
+To write JSON data to a file, you can use the `json.dump()` function from the `json` module. Here's an example:
 
 ```python
 import json
@@ -43,7 +43,7 @@ with open('data.json', 'w') as f:
     json.dump(data, f)
 ```  
   
-## How to Load JSON File in Python  
+## How to Load JSON File  
 
 JSON format is a widely used standard for data exchange. Python provides a built-in module called `json` to work with JSON data.
 
@@ -67,7 +67,7 @@ In the above code, we first read the contents of the JSON file `file.json` into 
 
 ## How to Write JSON Pretty to File  
 
-To print JSON in a more readable and organized format, you need to use the `pretty_print` flag. This flag will format the JSON by adding indentation, line breaks, and spaces between the elements. Below are two ways to write JSON pretty to a file in Python.
+To print JSON in a more readable and organized format, you need to use the `pretty_print` flag. This flag will format the JSON by adding indentation, line breaks, and spaces between the elements. Below are two ways to write JSON pretty to a file.
 
 ```python
 import json
