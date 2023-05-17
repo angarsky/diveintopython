@@ -1,4 +1,4 @@
-Binary files are computer files that contain data in a format that can be easily read and manipulated by machines. In Python, binary files are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, including their structure, how to read and write them, and some common use cases where they are most beneficial.  
+[Binary files](https://en.wikipedia.org/wiki/Binary_file) are computer files that contain data in a format that can be easily read and manipulated by machines. In Python, binary files are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, including their structure, how to read and write them, and some common use cases where they are most beneficial.  
   
 ## How to Read Binary File  
 
