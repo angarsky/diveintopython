@@ -180,7 +180,7 @@ print(result)
 
 In this example, we have created two static classes `StringUtils` and `TextUtils`. The `StringUtils` class contains a static method `reverse_string` that returns a reversed string. The `TextUtils` class contains a static method `reverse_and_uppercase` that calls the `reverse_string` method from the `StringUtils` class and returns the reversed string in uppercase. 
 
- ## Static Variables in Class
+## Static Variables in Class
  
 In Python, static variables are class-level variables that are shared among all instances of the class. These variables are defined within the class but outside any method, and they retain their value across different instances of the class.
 
