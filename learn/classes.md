@@ -1,8 +1,8 @@
 Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we'll explore the basics of classes in Python and how to use them effectively in your projects.  
   
-## Advantages of Utilizing Classes in Python  
+## Advantages of Utilizing Classes  
 
-Python class is a blueprint for creating objects that have a set of attributes and methods. It is a fundamental concept in object-oriented programming. Here are some benefits of utilizing classes in Python:
+Python class is a blueprint for creating objects that have a set of attributes and methods. It is a fundamental concept in object-oriented programming. Here are some benefits of utilizing classes:
 
 - **Code organization:** Classes allow you to group related data and functionality together in a single block of code. This improves code readability, reduces duplication, and makes it easier to maintain and update your code.
 
@@ -35,11 +35,19 @@ class Manager(Employee):
 
 ## Overview of Object-Oriented Programming  
 
-Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports OOP concepts such as encapsulation, inheritance, and polymorphism.
+Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports next OOP concepts: 
+
+1. **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
+
+2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
+
+3. **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
+
+4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
 
 ### Python Class
 
-A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class in Python. Here is an example of a simple `Person` class:
+A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
 
 ```python
 class Person:
@@ -62,9 +70,72 @@ In this example, the `Person` class has two attributes `name` and `age`, and a m
 
 Inheritance is a mechanism that allows a subclass to inherit the properties (methods and attributes) of its superclass. Polymorphism allows objects of different classes to be treated as if they are of the same type.
 
+## Create Python Object  
+
+An object is an instance of a class that encapsulates data along with methods or functions to operate on that data. Creating an object involves defining a class and then instantiating that class using the class constructor.
+```python
+### Example 1
+class Car:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+    
+    def get_make(self):
+        return self.make
+    
+    def get_model(self):
+        return self.model
+
+new_car = Car("Toyota", "Camry")
+print(new_car.get_make())
+print(new_car.get_model())
+
+# Output:
+# Toyota
+# Camry
+```
+
+To create a Python object, you define a class and then instantiate it using the class constructor. You can then call methods or access attributes of the object. With these examples, you can get started with creating Python objects in your own projects.  
+  
+## How to Get Python Object Attributes  
+
+Python object types have attributes that represent characteristics or behaviors of the object. To get these attributes, you can use the `getattr()` function or access them directly using the dot notation.
+
+### Using `getattr()` function
+
+The `getattr()` function takes two arguments, the object and attribute `name,` and returns the value of the attribute.
+
+```python
+class MyClass:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+my_obj = MyClass('John', 30)
+name = getattr(my_obj, 'name')
+print(name) # Output: 'John'
+```
+
+### Accessing attributes directly
+
+You can also access the attributes of an object directly using the dot notation.
+
+```python
+class MyClass:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+my_obj = MyClass('John', 30)
+name = my_obj.name
+print(name) # Output: 'John'
+```
+In conclusion, getting attributes of Python object types can be done by using the `getattr()` function or by accessing them directly using the dot notation.  
+
+
 ## Exploring Attribute Inheritance and Searching  
 
-In Python, attributes can be inherited from parent classes to child classes. Attribute inheritance allows child classes to access and use attributes defined in their parent classes. Python provides a built-in function `issubclass()` to check whether a given class is a subclass of another class.
+Attributes can be inherited from parent classes to child classes. Attribute inheritance allows child classes to access and use attributes defined in their parent classes. Python provides a built-in function `issubclass()` to check whether a given class is a subclass of another class.
 
 ### Example of a Class in Python
 
@@ -200,7 +271,49 @@ In this example, we created a new instance of the `Dog` class and assigned it to
 
 We can then access the attributes and methods of the object using dot notation.
 
-In summary, classes in Python allow us to create objects with attributes and methods, and instances of a class are created by calling the class like a function.  
+In summary, classes in Python allow us to create objects with attributes and methods, and instances of a class are created by calling the class like a function.
+
+## Python Methods vs Functions  
+
+Python methods and functions are two crucial programming concepts in Python. A method is a function that is associated with an object, while a function is not associated with any object. In other words, a method is a function that belongs to a class, while a function is not linked to any class. 
+
+In Python, a method is typically called in the form `object.method()`, while a function is called in the form `function()`. Methods are used to carry out actions on an object or `return` a value that is related to the object. On the other hand, functions are used to carry out a task or operation on data and `return` a result.
+
+Here are two examples to differentiate between methods and functions in Python:
+
+### Method Example
+
+```python
+# Define a list
+my_list = [1, 2, 3, 4, 5]
+
+# Use the append method to add a value to the list
+my_list.append(6)
+
+# Print the updated list
+print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+```
+
+In the example above, the `append()` method is associated with the `my_list` object. It adds the value `6` to the list. 
+
+### Function Example
+
+```python
+# Define a function to calculate the area of a rectangle
+def calculate_area(length, width):
+    area = length * width
+    return area
+
+# Call the function with two arguments
+rectangle_area = calculate_area(5, 10)
+
+# Print the area of the rectangle
+print(rectangle_area)  # Output: 50
+```
+
+In the example above, the `calculate_area()` function is not associated with any object. It takes two arguments `length` and `width` and returns the `area` of the rectangle. 
+
+In conclusion, while methods and functions may have some similarities, the main difference between them is that methods are associated with objects, while functions are not. Knowing when to use methods and functions is an important aspect of programming in Python. 
   
 ## Invoking Class Methods  
 
@@ -312,7 +425,7 @@ obj.hello() # Output: Hello from A
 
 In the code above, the class `C` inherits from class `B`, which already inherits from class `A`, and thus can access methods from both classes.
 
-### Python Inherits From Multiple Classes
+### How to Inherits From Multiple Classes in Python
 
 Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
 
