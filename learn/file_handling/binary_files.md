@@ -2,7 +2,7 @@ Binary files are computer files that contain data in a format that can be easily
   
 ## How to Read Binary File  
 
-Binary files are computer files that are encoded in binary language. They are different from text files, as they contain data or instructions compiled in a format that a computer can understand directly. In Python, we can use the `open()` function to open a binary file and read the contents.
+In Python, we can use the `open()` function to open a binary file and read the contents.
 
 ```python
 ### Code Example 1
