@@ -2,7 +2,7 @@ This article explores the ins and outs of working with methods and functions in 
   
 ## Fundamentals of Python Functions in a Class
 
-Python allows us to define functions inside a class. These functions are called methods, and they can access the attributes (variables) and methods of the class. A class constructor is a special method that is called when an object of a class is created. Here are some important concepts related to methods and functions in Python:
+Python allows us to define functions inside a class. These functions are called methods, and they can access the attributes (variables) and methods of the class. A class constructor is a special method that is called when an object of a class is created.
   
 ## Mastering the Python Class Constructor   
 
@@ -90,7 +90,7 @@ Class methods are used to modify the class or its properties. They are defined u
 
 Python static methods are called on the class and do not take any special first argument. They are defined using the `@staticmethod` decorator.
 
-### Key Differences Between Class Method vs Static Method in Python:
+### Key Differences Between Class Method vs Static Method in Python
 
 | Class method  | Static method  |
 |---|---|
