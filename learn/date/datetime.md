@@ -36,6 +36,40 @@ Here are some common format codes:
 
 - **%S**: second (zero-padded)
 
+## How to Get Current Date from Datetime Object in Python
+
+To retrieve the current date from a `datetime` object in Python, you can use the `date()` method. Here's an example:
+
+```python
+from datetime import datetime
+
+current_datetime = datetime.now()
+current_date = current_datetime.date()
+
+print(current_date)
+```
+
+This code will output the current date in the format YYYY-MM-DD. For example, if you run the code today (May 17, 2023), the output will be 2023-05-17.
+
+## AM/PM Datetime Format in Python
+
+In Python's `datetime` module, you can format a datetime object to display the time in AM/PM format using the `%I` and `%p` directives in the strftime method. Here's an example:
+
+```python
+from datetime import datetime
+
+# Get the current datetime
+now = datetime.now()
+
+# Format the time in AM/PM format
+formatted_time = now.strftime("%I:%M %p")
+
+# Print the formatted time
+print(formatted_time)
+```
+
+This code will output the current time in the format "hh:mm AM/PM". For example, if the current time is 2:30 PM, the output will be "02:30 PM".
+
 ## Datetime to String Conversion in Python
 
 To convert a Python `datetime` object to a string, you can use the `strftime()` method. The `strftime()` method takes a format string as an argument and returns a string representation of the datetime object according to the specified format.
@@ -126,7 +160,7 @@ print(date)  # output: 2023-05-14
 
 ## Datetime to Epoch Conversion
 
-You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Here's an example:
+You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Let's look at the example how to convert a Python datetime object to a timestam:
 
 ```python
 import datetime
