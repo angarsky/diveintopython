@@ -1,4 +1,4 @@
-**Dunder** (double underscore) or magic methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
+**Dunder** (double underscore) or **magic** methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
   
 ## Constructing Objects and Expressions  
 
@@ -22,11 +22,11 @@ The `__init__` method is a special method that is called when an instance of the
 
 ### Python `__init__` Method
 
-The `__init__` method is a special method that is called when an instance of a class is created. It initializes the attributes of the object. In the example above, the `__init__` method takes two parameters, `name` and `age`, which are used to initialize the `name` and `age` attributes of the object.
+The `__init__` method is a special magic method that is called when an instance of a class is created. It initializes the attributes of the object. In the example above, the `__init__` method takes two parameters, `name` and `age`, which are used to initialize the `name` and `age` attributes of the object.
 
 ### Creating Instances of Classes in Python
 
-To create an instance of a class, you call the class as if it were a function, passing any arguments that the `__init__` method requires. For example, the following code creates two instances of the `Person` class:
+To create an instance of a class, you call the class as if it were a function, passing any arguments that the `__init__` dunder method requires. For example, the following code creates two instances of the `Person` class:
 
 ```python
 ### Example 1
@@ -112,7 +112,7 @@ for x in gen:
     print(x)
 ```
 
-In this example, `MyGenerator` is a generator class that inherits from the built-in `object` class. It defines an `__init__()` method that initializes the `num` attribute to 0. It also defines `__iter__()` method that returns the iterator object (`self` in this case) and `__next__()` method that generates the next value in the sequence.
+In this example, `MyGenerator` is a generator class that inherits from the built-in `object` class. It defines an `__init__()` method that initializes the `num` attribute to 0. It also defines `__iter__()` method that returns the iterator object (`self` in this case) and `__next__()` magic method that generates the next value in the sequence.
 
 You can also create an iterator using a Python function generator. A function generator is afunction that contains the `yield` statement.
 
@@ -154,7 +154,7 @@ In Example 2, we create a dictionary object `my_cat` and access the `name` attri
   
 ## Representing Objects as Strings  
 
-In Python, we can represent objects as string using the `__repr__()` method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
+In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
 
 ```python
 ### Code Example 1
@@ -170,7 +170,7 @@ p = Point(2, 3)
 print(p)  ### Output
 ```
 
-In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` method to get its string representation.
+In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` dunder method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` magic method to get its string representation.
 
 ```python
 ### Code Example 2
@@ -187,13 +187,13 @@ c = Car("Toyota", "Camry", 2021)
 print(c)  ### Output
 ```
 
-In this example, we have defined a `Car` class with `make`, `model`, and `year` attributes. We have also defined a `__repr__()` method that returns a string representation of the `Car` object. When we print the `c` object, it calls the `__repr__()` method to get its string representation.  
+In this example, we have defined a `Car` class with `make`, `model`, and `year` attributes. We have also defined a `__repr__()` method that returns a string representation of the `Car` object. When we print the `c` object, it calls the `__repr__()` dunder method to get its string representation.  
   
 ## Cleaning Up Objects 
 
 In Python, objects are automatically garbage collected when they are no longer needed. However, sometimes it may be necessary to define additional cleanup actions for an object. This can be done using the `__del__` method, which is called when the object is about to be destroyed.
 
-This method is useful for releasing resources such as files, network connections, or other system-level objects that are not automatically managed by Python.
+This dunder method is useful for releasing resources such as files, network connections, or other system-level objects that are not automatically managed by Python.
 
 ```python
 ### Example 1
