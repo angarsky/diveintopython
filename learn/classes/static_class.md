@@ -120,7 +120,7 @@ print(Math.multiply(2, 3)) ### Output 6
 
 In the above examples, we can see how to define and call a static method using the `@staticmethod` decorator in Python.  
   
-## Static Classes vs. Regular Classes  
+## Static Classes vs Regular Classes  
 
 Static classes in Python are classes that have class-level attributes and methods that can be accessed without creating an instance of the class. They are defined using the `@staticmethod` decorator. On the other hand, regular classes in Python are the ones that require an object of the class to access attribute or methods.
 
@@ -243,7 +243,7 @@ In this example, the `PI` variable is a static variable that stores the value of
 
 Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
 
-## Python Class Method vs. Static Method
+## Python Class Method vs Static Method
 
 In Python, class methods and static methods are different types of methods that can be defined within a class. They serve different purposes and have different behaviors when it comes to method invocation and access to class attributes.
 
