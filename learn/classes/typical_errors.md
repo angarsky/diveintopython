@@ -82,7 +82,7 @@ class MyClass:
         self.my_variable = 10
 ```
 
-- **Undefined Functions**: Make sure to define all the functions you want to use in the class.
+- **NameError: name is not defined**: Make sure to define all the functions you want to use in the class.
 
 ```python
 # Incorrect Function Name
@@ -110,7 +110,7 @@ Python is an object-oriented programming language where everything is an object 
 
 Here are some common attribute and type errors that developers face while working with Python classes along with their solutions:
 
-### Incorrect Syntax Error
+### SyntaxError: invalid syntax
 
 Syntax errors occur when there is a mistake in the code syntax. This error can prevent code execution and halt the program. To resolve this error, developers need to check the variables, parameters, class declarations, and method declarations in the code.
 
