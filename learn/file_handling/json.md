@@ -1,4 +1,4 @@
-JSON files in Python have become increasingly popular in recent years due to their compatibility with web-based systems. JSON, or JavaScript Object Notation, is a lightweight format for data exchange, making it a popular choice for web applications. Python, a popular programming language, has powerful tools for working with JSON files. In this article, we will explore how to read and manipulate JSON files in Python, and how to use JSON files in practical applications.  
+[JSON](https://en.wikipedia.org/wiki/JSON) files in Python have become increasingly popular in recent years due to their compatibility with web-based systems. JSON, or JavaScript Object Notation, is a lightweight format for data exchange, making it a popular choice for web applications. Python, a popular programming language, has powerful tools for working with JSON files. In this article, we will explore how to read and manipulate JSON files in Python, and how to use JSON files in practical applications.  
   
 ## Use JSON with Python   
 
