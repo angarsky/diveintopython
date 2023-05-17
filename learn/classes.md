@@ -4,13 +4,13 @@ Classes in Python allow developers to create reusable components for their code,
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports next OOP concepts: 
 
-1. **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
+1.  **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
 
-2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
+ 2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
 
-3. **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
+3.  **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
 
-4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
+4.  **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
   
 ## Python Class
 
