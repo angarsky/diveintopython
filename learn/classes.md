@@ -1,5 +1,42 @@
 Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we'll explore the basics of classes in Python and how to use them effectively in your projects.  
+
+## Overview of Object-Oriented Programming  
+
+Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports next OOP concepts: 
+
+1. **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
+
+2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
+
+3. **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
+
+4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
   
+## Python Class
+
+A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
+
+```python
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+person = Person("John", 30)
+person.greet()
+
+# Output:
+# 
+# Hello, my name is John and I am 30 years old.
+```
+
+In this example, the `Person` class has two attributes `name` and `age`, and a method `greet` that prints a greeting message. The `__init__` method is a constructor that initializes the attributes of the object. To create an object of the `Person` class, we use the class constructor and pass in the required parameters.
+
+Inheritance is a mechanism that allows a subclass to inherit the properties (methods and attributes) of its superclass. Polymorphism allows objects of different classes to be treated as if they are of the same type.
+
 ## Advantages of Utilizing Classes  
 
 Python class is a blueprint for creating objects that have a set of attributes and methods. It is a fundamental concept in object-oriented programming. Here are some benefits of utilizing classes:
@@ -32,43 +69,6 @@ class Manager(Employee):
     def get_salary(self):
         return self.salary + self.bonus
 ```
-
-## Overview of Object-Oriented Programming  
-
-Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports next OOP concepts: 
-
-1. **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
-
-2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
-
-3. **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
-
-4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
-
-### Python Class
-
-A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
-
-```python
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-    
-    def greet(self):
-        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
-
-person = Person("John", 30)
-person.greet()
-
-# Output:
-# 
-# Hello, my name is John and I am 30 years old.
-```
-
-In this example, the `Person` class has two attributes `name` and `age`, and a method `greet` that prints a greeting message. The `__init__` method is a constructor that initializes the attributes of the object. To create an object of the `Person` class, we use the class constructor and pass in the required parameters.
-
-Inheritance is a mechanism that allows a subclass to inherit the properties (methods and attributes) of its superclass. Polymorphism allows objects of different classes to be treated as if they are of the same type.
 
 ## Create Python Object  
 
