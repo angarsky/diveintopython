@@ -2,7 +2,7 @@ The Python time module is a powerful tool for working with time-related operatio
 
 ## Python `time.sleep()` Function
 
-`time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds.
+`time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds, so you can easily set your own waiting time.
 
 The syntax of `time.sleep()` for wait time or delay is the following:
 
@@ -56,6 +56,30 @@ time_taken = end_time - start_time
 
 print(f"Time taken to create the graph: {time_taken:.4f} seconds")
 ```
+
+So `time.time()` function can be used for counting time in Python.
+
+## `timeit.timeit` Function
+
+If you want to measure the execution time of a specific block of code in Python, you can use the `timeit` module. The `timeit` module provides a simple way to time small bits of Python code. Here's an example:
+
+```python
+import timeit
+
+code_to_measure = """
+# Code to be measured
+for i in range(1000):
+    # Perform some computation
+    result = i ** 2
+"""
+
+execution_time = timeit.timeit(code_to_measure, number=10000)
+print(f"Execution time: {execution_time} seconds")
+```
+
+In this example, the code you want to measure is placed inside a triple-quoted string assigned to the `code_to_measure` variable. The `timeit.timeit` function is then used to measure the execution time of the code. The `number` parameter specifies the number of times the code should be executed.
+
+The timeit.timeit function returns the total time taken to execute the code multiple times. The execution time is expressed in seconds. You can adjust the number parameter to control the number of repetitions and adjust the accuracy of the measurement.
 
 ## Getting Time in Milliseconds
 
@@ -122,3 +146,82 @@ print("UTC time: ", utc_time)
 ```
 
 There are many more functions available in the time module for working with time, including `localtime()`, `strftime()`, and `strptime()`.
+
+## `perf_counter()` Function from the Time Module
+
+In Python, the `perf_counter()` function from the `time` module is used to measure the elapsed time with the highest available resolution on the system. It provides a more precise timer compared to the regular `time()` function. Here's an example of how to use `perf_counter()`:
+
+```python
+import time
+
+start_time = time.perf_counter()
+
+# Code to be measured
+for i in range(1000):
+    # Perform some computation
+    result = i ** 2
+
+end_time = time.perf_counter()
+
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time} seconds")
+```
+
+By using `perf_counter()`, you can measure the execution time of a specific block of code with high precision. This function is commonly used for performance profiling and benchmarking purposes.
+
+## `monotonic()` Function of Time Module
+
+In Python, the `monotonic()` function from the `time` module is used to obtain a monotonic clock, which is a clock that continually increases and is unaffected by system time adjustments. It is suitable for measuring intervals and determining the elapsed time between events. Here's an example of how to use `monotonic()`:
+
+```python
+import time
+
+start_time = time.monotonic()
+
+# Code to be measured
+for i in range(1000):
+    # Perform some computation
+    result = i ** 2
+
+end_time = time.monotonic()
+
+elapsed_time = end_time - start_time
+print(f"Elapsed time: {elapsed_time} seconds")
+```
+
+Using `monotonic()` ensures that the elapsed time is calculated based on a monotonic clock, unaffected by system time changes, such as clock adjustments or time zone changes. It provides a reliable measure of elapsed time for performance measurements and benchmarking purposes.
+
+## How to Stop a Program Execution After a Certain Period of Time
+
+If you want to stop the execution of a Python program after a certain amount of time, you can use the `signal` module along with a timer. The `signal` module allows you to handle various signals, including a timer signal, to control the program's behavior. Here's an example that demonstrates how to stop the program after a specified duration:
+
+```python
+import signal
+import time
+
+# Define the handler function for the alarm signal
+def timeout_handler(signum, frame):
+    raise TimeoutError("Program execution timed out")
+
+# Set the duration (in seconds) after which the program should be stopped
+duration = 10
+
+# Register the handler function to be called when the alarm signal is received
+signal.signal(signal.SIGALRM, timeout_handler)
+
+# Set the alarm to trigger after the specified duration
+signal.alarm(duration)
+
+try:
+    # Code to be executed
+    while True:
+        # Perform some computation
+        time.sleep(1)  # Simulate some work
+
+except TimeoutError:
+    print("Program execution stopped after the specified duration")
+```
+
+In this example, the program sets an alarm using `signal.alarm(duration)`, where duration is the desired duration in seconds. When the alarm is triggered after the specified duration, it raises a `TimeoutError` exception, which is caught by the try-except block. In the except block, you can handle the program termination or print a message to indicate that the program was stopped.
+
+> Note: the signal module is not available on all platforms, and its behavior may vary. Additionally, this method may not be suitable for interrupting long-running or computationally intensive tasks. For more complex scenarios, you might need to consider multiprocessing or threading techniques to achieve the desired behavior.
