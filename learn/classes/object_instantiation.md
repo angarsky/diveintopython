@@ -4,7 +4,7 @@ Object instantiation is a fundamental concept in object-oriented programming tha
 
 A class constructor in Python is a special method that is executed when an object of a class is instantiated. It is used to initialize the attributes of the class. The constructor method in Python is called `__init__()` and it is defined within the class.
 
-### How to Instantiate Python Class
+### How to Instantiate a Python Class
 
 To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
