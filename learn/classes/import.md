@@ -2,7 +2,7 @@ Importing classes in Python allows programmers to leverage pre-existing code mod
   
 ## Imports and Attributes  
 
-Python is an object-oriented programming language that provides different types of objects to represent data and perform operations on them. The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
+The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
 
 ### Importing Modules in Python
 
@@ -30,7 +30,9 @@ print(c.radius)  # Output: 2
 print(c.area)  # Output: 12.566370614359172
 ```
 
-Here, we define a class `Circle` that represents a circle with a given `radius`. We use the `math` module to calculate the area of the circle using the formula `pi * radius ** 2`. Note that we assign the value of the area to an attribute `area` of the object. Here, we create an instance `c` of the `Circle` class with `radius` 2. We then access its attributes using the `.` notation. We print the values of the `radius` and `area` attributes, which are `2` and `12.57` (approx.), respectively. 
+Here, we define a class `Circle` that represents a circle with a given `radius`. We use the `math` module to calculate the area of the circle using the formula `pi * radius ** 2`.
+ 
+>Note that we assign the value of the area to an attribute `area` of the object. Here, we create an instance `c` of the `Circle` class with `radius` 2. We then access its attributes using the `.` notation. We print the values of the `radius` and `area` attributes, which are `2` and `12.57` (approx.), respectively. 
 
 ## Importing a Single Class  
 
