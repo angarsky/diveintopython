@@ -22,11 +22,11 @@ child.do_something()
 
 In conclusion, `super()` is a powerful function in Python that provides a clean and concise way to call parent class methods from a child class. It helps to create a clear hierarchy among classes and to maintain clean code.  
   
-## Python 3 Abstract Class  
+## Python Abstract Class  
 
-Abstract class is a class that cannot be instantiated and is meant to be subclassed by other classes. The `super()` function is used to access and call methods from a parent or superclass in Python. Here are two code examples that illustrate the use of `super()` in Python 3 abstract classes:
+Abstract class is a class that cannot be instantiated and is meant to be subclassed by other classes. The `super()` function is used to access and call methods from a parent or superclass in Python. Here are two code examples that illustrate the use of `super()` in Python abstract classes.
 
-### Python 3 Abstract Class. Example 1
+### Define an Abstract Class
 
 ```python
 import abc
@@ -61,7 +61,7 @@ my_obj.my_method()
 
 In this example, we define an abstract class `MyAbstractClass` with an abstract method `my_method()`. The class has an `__init__` method that uses `super()` to call the `__init__` method of the superclass. We then define a subclass `MySubclass` that overrides the `__init__` method and implements the `my_method()` method. When we instantiate an object of `MySubclass`, both `__init__` methods are called in order, and the `my_method()` method of `MySubclass` is called.
 
-### Abstract Class. Example 2
+### Define a Parent Class
 
 ```python
 class MyParentClass:
