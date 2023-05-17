@@ -1,4 +1,4 @@
-**Text Files** are used to store and read data, such as a simple text document or database output. Python offers various ways to work with text files, including reading, writing, and appending to files. Understanding how to handle text files is important for any programmer working in Python, as it can help them to efficiently manage and manipulate data within their program.  
+[Text Files](https://en.wikipedia.org/wiki/Text_file) are used to store and read data, such as a simple text document or database output. Python offers various ways to work with text files, including reading, writing, and appending to files. Understanding how to handle text files is important for any programmer working in Python, as it can help them to efficiently manage and manipulate data within their program.  
   
 ## How to read text file in Python  
 
