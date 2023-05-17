@@ -104,11 +104,11 @@ dt_object = datetime.strptime(input_string, input_format)
 print(dt_object)
 ```
 
-In this example, we use the `datetime.strptime()` method for converting the input string to a datetime object. The `strptime()` method takes two arguments: the input string and the format of the input string. The format string uses various format codes to specify the format of the input string. In this case, the format code `%Y` represents the year, `%m` represents the month, `%d` represents the day, `%H` represents the hour, `%M` represents the minute, and `%S` represents the second.
+In this example, we use the Python's `datetime.strptime()` method for converting the input string to a datetime object. The `strptime()` method takes two arguments: the input string and the format of the input string. The format string uses various format codes to specify the format of the input string. In this case, the format code `%Y` represents the year, `%m` represents the month, `%d` represents the day, `%H` represents the hour, `%M` represents the minute, and `%S` represents the second.
 
 The `dt_object` variable now contains a datetime object that represents the date and time in the input string. You can then perform various operations on the datetime object, such as formatting it in a different way or performing arithmetic operations on it.
 
-## Using `datetime.now()` Method
+## Using `datetime.now()` & `datetime.today()` Methods
 
 In Python, you can use the built-in `datetime` module to work with date and time values. To get the current date and time, you can use the `datetime.now()` method.
 
@@ -191,6 +191,8 @@ dt = datetime.datetime.fromtimestamp(epoch_time)
 
 print(dt)  # Output: 2023-05-14 12:34:56
 ```
+
+If you want to convert a timestamp to a `datetime` object in a specific timezone in Python, you can use libraries like `pytz` or `dateutil` to set the desired timezone.
 
 ## Parsing into a `datetime` Module
 
@@ -315,7 +317,7 @@ else:
 
 ## How to Add Days to a Datetime Object
 
-To add days to a Python `datetime` object, you can use the `timedelta` class from the `datetime` module.
+To add time to a Python `datetime` object, you can use the `timedelta` class from the `datetime` module.
 
 Here's an example code snippet that shows how to add 3 days to the current date:
 
@@ -365,3 +367,30 @@ print(now_utc)
 This will output the current UTC date and time in the format `YYYY-MM-DD HH:MM:SS.mmmmmm`.
 
 It's worth noting that `datetime.utcnow()` returns the current UTC time, which does not take into account any time zone offset. If you want to convert this time to a local time zone, you'll need to use the `datetime.astimezone()` method.
+
+## How to Print Datetime Object in Python
+
+To print a `datetime` object in a specific format in Python, you can use the `strftime()` method from the `datetime` module. This method allows you to format a datetime object into a string representation.
+
+Here's an example of printing a datetime object in a specific format:
+
+```python
+from datetime import datetime
+
+# Create a datetime object
+dt = datetime(2023, 5, 17, 12, 34, 56)
+
+# Format and print the datetime object
+formatted_datetime = dt.strftime("%Y-%m-%d %H:%M:%S")
+print(formatted_datetime)
+```
+
+In this example, we create a `datetime` object `dt` representing a specific date and time. Then, we use the `strftime()` method to format it as a string. The format string `"%Y-%m-%d %H:%M:%S"` specifies the desired format for the datetime string. `%Y` represents the year with four digits, `%m` represents the month with zero-padding, `%d` represents the day with zero-padding, `%H` represents the hour in 24-hour format, `%M` represents the minute, and `%S` represents the second.
+
+The output will be the formatted datetime string:
+
+```python
+2023-05-17 12:34:56
+```
+
+You can customize the format string based on your specific requirements. For more details about the format codes for `strftime()`, you can refer to the Python documentation: [strftime() and strptime() Format Codes](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior).
