@@ -51,6 +51,22 @@ print(current_date)
 
 This code will output the current date in the format YYYY-MM-DD. For example, if you run the code today (May 17, 2023), the output will be 2023-05-17.
 
+## How to Get Current Year from Datetime Object
+
+To extract the year from a datetime object in Python, you can use the year attribute. Here's an example:
+
+```python
+from datetime import datetime
+
+# Create a datetime object
+dt = datetime(2023, 5, 17, 12, 34, 56)
+
+# Extract the year from the datetime object
+year = dt.year
+
+print(year) # Output: 2023
+```
+
 ## AM/PM Datetime Format in Python
 
 In Python's `datetime` module, you can format a datetime object to display the time in AM/PM format using the `%I` and `%p` directives in the strftime method. Here's an example:
