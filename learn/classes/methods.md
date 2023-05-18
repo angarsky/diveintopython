@@ -78,53 +78,6 @@ my_square = Square(5)
 print(my_square.area()) # Output: 25
 ```
   
-## Distinguishing Class Method vs Static Method
-
-Abstract class method is defined as a method that is declared but contains no implementation. It is up to the subclass to provide the implementation. An abstract method is defined using the **@abstractmethod** decorator in Python.
-
-Class methods are used to modify the class or its properties. They are defined using the `@classmethod` decorator and are passed the class as its first argument instead of the instance.
-
-Python static methods are called on the class and do not take any special first argument. They are defined using the `@staticmethod` decorator.
-
-### Key Differences Between Class Method vs Static Method in Python
-
-| Class method  | Static method  |
-|---|---|
-| Decorator: **@classmethod** | Decorator: **@staticmethod** |
-| First argument: **cls** (class itself) | No special first argument |
-| Can modify class state or properties | Cannot modify class state or properties |
-| Useful for class-specific operations | Useful for utility operations unrelated to the class |
-| Can access class-level variables | Cannot access class-level variables |
-
-### Example 1: Class method
-```python
-class Car:
-    wheels = 4
-
-    def __init__(self, make, model):
-        self.make = make
-        self.model = model
-
-    @classmethod
-    def set_wheels(cls, num_wheels):
-        cls.wheels = num_wheels
-
-car1 = Car('Toyota', 'Corolla')
-print(car1.wheels) # Output: 4
-Car.set_wheels(3)
-print(car1.wheels) # Output: 3
-```
-
-### Example 2: Static method
-```python
-class Formatter:
-    @staticmethod
-    def format_string(string):
-        return string.upper()
-
-print(Formatter.format_string('hello')) # Output: 'HELLO'
-```  
-
 ## Method Overloading  
 
 Method overloading is a feature in Python that allows a class to have multiple methods with the same name but with different parameters. This feature helps to provide flexibility and reusability to the code design. It is different from method overriding that allows a subclass to provide its implementation of a method defined in its superclass.
