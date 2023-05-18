@@ -21,27 +21,6 @@ print("Age:", p.age)
 
 In the above example, the `Person` class has a constructor that sets the attributes `name` and `age` for each new object that is instantiated. The `p` object is instantiated with the `name` of ``Jane`` and the `age` of `25`. The `print` statements will output `Name: Jane` and `Age: 25`.
 
-### Constructor Overloading in Python
-
-In Python, we can have multiple constructors for a class, which is also known as constructor overloading. This allows us to create objects of the class with different attribute configurations. Here's an example of how to define multiple constructors in Python.
-
-```python
-class Person:
-    def __init__(self, name=None, age=None):
-        self.name = name
-        self.age = age
-
-    def __init__(self, name, age, gender):
-        self.name = name
-        self.age = age
-        self.gender = gender
-
-p1 = Person("Jane", 25, "female")
-p2 = Person(name="John", gender="male")
-```
-
-In the above example, we have defined two constructors for the `Person` class. The first constructor accepts three arguments, `name`, `age`, and `gender`. The second constructor accepts two arguments, `name` and `gender`, and sets the `age` attribute to `None`, which is the default value. We have also instantiated two objects using the different constructors.  
-  
 ## Delving into Python's Process of Instantiating Objects  
 
 Instantiating an object, in Python, means creating an instance of a class. When you create an instance of a class, you instantiate the object. In Python, the process of instantiating objects involves creating and initializing objects. 
