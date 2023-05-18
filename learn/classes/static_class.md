@@ -243,46 +243,50 @@ In this example, the `PI` variable is a static variable that stores the value of
 
 Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
 
-## Python Class Method vs Static Method
+## Distinguishing Class Method vs Static Method
 
-In Python, class methods and static methods are different types of methods that can be defined within a class. They serve different purposes and have different behaviors when it comes to method invocation and access to class attributes.
+Abstract class method is defined as a method that is declared but contains no implementation. It is up to the subclass to provide the implementation. An abstract method is defined using the **@abstractmethod** decorator in Python.
 
-### Class Methods
+Class methods are used to modify the class or its properties. They are defined using the `@classmethod` decorator and are passed the class as its first argument instead of the instance.
 
-Class methods are methods that are bound to the class itself rather than to instances of the class. They have access to the class and can modify its state and access its attributes. Class methods are defined using the `@classmethod` decorator.
+Python static methods are called on the class and do not take any special first argument. They are defined using the `@staticmethod` decorator.
 
+### Key Differences Between Class Method vs Static Method in Python
+
+| Class method  | Static method  |
+|---|---|
+| Decorator: **@classmethod** | Decorator: **@staticmethod** |
+| First argument: **cls** (class itself) | No special first argument |
+| Can modify class state or properties | Cannot modify class state or properties |
+| Useful for class-specific operations | Useful for utility operations unrelated to the class |
+| Can access class-level variables | Cannot access class-level variables |
+
+### Example 1: Class method
 ```python
-class MathUtils:
-    PI = 3.14159
+class Car:
+    wheels = 4
+
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
 
     @classmethod
-    def circle_area(cls, radius):
-        return cls.PI * radius * radius
+    def set_wheels(cls, num_wheels):
+        cls.wheels = num_wheels
 
-# Calling the class method using the class name
-area = MathUtils.circle_area(5)
-print("Area:", area)  # Output: Area: 78.53975
-
+car1 = Car('Toyota', 'Corolla')
+print(car1.wheels) # Output: 4
+Car.set_wheels(3)
+print(car1.wheels) # Output: 3
 ```
 
-In this example, the `circle_area` method is a class method that calculates the area of a circle. It has access to the `PI` class attribute using the `cls` parameter.
-
-### Static Methods
-
-Static methods, on the other hand, are methods that are bound to the class and do not have access to the class or its instances. They are defined using the `@staticmethod` decorator. Static methods are mainly used to group functions that belong to a class logically.
-
+### Example 2: Static method
 ```python
-class StringUtils:
+class Formatter:
     @staticmethod
-    def is_palindrome(word):
-        return word == word[::-1]
+    def format_string(string):
+        return string.upper()
 
-# Calling the static method using the class name
-result = StringUtils.is_palindrome("radar")
-print("Is Palindrome:", result)  # Output: Is Palindrome: True
+print(Formatter.format_string('hello')) # Output: 'HELLO'
+```  
 
-```
-
-In this example, the `is_palindrome` method is a static method that checks whether a word is a palindrome. It does not have access to any class attributes or instance-specific information.
-
-In summary, class methods are bound to the class and have access to class attributes, while static methods do not have access to the class or its instances. Class methods are typically used for methods that operate on the class or need access to class-specific data, while static methods are used for grouping related functions within a class.
