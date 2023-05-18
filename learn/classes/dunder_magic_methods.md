@@ -20,7 +20,7 @@ class Person:
 
 The `__init__` method is a special method that is called when an instance of the class is created. It initializes the attributes of the object.
 
-### Python `__init__` Method
+### Python `__init__` Magic Method
 
 The `__init__` method is a special magic method that is called when an instance of a class is created. It initializes the attributes of the object. In the example above, the `__init__` method takes two parameters, `name` and `age`, which are used to initialize the `name` and `age` attributes of the object.
 
@@ -152,7 +152,7 @@ In Example 1, we create a `Dog` class and access the `name` attribute using the 
 
 In Example 2, we create a dictionary object `my_cat` and access the `name` attribute dynamically using the `getattr()` function. We store the value of the attribute in `cat_name` and print it out.  
   
-## Representing Objects as Strings  
+## Representing Objects as Strings with Magic Method 
 
 In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
 
@@ -189,7 +189,7 @@ print(c)  ### Output
 
 In this example, we have defined a `Car` class with `make`, `model`, and `year` attributes. We have also defined a `__repr__()` method that returns a string representation of the `Car` object. When we print the `c` object, it calls the `__repr__()` dunder method to get its string representation.  
   
-## Cleaning Up Objects 
+## Cleaning Up Objects with Dunder Method 
 
 In Python, objects are automatically garbage collected when they are no longer needed. However, sometimes it may be necessary to define additional cleanup actions for an object. This can be done using the `__del__` method, which is called when the object is about to be destroyed.
 
@@ -207,7 +207,7 @@ class MyClass:
 
 In this example, the `MyClass` constructor creates a file object and stores it in the `file` instance variable. When the object is destroyed, the `__del__` method is called, which closes the file.
   
-## Performing Comparisons  
+## Performing Comparisons with Dunder Methods  
 
 Python provides multiple ways to compare values, variables, or expressions. Some commonly used operators for performing comparisons include `==`, `!=`, `>`, `<`, `>=`, `<=`, `in`, and `is`.
 
