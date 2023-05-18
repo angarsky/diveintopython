@@ -35,9 +35,9 @@ In conclusion, modules in Python are very beneficial for code reusability, modul
 
 Python modules are pre-written code that can be imported to extend the functionalities of the programming language. Python provides a convenient mechanism for installing modules and it can be done using pip, a package management tool.
 
-### Installing Python Modules Using pip
+### Installing Python Modules Using `pip`
 
-To install a Python module using pip, follow these steps:
+To install a Python module using `pip`, follow these steps:
 
 1. Open the command prompt or terminal
 2. Type `pip install <module_name>` and press enter
@@ -82,6 +82,33 @@ print(square_root)
 ```
 
 In conclusion, the [random](https://docs.python.org/3/library/random.html) and [math](https://docs.python.org/3/library/math.html) modules are just a few examples of the valuable built-in modules that Python offers. These modules can help you to save time and effort when performing common programming tasks.  
+
+## Naming Conventions for Packages and Modules
+
+In Python, [naming conventions for modules](https://peps.python.org/pep-0008/#package-and-module-names) (Python source files) are as follows:
+
+1. Module names should be lowercase.
+Example: `my_module.py`
+
+2. If the module name consists of multiple words, they should be separated by underscores.
+Example: `my_module_utils.py`
+
+3. Module names should be descriptive and convey the purpose or functionality of the module.
+Example: `math_operations.py`
+
+4. Avoid using names that conflict with Python keywords or built-in module names.
+Example: `random.py` (should be avoided as it conflicts with the built-in `random` module)
+
+5. If a module name clashes with a standard library or third-party library name, consider using a different name to avoid confusion.
+Example: `requests.py` (should be avoided if it clashes with the popular `requests` library)
+
+6. Avoid using leading underscores (_) in module names unless it is intended to indicate that the module is intended for internal use or is part of a package's private API.
+Example: `_internal_module.py`
+
+7. Avoid using hyphens (-) or special characters in module names, as they are not valid characters in Python module names.
+Example: `my-module.py` (hyphen is not allowed)
+
+Remember that following consistent naming conventions helps improve code readability and maintainability.
   
 ## How to Import Modules in Python  
 
