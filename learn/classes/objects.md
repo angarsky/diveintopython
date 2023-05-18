@@ -126,7 +126,7 @@ print(obj.add(3))  # Output: 8
 
 ## How to Print all Object Attributes  
 
-To get attributes of an object in Python, you can use the built-in `dir` function. To `print` all the object attributes, you need to iterate over the output of the `dir` function and use the `getattr` function to get the values of the attributes. Here are two code examples:
+To get attributes of an object in Python, you can use the built-in `dir` function. To print object attributes, you need to iterate over the output of the `dir` function and use the `getattr` function to get the values of the attributes. Here are two code examples:
 
 ```python
 class MyClass:
