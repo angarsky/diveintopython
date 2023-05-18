@@ -300,7 +300,7 @@ serialized_object = pickle.dumps(my_object)
 
 In the first example, we create a dictionary object and dump it to a file using `pickle.dump()`. In the second example, we create a `MyClass` instance and serialize it to a byte string using `pickle.dumps()`. 
 
-Using `pickle` for serialization is easy and powerful. However, please note that `pickle` is not secure and should not be used to serialize or deserialize untrusted data.  
+Using `pickle` for Python object serializing is easy and powerful. However, please note that `pickle` is not secure and should not be used to serialize or deserialize untrusted data.  
   
 ## Error: Python Object has no Attribute  
 
