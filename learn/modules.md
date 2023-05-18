@@ -87,7 +87,7 @@ In conclusion, the [random](https://docs.python.org/3/library/random.html) and [
 
 In Python, [naming conventions for modules](https://peps.python.org/pep-0008/#package-and-module-names) (Python source files) are as follows:
 
-1. Module names should be lowercase.
+1. Module names should be **lowercase**.
 Example: `my_module.py`
 
 2. If the module name consists of multiple words, they should be separated by underscores.
@@ -102,10 +102,10 @@ Example: `random.py` (should be avoided as it conflicts with the built-in `rando
 5. If a module name clashes with a standard library or third-party library name, consider using a different name to avoid confusion.
 Example: `requests.py` (should be avoided if it clashes with the popular `requests` library)
 
-6. Avoid using leading underscores (_) in module names unless it is intended to indicate that the module is intended for internal use or is part of a package's private API.
+6. Avoid using leading underscores `_` in module names unless it is intended to indicate that the module is intended for internal use or is part of a package's private API.
 Example: `_internal_module.py`
 
-7. Avoid using hyphens (-) or special characters in module names, as they are not valid characters in Python module names.
+7. Avoid using hyphens `-` or special characters in module names, as they are **not valid characters** in Python module names.
 Example: `my-module.py` (hyphen is not allowed)
 
 Remember that following consistent naming conventions helps improve code readability and maintainability.
