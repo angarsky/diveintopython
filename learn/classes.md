@@ -12,7 +12,7 @@ Object-oriented programming (OOP) is a programming paradigm that uses objects an
 
 4.  **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
   
-## Python Class
+## How to Create a Class in Python
 
 A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
 
@@ -72,7 +72,8 @@ class Manager(Employee):
 
 ## Create Python Object  
 
-An object is an instance of a class that encapsulates data along with methods or functions to operate on that data. Creating an object involves defining a class and then instantiating that class using the class constructor.
+An object is an instance of a class that encapsulates data along with methods or functions to operate on that data. Creating an object involves defining a class and then instantiate class using the class constructor.
+
 ```python
 ### Example 1
 class Car:
@@ -95,7 +96,7 @@ print(new_car.get_model())
 # Camry
 ```
 
-To create a Python object, you define a class and then instantiate it using the class constructor. You can then call methods or access attributes of the object. With these examples, you can get started with creating Python objects in your own projects.  
+To create a Python object, you define a class and then instantiate class using the class constructor. You can then call methods or access attributes of the object. With these examples, you can get started with creating Python objects in your own projects.  
   
 ## How to Get Python Object Attributes  
 
