@@ -235,7 +235,7 @@ In this example, the `accelerate()` method is defined inside the `Car` class and
 
 In summary, functions are standalone blocks of code that take input parameters and return a value, while methods are defined inside classes and are called on instances of that class, with access to the instance attributes and the ability to modify its state.  
   
-## Method Overriding  
+## Override Class Method
 
 Method overriding is a feature in object-oriented programming that allows a subclass to provide a different implementation of a method that is already defined in its superclass. In Python, method overriding is straightforward and is achieved by defining a method in the subclass with the same name as the method in the superclass
 
@@ -253,7 +253,7 @@ obj.my_method() ### prints Child method called
 
 ```
 
-In this example, the `Child` class extends the `Parent` class and overrides the `my_method()` `method`. When we create an object of the `Child` class and call `my_method()`, it will `print` `Child `method` called` instead of `Parent `method` called`.
+In this example, the `Child` class extends the `Parent` class and overrides the `my_method()` method. When we create an object of the `Child` class and call `my_method()`, it will print `Child method called` instead of `Parent method called`.
 
 ```python
 class Animal:
@@ -270,6 +270,6 @@ obj.move() ### prints "Animal is moving" and "Bird is flying
 
 ```
 
-In this example, the `Bird` class extends the `Animal` class and overrides the `move()` method. However, it also calls the superclass's implementation of `move()` first using the `super()` function, and then adds its own implementation of `Bird is flying`. The output will be `Animal is moving` and `Bird is flying`. 
+In this example, the `Bird` class extends the `Animal` class and override class method `move()`. However, it also calls the superclass's implementation of `move()` first using the `super()` function, and then adds its own implementation of `Bird is flying`. The output will be `Animal is moving` and `Bird is flying`. 
 
 Using method overriding in Python allows for more flexibility and customization in the behavior of your classes.  
