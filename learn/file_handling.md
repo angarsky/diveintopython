@@ -86,7 +86,7 @@ Python provides important modules like `os` and `shutil` to perform file operati
 
 ### Deleting Files in Python
 
-You can use the `os.remove()` method to delete a file in Python. The following code snippet shows how to delete the file named `example.txt`.
+You can use the `os.remove()` method to delete a file in Python. The following code snippet shows how remove file named `example.txt`.
 
 ```python
 import os
