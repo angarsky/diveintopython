@@ -29,7 +29,7 @@ with open('example.csv', 'w', newline='') as file:
 
 In this example, we use the `csv.writer()` function to write `data` to a CSV file named `example.csv`. We create a new file with the `w` mode and specify `newline=''` to avoid extra line breaks. We then use the `writerow()` function to write each `row` of `data` to the file.
 
-By using these code examples, you can easily provide csv reading.  
+By using these code examples, you can easily provide **CSV reading**.  
   
 ## How to Save to a CSV File in Python  
 
