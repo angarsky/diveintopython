@@ -155,7 +155,7 @@ file.close()
 
 ### How to Close a File in Python
 
-The close() method is essential for proper file handling. It closes the file and releases any system resources associated with it. It is crucial to close the file after performing operations on it to avoid potential issues.
+The `close()` method is essential for proper file handling. It closes the file and releases any system resources associated with it. It is crucial to close the file after performing operations on it to avoid potential issues.
 
 ```python
 file = open("example.txt", "w")
