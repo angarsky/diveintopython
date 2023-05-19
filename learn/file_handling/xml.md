@@ -124,7 +124,7 @@ print(json_data)
 
 ## How to Convert XML to CSV   
 
-To convert XML to [csv](https://docs.python.org/3/library/csv.html), you can use the `xml.etree.ElementTree` module and the [csv](https://docs.python.org/3/library/csv.html) module. Here are two code examples to help you get started:
+To convert XML to CSV, you can use the `xml.etree.ElementTree` module and the [csv](https://docs.python.org/3/library/csv.html) module. Here are two code examples to help you get started:
 
 ### Example 1: Using ElementTree and CSV modules
 
@@ -189,4 +189,4 @@ for node in root:
 df.to_csv('example.csv', index=False)
 ```
 
-In both of these examples, the `xml.etree.ElementTree` module is used to parse the XML file and extract the data. The [csv](https://docs.python.org/3/library/csv.html) module (in Example 1) or the [pandas](https://pypi.org/project/pandas/) library (in Example 2) is used to write the data to a [csv](https://docs.python.org/3/library/csv.html) file.  
+In both of these examples, the `xml.etree.ElementTree` module is used to parse the XML file and extract the data. The `csv` module (in Example 1) or the [pandas](https://pypi.org/project/pandas/) library (in Example 2) is used to write the data to a CSV file.  
