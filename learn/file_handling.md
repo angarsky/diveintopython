@@ -207,3 +207,18 @@ except FileNotFoundError:
 In this example, we call `os.stat()` to obtain the file attributes, including the size, which is accessed using the `st_size` attribute of the returned named tuple.
 
 By using these approaches, you can easily retrieve the size of a file in Python. Remember to handle exceptions, such as `FileNotFoundError`, to account for cases where the file does not exist.
+
+## Get File Extension
+
+When working with files in Python, you may often need to extract the file extension to determine the type of file you're dealing with. Python provides several ways to obtain the file extension from a file name or path. 
+
+```python
+import os
+
+filename = "example.txt"
+extension = os.path.splitext(filename)[1]
+
+print("File Extension:", extension)
+```
+
+In this example, we use the `os.path` module, specifically the `splitext()` function, to separate the file extension from the given file name. It returns a tuple containing the base name and the extension, and we extract the `extension` using indexing.
