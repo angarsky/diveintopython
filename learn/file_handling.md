@@ -128,7 +128,7 @@ shutil.move("example.txt", "/path/to/new_folder/example.txt")
 
 When working with files in Python, there are several built-in methods that enable you to read, write, and manipulate file contents. These methods provide flexible options for file handling. Here's a guide to some commonly used Python file methods:
 
-### How to Read a File 
+### How to Read a File or File Importing
 
 The `read()` method reads the entire contents of a file and returns them as a string. On the other hand, the `readline()` method reads a single line from the file. It returns the line as a string and moves the file pointer to the next line.
 
