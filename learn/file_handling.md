@@ -39,13 +39,13 @@ except FileNotFoundError:
 
 In Python, there are several modes for file handling including:
 
-- **Read mode (`'r'`)**: This mode is used to read an existing file. 
+- **Read mode ('r')**: This mode is used to read an existing file. 
 
-- **Write mode (`'w'`)**: This mode is used to write to a file. It will create a new file if the file does not exist, and overwrite the file if it does exist.
+- **Write mode ('w')**: This mode is used to write to a file. It will create a new file if the file does not exist, and overwrite the file if it does exist.
 
-- **Append mode (`'a'`)**: This mode is used to add new data to the end of an existing file. If the file does not exist, a new file will be created.
+- **Append mode ('a')**: This mode is used to add new data to the end of an existing file (append to a file). If the file does not exist, a new file will be created.
 
-- **Binary mode (`'b'`)**: This mode is used to read or write binary data, like images or audio files.
+- **Binary mode ('b')**: This mode is used to read or write binary data, like images or audio files.
 
 Here are two examples of how to use the read and write modes in Python:
 
