@@ -8,7 +8,7 @@ To use the OS module, first, we need to `import` it using the `import os` statem
 
 ### Example 1: Create a New Directory
 
-To create a new directory using the OS module, we can use the `os.mkdir()` function. Here's an example:
+To make a directory using the OS module, we can use the `os.mkdir()` function. Here's an example:
 
 ```python
 import os
