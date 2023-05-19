@@ -19,7 +19,7 @@ print(data)
 
 ### Parsing JSON
 
-If you have a JSON string and want to parse it in Python, you can use the `loads()` function from the `json` module. Here's an example:
+If you have a JSON string and want to parse json in Python, you can use the `loads()` function from the `json` module. Here's an example:
 
 ```python
 import json
