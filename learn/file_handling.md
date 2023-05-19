@@ -164,3 +164,46 @@ file.close()
 ```
 
 These are just a few examples of Python file methods that enable you to read, write, and manipulate files. It's important to handle exceptions and close files properly to ensure efficient file management and resource utilization. By utilizing these file methods effectively, you can handle file operations with ease in your Python programs.
+
+### How to Get File Size
+
+To get the size of a file in Python, you can use various methods provided by the Python standard library. Here are two examples that demonstrate how to retrieve the size of a file using different approaches.
+
+### Example 1: Using os.path Module
+
+The `os.path` module provides a convenient method, `getsize()`, to retrieve the size of a file in bytes.
+
+```python
+import os
+
+file_path = "example.txt"
+
+try:
+    file_size = os.path.getsize(file_path)
+    print("File size:", file_size, "bytes")
+except FileNotFoundError:
+    print("File not found.")
+```
+
+In this example, we use the `getsize()` function from the `os.path` module to obtain the size of the file specified by `file_path`. If the file is found, the size is printed in bytes. If the file is not found, a `FileNotFoundError` is raised.
+
+### Example 2: Using os.stat() Function
+
+Another way to retrieve the size of a file is by using the `os.stat()` function, which returns a named tuple containing file attributes, including the file size.
+
+```python
+import os
+
+file_path = "example.txt"
+
+try:
+    file_stats = os.stat(file_path)
+    file_size = file_stats.st_size
+    print("File size:", file_size, "bytes")
+except FileNotFoundError:
+    print("File not found.")
+```
+
+In this example, we call `os.stat()` to obtain the file attributes, including the size, which is accessed using the `st_size` attribute of the returned named tuple.
+
+By using these approaches, you can easily retrieve the size of a file in Python. Remember to handle exceptions, such as `FileNotFoundError`, to account for cases where the file does not exist.
