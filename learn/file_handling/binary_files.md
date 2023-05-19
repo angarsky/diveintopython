@@ -1,4 +1,4 @@
-[Binary files](https://en.wikipedia.org/wiki/Binary_file) are computer files that contain data in a format that can be easily read and manipulated by machines. Binary files are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, how to read and write them, and some common use cases where they are most beneficial.  
+Binary files are computer files that contain data in a format that can be easily read and manipulated by machines. [Binary files](https://en.wikipedia.org/wiki/Binary_file) are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, how to read and write them, and some common use cases where they are most beneficial.  
   
 ## How to Read Binary File  
 
@@ -21,7 +21,7 @@ print(binary_data)
 
 In the code above:
 
-- We open the binary file ``example.bin`` using the `open()` function, with the mode ``rb`` (read binary).
+- We open the binary file `example.bin` using the `open()` function, with the mode `rb` (read binary).
 - We read the contents of the file using the `.read()` method and store it in the variable `binary_data`.
 - We close the file using the `.close()` method.
 - We print the contents of the file using the `print()` function.
@@ -81,12 +81,12 @@ In conclusion, writing binary files is a simple process that involves opening th
 
 When working with binary files, you need to open them in the correct file mode to ensure the file is being read and/or written correctly. There are six file modes for binary files:
 
-1. `rb`: Read mode (binary) - opens the file for reading in binary format.
-2. `rb+`: Read and write mode (binary) - opens the file for reading and writing in binary format.
-3. `wb`: Write mode (binary) - opens the file for writing in binary format. If the file already exists, it will be truncated.
-4. `wb+`: Write and read mode (binary) - opens the file for reading and writing in binary format. If the file already exists, it will be truncated.
-5. `ab`: Append mode (binary) - opens the file for writing in binary format. New data will be written at the end of the file.
-6. `ab+`: Append and read mode (binary) - opens the file for reading and writing in binary format. New data will be written at the end of the file.
+1. **rb**: Read mode (binary) - opens the file for reading in binary format.
+2. **rb+**: Read and write mode (binary) - opens the file for reading and writing in binary format.
+3. **wb**: Write mode (binary) - opens the file for writing in binary format. If the file already exists, it will be truncated.
+4. **wb+**: Write and read mode (binary) - opens the file for reading and writing in binary format. If the file already exists, it will be truncated.
+5. **ab**: Append mode (binary) - opens the file for writing in binary format. New data will be written at the end of the file.
+6. **ab+**: Append and read mode (binary) - opens the file for reading and writing in binary format. New data will be written at the end of the file.
 
 ```python
 with open("file.bin", "rb") as f:
