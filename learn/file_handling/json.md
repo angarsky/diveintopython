@@ -100,7 +100,7 @@ except ValueError as e:
 
 In this example, the `data` variable contains two JSON objects separated by a space. When we try to load this data using `json.loads()`, it raises a `ValueError` with the message `Extra data` because multiple JSON objects are not valid in a single JSON file.
 
-### Example 2: Reading JSON from a File with Extra Data
+### Example 2: Read JSON File with Extra Data
 
 ```python
 import json
