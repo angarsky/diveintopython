@@ -1,4 +1,4 @@
-XML files in Python allow for the manipulation and parsing of XML data . XML ([Extensible Markup Language](https://en.wikipedia.org/wiki/XML)) is a widely used data interchange format. 
+XML files in Python allow for the manipulation and parsing of XML data. XML ([Extensible Markup Language](https://en.wikipedia.org/wiki/XML)) is a widely used data interchange format. 
   
 ## Open XML File and Read Data with Python  
 
