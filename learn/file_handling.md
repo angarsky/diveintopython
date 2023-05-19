@@ -165,7 +165,7 @@ file.close()
 
 These are just a few examples of Python file methods that enable you to read, write, and manipulate files. It's important to handle exceptions and close files properly to ensure efficient file management and resource utilization. By utilizing these file methods effectively, you can handle file operations with ease in your Python programs.
 
-### How to Get File Size
+## How to Get File Size
 
 To get the size of a file in Python, you can use various methods provided by the Python standard library. Here are two examples that demonstrate how to retrieve the size of a file using different approaches.
 
