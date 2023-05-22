@@ -36,7 +36,7 @@ Here is a list of some commonly used date and time formats in Python:
 
 - **%S**: second (zero-padded)
 
-## How to Get Current Date from Datetime Object in Python
+## How to Get Current Date & Time from Datetime Object in Python
 
 To retrieve the current date from a `datetime` object in Python, you can use the `date()` method. Here's an example of how to convert a `datetime` object to a `date` object by accessing the `date()` method of the `datetime` object:
 
@@ -50,6 +50,17 @@ print(current_date)
 ```
 
 This code will output the current date in the format YYYY-MM-DD. For example, if you run the code today (May 17, 2023), the output will be 2023-05-17.
+
+Here's also an example of getting the current date and time:
+
+```python
+from datetime import datetime
+
+# Get the current date and time
+current_datetime = datetime.now()
+
+print(current_datetime)  # Output: Current date and time in the format YYYY-MM-DD
+```
 
 ## How to Get Current Year from Datetime Object
 
