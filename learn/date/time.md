@@ -1,5 +1,39 @@
 The Python time module is a powerful tool for working with time-related operations in Python. It provides functions for measuring time intervals, formatting and parsing time and date strings, and handling time zones. With the time module, you can easily work with time and date values, and perform a wide range of time-related operations in your Python code. Whether you need to measure the execution time of your code or work with date and time values, the time module has got you covered.
 
+## Time Formats in Python
+
+In Python, you can use the `strftime()` method from the `time` module to format time values according to various format codes. Here are some commonly used format codes for time formatting in Python:
+
+- **%H**: 2-digit hour in 24-hour format (00-23)
+- **%I**: 2-digit hour in 12-hour format (01-12)
+- **%M**: 2-digit minute (00-59)
+- **%S**: 2-digit second (00-59)
+- **%p**: AM/PM designation (AM or PM)
+
+You can combine these format codes with other characters to create the desired time format. Here is an example of how to get the formatted time in Python:
+
+```python
+import time
+
+# Get the current time
+current_time = time.localtime()
+
+# Format the time using strftime()
+formatted_time = time.strftime("%H:%M:%S", current_time)
+formatted_time_am_pm = time.strftime("%I:%M:%S %p", current_time)
+
+# Print the formatted time
+print("Formatted Time (24-hour format):", formatted_time)
+print("Formatted Time (12-hour format):", formatted_time_am_pm)
+```
+
+Output:
+
+```python
+Formatted Time (24-hour format): 12:34:56
+Formatted Time (12-hour format): 12:34:56 PM
+```
+
 ## Python `time.sleep()` Function
 
 `time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds, so you can easily set your own waiting time.
@@ -119,6 +153,8 @@ countdown(t)
 
 This code will create a countdown timer for 60 seconds and print the remaining time on the screen every second until the timer is completed. You can adjust the value of t to set the desired length of the timer.
 
+Using this functionality you can create a timer function to measure the elapsed time.
+
 ## Time Finctions in Python
 
 In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
@@ -225,3 +261,38 @@ except TimeoutError:
 In this example, the program sets an alarm using `signal.alarm(duration)`, where duration is the desired duration in seconds. When the alarm is triggered after the specified duration, it raises a `TimeoutError` exception, which is caught by the try-except block. In the except block, you can handle the program termination or print a message to indicate that the program was stopped.
 
 > Note: the signal module is not available on all platforms, and its behavior may vary. Additionally, this method may not be suitable for interrupting long-running or computationally intensive tasks. For more complex scenarios, you might need to consider multiprocessing or threading techniques to achieve the desired behavior.
+
+## How to Time a Function in Python
+
+To time the execution of a specific function in Python, you can use the `time` module and a decorator. Here's an example of how you can time a function using a decorator:
+
+```python
+import time
+
+def timer_decorator(func):
+    def wrapper(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        end_time = time.time()
+        elapsed_time = end_time - start_time
+        print("Elapsed Time: {:.6f} seconds".format(elapsed_time))
+        return result
+    return wrapper
+
+# Example function to be timed
+@timer_decorator
+def my_function():
+    time.sleep(2)  # Simulating some time-consuming operation
+    return "Finished"
+
+# Call the function
+my_function() # Output: Elapsed Time: 2.001987 seconds
+```
+
+In this example, the `timer_decorator` function is a decorator that wraps the target function (`my_function`) with timing functionality. The decorator records the start time before invoking the function and the end time after the function completes. It calculates the elapsed time and prints it.
+
+By applying the `@timer_decorator` decorator to the `my_function`, the function is automatically timed when called.
+
+You can use this decorator on any function you want to time by applying the `@timer_decorator` decorator above the function definition.
+
+> Note: The example uses the `time.sleep(2)` function call to simulate a time-consuming operation. Replace it with the actual code or operation you want to time.
