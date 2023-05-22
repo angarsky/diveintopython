@@ -127,3 +127,35 @@ print(parsed_date)
 You can customize the format code according to the structure of your date string. For example, if your date string is in the format "22/05/2023", you would use the format `%d/%m/%Y` in `strptime()`.
 
 By parsing the date from a string, you can convert it into a `date` object and work with it using the available methods and attributes in Python's `datetime` module.
+
+## Date to String Conversion
+
+To convert a `date` object to a string in Python, you can use the `strftime()` method from the datetime module. The `strftime()` method allows you to format a `date` object into a string representation according to a specified format.
+
+Here's an example of converting a `date` object to a string:
+
+```python
+from datetime import date
+
+my_date = date(2023, 5, 22)
+
+# Convert date to string
+date_string = my_date.strftime("%Y-%m-%d")
+
+print(date_string)
+```
+
+## How to Get Today's Date from Datetime Module in Python
+
+To get today's date in Python, you can use the `date` class from the `datetime` module along with the `today()` method.
+
+Here's an example of getting today's date:
+
+```python
+from datetime import date
+
+# Get today's date
+today = date.today()
+
+print(today)  # Output: 2023-05-22
+```
