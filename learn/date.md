@@ -12,6 +12,26 @@ Python has several built-in modules for working with dates and times. Here are s
 
 4. **`dateutil`** module: This module provides additional functionality for working with dates and times, including parsing dates and times from strings, handling time zones, and performing arithmetic with dates and times.
 
+## Date in Python
+
+In Python, the `date` module is not a standalone module. However, the `datetime` module provides a date class that allows you to work specifically with dates (without considering time).
+
+Here's an example of using the `date` class to work with dates in Python:
+
+```python
+from datetime import date
+
+# Create a date object for May 22, 2023
+my_date = date(2023, 5, 22)
+
+# Access individual components of the date
+year = my_date.year
+month = my_date.month
+day = my_date.day
+
+print(year, month, day)
+```
+
 ## The `calendar` Module
 
 The `calendar` module in Python provides functions to work with calendars. It allows you to generate calendars for a specific month or year and provides methods to manipulate those calendars.
