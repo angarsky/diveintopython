@@ -106,3 +106,24 @@ my_datetime = datetime.combine(my_date, my_time)
 
 print(my_datetime)  # Output: 2023-05-22 14:30:00
 ```
+
+## Date Parsing in Python
+
+To parse a date from a string in Python, you can use the `datetime.strptime()` function from the `datetime` module. The `strptime()` function allows you to parse a string representing a date and time according to a specified format.
+
+Here's an example of parsing a date from a string:
+
+```python
+from datetime import datetime
+
+date_string = "2023-05-22"
+
+# Parse the date string
+parsed_date = datetime.strptime(date_string, "%Y-%m-%d").date()
+
+print(parsed_date)
+```
+
+You can customize the format code according to the structure of your date string. For example, if your date string is in the format "22/05/2023", you would use the format `%d/%m/%Y` in `strptime()`.
+
+By parsing the date from a string, you can convert it into a `date` object and work with it using the available methods and attributes in Python's `datetime` module.
