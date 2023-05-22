@@ -18,7 +18,7 @@ Python's built-in `datetime` module serves for working with dates and times. Her
 
 7. **YYYY-MM-DD HH:MM:SS.mmmmmm** : Year, month, and day separated by hyphens, followed by hours, minutes, and seconds separated by colons, and microseconds separated by a dot.
 
-## Datetime Formatting in Python
+## Date & Time Formatting in Python
 
 In Python, you can format dates and times as a string using the `strftime()` method of a `datetime` object. This method allows you to specify a format string that defines how the date or time should be formatted.
 
