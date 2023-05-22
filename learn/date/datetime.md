@@ -144,6 +144,21 @@ In this example, we use the Python's `datetime.strptime()` method for converting
 
 The `dt_object` variable now contains a datetime object that represents the date and time in the input string. You can then perform various operations on the datetime object, such as formatting it in a different way or performing arithmetic operations on it.
 
+The same algorithm can be used to convert a string to a `date` object.
+
+Let's look at the examle of string to `date` object converting in Python:
+
+```python
+from datetime import datetime
+
+date_string = "2023-05-22"
+
+# Convert string to date object
+my_date = datetime.strptime(date_string, "%Y-%m-%d").date()
+
+print(my_date)  # Output: 2023-05-22
+```
+
 ## Using `datetime.now()` & `datetime.today()` Methods
 
 In Python, you can use the built-in `datetime` module to work with date and time values. To get the current date and time, you can use the `datetime.now()` method.
