@@ -293,6 +293,8 @@ print(delta)  # prints: 4:15:00
 
 This way you can measure execution time of any code snippet.
 
+To calculate time difference in seconds, you can use the `total_seconds()` method.
+
 The `timedelta` class provides several other arguments that can be used to specify different units of time, including `weeks`, `hours`, `minutes`, `seconds`, `microseconds`, and `milliseconds`.
 
 ## Datetime Objects Comparing
