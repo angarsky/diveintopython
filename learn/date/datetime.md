@@ -336,7 +336,7 @@ The `timedelta` class provides several other arguments that can be used to speci
 
 In Python, you can compare `datetime` objects using the comparison operators (`<`, `>`, `<=`, `>=`, `==`, `!=`).
 
-Here's an example:
+Let's look at the example of how to compare dates in Python:
 
 ```python
 from datetime import datetime
@@ -351,6 +351,8 @@ if date1 < date2:
 else:
     print("date1 is after date2")
 ```
+
+As a result of comparing dates we get "date1 is before date2".
 
 You can also compare `datetime` objects with `date` objects. In that case, the `date` object is treated as if it has a time of midnight. For example:
 
