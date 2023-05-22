@@ -107,7 +107,7 @@ my_datetime = datetime.combine(my_date, my_time)
 print(my_datetime)  # Output: 2023-05-22 14:30:00
 ```
 
-## Date Parsing in Python
+## String to Date Conversion in Python
 
 To parse a date from a string in Python, you can use the `datetime.strptime()` function from the `datetime` module. The `strptime()` function allows you to parse a string representing a date and time according to a specified format.
 
