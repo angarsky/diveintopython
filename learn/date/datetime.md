@@ -102,7 +102,7 @@ print(formatted_date)  # Print the formatted datetime string
 
 ## Python String to Datetime Conversion
 
-You can use the `datetime` module in Python to convert a string to a datetime object in Python. Here's an example:
+You can use the `datetime` module in Python to convert a string to a datetime object in Python. Here's an example of string to time conversion:
 
 ```python
 from datetime import datetime
