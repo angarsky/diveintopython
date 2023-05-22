@@ -275,7 +275,7 @@ tomorrow = now + one_day
 print(tomorrow)
 ```
 
-Here's also an example of how to find time delta in Python:
+Here's also an example of how to find time delta or time difference in Python:
 
 ```python
 import datetime
