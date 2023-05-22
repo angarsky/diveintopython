@@ -311,7 +311,7 @@ Python is an object-oriented language, which means that classes play a central r
 
 In Python, inheritance allows a class to inherit properties and methods of another class. This helps in code reusability, making it easy to create new classes without having to rewrite the code from scratch.
 
-### How to Inherits from Two Classes
+### How to Inherit from Two Classes
 
 Python also allows a class to inherit from two classes and calls it a two-level inheritance. In this case, the new class inherits from a class that has already inherited from another class.
 
