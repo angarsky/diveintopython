@@ -243,7 +243,7 @@ In this example, the `PI` variable is a static variable that stores the value of
 
 Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
 
-## Distinguishing Class Method vs Static Method
+## The Difference between a Class Method and a Static Method
 
 Abstract class method is defined as a method that is declared but contains no implementation. It is up to the subclass to provide the implementation. An abstract method is defined using the **@abstractmethod** decorator in Python.
 
