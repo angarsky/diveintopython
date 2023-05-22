@@ -48,6 +48,8 @@ time.sleep(seconds)
 
 Where `seconds` is the number of seconds for which the thread should be suspended.
 
+`sleep()` function accepts the sleep duration in seconds, not milliseconds. However, you can achieve a similar effect by dividing the desired time sleep duration in milliseconds by 1000 to convert it to seconds.
+
 Using `time.sleep()` function will help you to pause execution of the programm for the defined period of time. 
 
 ## `time.time()` Function in Python
@@ -70,7 +72,7 @@ elapsed_time = end_time - start_time
 print(f"The task took {elapsed_time:.2f} seconds to complete.")
 ```
 
-In this example, `start_time` and `end_time` are obtained by calling `time.time()` at the beginning and end of the time-consuming task, respectively. The difference between the two times gives the elapsed time, which is then printed out. The elapsed time is formatted as a string with two decimal places using f-strings.
+In this example, `start_time` and `end_time` are obtained by calling `time.time()` at the beginning and end of the time-consuming task, respectively. The difference between the two times gives the elapsed time, which is then printed out. The calculated running time is formatted as a string with two decimal places using f-strings.
 
 Here's also example of time computation for graph creation in Python using the `networkx` library:
 
@@ -93,9 +95,41 @@ print(f"Time taken to create the graph: {time_taken:.4f} seconds")
 
 So `time.time()` function can be used for counting time in Python.
 
+## Time in Ms Measuring
+
+If you want to measure time in milliseconds in Python, you can use the `time` module's `time()` function along with the `perf_counter()` function. Here's an example:
+
+```python
+import time
+
+# Get the current time in milliseconds
+current_time_ms = int(time.time() * 1000)
+print("Current Time in Milliseconds:", current_time_ms)
+
+# Measure the execution time of a code block in milliseconds
+start_time = time.perf_counter()
+
+# Code or operation to measure
+
+end_time = time.perf_counter()
+execution_time_ms = int((end_time - start_time) * 1000)
+print("Execution Time in Milliseconds:", execution_time_ms)
+```
+
+Output:
+
+```python
+Current Time in Milliseconds: 1621842353154
+Execution Time in Milliseconds: 42
+```
+
+In this example, `time.time()` is used to retrieve the current time as a floating-point number representing the number of seconds since the epoch. By multiplying it with 1000, we obtain the current time in milliseconds.
+
+For measuring the execution time of a code block, we use `time.perf_counter()` to get the current high-resolution time in seconds. We capture the start time before the code block and the end time after the code block. By subtracting the start time from the end time, we obtain the elapsed time in seconds. Multiplying it by 1000 gives us the execution time in milliseconds.
+
 ## `timeit.timeit` Function
 
-If you want to measure the execution time of a specific block of code in Python, you can use the `timeit` module. The `timeit` module provides a simple way to time small bits of Python code. Here's an example:
+If you want to measure the execution time of a specific block of code in Python, you can use the `timeit` module. The `timeit` module provides a simple way to time small bits of Python code. Here's an example of execution time measuring:
 
 ```python
 import timeit
@@ -155,7 +189,7 @@ This code will create a countdown timer for 60 seconds and print the remaining t
 
 Using this functionality you can create a timer function to measure the elapsed time.
 
-## Time Finctions in Python
+## Time Functions in Python
 
 In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
 
@@ -296,3 +330,77 @@ By applying the `@timer_decorator` decorator to the `my_function`, the function 
 You can use this decorator on any function you want to time by applying the `@timer_decorator` decorator above the function definition.
 
 > Note: The example uses the `time.sleep(2)` function call to simulate a time-consuming operation. Replace it with the actual code or operation you want to time.
+
+## How to Get Current Time
+
+If you want to know what time it is now, you can use the `time` module's `time()` function. Here is an example of getting current time in Python:
+
+```python
+import time
+
+current_time = time.time()
+print("Current Time (in seconds since the epoch):", current_time)
+```
+
+In this example, time.time() returns the current time as a floating-point number representing the number of seconds since the epoch. So this way we can get current Unix time in Python.
+
+## `time.strftime()` Function
+
+The `strftime()` function in Python's `time` module is used to format a `time.struct_time` object or a time tuple into a string representation based on the specified format codes. Here's an example:
+
+```python
+import time
+
+# Get the current time as a time tuple
+current_time = time.localtime()
+
+# Format the time using strftime()
+formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", current_time)
+
+# Print the formatted time
+print("Formatted Time:", formatted_time) # Output: Formatted Time: 2023-05-22 12:34:56
+```
+
+## Printing Time in Python
+
+To print the current time in Python, you can use the `time` module or the `datetime` module. Here is an example of using `time` module:
+
+```python
+import time
+
+current_time = time.localtime()
+formatted_time = time.strftime("%H:%M:%S", current_time)
+
+print("Current Time (using time module):", formatted_time)
+```
+
+## How to Get Current Time
+
+To retrieve the current time in Python, you can use either the `time` module or the `datetime` module. Here's how you can get the current time using `time` module:
+
+```python
+import time
+
+current_time = time.localtime()
+print("Current Time (using time module):", time.strftime("%H:%M:%S", current_time))
+```
+
+Here is also an example of how to get current time in milliseconds:
+
+```python
+import time
+
+current_time_ms = int(time.time() * 1000)
+print("Current Time (in milliseconds using time module):", current_time_ms)
+```
+
+## Generating a Timestamp in Python
+
+You can use the `time` module to generate a timestamp. Here is an example:
+
+```python
+import time
+
+timestamp = int(time.time())
+print("Timestamp (using time module):", timestamp)
+```
