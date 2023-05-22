@@ -432,3 +432,21 @@ The output will be the formatted datetime string:
 ```
 
 You can customize the format string based on your specific requirements. For more details about the format codes for `strftime()`, you can refer to the Python documentation: [strftime() and strptime() Format Codes](https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior).
+
+## Date Class of Datetime Module
+
+The `datetime` module provides the `date` class, which allows you to work specifically with dates (without considering time). Here's an example of how to use the `date` class:
+
+```python
+from datetime import date
+
+# Create a date object for May 22, 2023
+my_date = date(2023, 5, 22)
+
+# Get individual components of the date
+year = my_date.year
+month = my_date.month
+day = my_date.day
+
+print(year, month, day)  # Output: 2023 5 22
+```
