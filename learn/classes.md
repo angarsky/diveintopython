@@ -104,8 +104,9 @@ Creating a class in Python is done using the keyword `class`. Classes in Python 
 
 The following code defines a simple class called `Car` and creates an instance of that class called `my_car`:
 
-```python
 ### Example 1
+
+```python
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -119,8 +120,9 @@ In this example, the `__init__` method is defined, which initializes the object 
 
 The following example defines a more complex class called `BankAccount`:
 
-```python
 ### Example 2
+
+```python
 class BankAccount:
     def __init__(self, account_number, balance):
         self.account_number = account_number
@@ -332,7 +334,7 @@ obj.hello() # Output: Hello from A
 
 In the code above, the class `C` inherits from class `B`, which already inherits from class `A`, and thus can access methods from both classes.
 
-### How to Inherits From Multiple Classes in Python
+### How to Inherit From Multiple Classes in Python
 
 Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
 
