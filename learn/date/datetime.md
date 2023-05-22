@@ -86,6 +86,26 @@ print(formatted_time)
 
 This code will output the current time in the format "hh:mm AM/PM". For example, if the current time is 2:30 PM, the output will be "02:30 PM".
 
+## Clock Time Format
+
+In Python, you can retrieve the current time in a "clock time" format using the `datetime` module. Here's an example:
+
+```python
+from datetime import datetime
+
+# Get the current time
+current_time = datetime.now().time()
+
+# Format the time as a clock time
+clock_time = current_time.strftime("%H:%M:%S")
+
+print("Current Clock Time:", clock_time) # Output: Current Clock Time: 12:34:56
+```
+
+The `strftime()` method is used to format the time as a clock time string. The format code `%H` represents the hour (24-hour clock), `%M` represents the minute, and `%S` represents the second.
+
+By applying the `strftime()` method with the appropriate format code, you can obtain the current time in a clock time format.
+
 ## Datetime to String Conversion in Python
 
 To convert a Python `datetime` object to a string, you can use the `strftime()` method. The `strftime()` method takes a format string as an argument and returns a string representation of the datetime object according to the specified format.
