@@ -136,11 +136,11 @@ s.move()
 
 In the above example, Animal is an abstract base class with an abstract method called move(). Dog and Snake are two subclasses of the Animal class, and they provide their specific implementations of the move() method.
 
-### Interface in Python
+### Interfaces in Python
 
 An interface is a collection of abstract methods that defines the behavior of a class. In Python, there is no strict definition of an interface like in other programming languages like Java. Instead, we use abstract classes to define interfaces. An interface can be considered as a contract between the class and the outside world. A class that implements an interface must provide an implementation for all the methods defined in the interface.
 
-### Example of a Python Interface
+#### Example of a Python Interface
 
 ```python
 from abc import ABC, abstractmethod
@@ -174,7 +174,7 @@ print("Perimeter of Rectangle:", r.perimeter()) # Perimeter of Rectangle: 30
 
 In the above example, Shape is an interface with two abstract methods called area() and perimeter(). Rectangle is a class that implements the Shape interface and provides its implementation for the area() and perimeter() methods.  
   
-## Implementing Polymorphism in Python Abstract Classes  
+## Polymorphism in Python Abstract Classes  
 
 An abstract class is a class that cannot be instantiated, but it can be used as a base for other classes. It is a way to define a common interface for a group of related classes. Polymorphism is the ability of an object to take on many forms. In Python, abstract classes can be used to implement polymorphism.
 
