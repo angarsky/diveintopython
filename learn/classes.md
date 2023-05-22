@@ -1,16 +1,16 @@
 Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we'll explore the basics of classes in Python and how to use them effectively in your projects.  
 
-## Overview of Object-Oriented Programming  
+## Basic Principles of Object-Oriented Programming  
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects and their interactions to design applications. Python is an object-oriented programming language that supports next OOP concepts: 
 
 1.  **Encapsulation**: Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It hides the internal details of an object and provides public interfaces to interact with it. Encapsulation helps in achieving data abstraction and code modularity.
 
- 2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
+2. **Inheritance**: Inheritance allows a class (subclass) to inherit properties and methods from another class (superclass). The subclass can extend or modify the inherited behavior while inheriting the common characteristics of the superclass. Inheritance promotes code reusability and supports the "is-a" relationship.
 
-3.  **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
+3. **Polymorphism**: Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables the use of a single interface to represent different types of objects. Polymorphism is achieved through method overriding and method overloading.
 
-4.  **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
+4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
   
 ## How to Create a Class in Python
 
@@ -70,7 +70,7 @@ class Manager(Employee):
         return self.salary + self.bonus
 ```
 
-## Create Python Object  
+## How to Create a Python Object  
 
 An object is an instance of a class that encapsulates data along with methods or functions to operate on that data. Creating an object involves defining a class and then instantiate class using the class constructor.
 
@@ -104,7 +104,7 @@ Creating a class in Python is done using the keyword `class`. Classes in Python 
 
 The following code defines a simple class called `Car` and creates an instance of that class called `my_car`:
 
-### Example 1
+### Example of a Class Definition \#1
 
 ```python
 class Car:
@@ -120,7 +120,7 @@ In this example, the `__init__` method is defined, which initializes the object 
 
 The following example defines a more complex class called `BankAccount`:
 
-### Example 2
+### Example of a Class \#2
 
 ```python
 class BankAccount:
@@ -148,7 +148,7 @@ In this example, the `BankAccount` class is defined with an `__init__` that sets
 
 These examples illustrate the basics of defining classes in Python, including the use of the `class` keyword, the `__init__` method for initializing objects, and the creation of instance methods to modify object attributes.  
    
-## Understanding Classes and Instances  
+## The Difference between Classes and Instances  
 
 Classes in Python are the blueprint for creating objects. An object is an instance of a class, and it can have attributes (variables) and methods (functions). 
 
@@ -182,7 +182,7 @@ We can then access the attributes and methods of the object using dot notation.
 
 In summary, classes in Python allow us to create objects with attributes and methods, and instances of a class are created by calling the class like a function.
 
-## Python Methods vs Functions  
+## Methods vs Functions in Python
 
 Python methods and functions are two crucial programming concepts in Python. A method is a function that is associated with an object, while a function is not associated with any object. In other words, a method is a function that belongs to a class, while a function is not linked to any class. 
 
@@ -190,7 +190,7 @@ In Python, a method is typically called in the form `object.method()`, while a f
 
 Here are two examples to differentiate between methods and functions in Python:
 
-### Method Example
+### A Method Example
 
 ```python
 # Define a list
@@ -205,7 +205,7 @@ print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
 
 In the example above, the `append()` method is associated with the `my_list` object. It adds the value `6` to the list. 
 
-### Function Example
+### A Function Example
 
 ```python
 # Define a function to calculate the area of a rectangle
@@ -224,7 +224,7 @@ In the example above, the `calculate_area()` function is not associated with any
 
 In conclusion, while methods and functions may have some similarities, the main difference between them is that methods are associated with objects, while functions are not. Knowing when to use methods and functions is an important aspect of programming in Python. 
   
-## Invoking Class Methods  
+## Invoking of Class Methods  
 
 In Python, class methods are defined using the `@classmethod` decorator. Class methods can be called by the class or an instance of the class.
 
@@ -258,12 +258,13 @@ The `say_hello()` method is an instance method. It takes the `self` parameter, w
 
 To invoke a class method, you can directly call it on the class itself, without creating an instance.
 
-## Implementing Class Trees in Coding  
+## Implemenation of Class Trees in Python  
 
 In Python programming, a class is a blueprint for creating objects with common attributes and methods. A class tree represents a hierarchy of classes, where each class inherits attributes and methods from its parent class or superclass.
 
+### Class Tree Example \#1
+
 ```python
-### Example 1
 class Animal:
     def __init__(self, name, sound):
         self.name = name
@@ -282,8 +283,9 @@ print(dog.make_sound())   # Output: Woof
 
 In this example, we define two classes, `Animal` and `Dog`. The `Dog` class inherits from the `Animal` class using the syntax `class Dog(Animal):`. The `Dog` class has its own constructor (`__init__`) but also calls the constructor of its parent class (`Animal.__init__(self, name, sound)`).
 
+### Class Tree Example \#2
+
 ```python
-### Example 2
 class A:
     def method(self):
         print("Method of class A")
@@ -305,7 +307,7 @@ In this example, we define three classes `A`, `B`, and `C`. The `C` class inheri
 
 Object-oriented programming (OOP) is a popular software programming paradigm that emphasizes the creation of reusable code components. OOP programming is powerful in Python because of its ability to implement such reusable code in the form of classes and modules.
 
-### Python Class Import
+### A Class Import in Python
 
 Python is an object-oriented language, which means that classes play a central role in its design. To access class methods and attributes from another module, the class must be imported using the `import` statement: `from module_name import Class_Name`.
 
