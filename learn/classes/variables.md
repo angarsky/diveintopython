@@ -217,7 +217,6 @@ Variables in classes are attributes or properties that hold data and values. In 
 
 One important concept to note is the role of private variables in classes. Private variables are variables that are meant to be used only within the class and should not be accessed or modified from outside the class. Private variables are denoted by adding two underscores `__` before the variable name.
 
-For example:
 
 ```python
 class Car:
