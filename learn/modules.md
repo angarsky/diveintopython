@@ -1,8 +1,36 @@
 Python offers a wide range of modules to simplify complex tasks. Among these useful modules is the headline module, which allows developers to extract news headlines and articles from various news sources on the internet. This module can be extremely helpful for creating news monitoring tools, analyzing trends, and staying up-to-date with the latest news developments. In this article, we'll explore the headline module in Python and how it can be utilized to retrieve news headlines from different sources.  
   
+## What is a Module  
+
+A module in Python is a file containing Python statements and definitions. It can define functions, classes, and variables, and can also include runnable code. Modules are used to organize code into logical units, to reduce complexity and increase reusability.
+
+In Python, you can import modules into your program using the `import` statement.
+
+```python
+import math
+
+x = math.sqrt(16)
+print(x) 
+
+### my_module.py
+
+def greet(name):
+    print("Hello, " + name + "!")
+
+### main.py
+
+import my_module
+
+my_module.greet("John") ### Output
+
+```
+
+Using modules in Python can make your code more organized, modular, and reusable. By importing existing modules or creating your own, you can simplify your code and make it more readable.  
+  
+
 ## The Benefits of Utilizing Modules  
 
-Python modules are files containing Python code that can be reused in any program. Here are some benefits of utilizing modules in Python:
+Here are some benefits of utilizing modules in Python:
 
 - **Code Reusability:** Modules in Python promote code reusability, making it easier to write and maintain code. You can `import` a module in multiple programs, reducing the need to write the same code again.
 
@@ -154,3 +182,134 @@ sys.path.append('/path/to/directory/containing/module')
 Alternatively, you can also `import` a module from a different directory using a relative `import`. Here's an example: `from .. import your_module`  (go up one directory level and import the module).
 
 By properly setting the search path, you can easily resolve the module not found errors and `import` modules from any directory in Python.  
+
+## How to Print List of Python Modules  
+
+To `print` a list of installed Python modules, you can use the [pkgutil](https://docs.python.org/3/library/pkgutil.html) `module` in Python. The `walk_packages()` method in `pkgutil` will generate a list of all the modules available in the Python environment.
+
+```python
+import pkgutil
+
+### list all the available modules
+
+for module in pkgutil.walk_packages():
+    print(module.name)
+```
+
+Alternatively, you can use the [pip](https://pypi.org/project/pip/) `module` to get a list of all the installed Python packages and their versions.
+
+```python
+import pip
+
+### list all the installed packages with their versions
+
+for package in pip.get_installed_distributions():
+    print(package.key, package.version)
+```
+
+Make sure to have installed `pip` module in your environment like this: `python -m ensurepip --upgrade`
+
+By using [pkgutil](https://docs.python.org/3/library/pkgutil.html) or  `pip` module in Python, you can easily generate a list of modules available or installed in the Python environment. This can be helpful while building and testing the applications.  
+  
+## Error: no Module Named  
+
+The `No Module Named` error occurs when Python cannot find the module you are trying to `import`. This can happen when the module is not installed or is not in the same directory as your Python script.
+
+### Module not installed
+
+If you are trying to `import` a module that is not installed, you will get the `No Module Named` error. To fix this, you need to install the module using `pip`. Here's an example:
+
+```python
+import pandas
+
+### This will generate a "No Module Named" error
+
+import foo
+
+### Install foo module using pip
+
+# pip install foo
+
+##### Now import the module
+
+import foo
+```
+
+### Module in different directory
+
+If the module is in a different directory, you need to add that directory to the Python path. Here's an example:
+
+```python
+import sys
+
+### Add the directory containing the module to the Python path
+
+sys.path.append('/path/to/module')
+
+### Now import the module
+
+import foo
+```
+
+By following these steps, you can easily fix the `No Module Named` error in Python.  
+  
+## Python Create Module  
+
+Python modules are code blocks that can be easily imported and used in other Python programs. They can save you time by avoiding repetitive coding. There are a couple of ways to create modules in Python:
+
+1. **Create a separate .py file:** You can create a separate .py file that contains the code you want to use as a module. Here's an example:
+
+```python
+### my_module.py
+
+def greet(name):
+    print(f"Hello, {name}!")
+```
+
+To use this module, simply `import` it in your Python script:
+
+```python
+import my_module
+
+my_module.greet("John")
+```
+
+This will output: `Hello, John!`.
+
+2. **Create a folder with an `__init__.py` file:** You can create a folder with an `__init__.py` file that defines the functions and classes you want to use as a module. Here's an example:
+
+```
+my_module/
+    __init__.py
+    greet.py
+```
+
+In the `__init__.py` file, you can define the functions and classes you want to use:
+
+```python
+### my_module/__init__.py
+
+from .greet import greet
+```
+
+In the `greet.py` file, you define the actual function:
+
+```python
+### my_module/greet.py
+
+def greet(name):
+    print(f"Hello, {name}!")
+```
+
+To use this module, you can `import` it in the same way as before:
+
+```python
+import my_module
+
+my_module.greet("John")
+```
+
+This will also output: `Hello, John!`.
+
+Creating Python modules can help you organize your code and make it more reusable.
+
