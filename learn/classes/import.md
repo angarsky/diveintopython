@@ -81,7 +81,6 @@ If you only need to use one class from a module, it is generally better to be mo
 Assuming we have a module named `my_module.py` containing the classes `Class1` and `Class2`.
 
 ```python
-### Example 2
 # my_module.py
 
 class Class1:
@@ -103,7 +102,7 @@ This will only import `Class1` into `script.py`.
   
 ## Importing Classes with Aliases  
 
-In Python, we can import classes with aliases to make our code more readable and concise. Aliases allow us to use a shorter, more convenient name for a class, without having to type out its full name every time we use it. Here are two examples:
+In Python, we can import classes with aliases to make our code more readable and concise. Aliases allow us to use a shorter, more convenient name for a class, without having to type out its full name every time we use it. 
 
 ```python
 # Importing the math module and aliasing it as m
@@ -139,7 +138,6 @@ Suppose we have a module `my_module.py` with a class `MyClass` defined inside it
 Suppose we have a package called `example` that contains a submodule `utils` with a class `MyUtils` defined inside it. To import that class into another file, we can do:
 
 ```python
-### Example 2
 # we are importing the class MyUtils from the utils submodule inside the example package
 # from example.utils import MyUtils
 
@@ -147,4 +145,4 @@ Suppose we have a package called `example` that contains a submodule `utils` wit
 # obj = MyUtils()
 ```
 
-Note that in both examples, after importing the class, we can create an instance of it by calling the constructor with parentheses.  
+After importing the class, we can create an instance of it by calling the constructor with parentheses.  
