@@ -29,7 +29,6 @@ The `__init__` method is a special magic method that is called when an instance 
 To create an instance of a class, you call the class as if it were a function, passing any arguments that the `__init__` dunder method requires. For example, the following code creates two instances of the `Person` class:
 
 ```python
-### Example 1
 # Defining a car class
 class Car:
     def __init__(self, make, model, year):
@@ -51,7 +50,6 @@ car1.describe_car()
 ``` 
 
 ```python
-### Example 2
 # Defining a book class
 class Book:
     def __init__(self, title, author, pages):
@@ -128,10 +126,7 @@ Attribute references are used to access attributes of an object in Python. They 
 
 The `getattr()` function takes two arguments - the object whose attribute needs to be accessed and the name of the attribute as a string. If the attribute is not found, an `AttributeError` is raised.
 
-Here are two examples:
-
 ```python
-### Example 1
 
 class Dog:
     def __init__(self, name, breed):
@@ -141,23 +136,20 @@ class Dog:
 my_dog = Dog("Max", "German Shepherd")
 print(my_dog.name) ### Output
 
-### Example 2
-
 my_cat = {"name": "Fluffy", "breed": "Persian"}
 cat_name = getattr(my_cat, "name")
 print(cat_name) ### Output
 ```
 
-In Example 1, we create a `Dog` class and access the `name` attribute using the dot notation syntax.
+In first case, we create a `Dog` class and access the `name` attribute using the dot notation syntax.
 
-In Example 2, we create a dictionary object `my_cat` and access the `name` attribute dynamically using the `getattr()` function. We store the value of the attribute in `cat_name` and print it out.  
+In second case, we create a dictionary object `my_cat` and access the `name` attribute dynamically using the `getattr()` function. We store the value of the attribute in `cat_name` and print it out.  
   
 ## Representing Objects as Strings with Magic Method 
 
 In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
 
 ```python
-### Code Example 1
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -173,7 +165,6 @@ print(p)  ### Output
 In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` dunder method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` magic method to get its string representation.
 
 ```python
-### Code Example 2
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -196,7 +187,6 @@ In Python, objects are automatically garbage collected when they are no longer n
 This dunder method is useful for releasing resources such as files, network connections, or other system-level objects that are not automatically managed by Python.
 
 ```python
-### Example 1
 class MyClass:
     def __init__(self):
         self.file = open('example.txt', 'r')
@@ -216,7 +206,6 @@ Python provides multiple ways to compare values, variables, or expressions. Some
 The `__lt__()` method is used to implement the less than comparison operator in Python. It returns `True` if the first string is less than the second string and `False` otherwise. 
 
 ```python
-### Example 1
 string1 = "apple"
 string2 = "banana"
 if string1.__lt__(string2):
@@ -229,7 +218,6 @@ else:
 ```
 
 ```python
-### Example 2
 fruits = ["apple", "banana", "orange", "kiwi"]
 sorted_fruits = sorted(fruits, key=lambda x: x.__lt__("c"))
 print(sorted_fruits)
