@@ -45,7 +45,6 @@ By using the [os](https://docs.python.org/3/library/os.html) module, we can perf
 To get a list of files in a directory, you can use the `os.listdir()` function. This function returns a list of all the files and directories in the specified directory. 
 
 ```python
-### Example 1
 import os
 
 # get list of files in the current directory
@@ -59,7 +58,6 @@ print(files)
 ```
 
 ```python
-### Example 2
 import os
 
 # get list of files in a directory
