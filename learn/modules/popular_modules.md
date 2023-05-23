@@ -170,7 +170,7 @@ plt.title('Line Graph')
 plt.show()
 ```
 
-This will create a simple line graph with `X-axis` labeled as 'X-axis' and `Y-axis` labeled as 'Y-axis'.
+This will create a simple line graph with `X-axis` labeled as 'X-axis' and `Y-axis` labeled as `Y-axis`.
 
 Plotly is another popular Python Graphics library that can create interactive visualizations. Here's an example of how to create an interactive scatter plot using Plotly:
 
