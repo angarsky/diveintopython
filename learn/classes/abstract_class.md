@@ -65,8 +65,9 @@ In Python, the `abc` module provides `ABC` class. It is used to create abstract 
 
 To create an abstract base class, we need to inherit from `ABC` class and use the `@abstractmethod` decorator to declare abstract methods.
 
+### Example of Abstract Class
+
 ```python
-### Example 1
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -82,8 +83,10 @@ class Shape(ABC):
 
 In this example, we have created an abstract base class `Shape` with two abstract methods `area` and `perimeter`. Any class that inherits from `Shape` has to implement these two methods.
 
+### Example of Abstract Class with Inheritance
+
 ```python
-### Example 2
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -100,7 +103,7 @@ class Dog(Animal):
 
 In this example, we have created an abstract base class `Animal` with an abstract method `sound`. We have also created a class `Dog` that inherits from `Animal` and implements the `sound` method.
 
-Note: A class that inherits from an abstract base class must implement all the abstract methods declared in the base class, unless it is also an abstract class.  
+> A class that inherits from an abstract base class must implement all the abstract methods declared in the base class, unless it is also an abstract class.  
   
 ## Python Abstract Class vs Interface  
 
@@ -212,7 +215,6 @@ One way to implement abstract classes in Python is to use abstract base classes 
 The following code example shows how to define an abstract base class `Animal`, which defines two abstract methods `speak` and `move` that must be implemented by any concrete subclass:
 
 ```python
-### Example 1
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -232,15 +234,13 @@ class Cat(Animal):
         print('running')
 ```
 
-Now, any concrete subclass of `Animal` must implement both `speak` and `move`. For example:
+Now, any concrete subclass of `Animal` must implement both `speak` and `move`.
 
 Another benefit of using ABCs in Python is that they can be used to enforce certain interface contract on classes, without specifying their implementation details. 
 
 For example, if you want to define a function that accepts only objects that have a `draw` method, you could define an ABC called `Drawable`, which defines an abstract method `draw`:
 
 ```python
-
-### Example 2
 from abc import ABC, abstractmethod
 
 class Drawable(ABC):
