@@ -1,4 +1,4 @@
-Python is one of the most popular programming languages in use today, and it owes much of its success to the vast array of modules available for it. These modules, which are pre-written code libraries, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.  
+Modules, which are pre-written code libraries, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.  
   
 ## Requests Module  
 
@@ -47,8 +47,6 @@ import math
 
 After importing the math module, all its functions can be referred to using the [math](https://docs.python.org/3/library/math.html) prefix.
 
-### Code Example 1
-
 ```python
 import math
 
@@ -61,8 +59,6 @@ print(f"Square root of {number} is {sqrt}")
 # 
 # Square root of 25 is 5.0
 ```
-
-### Code Example 2
 
 ```python
 import math
