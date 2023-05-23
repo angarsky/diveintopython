@@ -2,17 +2,15 @@ Modules, which are pre-written code libraries, allow for the easy implementation
   
 ## Requests Module  
 
-The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 [requests](https://pypi.org/project/requests/) using Python. It allows you to send HTTP/1.1 `requests` extremely easily. 
+The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests” when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
 
-However, if you encounter the error `no module named requests” when trying to use the Requests module in Python, it means that the module is not installed or is not accessible in your environment.
-
-To install the `requests` module, you can simply run the following command in your terminal:
+To install the [requests](https://pypi.org/project/requests/) module, you can simply run the following command in your terminal:
 
 ```shell
 pip install requests
 ```
 
-Once you’ve installed the Requests module, you can use it to send [requests](https://pypi.org/project/requests/) to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
+Once you’ve installed the Requests module, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
 
 ```python
 import requests
@@ -89,7 +87,7 @@ print(random_number)
 # 5 (this number will be different each time the code is run)
 ```
 
-In the above example, the `random.randint(a, b)` function is used to generate a random integer between the values of `a` and `b`, inclusive of both endpoints. In this case, the random number generated will be between 1 and 10.
+In the above example, the `random.randint(a, b)` function is used to generate a random integer between the values of `a` and `b`, inclusive of both endpoints. In this case, the random number generated will be between `1` and `10`.
 
 ```python
 import random
@@ -107,7 +105,7 @@ In this example, the `random.choice(seq)` function is used to generate a random 
   
 ## Logging Module  
 
-The [logging](https://docs.python.org/3/library/logging.html) module in Python is a built-in module that enables developers to record messages in a program. It is useful for debugging, performance measurement, and error reporting. The `logging` module in Python provides different levels of `logging`, including DEBUG, INFO, WARNING, ERROR, and CRITICAL.
+The [logging](https://docs.python.org/3/library/logging.html) module in Python is a built-in module that enables developers to record messages in a program. It is useful for debugging, performance measurement, and error reporting. The `logging` module in Python provides different levels of logging, including `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`.
 
 ```python
 import logging
