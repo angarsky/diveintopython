@@ -1,4 +1,4 @@
-[PDF](https://en.wikipedia.org/wiki/PDF) is a widely-used document format `for` digital publications. Python, on the other hand, is a versatile programming language with a vast `range` of applications in today's digital world. When used together, Python can become an efficient tool in manipulating and extracting information from PDF documents. In this article, we will explore the different ways Python can be used `for` PDF processing, and how it can help us improve our productivity and efficiency.  
+PDF is a widely-used document format `for` digital publications. Python, on the other hand, is a versatile programming language with a vast `range` of applications in today's digital world. When used together, Python can become an efficient tool in manipulating and extracting information from [PDF](https://en.wikipedia.org/wiki/PDF) documents. In this article, we will explore the different ways Python can be used `for` PDF processing, and how it can help us improve our productivity and efficiency.  
   
 ### Use Python with PDF
 
