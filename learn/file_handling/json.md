@@ -65,7 +65,7 @@ data = json.loads(json_str)
 print(data)
 ```
 
-In the above code, we first read the contents of the JSON file `file.json` into the `json_str` variable using `f.read()`. We then loaded the JSON data from the string using `json.loads(json_str)`. The JSON data is now stored in the `data` variable, which we can access as needed.
+In the above code, we first read the contents of the JSON file `file.json` into the `json_str` variable using `f.read()`. We then loading JSON file with data from the string using `json.loads(json_str)`. The JSON data is now stored in the `data` variable, which we can access as needed.
 
 ## How to Write JSON Pretty to File  
 
