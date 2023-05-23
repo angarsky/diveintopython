@@ -25,18 +25,15 @@ formatted_time_am_pm = time.strftime("%I:%M:%S %p", current_time)
 # Print the formatted time
 print("Formatted Time (24-hour format):", formatted_time)
 print("Formatted Time (12-hour format):", formatted_time_am_pm)
+
+# Output:
+# Formatted Time (24-hour format): 12:34:56
+# Formatted Time (12-hour format): 12:34:56 PM
 ```
 
-Output:
+## Python's `time.sleep()` Function
 
-```python
-Formatted Time (24-hour format): 12:34:56
-Formatted Time (12-hour format): 12:34:56 PM
-```
-
-## Python `time.sleep()` Function
-
-`time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds, so you can easily set your own waiting time.
+The `time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds, so you can easily set your own waiting time.
 
 The syntax of `time.sleep()` for wait time or delay is the following:
 
@@ -48,7 +45,7 @@ time.sleep(seconds)
 
 Where `seconds` is the number of seconds for which the thread should be suspended.
 
-`sleep()` function accepts the sleep duration in seconds, not milliseconds. However, you can achieve a similar effect by dividing the desired time sleep duration in milliseconds by 1000 to convert it to seconds.
+The `sleep()` function accepts the sleep duration in seconds, not milliseconds. However, you can achieve a similar effect by dividing the desired time sleep duration in milliseconds by 1000 to convert it to seconds.
 
 Using `time.sleep()` function will help you to pause execution of the programm for the defined period of time. 
 
@@ -127,7 +124,7 @@ In this example, `time.time()` is used to retrieve the current time as a floatin
 
 For measuring the execution time of a code block, we use `time.perf_counter()` to get the current high-resolution time in seconds. We capture the start time before the code block and the end time after the code block. By subtracting the start time from the end time, we obtain the elapsed time in seconds. Multiplying it by 1000 gives us the execution time in milliseconds.
 
-## `timeit.timeit` Function
+## The `timeit.timeit` Function
 
 If you want to measure the execution time of a specific block of code in Python, you can use the `timeit` module. The `timeit` module provides a simple way to time small bits of Python code. Here's an example of execution time measuring:
 
@@ -162,7 +159,7 @@ print(milliseconds)
 
 This will print the current time in milliseconds. Note that the result is rounded to an integer using the `round()` function before converting it to an integer using `int()`. This is because `time.time()` returns a floating-point value with a high precision.
 
-## Python Timer
+## A Python's Timer
 
 To create a timer in Python, you can use the built-in `time` module. Here's an example code snippet that demonstrates how to create a timer:
 
@@ -217,7 +214,7 @@ print("UTC time: ", utc_time)
 
 There are many more functions available in the time module for working with time, including `localtime()`, `strftime()`, and `strptime()`.
 
-## `perf_counter()` Function from the Time Module
+## The `perf_counter()` Function from the Time Module
 
 In Python, the `perf_counter()` function from the `time` module is used to measure the elapsed time with the highest available resolution on the system. It provides a more precise timer compared to the regular `time()` function. Here's an example of how to use `perf_counter()`:
 
@@ -239,7 +236,7 @@ print(f"Execution time: {execution_time} seconds")
 
 By using `perf_counter()`, you can measure the execution time of a specific block of code with high precision. This function is commonly used for performance profiling and benchmarking purposes.
 
-## `monotonic()` Function of Time Module
+## The `monotonic()` Function of Time Module
 
 In Python, the `monotonic()` function from the `time` module is used to obtain a monotonic clock, which is a clock that continually increases and is unaffected by system time adjustments. It is suitable for measuring intervals and determining the elapsed time between events. Here's an example of how to use `monotonic()`:
 
@@ -296,7 +293,7 @@ In this example, the program sets an alarm using `signal.alarm(duration)`, where
 
 > Note: the signal module is not available on all platforms, and its behavior may vary. Additionally, this method may not be suitable for interrupting long-running or computationally intensive tasks. For more complex scenarios, you might need to consider multiprocessing or threading techniques to achieve the desired behavior.
 
-## How to Time a Function in Python
+## How to Measure an Execution Time of a Function in Python
 
 To time the execution of a specific function in Python, you can use the `time` module and a decorator. Here's an example of how you can time a function using a decorator:
 
@@ -344,7 +341,7 @@ print("Current Time (in seconds since the epoch):", current_time)
 
 In this example, time.time() returns the current time as a floating-point number representing the number of seconds since the epoch. So this way we can get current Unix time in Python.
 
-## `time.strftime()` Function
+## The `time.strftime()` Function
 
 The `strftime()` function in Python's `time` module is used to format a `time.struct_time` object or a time tuple into a string representation based on the specified format codes. Here's an example:
 
