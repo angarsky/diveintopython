@@ -1,6 +1,6 @@
 [Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) files are a popular way to compress and bundle multiple files into a single archive. They are commonly used for tasks such as file compression, data backup, and file distribution. Zipping or compressing files in Python is a useful way to save space on your hard drive and make it easier to transfer files over the internet. 
   
-## How to Zip File in Python  
+## How to Zip a File in Python  
 
 The `zipfile` [module](https://docs.python.org/3/library/zipfile.html) in Python provides functionalities to create, read, write, append, and extract ZIP files.
 
@@ -60,7 +60,7 @@ In the above example, we defined the names of multiple source files in a list. W
 
 To compress the zip file even further, you can set the `compress_type` argument to `zipfile.ZIP_DEFLATED`. This applies the [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE) compression method to the files being zipped.  
   
-## Unzip File in Python  
+## Unzip a File in Python  
 
 It is straightforward to extract zip files in Python using the `zipfile` module. Here are two ways to do it:
 
