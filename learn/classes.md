@@ -122,7 +122,7 @@ class Car:
 my_car = Car("Toyota", "Corolla", 2022)
 ```
 
-In this example, the `__init__` method is used to **Python class initialization**. The `self` parameter refers to the object instance being created. The `make`, `model`, and `year` parameters are attributes of the object that can be accessed and modified using dot notation. Finally, an instance of the `Car` class is created with the `my_car` variable, which is passed the arguments `Toyota`, `Corolla`, and 2022.
+In this example, the `__init__` method is used for **Python class initialization**. The `self` parameter refers to the object instance being created. The `make`, `model`, and `year` parameters are attributes of the object that can be accessed and modified using dot notation. Finally, an instance of the `Car` class is created with the `my_car` variable, which is passed the arguments `Toyota`, `Corolla`, and 2022.
 
 The following example defines a more complex class called `BankAccount`:
 
