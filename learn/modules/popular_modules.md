@@ -2,7 +2,7 @@ Modules, which are pre-written code libraries, allow for the easy implementation
   
 ## Requests Module  
 
-The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests” when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
+The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests` when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
 
 To install the [requests](https://pypi.org/project/requests/) module, you can simply run the following command in your terminal:
 
