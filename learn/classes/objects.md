@@ -258,14 +258,12 @@ In both examples, the `dir` function is used to get a list of all the attributes
 In Python, you can check the `type` of an object by using the `type()` function. This function returns the `type` of the object that you pass as an argument. Here are two examples to illustrate how to use the `type()` function:
 
 ```python
-### Example 1
 # Checking the type of an integer
 number = 42
 print(type(number))  # Output: <class 'int'>
 ```
 
 ```python
-### Example 2
 # Checking the type of a list
 fruits = ['apple', 'banana', 'cherry']
 print(type(fruits))  # Output: <class 'list'>
@@ -281,14 +279,9 @@ Here are two examples of how to use [pickle](https://docs.python.org/3/library/p
 
 ```python
 import pickle
-
-### Example 1
-
 my_dict = {'key': 'value'}
 with open('serialized_dict.pickle', 'wb') as f:
     pickle.dump(my_dict, f)
-
-### Example 2
 
 class MyClass:
     def __init__(self, value):
@@ -298,7 +291,7 @@ my_object = MyClass('hello')
 serialized_object = pickle.dumps(my_object)
 ```
 
-In the first example, we create a dictionary object and dump it to a file using `pickle.dump()`. In the second example, we create a `MyClass` instance and serialize it to a byte string using `pickle.dumps()`. 
+In the first case, we create a dictionary object and dump it to a file using `pickle.dump()`. In the second case, we create a `MyClass` instance and serialize it to a byte string using `pickle.dumps()`. 
 
 Using `pickle` for Python object serializing is easy and powerful. However, please note that `pickle` is not secure and should not be used to serialize or deserialize untrusted data.  
   
@@ -309,7 +302,6 @@ When you encounter an error message that says `Python Object has no Attribute` i
 Here are two examples of how this error can occur and how to fix it:
 
 ```python
-### Example 1
 class Car:
     def __init__(self, make, model):
         self.make = make
@@ -324,7 +316,7 @@ print(my_car.color)
 ```
 Explanation: In this example, we are trying to access the attribute 'color', which does not exist in the `my_car` object.
 
-To fix this error, you need to either add the `color` attribute to the `Car` class or use an existing attribute. For example:
+To fix this error, you need to either add the `color` attribute to the `Car` class or use an existing attribute.
 
 ```python
 class Car:
@@ -342,7 +334,6 @@ print(my_car.color)
 ```
 
 ```python
-### Example 2
 def get_average(numbers):
     total = 0
     for num in numbers:
