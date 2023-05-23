@@ -12,9 +12,13 @@ Object-oriented programming (OOP) is a programming paradigm that uses objects an
 
 4. **Abstraction**: Abstraction focuses on representing essential features of an object while hiding the unnecessary details. It allows programmers to create abstract classes and methods that define the common behavior, leaving the implementation details to the subclasses.
   
-## How to Create a Class in Python
+## What is a Class in Python
 
-A class in Python is a blueprint for creating objects. It defines a set of attributes and methods that the objects of that class will have. The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
+In Python, a class is a blueprint for creating objects (also known as instances). It defines a set of attributes (variables) and methods (functions) that the objects created from the class will have. In other words, a class serves as a template or a structure for creating objects with predefined characteristics and behaviors.
+
+### How to Create a Class in Python
+
+The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
 
 ```python
 class Person:
