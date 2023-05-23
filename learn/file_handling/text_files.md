@@ -4,7 +4,7 @@
 
 To read a text file in Python, you can use the built-in function `open()` to open the file in read mode. Here are 2 code examples:
 
-### Reading the entire file content
+### Open Text File
 
 ```python
 with open('filename.txt', 'r') as file:
@@ -13,7 +13,7 @@ with open('filename.txt', 'r') as file:
 
 Here, `open()` function opens the file `filename.txt` in read mode and returns a file object. The `with` statement is used to ensure that the file is properly closed after its use. `read()` function reads the contents of the file and stores it in the `content` variable.
 
-### Reading file line by line
+### Reading Text File Line by Line
 
 ```python
 with open('filename.txt', 'r') as file:
