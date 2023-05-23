@@ -74,8 +74,10 @@ class Manager(Employee):
 
 An object is an instance of a class that encapsulates data along with methods or functions to operate on that data. Creating an object involves defining a class and then instantiate class using the class constructor.
 
+### Example of Creating Python Objects
+
 ```python
-### Example 1
+
 class Car:
     def __init__(self, make, model):
         self.make = make
@@ -104,7 +106,7 @@ Creating a class in Python is done using the keyword `class`. Classes in Python 
 
 The following code defines a simple class called `Car` and creates an instance of that class called `my_car`:
 
-### Example of a Class Definition \#1
+### Example of a Class Definition
 
 ```python
 class Car:
@@ -120,7 +122,7 @@ In this example, the `__init__` method is defined, which initializes the object 
 
 The following example defines a more complex class called `BankAccount`:
 
-### Example of a Class \#2
+### Example of a Complex Class
 
 ```python
 class BankAccount:
@@ -262,7 +264,7 @@ To invoke a class method, you can directly call it on the class itself, without 
 
 In Python programming, a class is a blueprint for creating objects with common attributes and methods. A class tree represents a hierarchy of classes, where each class inherits attributes and methods from its parent class or superclass.
 
-### Class Tree Example \#1
+### Class Tree Example
 
 ```python
 class Animal:
@@ -283,7 +285,7 @@ print(dog.make_sound())   # Output: Woof
 
 In this example, we define two classes, `Animal` and `Dog`. The `Dog` class inherits from the `Animal` class using the syntax `class Dog(Animal):`. The `Dog` class has its own constructor (`__init__`) but also calls the constructor of its parent class (`Animal.__init__(self, name, sound)`).
 
-### Class Tree Example \#2
+### More Complex Class Tree Example
 
 ```python
 class A:
