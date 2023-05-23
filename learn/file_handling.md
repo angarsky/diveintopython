@@ -264,7 +264,7 @@ By using one of these two code examples, you can easily check if a file exists i
 
 To create a file in Python, use the built-in `open()` function. You can specify the file name and the mode in which you want to open the file (read, write, or append). 
 
-To `print` to a file in Python, you can use the `print()` function with the `file` parameter:
+To print to a file in Python, you can use the `print()` function with the `file` parameter:
 
 ```python
 with open("example.txt", "w") as file:
