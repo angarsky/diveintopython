@@ -90,7 +90,6 @@ In this example, we define a parent class `MyParentClass` with a method `my_meth
 In Python, `super()` is a built-in function that gives access to methods of a parent class through inheritance. It is used to call a method of the parent class without explicitly naming the parent class. It is also used in Python 3 abstract classes to call `super().__init__()` method.
 
 ```python
-### Example 1
 class Parent:
     def __init__(self, name):
         self.name = name
@@ -107,7 +106,6 @@ print(child.name) # Output: John
 In the above example, `Child` class inherits `Parent` class and initializes `name` attribute using `super()` function.
 
 ```python
-### Example 2
 from abc import ABC, abstractmethod
 
 class Parent(ABC):
@@ -186,10 +184,9 @@ Overall, the `super()` function is a powerful tool in Python that can simplify i
 
 Python's `super` keyword is used in class inheritance to call methods of the parent class. It is especially useful when working with multiple inheritance. By using `super`, we can avoid hard-coding the name of the parent class in our code and automatically use the next class in the method resolution order (MRO).
 
-Here are a couple of examples of using `super` in Python:
+Here are a couple of examples of using `super` in Python.
 
 ```python
-### Example 1
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -224,7 +221,6 @@ print(cat.make_sound())  # Output: Meow
 In this example, `Animal` is an abstract base class defined using the `abc` module. The `Dog` and `Cat` classes inherit from `Animal` and override the `make_sound` method. When creating a new instance of `Dog` or `Cat`, we pass in a name which is used in the constructor of the parent class using `super()`.
 
 ```python
-### Example 2
 class Person:
     def __init__(self, name):
         self.name = name
