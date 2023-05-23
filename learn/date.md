@@ -239,8 +239,7 @@ There is no special function or method for number of months calculation.
 
 Here's an example of calculating the number of months between two dates using simple formulas:
 
-python
-Copy code
+```python
 from datetime import date
 
 # Define the start and end dates
@@ -251,3 +250,4 @@ end_date = date(2023, 8, 22)
 months = (end_date.year - start_date.year) * 12 + (end_date.month - start_date.month)
 
 print(months)  # Output: 17
+```
