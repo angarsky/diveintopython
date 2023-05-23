@@ -1,4 +1,4 @@
-[Text Files](https://en.wikipedia.org/wiki/Text_file) are used to store and read data, such as a simple text document or database output. Python offers various ways to work with text files, including reading, writing, and appending to files. Understanding how to handle text files is important for any programmer working in Python, as it can help them to efficiently manage and manipulate data within their program.  
+Text files are used to store and read data, such as a simple text document or database output. Python offers various ways to work with [Text Files](https://en.wikipedia.org/wiki/Text_file), including reading, writing, and appending to files. Understanding how to handle text files is important for any programmer working in Python, as it can help them to efficiently manage and manipulate data within their program.  
   
 ## How to read text file in Python  
 
@@ -74,7 +74,7 @@ data = np.load('file.npy') # load the Numpy file
 np.savetxt('file.txt', data) # save the data from the Numpy file to a text file
 ```
 
-You can also use the `tofile()` method of the array object to save the data to a text file. Here's an example:
+You can also use the `tofile()` method of the array object to save the data to a text file.
 
 ```python
 ### Method 2
