@@ -183,7 +183,6 @@ In summary, understanding attribute and name errors while working with Python cl
 Logic errors in Python classes occur when there is a mistake in the algorithmic logic of the implemented code. These errors may not result in a runtime error, but can lead to unexpected or undesired output.
 
 ```python
-### Example 1
 class Rectangle:
     def __init__(self, length, width):
         self.length = length
@@ -200,7 +199,6 @@ print(r.get_area())  # Output: 9
 In this example, the `__init__` method incorrectly calculates the area of the rectangle. The area should be calculated as `length * width`, but the provided code adds them together instead.
 
 ```python
-### Example 2
 class Calculator:
     def __init__(self):
         self.result = 0
