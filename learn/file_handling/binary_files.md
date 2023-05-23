@@ -4,9 +4,9 @@ Binary files are computer files that contain data in a format that can be easily
 
 In Python, we can use the `open()` function to open a binary file and read the contents.
 
+### Open the binary file in read mode
+
 ```python
-### Code Example 1
-# Open the binary file in read mode
 file = open("example.bin", "rb")
 
 # Read the contents of the file and store it in a variable
@@ -26,9 +26,9 @@ In the code above:
 - We close the file using the `.close()` method.
 - We print the contents of the file using the `print()` function.
 
+### Open the binary file in read mode using `with` statement
+
 ```python
-### Code Example 2
-# Open the binary file in read mode using `with` statement
 with open("example.bin", "rb") as file:
     binary_data = file.read()
 
@@ -52,18 +52,18 @@ To write a binary file, you need to use the built-in `open()` function with a mo
 2. Write the binary data to the file using the `write()` method of the file object.
 3. Close the file using the `close()` method of the file object.
 
-```python
-##### Open file in binary mode
+#### Open file in binary mode
 
+```python
 with open('binaryfile.bin', 'wb') as file:
     ##### Write binary data to file
 
     file.write(b'\x00\x01\x02\x03\x04\x05')
 ```
 
-```python
-##### Open file in binary mode
+### Open file in binary mode
 
+```python
 file = open('binaryfile.bin', 'wb')
 try:
     ##### Write binary data to file
