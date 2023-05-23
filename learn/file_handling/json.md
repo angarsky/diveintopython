@@ -2,11 +2,11 @@ JSON files have become increasingly popular in recent years due to their compati
   
 ## Use JSON with Python   
 
-To read, parse, and write JSON files, you can use Python's built-in `json` module. Here are some examples:
+To read, parse, and write JSON files, you can use `json` Python library. Here are some examples:
 
 ### Reading JSON file
 
-To read a JSON file, you can use the `load()` function from the `json` module. Here's an example that reads a JSON file called `data.json`:
+To read a JSON file, you can use the `load()` function from the [json](https://docs.python.org/3/library/json.html) module. Here's an example that reads a JSON file called `data.json`:
 
 ```python
 import json
@@ -42,6 +42,8 @@ data = {"name": "John", "age": 30, "city": "New York"}
 with open('data.json', 'w') as f:
     json.dump(data, f)
 ```  
+
+In this example, we have shown how to save dictionary as JSON in Python.
   
 ## How to Load JSON File  
 
