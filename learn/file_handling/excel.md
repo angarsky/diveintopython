@@ -99,8 +99,6 @@ Both of these examples will create a new Excel sheet with the name `New Sheet` a
 
 To open an Excel file from a different directory in Python, one can use the `os` module of Python and set the working directory to the desired directory. Then, use the `pandas` library to read the Excel file.
 
-Here are two code examples:
-
 ```python
 import os
 import pandas as pd
