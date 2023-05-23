@@ -1,12 +1,12 @@
-[Zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) files are a popular way to compress and bundle multiple files into a single archive. They are commonly used for tasks such as file compression, data backup, and file distribution. Zipping or compressing files in Python is a useful way to save space on your hard drive and make it easier to transfer files over the internet. 
+Zip files are a popular way to compress and bundle multiple files into a single archive. They are commonly used for tasks such as file compression, data backup, and file distribution. Zipping or compressing files in Python is a useful way to save space on your hard drive and make it easier to transfer files over the internet. 
   
 ## How to Zip a File in Python  
 
-The `zipfile` [module](https://docs.python.org/3/library/zipfile.html) in Python provides functionalities to create, read, write, append, and extract ZIP files.
+The [zipfile](https://docs.python.org/3/library/zipfile.html) module in Python provides functionalities to create, read, write, append, and extract ZIP files.
 
 ### Zip a Single File
 
-You can use the `zipfile` module to create a zip file containing a single file. Here is how you can do it:
+You can use the `zipfile` module to create a [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file containing a single file. Here is how you can do it:
 
 ```python
 import zipfile
@@ -65,7 +65,6 @@ To compress the zip file even further, you can set the `compress_type` argument 
 It is straightforward to extract zip files in Python using the `zipfile` module. Here are two ways to do it:
 
 ```python
-### Code example 1
 import zipfile
 
 with zipfile.ZipFile('myzipfile.zip', 'r') as zip_ref:
@@ -77,7 +76,6 @@ In this example, we first import the `zipfile` module. We then create an instanc
 The `extractall()` method extracts all files from the zip file and saves them into the specified `destination_folder`. If `destination_folder` does not exist, it will be created.
 
 ```python
-### Code example 2
 import zipfile
 
 with zipfile.ZipFile('myzipfile.zip', 'r') as zip_ref:
