@@ -15,8 +15,6 @@ Some common types of class decorators include:
 Here are two examples of using class decorators:
 
 ```python
-### Example 1
-
 def add_method(cls):
     def square(self, x):
         return x * x
@@ -33,8 +31,6 @@ print(obj.square(5))
 ```
 
 ```python
-### Example 2
-
 def class_method_decorator(cls):
     def new_method(self):
         print("Class method has been decorated")
