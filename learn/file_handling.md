@@ -47,11 +47,9 @@ In Python, there are several modes for file handling (file open modes) including
 
 - **Binary mode ('b')**: This mode is used to read or write binary data, like images or audio files.
 
-Here are two examples of how to use the read and write modes in Python:
+### Open a file in write mode
 
 ```python
-### Example 1
-# Open a file in write mode
 file = open('example.txt', 'w')
 
 # Write to the file
@@ -63,9 +61,9 @@ file.close()
 
 In this example, we first open a file named `example.txt` in write mode. We write the string `'Hello, World!'` to the file and then close it.
 
+### Open a file in read mode
+
 ```python
-### Example 2
-# Open a file in read mode
 file = open('example.txt', 'r')
 
 # Read the file contents
@@ -133,7 +131,6 @@ When working with files in Python, there are several built-in methods that enabl
 The `read()` method reads the entire contents of a file and returns them as a string. On the other hand, the `readline()` method reads a single line from the file. It returns the line as a string and moves the file pointer to the next line.
 
 ```python
-
 file = open("example.txt", "w")
 content = file.read()
 line = file.readline()
@@ -145,7 +142,6 @@ file.close()
 The `write()` method is used to write data to a file. It takes a string as an argument and writes it to the file. Alternatively, the `writelines()` method allows you to write multiple lines to a file by providing a list of strings.
 
 ```python
-
 file = open("example.txt", "w")
 file.write("Hello, World!")
 lines = ["Line 1", "Line 2", "Line 3"]
