@@ -37,7 +37,7 @@ except FileNotFoundError:
 
 ## Different Modes for File Handling in Python  
 
-In Python, there are several modes for file handling including:
+In Python, there are several modes for file handling (file open modes) including:
 
 - **Read mode ('r')**: This mode is used to read an existing file. 
 
