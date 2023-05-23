@@ -151,7 +151,6 @@ In this example, we defined `make`, `model`, and `year` as class-level attribute
 Object-oriented programming allows us to create objects with different properties. We can initialize an object with fixed properties or flexible properties by passing different arguments to the constructor. In Python, we can use the `__init__()` method to initialize an object with flexible properties. 
 
 ```python
-### Example 1
 class Rectangle:
     def __init__(self, width, height):
         self.width = width
@@ -165,7 +164,6 @@ print(rect.height)  # Output: 10
 In the above example, we initialized the `Rectangle` object with fixed properties `width` and `height`. The object returned by the constructor will always have the same properties.
 
 ```python
-### Example 2
 class Circle:
     def __init__(self, radius, color='red', border=None):
         self.radius = radius
@@ -185,7 +183,6 @@ In the above example, we initialized the `Circle` object with flexible propertie
 The `__new__()` method is used in Python to create objects dynamically. It allows the developer to create a class object using the class name, and then you can add attribute after init of python class. 
 
 ```python
-### Code Example 1
 class Person:
     pass
 
@@ -197,7 +194,6 @@ dave.age = 25
 In the above example, we create a class called `Person` and then use the .new() method to create an object called `dave`. We then add the attributes `name` and `age` to this object after initialization. 
 
 ```python
-### Code Example 2
 class Car:
     def __init__(self, model, make):
         self.model = model
