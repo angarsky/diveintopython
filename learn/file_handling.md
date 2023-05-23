@@ -222,3 +222,65 @@ print("File Extension:", extension)
 ```
 
 In this example, we use the `os.path` module, specifically the `splitext()` function, to separate the file extension from the given file name. It returns a tuple containing the base name and the extension, and we extract the `extension` using indexing.
+
+## How to Check if a File Exists with Python  
+
+To check if a file exists, you can use the built-in [os](https://docs.python.org/3/library/os.html) module which provides functionality for interacting with the operating system. 
+
+```python
+import os
+
+# Define the path of the file to check
+file_path = "/path/to/file"
+
+# Check if the file exists
+if os.path.exists(file_path):
+    print("File exists!")
+else:
+    print("File does not exist.")
+```
+
+In this example, we first `import` the `os` module and then define the `file_path` variable with the path to the file we want to check. The `os.path.exists()` function is used to check if the file exists, and if so, we `print` a message indicating that the file exists. If the file does not exist, we `print` a message indicating that it does not exist.
+
+```python
+import os
+
+# Define the path of the file to check
+file_path = "/path/to/file"
+
+try:
+    # Check if the file exists
+    with open(file_path) as f:
+        print("File exists!")
+except FileNotFoundError:
+    print("File does not exist.")
+```
+
+In this example, we use a `try` and `except` block to catch the `FileNotFoundError` exception that is raised if the file does not exist. We try to open the file: `with open(file_path) as f:` and if the file exists, we `print` a message indicating that the file exists. If the file does not exist, we catch the `FileNotFoundError` exception and `print` a message indicating that the file does not exist.
+
+By using one of these two code examples, you can easily check if a file exists in Python and take the appropriate action depending on the result.  
+  
+## Create a File  
+
+To create a file in Python, use the built-in `open()` function. You can specify the file name and the mode in which you want to open the file (read, write, or append). 
+
+To `print` to a file in Python, you can use the `print()` function with the `file` parameter:
+
+```python
+with open("example.txt", "w") as file:
+  print("Hello, World!", file=file)
+```
+
+This code creates a new file named `example.txt` in write mode, and writes the string `Hello, World!` to the file.
+
+To write to a file in Python, you can use the `.write()` method:
+
+```python
+with open("example.txt", "w") as file:
+  file.write("Hello, World!")
+```
+
+This code creates a new file named `example.txt` in write mode, and writes the string `Hello, World!` to the file using the `write()` method. 
+
+Remember to close the file after you are done writing. Using the `with` statement handles this automatically.  
+
