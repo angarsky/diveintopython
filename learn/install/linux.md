@@ -4,7 +4,7 @@ Installing Python on Linux is a necessary step for anyone looking to develop app
 
 If you are using Linux as your operating system, you can easily install Python by following these simple steps:
 
-1. Open your terminal and type the command `sudo apt-get install python` to install the latest version of Python.
+1. Open your terminal and type the command `sudo apt-get install python` to install the latest version of Python. This will download Python for linux and install it.
 2. Once the installation is complete, check your Python version using the command `python --version`.
 
 That's it! You have successfully installed Python on your Linux machine.
