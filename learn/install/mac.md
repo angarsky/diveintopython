@@ -26,7 +26,7 @@ To install Python on macOS using brew, follow these simple steps:
    ```
 4. The latest version of Python will be installed on your macOS.
 
-Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and allow you to start using Python for your programming needs. 
+Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and python command not found mac. 
 
   
 ## Add Python to MacOS Path   
@@ -82,3 +82,13 @@ By following these steps, you can successfully uninstall Python from your Mac. I
 ## How to Update Python on Mac  
 
 To upgrade Python on a Mac, you can use the terminal to install the latest version using homebrew or pyenv. First, check your current Python version by typing `python --version` in the terminal. Then, use the appropriate command to install the latest version. For Homebrew users, run `brew upgrade python` and for pyenv users, run `pyenv install [latest-version]`. By upgrading Python, you can enjoy the latest features and bug fixes.  
+
+## Error: `python command not found`   
+
+If you’re encountering the **python command not found** error on your macOS, it means that your system is unable to locate the Python command-line utility. 
+
+This issue may arise due to multiple reasons, such as an outdated macOS version, incorrect installation path, or mistakenly removed system files. 
+
+To fix this issue, you can try updating your macOS to the latest version or reinstalling Python. Alternatively, you can set the correct path for Python using the terminal or modifying your system's environmental variables.
+
+In summary, encountering the error `python command not found mac` is a common problem among macOS users. But with the right troubleshooting steps, you can quickly fix it and continue working on your Python projects.  
