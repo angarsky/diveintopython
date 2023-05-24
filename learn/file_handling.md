@@ -1,10 +1,10 @@
 Python has a variety of built-in functions and libraries that make working with files a breeze, and in this article, we'll explore the different techniques and best practices for handling files in Python.   
   
-## Opening Files  
+## How to Open Files in Python
 
 With Python, you can easily read and write files to the system. To read a file in Python, you can use the `open()` function.
 
-### Reading a File in Python
+### Reading a File
 
 In Python, you can read a file using the `open()` function. The following code example demonstrates how to read a file in Python:
 
@@ -14,7 +14,7 @@ data = file.read()
 print(data)
 ```
 
-### Reading a File Line-By-Line in Python
+### Reading a File Line-By-Line
 
 Sometimes, you may want to read a file line-by-line. To do that, you can use a `for` loop to loop through the file line-by-line. The following code demonstrates how to read a file line-by-line in Python:
 
@@ -24,7 +24,7 @@ for line in file:
     print(line)
 ```
 
-### Handling a `No Such File or Directory` Error
+### Handling the `No Such File or Directory` Error
 
 It's not uncommon to encounter a `No such file or directory` error when working with files in Python. To handle this error, you can use a `try` and `except` block to catch the error and handle it accordingly. The following code demonstrates how to handle a `No such file or directory` error in Python:
 
@@ -35,7 +35,7 @@ except FileNotFoundError:
     print("File not found!")
 ```
 
-## Different Modes for File Handling in Python  
+## Different Modes for a File Handling in Python  
 
 In Python, there are several modes for file handling (file open modes) including:
 
@@ -47,7 +47,7 @@ In Python, there are several modes for file handling (file open modes) including
 
 - **Binary mode ('b')**: This mode is used to read or write binary data, like images or audio files.
 
-### Open a file in write mode
+### Open a file in the write mode
 
 ```python
 file = open('example.txt', 'w')
@@ -61,7 +61,7 @@ file.close()
 
 In this example, we first open a file named `example.txt` in write mode. We write the string `'Hello, World!'` to the file and then close it.
 
-### Open a file in read mode
+### Open a file in the read mode
 
 ```python
 file = open('example.txt', 'r')
@@ -82,7 +82,7 @@ In this example, we open the same file, `example.txt`, but this time in read mod
 
 Python provides important modules like `os` and `shutil` to perform file operations such as deleting, renaming, copying, and moving files. 
 
-### Deleting Files in Python
+### File Deleting
 
 You can use the `os.remove()` method to delete a file in Python. The following code snippet shows how remove file named `example.txt`.
 
@@ -92,7 +92,7 @@ import os
 os.remove("example.txt")
 ```
 
-### Renaming Files in Python
+### File Renaming
 
 You can use the `os.rename()` method to rename a file in Python. The following code snippet shows how to rename the file named `example.txt` to `new_example.txt`.
 
@@ -102,7 +102,7 @@ import os
 os.rename("example.txt", "new_example.txt")
 ```
 
-### Copying Files in Python
+### File Copying
 
 You can use the `shutil.copy()` method to copy a file in Python. The following code snippet shows how to copy the file named `example.txt` to a new file named `new_example.txt`.
 
@@ -112,7 +112,7 @@ import shutil
 shutil.copy("example.txt", "new_example.txt")
 ```
 
-### Moving Files in Python
+### File Moving
 
 You can use the `shutil.move()` method to move a file in Python. The following code snippet shows how to move the file named `example.txt` to a new location named `new_folder`.
 
@@ -122,11 +122,11 @@ import shutil
 shutil.move("example.txt", "/path/to/new_folder/example.txt")
 ```  
   
-## Python File Methods  
+## File Methods in Python
 
 When working with files in Python, there are several built-in methods that enable you to read, write, and manipulate file contents. These methods provide flexible options for file handling. Here's a guide to some commonly used Python file methods:
 
-### How to Read a File or File Importing
+### How to Read a File
 
 The `read()` method reads the entire contents of a file and returns them as a string. On the other hand, the `readline()` method reads a single line from the file. It returns the line as a string and moves the file pointer to the next line.
 
@@ -137,7 +137,7 @@ line = file.readline()
 file.close()
 ```
 
-### Write to file 
+### How to Write to file 
 
 The `write()` method is used to write data to a file. It takes a string as an argument and writes it to the file. Alternatively, the `writelines()` method allows you to write multiple lines to a file by providing a list of strings.
 
@@ -149,7 +149,7 @@ file.writelines(lines)
 file.close()
 ```
 
-### How to Close a File in Python
+### How to Close a File
 
 The `close()` method is essential for proper file handling. It closes the file and releases any system resources associated with it. It is crucial to close the file after performing operations on it to avoid potential issues.
 
@@ -161,11 +161,11 @@ file.close()
 
 These are just a few examples of Python file methods that enable you to read, write, and manipulate files. It's important to handle exceptions and close files properly to ensure efficient file management and resource utilization. By utilizing these file methods effectively, you can handle file operations with ease in your Python programs.
 
-## How to Get File Size
+## File Size Operations
 
 To get the size of a file in Python, you can use various methods provided by the Python standard library. Here are two examples that demonstrate how to retrieve the size of a file using different approaches.
 
-### Example 1: Using os.path Module
+### How to get a File Size
 
 The `os.path` module provides a convenient method, `getsize()`, to retrieve the size of a file in bytes.
 
@@ -183,7 +183,7 @@ except FileNotFoundError:
 
 In this example, we use the `getsize()` function from the `os.path` module to obtain the size of the file specified by `file_path`. If the file is found, the size is printed in bytes. If the file is not found, a `FileNotFoundError` is raised.
 
-### Example 2: Using os.stat() Function
+### Get a File Size with the `os.stat` Function
 
 Another way to retrieve the size of a file is by using the `os.stat()` function, which returns a named tuple containing file attributes, including the file size.
 
@@ -204,7 +204,7 @@ In this example, we call `os.stat()` to obtain the file attributes, including th
 
 By using these approaches, you can easily retrieve the size of a file in Python. Remember to handle exceptions, such as `FileNotFoundError`, to account for cases where the file does not exist.
 
-## Get File Extension
+## Operations with a File Extension
 
 When working with files in Python, you may often need to extract the file extension to determine the type of file you're dealing with. Python provides several ways to obtain the file extension from a file name or path. 
 
@@ -256,7 +256,7 @@ In this example, we use a `try` and `except` block to catch the `FileNotFoundErr
 
 By using one of these two code examples, you can easily check if a file exists in Python and take the appropriate action depending on the result.  
   
-## Create a File  
+## How to Create a Simple File  
 
 To create a file in Python, use the built-in `open()` function. You can specify the file name and the mode in which you want to open the file (read, write, or append). 
 
