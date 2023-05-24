@@ -118,7 +118,7 @@ logging.error('Error Message')
 logging.critical('Critical Error Message')
 ```
 
-In the above code example, we have imported the [logging](https://docs.python.org/3/library/logging.html) module in Python and set up basic `logging` configuration using the `basicConfig()` method. We have defined the `logging` level as `DEBUG` and specified a custom `format` for the log messages. We have then logged messages of different levels (debug, info, warning, error, and critical) using the `debug()`, `info()`, `warning()`, `error()`, and `critical()` methods, respectively.
+In the above code example, we have imported the `logging` module in Python and set up basic `logging` configuration using the `basicConfig()` method. We have defined the `logging` level as `DEBUG` and specified a custom `format` for the log messages. We have then logged messages of different levels (debug, info, warning, error, and critical) using the `debug()`, `info()`, `warning()`, `error()`, and `critical()` methods, respectively.
 
 ```python
 import logging
