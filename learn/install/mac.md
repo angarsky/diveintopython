@@ -53,7 +53,7 @@ To add Python to the macOS path, follow these simple steps:
 
 By adding Python to your macOS path, you can easily access it from any directory in the Terminal. This can be helpful for running Python scripts and managing Python packages. Make sure to include the relevant keywords like `adding python to path mac` for better SEO optimisation.  
   
-## How to Run Python on Mac  
+## How to Run a Python Script on Mac  
 
 If you're wondering how to run a Python script on your Mac, there are a few easy steps you can follow. First, you'll need to make sure Python is installed on your computer. You can check this by opening your Terminal application and typing `python` into the command line. 
 
@@ -65,7 +65,7 @@ In summary, to run a Python script on your Mac, you need to:
 - Check if Python is installed
 - Install Python if necessary
 - Navigate to the script in Terminal
-- Run the script using the `python` command. 
+- Run the script using the `python your_script.py` command. 
 
 By following these steps, you'll be able to run Python scripts on your Mac with ease.  
   
