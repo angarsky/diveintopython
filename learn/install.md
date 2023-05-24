@@ -23,11 +23,11 @@ That's it! You have successfully installed Python on your computer. You can now 
 To run a Python script from the command line, follow these steps:
 
 1. Open the command prompt (Windows) or the terminal (macOS/Linux).
-2. Navigate to the directory where your Python script is located. You can use the `cd` command followed by the directory path to change to the desired directory. For example, if your script is located in the "Documents" folder, you can use the following command:
+2. Navigate to the directory where your Python script is located. You can use the `cd` command followed by the directory path to change to the desired directory. For example, if your script is located in the `Documents` folder, you can use the following command:
    ```shell 
    cd Documents
    ```
-3. Once you are in the correct directory, you can run the Python script by typing `python` followed by the name of the script file. For example, if your script file is named "script.py", use the following command:
+3. Once you are in the correct directory, you can run the Python script by typing `python` followed by the name of the script file. For example, if your script file is named `script.py`, use the following command:
    ```shell
    python script.py
    ```
