@@ -1,4 +1,4 @@
-Libraries in Python are essential to the advancement and progression of the language. They allow for the creation of complex functions and tasks without the need for extensive coding knowledge or experience. Among these libraries, those dedicated to data analysis and visualization have gained significant attention. This article will delve into some of the most popular Python libraries for these purposes and explore their features and capabilities.  
+Users often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs.
   
 ## Python Libraries  
 
