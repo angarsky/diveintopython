@@ -2,7 +2,7 @@ Users often use the words 'Module' and 'Library' to refer to pre-written codes a
   
 ## Python Libraries  
 
-Python libraries are pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. They are crucial components of Python programming and are available in the Python Package Index (PyPI), which currently has over 220,000 libraries.
+Python libraries are crucial components of Python programming and are available in the Python Package Index (PyPI), which currently has over 220,000 libraries.
 
 ### Installing Python Libraries
 
