@@ -43,7 +43,7 @@ In conclusion, Python libraries are essential components of Python programming t
 
 When it comes to Python programming, there are two terms that are often used interchangeably, but are not the same - Libraries and Packages. Although they both serve the same purpose of providing functionality to the user, there are some distinct differences between them.
 
-### Libraries
+### What is a Python Library?
 
 A library is a collection of modules that come together to provide a particular set of functions. It is usually used to perform specific tasks, such as mathematical computations, manipulating files, or connecting to a database. One of the most popular libraries in Python is the NumPy library, which provides support for large, multi-dimensional arrays and matrices.
 
