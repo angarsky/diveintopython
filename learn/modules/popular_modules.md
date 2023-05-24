@@ -43,7 +43,7 @@ Python's math module provides a set of predefined mathematical functions. It con
 import math
 ```
 
-After importing the math module, all its functions can be referred to using the [math](https://docs.python.org/3/library/math.html) prefix.
+After importing the [math](https://docs.python.org/3/library/math.html) module, all its functions can be referred to using the `math` prefix.
 
 ```python
 import math
