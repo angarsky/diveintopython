@@ -10,6 +10,24 @@ To install Python on a Mac OS, you can follow these simple steps:
 4. If Python is installed successfully, the version number will be displayed in the Terminal.
 
 By following these steps, you can easily install Python on macbook and start working with this popular programming language. Remember to download Python for Mac from the official website to ensure that you have the latest and most secure version of the software.  
+
+### How to Install Python with Brew  
+
+To install Python on macOS using brew, follow these simple steps:
+
+1. Open the terminal on your macOS.
+2. Install brew if you haven't already by running the command:
+   ```shell
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
+3. After installation, run the command:
+   ```shell
+   brew install python
+   ```
+4. The latest version of Python will be installed on your macOS.
+
+Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and allow you to start using Python for your programming needs. 
+
   
 ## Add Python to MacOS Path   
 
