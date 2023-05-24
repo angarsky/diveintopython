@@ -68,7 +68,7 @@ print(constants.pi)
 
 In summary, Libraries are smaller sets of functionality that are dedicated to a particular task, while Packages are collections of libraries that have been grouped together for easy usage and installation. Both Libraries and packages are essential components of Python programming and choosing which one to use depends on the task at hand.  
   
-## Python Libraries vs Modules  
+## Python Library vs Module
 
 In Python, a module is a file containing Python code while a library is a collection of related modules. Libraries typically have a broad scope and provide functionality that is not available in built-in modules.
 
