@@ -6,7 +6,7 @@ To install Python on Windows, follow these steps:
 
 1. Visit the official Python website and navigate to the [download page](https://www.python.org/downloads/).
 2. Select the appropriate version of Python based on your Windows operating system. 
-3. Click the `Download` button and wait to **download python for windows**.
+3. Click the `Download` button and wait for **downloading python for windows**.
 4. Once downloaded, run the Python installer by double-clicking on the downloaded file. 
 4. Follow the prompts to complete the installation process.
 
