@@ -10,7 +10,7 @@ To install Python on Windows, follow these steps:
 4. Once downloaded, run the Python installer by double-clicking on the downloaded file. 
 4. Follow the prompts to complete the installation process.
 
-Once you have installed Python on your Windows system, you can check the version by opening a command prompt and typing `python --version`.
+Once you have installed Python on your Windows system, you can check windows python version by opening a command prompt and typing `python --version`.
 With these simple steps, you can install Python on your Windows system and start using it for your programming needs.  
   
 ## How to Run Python on Windows  
