@@ -9,7 +9,7 @@ To install Python on a Mac OS, you can follow these simple steps:
 3. Once the installation process is complete, you can verify that Python has been installed by opening the Terminal app and typing `python3 --version`.
 4. If Python is installed successfully, the version number will be displayed in the Terminal.
 
-By following these steps, you can easily install Python on your Mac and start working with this popular programming language. Remember to download Python for Mac from the official website to ensure that you have the latest and most secure version of the software.  
+By following these steps, you can easily install Python on macbook and start working with this popular programming language. Remember to download Python for Mac from the official website to ensure that you have the latest and most secure version of the software.  
   
 ## Add Python to MacOS Path   
 
