@@ -1,4 +1,4 @@
-Users often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. Everything described below will be true for modules.
+Users often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. 
   
 ## Python Libraries  
 
