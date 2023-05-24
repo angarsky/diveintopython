@@ -17,3 +17,26 @@ To install Python on your computer, follow these steps:
 8. After the installation is complete, open the command prompt (on Windows) or the terminal (on macOS and Linux) and type `python --version`to verify that Python has been installed correctly. You should see the version number displayed.
 
 That's it! You have successfully installed Python on your computer. You can now start writing and running Python programs.
+
+## How to Run Python Script from Command Line
+
+To run a Python script from the command line, follow these steps:
+
+1. Open the command prompt (Windows) or the terminal (macOS/Linux).
+2. Navigate to the directory where your Python script is located. You can use the `cd` command followed by the directory path to change to the desired directory. For example, if your script is located in the "Documents" folder, you can use the following command:
+   ```shell 
+   cd Documents
+   ```
+3. Once you are in the correct directory, you can run the Python script by typing `python` followed by the name of the script file. For example, if your script file is named "script.py", use the following command:
+   ```shell
+   python script.py
+   ```
+   If you have multiple versions of Python installed on your system, you may need to specify the version explicitly. In that case, use the following command instead:
+   ```shell
+   python3 script.py
+   ```
+   >If you're using Python 2.x, the command would simply be `python` without the "3".
+   
+4. Press the Enter key, and the Python script will execute. You will see the output or any error messages displayed in the command prompt or terminal.
+
+That's it! You have successfully run a Python script from the command line. Remember to navigate to the correct directory where your script is located before executing the `python` command.
