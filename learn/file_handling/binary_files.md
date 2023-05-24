@@ -1,10 +1,10 @@
 Binary files are computer files that contain data in a format that can be easily read and manipulated by machines. [Binary files](https://en.wikipedia.org/wiki/Binary_file) are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, how to read and write them, and some common use cases where they are most beneficial.  
   
-## How to Read Binary File  
+## How to Read a Binary File  
 
 In Python, we can use the `open()` function to open a binary file and read the contents.
 
-### Open the binary file in read mode
+### Open a binary file in a read mode
 
 ```python
 file = open("example.bin", "rb")
@@ -26,7 +26,7 @@ In the code above:
 - We close the file using the `.close()` method.
 - We print the contents of the file using the `print()` function.
 
-### Open the binary file in read mode using `with` statement
+### Open a binary file in a read mode using the `with` statement
 
 ```python
 with open("example.bin", "rb") as file:
@@ -44,7 +44,7 @@ In the code above:
 
 Using the `with` statement to open a file ensures that the file is closed automatically after reading its contents.  
   
-## How to Write Binary File
+## How to Write a Binary File
 
 To write a binary file, you need to use the built-in `open()` function with a mode parameter of `wb`. This will open the file in binary mode, allowing you to write binary data to it. Here are the steps to write a binary file:
 
@@ -52,16 +52,7 @@ To write a binary file, you need to use the built-in `open()` function with a mo
 2. Write the binary data to the file using the `write()` method of the file object.
 3. Close the file using the `close()` method of the file object.
 
-#### Open file in binary mode
-
-```python
-with open('binaryfile.bin', 'wb') as file:
-    ##### Write binary data to file
-
-    file.write(b'\x00\x01\x02\x03\x04\x05')
-```
-
-### Open file in binary mode
+### Open a file in a binary mode
 
 ```python
 file = open('binaryfile.bin', 'wb')
@@ -77,7 +68,7 @@ finally:
 
 In conclusion, writing binary files is a simple process that involves opening the file in binary mode and writing binary data to it using the `write()` method of the file object.  
   
-## File Modes for Binary Files  
+## A List of the File Modes for Binary Files  
 
 When working with binary files, you need to open them in the correct file mode to ensure the file is being read and/or written correctly. There are six file modes for binary files:
 
