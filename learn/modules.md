@@ -185,7 +185,7 @@ By properly setting the search path, you can easily resolve the module not found
 
 ## How to Print List of Python Modules  
 
-To `print` a list of installed Python modules, you can use the [pkgutil](https://docs.python.org/3/library/pkgutil.html) `module` in Python. The `walk_packages()` method in `pkgutil` will generate a list of all the modules available in the Python environment.
+To `print` a list of installed Python modules, you can use the [pkgutil](https://docs.python.org/3/library/pkgutil.html) module in Python. The `walk_packages()` method in `pkgutil` will generate a list of all the modules available in the Python environment.
 
 ```python
 import pkgutil
