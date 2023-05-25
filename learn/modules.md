@@ -315,7 +315,7 @@ Pip ([Python Package Index](https://pypi.org/project/pip/)) is a package manager
 
 ### How to Upgrade pip
 
-To upgrade `pip` in Python, you can use the following steps:
+To **update pip** in Python, you can use the following steps:
 
 1. Open a command prompt or terminal.
 2. For Windows, you can press `Win + R`, type `cmd`, and hit Enter. For macOS or Linux, you can use the built-in Terminal application.
