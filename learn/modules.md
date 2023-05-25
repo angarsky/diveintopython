@@ -312,6 +312,30 @@ Creating Python modules can help you organize your code and make it more reusabl
 ## What is pip in Python  
 
 Pip ([Python Package Index](https://pypi.org/project/pip/)) is a package manager for Python, that allows you to easily install, uninstall, and manage Python packages. It comes installed by default with Python, and you can use it to install packages from the https://pypi.org or other repositories. You can also use pip to freeze the installed packages in a file called `requirements.txt`, which can be used to recreate the same environment in another system. To install packages listed in `requirements.txt`, you can use the command `python pip install requirements.txt` in your command line. Using `pip` can make it easier to manage your Python projects and dependencies.  
+
+### How to Upgrade pip
+
+To upgrade `pip` in Python, you can use the following steps:
+
+1. Open a command prompt or terminal.
+2. For Windows, you can press `Win + R`, type `cmd`, and hit Enter. For macOS or Linux, you can use the built-in Terminal application.
+3. Once the command prompt or terminal is open, enter the following command and press Enter to upgrade `pip`:
+
+ ```shell
+ python -m pip install --upgrade pip
+ ```
+
+> If you have multiple Python versions installed on your system, make sure to use the appropriate command. For example, `python3 -m pip install --upgrade pip` if you want to upgrade `pip` for Python 3.
+
+4. The command will fetch the latest version of `pip` and install it.
+
+After the process completes, `pip` should be successfully upgraded to the latest version. You can verify the installation by running the following command:
+
+```shell
+pip --version
+```
+
+It should display the updated version of `pip`.
   
 ## How to Check Version of Module  
 
