@@ -1,4 +1,4 @@
-Switch statements are a popular feature in many programming languages, allowing developers to cleanly and efficiently handle multiple conditional cases. However, Python does not include a built-in switch statement. In this article, we will explore several ways to implement switch-like functionality in Python, using various techniques and libraries. Whether you're a seasoned Python developer or just starting out, this guide will provide valuable insights into this important programming concept.  
+Switch statements are a popular feature in many programming languages, allowing developers to cleanly and efficiently handle multiple conditional cases. However, Python does not include a built-in switch statement. In this article, we will explore several ways to implement switch-like functionality in Python, using various techniques and libraries. Whether you're a seasoned developer or just starting out, this guide will provide valuable insights into this important programming concept.  
   
 ## Match Statement  
 
@@ -17,7 +17,7 @@ def describe_number(num):
             return "Multiple"
 ```
 
-In this example, the `describe_number` function takes a `num` parameter and returns a string based on the value of `num`. If `num` is `0`, it returns ``Zero``. If `num` is `1`, it returns ``Single``. Otherwise, it returns ``Multiple`` using a wildcard match pattern with `_`.
+In this example, the `describe_number` function takes a `num` parameter and returns a string based on the value of `num`. If `num` is `0`, it returns ``Zero``. If `num` is `1`, it returns `Single`. Otherwise, it returns `Multiple` using a wildcard match pattern with `_`.
 
 Here is another python case statement example:
 
