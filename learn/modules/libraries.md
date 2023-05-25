@@ -46,8 +46,9 @@ When it comes to Python programming, there are two terms that are often used int
 
 A library is a collection of modules that come together to provide a particular set of functions. It is usually used to perform specific tasks, such as mathematical computations, manipulating files, or connecting to a database. One of the most popular libraries in Python is the NumPy library, which provides support for large, multi-dimensional arrays and matrices.
 
+#### Example of using numpy library
+
 ```python
-# Example of using numpy library
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
