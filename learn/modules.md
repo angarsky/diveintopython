@@ -142,7 +142,7 @@ In Python, importing modules is essential for reusing code. You can import a mod
 
 Here are two code examples:
 
-### Importing an Entire Module
+### Import an Entire Module
 
 ```python
 import math
@@ -152,7 +152,7 @@ print(math.sqrt(64)) # Output: 8.0
 
 In this example, we import the `math` module and use the `sqrt()` function to get the square root of 64.
 
-### Importing Specific Functions from a Module
+### Import Specific Functions from a Module
 
 ```python
 from datetime import date
@@ -251,7 +251,7 @@ import foo
 
 By following these steps, you can easily fix the `No Module Named` error in Python.  
   
-## Python Create a Module  
+## How to Create a Module in Python  
 
 Python modules are code blocks that can be easily imported and used in other Python programs. They can save you time by avoiding repetitive coding. There are a couple of ways to create modules in Python:
 
