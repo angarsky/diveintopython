@@ -67,7 +67,7 @@ result = "Even" if num % 2 == 0 else "Odd"
 print(result)  # Output: Odd
 ```
 
-In the example above, the ternary statement checks if the number is even or odd. If the number is divisible by 2 (i.e., the remainder of the division is zero), the `result` variable will be assigned the string `'Even'`, and if it's not divisible by 2 (i.e., the remainder is one), the `result` variable will be assigned the string `'Odd'`.
+In the example above, the ternary statement checks if the number is even or odd with ternary operator `if`. If the number is divisible by 2 (i.e., the remainder of the division is zero), the `result` variable will be assigned the string `'Even'`, and if it's not divisible by 2 (i.e., the remainder is one), the `result` variable will be assigned the string `'Odd'`.
 
 ### Check if a list is empty or not
 
