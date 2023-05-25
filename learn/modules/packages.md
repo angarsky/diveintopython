@@ -1,29 +1,5 @@
 With a rich set of libraries and frameworks, Python enables developers to write efficient and maintainable code easily. In this headline package, we will explore some of the most important features of Python and how it can be used to solve real-world problems.
 
-## How to Install Package
-
-To install a specific version of a Python [package](https://docs.python.org/3/glossary.html#term-package), you can use the pip package manager. First, open your command prompt or terminal and execute the following command:
-
-```shell
-pip install package_name==desired_version
-```
-
-Replace `package_name` with the name of the package you want to install and `desired_version` with the specific version number you wish to install.
-
-Alternatively, if the package is available on GitHub, you can install it directly using pip by specifying the GitHub repository URL. Run the following command in your command prompt or terminal:
-
-```shell
-pip install git+https://github.com/username/repository.git
-```
-
-Replace `username/repository` with the GitHub username and repository name of the package you want to install.
-
-### Installing a specific version of the requests package
-
-```shell
-pip install requests==2.23.0
-```
-
 ## Python Package vs Module  
 
 In Python, a [module](https://docs.python.org/3/glossary.html#term-module) is a file that contains Python definitions and statements. A package is a collection of modules. A package can have sub-packages, which in turn can contain modules and sub-packages.
@@ -62,7 +38,31 @@ df = pd.read_csv('data.csv')
 # print first few rows of the dataframe
 print(df.head())
 ```  
-  
+
+## How to Install Package
+
+To install a specific version of a Python [package](https://docs.python.org/3/glossary.html#term-package), you can use the pip package manager. First, open your command prompt or terminal and execute the following command:
+
+```shell
+pip install package_name==desired_version
+```
+
+Replace `package_name` with the name of the package you want to install and `desired_version` with the specific version number you wish to install.
+
+Alternatively, if the package is available on GitHub, you can install it directly using pip by specifying the GitHub repository URL. Run the following command in your command prompt or terminal:
+
+```shell
+pip install git+https://github.com/username/repository.git
+```
+
+Replace `username/repository` with the GitHub username and repository name of the package you want to install.
+
+### Installing a specific version of the requests package
+
+```shell
+pip install requests==2.23.0
+```
+
 ## Update Package With pip  
 
 Pip is a package manager for Python language that helps in managing package installation and updates. Updating a package is essential to get the latest version, which includes new features, bug fixes, and security patches. Here are two ways to update a package in Python using pip.
