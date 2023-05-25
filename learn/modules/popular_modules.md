@@ -10,7 +10,7 @@ To install the [requests](https://pypi.org/project/requests/) module, you can si
 pip install requests
 ```
 
-Once you’ve installed the Requests module, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
+Once you’ve installed the Requests library, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
 
 ```python
 import requests
