@@ -211,7 +211,7 @@ By using `pkgutil` or  `pip` module in Python, you can easily generate a list of
   
 ## Error: no Module Named  
 
-The `No Module Named` error occurs when Python cannot find the module you are trying to `import`. This can happen when the module is not installed or is not in the same directory as your Python script.
+The `No Module Named` error occurs when Python **cannot find the module** you are trying to `import`. This can happen when the module is not installed or is not in the same directory as your Python script.
 
 ### Module not installed
 
@@ -253,9 +253,9 @@ By following these steps, you can easily fix the `No Module Named` error in Pyth
   
 ## How to Create a Module in Python  
 
-Python modules are code blocks that can be easily imported and used in other Python programs. They can save you time by avoiding repetitive coding. There are a couple of ways to create modules in Python:
+There are a couple of ways to **make a module in Python**:
 
-1. **Create a separate .py file:** You can create a separate .py file that contains the code you want to use as a module. Here's an example:
+1. **Create a separate .py file:** You can create a separate `.py` file that contains the code you want to use as a module. Here's an example:
 
 ```python
 ### my_module.py
@@ -310,4 +310,19 @@ my_module.greet("John")
 This will also output: `Hello, John!`.
 
 Creating Python modules can help you organize your code and make it more reusable.
+
+## What is pip in Python  
+
+Pip ([Python Package Index](https://pypi.org/project/pip/)) is a package manager for Python, that allows you to easily install, uninstall, and manage Python packages. It comes installed by default with Python, and you can use it to install packages from the Python Package Index or other repositories. You can also use pip to freeze the installed packages in a file called `requirements.txt`, which can be used to recreate the same environment in another system. To install packages listed in `requirements.txt`, you can use the command `python pip install requirements.txt` in your command line. Using `pip` can make it easier to manage your Python projects and dependencies.  
+  
+## How to Check Version of Module  
+
+To check the version of a module in Python, you can use the `pip show` command followed by the name of the module. For example, to check the version of the `numpy` module, you can use the following command:
+
+```shell
+pip show numpy
+```
+
+This will display information about the `numpy` module, including the version number. If the module is not installed, you will see an error message. Using this command helps you to ensure that the modules are running correctly and up-to-date. This way, you can prevent many errors or bugs that might occur in the program.  
+
 
