@@ -33,7 +33,7 @@ Here's a table summarizing various types of statements in Python:
 | Statement                | Description                                                       |
 |--------------------------|-------------------------------------------------------------------|
 | Multi-Line Statements    | Statements spanning multiple lines using line continuation or braces.|
-| Compound Statements      | Statements that contain other statements (e.g., [if](learn/statements/if.md), while, for).   |
+| Compound Statements      | Statements that contain other statements (e.g., [if](statements/if.md), while, for).   |
 | Simple Statements        | Basic standalone statements that perform a single action.          |
 | Expression Statements    | Statements that evaluate and produce a value.                      |
 | pass Statement           | A placeholder statement that does nothing.                        |
