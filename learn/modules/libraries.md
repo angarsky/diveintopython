@@ -128,7 +128,7 @@ By importing external libraries, you can extend the functionality of your Python
 
 Python has several GUI libraries to choose from. The most commonly used are:
 
-1. **Tkinter**: This is a standard Python library and comes pre-installed with Python. It is suitable for small to medium-sized GUI applications.
+1. **Tkinter**: This is a [standard Python library](https://docs.python.org/3/library/tkinter.html) and comes pre-installed with Python. It is suitable for small to medium-sized GUI applications.
 
 ```python
 import tkinter as tk
