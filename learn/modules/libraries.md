@@ -157,3 +157,26 @@ app.exec_()
 Other popular Python GUI libraries include WxPython, PyGTK, and PySide.
 
 When choosing a GUI library, it is important to consider factors such as ease of use, the complexity of the project, and the platform on which the application will be deployed.  
+
+## Print Libraries List  
+
+To print a list of Python libraries, you can use the built-in `pkg_resources` module, which provides a simple way to interact with the metadata of installed packages.
+
+### Get Libraries List with pkg_resources
+
+```python
+### Method 1
+
+import pkg_resources
+for package in pkg_resources.working_set:
+    print(package.project_name)
+```
+
+### Get Libraries List with subprocess
+
+```python
+import subprocess
+output = subprocess.check_output(['pip', 'freeze'])
+for line in output.splitlines():
+    print(line.decode('utf-8').split('==')[0])
+```
