@@ -1,1 +1,1 @@
-
+The official Python documentation contains information about [arrays](https://docs.python.org/3/library/array.html). However, in Python, the built-in data structure commonly used to represent arrays is the list, as mentioned earlier. The official documentation primarily focuses on lists rather than a separate array data type.
