@@ -15,7 +15,7 @@ To run a Python script in Ubuntu, follow these steps:
 
 1. Open the terminal by pressing `Ctrl + Alt + T`.
 2. Navigate to the directory where your Python script is located using the `cd` command.
-3. Type `python3 [filename].py` and press `Enter`. Replace `filename` with the name of your Python script file.
+3. Type `python3 filename.py` and press `Enter`. Replace `filename` with the name of your Python script file.
 
 Make sure that Python is installed on your Ubuntu system before running the script. You can install it by typing `sudo apt install python3` in the terminal.
 
