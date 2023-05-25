@@ -155,6 +155,8 @@ finally:
     # Block of code that is always executed regardless of whether an exception was thrown or not
 ```
 
+### Examples of Error Processing
+
 ```python
 try:
     x = 1/0
