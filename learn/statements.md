@@ -2,7 +2,7 @@ In Python, statements are instructions or commands that you write to perform spe
   
 ## What is a statement in Python?  
 
-A statement in Python is a line of code that performs a specific action. It is the smallest unit of code that can be executed by the Python interpreter. 
+A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a line of code that performs a specific action. It is the smallest unit of code that can be executed by the Python interpreter. 
 
 ### Assignment Statement
 
@@ -87,7 +87,7 @@ print("Hello world!")
 
 Simple statements are essential to programming in Python and are often used in combination with more complex statements to create robust programs and applications.
 
-To learn more about simple statements and how they can be used in Python, check out the official Python documentation or consult with a professional Python programmer.  
+To learn more about simple statements and how they can be used in Python, check out the [official Python documentation](https://www.python.org/) or consult with a professional Python programmer.  
   
 ## Expression statements  
 
