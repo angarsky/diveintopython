@@ -1,4 +1,4 @@
-Developers often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. 
+Developers often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. A module is a single file containing Python code, while a library is a collection of related modules that provide more extensive functionality and solve specific problem domains. Libraries are usually distributed and installed separately, while modules can be created and used within your own codebase.
   
 ## Python Libraries  
 
