@@ -141,7 +141,7 @@ label.pack()
 root.mainloop()
 ```
 
-2. **PyQt**: This is a cross-platform GUI library that comes with a comprehensive set of widgets. It is suitable for large-scale desktop applications.
+2. **PyQt**: This is a [cross-platform GUI library](https://pypi.org/project/PyQt5/) that comes with a comprehensive set of widgets. It is suitable for large-scale desktop applications.
 
 ```python
 from PyQt5.QtWidgets import QApplication, QLabel
