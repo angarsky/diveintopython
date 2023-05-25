@@ -17,13 +17,17 @@ To install Python on macOS using brew, follow these simple steps:
 
 1. Open the terminal on your macOS.
 2. Install brew if you haven't already by running the command:
-   ```shell
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-   ```
+
+```shell
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
 3. After installation, run the command:
-   ```shell
-   brew install python
-   ```
+
+```shell
+brew install python
+```
+
 4. The latest version of Python will be installed on your macOS.
 
 Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and python command not found mac. 
@@ -37,15 +41,15 @@ To add Python to the macOS path, follow these simple steps:
 2. Type `nano ~/.bash_profile` and press Enter.
 3. Add the following line to the file:
 
-   ```shell
-   export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/X.Y/bin"
-   ```
+```shell
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/X.Y/bin"
+```
 
-   Replace `X.Y` with the version of Python you want to add to the path. For example, if you want to add Python 3.9, the line should be:
+Replace `X.Y` with the version of Python you want to add to the path. For example, if you want to add Python 3.9, the line should be:
 
-   ```shell
-   export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
-   ```
+```shell
+export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
+```
 
 4. Save the file by pressing Ctrl+O, then press Enter.
 5. Close the file by pressing Ctrl+X.
