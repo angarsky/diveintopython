@@ -162,17 +162,15 @@ When choosing a GUI library, it is important to consider factors such as ease of
 
 To print a list of Python libraries, you can use the built-in `pkg_resources` module, which provides a simple way to interact with the metadata of installed packages.
 
-### Get Libraries List with pkg_resources
+### Get Libraries List with `pkg_resources`
 
 ```python
-### Method 1
-
 import pkg_resources
 for package in pkg_resources.working_set:
     print(package.project_name)
 ```
 
-### Get Libraries List with subprocess
+### Get Libraries List with `subprocess`
 
 ```python
 import subprocess
