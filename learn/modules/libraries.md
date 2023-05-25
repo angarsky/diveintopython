@@ -58,8 +58,9 @@ print(arr)
 
 Packages, on the other hand, are a collection of libraries. They are a way of grouping multiple libraries together for easy installation and usage. One of the most commonly used packages in Python is the SciPy package, which contains a collection of libraries for scientific computing.
 
+#### Example of Using scipy Package
+
 ```python
-# Example of using scipy package
 from scipy import constants
 
 print(constants.pi)
