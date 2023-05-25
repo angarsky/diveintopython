@@ -1,4 +1,4 @@
-Users often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. 
+Developers often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. 
   
 ## Python Libraries  
 
@@ -11,7 +11,6 @@ To `install` Python libraries, you need to use the python package manager `pip`.
 ```shell
 pip install <library_name>
 ```
-
 
 ### Pandas Library
 
@@ -70,13 +69,13 @@ In summary, Libraries are smaller sets of functionality that are dedicated to a 
   
 ## Python Library vs Module
 
-In Python, a module is a file containing Python code while a library is a collection of related modules. Libraries typically have a broad scope and provide functionality that is not available in built-in modules.
+In Python, a [module](https://docs.python.org/3/tutorial/modules.html) is a file containing Python code while a library is a collection of related modules. Libraries typically have a broad scope and provide functionality that is not available in built-in modules.
 
 Python libraries are collections of modules that offer a wide range of functionalities that are built on top of the built-in modules. They are used to simplify complex tasks by providing a set of pre-written functions that can be used in the development process. Some of the popular Python libraries are NumPy, Pandas, and Matplotlib.
 
 On the other hand, Python modules are separate files that contain Python code that can be imported into your code. They are used to separate the code into smaller and more manageable pieces. Some of the popular Python modules are os, sys, and datetime.
 
-Here is an example of using a module:
+### An Example of Using a Module:
 
 ```python
 import os
@@ -85,7 +84,7 @@ current_working_directory = os.getcwd()
 print(f"The current directory is: {current_working_directory}")
 ```
 
-Here is an example of using a library:
+### An Example of Using a Library:
 
 ```python
 import numpy as np
