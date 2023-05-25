@@ -2,7 +2,7 @@ With a rich set of libraries and frameworks, Python enables developers to write 
 
 ## How to Install Package
 
-To install a specific version of a Python package, you can use the pip package manager. First, open your command prompt or terminal and execute the following command:
+To install a specific version of a Python [package](https://docs.python.org/3/glossary.html#term-package), you can use the pip package manager. First, open your command prompt or terminal and execute the following command:
 
 ```shell
 pip install package_name==desired_version
