@@ -2,7 +2,7 @@ In Python, the `if` statement is used for conditional execution of code. It allo
   
 ## If Statement in Python  
 
-If statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an if statement is:
+If statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an `if` statement is:
 
 ```python
 if 1 > 2:
@@ -49,7 +49,7 @@ Use if statements in Python to control your program’s flow and make decisions 
   
 ## Ternary Statement  
 
-Ternary statements provide a concise way to write conditional statements in Python. It is an inline if statement that consists of three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false. 
+Ternary statements provide a concise way to write one line if statement. It is an inline if statement that consists of three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false. 
 
 ### Syntax
 
