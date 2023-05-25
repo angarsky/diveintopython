@@ -26,7 +26,7 @@ pip install requests==2.23.0
 
 ## Python Package vs Module  
 
-In Python, a module is a file that contains Python definitions and statements. A package is a collection of modules. A package can have sub-packages, which in turn can contain modules and sub-packages.
+In Python, a [module](https://docs.python.org/3/glossary.html#term-module) is a file that contains Python definitions and statements. A package is a collection of modules. A package can have sub-packages, which in turn can contain modules and sub-packages.
  
 Modules can be imported using the `import` statement:
 
