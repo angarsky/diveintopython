@@ -220,4 +220,240 @@ print(sliced_string)
 # ello
 ```
 
-In conclusion, the `:` operator is an essential tool in Python for working with sequences. Its flexible syntax makes slicing and dicing data a breeze!  
+The `:` operator is an essential tool in Python for working with sequences. Its flexible syntax makes slicing and dicing data a breeze! 
+
+## Boolean Operator in python  
+
+Boolean operators in Python are used to evaluate true or false conditions. These operators include `and`, `or` and `not`. In Python, boolean operations are created with the keywords `and`, `or` and `not`.
+
+```python
+x = 5
+y = 10
+z = 15
+
+if x < y and z > y:
+    print("Both conditions are true")
+```
+Output: `Both conditions are true`
+
+```python
+x = 5
+y = 10
+z = 15
+
+if x < y or z < y:
+    print("At least one condition is true")
+```
+Output: `At least one condition is true`
+
+Using boolean operators in Python provides flexibility in evaluating multiple conditions and making decisions. By using boolean operations, complex statements can be simplified and coded in fewer lines of code.  
+  
+## Operator Overloading  
+
+In Python, Operator Overloading enables us to define the behavior of operators in a custom manner for a specific class or object. This helps to enhance the clarity and readability of the code. Python supports operator overloading for most of the built-in operators such as +, -, /, //, %, &, |, ^, >>, <<, <, >, <=, >=, ==, !=, and more.
+
+Here are two code examples that demonstrate operator overloading in Python:
+
+```python
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def __str__(self):
+        return f"Rectangle({self.length}, {self.width})"
+
+    def __add__(self, other):
+        return Rectangle(self.length + other.length, self.width + other.width)
+
+r1 = Rectangle(4, 3)
+r2 = Rectangle(2, 5)
+print(r1 + r2)  ### Output
+
+```
+
+In the above code, we have defined a custom behavior for the '+' operator for the `Rectangle` class. When we add two `Rectangle` objects using '+' operator, it will create a new `Rectangle` object with the sum of the `length` and `width` of both rectangles.
+
+```python
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def __lt__(self, other):
+        return self.pages < other.pages
+
+b1 = Book("Python for Beginners", "John Smith", 300)
+b2 = Book("Advanced Python", "David Johnson", 500)
+print(b1 < b2)  ### Output
+
+```
+
+In this code, we have defined a custom behavior for the '<' operator for the `Book` class. It compares two books based on the number of `pages` they have. If the number of `pages` in the `self` object is less than the number of `pages` in the `other` object, it will `return` `True`.
+ 
+Overall, operator overloading in Python helps you to write more readable and expressive code. It makes your code look cleaner and easier to understand.  
+  
+## Math Operators in Python  
+
+Math Operators in Python
+
+Python provides a variety of math operators that can be used to perform mathematical operations in Python. These operators include addition, subtraction, multiplication, division, and modulo. 
+
+### Addition Operator
+
+The addition operator in Python is represented by a `+`. It is used to add two or more numbers, as shown below:
+
+```python
+# Adding two numbers
+num1 = 10
+num2 = 20
+result = num1 + num2 
+print(result)  # Output: 30
+
+# Adding more than two numbers
+result = num1 + num2 + 5
+print(result)  # Output: 35
+```
+
+### Division Operator
+
+The division operator in Python is represented by a `/`. It is used to divide one number by another number and returns a floating-point value as the result:
+
+```python
+# Division of two numbers
+num1 = 10
+num2 = 2
+result = num1 / num2 
+print(result)  # Output: 5.0  (float)
+
+# Division with remainder
+num1 = 7
+num2 = 3
+result = num1 / num2 
+remainder = num1 % num2
+print(result)  # Output: 2.3333333333333335 (float)
+print(remainder) # Output: 1 (int)
+```
+
+Python offers many other math operators such as subtraction, multiplication, modulo, and more. By using these operators, you can perform complex mathematical operations in your Python programs.  
+  
+## Bitwise Operators in Python  
+
+Bit operators are used in Python to perform bitwise operations on integers. These operations work by manipulating individual bits of binary representation of integers. This is useful in low-level programming, such as optimizing code or working with hardware.
+
+### How to use bit operators in Python
+
+There are six bitwise operators available in Python. These are:
+
+- `&` (bitwise AND): This operator returns a new integer whose bits are set to 1 only if both corresponding bits of the operands are 1.
+- `|` (bitwise OR): This operator returns a new integer whose bits are set to 1 if any corresponding bits of the operands are 1.
+- `^` (bitwise XOR): This operator returns a new integer whose bits are set to 1 if only one of the corresponding bits of the operands is 1.
+- `~` (bitwise NOT): This operator returns the complement of the operand, i.e., it flips all the bits of the operand.
+- `<<` (left shift): This operator shifts the bits of the operand to the left by the specified number of bits. The shifted bits are filled with 0.
+- `>>` (right shift): This operator shifts the bits of the operand to the right by the specified number of bits. The shifted bits are filled with 0 for positive numbers and 1 for negative numbers.
+
+Here are two examples of using bit operators in Python:
+
+```python
+x = 5      
+
+y = 3      
+
+z = x & y  ### in binary
+
+print(z)   ### Output
+
+```
+
+In this example, we use the bitwise AND operator to find the common bits between `x` and `y`. The result is `1`, which is the only bit that is set to 1 in both `x` and `y`.
+
+```python
+x = 7      
+
+y = 2     
+
+z = x << 1 ### in binary
+
+print(z)   ### Output 
+```
+
+In this example, we use the left shift operator to shift the bits of `x` to the left by one position. The result is `14`, which is `1110` in binary. The shifted bit on the left is filled with `0`.
+
+Overall, bit operations in Python can be useful for optimizing code and working with numbers at a low level.  
+  
+## Operator Order  
+
+In Python, just like in math, there is a specific order in which operators are evaluated. This is known as the order of operations. The operator precedence in Python is as follows:
+
+1. Parentheses
+2. Exponentiation
+3. Multiplication, Division, and Modulus (left to right)
+4. Addition and Subtraction (left to right)
+
+It is important to keep this order in mind while writing expressions in Python.
+
+```python
+
+result = 5 + 3 * 2 # first 3*2 will be evaluated, then 5 will be added to the result
+print(result) # output: 11
+
+result = (5 + 3) * 2 # first 5+3 will be evaluated in the parentheses, then the result will be multiplied by 2
+print(result) # output: 16
+```
+
+In the first example, the multiplication operation is evaluated before the addition operation, as per the order of operations. In the second example, the addition operation inside the parentheses is evaluated first, again as per the order of operations. Understanding the operator order in Python can help avoid errors and produce more accurate results.  
+  
+## Walrus Operator  
+
+The Walrus Operator is a new feature available in Python 3.8 and later versions. It provides a concise and efficient way of assigning values to variables in certain scenarios.
+
+### Understanding the Walrus Operator
+
+The Walrus Operator is denoted by the := symbol and is used to assign values to variables in a single expression. It is particularly useful in scenarios where repeated calls to functions or methods are resource-intensive, as it can help reduce these calls.
+
+### Walrus Operator with 'if' Statement
+
+```python
+
+if (a:=2+3) > 4:
+    print(f"{a} is greater than 4")
+else:
+    print(f"{a} is less than or equal to 4")
+```
+
+### Walrus Operator with 'while' Loop
+
+```python
+import random
+
+while (num:=random.randint(1,10)) != 3:
+     print(num)
+```
+
+In both examples above, the Walrus Operator is used to assign values to the variable in the same expression as the conditional statement. This makes the code more concise and easier to read.
+
+## Exponent Operator  
+
+The exponentiation operator in Python is represented by ** and is used to raise a number to a power. It is a binary operator that takes two operands; the first being the base and the second being the exponent. 
+
+Here are two code examples to demonstrate the usage of the exponentiation operator in Python:
+
+```python
+num = 2
+exp = 3
+result = num ** exp
+print(result)  
+
+```
+
+```python
+num = 2
+exp = 3
+num **= exp
+print(num)  
+
+```
+
+In both examples, the `**` operator is used to calculate the `result` of raising a number to a power. In the second example, the `result` is assigned to the variable `num` using the assignment operator `**=` for more concise code. By using the exponentiation operator, you can easily perform exponentiation operations in your Python code.  
+
