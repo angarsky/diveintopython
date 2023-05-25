@@ -152,7 +152,7 @@ By using the not equal operator in Python, you can easily compare two values and
 
 In Python, there are three types of division operators: the single forward slash `/` operator, the double forward slash `//` operator, and the percent `%` operator. 
 
-The `/` operator performs regular division and returns a float answer, while the `//` operator performs floor division and returns the integer value of the quotient. The `%` operator returns the remainder of the division. 
+The `/` operator performs regular division and returns a float answer, while the `//` operator performs floor division and returns the integer value of the quotient. The `%` operator returns the remainder of the division. The another name of the `%` is **modulo operator**
 
 ```python
 x = 10
@@ -167,7 +167,8 @@ Output: `3.3333333333333335`
 x = 10
 y = 3
 floor_division = x // y 
-remainder = x % y
+# Use modulo operator
+remainder = x % y 
 print(floor_division)
 print(remainder)
 
