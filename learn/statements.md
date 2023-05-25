@@ -111,5 +111,74 @@ print(result)
 
 In this example, we define a function `square` that takes one argument (`x`) and returns its square. We then call the function with the argument `5` and assign the result (`25`) to the variable `result`. Finally, we `print` the value of `result`.
 
-Overall, expression statements are an essential part of Python programming and allow for the execution of mathematical and computational operations.  
+Overall, expression statements are an essential part of Python programming and allow for the execution of mathematical and computational operations.
+
+## `assert` Statement  
+
+The `assert` statement in Python is used to test conditions and trigger an error if the condition is not met. It is often used for debugging and testing purposes.
+
+```python
+assert condition, message
+```
+
+Where `condition` is the expression that is tested, and `message` is the optional error message that is displayed when the condition is not met.
+
+```python
+x = 5
+assert x == 5, "x should be 5"
+```
+
+In this example, the `assert` statement tests whether `x` is equal to `5`. If the condition is met, the statement has no effect. If the condition is not met, an error will be raised with the message `x should be 5`.
+
+```python
+def divide(x, y):
+    assert y != 0, "Cannot divide by zero"
+    return x / y
+```
+
+In this example, the `assert` statement tests whether `y` is not equal to `0` before performing the division. If the condition is met, the division proceeds as normal. If the condition is not met, an error will be raised with the message `Cannot divide by zero`.
+
+Overall, `assert` statements are a useful tool in Python for debugging and testing, as they can help catch errors early on. They are also easily disabled in production code to avoid any unnecessary overhead.  
+  
+## `try` Statement  
+
+The `try` statement in Python is used to catch exceptions that may occur during the execution of a block of code. It ensures that even when an error occurs, the code does not stop running.
+
+```python
+try:
+    # Block of code to be attempted
+except ExceptionType:
+    # Block of code to be executed if the try block throws an exception
+else:
+    # Block of code to be executed if no exception was thrown in the try block
+finally:
+    # Block of code that is always executed regardless of whether an exception was thrown or not
+```
+
+```python
+try:
+    x = 1/0
+except ZeroDivisionError:
+    print("Division by zero is not allowed")
+
+# Output:
+
+# Division by zero is not allowed
+```
+
+```python
+try:
+    f = open("myfile.txt")
+    f.write("This is a test file")
+except IOError:
+    print("Error: File not found or could not be written")
+else:
+    print("File written successfully")
+finally:
+    f.close()
+# Output:
+
+# Error: File not found or could not be written
+```  
+  
 
