@@ -18,7 +18,7 @@ pip install git+https://github.com/username/repository.git
 
 Replace `username/repository` with the GitHub username and repository name of the package you want to install.
 
-### Installing a specific version of the requests package:
+### Installing a specific version of the requests package
 
 ```shell
 pip install requests==2.23.0
