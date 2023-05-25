@@ -4,7 +4,7 @@ In Python, statements are instructions or commands that you write to perform spe
 
 A statement in Python is a line of code that performs a specific action. It is the smallest unit of code that can be executed by the Python interpreter. 
 
-1. Assignment Statement
+### Assignment Statement
 
 ```python
 x = 10
@@ -12,7 +12,7 @@ x = 10
 
 In this example, the value 10 is assigned to the variable x using the assignment statement. 
 
-2. Conditional Statement
+### Conditional Statement
 
 ```python
 x = 3
