@@ -38,20 +38,18 @@ Here are some benefits of utilizing modules:
 
 - **Functionality Extension:** Modules provide additional functionality that would otherwise require writing a lot of code. Developers can use various pre-written modules to extend the functionality of their program.
 
-Here are two examples of using Python modules:
+### Using math Module to Calculate Square Root
 
 ```python
-### Using math module to calculate square root
-
 import math
 num = 16
 result = math.sqrt(num)
 print(f"Square root of {num} is: {result}")
 ```
 
-```python
-### Using os module to get current working directory
+### Using os Module to Get Current Working Directory
 
+```python
 import os
 cwd = os.getcwd()
 print(f"Current working directory is: {cwd}")
