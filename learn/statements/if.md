@@ -247,7 +247,7 @@ if y < 10:
 # y is less than 10
 ```
 
-### ANother example of Multiline `if` Statement
+### Another example of Multiline `if` Statement
 
 The syntax for using a multiline `if` statement is as follows:
 
