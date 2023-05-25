@@ -10,7 +10,7 @@ A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a l
 x = 10
 ```
 
-In this example, the value 10 is assigned to the variable x using the assignment statement. 
+In this example, the value `10` is assigned to the variable `x` using the assignment statement. 
 
 ### Conditional Statement
 
@@ -22,7 +22,7 @@ else:
     print("x is greater than or equal to 5")
 ```
 
-In this example, the if-else statement is used to check the value of x and `print` a corresponding message. 
+In this example, the if-else statement is used to check the value of `x` and `print` a corresponding message. 
 
 By using statements, programmers can instruct the computer to perform a variety of tasks, from simple arithmetic operations to complex decision-making processes. Proper use of statements is crucial to writing efficient and effective Python code.  
 
