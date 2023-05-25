@@ -218,8 +218,6 @@ The `No Module Named` error occurs when Python **cannot find the module** you ar
 If you are trying to `import` a module that is not installed, you will get the `No Module Named` error. To fix this, you need to install the module using `pip`. Here's an example:
 
 ```python
-import pandas
-
 ### This will generate a "No Module Named" error
 
 import foo
@@ -228,7 +226,7 @@ import foo
 
 # pip install foo
 
-##### Now import the module
+### Now import the module
 
 import foo
 ```
