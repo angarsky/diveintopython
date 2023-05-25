@@ -212,3 +212,67 @@ else:
 
 In this example, we are checking the `score` of a student. Depending on the `score`, it prints different messages. If the `score` is greater than or equal to 90, it prints `You have secured an A grade`. If the `score` is between 80 and 89, it prints `You have secured a B grade`. If the `score` is between 70 and 79, it prints `You have secured a C grade`. If the `score` is between 60 and 69, it prints `You have secured a D grade`. If the `score` is less than 60, it prints `You have failed the exam".  
 
+## Multiple `if` Statements  
+
+In Python, multiple `if` statements can be used to check multiple conditions in a single execution block. There are two ways of writing multiple `if` statements in Python - using multiple `if` statements and using a multiline `if` statement.
+
+### Example of Multiple `if` Statements
+
+The syntax for using multiple `if` statements is as follows:
+
+```python
+if condition1:
+    # do something
+if condition2:
+    # do something else
+if condition3:
+    # do something else again
+```
+
+Here, each `if` statement checks a separate condition and executes the corresponding block of code if the condition is true.
+
+```python
+x = 5
+y = 8
+
+if x > 0:
+    print("x is a positive number")
+
+if y < 10:
+    print("y is less than 10")
+
+# Output:
+# 
+# x is a positive number
+# y is less than 10
+```
+
+### ANother example of Multiline `if` Statement
+
+The syntax for using a multiline `if` statement is as follows:
+
+```python
+if condition1 and \
+   condition2 and \
+   condition3:
+   # do something
+```
+
+Here, the backslashes (`\`) indicate that the `if` statement is continued on the next line.
+
+```python
+x = 5
+y = 8
+
+if x > 0 and \
+   y < 10:
+    print("x is a positive number and y is less than 10")
+
+# Output:
+# 
+# x is a positive number and y is less than 10
+```
+
+Overall, both methods are useful for checking multiple conditions in Python, but multiline `if` statements can make the code more readable and easier to manage.  
+
+
