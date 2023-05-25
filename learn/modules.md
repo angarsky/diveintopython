@@ -313,7 +313,7 @@ Creating Python modules can help you organize your code and make it more reusabl
 
 ## What is pip in Python  
 
-Pip ([Python Package Index](https://pypi.org/project/pip/)) is a package manager for Python, that allows you to easily install, uninstall, and manage Python packages. It comes installed by default with Python, and you can use it to install packages from the Python Package Index or other repositories. You can also use pip to freeze the installed packages in a file called `requirements.txt`, which can be used to recreate the same environment in another system. To install packages listed in `requirements.txt`, you can use the command `python pip install requirements.txt` in your command line. Using `pip` can make it easier to manage your Python projects and dependencies.  
+Pip ([Python Package Index](https://pypi.org/project/pip/)) is a package manager for Python, that allows you to easily install, uninstall, and manage Python packages. It comes installed by default with Python, and you can use it to install packages from the https://pypi.org or other repositories. You can also use pip to freeze the installed packages in a file called `requirements.txt`, which can be used to recreate the same environment in another system. To install packages listed in `requirements.txt`, you can use the command `python pip install requirements.txt` in your command line. Using `pip` can make it easier to manage your Python projects and dependencies.  
   
 ## How to Check Version of Module  
 
