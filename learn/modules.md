@@ -21,7 +21,7 @@ def greet(name):
 
 import my_module
 
-my_module.greet("John") ### Output
+my_module.greet("John")
 
 ```
 
@@ -97,7 +97,7 @@ print(random_number)
 
 ### Math Module
 
-The [math](https://docs.python.org/3/library/math.html) module contains various mathematical operations and constants that are often used in Python programming. The `math` module provides functions for basic mathematical operations like trigonometric functions, logarithmic functions, and others. Here's an example code snippet that calculates the square root of a given number:
+The `math` module contains various mathematical operations and constants that are often used in Python programming. The `math` module provides functions for basic mathematical operations like trigonometric functions, logarithmic functions, and others. Here's an example code snippet that calculates the square root of a given number:
 
 ```python
 import math
@@ -107,7 +107,7 @@ square_root = math.sqrt(number)
 print(square_root)
 ```
 
-In conclusion, the [random](https://docs.python.org/3/library/random.html) and [math](https://docs.python.org/3/library/math.html) modules are just a few examples of the valuable built-in modules that Python offers. These modules can help you to save time and effort when performing common programming tasks.  
+In conclusion, the `random` and `math` modules are just a few examples of the valuable built-in modules that Python offers. These modules can help you to save time and effort when performing common programming tasks.  
 
 ## Naming Conventions for Packages and Modules
 
@@ -150,7 +150,7 @@ import math
 print(math.sqrt(64)) # Output: 8.0
 ```
 
-In this example, we import the [math](https://docs.python.org/3/library/math.html) module and use the `sqrt()` function to get the square root of 64.
+In this example, we import the `math` module and use the `sqrt()` function to get the square root of 64.
 
 ### Importing Specific Functions from a Module
 
@@ -207,7 +207,7 @@ for package in pip.get_installed_distributions():
 
 Make sure to have installed `pip` module in your environment like this: `python -m ensurepip --upgrade`
 
-By using [pkgutil](https://docs.python.org/3/library/pkgutil.html) or  `pip` module in Python, you can easily generate a list of modules available or installed in the Python environment. This can be helpful while building and testing the applications.  
+By using `pkgutil` or  `pip` module in Python, you can easily generate a list of modules available or installed in the Python environment. This can be helpful while building and testing the applications.  
   
 ## Error: no Module Named  
 
