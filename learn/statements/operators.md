@@ -233,8 +233,8 @@ z = 15
 
 if x < y and z > y:
     print("Both conditions are true")
+# Output: `Both conditions are true`
 ```
-Output: `Both conditions are true`
 
 ```python
 x = 5
@@ -243,8 +243,10 @@ z = 15
 
 if x < y or z < y:
     print("At least one condition is true")
+
+# Output: `At least one condition is true`
 ```
-Output: `At least one condition is true`
+
 
 Using boolean operators in Python provides flexibility in evaluating multiple conditions and making decisions. By using boolean operations, complex statements can be simplified and coded in fewer lines of code.  
   
@@ -437,7 +439,7 @@ In both examples above, the Walrus Operator is used to assign values to the vari
 
 ## Exponent Operator  
 
-The exponentiation operator in Python is represented by ** and is used to raise a number to a power. It is a binary operator that takes two operands; the first being the base and the second being the exponent. 
+The exponentiation operator in Python is represented by `**` and is used to raise a number to a power. It is a binary operator that takes two operands; the first being the base and the second being the exponent. 
 
 Here are two code examples to demonstrate the usage of the exponentiation operator in Python:
 
