@@ -47,11 +47,11 @@ else:
 
 Use if statements in Python to control your program’s flow and make decisions based on specific conditions.  
   
-## Ternary Statement  
+## Ternary Operator
 
 Ternary statements provide a concise way to write one line if statement. It is an inline if statement that consists of three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false. 
 
-### Syntax
+### Ternary `if` Statement Syntax
 
 ```python
 <expression_if_true> if <condition> else <expression_if_false>
