@@ -353,7 +353,7 @@ There are six bitwise operators available in Python. These are:
 - `<<` (left shift): This operator shifts the bits of the operand to the left by the specified number of bits. The shifted bits are filled with 0.
 - `>>` (right shift): This operator shifts the bits of the operand to the right by the specified number of bits. The shifted bits are filled with 0 for positive numbers and 1 for negative numbers.
 
-Here are two examples of using bit operators in Python:
+### `&` Operator
 
 ```python
 x = 5      
@@ -367,6 +367,8 @@ print(z)   ### Output
 ```
 
 In this example, we use the bitwise AND operator to find the common bits between `x` and `y`. The result is `1`, which is the only bit that is set to 1 in both `x` and `y`.
+
+### `<<` Operator
 
 ```python
 x = 7      
