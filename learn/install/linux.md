@@ -13,7 +13,7 @@ By following these steps, you have installed Python on Linux using the command l
   
 ## Add Python to Linux Path   
 
-To add Python to the Linux path, you can use the `export` command to define the `$PATH` environment variable. First, determine where Python is installed on Linux by running the command `which python`. Once you have the path, export it by running `export PATH=`$PATH:/path/to/python``. This will ensure that Python is accessible from anywhere in the terminal. Keywords: where is Python installed Linux, add Python to Linux path.  
+To add Python to the Linux path, you can use the `export` command to define the `$PATH` environment variable. First, determine where Python is installed on Linux by running the command `which python`. Once you have the path, export it by running `export PATH=$PATH:/path/to/python`. This will ensure that Python is accessible from anywhere in the terminal. Keywords: where is Python installed Linux, add Python to Linux path.  
   
 ## How to Run a Python Script in Linux  
 
