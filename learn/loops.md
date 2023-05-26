@@ -2,7 +2,7 @@ There are two types of loops in Python: `for` loops and `while` loops.
 
 The `for` loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The `while` loop is used for executing a block of code repeatedly as long as a certain condition is `true`. In the `while` loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.
 
-## `For` Loops in Python
+## `For` Loops Syntax in Python
 
 An example how to use the `for` for a looping through a list in Python:
 
@@ -55,7 +55,7 @@ In this example, the loop starts with count equal to `1`. The condition count `<
 
 In Python, `break` and `continue` are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
 
-See next example to learn how to break (and exit) a `for` loop in Python:
+### How to Break a `for` Loop Example
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -65,9 +65,11 @@ for num in numbers:
     print(num)
 ```
 
-In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `break` statement is executed, causing the loop to terminate prematurely. The output would be: `1 2`.
+In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `break` statement end `for` loop. The output would be: `1 2`.
 
-The `continue`, on the other hand, is used to skip over certain iterations of a loop based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the `for` loop in Python:
+### Use `continue` with `for` Loop 
+
+The `continue`, on the other hand, is used to **skip loop iteration** based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the `for` loop in Python:
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -78,3 +80,5 @@ for num in numbers:
 ```
 
 In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `continue` statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: `1 2 4 5`.
+
+
