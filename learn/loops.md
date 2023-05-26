@@ -69,7 +69,7 @@ In this example, the loop starts with count equal to `1`. The condition count `<
 
 In Python, `break` and `continue` are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
 
-### How to Break a `for` Loop Example
+### How to `break` a `for` Loop Example
 
 ```python
 numbers = [1, 2, 3, 4, 5]
