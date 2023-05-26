@@ -107,4 +107,85 @@ while my_list:
 
 In this example, the loop iterates over the values in `my_list`. When the value of `val` is equal to 3, the `continue` statement causes the loop to skip to the next iteration without printing the value.  
 
+## How to `break` `while` Loop  
+
+To break a `while` loop in Python, you can use the `break` statement. This statement is responsible for stopping the loop from iterating further, as soon as a certain condition gets fulfilled. The syntax for using `break` in a `while` loop is as follows:
+
+```python
+while <condition>:
+    ### statements to be executed inside the loop
+
+    if <break-condition>:
+        break
+```
+
+Here, `<condition>` is the loop's condition that initially decides whether the loop should be executed or not, and `<break-condition>` is an additional conditional statement that defines the condition(s) for stopping the loop. Once this condition is met, the loop is automatically terminated, and control is transferred to the next statement after the loop.
+
+```python
+n = 1
+while n <= 10:
+    print(n)
+    if n == 5:
+        break
+    n += 1
+print("Loop Ended")
+
+# Output:
+# 
+# 1
+# 2
+# 3
+# 4
+# 5
+# Loop Ended
+```
+
+In this example, the while loop will `print` numbers from 1 to 5, and then `stop` as soon as `n == 5`. The `break` statement is used to achieve this, and the output shows that the loop ended after completing the execution of the desired condition.
+
+```python
+while True:
+    value = input("Enter a number: ")
+    if value == "stop":
+        break
+    print(int(value) ** 2)
+print("Loop Ended")
+
+# Output:
+# Enter a number: 2
+# 4
+# Enter a number: 5
+# 25
+# Enter a number: 3
+# 9
+# Enter a number: stop
+# Loop Ended
+```
+
+In this example, the while loop will keep asking the user to enter a `number`, and compute its square if the `input` is a `number`. If the `input` is 'stop', the loop will break, and control will be transferred to the statement after the loop.
+
+This approach helps to avoid infinite loops in Python, and to control the flow of execution based on certain criteria.  
+  
+## Count in `for` Loop  
+
+To count in a `for` loop in Python, you can use a loop counter variable. This variable keeps track of the number of times the `for` loop has executed. Here are two examples:
+
+```python
+count = 0
+for i in range(10):
+    count += 1
+print("The loop executed", count, "times.")
+```
+
+In this example, we create a variable `count` and set its initial value to 0. We then use a `for` loop to iterate 10 times, incrementing the `count` variable by 1 each time. Finally, we `print` out the total number of times the loop executed.
+
+```python
+fruits = ['apple', 'banana', 'cherry']
+for i, fruit in enumerate(fruits, 1):
+    print(i, fruit)
+```
+
+In this example, we use the built-in `enumerate()` function to loop over a list of `fruits` and their indices. We start the index at 1 by passing the second argument to `enumerate()`. Inside the loop, we `print` out the index and the `fruit` name.
+
+By using a loop counter variable, you can easily keep track of the number of times a `for` loop has executed in Python. This can be useful for debugging, testing, and analyzing performance.  
+
 
