@@ -39,7 +39,7 @@ df = pd.read_csv('data.csv')
 print(df.head())
 ```  
 
-## How to Install Package
+## How to Install a Package
 
 To install a specific version of a Python [package](https://docs.python.org/3/glossary.html#term-package), you can use the pip package manager. First, open your command prompt or terminal and execute the following command:
 
@@ -57,13 +57,13 @@ pip install git+https://github.com/username/repository.git
 
 Replace `username/repository` with the GitHub username and repository name of the package you want to install.
 
-### Installing a specific version of the requests package
+### Installing a Specific Version of the `requests` Package
 
 ```shell
 pip install requests==2.23.0
 ```
 
-## Update Package With pip  
+## Update Package With `pip`
 
 Pip is a package manager for Python language that helps in managing package installation and updates. Updating a package is essential to get the latest version, which includes new features, bug fixes, and security patches. Here are two ways to update a package in Python using pip.
 
