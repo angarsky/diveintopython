@@ -41,7 +41,7 @@ for i in range(len(cars)):
 ```python
 def power(a, b):
     pow = 1
-    for i in range(0, b):
+    for i in range(b):
         pow *= a
     return pow
 
