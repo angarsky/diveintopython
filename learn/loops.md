@@ -36,6 +36,20 @@ for i in range(len(cars)):
     print(i, car[i])
 ```
 
+### Power Function in Python Using a Loop
+
+```python
+def power(a, b):
+    pow = 1
+    for i in range(0, b):
+        pow *= a
+    return pow
+
+a = 2
+b = 3
+print(power(a, b))
+```
+
 ## `While` Loops in Python
 
 Here is an example of the `while` loop that counts from `1` to `10`:
