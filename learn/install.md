@@ -7,9 +7,9 @@ To install Python on your computer, follow these steps:
 1. Visit the official Python website: https://www.python.org/
 2. Navigate to the `Downloads` section.
 3. Choose the version of Python you want to install. 
-4. Select the appropriate installer for your operating system. Python is available for [Windows](install/windows.md), [macOS](install/mac.md), and [Linux](install/linux.md).
-* For Windows: Download the executable installer (.exe file).
-* For macOS: Download the macOS installer (.pkg file).
+4. Select the appropriate installer for your operating system. Python is available for [Windows](/learn/install/windows.md), [macOS](/learn/install/mac.md), and [Linux](/learn/install/linux.md).
+* For Windows: Download the executable installer (`.exe` file).
+* For macOS: Download the macOS installer (`.pkg` file).
 * For Linux: Most Linux distributions come with Python pre-installed. However, if you need a specific version or want to install Python from scratch, you can download the source code and follow the instructions provided.
 5. Once the installer is downloaded, run the executable file.
 6. On Windows, you may need to check the option "Add Python to PATH" during the installation.
@@ -41,7 +41,7 @@ python script.py
 python3 script.py
 ```
 
-   >If you're using Python 2.x, the command would simply be `python` without the "3".
+> If you're using Python 2.x, the command would simply be `python` without the "3".
    
 4. Press the Enter key, and the Python script will execute. You will see the output or any error messages displayed in the command prompt or terminal.
 
