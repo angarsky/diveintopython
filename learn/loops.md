@@ -248,37 +248,6 @@ In the first example, the `for` loop is used to iterate through a range of numbe
 
 Using the `range` statement in Python is an efficient way to loop through a sequence of numbers and perform a task. It is a commonly used technique in programming and is easy to implement with the `for` loop in Python.  
 
-## Loop through Dictionary  
-
-In Python, looping through a dictionary can be done using a `for` loop. When looping through a dictionary, you can access both the `key` and the `value` of each item. Here are two examples of how to loop through a dictionary in Python:
-
-```python
-my_dict = {"apple": 3, "banana": 2, "orange": 5}
-
-for key in my_dict:
-    print(key, my_dict[key])
-
-# Output:
-# 
-# banana 2
-# orange 5
-```
-
-```python
-my_dict = {"apple": 3, "banana": 2, "orange": 5}
-
-for key, value in my_dict.items():
-    print(key, value)
-
-# Output:
-# 
-# apple 3
-# banana 2
-# orange 5
-```
-
-In both examples, we used a `for` loop to iterate over the keys in the dictionary. In Example 1, we accessed the `value` of each item using the `key,` while in Example 2, we used the `items()` method to access both the `key` and the `value` of each item.  
-  
 ## One Line `for` Loop  
 
 List comprehension makes it easier to write a for loop in one line in Python. Using a single line loop can help simplify the code and make it more concise.
