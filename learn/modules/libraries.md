@@ -1,16 +1,16 @@
 Developers often use the words 'Module' and 'Library' to refer to pre-written codes and functions that offer a vast range of features and functionalities that can be added to Python programs. A module is a single file containing Python code, while a library is a collection of related modules that provide more extensive functionality and solve specific problem domains. Libraries are usually distributed and installed separately, while modules can be created and used within your own codebase.
-  
-## Python Libraries  
 
-Python libraries are crucial components of Python programming and are available in the Python Package Index (PyPI), which currently has over 220,000 libraries.
-
-### Installing Python Libraries
+## How to Install Python Libraries
 
 To `install` Python libraries, you need to use the python package manager `pip`. Open the command prompt and enter the following command:
 
 ```shell
 pip install <library_name>
 ```
+
+## Examples of Libraries in Pyton
+
+Python libraries are crucial components of Python programming and are available in the Python Package Index (PyPI), which currently has over 220,000 libraries.
 
 ### Pandas Library
 
@@ -46,7 +46,7 @@ When it comes to Python programming, there are two terms that are often used int
 
 A library is a collection of modules that come together to provide a particular set of functions. It is usually used to perform specific tasks, such as mathematical computations, manipulating files, or connecting to a database. One of the most popular libraries in Python is the NumPy library, which provides support for large, multi-dimensional arrays and matrices.
 
-#### Example of Using numpy Library
+#### Example of Using the `numpy` Library
 
 ```python
 import numpy as np
@@ -59,7 +59,7 @@ print(arr)
 
 Packages, on the other hand, are a collection of libraries. They are a way of grouping multiple libraries together for easy installation and usage. One of the most commonly used packages in Python is the SciPy package, which contains a collection of libraries for scientific computing.
 
-#### Example of Using scipy Package
+#### Example of Using the `scipy` Package
 
 ```python
 from scipy import constants
@@ -77,7 +77,7 @@ Python libraries are collections of modules that offer a wide range of functiona
 
 On the other hand, Python modules are separate files that contain Python code that can be imported into your code. They are used to separate the code into smaller and more manageable pieces. Some of the popular Python modules are os, sys, and datetime.
 
-### An Example of Using a Module:
+### An Example of Using a Module
 
 ```python
 import os
@@ -86,7 +86,7 @@ current_working_directory = os.getcwd()
 print(f"The current directory is: {current_working_directory}")
 ```
 
-### An Example of Using a Library:
+### An Example of Using a Library
 
 ```python
 import numpy as np
@@ -99,7 +99,7 @@ print(my_array)
 
 In conclusion, both Python libraries and modules are important in Python programming. Modules are used to organize code, making it more manageable while libraries provide additional functionalities which make programming easier and more efficient.  
   
-## How to Import Library in Python  
+## How to Import a Library in Python  
 
 To import a library in Python, you need to use the `import` statement. This statement allows you to use the defined functions, classes, and variables from the external library in your program. The syntax for importing a library is:
 
@@ -125,7 +125,7 @@ In the first example, we imported the built-in [math](https://docs.python.org/3/
 
 By importing external libraries, you can extend the functionality of your Python code and save time by reusing the existing code.  
   
-## Python GUI Library  
+## Python GUI Libraries
 
 Python has several GUI libraries to choose from. The most commonly used are:
 
@@ -158,11 +158,11 @@ Other popular Python GUI libraries include WxPython, PyGTK, and PySide.
 
 When choosing a GUI library, it is important to consider factors such as ease of use, the complexity of the project, and the platform on which the application will be deployed.  
 
-## Print Libraries List  
+## How to Print a Libraries List  
 
 To print a list of Python libraries, you can use the built-in `pkg_resources` module, which provides a simple way to interact with the metadata of installed packages.
 
-### Get Libraries List with `pkg_resources`
+### Get Libraries List with the `pkg_resources`
 
 ```python
 import pkg_resources
@@ -170,7 +170,7 @@ for package in pkg_resources.working_set:
     print(package.project_name)
 ```
 
-### Get Libraries List with `subprocess`
+### Get Libraries List with the `subprocess`
 
 ```python
 import subprocess
