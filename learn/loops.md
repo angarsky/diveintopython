@@ -61,6 +61,7 @@ In Python, `break` and `continue` are reserved keywords used to modify the behav
 numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 3:
+        # end for loop
         break
     print(num)
 ```
@@ -141,6 +142,8 @@ print("Loop Ended")
 ```
 
 In this example, the while loop will `print` numbers from 1 to 5, and then `stop` as soon as `n == 5`. The `break` statement is used to achieve this, and the output shows that the loop ended after completing the execution of the desired condition.
+
+### How to Stop Infinite Loop in Python
 
 ```python
 while True:
@@ -231,7 +234,7 @@ In this example, we use two nested `while` loops to `print` a triangle of `numbe
 
 Overall, nested loops are an important concept in Python programming, and they can help you solve complex problems by iterating over nested data structures. By incorporating nested for and `while` loops into your code, you can write more efficient, readable and powerful programs.  
   
-## How to use `range` statement  
+## How to use `for` Loop `range` Statement  
 
 The `range` statement in Python is a built-in function that can be used to generate a sequence of numbers. It is often used in `for` loops to repeat a task a certain number of times. Here are two examples of how to use the `range` statement in Python:
 
@@ -245,6 +248,32 @@ for i in range(0, 10, 2):
 ```
 
 In the first example, the `for` loop is used to iterate through a range of numbers from 0 to 4. In the second example, the `range` function is called with three arguments: the starting number (0), the ending number (10), and the step (2). This will generate a sequence of numbers from 0 to 10 (not including 10) with a step of 2. The `for` loop then iterates through this sequence and prints each number.
+
+### Reverse `for` loop
+
+```python
+for i in range(5, 0, -1):
+    print(i)
+# Output:
+# 5
+# 4
+# 3
+# 2
+# 1
+```
+
+```python
+a = ['1', '2', '3', '4', '5']
+
+for i in reversed(a):
+    print(i)
+# Output:
+# 5
+# 4
+# 3
+# 2
+# 1
+```
 
 Using the `range` statement in Python is an efficient way to loop through a sequence of numbers and perform a task. It is a commonly used technique in programming and is easy to implement with the `for` loop in Python.  
 
