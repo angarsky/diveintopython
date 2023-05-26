@@ -69,7 +69,7 @@ In this example, the loop starts with count equal to `1`. The condition count `<
 
 In Python, `break` and `continue` are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
 
-### How to `break` a `for` Loop Example
+### Example: How to `break` a `for` Loop
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -82,7 +82,7 @@ for num in numbers:
 
 In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `break` statement end `for` loop. The output would be: `1 2`.
 
-### Use `continue` with `for` Loop 
+### How to Use `continue` with a `for` Loop 
 
 The `continue`, on the other hand, is used to **skip loop iteration** based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the `for` loop in Python:
 
@@ -96,7 +96,7 @@ for num in numbers:
 
 In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `continue` statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: `1 2 4 5`.
 
-## Use `continue` in `while` Loop   
+### Example of `continue` in a `while` Loop   
 
 Using `continue` in `while` loop in Python is a way to skip certain iterations of the loop and proceed to the next iteration. This can be useful when you need to skip over certain values or conditions in your loop.
 
@@ -122,7 +122,7 @@ while my_list:
 
 In this example, the loop iterates over the values in `my_list`. When the value of `val` is equal to 3, the `continue` statement causes the loop to skip to the next iteration without printing the value.  
 
-## How to `break` `while` Loop  
+## How to `break` a `while` Loop  
 
 To break a `while` loop in Python, you can use the `break` statement. This statement is responsible for stopping the loop from iterating further, as soon as a certain condition gets fulfilled. The syntax for using `break` in a `while` loop is as follows:
 
@@ -157,7 +157,7 @@ print("Loop Ended")
 
 In this example, the while loop will `print` numbers from 1 to 5, and then `stop` as soon as `n == 5`. The `break` statement is used to achieve this, and the output shows that the loop ended after completing the execution of the desired condition.
 
-### How to Stop Infinite Loop in Python
+### How to Stop an Infinite Loop in Python
 
 ```python
 while True:
@@ -182,7 +182,7 @@ In this example, the while loop will keep asking the user to enter a `number`, a
 
 This approach helps to avoid infinite loops in Python, and to control the flow of execution based on certain criteria.  
   
-## Count in `for` Loop  
+## A Count in a `for` Loop  
 
 To count in a `for` loop in Python, you can use a loop counter variable. This variable keeps track of the number of times the `for` loop has executed. Here are two examples:
 
@@ -213,7 +213,7 @@ Nested loops are loops that are placed inside another loop. In Python, nested lo
 
 The most common type of nested loop in Python is the nested for loop. This loop is used to iterate over elements in a nested structure using two or more `for` statements.
 
-#### Simple Example of Nested `for` Loops in Python:
+#### Simple Example of Nested `for` Loops
 
 ```python
 numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -229,7 +229,7 @@ In this example, we have a 3 by 3 matrix that is represented by a multi-dimensio
 
 Nested `while` loops in Python use one or more inner loops that repeat the same process multiple times. They are used to iterate over elements of a nested data structure until a certain condition is met.
 
-#### Example of Nested `while` Loops in Python:
+#### Example of Nested `while` Loops
 
 ```python
 x = 1
@@ -248,7 +248,7 @@ In this example, we use two nested `while` loops to `print` a triangle of `numbe
 
 Overall, nested loops are an important concept in Python programming, and they can help you solve complex problems by iterating over nested data structures. By incorporating nested for and `while` loops into your code, you can write more efficient, readable and powerful programs.  
   
-## How to use `for` Loop `range` Statement  
+## How to Use a `for` Loop with a `range` Statement  
 
 The `range` statement in Python is a built-in function that can be used to generate a sequence of numbers. It is often used in `for` loops to repeat a task a certain number of times. Here are two examples of how to use the `range` statement in Python:
 
@@ -263,7 +263,7 @@ for i in range(0, 10, 2):
 
 In the first example, the `for` loop is used to iterate through a range of numbers from 0 to 4. In the second example, the `range` function is called with three arguments: the starting number (0), the ending number (10), and the step (2). This will generate a sequence of numbers from 0 to 10 (not including 10) with a step of 2. The `for` loop then iterates through this sequence and prints each number.
 
-### Reverse `for` loop
+### A Reverse `for` Loop
 
 ```python
 for i in range(5, 0, -1):
