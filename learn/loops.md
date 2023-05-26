@@ -188,4 +188,65 @@ In this example, we use the built-in `enumerate()` function to loop over a list 
 
 By using a loop counter variable, you can easily keep track of the number of times a `for` loop has executed in Python. This can be useful for debugging, testing, and analyzing performance.  
 
+## Nested Loops  
+
+Nested loops are loops that are placed inside another loop. In Python, nested loops are primarily used for iterating over arrays, matrices, and multi-dimensional lists. They are useful for solving problems that involve repeating a task for each element of a nested structure.
+
+### Nested For Loops in Python
+
+The most common type of nested loop in Python is the nested for loop. This loop is used to iterate over elements in a nested structure using two or more `for` statements.
+
+#### Simple Example of Nested `for` Loops in Python:
+
+```python
+numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+for row in numbers:
+    for num in row:
+        print(num)
+```
+
+In this example, we have a 3 by 3 matrix that is represented by a multi-dimensional list. The nested for loop iterates over the elements of the matrix and prints each number on a new line.
+
+### Nested `While` Loops in Python
+
+Nested `while` loops in Python use one or more inner loops that repeat the same process multiple times. They are used to iterate over elements of a nested data structure until a certain condition is met.
+
+#### Example of Nested `while` Loops in Python:
+
+```python
+x = 1
+y = 1
+
+while x <= 5:
+    y = 1
+    while y <= x:
+        print(y, end="")
+        y += 1
+    print()
+    x += 1
+```
+
+In this example, we use two nested `while` loops to `print` a triangle of `numbers`. The outer `while` loop iterates over each `row` of the triangle, `while` the inner `while` loop iterates over each number in that row.
+
+Overall, nested loops are an important concept in Python programming, and they can help you solve complex problems by iterating over nested data structures. By incorporating nested for and `while` loops into your code, you can write more efficient, readable and powerful programs.  
+  
+## How to use `range` statement  
+
+The `range` statement in Python is a built-in function that can be used to generate a sequence of numbers. It is often used in `for` loops to repeat a task a certain number of times. Here are two examples of how to use the `range` statement in Python:
+
+```python
+for i in range(5):
+    print(i)
+
+
+for i in range(0, 10, 2):
+    print(i)
+### Output
+```
+
+In the first example, the `for` loop is used to iterate through a range of numbers from 0 to 4. In the second example, the `range` function is called with three arguments: the starting number (0), the ending number (10), and the step (2). This will generate a sequence of numbers from 0 to 10 (not including 10) with a step of 2. The `for` loop then iterates through this sequence and prints each number.
+
+Using the `range` statement in Python is an efficient way to loop through a sequence of numbers and perform a task. It is a commonly used technique in programming and is easy to implement with the `for` loop in Python.  
+
 
