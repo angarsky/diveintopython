@@ -1,6 +1,6 @@
 Modules, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.  
   
-## Requests Module  
+## The Requests Module  
 
 The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests` when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
 
@@ -33,11 +33,11 @@ print(response.text)
 
 In this example, we use the `requests.post` method to send a POST request to the website specified in the parameter. We also pass in some `data` as a dictionary, which will be sent as form `data` with the request. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.  
   
-## Math Module  
+## The Math Module  
 
 Python's math module provides a set of predefined mathematical functions. It consists of various mathematical operations like trigonometric, logarithmic, and other mathematical functions. The math module in Python can be used by importing it into the program using the `import` keyword.
 
-### How to import math module in Python
+### How to Import the Math Module in Python
 
 ```python
 import math
@@ -72,7 +72,7 @@ print(f"Factorial of {number} is {factorial}")
 
 In this way, the math module in Python can be used to perform mathematical operations by importing the module and referring to its functions.  
   
-## Random Module  
+## The Random Module  
 
 The [random](https://docs.python.org/3/library/random.html) module in Python is used to generate pseudo-random numbers. 
 
@@ -103,7 +103,7 @@ print(random_option)
 
 In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors".  
   
-## Logging Module  
+## The Logging Module  
 
 The [logging](https://docs.python.org/3/library/logging.html) module in Python is a built-in module that enables developers to record messages in a program. It is useful for debugging, performance measurement, and error reporting. The `logging` module in Python provides different levels of logging, including `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`.
 
@@ -150,7 +150,7 @@ In the above code example, we have created an instance of a `logger` using the `
 
 In summary, the `logging` module in Python is a powerful tool for debugging and monitoring programs. With its various levels of `logging` and flexible configuration options, it enables developers to record messages of different levels and store them in various formats, like files or standard output.  
   
-## Python Graphics Module  
+## Graphics Modules in Python
 
 Python Graphics library provides a simple way to create and manipulate graphics in Python. It can be used for creating both two-dimensional and three-dimensional graphics. Some of the popular Python Graphics libraries are Matplotlib, Seaborn, Plotly, and Bokeh.
 
