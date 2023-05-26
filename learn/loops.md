@@ -81,4 +81,30 @@ for num in numbers:
 
 In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `continue` statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: `1 2 4 5`.
 
+## Use `continue` in `while` Loop   
+
+Using `continue` in `while` loop in Python is a way to skip certain iterations of the loop and proceed to the next iteration. This can be useful when you need to skip over certain values or conditions in your loop.
+
+```python
+i = 0
+while i < 10:
+    i += 1
+    if i % 2 == 0:
+        continue
+    print(i)
+```
+
+In this example, the loop iterates over the numbers 1 through 10. However, when the value of `i` is even, the `continue` statement is triggered, causing the loop to skip to the next iteration without executing any more code in the current iteration.
+
+```python
+my_list = [1, 2, 3, 4, 5]
+while my_list:
+    val = my_list.pop()
+    if val == 3:
+        continue
+    print(val)
+```
+
+In this example, the loop iterates over the values in `my_list`. When the value of `val` is equal to 3, the `continue` statement causes the loop to skip to the next iteration without printing the value.  
+
 
