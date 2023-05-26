@@ -242,11 +242,65 @@ for i in range(5):
 
 for i in range(0, 10, 2):
     print(i)
-### Output
 ```
 
 In the first example, the `for` loop is used to iterate through a range of numbers from 0 to 4. In the second example, the `range` function is called with three arguments: the starting number (0), the ending number (10), and the step (2). This will generate a sequence of numbers from 0 to 10 (not including 10) with a step of 2. The `for` loop then iterates through this sequence and prints each number.
 
 Using the `range` statement in Python is an efficient way to loop through a sequence of numbers and perform a task. It is a commonly used technique in programming and is easy to implement with the `for` loop in Python.  
 
+## Loop through Dictionary  
 
+In Python, looping through a dictionary can be done using a `for` loop. When looping through a dictionary, you can access both the `key` and the `value` of each item. Here are two examples of how to loop through a dictionary in Python:
+
+```python
+my_dict = {"apple": 3, "banana": 2, "orange": 5}
+
+for key in my_dict:
+    print(key, my_dict[key])
+
+# Output:
+# 
+# banana 2
+# orange 5
+```
+
+```python
+my_dict = {"apple": 3, "banana": 2, "orange": 5}
+
+for key, value in my_dict.items():
+    print(key, value)
+
+# Output:
+# 
+# apple 3
+# banana 2
+# orange 5
+```
+
+In both examples, we used a `for` loop to iterate over the keys in the dictionary. In Example 1, we accessed the `value` of each item using the `key,` while in Example 2, we used the `items()` method to access both the `key` and the `value` of each item.  
+  
+## One Line `for` Loop  
+
+List comprehension makes it easier to write a for loop in one line in Python. Using a single line loop can help simplify the code and make it more concise.
+
+```python
+squares = [x**2 for x in range(10)]
+print(squares)
+```
+Output:
+```python
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+
+```python
+even_numbers = [num for num in range(20) if num % 2 == 0]
+print(even_numbers)
+
+# Output:
+# 
+# [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+```
+
+In both examples, the `for` loop is condensed into a single line using list comprehension. The loop iterates over a `range` of values and applies a condition to the given `range`. This results in a list with the desired output.
+
+Using a one line for loop in Python is a powerful tool that can optimize your code and make it more efficient.  
