@@ -1,4 +1,4 @@
-If you're new to programming or looking to dive into the world of Python, you'll need to install Python on your computer to get started. Installing Python is a straightforward process that enables you to unleash the power of this versatile programming language. In this guide, we'll walk you through the steps to install Python on different operating systems, including Windows, macOS, and Linux. Whether you're interested in developing applications, data analysis, or exploring artificial intelligence, this step-by-step guide will help you get Python up and running in no time. So let's embark on this journey together and unlock the endless possibilities that Python has to offer!
+If you're new to programming or looking to dive into the world of Python, you'll need to install Python on your computer to get started.
 
 ## How to install Python?
 
