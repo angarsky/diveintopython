@@ -460,7 +460,7 @@ array.append('grape')
 print(array) # Output: ['apple', 'banana', 'orange', 'grape']
 ```
 
-The `append()` method adds the specified element to the end of the list. It modifies the original list in place and does not return a new list.
+The `append()` method allows to insert the specified element to the end of the array (or list). It modifies the original list in place and does not return a new list.
 
 You can append elements of any data type to a Python list, including strings, numbers, or even other lists.
 
@@ -1030,3 +1030,31 @@ print(result_list)  # Output: [1, 4, 9, 16, 25]
 In this case, the lambda function lambda `x: x ** 2` is used to square each element of the array.
 
 The `map()` function is a useful tool for applying a function to every element of an array or iterable in Python. It simplifies the process of transforming the elements and provides a concise way to perform element-wise operations.
+
+## Max Element of an Array
+
+To find the maximum value in an array in Python, you can use the built-in `max()` function or the numpy library's `max()` function. Here's how you can use both approaches:
+
+Using the built-in max() function:
+
+```python
+my_array = [5, 2, 9, 1, 7]
+
+# Find the maximum value in the array using the max() function
+max_value = max(my_array)
+
+print(max_value)  # Output: 9
+```
+
+Using the numpy library:
+
+```python
+import numpy as np
+
+my_array = np.array([5, 2, 9, 1, 7])
+
+# Find the maximum value in the array using the max() function from numpy
+max_value = np.max(my_array)
+
+print(max_value)  # Output: 9
+```
