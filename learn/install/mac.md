@@ -55,7 +55,7 @@ export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
 5. Close the file by pressing Ctrl+X.
 6. Restart the Terminal app for the changes to take effect.
 
-By adding Python to your macOS path, you can easily access it from any directory in the Terminal. This can be helpful for running Python scripts and managing Python packages. Make sure to include the relevant keywords like `adding python to path mac` for better SEO optimisation.  
+By adding Python to your macOS path, you can easily access it from any directory in the Terminal. This can be helpful for running Python scripts and managing Python packages.  
   
 ## How to Run a Python Script on Mac  
 
