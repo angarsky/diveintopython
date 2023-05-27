@@ -30,7 +30,7 @@ brew install python
 
 4. The latest version of Python will be installed on your macOS.
 
-Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and will prevent the error: `python command not found` in mac OS. 
+Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and will prevent the error: `python command not found` in macOS. 
 
   
 ## Add Python to MacOS Path   
