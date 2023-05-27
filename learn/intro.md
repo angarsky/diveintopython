@@ -32,7 +32,7 @@ Python programming language is commonly used to work with dates and datetime obj
   
 ## Classes and objects  
 
-In the world of Python programming, understanding classes and objects is essential to creating efficient and effective code. Classes allow you to define a set of attributes and methods that can be used to create objects, which are instances of those classes. By using keywords such as `class,` `def,` and `self,` you can create complex and powerful programs that make use of objects and their properties. In [this article](/learn/classes.md), we'll explore the basics of classes and objects in Python, and how they can be used to simplify and streamline your coding workflow.  
+In the world of Python programming, understanding classes and objects is essential to creating efficient and effective code. Classes allow you to define a set of attributes and methods that can be used to create objects, which are instances of those classes. By using keywords such as `class`, `def`, and `self`, you can create complex and powerful programs that make use of objects and their properties. In [this article](/learn/classes.md), we'll explore the basics of classes and objects in Python, and how they can be used to simplify and streamline your coding workflow.  
   
 ## Modules, Packages, Libraries  
 
