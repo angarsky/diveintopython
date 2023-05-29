@@ -424,7 +424,7 @@ print(unique_array)  # Output: [1 2 3 4 5]
 
 To find the maximum value in an array in Python, you can use the built-in `max()` function or the numpy library's `max()` function. Here's how you can use both approaches:
 
-Using the built-in max() function:
+Using the built-in `max()` function:
 
 ```python
 my_array = [5, 2, 9, 1, 7]
