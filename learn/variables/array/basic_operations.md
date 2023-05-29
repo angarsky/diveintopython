@@ -1,0 +1,1 @@
+Arrays allow us to store and manipulate data efficiently, enabling us to perform a wide range of tasks. In this article, we will explore the essential basic operations associated with arrays in Python.
