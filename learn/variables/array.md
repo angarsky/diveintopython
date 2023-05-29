@@ -333,7 +333,7 @@ You can also use indexing to modify the value of an element or to extract a subs
 
 ## How to Reverse an Array in Python
 
-You can reverse an array (list) in Python using various methods. Here are a few common approaches for reversing an array in Python:
+You can reverse or flip an array (list) in Python using various methods. Here are a few common approaches for reversing an array in Python:
 
 1. Using the reverse() method:
 
@@ -1949,27 +1949,29 @@ print(my_array)  # Output: [4, 3]
 
 In Python, you can create an array or list of numbers using the `range()` function. The `range()` function generates a sequence of numbers within a specified range.
 
-Here are a few examples of using the range() function to create arrays or lists of numbers:
+Here are a few examples of using the `range()` function to create arrays or lists of numbers:
 
-Creating a range of numbers as a list:
-python
-Copy code
+1. Creating a range of numbers as a list:
+
+```python
 my_list = list(range(5))
 print(my_list)
 # Output: [0, 1, 2, 3, 4]
-In this example, range(5) generates a sequence of numbers from 0 to 4 (exclusive), and list(range(5)) converts the sequence into a list.
-Creating a range of numbers with a specified start and end:
-python
-Copy code
+```
+
+2. Creating a range of numbers with a specified start and end:
+```python
 my_list = list(range(2, 10))
 print(my_list)
 # Output: [2, 3, 4, 5, 6, 7, 8, 9]
-In this example, range(2, 10) generates a sequence of numbers starting from 2 and ending at 9 (exclusive).
-Creating a range of numbers with a specified start, end, and step size:
-python
-Copy code
+```
+
+3. Creating a range of numbers with a specified start, end, and step size:
+
+```python
 my_list = list(range(1, 11, 2))
 print(my_list)
 # Output: [1, 3, 5, 7, 9]
-In this example, range(1, 11, 2) generates a sequence of odd numbers from 1 to 10, incrementing by 2.
-The range() function can be used to create arrays or lists of numbers based on different start, end, and step size values. By converting the range object to a list using the list() function, you can obtain a list representation of the range.
+```
+
+The `range()` function can be used to create arrays or lists of numbers based on different start, end, and step size values. By converting the range object to a list using the `list()` function, you can obtain a list representation of the range.
