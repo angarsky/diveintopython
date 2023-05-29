@@ -24,6 +24,24 @@ print(my_array)  # Output: [1, 2, 3, 4, 5]
 
 In this case, `my_array.sort()` sorts the elements of `my_array` in place, modifying the array directly. The sorted array is then printed to the console.
 
+## How To Append an Element to an Array
+
+Appending an element to an existing array in Python can be done using the `append()` method provided by the list data type. Here is an example of how to add an element to an array (or list):
+
+```python
+array = ['apple', 'banana', 'orange']
+array.append('grape')
+print(array) # Output: ['apple', 'banana', 'orange', 'grape']
+```
+
+The `append()` method allows to insert the specified element to the end of the array (or list). It modifies the original list in place and does not return a new list.
+
+You can append elements of any data type to a Python list, including strings, numbers, or even other lists.
+
+As you see, the `append()` method allows you easily expand the array (or list) by adding a new elements.
+
+> Note: The `append()` method can only add one element at a time. If you want to add multiple elements to the array, you can use the `extend()` method or concatenate lists using the `+` operator.
+
 ## `getsizeof()` Function
 
 In Python, there is no built-in function called `sizeof()` to directly get the size of an array or list. However, you can use the `sys` module's `getsizeof()` function to get an estimate of the memory size occupied by an object.
