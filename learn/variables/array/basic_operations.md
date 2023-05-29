@@ -736,7 +736,7 @@ if 3 in my_array:
 
 ## How to Compare Arrays
 
-To compare arrays in Python, you can use various methods depending on the type of arrays or data structures you are working with. Here are a few approaches:
+Let's revew how to compare arrays in Python. Here are a few approaches:t
 
 1. NumPy:
 
