@@ -1597,4 +1597,96 @@ result = [a == b for a, b in zip(array1, array2)]
 print(result)
 ```
 
-## python array pop 1012
+## `pop()` Method for Array
+
+In Python, you can use the `pop()` method to remove and return an element from an array or list. The `pop()` method removes the last element by default, but you can also specify the index of the element you want to remove. Here are a few examples:
+
+1. List:
+
+If you are working with a list, you can use the `pop()` method to remove and return the last element. Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+
+popped_element = my_list.pop()
+
+print(popped_element)  # Output: 5
+print(my_list)         # Output: [1, 2, 3, 4]
+```
+
+You can also pass an index to the `pop()` method to remove and return an element at a specific position. For example:
+
+```python
+my_list = [1, 2, 3, 4, 5]
+
+popped_element = my_list.pop(2)
+
+print(popped_element)  # Output: 3
+print(my_list)         # Output: [1, 2, 4, 5]
+```
+
+2. Array module:
+
+If you are using the built-in `array` module, you can use the `pop()` method to remove and return the last element. Here's an example:
+
+```python
+import array as arr
+
+my_array = arr.array('i', [1, 2, 3, 4, 5])
+
+popped_element = my_array.pop()
+
+print(popped_element)  # Output: 5
+print(my_array)        # Output: array('i', [1, 2, 3, 4])
+```
+
+> Note: The `pop() method is available only for lists and not for NumPy arrays.
+
+## How To Split an Array into Chunks
+
+To split an array into chunks in Python, you can use various methods depending on the type of array or data structure you are working with. Here are a few approaches:
+
+1. List comprehension:
+
+If you have a list, you can use list comprehension to split it into chunks of a specific size. Here's an example:
+
+```python
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+chunk_size = 3
+
+chunks = [my_list[i:i+chunk_size] for i in range(0, len(my_list), chunk_size)]
+
+print(chunks)
+```
+
+2. NumPy:
+
+If you are working with NumPy arrays, you can use the `array_split()` function to split the array into equal-sized chunks. Here's an example:
+
+```python
+import numpy as np
+
+my_array = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+chunk_size = 3
+
+chunks = np.array_split(my_array, len(my_array) // chunk_size)
+
+print(chunks)
+```
+
+3. Array module:
+
+If you are using the built-in `array` module, you can use a loop to split the array into chunks. Here's an example:
+
+```python
+import array as arr
+
+my_array = arr.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+chunk_size = 3
+
+chunks = [my_array[i:i+chunk_size] for i in range(0, len(my_array), chunk_size)]
+
+print(chunks)
+```
+
+## 
