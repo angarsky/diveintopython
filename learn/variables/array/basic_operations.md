@@ -39,13 +39,14 @@ size = sys.getsizeof(my_list)
 print(size)  # Output: 104 (the size in bytes)
 ```
 
-In the example above, we import the `sys` module and use the `getsizeof()` function to get the size of the `my_list` object in bytes. Note that the value returned by `getsizeof()` includes the overhead of the list object itself and may not provide an exact representation of the memory occupied by the array/list elements.
+In the example above, we import the `sys` module and use the `getsizeof()` function to get the size of the `my_list` object in bytes. 
+> Note: The value returned by `getsizeof()` includes the overhead of the list object itself and may not provide an exact representation of the memory occupied by the array/list elements.
 
 ## How to Reverse an Array in Python
 
 You can reverse or flip an array (list) in Python using various methods. Here are a few common approaches for reversing an array in Python:
 
-1. Using the reverse() method:
+1. Using the `reverse()` method:
 
 ```python
 my_list = [10, 20, 30, 40, 50]
@@ -61,7 +62,7 @@ reversed_list = my_list[::-1]
 print(reversed_list)  # Output: [50, 40, 30, 20, 10]
 ```
 
-3. Using the reversed() function:
+3. Using the `reversed()` function:
 
 ```python
 my_list = [10, 20, 30, 40, 50]
