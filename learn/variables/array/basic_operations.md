@@ -882,7 +882,7 @@ print(chunks)
 
 ## How to Extend an Array in Python
 
-To extend an array in Python, you can use various methods depending on the type of array or data structure you are working with. Here are a few approaches how to merge or combine arrays in Python:
+There are various methods which allow us to extend an array in Python. Here are a few approaches how to merge or combine arrays in Python:
 
 1. List:
 
