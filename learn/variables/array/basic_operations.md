@@ -270,7 +270,7 @@ my_array_copy = np.copy(my_array)
 
 ## The Sum of Array Calculation
 
-To calculate the sum of an array elements in Python, you can use different methods depending on the type of array you are working with. Here are some common approaches:
+You can use different methods to calculate the sum of an array elements in Python. Here are some common approaches:
 
 1. List:
 
