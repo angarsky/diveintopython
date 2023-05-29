@@ -1,5 +1,38 @@
 Functions in Python play a crucial role in programming as they serve as reusable blocks of code that can perform specific tasks. Once defined, you can call a function in Python by using its name and passing arguments (optional) in parentheses. You can lets you create multiple functions, each with their specific functionality, making it easier to organize and structure your code. Function typing and function documentation are essential elements that can make your code more readable and easier to debug, especially when working with larger projects. From this article we will learn what is a function in Python and how to call a function.
-  
+
+## Functional Programming  
+
+Python supports multiple programming paradigms, one of which is functional programming. Functional programming is a programming paradigm that focuses on the use of pure functions, avoiding shared state, mutable data, and side-effects. In Python, this paradigm is typically used through the use of higher-order functions and `lambda` expressions.
+
+### Higher-order function example
+
+```python
+def apply_twice(f):
+    def wrapper(x):
+        return f(f(x))
+    return wrapper
+ 
+def add_two(x):
+    return x + 2
+ 
+### Using apply_twice to add two to a number four times
+
+applied_four_times = apply_twice(apply_twice(add_two))
+result = applied_four_times(10) ### Result will be 18
+
+```
+
+### Lambda Expression Example
+
+```python
+numbers = [1, 2, 3, 4, 5]
+squared_numbers = list(map(lambda x: x**2, numbers))
+### squared_numbers will be [1, 4, 9, 16, 25]
+
+```
+
+In summary, Python supports functional programming paradigms through higher-order functions and `lambda` expressions. 
+
 ## How to write a function in python
 
 In Python, a function is defined using the `def` keyword, followed by the name of the function, and a set of parentheses that may contain parameters. The code block that performs the task is indented under the `def` statement.
