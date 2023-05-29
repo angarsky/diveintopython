@@ -498,7 +498,7 @@ Output:
 
 ## How to Flatten an Array
 
-To flatten an array in Python, you can use various methods depending on the type of array you are working with. Here are a few approaches for different types of arrays:
+You can use various methods to flatten an array in Python. Here are a few approaches for different types of arrays:
 
 1. Flattening a nested list:
 
