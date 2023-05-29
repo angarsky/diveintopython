@@ -357,7 +357,7 @@ print(filtered_array)  # Output: [ 6  7  8  9 10]
 
 ## How to Join an Array in Python
 
-To join an array in Python, you can use different methods depending on the type of array you are working with. Here are a few common approaches:
+You can join an array in Python using several different methods. Here are a few common approaches:
 
 1. Joining List Elements:
 
