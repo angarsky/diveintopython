@@ -262,23 +262,6 @@ In this example, `len(my_array)` counts array elements and returns the length of
 
 > Note: The `len()` function works not only with arrays but with any iterable object, such as lists, tuples, strings, or sets.
 
-## `getsizeof()` Function
-
-In Python, there is no built-in function called `sizeof()` to directly get the size of an array or list. However, you can use the `sys` module's `getsizeof()` function to get an estimate of the memory size occupied by an object.
-
-Here's an example:
-
-```python
-import sys
-
-my_list = [10, 20, 30, 40, 50]
-size = sys.getsizeof(my_list)
-
-print(size)  # Output: 104 (the size in bytes)
-```
-
-In the example above, we import the `sys` module and use the `getsizeof()` function to get the size of the `my_list` object in bytes. Note that the value returned by `getsizeof()` includes the overhead of the list object itself and may not provide an exact representation of the memory occupied by the array/list elements.
-
 ## Array Indexing in Python
 
 In Python, an indexed array is typically represented using a list. The indices of a list are used to access and manipulate the elements within it, so you can access individual elements of an array (or list) using indexing. Array indexing allows you to retrieve a specific element from the array by referring to its position or index within the array.
