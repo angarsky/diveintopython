@@ -644,7 +644,7 @@ These are just a few examples of the operations you can perform on arrays in Pyt
 
 ## Array Dimensions
 
-In Python, you can determine the dimensions of an array using different libraries and data structures. Here are a few approaches:
+You can determine the dimensions of an array with different libraries and data structures. Here are a few approaches:
 
 1. NumPy:
 
