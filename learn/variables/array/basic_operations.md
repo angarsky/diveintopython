@@ -237,7 +237,7 @@ if np.array_equal(my_array, np.array([])):
 
 ## How to Copy an Array
 
-To copy an array in Python, you can use different approaches depending on the type of array you're working with. Here are some common methods to copy arrays:
+You can copy an array in Python using several approaches. Here are some common methods to copy arrays:
 
 1. List:
 
