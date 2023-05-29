@@ -393,7 +393,7 @@ In this example, the `join()` method from `np.char` is used with a space `' '` a
 
 ## How to Remove Duplicates from Sorted Array in Python
 
-To remove duplicates from a sorted array in Python, you can use different approaches depending on the type of array you are working with. Here's a common method using a list:
+Let's look at how to remove duplicates from a sorted array in Python. Here's a common method using a list:
 
 ```python
 sorted_array = [1, 1, 2, 2, 3, 4, 4, 5, 5, 5]
