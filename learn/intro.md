@@ -2,7 +2,7 @@ Python is a widely popular programming language that has gained immense populari
 
 Whether you're a beginner or an experienced programmer, this section provides a comprehensive guide to learning Python, with step-by-step instructions and practical examples to help you master this popular language in Python. So if you're looking to enhance your coding skills or start a career in programming, explore this section to unlock the full potential of Python!
 
-## What is Python Programming  
+## What is a Python Programming?
 
 Python is a high-level language that is easy to learn and use. It's versatile and supports a wide range of programming styles, making it an ideal choice for many applications. Python is widely used in web development, scientific computing, data analysis, machine learning, artificial intelligence, and many other fields.
 
