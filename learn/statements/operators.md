@@ -222,7 +222,7 @@ print(sliced_string)
 
 The `:` operator is an essential tool in Python for working with sequences. Its flexible syntax makes slicing and dicing data a breeze! 
 
-## Boolean Operator in python  
+## Boolean Operator in Python  
 
 Boolean operators in Python are used to evaluate true or false conditions. These operators include `and`, `or` and `not`. In Python, boolean operations are created with the keywords `and`, `or` and `not`.
 
@@ -252,7 +252,7 @@ Using boolean operators in Python provides flexibility in evaluating multiple co
   
 ## Operator Overloading  
 
-In Python, Operator Overloading enables us to define the behavior of operators in a custom manner for a specific class or object. This helps to enhance the clarity and readability of the code. Python supports operator overloading for most of the built-in operators such as +, -, /, //, %, &, |, ^, >>, <<, <, >, <=, >=, ==, !=, and more.
+In Python, Operator Overloading enables us to define the behavior of operators in a custom manner for a specific class or object. This helps to enhance the clarity and readability of the code. Python supports operator overloading for most of the built-in operators such as `+`, `-`, `/`, `//`, `%`, `&`, `|`, `^`, `>>`, `<<`, `<`, `>`, `<=`, `>=`, `==`, `!=`, and more.
 
 Here are two code examples that demonstrate operator overloading in Python:
 
