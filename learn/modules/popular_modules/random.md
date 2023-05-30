@@ -1,6 +1,6 @@
 ## The Random Module  
 
-The [random](https://docs.python.org/3/library/random.html) module in Python is used to generate pseudo-random numbers. 
+The [random](https://docs.python.org/3/library/random.html) module (`random` library) in Python is used to generate pseudo-random numbers. 
 
 ```python
 import random
