@@ -72,10 +72,10 @@ In summary, `range` is a useful Python function that can be combined with a `for
   
 ## How to Reverse `range`  
 
-To reverse a range in Python, you can make use of the `list` function. First, create a range using the `range` function, and then pass it as an argument to the `list` function. After that, you can use the `[::-1]` slice notation to reverse the list. Alternatively, you can also use the `reversed` function to get the reversed range.
+To reverse a range in Python, you can make use of the `list` function. First, create a range using the `range` function, and then pass it as an argument to the `list` function. After that, you can use the `[::-1]` slice notation to get the **range backwards**. Alternatively, you can also use the `reversed` function to get the reversed range.
 
 
-### Using the `list` Function and Slice Notation:
+### Using the `list` Function and Slice Notation
 
 ```python
 my_range = range(1, 6)
@@ -84,7 +84,7 @@ print(reversed_range)  ### Output
 
 ```
 
-### Using the `reversed` Function:
+### Using the `reversed` Function
 
 ```python
 my_range = range(1, 6)
@@ -93,7 +93,7 @@ print(reversed_range)  ### Output
 
 ```
 
-In both examples, we first create a range from `1` to `6` using the `range` function. Then, we pass it as an argument to the `list` function to convert it into a list. Finally, we use either slice notation or the `reversed` function to get the reversed range.  
+In both examples, we first create a range from `1` to `6` using the `range` function. Then, we pass it as an argument to the `list` function to convert it into a list. Finally, we use either slice notation or the `reversed` function to get the **range backwards**.  
   
 ## Range vs Xrange  
 
