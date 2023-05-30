@@ -298,8 +298,6 @@ Overall, operator overloading in Python helps you to write more readable and exp
   
 ## Math Operators in Python  
 
-Math Operators in Python
-
 Python provides a variety of math operators that can be used to perform mathematical operations in Python. These operators include addition, subtraction, multiplication, division, and modulo. 
 
 ### Addition Operator
