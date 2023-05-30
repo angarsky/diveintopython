@@ -92,6 +92,8 @@ In this example, we use Python's built-in `random` and `string` modules to gener
 ```python
 import random
 
+# random function
+
 def random_string(chars, length):
     return ''.join(random.choice(chars) for i in range(length))
 
@@ -99,7 +101,7 @@ def random_string(chars, length):
 print(random_string('ABC123', 8))  # Output: '31C1C1CA'
 ```
 
-If you want more control over the characters in the resulting string, you can specify a set of characters to choose from. In this example, we define our own set of characters to choose from by passing in a string of possible characters to the `random_string` function. We then use `random.choice` to randomly select characters from this set for the length of our specified string.
+If you want more control over the characters in the resulting string, you can specify a set of characters to choose from. In this example, we define our own set of characters to choose from by passing in a string of possible characters to the **random function** `random_string`. We then use `random.choice` to randomly select characters from this set for the length of our specified string.
 
 With these two examples, you should be able to easily generate random strings in Python for whatever purpose you need. Remember to `import` the necessary modules and choose the appropriate method based on your specific requirements.  
   
@@ -130,7 +132,7 @@ random.random()
 # Output: `0.42323281409391506`
 ```
 
-Random sampling is a powerful technique that can be used to select subsets of data for analysis and modeling. In Python, the `random` module makes it easy to generate random samples from lists and other data sources. By using the `random.sample()` function, we can quickly generate random samples of a specified size.  
+Random sampling is a powerful technique that can be used to select subsets of data for analysis and modeling. In Python, the `random` module makes it easy to generate random samples from lists and other data sources. By using the `random.sample()` function, we can quickly generate random shuffle list of a specified size.  
   
 ## Random `randint`  
 
