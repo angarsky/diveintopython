@@ -140,7 +140,7 @@ Python's [random](https://docs.python.org/3/library/random.html) module is a pow
 ```python
 import random
 
-# Generate a random integer in the range 0 to 9
+# Generate a random number in the range 0 to 9
 num = random.randint(0, 9)
 
 print(num)
