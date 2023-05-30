@@ -113,7 +113,7 @@ In this example, we define a function `square` that takes one argument (`x`) and
 
 Overall, expression statements are an essential part of Python programming and allow for the execution of mathematical and computational operations.
 
-## `assert` Statement  
+## The `assert` Statement  
 
 The `assert` statement in Python is used to test conditions and trigger an error if the condition is not met. It is often used for debugging and testing purposes.
 
@@ -140,7 +140,7 @@ In this example, the `assert` statement tests whether `y` is not equal to `0` be
 
 Overall, `assert` statements are a useful tool in Python for debugging and testing, as they can help catch errors early on. They are also easily disabled in production code to avoid any unnecessary overhead.  
   
-## `try` Statement  
+## The `try` Statement  
 
 The `try` statement in Python is used to catch exceptions that may occur during the execution of a block of code. It ensures that even when an error occurs, the code does not stop running.
 
