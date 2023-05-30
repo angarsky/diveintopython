@@ -12,7 +12,7 @@ Python is an open-source, high-level programming language that is widely used in
 
 ### AI and Machine Vision
 
-Python has powerful libraries for machine learning such as TensorFlow, PyTorch, and Keras. With these libraries, you can train models to recognize images, classify data points, and make predictions. Here's an example code for image classification using TensorFlow:
+Python has powerful libraries for machine learning such as TensorFlow, PyTorch, and Keras. With these libraries, you can train models to recognize images, classify data points, and make predictions. Here's a high-level example of code how to easy can be implemented an image classification using TensorFlow:
 
 ```python
 import tensorflow as tf
