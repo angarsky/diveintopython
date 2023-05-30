@@ -1,6 +1,6 @@
 In this article, we will explore the different types of operators in Python and how they are used in programming. 
   
-## `In` Opertor  
+## The `in` Opertor  
 
 The `in` operator in Python is used to check whether a value is present in a sequence or not. It returns a Boolean value `True` if the value is found in the sequence and `False` otherwise. 
 
@@ -34,7 +34,7 @@ else:
 
 With the `in` operator, we can easily check the existence of elements in a list, tuple, or any other sequence data type in python. It also helps in simplifying the code and making it more readable.  
   
-## `and` Operator in `if`  
+## How to Use `and` Operator in `if`  
 
 The `and` operator in Python is used in `if` statements to test if multiple conditions are true. It returns `True` if both conditions are true, and `False` otherwise. Here are two examples:
 
@@ -62,11 +62,11 @@ In this example, the `and` operator is used to check if both `name` is `John` an
 
 In summary, the `and` operator in Python is a powerful tool in `if` statements that allows you to check for multiple conditions at once. It can be very useful in complex programs that require extensive condition checking.  
   
-## `or` Operator  
+## The `or` Operator  
 
 The `or` operator in Python is a logical operator that returns `True` if either of the two operands are `True`, and `False` if both operands are `False`. It can be used in conditional statements or Boolean expressions.
 
-### `or` Operator in a Conditional Statement
+### The `or` Operator in a Conditional Statement
 
 ```python
 age = 25
@@ -80,7 +80,7 @@ else:
 
 In this example, the `or` operator is used to check if the `age` variable is either less than 18 or greater than 60. If either of the conditions is `True`, it prints a message saying the person is not eligible for the job. Otherwise, it prints a message saying the person is eligible for the job.
 
-### `or` Operator in a Boolean Expression
+### The `or` Operator in a Boolean Expression
 
 ```python
 x = 5
@@ -94,11 +94,11 @@ In this example, the `or` operator is used in a Boolean expression to check if e
 
 Overall, the `or` operator in Python provides a simple way to check if at least one of the conditions in a Boolean expression is `True`.  
   
-## `Not` Operator  
+## The `not` Operator  
 
 The `not` operator in Python is used to reverse the logical state of a Boolean expression. It returns True if the expression is `False` and `False` if the expression is True. Here are two examples:
 
-### `not` with a Boolean Variable
+### How to Use the `not` with a Boolean Variable
 
 ```python
 flag = False
@@ -106,7 +106,7 @@ print(not flag)
 
 ```
 
-### `not` with a Comparison Operator
+### The `not` with a Comparison Operator
 
 ```python
 x = 10
@@ -180,7 +180,7 @@ print(remainder)
 
 Overall, understanding these operators and their differences is important in Python programming when dealing with mathematical operations.  
   
-## `:` Operator  
+## The `:` Operator  
 
 The `:` operator in Python is used for slicing sequences such as lists, tuples, and strings. It allows you to extract a portion of a sequence by specifying a start and end index separated by a colon. You can also specify a step size. This operator is very useful when working with data in Python.
 
@@ -353,7 +353,7 @@ There are six bitwise operators available in Python. These are:
 - `<<` (left shift): This operator shifts the bits of the operand to the left by the specified number of bits. The shifted bits are filled with 0.
 - `>>` (right shift): This operator shifts the bits of the operand to the right by the specified number of bits. The shifted bits are filled with 0 for positive numbers and 1 for negative numbers.
 
-### `&` Operator
+### The `&` Operator
 
 ```python
 x = 5      
@@ -368,7 +368,7 @@ print(z)   ### Output
 
 In this example, we use the bitwise AND operator to find the common bits between `x` and `y`. The result is `1`, which is the only bit that is set to 1 in both `x` and `y`.
 
-### `<<` Operator
+### The `<<` Operator
 
 ```python
 x = 7      
