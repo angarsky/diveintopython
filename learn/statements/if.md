@@ -1,8 +1,8 @@
 In Python, the `if` statement is used for conditional execution of code. It allows you to specify a condition and execute a block of code only if that condition evaluates to `True`.  
   
-## If Statement in Python  
+## How to Use the `If` Statement in Python  
 
-If statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an `if` statement is:
+The `if` statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an `if` statement is:
 
 ```python
 if 1 > 2:
@@ -81,7 +81,7 @@ In the example above, the ternary statement checks if the `my_list` variable is 
 
 Overall, ternary statements provide a clean and efficient way to write conditional statements in Python.  
   
-## If Statement Between Two Numbers  
+## The `if` Statement Between Two Numbers  
 
 To check if a number is between two numbers in Python, you can use an `if` statement with logical operators. Here are two examples:
 
@@ -107,7 +107,7 @@ In this example, the `if` statement checks if `y` is **not** less than `2` or **
 
 Use these examples to check if your number is between two numbers in Python.  
   
-## If Statement in List Comprehension  
+## The `if` Statement in a List Comprehension  
 
 In Python, an `if` statement can be used in list comprehension to filter out only the values that meet a specific condition. This is extremely useful for creating a new list that contains only the desired values without needing to write a loop. 
 
@@ -129,7 +129,7 @@ This example uses list comprehension to create a new list called `short_words` t
 
 By using `if` statement in list comprehension, we can drastically reduce the amount of code needed to create a new filtered list. This can result in more readable and concise code that is easier to maintain.  
   
-## Nested If Statements  
+## Nested `if` Statements  
 
 Nested If statements are used in Python programming when two or more conditions need to be checked simultaneously. It is a conditional statement inside another, creating a hierarchical structure of decision-making.
 
@@ -165,7 +165,7 @@ In this example, there are three variables, and the nested `if` statements check
 
 These are just simple examples to illustrate the concept of nested If statements in Python and how they can be used in programming.  
   
-## Elif Statement in Python  
+## The `elif` Statement in Python  
 
 Elif `statement` in Python is a conditional `statement` that helps you to check multiple conditions in a program. It is used in conjunction with the `if` and `else` statements. 
 
