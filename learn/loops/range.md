@@ -133,7 +133,7 @@ Overall, `xrange()` is recommended for large sequences in Python 2 as it is more
   
 ## Using `random` with `range` function  
 
-Python's [random](https://docs.python.org/3/library/random.html) module is a powerful tool for generating random numbers. One of the common use cases for `random` is to generate random integers within a specific range. This can be achieved by using the `range` function in conjunction with [random](https://docs.python.org/3/library/random.html).
+Python's [random](https://docs.python.org/3/library/random.html) module is a powerful tool for generating random numbers. One of the common use cases for `random` is to generate random integers within a specific range. This can be achieved by using the `range` function in conjunction with `random`.
 
 ```python
 import random
