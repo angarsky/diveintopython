@@ -4,7 +4,7 @@ Range statement is a crucial feature in Python that enables developers to define
 
 The `range` function in Python generates a sequence of numbers within a given range. It is a built-in function in Python that can be used to create an iterable range object. 
 
-The `range` function takes three parameters: `start`, `stop`, and `step`. The `start` parameter is the beginning of the range, `stop` is the end of the range (exclusive), and `step` is the difference between each number in the sequence. 
+The `range` function takes three parameters: `start`, `stop`, and range `step`. The `start` parameter is the beginning of the range, `stop` is the end of the range (exclusive), and `step` is the difference between each number in the sequence. 
 
 ### Example 1: Printing Numbers from 0 to 9
 
@@ -46,7 +46,9 @@ for num in range(1, 10):
 # 9
 ```
 
-You can also use `range` to loop over a sequence of float numbers. Here's an example:
+### How to Use `range` with Float Numbers
+
+You can also use `range` to loop over a sequence of float numbers.
 
 ```python
 for i in range(0, 10):
