@@ -210,7 +210,7 @@ else:
     print("You have failed the exam")
 ```
 
-In this example, we are checking the `score` of a student. Depending on the `score`, it prints different messages. If the `score` is greater than or equal to 90, it prints `You have secured an A grade`. If the `score` is between 80 and 89, it prints `You have secured a B grade`. If the `score` is between 70 and 79, it prints `You have secured a C grade`. If the `score` is between 60 and 69, it prints `You have secured a D grade`. If the `score` is less than 60, it prints `You have failed the exam".  
+In this example, we are checking the `score` of a student. Depending on the `score`, it prints different messages. If the `score` is greater than or equal to 90, it prints `You have secured an A grade`. If the `score` is between 80 and 89, it prints `You have secured a B grade`. If the `score` is between 70 and 79, it prints `You have secured a C grade`. If the `score` is between 60 and 69, it prints `You have secured a D grade`. If the `score` is less than 60, it prints `You have failed the exam`.  
 
 ## Multiple `if` Statements  
 
