@@ -1,6 +1,6 @@
 In Python, the `if` statement is used for conditional execution of code. It allows you to specify a condition and execute a block of code only if that condition evaluates to `True`.  
   
-## How to Use the `If` Statement in Python  
+## How to Use the `if` Statement in Python  
 
 The `if` statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an `if` statement is:
 
