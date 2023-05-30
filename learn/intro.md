@@ -55,19 +55,25 @@ Whether you're developing an AI application, crunching numbers for a research pr
 
 Python is a high-level programming language that offers several key benefits over other languages like PHP, JavaScript, and C++. Here are some of the top advantages of using Python:
 
-1. Simplicity and ease of use - Python comes with an easy-to-read syntax and an intuitive design that makes coding much simpler than other programming languages. 
+### Simplicity and ease of use 
 
-2. Wide range of libraries and frameworks - Python has a huge collection of libraries and frameworks that make it easy to perform various tasks, including data processing, web development, machine learning, and more.
+Python comes with an easy-to-read syntax and an intuitive design that makes coding much simpler than other programming languages. 
 
-### Import NumPy library in Python
+### Wide range of libraries and frameworks 
+
+Python has a huge collection of libraries and frameworks that make it easy to perform various tasks, including data processing, web development, machine learning, and more.
+
+#### Import NumPy library in Python
 
 ```python
 import numpy as np
 ```
 
-3. Cross-platform compatibility - Python can be run on various platforms such as Windows, Linux, and macOS, making it easy to develop and deploy projects on multiple environments.
+### Cross-platform compatibility 
+
+Python can be run on various platforms such as Windows, Linux, and macOS, making it easy to develop and deploy projects on multiple environments.
    
-### Check the platform using Python
+#### Check the platform using Python
 
 ```python
 import sys
@@ -81,7 +87,6 @@ else:
 ```
 
 Overall, Python offers a range of benefits that make it an ideal choice for several applications, from simple scripts to complex projects.  
-
 
 ### Python Programming Examples
 
