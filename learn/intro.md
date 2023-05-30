@@ -88,11 +88,11 @@ else:
 
 Overall, Python offers a range of benefits that make it an ideal choice for several applications, from simple scripts to complex projects.  
 
-### Python Programming Examples
+## Python Programming Examples
 
 Python can be used to create a variety of programs, from simple command-line tools to complex web applications. Here are two examples of basic Python programs:
 
-#### Example of Basic Python Program
+### Example of Basic Python Program
 
 ```python
 print("Hello, World!")
@@ -100,7 +100,7 @@ print("Hello, World!")
 
 This program simply prints the message `Hello, World!` to the screen. It's a basic example of how to use the `print()` function in Python.
 
-#### Example of Dynamic Programming
+### Example of Dynamic Programming
 
 ```python
 def fibonacci(n):
