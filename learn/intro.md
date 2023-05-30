@@ -6,6 +6,83 @@ Whether you're a beginner or an experienced programmer, this section provides a 
 
 Python is a high-level language that is easy to learn and use. It's versatile and supports a wide range of programming styles, making it an ideal choice for many applications. Python is widely used in web development, scientific computing, data analysis, machine learning, artificial intelligence, and many other fields.
 
+## What Kind of Tasks can be Resolved with Python?   
+
+Python is an open-source, high-level programming language that is widely used in the field of artificial intelligence and machine learning. It is also a popular choice for data analysis, statistics, and visualization due to its simplicity and flexibility. With Python, you can automate repetitive tasks, build web applications, and even create complex algorithms for scientific simulations. 
+
+### AI and Machine Vision
+
+Python has powerful libraries for machine learning such as TensorFlow, PyTorch, and Keras. With these libraries, you can train models to recognize images, classify data points, and make predictions. Here's an example code for image classification using TensorFlow:
+
+```python
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras import layers
+
+model = keras.Sequential([
+    layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
+    layers.MaxPooling2D((2,2)),
+    layers.Flatten(),
+    layers.Dense(10)
+])
+
+(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
+
+train_images = train_images.reshape(-1, 28, 28, 1) / 255.0
+test_images = test_images.reshape(-1, 28, 28, 1) / 255.0
+
+model.compile(optimizer='adam', loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
+
+model.fit(train_images, train_labels, epochs=5, validation_data=(test_images, test_labels))
+```
+
+### Statistics
+
+Python has a wealth of libraries available for statistical analysis and modeling. Pandas, Numpy, and Statsmodels are just a few examples. Here's an example code for generating a histogram using Matplotlib:
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.random.normal(size=1000)
+plt.hist(x, bins=30)
+plt.show()
+```
+
+Whether you're developing an AI application, crunching numbers for a research project, or working on a data analysis problem, Python provides a powerful and flexible toolset for solving a wide range of tasks.  
+  
+## Key Benefits of Python  
+
+Python is a high-level programming language that offers several key benefits over other languages like PHP, JavaScript, and C++. Here are some of the top advantages of using Python:
+
+1. Simplicity and ease of use - Python comes with an easy-to-read syntax and an intuitive design that makes coding much simpler than other programming languages. 
+
+2. Wide range of libraries and frameworks - Python has a huge collection of libraries and frameworks that make it easy to perform various tasks, including data processing, web development, machine learning, and more.
+
+### Import NumPy library in Python
+
+```python
+import numpy as np
+```
+
+3. Cross-platform compatibility - Python can be run on various platforms such as Windows, Linux, and macOS, making it easy to develop and deploy projects on multiple environments.
+   
+### Check the platform using Python
+
+```python
+import sys
+
+if sys.platform == "win32":
+    print("Running on Windows")
+elif sys.platform == "linux":
+    print("Running on Linux")
+else:
+    print("Running on macOS")
+```
+
+Overall, Python offers a range of benefits that make it an ideal choice for several applications, from simple scripts to complex projects.  
+
+
 ### Python Programming Examples
 
 Python can be used to create a variety of programs, from simple command-line tools to complex web applications. Here are two examples of basic Python programs:
