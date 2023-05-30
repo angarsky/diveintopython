@@ -91,7 +91,7 @@ print(response.json())
 
 In summary, `requests` makes it easy to send and receive JSON data. Use the `json` or `data` parameter depending on whether you're sending a `POST` or `GET` request. Keep in mind that the server must be able to process the JSON data you send.  
   
-## Hou to Set `requests` timeout  
+## How to Set `requests` Timeout  
 
 If you are using Python `requests` to make HTTP requests, it is essential to set a timeout value to avoid requests that last too long. Setting a timeout value is easy with the [requests](https://pypi.org/project/requests/) library. Here are two code examples to set timeout value using the `get` method.
 
