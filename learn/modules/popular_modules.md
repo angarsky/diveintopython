@@ -1,38 +1,5 @@
 Modules, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.  
   
-## The Requests Module  
-
-The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests` when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
-
-To install the [requests](https://pypi.org/project/requests/) module, you can simply run the following command in your terminal:
-
-```shell
-pip install requests
-```
-
-Once you’ve installed the Requests library, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
-
-```python
-import requests
-
-response = requests.get('https://www.example.com')
-print(response.text)
-```
-
-In this example, we `import` the Requests module and use the `requests.get` method to send a GET request to the website specified in the parameter. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.
-
-Here's another example showing how to send a POST request with some data:
-
-```python
-import requests
-
-data = {'key': 'value'}
-response = requests.post('https://www.example.com', data=data)
-print(response.text)
-```
-
-In this example, we use the `requests.post` method to send a POST request to the website specified in the parameter. We also pass in some `data` as a dictionary, which will be sent as form `data` with the request. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.  
-  
 ## The Math Module  
 
 Python's math module provides a set of predefined mathematical functions. It consists of various mathematical operations like trigonometric, logarithmic, and other mathematical functions. The math module in Python can be used by importing it into the program using the `import` keyword.
@@ -71,37 +38,6 @@ print(f"Factorial of {number} is {factorial}")
 ```
 
 In this way, the math module in Python can be used to perform mathematical operations by importing the module and referring to its functions.  
-  
-## The Random Module  
-
-The [random](https://docs.python.org/3/library/random.html) module in Python is used to generate pseudo-random numbers. 
-
-```python
-import random
-
-# Generate a random number between 1 and 10 (inclusive)
-random_number = random.randint(1, 10)
-print(random_number)
-
-# Output:
-# 5 (this number will be different each time the code is run)
-```
-
-In the above example, the `random.randint(a, b)` function is used to generate a random integer between the values of `a` and `b`, inclusive of both endpoints. In this case, the random number generated will be between `1` and `10`.
-
-```python
-import random
-
-# Generate a random choice from a list of options
-options = ["rock", "paper", "scissors"]
-random_option = random.choice(options)
-print(random_option)
-
-# Output:
-# "paper" (this option will be different each time the code is run)
-```
-
-In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors".  
   
 ## The Logging Module  
 
