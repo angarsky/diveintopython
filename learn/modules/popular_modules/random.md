@@ -87,7 +87,7 @@ def random_string(length):
 print(random_string(10))  # Output: 'gjwstqyeqh'
 ```
 
-In this example, we use Python's built-in `random` and `string` modules to generate a string of a given length. We first define a function called `random_string` which takes a `length` parameter that specifies the number of characters in the resulting string. We then use the `string.ascii_lowercase` constant to get all lowercase `letters` in the alphabet, and `random.choice` to randomly select characters from this string for the length of our specified string.
+In this example, we use Python's built-in `random` and `string` modules to generate a string of a given length. We first define a  **random function** called `random_string` which takes a `length` parameter that specifies the number of characters in the resulting string. We then use the `string.ascii_lowercase` constant to get all lowercase `letters` in the alphabet, and `random.choice` to randomly select characters from this string for the length of our specified string.
 
 ```python
 import random
