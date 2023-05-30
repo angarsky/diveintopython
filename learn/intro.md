@@ -138,7 +138,7 @@ One of the features that contribute to this characteristic is the use of [simple
   
 ## Loops  
 
-Loops in Python are incredibly powerful tools that allow programmers to automate recurring tasks. Using statements such as `for` and `while`, programmers can iterate through a list of data or create a loop that continues until a certain condition is met. [In this article](/learn/loops.md), we will dive deeper into the world of loops in Python and explore their many uses.  
+Loops in Python are incredibly powerful tools that allow programmers to automate recurring tasks. Using statements such as `for` and `while`, programmers can iterate through a list of data or create a loop that continues until a certain condition is met. In [this article](/learn/loops.md), we will dive deeper into the world of loops in Python and explore their many uses.  
   
 ## Dates / Datetime  
 
