@@ -180,7 +180,7 @@ session_cookie = response.cookies['session']
 response2 = requests.get('https://example.com/protected', cookies={'session': session_cookie})
 ```  
   
-## Requests session  
+## Requests Session  
 
 The Python Requests Session is a powerful tool that allows you to maintain persistence of your HTTP requests within a single `session` object. This means that you can easily reuse the same connection for multiple requests, with each request building upon the previous one. 
 
