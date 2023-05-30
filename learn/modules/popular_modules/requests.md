@@ -246,7 +246,7 @@ In both examples, we use the `requests` module to make a GET request to the spec
 
 So, that's how you can download a file with `requests` in Python.  
   
-## Using proxy with requests  
+## Using Proxy in Requests  
 
 If you want to send HTTP requests in Python through a proxy, you can use the `requests` library. Here's how to do it:
 
