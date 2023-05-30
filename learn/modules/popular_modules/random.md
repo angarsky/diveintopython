@@ -15,6 +15,8 @@ print(random_number)
 
 In the above example, the `random.randint(a, b)` function is used to generate a random integer between the values of `a` and `b`, inclusive of both endpoints. In this case, the random number generated will be between `1` and `10`.
 
+### Random Select from List
+
 ```python
 import random
 
