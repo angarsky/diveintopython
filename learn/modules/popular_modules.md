@@ -3,6 +3,10 @@ Modules, allow for the easy implementation of complex functionalities such as we
 ## The Random Module
 
 The random module in Python is a built-in module that provides various functions for generating random numbers. It allows you to perform operations related to randomness, such as generating random numbers, shuffling sequences, choosing random elements, and more. Read more [here](/learn/modules/popular_modules/random.md).
+
+## The Requests Module
+
+The [requests](/learn/modules/popular_modules/requests.md) module is a popular Python library used for making HTTP requests. It provides a simple and elegant way to send HTTP/1.1 requests using Python.
   
 ## The Math Module  
 
