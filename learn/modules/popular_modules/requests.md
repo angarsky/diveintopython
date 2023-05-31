@@ -338,7 +338,7 @@ In the code snippet above, we `import` the Python 'requests' module, use the URL
 
 Python provides a library called `Flask` which is widely used for building REST APIs. To create a RESTful API using `Flask`, you need to install `Flask` and use the routing capabilities to define API endpoints. 
 
-#### How to create an API endpoint using Flask:
+#### How to create an API endpoint using Flask
 
 ```python
 from flask import Flask
