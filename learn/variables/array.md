@@ -154,33 +154,6 @@ for row in array_2d:
     print()
 ```
 
-## How to Convert a 1d Array to a 2d Array in Python
-
-To convert a 1d array to a 2d array in Python, you can use the `reshape()` method provided by the NumPy library. The `reshape()` method allows you to change the shape of an array without modifying its data. Here's an example how to reshape an array:
-
-```python
-import numpy as np
-
-# 1d array
-arr_1d = np.array([1, 2, 3, 4, 5, 6])
-
-# Convert to 2d array
-arr_2d = arr_1d.reshape((2, 3))
-
-print(arr_2d)
-```
-
-Output:
-
-```python
-[[1 2 3]
- [4 5 6]]
-```
-
-The `reshape()` method takes the desired shape of the array as its argument. In this case, we pass `(2, 3)` to reshape the array into a 2x3 matrix. The number of elements in the original 1d array must match the number of elements in the specified shape. If the number of elements is not compatible, a `ValueError` will be raised.
-
-> Note: The `reshape()` method returns a new array with the desired shape; it does not modify the original array.
-
 ## How to Create a NumPy Array in Python
 
 To create a [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) in Python, you can use the `numpy.array()` function. Here's an example of np array initialization:
@@ -195,56 +168,6 @@ print(arr1)
 ```
 
 In the above code, `import numpy as np` imports the NumPy module, allowing us to use its functions and classes.
-
-## How to Convert a NumPy Array to Python List
-
-To convert a NumPy array to a Python list, you can use the `tolist()` method provided by the NumPy library. This method converts a NumPy array into a nested Python list. Here's an example:
-
-```python
-import numpy as np
-
-numpy_array = np.array([1, 2, 3, 4, 5])
-python_list = numpy_array.tolist()
-print(python_list) # Output: [1, 2, 3, 4, 5]
-```
-
-Similarly, if you have a multidimensional NumPy array, the `tolist()` method will convert it to a nested Python list structure:
-
-```python
-import numpy as np
-
-numpy_array = np.array([[1, 2, 3], [4, 5, 6]])
-python_list = numpy_array.tolist()
-print(python_list) # Output: [[1, 2, 3], [4, 5, 6]]
-```
-
-In this example, the numpy_array is a 2D NumPy array with two rows and three columns. The `tolist()` method converts it into a nested Python list with the same structure.
-
-## List to Array Conversion in Python
-
-To convert a Python list to an array, you can use the `array()` function provided by the NumPy library. The `array()` function creates a new NumPy array from the elements of the given list. Here is an example of converting list to array:
-
-```python
-import numpy as np
-
-my_list = [1, 2, 3, 4, 5]
-my_array = np.array(my_list)
-print(my_array) # Output: [1 2 3 4 5]
-```
-
-NumPy arrays are homogeneous, meaning they can only hold elements of the same data type. If the elements of the list are of different types, NumPy will automatically upcast the elements to a common data type.
-
-For example:
-
-```python
-import numpy as np
-
-my_list = [1, 2.5, 'three', True]
-my_array = np.array(my_list)
-print(my_array) # Output: ['1' '2.5' 'three' 'True']
-```
-
-In this case, the elements of the list have different data types (int, float, str, and bool). NumPy upcasts all the elements to the common data type, which in this case is str. The resulting array contains strings representing the elements of the list.
 
 ## A Length of an Array in Python
 
@@ -289,46 +212,6 @@ print(element)  # Output: 50
 In this case, `my_array[-1]` retrieves the last element of `my_array`, which is 50. The value is stored in the element variable and printed to the console.
 
 You can also use indexing to modify the value of an element or to extract a subset of elements from an array using slicing.
-
-## Python String into Array Conversion
-
-To convert a Python string into an array of individual characters, you can iterate over the string and create a list of characters. Here's an example:
-
-```python
-string = "Hello, world!"
-array = [char for char in string]
-print(array) # Output: ['H', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd', '!']
-```
-
-In the above example, we iterate over each character in the string using a list comprehension. Each character is added to the list, resulting in an array where each element represents an individual character from the string.
-
-If you want to split the string into an array of words instead of characters, you can use the `split()` method. By default, the `split()` method splits the string based on whitespace characters (spaces, tabs, newlines). Here's an example:
-
-```python
-string = "Hello, world! How are you?"
-array = string.split()
-print(array) # Output: ['Hello,', 'world!', 'How', 'are', 'you?']
-```
-
-In this example, the `split()` method splits the string into a list of substrings based on whitespace characters, resulting in an array where each element represents a word from the string.
-
-## Array to String Conversion
-
-To convert an array (or list) to a string in Python, you can use the `join()` method. The `join()` method concatenates the elements of an iterable into a single string, using a specified delimiter. Here's an example:
-
-```python
-array = ['Hello', 'world', 'How', 'are', 'you?']
-string = ' '.join(array)
-print(string) # Output: Hello world How are you?
-```
-
-By changing the delimiter passed to the `join()` method, you can modify the way the elements are separated in the resulting string. For example, using a comma (',') as the delimiter:
-
-```python
-array = ['apple', 'banana', 'orange']
-string = ', '.join(array)
-print(string) # Output: apple, banana, orange
-```
 
 ## Array of Strings in Python
 
@@ -925,7 +808,7 @@ my_array.remove(1)
 print(my_array)  # Output: [4, 3]
 ```
 
-## The `range()` Function for Array inPython
+## The `range()` Function for Array in Python
 
 In Python, you can create an array or list of numbers using the `range()` function. The `range()` function generates a sequence of numbers within a specified range.
 
