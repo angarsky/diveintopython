@@ -1,6 +1,6 @@
 Random module in Python is a widely used library that allows developers to generate random numbers, shuffle lists, and make other random selections for their applications. It provides a range of functions that can be used to create random data and can be useful in various applications like gaming, simulations, cryptography and other areas where there is a need for randomness. With this module, developers have the freedom to create diversity in their application output, thus making the applications more intriguing.
 
-## The Random Module  
+## Random Module Usage Examples  
 
 The [random](https://docs.python.org/3/library/random.html) module (`random` library) in Python is used to generate pseudo-random numbers. 
 
