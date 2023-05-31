@@ -1,6 +1,6 @@
 The `requests` module makes it easy to interact with web pages and APIs by streamlining the process of sending requests and handling responses. With requests, you can quickly and easily retrieve data from the web and use it in your Python projects. In this article, we will explore the requests module and its features, and demonstrate how to use it in your Python code.
 
-## The Requests Module  
+## A few Words about the `requests` Module  
 
 The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests` when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
 
@@ -266,7 +266,7 @@ response = requests.get(url, proxies=proxies)
 
 In the above code example, you need to replace `user`, `password`, `proxy`, and `port` with your actual credentials and proxy address and port number.
 
-By using these proxy settings in your Python HTTP`requests, you can easily bypass any restrictions imposed on your network, and access the desired resources without any hassle. Moreover, you can scale your service to be more robust and independent, while securing your network from outside users.  
+By using these proxy settings in your Python HTTP requests, you can easily bypass any restrictions imposed on your network, and access the desired resources without any hassle. Moreover, you can scale your service to be more robust and independent, while securing your network from outside users.  
   
 ## How to Convert `curl` to Python request  
 
