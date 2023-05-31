@@ -35,7 +35,7 @@ print(random_option)
 
 In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors`.  
 
- ## Random Seed  
+## Random Seed  
 
 Random Seed plays a crucial role in generating random numbers in Python. It is used to initialize the pseudo-random number generator, which is a function that generates a sequence of numbers that appear to be `random`, but are actually deterministic. 
 
