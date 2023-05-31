@@ -173,6 +173,17 @@ print(arr1)
 
 In the above code, `import numpy as np` imports the NumPy module, allowing us to use its functions and classes.
 
+### Array of Strings in Python
+
+To create an array of strings in Python, you can use a list where each element of the list represents a string. Here's an example:
+
+```python
+array = ['apple', 'banana', 'orange', 'grape']
+print(array) # Output: ['apple', 'banana', 'orange', 'grape']
+```
+
+In the above example, we create an array of strings called `array` using a list. Each element of the list represents a string. The resulting array contains four strings: 'apple', 'banana', 'orange', and 'grape'.
+
 ## A Length of an Array in Python
 
 You can get the length of an array (or any sequence) using the `len()` function. The `len()` function returns the number of elements in the sequence.
@@ -216,17 +227,6 @@ print(element)  # Output: 50
 In this case, `my_array[-1]` retrieves the last element of `my_array`, which is 50. The value is stored in the element variable and printed to the console.
 
 You can also use indexing to modify the value of an element or to extract a subset of elements from an array using slicing.
-
-## Array of Strings in Python
-
-To create an array of strings in Python, you can use a list where each element of the list represents a string. Here's an example:
-
-```python
-array = ['apple', 'banana', 'orange', 'grape']
-print(array) # Output: ['apple', 'banana', 'orange', 'grape']
-```
-
-In the above example, we create an array of strings called `array` using a list. Each element of the list represents a string. The resulting array contains four strings: 'apple', 'banana', 'orange', and 'grape'.
 
 ## Iterating Over an Array Using "for" Loop
 
