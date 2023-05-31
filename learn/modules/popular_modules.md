@@ -1,4 +1,8 @@
-Modules, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.  
+Modules, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.
+
+## The Random Module
+
+The random module in Python is a built-in module that provides various functions for generating random numbers. It allows you to perform operations related to randomness, such as generating random numbers, shuffling sequences, choosing random elements, and more. Read more [here](/popular_modules/random.md).
   
 ## The Math Module  
 
