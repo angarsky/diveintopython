@@ -97,30 +97,3 @@ array = ['apple', 'banana', 'orange']
 string = ', '.join(array)
 print(string) # Output: apple, banana, orange
 ```
-
-## How to Convert a 1d Array to a 2d Array in Python
-
-To convert a 1d array to a 2d array in Python, you can use the `reshape()` method provided by the NumPy library. The `reshape()` method allows you to change the shape of an array without modifying its data. Here's an example how to reshape an array:
-
-```python
-import numpy as np
-
-# 1d array
-arr_1d = np.array([1, 2, 3, 4, 5, 6])
-
-# Convert to 2d array
-arr_2d = arr_1d.reshape((2, 3))
-
-print(arr_2d)
-```
-
-Output:
-
-```python
-[[1 2 3]
- [4 5 6]]
-```
-
-The `reshape()` method takes the desired shape of the array as its argument. In this case, we pass `(2, 3)` to reshape the array into a 2x3 matrix. The number of elements in the original 1d array must match the number of elements in the specified shape. If the number of elements is not compatible, a `ValueError` will be raised.
-
-> Note: The `reshape()` method returns a new array with the desired shape; it does not modify the original array.
