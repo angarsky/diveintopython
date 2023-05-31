@@ -1,6 +1,6 @@
 Range statement is a crucial feature in Python that enables developers to define a sequence of numbers within a specified range. It is often used in various programming applications to create loops and iterate over specific subsets of elements in a list or tuple. Range statement is a simple yet powerful tool that can enhance the functionality of your Python code. In this article, we will explore the different applications and functionalities of the range statement and how it can be used to boost the efficiency and effectiveness of your Python scripts.  
   
-## What is `range` in Python  
+## What is the `range` in Python?
 
 The `range` function in Python generates a sequence of numbers within a given range. It is a built-in function in Python that can be used to create an iterable range object. 
 
@@ -70,7 +70,7 @@ for i in range(0, 10):
 
 In summary, `range` is a useful Python function that can be combined with a `for` loop to iterate over a sequence of numbers, including float values.  
   
-## How to Reverse `range`  
+## How to Reverse a `range`  
 
 To reverse a range in Python, you can make use of the `list` function. First, create a range using the `range` function, and then pass it as an argument to the `list` function to convert `range` in list. After that, you can use the `[::-1]` slice notation to get the **range backwards**. Alternatively, you can also use the `reversed` function to get the reversed range.
 
@@ -95,7 +95,7 @@ print(reversed_range)  ### Output
 
 In both examples, we first create a range from `1` to `6` using the `range` function. Then, we pass it as an argument to the `list` function to convert it into a list. Finally, we use either slice notation or the `reversed` function to get the **range backwards**.  
   
-## Range vs Xrange  
+## Range and Xrange  
 
 In Python 2, `range()` and `xrange()` are used to generate a sequence of numbers between two values. However, there is a difference between these two methods.
 
