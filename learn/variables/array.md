@@ -247,6 +247,54 @@ print(my_list)
 
 The `range()` function can be used to create arrays or lists of numbers based on different start, end, and step size values. By converting the range object to a list using the `list()` function, you can obtain a list representation of the range.
 
+### Array of Zeros
+
+In Python, you can create an array of zeros using various libraries and data structures. Here are a few examples:
+
+1. NumPy:
+
+If you have NumPy installed, you can use the `zeros()` function from the NumPy library to create an array of zeros. Here's an example:
+
+```python
+import numpy as np
+
+# Create a 1-dimensional array of 5 zeros
+zeros_array = np.zeros(5)
+
+print(zeros_array)
+```
+
+You can also create multi-dimensional arrays of zeros by specifying the shape as a tuple. For example:
+
+```python
+import numpy as np
+
+# Create a 2-dimensional array of 3 rows and 4 columns, filled with zeros
+zeros_array = np.zeros((3, 4))
+
+print(zeros_array)
+```
+
+2. List comprehension:
+
+If you prefer working with lists, you can use list comprehension to create an array of zeros. Here's an example:
+
+```python
+# Create a 1-dimensional array of 5 zeros using list comprehension
+zeros_array = [0] * 5
+
+print(zeros_array)
+```
+
+For multi-dimensional arrays, you can nest list comprehensions. Here's an example:
+
+```python
+# Create a 2-dimensional array of 3 rows and 4 columns, filled with zeros using nested list comprehension
+zeros_array = [[0] * 4 for _ in range(3)]
+
+print(zeros_array)
+```
+
 ## A Length of an Array in Python
 
 You can get the length of an array (or any sequence) using the `len()` function. The `len()` function returns the number of elements in the sequence.
@@ -660,54 +708,6 @@ my_array = arr.array('i', [1, 2, 3, 4, 5])
 last_element = my_array[-1]
 
 print(last_element)  # Output: 5
-```
-
-## Array of Zeros
-
-In Python, you can create an array of zeros using various libraries and data structures. Here are a few examples:
-
-1. NumPy:
-
-If you have NumPy installed, you can use the `zeros()` function from the NumPy library to create an array of zeros. Here's an example:
-
-```python
-import numpy as np
-
-# Create a 1-dimensional array of 5 zeros
-zeros_array = np.zeros(5)
-
-print(zeros_array)
-```
-
-You can also create multi-dimensional arrays of zeros by specifying the shape as a tuple. For example:
-
-```python
-import numpy as np
-
-# Create a 2-dimensional array of 3 rows and 4 columns, filled with zeros
-zeros_array = np.zeros((3, 4))
-
-print(zeros_array)
-```
-
-2. List comprehension:
-
-If you prefer working with lists, you can use list comprehension to create an array of zeros. Here's an example:
-
-```python
-# Create a 1-dimensional array of 5 zeros using list comprehension
-zeros_array = [0] * 5
-
-print(zeros_array)
-```
-
-For multi-dimensional arrays, you can nest list comprehensions. Here's an example:
-
-```python
-# Create a 2-dimensional array of 3 rows and 4 columns, filled with zeros using nested list comprehension
-zeros_array = [[0] * 4 for _ in range(3)]
-
-print(zeros_array)
 ```
 
 ## How to Save a NumPy Array in Python
