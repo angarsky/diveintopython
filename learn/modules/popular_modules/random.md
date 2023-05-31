@@ -71,7 +71,7 @@ In this example, we set different random seed values to generate two different l
 
 Overall, `random` seed is an essential feature in generating and reproducing `random` numbers in Python. By setting the seed, we can ensure that our results are consistent and reproducible.  
   
-## How to generate Random String  
+## How to generate a Random String  
 
 If you're looking to generate a random string in Python, there are a few different methods you can use depending on your needs. Here are two examples:
 
