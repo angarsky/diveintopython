@@ -162,7 +162,7 @@ In summary, Python's `random.randint()` is a simple and efficient way to generat
   
 ## Random with the `uniform` Function
 
-`random.uniform()` is a Python function that generates random floating-point numbers within a specified range. It is a part of the `random` module, which is used for generating random data.
+The `random.uniform()` is a Python function that generates random floating-point numbers within a specified range. It is a part of the `random` module, which is used for generating random data.
 
 Using `random.uniform()` function in Python is relatively easy. 
 
