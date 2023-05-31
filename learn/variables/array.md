@@ -184,6 +184,74 @@ print(array) # Output: ['apple', 'banana', 'orange', 'grape']
 
 In the above example, we create an array of strings called `array` using a list. Each element of the list represents a string. The resulting array contains four strings: 'apple', 'banana', 'orange', and 'grape'.
 
+### Array of Dictionaries
+
+In Python, you can create an array (or list) of dictionaries by simply initializing a list and adding dictionaries as its elements. Each dictionary can contain key-value pairs representing different properties or attributes. Here's an example:
+
+```python
+# Create an array of dictionaries
+array_of_dictionaries = [
+    {"name": "John", "age": 25, "city": "New York"},
+    {"name": "Alice", "age": 30, "city": "London"},
+    {"name": "Bob", "age": 35, "city": "Paris"}
+]
+
+# Accessing values
+print(array_of_dictionaries[0]["name"])  # Output: John
+print(array_of_dictionaries[1]["age"])   # Output: 30
+print(array_of_dictionaries[2]["city"])  # Output: Paris
+```
+
+### Array of Tuples in Python
+
+In Python, you can create an array of tuples using different data structures. Here are a few examples:
+
+1. List of Tuples:
+
+You can create an array of tuples using a list. Each tuple represents an element in the array. Here's an example:
+
+```python
+# List of tuples
+array = [(1, 'apple'), (2, 'banana'), (3, 'orange')]
+
+# Accessing elements in the array
+for item in array:
+    number, fruit = item
+    print(f"Number: {number}, Fruit: {fruit}")
+```
+
+2. NumPy Array of Tuples:
+
+If you are working with NumPy arrays, you can create an array of tuples using the `np.array()` function. Here's an example:
+
+```python
+import numpy as np
+
+# NumPy array of tuples
+array = np.array([(1, 'apple'), (2, 'banana'), (3, 'orange')])
+
+# Accessing elements in the array
+for item in array:
+    number, fruit = item
+    print(f"Number: {number}, Fruit: {fruit}")
+```
+
+3. Array module:
+
+If you are using the built-in `array` module, you can create an array of tuples using the `array` constructor. Here's an example:
+
+```python
+import array as arr
+
+# Array of tuples
+array = arr.array('i', [(1, 2), (3, 4), (5, 6)])
+
+# Accessing elements in the array
+for item in array:
+    number1, number2 = item
+    print(f"Number 1: {number1}, Number 2: {number2}")
+```
+
 ### Array of Bytes
 
 In Python, you can create an array of bytes using the built-in `bytearray` or `bytes` types. Here's an example of creating and working with an array of bytes:
@@ -560,24 +628,6 @@ In this case, the lambda function lambda `x: x ** 2` is used to square each elem
 
 The `map()` function is a useful tool for applying a function to every element of an array or iterable in Python. It simplifies the process of transforming the elements and provides a concise way to perform element-wise operations.
 
-## Array of Dictionaries
-
-In Python, you can create an array (or list) of dictionaries by simply initializing a list and adding dictionaries as its elements. Each dictionary can contain key-value pairs representing different properties or attributes. Here's an example:
-
-```python
-# Create an array of dictionaries
-array_of_dictionaries = [
-    {"name": "John", "age": 25, "city": "New York"},
-    {"name": "Alice", "age": 30, "city": "London"},
-    {"name": "Bob", "age": 35, "city": "Paris"}
-]
-
-# Accessing values
-print(array_of_dictionaries[0]["name"])  # Output: John
-print(array_of_dictionaries[1]["age"])   # Output: 30
-print(array_of_dictionaries[2]["city"])  # Output: Paris
-```
-
 ## Working with JSON Arrays
 
 In Python, you can work with JSON arrays using the `json` module, which provides functions for working with JSON data. Here's an example of how to work with a JSON array in Python:
@@ -614,56 +664,6 @@ array = [
 json_data = json.dumps(array)
 
 print(json_data)
-```
-
-## Array of Tuples in Python
-
-In Python, you can create an array of tuples using different data structures. Here are a few examples:
-
-1. List of Tuples:
-
-You can create an array of tuples using a list. Each tuple represents an element in the array. Here's an example:
-
-```python
-# List of tuples
-array = [(1, 'apple'), (2, 'banana'), (3, 'orange')]
-
-# Accessing elements in the array
-for item in array:
-    number, fruit = item
-    print(f"Number: {number}, Fruit: {fruit}")
-```
-
-2. NumPy Array of Tuples:
-
-If you are working with NumPy arrays, you can create an array of tuples using the `np.array()` function. Here's an example:
-
-```python
-import numpy as np
-
-# NumPy array of tuples
-array = np.array([(1, 'apple'), (2, 'banana'), (3, 'orange')])
-
-# Accessing elements in the array
-for item in array:
-    number, fruit = item
-    print(f"Number: {number}, Fruit: {fruit}")
-```
-
-3. Array module:
-
-If you are using the built-in `array` module, you can create an array of tuples using the `array` constructor. Here's an example:
-
-```python
-import array as arr
-
-# Array of tuples
-array = arr.array('i', [(1, 2), (3, 4), (5, 6)])
-
-# Accessing elements in the array
-for item in array:
-    number1, number2 = item
-    print(f"Number 1: {number1}, Number 2: {number2}")
 ```
 
 ## How to Get the Last Element of an Array in Python
