@@ -41,7 +41,11 @@ External Libraries: Some external libraries, such as NumPy, provide multidimensi
 
 In summary, arrays are fixed-size, homogeneous collections of elements that are memory-efficient and provide specific operations, while lists are dynamic, heterogeneous collections that offer more flexibility and versatility. The choice between arrays and lists depends on the specific requirements of your program, such as memory usage, data type constraints, and the need for dynamic resizing or specialized operations.
 
-## How to Create an Array
+## Creation of an Array
+
+In Python, arrays can be created using various methods and libraries. There are also some other parameters which should be taken into account at the moment of array creation.
+
+### How to Create an Array
 
 You can create an array in Python using the built-in `array` module or by simply initializing an empty list. Here are two examples of creating arrays:
 
@@ -63,7 +67,7 @@ my_list = [1, 2, 3, 4, 5]
 
 To create an empty array, you can follow the approaches mentioned above. Next, we'll look at the defining of an array of size n.
 
-## How to Create Array of Size n
+### How to Create Array of Size n
 
 To create an array of a specific size in Python, you can use various methods, including using a list comprehension or using NumPy. Here are a few examples of arrays' declaring:
 
@@ -85,7 +89,7 @@ my_array = np.zeros(n)
 print(my_array) # Output: [0. 0. 0. 0. 0.]
 ```
 
-## Random-Generated Array
+### Random-Generated Array
 
 To generate a random array in Python, you can use the `random module` from the Python standard library or the numpy library. Here are examples using both approaches:
 
@@ -115,7 +119,7 @@ print(random_array)  # Output: [92 76 32 48 11]
 
 Both approaches allow you to generate random arrays of integers. Adjust the parameters (`a`, `b`, and `size`) based on your specific requirements to control the range and size of the random array.
 
-## How to Create 2d Array in Python
+### How to Create 2d Array in Python
 
 Here is an example how to initialize a multi-dimensional array in Python using `np.array()` function:
 
@@ -154,7 +158,7 @@ for row in array_2d:
     print()
 ```
 
-## How to Create a NumPy Array in Python
+### How to Create a NumPy Array in Python
 
 To create a [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) in Python, you can use the `numpy.array()` function. Here's an example of np array initialization:
 
