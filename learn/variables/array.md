@@ -184,6 +184,38 @@ print(array) # Output: ['apple', 'banana', 'orange', 'grape']
 
 In the above example, we create an array of strings called `array` using a list. Each element of the list represents a string. The resulting array contains four strings: 'apple', 'banana', 'orange', and 'grape'.
 
+### Array of Bytes
+
+In Python, you can create an array of bytes using the built-in `bytearray` or `bytes` types. Here's an example of creating and working with an array of bytes:
+
+Using `bytearray`:
+
+```python
+my_array = bytearray([0x41, 0x42, 0x43, 0x44])  # Creating a bytearray from a list of byte values
+print(my_array)  # Output: bytearray(b'ABCD')
+
+# Accessing individual bytes
+print(my_array[0])  # Output: 65
+print(hex(my_array[1]))  # Output: 0x42
+
+# Modifying bytes
+my_array[2] = 0x45
+print(my_array)  # Output: bytearray(b'ABED')
+```
+
+Using `bytes`:
+
+```python
+my_array = bytes([0x41, 0x42, 0x43, 0x44])  # Creating a bytes object from a list of byte values
+print(my_array)  # Output: b'ABCD'
+
+# Accessing individual bytes
+print(my_array[0])  # Output: 65
+print(hex(my_array[1]))  # Output: 0x42
+```
+
+Both `bytearray` and `bytes` represent sequences of bytes and can be used interchangeably in many contexts. Choose the appropriate one based on whether you need a mutable or immutable sequence of bytes.
+
 ## A Length of an Array in Python
 
 You can get the length of an array (or any sequence) using the `len()` function. The `len()` function returns the number of elements in the sequence.
@@ -325,38 +357,6 @@ In this example, we create a DataFrame `df` using a dictionary `data` and then p
 DataFrames offer many features, such as indexing, filtering, merging, and handling missing values, making them a popular choice for data analysis and manipulation tasks.
 
 In summary, if you need a simple data structure for basic numerical computations, a Python array can be sufficient. However, if you require more advanced data manipulation, analysis, and a tabular structure, a DataFrame (such as pandas DataFrame) would be a better choice.
-
-## Array of Bytes
-
-In Python, you can create an array of bytes using the built-in `bytearray` or `bytes` types. Here's an example of creating and working with an array of bytes:
-
-Using `bytearray`:
-
-```python
-my_array = bytearray([0x41, 0x42, 0x43, 0x44])  # Creating a bytearray from a list of byte values
-print(my_array)  # Output: bytearray(b'ABCD')
-
-# Accessing individual bytes
-print(my_array[0])  # Output: 65
-print(hex(my_array[1]))  # Output: 0x42
-
-# Modifying bytes
-my_array[2] = 0x45
-print(my_array)  # Output: bytearray(b'ABED')
-```
-
-Using `bytes`:
-
-```python
-my_array = bytes([0x41, 0x42, 0x43, 0x44])  # Creating a bytes object from a list of byte values
-print(my_array)  # Output: b'ABCD'
-
-# Accessing individual bytes
-print(my_array[0])  # Output: 65
-print(hex(my_array[1]))  # Output: 0x42
-```
-
-Both `bytearray` and `bytes` represent sequences of bytes and can be used interchangeably in many contexts. Choose the appropriate one based on whether you need a mutable or immutable sequence of bytes.
 
 ## How to Print an Array in Python
 
