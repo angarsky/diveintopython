@@ -216,6 +216,37 @@ print(hex(my_array[1]))  # Output: 0x42
 
 Both `bytearray` and `bytes` represent sequences of bytes and can be used interchangeably in many contexts. Choose the appropriate one based on whether you need a mutable or immutable sequence of bytes.
 
+### The `range()` Function for Array in Python
+
+In Python, you can create an array or list of numbers using the `range()` function. The `range()` function generates a sequence of numbers within a specified range.
+
+Here are a few examples of using the `range()` function to create arrays or lists of numbers:
+
+1. Creating a range of numbers as a list:
+
+```python
+my_list = list(range(5))
+print(my_list)
+# Output: [0, 1, 2, 3, 4]
+```
+
+2. Creating a range of numbers with a specified start and end:
+```python
+my_list = list(range(2, 10))
+print(my_list)
+# Output: [2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+3. Creating a range of numbers with a specified start, end, and step size:
+
+```python
+my_list = list(range(1, 11, 2))
+print(my_list)
+# Output: [1, 3, 5, 7, 9]
+```
+
+The `range()` function can be used to create arrays or lists of numbers based on different start, end, and step size values. By converting the range object to a list using the `list()` function, you can obtain a list representation of the range.
+
 ## A Length of an Array in Python
 
 You can get the length of an array (or any sequence) using the `len()` function. The `len()` function returns the number of elements in the sequence.
@@ -811,34 +842,3 @@ my_array.remove(1)
 
 print(my_array)  # Output: [4, 3]
 ```
-
-## The `range()` Function for Array in Python
-
-In Python, you can create an array or list of numbers using the `range()` function. The `range()` function generates a sequence of numbers within a specified range.
-
-Here are a few examples of using the `range()` function to create arrays or lists of numbers:
-
-1. Creating a range of numbers as a list:
-
-```python
-my_list = list(range(5))
-print(my_list)
-# Output: [0, 1, 2, 3, 4]
-```
-
-2. Creating a range of numbers with a specified start and end:
-```python
-my_list = list(range(2, 10))
-print(my_list)
-# Output: [2, 3, 4, 5, 6, 7, 8, 9]
-```
-
-3. Creating a range of numbers with a specified start, end, and step size:
-
-```python
-my_list = list(range(1, 11, 2))
-print(my_list)
-# Output: [1, 3, 5, 7, 9]
-```
-
-The `range()` function can be used to create arrays or lists of numbers based on different start, end, and step size values. By converting the range object to a list using the `list()` function, you can obtain a list representation of the range.
