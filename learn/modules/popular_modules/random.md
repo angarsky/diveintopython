@@ -33,7 +33,7 @@ print(random_option)
 # "paper" (this option will be different each time the code is run)
 ```
 
-In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors".  
+In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors`.  
 
  ## Random Seed  
 
