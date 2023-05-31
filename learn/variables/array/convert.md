@@ -81,7 +81,11 @@ The `reshape()` method takes the desired shape of the array as its argument. In 
 
 > Note: The `reshape()` method returns a new array with the desired shape; it does not modify the original array.
 
-## Python String into Array Conversion
+## Conversion Between String and Array
+
+Converting between strings and arrays in Python can be useful when working with textual data or when manipulating individual characters.
+
+### Python String into Array Conversion
 
 To convert a Python string into an array of individual characters, you can iterate over the string and create a list of characters. Here's an example:
 
@@ -103,7 +107,7 @@ print(array) # Output: ['Hello,', 'world!', 'How', 'are', 'you?']
 
 In this example, the `split()` method splits the string into a list of substrings based on whitespace characters, resulting in an array where each element represents a word from the string.
 
-## Array to String Conversion
+### Array to String Conversion
 
 To convert an array (or list) to a string in Python, you can use the `join()` method. The `join()` method concatenates the elements of an iterable into a single string, using a specified delimiter. Here's an example:
 
