@@ -18,15 +18,6 @@ Python has powerful libraries for machine learning such as TensorFlow, PyTorch, 
 
 Python has a wealth of libraries available for statistical analysis and modeling. Pandas, Numpy, and Statsmodels are just a few examples. Here's an example code for generating a histogram using Matplotlib:
 
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-x = np.random.normal(size=1000)
-plt.hist(x, bins=30)
-plt.show()
-```
-
 Whether you're developing an AI application, crunching numbers for a research project, or working on a data analysis problem, Python provides a powerful and flexible toolset for solving a wide range of tasks.  
   
 ## Key Benefits of Python  
