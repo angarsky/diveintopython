@@ -32,12 +32,6 @@ Python comes with an easy-to-read syntax and an intuitive design that makes codi
 
 Python has a huge collection of libraries and frameworks that make it easy to perform various tasks, including data processing, web development, machine learning, and more.
 
-#### Import NumPy library in Python
-
-```python
-import numpy as np
-```
-
 ### Cross-platform compatibility 
 
 Python can be run on various platforms such as Windows, Linux, and macOS, making it easy to develop and deploy projects on multiple environments.
