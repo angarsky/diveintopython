@@ -126,7 +126,7 @@ One of the fundamental concepts to grasp when learning Python is variables and t
   
 ## Arrays  
 
-Arrays in Python is a fundamental concept for managing and storing a collection of values. **[Arrays](to do !!!)** are not only useful but also an essential data structure for building algorithms and solving programming problems. In this article, we will dive deeper into what arrays are in Python, exploring how to create, manipulate, and use them efficiently. 
+Arrays in Python is a fundamental concept for managing and storing a collection of values. Arrays are not only useful but also an essential data structure for building algorithms and solving programming problems. In this article, we will dive deeper into what arrays are in Python, exploring how to create, manipulate, and use them efficiently. 
   
 ## Functions  
 
