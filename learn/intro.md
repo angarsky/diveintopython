@@ -35,19 +35,6 @@ Python has a huge collection of libraries and frameworks that make it easy to pe
 ### Cross-platform compatibility 
 
 Python can be run on various platforms such as Windows, Linux, and macOS, making it easy to develop and deploy projects on multiple environments.
-   
-#### Check the platform using Python
-
-```python
-import sys
-
-if sys.platform == "win32":
-    print("Running on Windows")
-elif sys.platform == "linux":
-    print("Running on Linux")
-else:
-    print("Running on macOS")
-```
 
 Overall, Python offers a range of benefits that make it an ideal choice for several applications, from simple scripts to complex projects.  
 
@@ -55,29 +42,7 @@ Overall, Python offers a range of benefits that make it an ideal choice for seve
 
 Python can be used to create a variety of programs, from simple command-line tools to complex web applications. Here are two examples of basic Python programs:
 
-### Example of Basic Python Program
-
-```python
-print("Hello, World!")
-```
-
 This program simply prints the message `Hello, World!` to the screen. It's a basic example of how to use the `print()` function in Python.
-
-### Example of Dynamic Programming
-
-```python
-def fibonacci(n):
-    if n == 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fibonacci(n-1) + fibonacci(n-2)
-
-print(fibonacci(10))
-```
-
-This program calculates the 10th number in the Fibonacci sequence using a recursive function. It's an example of how to use dynamic programming in Python.
 
 ## How to install 
 
