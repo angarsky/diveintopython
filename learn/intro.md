@@ -14,28 +14,6 @@ Python is an open-source, high-level programming language that is widely used in
 
 Python has powerful libraries for machine learning such as TensorFlow, PyTorch, and Keras. With these libraries, you can train models to recognize images, classify data points, and make predictions. Here's a high-level example of code how to easy can be implemented an image classification using TensorFlow:
 
-```python
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras import layers
-
-model = keras.Sequential([
-    layers.Conv2D(32, (3,3), activation='relu', input_shape=(28,28,1)),
-    layers.MaxPooling2D((2,2)),
-    layers.Flatten(),
-    layers.Dense(10)
-])
-
-(train_images, train_labels), (test_images, test_labels) = keras.datasets.mnist.load_data()
-
-train_images = train_images.reshape(-1, 28, 28, 1) / 255.0
-test_images = test_images.reshape(-1, 28, 28, 1) / 255.0
-
-model.compile(optimizer='adam', loss=tf.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
-
-model.fit(train_images, train_labels, epochs=5, validation_data=(test_images, test_labels))
-```
-
 ### Statistics
 
 Python has a wealth of libraries available for statistical analysis and modeling. Pandas, Numpy, and Statsmodels are just a few examples. Here's an example code for generating a histogram using Matplotlib:
