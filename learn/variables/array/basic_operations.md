@@ -840,7 +840,7 @@ These are just a few examples of the operations you can perform on arrays in Pyt
 
 ## How to Compare Arrays
 
-Let's revew how to compare arrays in Python. Here are a few approaches:t
+Let's revew how to compare arrays in Python. Here are a few approaches:
 
 1. NumPy:
 
