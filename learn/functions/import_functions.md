@@ -32,7 +32,7 @@ Now the `add` function from `math_operations.py` can be called as follows: `prin
 
 To import multiple specific functions, say `add` and `subtract`, from `math_operations.py`: `from math_operations import add, subtract`
 
-Now both the 'add' and 'subtract' functions from 'math_operations.py' can be called as follows: `print(add(2,3)) # Output: 5` and `print(subtract(5,3)) # Output: 2`
+Now both the `add` and `subtract` functions from the `math_operations.py` file can be called as follows: `print(add(2,3))` and `print(subtract(5,3))`.
   
 ## Common errors when importing functions in Python and how to fix them  
 
