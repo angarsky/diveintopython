@@ -27,9 +27,8 @@ number = 25
 sqrt = math.sqrt(number)
 
 print(f"Square root of {number} is {sqrt}")
-# 
+
 # Output:
-# 
 # Square root of 25 is 5.0
 ```
 
