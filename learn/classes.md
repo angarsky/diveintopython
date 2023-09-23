@@ -1,4 +1,7 @@
-Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we'll explore the basics of classes in Python and how to use them effectively in your projects.  
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes
+
+Classes in Python allow developers to create reusable components for their code, making it easier to maintain and modify. In this article, we will explore the basics of classes in Python and how to use them effectively in your projects.  
 
 ## Basic Principles of Object-Oriented Programming  
 
