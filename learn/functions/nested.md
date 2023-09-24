@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/nested
+
 Nested functions are a **powerful tool** available in Python programming that allows one to define functions inside other functions. Such a concept of nesting one function inside another can create more organized and manageable code. With the help of nested functions, the code becomes easier to read and is also more efficient. In this article, we will take a closer look at what are nested functions and why they are used in Python.  
   
 ## Understanding Python's nested functions  

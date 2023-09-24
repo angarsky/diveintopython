@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/replacement
+
 Quite often we need to replace one or more occurrences of a particular substring or character within a string with a different substring or character. This is a commonly used operation in computer programming and text processing, as it allows for the manipulation of text data in a flexible and efficient way. Here are some methods which can help with it.
 
 ## String Substitution
@@ -55,9 +58,12 @@ In this case, only the leading spaces were removed, and the trailing spaces rema
 You can remove newline characters from a string using the `replace()` method. Here's an example:
 
 ```python
-string_with_newline = "This is a string\nwith a newline character."
-string_without_newline = string_with_newline.replace("\n", "")
+string_with_newline = "This is a string
+with a newline character."
+string_without_newline = string_with_newline.replace("
+", "")
 print(string_without_newline) # Output: This is a stringwith a newline character.
 ```
 
-In the code above, we first define a string called `string_with_newline` which contains a newline character (`\n`). We then use the `replace()` method to replace all occurrences of the newline character with an empty string (`""`). The resulting string, `string_without_newline`, does not contain any newline characters. We then print the resulting string using the `print()` function.
+In the code above, we first define a string called `string_with_newline` which contains a newline character (`
+`). We then use the `replace()` method to replace all occurrences of the newline character with an empty string (`""`). The resulting string, `string_without_newline`, does not contain any newline characters. We then print the resulting string using the `print()` function.

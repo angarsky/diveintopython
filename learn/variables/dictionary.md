@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary
+
 Python provides several built-in collection types to store and manipulate data. Some of the commonly used collection types in Python are:
 
 * Lists

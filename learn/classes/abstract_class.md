@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/abstract-class
+
 In object-oriented programming, an abstract class is a class that cannot be instantiated and is designed to be subclass, providing a basic interface for its derived classes. Python is an object-oriented language that supports abstract classes through its [Abstract Base Class](https://docs.python.org/3/library/abc.html) (ABC) module. This module provides a way to define abstract classes and enforce their interface on their subclasses. This article will explore the concept of abstract classes in Python and how they are implemented using Python abstract base class.  
   
 ## Introduction to Python Abstract Class  

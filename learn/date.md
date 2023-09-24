@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/date
+
 Python provides built-in modules that allow you to work with date and time values in various formats. The [DateTime module](/learn/date/datetime.md) is a popular one for handling date and time objects, including time zones, time differences, and time arithmetic. The module also offers a wide range of formatting options to display dates and times in different ways. Additionally, Python's [Time module](/learn/date/time.md) provides functions for working with time values, such as getting the current time, measuring elapsed time, and setting timeouts. Understanding how to work with date and time values is essential for many programming tasks, including scheduling, data analysis, and database management.
 
 ## Date and Time Variables in Python

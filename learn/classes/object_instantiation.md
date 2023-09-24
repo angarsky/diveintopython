@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/object-instantiation
+
 Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. This process involves using constructors, which are special methods that define how new objects are initialized. This article explores the basics of object instantiation in Python and provides examples of how to create and use objects in your code.  
   
 ## Exploring Python's Class Constructors  

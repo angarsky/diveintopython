@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/install/linux
+
 Installing Python on Linux is a necessary step for anyone looking to develop applications or work with Python IDEs on Linux operating systems. Python is a powerful programming language that offers excellent functionality for coding and developing software. This guide will walk you through the steps required for installing Python on Linux, helping you get started with Python programming on Linux without any difficulty.  
   
 ## How to Install Python on Linux  

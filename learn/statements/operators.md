@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/statements/operators
+
 In this article, we will explore the different types of operators in Python and how they are used in programming. 
   
 ## The `in` Opertor  
@@ -458,4 +461,3 @@ print(num)
 ```
 
 In both examples, the `**` operator is used to calculate the `result` of raising a number to a power. In the second example, the `result` is assigned to the variable `num` using the assignment operator `**=` for more concise code. By using the exponentiation operator, you can easily perform exponentiation operations in your Python code.  
-

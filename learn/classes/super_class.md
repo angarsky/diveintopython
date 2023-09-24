@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/super-class
+
 In this article, we will delve into the intricacies of Python Super Classes. Get ready to unlock the full potential of Python Development by mastering the vital elements of Super Class in Python.  
   
 ## Understanding Python's Super Class  

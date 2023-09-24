@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/global-variables
+
 In Python, variables are used to store values that can be accessed and manipulated within a program. However, the scope of a variable can differ depending on whether it is a global variable or a local variable. Global variables can be accessed from any part of the program, while local variables are limited to the function or block in which they are defined. Understanding the differences between variable scopes is important for developing efficient and effective Python code.  
   
   

@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/set/convert
+
 Sets conversion in Python is the process of transforming one type of set into another, such as converting a list to a set or vice versa. Understanding how to perform set conversions can be helpful in various scenarios, including data analysis, filtering, and sorting. 
 
 ## List vs Set in Python

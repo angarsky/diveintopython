@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables
+
 Variables play a crucial role in Python, as they provide a way to store and manipulate data throughout a program. By assigning values to variables, we can easily refer to and update data as needed, making our code more efficient and readable. Overall, variables are a fundamental concept in Python programming and are essential for any kind of data manipulation and analysis. Let's review this topic in details.
 
 ## Variable Definition

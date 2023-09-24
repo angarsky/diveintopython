@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/generators
+
 **Generator functions** in Python are special kinds of functions that can be used to create **iterators**. They generate a sequence of values on-the-fly as required, rather than returning a value all at once like regular functions. This makes them more memory-efficient and faster than other methods of producing iterators. 
 
 ## Introduction to generators

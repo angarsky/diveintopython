@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/array/basic-operations
+
 Arrays allow us to store and manipulate data efficiently, enabling us to perform a wide range of tasks. In this article, we will explore the essential basic most common operations associated with arrays in Python.
 
 ## Sorting and Shuffling

@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/dunder-magic-methods
+
 **Dunder** (double underscore) or **magic** methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
   
 ## Constructing Objects and Expressions  

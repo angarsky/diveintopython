@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/methods
+
 This article explores the ins and outs of working with methods and functions in classes in Python. Specifically, we delve into the important concepts of the class constructor (or `__init__` method), abstract class methods, and the difference between class methods and static methods. So if you're looking to elevate your understanding of functions in a class, read on!  
   
 ## Mastering the Python Class Constructor   

@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/statements
+
 In Python, statements are instructions or commands that you write to perform specific actions or tasks. They are the building blocks of a Python program. 
   
 ## What is a statement in Python?  
@@ -183,4 +186,3 @@ finally:
 # Error: File not found or could not be written
 ```  
   
-

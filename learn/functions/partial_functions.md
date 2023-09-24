@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/partial-functions
+
 Python offers a range of functions to developers. Partial functions in Python are an exciting addition that can be extremely useful, particularly when dealing with complex code. A partial function is a function that has some of its arguments already defined, making it easier to call. In this article, we explore the concept of partial functions in Python and how they can be used effectively in different programming scenarios.  
   
 ## Understanding Python partial functions: a beginner's guide to function modification  

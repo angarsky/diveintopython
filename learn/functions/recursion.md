@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/recursion
+
 **Recursive programming** is a technique in programming where a function **calls itself repeatedly** until it reaches a base or terminal case. It is a powerful tool when dealing with certain types of problems that can be naturally defined in a recursive manner. In Python, we can implement this technique through recursive functions.
 
 ## Python recursive functions

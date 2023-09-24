@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/modules
+
 Python offers a wide range of modules to simplify complex tasks. Among these useful modules is the headline module, which allows developers to extract news headlines and articles from various news sources on the internet. This module can be extremely helpful for creating news monitoring tools, analyzing trends, and staying up-to-date with the latest news developments. In this article, we'll explore the headline module in Python and how it can be utilized to retrieve news headlines from different sources.  
   
 ## What is a Module in Python?

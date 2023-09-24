@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/lambda
+
 **Lambda functions** in Python are **anonymous** functions that can be defined and declared **inline** with the rest of the code. 
 
 ## What is a lambda function in Python

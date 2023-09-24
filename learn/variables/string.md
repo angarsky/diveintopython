@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string
+
 Previously we've touched the topic of operations with variables. In this part we will dive into most common operations and methods with strings. This is not the whole list of possible string manipulations.
 
 ## String Variable Declaration

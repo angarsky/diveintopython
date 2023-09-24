@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/tuple/basic-operations
+
 Even though tuples are immutable, they support various operations such as indexing, slicing, and concatenation that can be performed on them. In this article, we will explore the different operations that can be performed on tuples in Python and their syntax.
 
 ## Sorting Tuples in Python

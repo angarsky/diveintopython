@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/substring
+
 A substring is a sequence of characters that is part of a larger string. It is a contiguous sequence of characters within a string, which can be extracted or manipulated independently.
 
 For example, in the string "Hello, World!", the substrings "Hello", "World", and "!" are all substrings of the original string.

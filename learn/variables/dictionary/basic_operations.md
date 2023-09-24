@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary/basic-operations
+
 Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's review some common operations and methods you can perform on dictionaries in Python.
 
 ## Adding an Element to a Dictionary

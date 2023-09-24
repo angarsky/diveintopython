@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/typical-errors
+
 Python classes are an essential concept for beginner and advanced programmers. They are used to group variables and methods together to create objects that can be reused throughout the program. However, even the most seasoned Python programmers are bound to make a few errors along the way. In this article, we will explore some of the typical errors in Python that developers encounter when working with classes.  
   
 ## Common Errors in Python Classes  

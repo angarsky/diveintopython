@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/loops/range
+
 Range statement is a crucial feature in Python that enables developers to define a sequence of numbers within a specified range. It is often used in various programming applications to create loops and iterate over specific subsets of elements in a list or tuple. Range statement is a simple yet powerful tool that can enhance the functionality of your Python code. In this article, we will explore the different applications and functionalities of the range statement and how it can be used to boost the efficiency and effectiveness of your Python scripts.  
   
 ## What is the `range` in Python?

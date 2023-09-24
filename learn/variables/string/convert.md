@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/convert
+
 In the process of working with data, it is often necessary to convert one data type to another. In Python, you can convert different data types to a string and vide versa using various conversion functions. This part will describe how to do it.
 
 ## Convert to String
@@ -35,7 +38,7 @@ Here's an example:
 ```python
 unicode_string = "Hello, World! 🌍"
 byte_string = unicode_string.encode("utf-8")
-print(byte_string) # Output: b'Hello, World! \xf0\x9f\x8c\x8d'
+print(byte_string) # Output: b'Hello, World! 🌍'
 ```
 
 In this example, the `encode` method is used to convert the `unicode_string` to a byte string encoded in UTF-8 format. The resulting `byte_string` variable contains the byte representation of the original string.

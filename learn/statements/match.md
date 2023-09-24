@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/statements/match
+
 Switch statements are a popular feature in many programming languages, allowing developers to cleanly and efficiently handle multiple conditional cases. However, Python does not include a built-in switch statement. In this article, we will explore several ways to implement switch-like functionality in Python, using various techniques and libraries. Whether you're a seasoned developer or just starting out, this guide will provide valuable insights into this important programming concept.  
   
 ## Match Statement  
@@ -66,4 +69,3 @@ print(switch_case(2)) # Output: Two
 ```
 
 Although not as concise as a switch case statement, these alternatives can provide similar logic and readability in your Python code.  
-

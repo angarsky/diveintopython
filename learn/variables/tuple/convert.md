@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/tuple/convert
+
 Sometimes it is necessary to convert a tuple to a different data type, such as a list or a string, to perform certain operations. In some cases we need to convert some data types to tuple. Python provides built-in functions for tuple conversion, which can be used to manipulate and process data stored in tuples. Let's explore the various ways of converion and most common cases.
 
 ## Tuple vs List in Python

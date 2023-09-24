@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/variable-import
+
 To import a variable from another file in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
 
 ## Example of a Variable Import from a File
@@ -46,7 +49,11 @@ You can also use the `writelines()` method to write a list of strings to a file,
 # Open the file for writing
 with open('myfile.txt', 'w') as f:
     # Write a list of strings to the file
-    f.writelines(['Hello\n', 'World\n', 'Python\n'])
+    f.writelines(['Hello
+', 'World
+', 'Python
+'])
 ```
 
-In this example, the `writelines()` method is used to write a list of three strings to the file. The strings are separated by newlines (`'\n'`) to ensure that each string is written on a separate line.
+In this example, the `writelines()` method is used to write a list of three strings to the file. The strings are separated by newlines (`'
+'`) to ensure that each string is written on a separate line.

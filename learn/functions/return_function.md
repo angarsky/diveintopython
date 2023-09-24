@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/return-function
+
 
 Returning a function from a function means that a function is created and returned as output of another function. This is possible in Python because functions are first-class objects, which means they can be passed around just like any other object such as integers, strings, or lists.
 
