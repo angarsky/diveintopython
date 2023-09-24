@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/directories
+
 Directories are a critical part of file management and play a crucial role in developing comprehensive programs in Python.
   
 ## OS Module  
@@ -347,4 +350,3 @@ sys.path.append('/path/to/parent_directory')
 Make sure to replace `parent_module` and `parent_function` with the name of your parent module and function.
 
 By adding the parent directory to your system's `sys.path` list, you can `import` modules from the parent directory in your Python code.  
-

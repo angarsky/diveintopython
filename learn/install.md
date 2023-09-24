@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/install
+
 If you're new to programming or looking to dive into the world of Python, you'll need to install Python on your computer to get started.
 
 ## How to install Python?

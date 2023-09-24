@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/convert
+
 In the process of working with data, it is often necessary to convert one data type to another. In Python, you can convert different data types to a string and vide versa using various conversion functions. This part will describe how to do it.
 
 ## Convert to String

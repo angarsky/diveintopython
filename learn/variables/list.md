@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/list
+
 A list in Python is a collection of values or items that are ordered, changeable, and allow duplicates. Lists are one of the most commonly used data structures in Python.
 
 ## Creating a List

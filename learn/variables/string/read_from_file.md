@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/read-from-file
+
 To read a file into a string in Python, you can use the built-in `open()` function to open the file and read its contents using the `read()` method. 
 
 ## Example of Code to Read a Text File

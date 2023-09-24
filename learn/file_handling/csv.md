@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/csv
+
 CSV (Comma Separated Values) files are one of the most common data formats used in data science, machine learning, and analytics. Python is a powerful programming language that provides several tools and libraries to work with [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files. In this article, we will explore the basics of working with CSV files in Python, including reading, writing, and manipulating data. We will also cover some advanced topics, such as handling large CSV files, dealing with missing data, and performing operations on CSV data using NumPy and Pandas libraries.  
   
 ## Open CSV File and Read Data with Python  
@@ -265,4 +268,3 @@ print(column_data)
 ```
 
 In this code example, we first `import` the [pandas](https://pypi.org/project/pandas/) module and create a `DataFrame` called `data` using the `read_csv()` function and passing the CSV file name `example.csv`. We then assign the data in `column_name` to a new variable `column_data`. Finally, we `print` `column_data`.  
-

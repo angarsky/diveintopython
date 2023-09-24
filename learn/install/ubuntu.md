@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/install/ubuntu
+
 Installing Python on Ubuntu is an essential step for any developer who wants to work with Python. This guide provides a concise and straightforward tutorial on how to install Python on Ubuntu in just a few easy steps.  
   
 ## How to Install Python on Ubuntu  
@@ -20,4 +23,3 @@ To run a Python script in Ubuntu, follow these steps:
 Make sure that Python is installed on your Ubuntu system before running the script. You can install it by typing `sudo apt install python3` in the terminal.
 
 Running Python scripts in Ubuntu is simple and straightforward. Just follow these steps, and your script will run smoothly without any issues.
-

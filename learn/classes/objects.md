@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/objects
+
 If you're looking to deepen your knowledge of programming in Python, it's essential to have a solid understanding of classes and objects. Essentially, a class is a blueprint for creating objects, while objects themselves are instances of these classes. In this guide, we'll explore the world of class objects, and delve into the basics of classes and objects in this powerful language. So whether you're just starting out with Python or seeking to improve your existing skills, read on to learn more about this crucial aspect of the language.  
   
 ## How to Create an Object in Python  

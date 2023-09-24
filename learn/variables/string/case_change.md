@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/case-change
+
 There are some methods in Python which are commonly used to normalize string inputs, to convert strings to uppercase or lowercase, and to capitalize the first letter of a sentence or word. These methods can be particularly useful when dealing with user input or when working with text data that needs to be standardized or formatted consistently.
 
 ## String to lowercase

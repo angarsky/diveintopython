@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/array
+
 The official Python documentation contains information about [arrays](https://docs.python.org/3/library/array.html). However, in Python, the built-in data structure commonly used to represent arrays is the [list](/learn/variables/list.md). The official documentation primarily focuses on lists rather than a separate array data type. Lists are ordered, mutable, and can contain elements of different data types. You can access elements in a list using their indices, and you can perform various operations on lists such as appending, inserting, or removing elements.
 With these facts in mind, we'll look at lists from, say, an array's point of view. 
 

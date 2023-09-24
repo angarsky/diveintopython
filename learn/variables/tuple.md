@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/tuple
+
 What is a tuple in Python? A tuple in Python is an immutable sequence of values, similar to a list. However, tuples cannot be modified once they are created, which means you cannot add, remove or change elements in a tuple. 
 
 ## Creating Tuple in Python

@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/install/windows
+
 For Windows users, the process of installing Python on their computer can seem daunting. However, with the right guidance, it can be done with ease. In this article, we will provide instructions on how to install Python on Windows, so that you can start using this powerful programming language in your projects.  
   
 ## How to Install Python on Windows  

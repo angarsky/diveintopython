@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/modules/popular-modules/requests
+
 The `requests` module makes it easy to interact with web pages and APIs by streamlining the process of sending requests and handling responses. With requests, you can quickly and easily retrieve data from the web and use it in your Python projects. In this article, we will explore the requests module and its features, and demonstrate how to use it in your Python code.
 
 ## A few Words about the `requests` Module  

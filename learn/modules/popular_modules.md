@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/modules/popular-modules
+
 Modules, allow for the easy implementation of complex functionalities such as web development, data analysis, and machine learning. As a result, programmers of all levels and industries rely heavily on popular modules in Python to simplify their work and streamline their development process. In this article, we will explore some of the most widely used modules in Python and the benefits they offer.
 
 ## The Random Module

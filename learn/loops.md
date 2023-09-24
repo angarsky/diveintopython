@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/loops
+
 There are two types of loops in Python: `for` loops and `while` loops.
 
 The `for` loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The `while` loop is used for executing a block of code repeatedly as long as a certain condition is `true`. In the `while` loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.

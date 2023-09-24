@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/statements/if
+
 In Python, the `if` statement is used for conditional execution of code. It allows you to specify a condition and execute a block of code only if that condition evaluates to `True`.  
   
 ## How to Use the `if` Statement in Python  
@@ -274,5 +277,3 @@ if x > 0 and \
 ```
 
 Overall, both methods are useful for checking multiple conditions in Python, but multiline `if` statements can make the code more readable and easier to manage.  
-
-

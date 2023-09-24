@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/variables
+
 Python is a powerful language that supports different types of variables and properties. In this article, we will discuss variables, attributes, and properties in Python to help you understand them better.  
   
 ## Understanding Variables, Attributes, and Properties   

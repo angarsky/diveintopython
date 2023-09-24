@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/array/convert
+
 In Python, converting between lists and arrays is a common task when dealing with numerical data. The process of converting from a list to an array allows us to take advantage of efficient numerical computations and operations provided by libraries like NumPy. On the other hand, in some cases we need to make 2d array from 1d array. So let's review most common topics on conversions related to array.
 
 ## Conversion Between Lists and NumPy Arrays

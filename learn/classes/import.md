@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/import
+
 Importing classes in Python allows programmers to leverage pre-existing code modules, making their programs more efficient and concise. By importing classes, developers can access and utilize the functionality provided by these classes without the need to rewrite the entire code from scratch.
   
 ## Imports and Attributes  

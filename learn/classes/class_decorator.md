@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/classes/class-decorator
+
 Class decorators are a powerful programming tool used to modify the behavior of classes. One such decorator is the class decorator, which can be used to add functionality to a class. Another type of decorator is the class method decorator, which can be used to modify class methods. Additionally, the class property decorator can be used to create computed properties for classes. These decorators can quickly and easily modify the behavior of classes, making them invaluable to developers.  
   
 ## Introduction to Python Class Decorator  

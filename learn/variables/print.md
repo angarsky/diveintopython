@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/variables/print
+
 Printing refers to the process of displaying the output of a program on the console or terminal. It is an essential operation that allows you to communicate with the user or to debug your code by showing the values of variables, the results of calculations, or other information.
 There is also such a thing as formatting, which is often used in printing. String formatting (also known as interpolation) is the process of inserting variables or values into a string.
 
@@ -97,4 +100,3 @@ print(result)  # Output: My name is Alice and I am 30 years old.
 In the above example, we first create a string template with placeholders for the name and age using the `${}` syntax. We then create a `Template` object from the template string and use the `substitute` method to replace the placeholders with actual values. Finally, we print the resulting string.
 
 Note that you need to pass the values for the placeholders as keyword arguments to the `substitute` method.
-

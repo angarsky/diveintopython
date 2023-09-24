@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/file-handling
+
 Python has a variety of built-in functions and libraries that make working with files a breeze, and in this article, we'll explore the different techniques and best practices for handling files in Python.   
   
 ## How to Open Files in Python
@@ -279,4 +282,3 @@ with open("example.txt", "w") as file:
 This code creates a new file named `example.txt` in write mode, and writes the string `Hello, World!` to the file using the `write()` method. 
 
 Remember to close the file after you are done writing. Using the `with` statement handles this automatically.  
-

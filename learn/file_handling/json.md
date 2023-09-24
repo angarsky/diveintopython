@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/json
+
 JSON files have become increasingly popular in recent years due to their compatibility with web-based systems. JSON, or [JavaScript Object Notation](https://en.wikipedia.org/wiki/JSON), is a lightweight format for data exchange, making it a popular choice for web applications. Python has powerful tools for working with JSON files. In this article, we will explore how to read and manipulate JSON files, and how to use JSON files in practical applications.  
   
 ## How to Use JSON with Python   
@@ -120,4 +123,3 @@ In this example, we are reading JSON data from a file called `data.json`. If the
 To handle the `ValueError: Extra data error`, you can catch the exception using a try-except block, as shown in the examples. This allows you to gracefully handle the error and provide appropriate feedback or take alternative actions.
 
 When encountering this error, it's important to carefully examine the JSON file to ensure its validity. Verify that the JSON structure is correct and there are no additional or unexpected data present.
-

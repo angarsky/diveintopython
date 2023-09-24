@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/modules/packages
+
 With a rich set of libraries and frameworks, Python enables developers to write efficient and maintainable code easily. In this headline package, we will explore some of the most important features of Python and how it can be used to solve real-world problems.
 
 ## Python Package vs Module  
@@ -83,6 +86,3 @@ To upgrade all the packages installed on your system, use the following command:
 pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
 ```
 By running this command in your command prompt, it will first collect all the packages installed on your system and then update them to the latest version. 
-
-
-

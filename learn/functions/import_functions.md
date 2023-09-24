@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/functions/import-functions
+
 In Python, functions play a vital role in programming as they help in creating reusable code. However, sometimes it can be tedious to rewrite the same function over and over again. Luckily, Python makes it easy to reuse functions by allowing you to import them from different files. In this article, we will explore how to import functions from one file to another in Python.  
   
 ## Python's import function: how to use it for enhanced code reusability  

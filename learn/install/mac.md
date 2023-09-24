@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/install/mac
+
 Installing Python on a Mac computer is a straightforward and simple process that can be accomplished in just a few minutes. 
   
 ## How to Install Python on Mac OS  
