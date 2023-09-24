@@ -42,10 +42,7 @@ In this example, we create a new file called example.txt using the 'w' mode, whi
 
 ```python
 file = open('example.txt', 'w')
-lines = ['Line 1
-', 'Line 2
-', 'Line 3
-']
+lines = ['Line 1\n', 'Line 2\n', 'Line 3\n']
 file.writelines(lines)
 file.close()
 ```

@@ -26,6 +26,7 @@ for file_path in $(find ${SEARCH_DIR} -name '*.md'); do
 
   # Add a note text if it hasn't added yet.
   if [ "${first_line_content}" != '> [!NOTE]' ]; then
+    # @todo: find better way, this code breaks `\n` characters in the text.
     echo -e "${note_text}$(cat "${file_path}")" > "${file_path}"
   fi
 done;

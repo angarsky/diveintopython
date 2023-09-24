@@ -38,7 +38,7 @@ Here's an example:
 ```python
 unicode_string = "Hello, World! 🌍"
 byte_string = unicode_string.encode("utf-8")
-print(byte_string) # Output: b'Hello, World! 🌍'
+print(byte_string) # Output: b'Hello, World! \xf0\x9f\x8c\x8d'
 ```
 
 In this example, the `encode` method is used to convert the `unicode_string` to a byte string encoded in UTF-8 format. The resulting `byte_string` variable contains the byte representation of the original string.

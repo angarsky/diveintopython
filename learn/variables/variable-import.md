@@ -49,11 +49,7 @@ You can also use the `writelines()` method to write a list of strings to a file,
 # Open the file for writing
 with open('myfile.txt', 'w') as f:
     # Write a list of strings to the file
-    f.writelines(['Hello
-', 'World
-', 'Python
-'])
+    f.writelines(['Hello\n', 'World\n', 'Python\n'])
 ```
 
-In this example, the `writelines()` method is used to write a list of three strings to the file. The strings are separated by newlines (`'
-'`) to ensure that each string is written on a separate line.
+In this example, the `writelines()` method is used to write a list of three strings to the file. The strings are separated by newlines (`'\n'`) to ensure that each string is written on a separate line.
