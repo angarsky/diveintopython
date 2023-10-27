@@ -1,11 +1,11 @@
 > [!NOTE]
 > Read this tutorial on the website: https://diveintopython.org/learn/classes/import
 
-Python is a versatile and powerful programming language known for its readability and efficiency. In Python, you can import a [class](https://diveintopython.org/learn/classes) from another file, providing a wealth of benefits in terms of code organization, maintainability, and collaboration. This feature allows programmers to leverage pre-existing code [modules](https://diveintopython.org/learn/modules), making their programs more efficient and concise. By importing classes, developers can access and utilize the functionality provided by these classes without the need to rewrite the entire code from scratch. In this article, we will explore how to import a class from another file in Python.
+In Python, you can import a class from another file, providing a wealth of benefits in terms of code organization, maintainability, and collaboration. This feature allows programmers to leverage pre-existing code modules, making their programs more efficient and concise. By importing classes, developers can access and utilize the functionality provided by these classes without the need to rewrite the entire code from scratch. In this article, we will explore how to import a class from another file in Python.
   
 ## Imports and Attributes  
 
-The import [statement in Python](https://diveintopython.org/learn/statements) allows us to use external modules and [packages](https://diveintopython.org/learn/modules/packages) that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
+The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
 
 ### Importing Modules in Python Using The Import Command
 
@@ -16,7 +16,7 @@ import math
 print(math.pi)
 ```
 
-Once we import the module, we can use its [functions](https://diveintopython.org/learn/functions) and attributes.
+Once we import the module, we can use its functions and attributes.
 
 ### Using Attributes in Python
 
@@ -49,7 +49,7 @@ For example: `from path.to.my_module import MyClass`. We import the `MyClass` cl
 
 In Python, it's possible to import multiple classes from a module by listing the class names and separating them with commas.
 
-For example, you can import class1, class2, and class3 from the module named `module_name` as follows: `from module_name import class1, class2, class3`.
+For example, you can import `class1`, `class2`, and `class3` from the module named `module_name` as follows: `from module_name import class1, class2, class3`.
 
 Alternatively, you can use the `from module_name import *` syntax to import all classes from module_name. However, it's worth noting that this approach is discouraged because it can lead to naming conflicts, especially when multiple classes with the same name exist in different modules.
 
@@ -150,7 +150,7 @@ Suppose we have a package called `example` that contains a submodule `utils` wit
 
 After importing the class, we can create an instance of it by calling the constructor with parentheses.
 
-## Importing Classes from Another Folder in the Parent Directory Using Import SYS Command
+## Importing Classes from a Parent Directory with `sys.path`
 
 The `sys` module in Python provides access to various system-specific parameters and functions. The `sys.path` list is one of the attributes in this module and contains the directories where Python searches for modules. To import classes or modules from a directory outside the default search path, you can manipulate this list.
 
