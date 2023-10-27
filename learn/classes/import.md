@@ -53,7 +53,7 @@ For example, you can import `class1`, `class2`, and `class3` from the module nam
 
 Alternatively, you can use the `from module_name import *` syntax to import all classes from module_name. However, it's worth noting that this approach is discouraged because it can lead to naming conflicts, especially when multiple classes with the same name exist in different modules.
 
-## Importing All Classes from a Module Using From Command
+## Importing All Classes from a Module Using the `From` Command
 
 To import all classes from a module in Python, you can use the `*` notation. This allows you to avoid having to specify each individual class name when importing from another file in a different directory.
 
