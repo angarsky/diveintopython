@@ -7,7 +7,7 @@ In Python, you can import a class from another file, providing a wealth of benef
 
 The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
 
-### Importing Modules in Python Using The Import Command
+### Importing Modules in Python Using The `Import` Command
 
 We can use the `import` statement in Python to import external modules and packages that provide additional functionality. For instance, to use the `math` module in Python, we can write:
 
@@ -37,13 +37,17 @@ Here, we define a class `Circle` that represents a circle with a given `radius`.
  
 > Note that we assign the value of the area to an attribute `area` of the object. Here, we create an instance `c` of the `Circle` class with `radius` `2`. We then access its attributes using the `.` notation. We print the values of the `radius` and `area` attributes, which are `2` and `12.57` (approx.), respectively. 
 
-## Importing a Single Class Using the From Statement
+## Importing a Single Class Using the `From` Statement
 
-Let's explore how to import a single class from another Python file using the `from` keyword. You can achieve this by specifying the file name and the class you want to import, like this: `from my_module import MyClass`.
+Let's explore how to import a single class from another Python file using the `from` keyword.
+
+You can achieve this by specifying the file name and the class you want to import, like this: `from my_module import MyClass`.
 
 In this example, we import the `MyClass` class from a file called `my_module`. We can then create an instance of `MyClass` and use its methods as desired.
 
 For example: `from path.to.my_module import MyClass`. We import the `MyClass` class from a file located at a specific path (`path/to/my_module`). This is useful when the file you wish to import from is located in a subdirectory of your project.
+
+In Python, importing a class from another file is a straightforward process that allows us to harness the advantages offered by imported files.
 
 ## Importing Multiple Classes  
 
