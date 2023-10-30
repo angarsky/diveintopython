@@ -125,7 +125,7 @@ In the above examples, we can see how to define and call a static method using t
 
 Static methods in Python are a powerful feature that can significantly improve code organization and maintainability. However, it's essential to understand when and where to use them effectively. Here are some common scenarios where static methods can be beneficial:
 
-1. Utility Functions
+### Utility Functions
 
 Static methods are ideal for utility functions that are not tied to a specific instance of a class. These functions provide functionality that can be used across various parts of your codebase. By encapsulating them in a static method, you ensure a clean and modular structure, making your code more maintainable.
 
@@ -138,7 +138,7 @@ class StringUtils:
 
 In this example, the `reverse_string` method is a utility function that can be used to reverse a string. It doesn't require access to instance-specific data and can be called directly on the class.
 
-2. Factory Methods
+### Factory Methods
 
 Static methods can be used to create instances of a class. This is particularly useful when you want to encapsulate the logic for object creation within the class itself. Factory methods simplify the process of object initialization and provide clear and concise interfaces for creating objects.
 
@@ -155,7 +155,7 @@ class Rectangle:
 
 In this example, the `create_square` static method is a factory method that simplifies the creation of square `Rectangle` instances.
 
-3. Caching and Memoization
+### Caching and Memoization
 
 Static methods can be used for caching or memoization purposes. When you need to store and reuse calculated results, static methods can help maintain a cache within the class, making subsequent calculations more efficient.
 
@@ -172,7 +172,7 @@ class MathUtils:
 
 In this example, the `fibonacci` static method calculates Fibonacci numbers with memoization to optimize performance.
 
-4. Code Organization
+### Code Organization
 
 Use static methods to group related functions within a class. This improves code organization and readability. When functions share a common purpose but don't depend on instance-specific data, encapsulating them as static methods within the same class keeps your codebase structured.
 
