@@ -160,8 +160,8 @@ The `sys` module in Python provides access to various system-specific parameters
 
 Here's a step-by-step guide to importing all classes from another folder in the parent directory:
 
-1. Identify the Target Directory: First, you need to identify the directory from which you want to import classes. This directory should be in the parent directory of your current script.
-2. Update `sys.path`: To add the target directory to `sys.path`, you can use the `sys.path.append()` method. For example:
+1. **Identify the Target Directory**: First, you need to identify the directory from which you want to import classes. This directory should be in the parent directory of your current script.
+2. **Update `sys.path`**: To add the target directory to `sys.path`, you can use the `sys.path.append()` method. For example:
 
 ```python
 import sys
@@ -170,7 +170,7 @@ sys.path.append('/path/to/your/directory')
 
 Replace `'/path/to/your/directory'` with the actual path to your target directory.
 
-3. Import Modules: Once the target directory is added to `sys.path`, you can import modules and classes from that directory as if they were in the current directory. For example:
+3. **Import Modules**: Once the target directory is added to `sys.path`, you can import modules and classes from that directory as if they were in the current directory. For example:
 
 ```python
 from target_directory import module_name
@@ -186,6 +186,6 @@ from target_directory import *
 
 Be cautious when using wildcard imports, as they can lead to naming conflicts and make your code harder to understand.
 
-4. Import and Use: With the modules and classes imported, you can use them in your code as needed. Remember that the target directory should contain an `__init__.py` file to be recognized as a package.
+4. **Import and Use**: With the modules and classes imported, you can use them in your code as needed. Remember that the target directory should contain an `__init__.py` file to be recognized as a package.
 
 Python's `import sys` command can be a powerful tool when you need to import classes or modules from directories located outside the default search path. By manipulating the `sys.path` variable, you can extend Python's capabilities to include additional directories, allowing you to organize your code more effectively and maintain a clean project structure. 
