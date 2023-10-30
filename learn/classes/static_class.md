@@ -121,7 +121,7 @@ print(Math.multiply(2, 3)) ### Output 6
 
 In the above examples, we can see how to define and call a static method using the `@staticmethod` decorator in Python.  
 
-## When to use static methods
+## When to Use Static Methods
 
 Static methods in Python are a powerful feature that can significantly improve code organization and maintainability. However, it's essential to understand when and where to use them effectively. Here are some common scenarios where static methods can be beneficial:
 
