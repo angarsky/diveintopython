@@ -159,8 +159,7 @@ In this example, the `create_square` static method is a factory method that simp
 
 Static methods can be used for caching or memoization purposes. When you need to store and reuse calculated results, static methods can help maintain a cache within the class, making subsequent calculations more efficient.
 
-python
-Copy code
+```python
 class MathUtils:
     _fib_cache = {0: 0, 1: 1}
 
@@ -169,6 +168,8 @@ class MathUtils:
         if n not in MathUtils._fib_cache:
             MathUtils._fib_cache[n] = MathUtils.fibonacci(n - 1) + MathUtils.fibonacci(n - 2)
         return MathUtils._fib_cache[n]
+```
+
 In this example, the `fibonacci` static method calculates Fibonacci numbers with memoization to optimize performance.
 
 4. Code Organization
