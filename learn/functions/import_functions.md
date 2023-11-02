@@ -58,7 +58,7 @@ print(add(2, 3))
 print(subtract(5, 3))
 ```
 
-This process is a powerful way to enhance code reusability in Python. By importing functions from other files, you can save time and effort and make your code more efficient and organized."
+This process is a powerful way to enhance code reusability in Python. By importing functions from other files, you can save time and effort and make your code more efficient and organized.
   
 ## Common Errors When Importing Functions in Python and How to Fix Them  
 
