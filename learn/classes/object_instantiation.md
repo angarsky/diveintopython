@@ -12,17 +12,20 @@ A class constructor in Python is a special method that is executed when an objec
 To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
 ```python
-class Person:
-    def __init__(self, name, age):
+class Recipe:
+    def __init__(self, name, ingredients):
         self.name = name
-        self.age = age
+        self.ingredients = ingredients
 
-p = Person("Jane", 25)
-print("Name:", p.name)
-print("Age:", p.age)
+# Instantiate a Recipe object
+my_recipe = Recipe("Spaghetti Bolognese", ["spaghetti", "tomato sauce", "ground beef"])
+
+# Access the object's attributes
+print("Recipe Name:", my_recipe.name)
+print("Ingredients:", my_recipe.ingredients)
 ```
 
-In the above example, the `Person` class has a constructor that sets the attributes `name` and `age` for each new object that is instantiated. The `p` object is instantiated with the `name` of ``Jane`` and the `age` of `25`. The `print` statements will output `Name: Jane` and `Age: 25`.
+In the above example, the `Recipe` class has a constructor that sets the attributes `name` and `ingredients` for each new object that is instantiated. The `my_recipe` object is instantiated with the name "Spaghetti Bolognese" and a list of ingredients. The print statements will output "Recipe Name: Spaghetti Bolognese" and "Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']."
 
 ## Delving into Python's Process of Instantiating Objects  
 
@@ -62,7 +65,7 @@ In this example, we defined a class called `Employee` with three attributes, `fi
 
 In Python, instantiating objects is a powerful and flexible way to create objects with specific behaviors and attributes.  
   
-## Initializing Objects using the `__init__()` Method  
+## Initializing Objects Using the `__init__()` Method  
 
 The `__init__()` method is used in Python classes to initialize newly-created objects. It is automatically called when an object is created using the class constructor. 
 
