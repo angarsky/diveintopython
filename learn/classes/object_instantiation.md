@@ -1,7 +1,7 @@
 > [!NOTE]
 > Read this tutorial on the website: https://diveintopython.org/learn/classes/object-instantiation
 
-Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. This process involves using constructors, which are special methods that define how new objects are initialized. This article explores the basics of object instantiation in Python and provides examples of how to create and use objects in your code.  
+Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. This process involves using constructors, which are special methods that define how new objects are initialized. This article describes how to instantiate an object in Python and provides examples of how to create and use these objects in your code.  
   
 ## Exploring Python's Class Constructors  
 
@@ -12,17 +12,57 @@ A class constructor in Python is a special method that is executed when an objec
 To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
 ```python
-class Person:
-    def __init__(self, name, age):
+class Recipe:
+    def __init__(self, name, ingredients):
         self.name = name
-        self.age = age
+        self.ingredients = ingredients
 
-p = Person("Jane", 25)
-print("Name:", p.name)
-print("Age:", p.age)
+# Instantiate a Recipe object
+my_recipe = Recipe("Spaghetti Bolognese", ["spaghetti", "tomato sauce", "ground beef"])
+
+# Access the object's attributes
+print("Recipe Name:", my_recipe.name)
+print("Ingredients:", my_recipe.ingredients)
 ```
 
-In the above example, the `Person` class has a constructor that sets the attributes `name` and `age` for each new object that is instantiated. The `p` object is instantiated with the `name` of ``Jane`` and the `age` of `25`. The `print` statements will output `Name: Jane` and `Age: 25`.
+In the above example, the `Recipe` class has a constructor that sets the attributes `name` and `ingredients` for each new object that is instantiated. The `my_recipe` object is instantiated with the name "Spaghetti Bolognese" and a list of ingredients. The print statements will output `Recipe Name: Spaghetti Bolognese` and `Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']`.
+
+## Inheritance and Constructors in Python
+
+In Python, constructors play a crucial role in class inheritance, allowing child classes to inherit and extend attributes and behaviors from parent classes.
+
+### Constructor Inheritance Basics
+
+Child classes inherit the constructor of their parent class, enabling them to reuse the initialization logic from the parent. For example:
+
+```python
+class Vehicle:
+    def __init__(self, make, model):
+        self.make = make
+        self.model = model
+
+class Car(Vehicle):
+    def __init__(self, make, model, year):
+        super().__init__(make, model)
+        self.year = year
+```
+
+In this example, the Car class inherits from Vehicle and extends its attributes.
+
+### Constructor Overriding
+
+Child classes can also override the parent class's constructor to customize initialization:
+
+```python
+class Bike(Vehicle):
+    def __init__(self, make, model, wheel_count):
+        super().__init__(make, model)
+        self.wheel_count = wheel_count
+```
+
+### Abstract Base Classes
+
+Abstract base classes allow you to enforce initialization patterns across a class hierarchy. Please refer to the [abstract classes page](/learn/classes/abstract_class.md) to read more.
 
 ## Delving into Python's Process of Instantiating Objects  
 
@@ -62,7 +102,7 @@ In this example, we defined a class called `Employee` with three attributes, `fi
 
 In Python, instantiating objects is a powerful and flexible way to create objects with specific behaviors and attributes.  
   
-## Initializing Objects using the `__init__()` Method  
+## Initializing Objects Using the `__init__()` Method  
 
 The `__init__()` method is used in Python classes to initialize newly-created objects. It is automatically called when an object is created using the class constructor. 
 
