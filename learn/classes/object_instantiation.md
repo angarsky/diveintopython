@@ -25,7 +25,7 @@ print("Recipe Name:", my_recipe.name)
 print("Ingredients:", my_recipe.ingredients)
 ```
 
-In the above example, the `Recipe` class has a constructor that sets the attributes `name` and `ingredients` for each new object that is instantiated. The `my_recipe` object is instantiated with the name "Spaghetti Bolognese" and a list of ingredients. The print statements will output "Recipe Name: Spaghetti Bolognese" and "Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']."
+In the above example, the `Recipe` class has a constructor that sets the attributes `name` and `ingredients` for each new object that is instantiated. The `my_recipe` object is instantiated with the name "Spaghetti Bolognese" and a list of ingredients. The print statements will output `"Recipe Name: Spaghetti Bolognese"` and `"Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']."`
 
 ## Inheritance and Constructors in Python
 
