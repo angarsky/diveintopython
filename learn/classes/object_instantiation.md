@@ -62,25 +62,7 @@ class Bike(Vehicle):
 
 ### Abstract Base Classes
 
-Abstract base classes allow you to enforce initialization patterns across a class hierarchy:
-
-```python
-from abc import ABC, abstractmethod
-
-class Shape(ABC):
-    @abstractmethod
-    def __init__(self, color):
-        self.color = color
-
-class Circle(Shape):
-    def __init__(self, color, radius):
-        super().__init__(color)
-        self.radius = radius
-```
-
-Conclusion
-
-Understanding constructor inheritance in Python is vital for creating structured and maintainable object-oriented code. It provides flexibility for reusing and customizing initialization logic and enforces consistent patterns using abstract base classes. Mastering constructor inheritance enhances your control over class hierarchies.
+Abstract base classes allow you to enforce initialization patterns across a class hierarchy. Please revert to the [abstract classes page](https://github.com/almargit/diveintopython/blob/main/learn/classes/abstract_class.md) for the details.
 
 ## Delving into Python's Process of Instantiating Objects  
 
