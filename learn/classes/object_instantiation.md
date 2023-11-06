@@ -62,7 +62,7 @@ class Bike(Vehicle):
 
 ### Abstract Base Classes
 
-Abstract base classes allow you to enforce initialization patterns across a class hierarchy. Please revert to the [abstract classes page](https://github.com/almargit/diveintopython/blob/main/learn/classes/abstract_class.md) for the details.
+Abstract base classes allow you to enforce initialization patterns across a class hierarchy. Please refer to the [abstract classes page](/learn/classes/abstract_class.md) to read more.
 
 ## Delving into Python's Process of Instantiating Objects  
 
