@@ -87,7 +87,7 @@ else:
 
 ## How to Print Class Attributes in Python
 
-Python does not have a built-in method for printing all attributes of a class. However, you can use a for loop to iterate through all attributes of a class and print their names and values.
+Python does not have a built-in method for printing all attributes of a class. However, you can use a `for` loop to iterate through all attributes of a class and print their names and values.
 
 ```python
 class MyClass:
