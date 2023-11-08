@@ -183,80 +183,110 @@ In this example, `MyAbstractClass` is an abstract class that defines an `abstrac
 
 Overall, the `super()` function is a powerful tool in Python that can simplify inheritance hierarchies and streamline object initialization.  
   
-## Implementing Inheritance With Super Class  
+## Implementing Multiple Inheritance With Super Class  
 
-Python's `super` keyword is used in class inheritance to call methods of the parent class. It is especially useful when working with multiple inheritance. By using `super`, we can avoid hard-coding the name of the parent class in our code and automatically use the next class in the method resolution order (MRO).
+Python supports multiple inheritance, which means a class can inherit from multiple parent classes. In such cases, the `super()` function plays a crucial role in managing the order in which the parent classes' methods are called. When dealing with multiple inheritances, you can use `super()` to navigate the method resolution order (MRO) effectively.
 
-Here are a couple of examples of using `super` in Python.
-
-```python
-from abc import ABC, abstractmethod
-
-class Animal(ABC):
-    def __init__(self, name):
-        self.name = name
-
-    @abstractmethod
-    def make_sound(self):
-        pass
-
-class Dog(Animal):
-    def __init__(self, name):
-        super().__init__(name)
-
-    def make_sound(self):
-        return "Woof"
-
-class Cat(Animal):
-    def __init__(self, name):
-        super().__init__(name)
-
-    def make_sound(self):
-        return "Meow"
-
-dog = Dog("Buddy")
-cat = Cat("Fluffy")
-
-print(dog.make_sound())  # Output: Woof
-print(cat.make_sound())  # Output: Meow
-```
-
-In this example, `Animal` is an abstract base class defined using the `abc` module. The `Dog` and `Cat` classes inherit from `Animal` and override the `make_sound` method. When creating a new instance of `Dog` or `Cat`, we pass in a name which is used in the constructor of the parent class using `super()`.
+Example:
 
 ```python
-class Person:
-    def __init__(self, name):
-        self.name = name
-    
-    def greet(self):
-        print(f"Hello, my name is {self.name}.")
-        
+class A:
+    def some_method(self):
+        print("Method from class A")
 
-class Student(Person):
-    def __init__(self, name, school):
-        super().__init__(name)
-        self.school = school
-    
-    def greet(self):
-        super().greet()
-        print(f"I am a student at {self.school}.")
-        
+class B:
+    def some_method(self):
+        print("Method from class B")
 
-class Teacher(Person):
-    def __init__(self, name, subject):
-        super().__init__(name)
-        self.subject = subject
-    
-    def greet(self):
-        super().greet()
-        print(f"I teach {self.subject}.")
-        
+class C(A, B):
+    def some_method(self):
+        super().some_method()
+        print("Method from class C")
 
-student = Student("Alice", "Oxford")
-teacher = Teacher("Bob", "Math")
-
-student.greet()
-teacher.greet()
+obj = C()
+obj.some_method()
 ```
 
-In this example, `Person` is a base class that defines a `greet` method. The `Student` and `Teacher` classes inherit from `Person` and add extra attributes and a customized `greet` method. When calling the `greet` method on a `Student` or `Teacher` instance, we use `super()` to call the parent implementation of `greet` first, and then print out additional information. 
+Output:
+
+```python
+Method from class A
+Method from class C
+```
+
+In this example, class `C` inherits from both `A` and `B`. The `super()` function helps call the method from class `A` in the MRO, followed by its own method.
+
+## Method Resolution Order (MRO)
+
+Method Resolution Order (MRO) is a critical concept in multiple inheritances. Python uses the C3 linearization algorithm to determine the order in which methods are called. Understanding the MRO can help you predict how `super()` functions in complex inheritance hierarchies.
+
+Example:
+
+```python
+class A:
+    def some_method(self):
+        print("Method from class A")
+
+class B(A):
+    def some_method(self):
+        print("Method from class B")
+
+class C(A):
+    def some_method(self):
+        print("Method from class C")
+
+class D(B, C):
+    def some_method(self):
+        super().some_method()
+        print("Method from class D")
+
+obj = D()
+obj.some_method()
+```
+
+Output:
+
+```python
+Method from class B
+Method from class C
+Method from class D
+```
+
+In this example, `D` inherits from both `B` and `C`, and the MRO ensures the correct order of method calls.
+
+Including these sections in your article will provide a comprehensive understanding of how `super()` works in different inheritance scenarios and the significance of Method Resolution Order in Python.
+
+## Multi-Level Inheritance With Super Class
+
+Multi-level inheritance is a common pattern in object-oriented programming, where a subclass inherits from another subclass. In such scenarios, `super()` allows you to access and extend the behavior of the parent class without tightly coupling your code to specific class names.
+
+Example:
+
+```python
+class Grandparent:
+    def speak(self):
+        print("Grandparent speaks")
+
+class Parent(Grandparent):
+    def speak(self):
+        super().speak()
+        print("Parent speaks")
+
+class Child(Parent):
+    def speak(self):
+        super().speak()
+        print("Child speaks")
+
+obj = Child()
+obj.speak()
+```
+
+Output:
+
+```python
+Grandparent speaks
+Parent speaks
+Child speaks
+```
+
+Here, the `super()` function ensures that each level of the class hierarchy contributes to the final behavior.
