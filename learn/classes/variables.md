@@ -82,6 +82,7 @@ if hasattr(obj, 'var'):
     print('Object has var attribute')
 else:
     print('Object does not have var attribute')
+# prints "Object has var attribute"
 ```
 
 ## How to Print Class Attributes in Python
@@ -98,6 +99,14 @@ for attr in dir(MyClass):
     if not attr.startswith('__'):
         value = getattr(MyClass, attr)
         print(f'{attr}: {value}')
+```
+
+Output:
+
+```python
+var1: 10
+var2: hello
+var3: True
 ```
 
 ## How to Get Class Attributes
