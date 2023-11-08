@@ -9,6 +9,76 @@ Python is a powerful language that supports different types of variables and pro
 - **Attributes:** An attribute is a value associated with an object. Attributes can be accessed using the dot notation.
 - **Properties:** A property is a way to define a method as an attribute. Properties are created using the `@property` decorator.
 
+## Python Class Variables
+
+In Python, class variables are a powerful way to share data among all instances of a class. Let's explore how to create, access, and modify class variables.
+
+### Creating a Class Variable
+
+To create a class variable in Python, you simply declare it within the class but outside of any methods. Class variables are shared among all instances of the class and can be used to store data that is common to all objects created from the class.
+
+```python
+class Team:
+    # Creating a class variable
+    team_name = "Python Developers"
+```
+
+In this example, we create a class variable `team_name` to store the name of the team.
+
+### Accessing a Class Variable in Python
+
+To access a class variable, you can use the class name followed by the variable name, separated by a dot. This allows you to retrieve the shared data that applies to all instances of the class.
+
+```python
+class Team:
+    team_name = "Python Developers"
+
+# Accessing the class variable using the class name
+print("Team Name:", Team.team_name)  # Output: Team Name: Python Developers
+```
+
+In this example, `the team_name` class variable is accessed using the class name, `Team.team_name`.
+
+### Modifying a Value of a Class Variable
+
+Modifying the value of a class variable is straightforward. You use the class name to reference the variable and assign a new value to it.
+
+```python
+class Team:
+    team_name = "Python Developers"
+
+# Modifying the value of the class variable
+Team.team_name = "Advanced Python Developers"
+
+# Accessing the modified value
+print("Team Name:", Team.team_name)  # Output: Team Name: Advanced Python Developers
+```
+
+In this example, we modified the value of the `team_name` class variable by assigning a new value to it using the class name. The updated value is then accessed through the class name as well.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Class Attributes
 
 Class attributes are attributes that are shared by all instances of a class. They are defined at the class level, and can be accessed using the class name or any instance of the class.
