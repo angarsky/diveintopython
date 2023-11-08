@@ -458,3 +458,81 @@ print(new_user.name)  # Output: John
 In this example, the class global variable `user_name` stores the name of a user and is accessible from within the `User` class.
 
 Class global variables play a significant role in making data available across different parts of your program, allowing you to share information and maintain consistency throughout your codebase.
+
+## Public, Protected, and Private Attributes and Properties in Python
+
+In Python, attributes and properties can have different levels of visibility and access control based on naming conventions. These levels include public, protected, and private.
+
+### Public Attributes and Properties
+
+Public attributes and properties have no name restrictions. They are accessible from anywhere in your code, both within and outside the class. By default, if an attribute or property does not have a name with a double underscore prefix, it is considered public.
+
+```python
+class Person:
+    def __init__(self, name):
+        self.name = name  # Public attribute
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius  # Public attribute
+
+class MyClass:
+    def __init__(self, value):
+        self.value = value  # Public attribute
+
+# Accessing public attributes and properties
+person = Person("Alice")
+print(person.name)  # Output: Alice
+
+circle = Circle(5)
+print(circle.radius)  # Output: 5
+
+obj = MyClass(42)
+print(obj.value)  # Output: 42
+```
+
+In the examples above, attributes like `name`, `radius`, and `value` are public and can be accessed from outside the classes.
+
+### Protected Attributes and Properties
+
+In Python, attributes and properties can be marked as protected by prefixing their names with a single underscore. This is a naming convention that suggests that these attributes should not be accessed directly from outside the class, although they can still be accessed.
+
+```python
+class Employee:
+    def __init__(self, name, _salary):
+        self.name = name
+        self._salary = _salary  # Protected attribute
+
+    def _get_salary(self):
+        return self._salary  # Protected method
+
+# Accessing protected attributes and methods
+employee = Employee("Bob", 50000)
+print(employee._salary)  # Output: 50000
+print(employee._get_salary())  # Output: 50000
+```
+
+In the `Employee` class, `_salary` is marked as a protected attribute. Although it's accessible, the single underscore indicates that it should not be accessed directly.
+
+### Private Attributes and Properties
+
+Attributes and properties can be made private in Python by prefixing their names with a double underscore. This naming convention implies that these attributes should not be accessed directly from outside the class. Attempting to do so will result in a name mangling transformation.
+
+```python
+class BankAccount:
+    def __init__(self, account_number, __balance):
+        self.account_number = account_number
+        self.__balance = __balance  # Private attribute
+
+    def __get_balance(self):
+        return self.__balance  # Private method
+
+# Attempting to access private attributes and methods
+account = BankAccount("123456789", 1000)
+
+# Results in an AttributeError
+# print(account.__balance)
+# print(account.__get_balance())
+```
+
+In the `BankAccount` class, `__balance` is a private attribute, and `__get_balance` is a private method. Attempting to access them from outside the class results in an AttributeError.
