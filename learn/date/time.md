@@ -127,27 +127,111 @@ In this example, `time.time()` is used to retrieve the current time as a floatin
 
 For measuring the execution time of a code block, we use `time.perf_counter()` to get the current high-resolution time in seconds. We capture the start time before the code block and the end time after the code block. By subtracting the start time from the end time, we obtain the elapsed time in seconds. Multiplying it by 1000 gives us the execution time in milliseconds.
 
-## The `timeit.timeit` Function
+## Python `timeit()` with Examples
 
-If you want to measure the execution time of a specific block of code in Python, you can use the `timeit` module. The `timeit` module provides a simple way to time small bits of Python code. Here's an example of execution time measuring:
+Python's `timeit` module is a powerful tool for measuring the execution time of small code snippets. It provides a simple way to time the execution of code and compare the performance of different approaches. The `timeit` module can be particularly useful when you want to benchmark different implementations and determine which one is more efficient.
+
+### Python `timeit()` Parameters
+
+The `timeit` function in Python takes several parameters that allow you to customize its behavior:
+
+- **stmt**: This is the statement you want to measure. It can be a string containing a single statement or multiple statements separated by semicolons.
+- **setup**: This parameter is optional and is used to set up the environment for the code to be measured. It can also be a string containing one or more statements.
+- **timer**: This parameter specifies the timer function to be used. If not specified, the default timer for the current platform will be used.
+- **number**: This parameter determines the number of executions of the code. The more executions, the more accurate the timing measurement.
+
+### Timing Multiple Lines in Python Code
+
+You can use the `timeit` module to time multiple lines of Python code. Here are two examples using different approaches.
+
+#### Example 1: **Using Semicolons**
 
 ```python
 import timeit
 
 code_to_measure = """
-# Code to be measured
-for i in range(1000):
-    # Perform some computation
-    result = i ** 2
+def square_numbers():
+    result = []
+    for i in range(1000):
+        result.append(i ** 2)
+    return result
+
+square_numbers()
 """
 
-execution_time = timeit.timeit(code_to_measure, number=10000)
+execution_time = timeit.timeit(stmt=code_to_measure, number=10000)
 print(f"Execution time: {execution_time} seconds")
 ```
 
-In this example, the code you want to measure is placed inside a triple-quoted string assigned to the `code_to_measure` variable. The `timeit.timeit` function is then used to measure the execution time of the code. The `number` parameter specifies the number of times the code should be executed.
+#### Example 2: **Using Triple Quotes**
 
-The timeit.timeit function returns the total time taken to execute the code multiple times. The execution time is expressed in seconds. You can adjust the number parameter to control the number of repetitions and adjust the accuracy of the measurement.
+```python
+import timeit
+
+code_to_measure = '''
+def square_numbers():
+    result = []
+    for i in range(1000):
+        result.append(i ** 2)
+    return result
+
+square_numbers()
+'''
+
+execution_time = timeit.timeit(stmt=code_to_measure, number=10000)
+print(f"Execution time: {execution_time} seconds")
+```
+
+In both examples, we define a function (`square_numbers`) and then call it using the `timeit` module. The code to be measured is enclosed in triple quotes, allowing us to span multiple lines.
+
+### `timeit()` Methods
+
+The timeit module provides different methods for measuring execution time. Here are some of them.
+
+#### `timeit.timeit()`
+The `timeit.timeit()` method is used to measure the execution time of a code snippet. It takes the code as a string, the number of executions, and an optional setup statement.
+
+```python
+import timeit
+
+code_to_measure = "result = [i**2 for i in range(1000)]"
+
+execution_time = timeit.timeit(stmt=code_to_measure, number=10000)
+print(f"Execution time: {execution_time} seconds")
+```
+
+#### `timeit.repeat()`
+The `timeit.repeat()` method allows you to repeat the measurement multiple times and returns a list of execution times.
+
+```python
+import timeit
+
+code_to_measure = "result = [i**2 for i in range(1000)]"
+
+execution_times = timeit.repeat(stmt=code_to_measure, number=10000, repeat=5)
+print(f"Execution times: {execution_times}")
+```
+
+In this example, the code is executed 10,000 times, and the measurement is repeated 5 times.
+
+#### `timeit.default_timer()`
+The `timeit.default_timer()` method returns the current time according to the highest-resolution clock available on the platform.
+
+```python
+import timeit
+
+start_time = timeit.default_timer()
+
+# Code to be measured
+result = [i**2 for i in range(1000)]
+
+end_time = timeit.default_timer()
+
+execution_time = end_time - start_time
+print(f"Execution time: {execution_time} seconds")
+```
+
+Using `timeit` methods, you can choose the one that best fits your measurement needs and easily compare the performance of different code implementations.
 
 ## Getting Time in Milliseconds
 
