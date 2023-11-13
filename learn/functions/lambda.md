@@ -17,20 +17,23 @@ Here, `lambda` is the keyword, `arguments` are the function's input parameters, 
 
 Here are also some examples of declaration and usage:
 
-1. **Basic Addition**
+### Basic Addition
+
 ```python
 add = lambda x, y: x + y
 print(add(3, 4))  # Output: 7
 ```
 
-2. **Using Within Higher-Order Functions**
+### Using Within Higher-Order Functions
+
 ```python
 numbers = [1, 2, 3, 4, 5]
 doubled = list(map(lambda x: x * 2, numbers))
 print(doubled)  # Output: [2, 4, 6, 8, 10]
 ```
 
-3. **Sorting a List of Tuples**
+### Sorting a List of Tuples
+
 ```python
 students = [('Alice', 25), ('Bob', 20), ('Charlie', 30)]
 students.sort(key=lambda x: x[1])
@@ -39,7 +42,7 @@ print(students)  # Output: [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
 
 Lambda functions are particularly handy when a small function is needed for a brief period. Their simplicity is beneficial in cases where defining a regular function might be overkill.
 
-Key Points to Remember:
+Key points to remember:
 
 - Lambda functions are anonymous and don't require a name.
 - They can handle simple operations within a single line.
