@@ -119,35 +119,56 @@ In Python, we can differentiate between public, private, and protected methods b
 - **Private methods** are those that can only be accessed from inside the class.
 - **Protected methods** are those that can only be accessed from inside the class and its subclasses.
 
-We use underscores to denote these access levels. A single underscore denotes a protected method, whereas double underscores denote a private method.
+### Public Methods
 
-### Example of Public Method in Python
+Public methods are accessible from anywhere within or outside the class. They play a significant role in interacting with the class's attributes and functionality. When developers create a method without any underscore prefix, it automatically becomes a public method.
 
 ```python
 class MyClass:
-    def my_public_method(self):
+    def public_method(self):
         print("This is a public method")
+
+obj = MyClass()
+obj.public_method()  # Accessing the public method
 ```
 
-### Example of Private Method in Python
+As shown in the example, the `public_method()` is accessible outside the class `MyClass`. These methods allow external code to interact with the class's functionalities directly.
+
+### Python Private Methods
+
+Private methods in Python are designed to be accessed only from within the class in which they are defined. They are indicated by prefixing the method name with double underscores `__`.
 
 ```python
 class MyClass:
-    def __my_private_method(self):
+    def __private_method(self):
         print("This is a private method")
+
+obj = MyClass()
+obj.__private_method()  # Attempting to access the private method (Raises an error)
 ```
 
-### Example of Protected Method in Python
+Trying to access a private method from outside the class results in an AttributeError. Python name mangling makes the method name prefixed with double underscores harder to access directly from external code. These methods are used for internal class operations, enhancing encapsulation and preventing accidental misuse or overriding.
+
+### Protected Methods
+
+Protected methods are indicated by prefixing the method name with a single underscore `_`. They can be accessed from within the class itself and its subclasses.
 
 ```python
 class MyClass:
-    def _my_protected_method(self):
+    def _protected_method(self):
         print("This is a protected method")
-``` 
 
-In summary, public methods in Python can be accessed from anywhere in the code, private methods can only be accessed from within the class, and protected methods can be accessed from within the class and its subclasses. By using these access levels, we can increase the security and maintainability of our code.  
-  
-### Python Getter and Setter methods  
+class SubClass(MyClass):
+    def access_protected(self):
+        self._protected_method()  # Accessing the protected method from a subclass
+
+obj = SubClass()
+obj.access_protected()  # Accessing the protected method from the subclass
+```
+
+Protected methods provide a way to allow subclasses to access certain methods while still preventing direct access from external code. However, unlike some other languages, Python doesn't enforce strict visibility restrictions.
+
+## Python Getter and Setter Methods  
 
 Python offers getter and setter convenience methods to control access to the private instance variables for classes. The getter and setter methods are important because without them, the private instance variables would not be accessible outside of the class.
 
@@ -240,7 +261,7 @@ In summary, functions are standalone blocks of code that take input parameters a
   
 ## Override Class Method
 
-Method overriding is a feature in object-oriented programming that allows a subclass to provide a different implementation of a method that is already defined in its superclass. In Python, method overriding is straightforward and is achieved by defining a method in the subclass with the same name as the method in the superclass
+Method overriding is a feature in object-oriented programming that allows a subclass to provide a different implementation of a method that is already defined in its superclass. In Python, method overriding is straightforward and is achieved by defining a method in the subclass with the same name as the method in the superclass.
 
 ```python
 class Parent:
