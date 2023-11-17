@@ -1,9 +1,11 @@
 > [!NOTE]
 > Read this tutorial on the website: https://diveintopython.org/learn/variables/variable-import
 
-To import a variable from another file in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
+This article focuses on the pivotal aspect of import in Python. Mastering the `import` statement is essential for seamlessly incorporating variables from one file to another. In other words you can easily import variables in Python with this statement. Let's explore the efficiency and modularity gained by leveraging import to access variables in Python files.
 
 ## Example of a Variable Import from a File
+
+To import a variable from another file in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
 
 ```python
 # file2.py
@@ -15,6 +17,8 @@ print(my_variable)
 ```
 
 In the above code, we are importing the `my_variable` from `file1.py` using the `from ... import` syntax. After importing the variable, we can use it in `file2.py` just like any other variable.
+
+## Example of a Module Import
 
 Alternatively, you can also import the entire module `file1.py` and access the variable using the module name like this:
 
