@@ -5,7 +5,7 @@ This article focuses on the pivotal aspect of import in Python. Mastering the `i
 
 ## Example of a Variable Import from a File
 
-To import a variable from another file in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
+To import a variable in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
 
 ```python
 # file2.py
