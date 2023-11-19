@@ -111,7 +111,7 @@ In the first example, we define a class with two methods with the same name but 
 
 In the second example, we define a class with a single `method` that takes multiple optional parameters. We can use conditional statements to check the number of parameters passed and `print` the output accordingly. This approach provides reusability to the code as we can call the same `method` with different parameters.  
   
-## Public, Private and Protected Methods  
+## Public, Private and Protected Methods in Python
 
 In Python, we can differentiate between public, private, and protected methods based on their access level. 
 
