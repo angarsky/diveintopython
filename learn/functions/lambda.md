@@ -103,7 +103,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 
 2. Use Lambda functions with `map()`, `filter()`, and `reduce()`: These higher-order functions require a function argument, and Lambda functions are a great way to create simple functions on the fly.
 
-3. **Don't overuse Lambda functions**: While Lambda functions can be useful for certain tasks, they can also make your code less readable if overused. If your Lambda expression is getting too long, it might be better to write a regular Python function instead.
+3. **Don't overuse Lambda functions**: While Lambda functions can be useful for certain tasks, they can also make your code less readable if overused. If your Lambda expression in Python is getting too long, it might be better to write a regular Python function instead.
 
 ## Advanced Lambda Concepts: `map()`, `reduce()`, and `filter()`  
 

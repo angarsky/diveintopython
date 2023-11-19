@@ -1,7 +1,7 @@
 > [!NOTE]
 > Read this tutorial on the website: https://diveintopython.org/learn/date/time
 
-The Python time module is a powerful tool for working with time-related operations in Python. It provides functions for measuring time intervals, formatting and parsing time and date strings, and handling time zones. With the time module, you can easily work with time and date values, and perform a wide range of time-related operations in your Python code. Whether you need to measure the execution time of your code or work with date and time values, the time module has got you covered.
+The Python time module is a powerful tool for working with time-related operations in Python. It provides functions for measuring time intervals, formatting and parsing time and date strings, and handling time zones. With the time module, you can easily work with time and date values, and perform a wide range of time-related operations in your Python code. Whether you need to measure the execution time of your code or work with date and time values, the Python's time module has got you covered.
 
 ## Time Formats in Python
 
@@ -299,7 +299,7 @@ utc_time = time.gmtime(current_time)
 print("UTC time: ", utc_time)
 ```
 
-There are many more functions available in the time module for working with time, including `localtime()`, `strftime()`, and `strptime()`.
+There are many more functions available in the Python's time module for working with time, including `localtime()`, `strftime()`, and `strptime()`.
 
 ## The `perf_counter()` Function from the Time Module
 

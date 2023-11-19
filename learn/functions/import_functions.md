@@ -13,15 +13,15 @@ Alternatively, we can also import the entire module and access its functions usi
 
 By using the `import` function in Python, we can easily reuse code across multiple projects and improve our overall efficiency as developers.  
   
-## The Different Ways to Import Functions in Python
+## The Different Ways to Import Functions from Files in Python
 
 Importing functions in Python is a common practice to reuse code and improve code organization. There are different ways to import functions in Python, including importing a function from a file or importing a function as a module.
 
-To import a function from a file, use the following syntax: `from file_name import function_name`
+To import a function from a file in Python, use the following syntax: `from file_name import function_name`
 
 This allows you to use the function in your code without having to write the entire code again. For example:
 
-Alternatively, you can import a function as a module, which can be useful if you want to import multiple functions from the same module: `import file_name`
+Alternatively, you can import a function as a module, which can be useful if you want to import multiple Python's functions from the same module: `import file_name`
 
 Overall, importing functions in Python is a powerful way to make your code more efficient and readable.  
   

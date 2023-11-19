@@ -111,12 +111,12 @@ In the first example, we define a class with two methods with the same name but 
 
 In the second example, we define a class with a single `method` that takes multiple optional parameters. We can use conditional statements to check the number of parameters passed and `print` the output accordingly. This approach provides reusability to the code as we can call the same `method` with different parameters.  
   
-## Public, Private and Protected Methods  
+## Public, Private and Protected Methods in Python
 
 In Python, we can differentiate between public, private, and protected methods based on their access level. 
 
 - **Public methods** are those that can be accessed from anywhere within or outside the class.
-- **Private methods** are those that can only be accessed from inside the class.
+- **Private methods** in a Python's class are those that can only be accessed from inside the class.
 - **Protected methods** are those that can only be accessed from inside the class and its subclasses.
 
 ### Public Methods
