@@ -9,7 +9,7 @@ A class constructor in Python is a special method that is executed when an objec
 
 ### How to Instantiate a Python Class
 
-To instantiate a class in Python, we create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
+Let's see how to instantiate a class in Python. To do it, we need to create an object of the class, which will call the constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
 ```python
 class Recipe:
