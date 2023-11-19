@@ -52,7 +52,7 @@ In summary, these examples illustrate how Python functions can be utilized to re
 
 ## Exploring the Concept of Nested Functions and Returning Functions  
 
-In Python, functions can be nested, which means you can define one function inside another function. You can also return a function from another function. This concept of nested functions and returning functions allows for more flexibility and is a powerful tool in programming.
+In Python, functions can be nested, which means you can define one function inside another function. You can also return a function from another function in Python. This concept of nested functions and returning functions allows for more flexibility and is a powerful tool in programming.
 
 ### Example 1: Returning a Function from a Function
 
