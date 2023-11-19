@@ -16,7 +16,7 @@ from file1 import my_variable
 print(my_variable)
 ```
 
-In the above code, we are importing the `my_variable` from `file1.py` using the `from ... import` syntax. After importing the variable, we can use it in `file2.py` just like any other variable.
+In the above code, we are importing the `my_variable` from `file1.py` using the `from ... import` syntax. After importing the variable, we can use it in `file2.py` just like any other variable. This method allows you to export variables from one file and utilize them in other Python files, promoting code reusability and organization.
 
 ## Importing Variables from Another File via Module Import
 
