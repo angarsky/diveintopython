@@ -143,7 +143,7 @@ print(r2.height)  ### Output 20
 
 In this example, the `Rectangle` class has an `__init__()` method that takes two optional arguments: `width` and `height`. If no arguments are provided, the default values of `0` are used. 
   
-## Customizing Object Initialization  
+## Customizing Python's Object Initialization  
 
 In Python, the `__init__()` method is called when an object of a class is created. It is used to initialize the attributes of the object. However, sometimes we may need to customize object initialization by specifying our own parameters. This can be achieved using the following methods:
 
