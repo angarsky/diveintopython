@@ -18,7 +18,7 @@ print(my_variable)
 
 In the above code, we are importing the `my_variable` from `file1.py` using the `from ... import` syntax. After importing the variable, we can use it in `file2.py` just like any other variable.
 
-## Importing Variables via Module Import
+## Importing Variables from Another File via Module Import
 
 Alternatively, you can also import the entire module `file1.py` and access the variable using the module name like this:
 
