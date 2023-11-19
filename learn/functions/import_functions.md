@@ -21,7 +21,7 @@ To import a function from a file in Python, use the following syntax: `from file
 
 This allows you to use the function in your code without having to write the entire code again. For example:
 
-Alternatively, you can import a function as a module, which can be useful if you want to import multiple functions from the same module: `import file_name`
+Alternatively, you can import a function as a module, which can be useful if you want to import multiple Python's functions from the same module: `import file_name`
 
 Overall, importing functions in Python is a powerful way to make your code more efficient and readable.  
   
