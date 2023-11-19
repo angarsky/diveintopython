@@ -20,7 +20,7 @@ In the above code, we are importing the `my_variable` from `file1.py` using the 
 
 ## Importing Variables from Another File via Module Import
 
-Alternatively, you can also import the entire module `file1.py` and access the variable using the module name like this:
+Alternatively, you can load variables from another file by importing the entire module  - simply import `file1.py` and access the variable using the module name like this:
 
 ```python
 # file2.py
