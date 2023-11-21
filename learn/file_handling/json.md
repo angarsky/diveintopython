@@ -13,6 +13,8 @@ Example of importing the JSON Module:
 import json
 ```
 
+This function is employed to import JSON files into the Python environment for further handling and manipulation.
+
 ## How to Read JSON File in Python
 
 Reading JSON files in Python involves using the load() function from the json module. By employing this function, Python can effortlessly read and load JSON data from a file into its program.
@@ -30,7 +32,7 @@ with open('data.json') as file:
 
 The `json` module in Python offers various functions to handle JSON data efficiently.
 
-- **json.load()**: This function loads JSON data from a file-like object and converts it into a Python object.
+- **json.load()**: This function loads JSON data from a file-like object and converts it into a Python object. This function is particularly useful when you need to parse JSON file in Python and manipulate it within your program
 - **json.loads()**: json.loads() is used to parse a JSON string and convert it into a Python object.
 - **json.dump()**: The json.dump() function writes Python data into a JSON file.
 - **json.dumps()**: json.dumps() is used to convert a Python object (like a dictionary) into a JSON formatted string.
