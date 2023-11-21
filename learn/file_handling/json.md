@@ -39,7 +39,7 @@ The `json` module in Python offers various functions to handle JSON data efficie
 
 The `json.load()` function facilitates the loading of JSON data from a file into a Python object. It directly translates JSON-formatted data from a file into a compatible Python data structure, enabling easy access and manipulation.
 
-Example - Loading JSON Data:
+Example - How to Load JSON File in Python:
 
 ```python
 import json
