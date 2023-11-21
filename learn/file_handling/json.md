@@ -35,7 +35,7 @@ The `json` module in Python offers various functions to handle JSON data efficie
 - **json.dump()**: The json.dump() function writes Python data into a JSON file.
 - **json.dumps()**: json.dumps() is used to convert a Python object (like a dictionary) into a JSON formatted string.
 
-## How to Load JSON from File in Python using `json.load()`
+## How to Load JSON from File in Python Using `json.load()`
 
 The `json.load()` function facilitates the loading of JSON data from a file into a Python object. It directly translates JSON-formatted data from a file into a compatible Python data structure, enabling easy access and manipulation.
 
