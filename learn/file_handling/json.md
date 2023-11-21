@@ -13,6 +13,19 @@ Example of importing the JSON Module:
 import json
 ```
 
+## How to Read JSON File in Python
+
+Reading JSON files in Python involves using the load() function from the json module. By employing this function, Python can effortlessly read and load JSON data from a file into its program.
+
+Example: Reading a JSON File
+
+python
+Copy code
+with open('data.json') as file:
+    data = json.load(file)
+    print(data)
+
+
 ## Functions of JSON Module
 
 The `json` module in Python offers various functions to handle JSON data efficiently.
@@ -21,7 +34,66 @@ The `json` module in Python offers various functions to handle JSON data efficie
 - **json.loads()**: json.loads() is used to parse a JSON string and convert it into a Python object.
 - **json.dump()**: The json.dump() function writes Python data into a JSON file.
 - **json.dumps()**: json.dumps() is used to convert a Python object (like a dictionary) into a JSON formatted string.
-- **json.dump()**: This function writes Python data into a JSON file but with formatted output (indentation and sorted keys).
+
+## Loading JSON Data with `json.load()`
+
+The `json.load()` function facilitates the loading of JSON data from a file into a Python object. It directly translates JSON-formatted data from a file into a compatible Python data structure, enabling easy access and manipulation.
+
+Example - Loading JSON Data:
+
+```python
+import json
+
+# Reading JSON data from a file and loading it into Python
+with open('data.json') as file:
+    data = json.load(file)
+    print(data)
+```
+
+## Parsing JSON Strings with `json.loads()`
+
+`json.loads()` parses a JSON-formatted string and converts it into a Python object. This function accepts a JSON string as input and generates the corresponding Python data structure, facilitating seamless data extraction and manipulation.
+
+Example - Parsing JSON String:
+
+```python
+import json
+
+# Parsing a JSON string into a Python object
+json_string = '{"name": "John", "age": 30, "city": "New York"}'
+parsed_data = json.loads(json_string)
+print(parsed_data)
+```
+
+## Writing JSON Files using `json.dump()`
+
+The `json.dump()` function writes Python data into a JSON file. It takes a Python object and directly writes it to a specified file in JSON format, suitable for storage or transmission.
+
+Example - Writing to a JSON File:
+
+```python
+import json
+
+# Writing Python data to a JSON file
+data = {"name": "John", "age": 30, "city": "New York"}
+with open('output.json', 'w') as file:
+    json.dump(data, file)
+```
+
+## Converting Python Objects to JSON Strings with `json.dumps()`
+
+`json.dumps()` converts a Python object (like a dictionary or list) into a JSON-formatted string. This function accepts a Python object as input and returns a JSON string representing the object, allowing efficient data interchange and serialization.
+
+Example - Converting Python Object to JSON String:
+
+```python
+import json
+
+# Converting a Python object to a JSON-formatted string
+data = {'name': 'John', 'age': 30, 'city': 'New York'}
+json_string = json.dumps(data)
+print(json_string)
+```
 
 ## How to Write a JSON Pretty Object to a File  
 
