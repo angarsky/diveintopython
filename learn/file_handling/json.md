@@ -13,6 +13,16 @@ Example of importing the JSON Module:
 import json
 ```
 
+## Functions of JSON Module
+
+The `json` module in Python offers various functions to handle JSON data efficiently.
+
+- **json.load()**: This function loads JSON data from a file-like object and converts it into a Python object.
+- **json.loads()**: json.loads() is used to parse a JSON string and convert it into a Python object.
+- **json.dump()**: The json.dump() function writes Python data into a JSON file.
+- **json.dumps()**: json.dumps() is used to convert a Python object (like a dictionary) into a JSON formatted string.
+- **json.dump()**: This function writes Python data into a JSON file but with formatted output (indentation and sorted keys).
+
 ## How to Write a JSON Pretty Object to a File  
 
 To print JSON in a more readable and organized format, you need to use the `pretty_print` flag. This flag will format the JSON by adding indentation, line breaks, and spaces between the elements. Below are two ways to write JSON pretty to a file.
