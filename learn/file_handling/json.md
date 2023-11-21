@@ -3,72 +3,15 @@
 
 JSON files have gained immense popularity due to their seamless compatibility with web-based systems. JSON, short for [JavaScript Object Notation](https://en.wikipedia.org/wiki/JSON), serves as a lightweight format for data exchange, making it a favored choice for web applications. Python, equipped with robust tools, stands as an excellent platform for handling JSON files. This article aims to delve into reading, manipulating JSON files, and their practical applications using Python.  
   
-## How to Use JSON with Python   
+## Importing JSON Module
 
-To read, parse, and write JSON files, you can use `json` Python library. Here are some examples:
+To initiate operations with JSON files in Python, one must first import the `json` module. This module equips Python with functionalities specifically tailored for handling JSON data.
 
-### Reading from a JSON file
-
-To read a JSON file, you can use the `load()` function from the [json](https://docs.python.org/3/library/json.html) module. Here's an example that reads a JSON file called `data.json`:
+Example of importing the JSON Module:
 
 ```python
 import json
-
-with open('data.json') as f:
-    data = json.load(f)
-
-print(data)
 ```
-
-### JSON Parsing
-
-If you have a JSON string and want to parse json in Python, you can use the `loads()` function from the `json` module. Here's an example:
-
-```python
-import json
-
-json_string = '{"name": "John", "age": 30, "city": "New York"}'
-data = json.loads(json_string)
-
-print(data)
-```
-
-### Writing a JSON object to a file
-
-To write JSON data to a file, you can use the `json.dump()` function from the `json` module. Here's an example:
-
-```python
-import json
-
-data = {"name": "John", "age": 30, "city": "New York"}
-
-with open('data.json', 'w') as f:
-    json.dump(data, f)
-```  
-
-In this example, we have shown how to save dictionary as JSON in Python.
-  
-## How to Load a JSON File  
-
-JSON format is a widely used standard for data exchange. Python provides a built-in module called `json` to work with JSON data.
-
-The `json.loads()` method is used to load JSON data from a string. We can use this method to load JSON data from a file by first reading the file contents into a string and then using `json.loads()` like this:
-
-```python
-import json
-
-# Read the file contents into a string
-with open('file.json') as f:
-    json_str = f.read()
-
-# Load the data from the string
-data = json.loads(json_str)
-
-# Access the data
-print(data)
-```
-
-In the above code, we first read the contents of the JSON file `file.json` into the `json_str` variable using `f.read()`. We then loading JSON file with data from the string using `json.loads(json_str)`. The JSON data is now stored in the `data` variable, which we can access as needed.
 
 ## How to Write a JSON Pretty Object to a File  
 
