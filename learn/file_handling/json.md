@@ -67,7 +67,7 @@ parsed_data = json.loads(json_string)
 print(parsed_data)
 ```
 
-## Writing JSON Files using `json.dump()`
+## How to Write to JSON in Python Using `json.dump()`
 
 The `json.dump()` function writes Python data into a JSON file. It takes a Python object and directly writes it to a specified file in JSON format, suitable for storage or transmission.
 
