@@ -95,6 +95,22 @@ json_string = json.dumps(data)
 print(json_string)
 ```
 
+## Python Objects and Equivalent JSON Representations
+
+The table illustrates the mapping between Python data types and their corresponding representations in JSON format. When converting Python objects to JSON, dictionaries and lists map directly to JSON objects and arrays, respectively. Similarly, other Python data types like strings, integers, floats, boolean values, and None map to their respective JSON equivalents.
+
+| Python Object  | Equivalent JSON Representation |
+| ------------- | ------------- |
+| Dictionary | Object  |
+| List  | Array  |
+| Tuple  | Array  |
+| String  | String  |
+| Integer  | Number  |
+| Float  | Number  |
+| True  | true  |
+| False  | false  |
+| None  | null  |
+
 ## How to Write a JSON Pretty Object to a File  
 
 To print JSON in a more readable and organized format, you need to use the `pretty_print` flag. This flag will format the JSON by adding indentation, line breaks, and spaces between the elements. Below are two ways to write JSON pretty to a file.
