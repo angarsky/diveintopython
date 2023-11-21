@@ -5,6 +5,7 @@ JSON files have gained immense popularity due to their seamless compatibility wi
   
 ## Importing JSON Module
 
+Python provides flexible instruments which allow to work with JSON.
 To initiate operations with JSON files in Python, one must first import the `json` module. This module equips Python with functionalities specifically tailored for handling JSON data.
 
 Example of importing the JSON Module:
