@@ -8,7 +8,7 @@ JSON files have gained immense popularity due to their seamless compatibility wi
 Python provides flexible instruments which allow to work with JSON.
 To initiate operations with JSON files in Python, one must first import the `json` module. This module equips Python with functionalities specifically tailored for handling JSON data.
 
-Example of importing the JSON Module:
+Example of importing the JSON module:
 
 ```python
 import json
@@ -20,7 +20,7 @@ This function is employed to import JSON files into the Python environment for f
 
 Reading JSON files in Python involves using the `load()` function from the json module. By employing this function, Python can effortlessly read and load JSON data from a file into its program.
 
-Example: reading a JSON File
+Example of reading a JSON file:
 
 ```python
 with open('data.json') as file:
@@ -43,7 +43,7 @@ The `json` module in Python offers various functions to handle JSON data efficie
 
 The `json.load()` function facilitates the loading of JSON data from a file into a Python object. It directly translates JSON-formatted data from a file into a compatible Python data structure, enabling easy access and manipulation.
 
-Example - How to load JSON file in Python:
+Example - how to load JSON file in Python:
 
 ```python
 import json
@@ -58,7 +58,7 @@ with open('data.json') as file:
 
 `json.loads()` parses a JSON-formatted string and converts it into a Python object. This function accepts a JSON string as input and generates the corresponding Python data structure, facilitating seamless data extraction and manipulation.
 
-Example - How to parse JSON string in Python:
+Example - how to parse JSON string in Python:
 
 ```python
 import json
@@ -73,7 +73,7 @@ print(parsed_data)
 
 The `json.dump()` function writes Python data into a JSON file. It takes a Python object and directly writes it to a specified file in JSON format, suitable for storage or transmission.
 
-Example - writing to a JSON file:
+Example of writing to a JSON file:
 
 ```python
 import json
@@ -88,7 +88,7 @@ with open('output.json', 'w') as file:
 
 `json.dumps()` converts a Python object (like a dictionary or list) into a JSON-formatted string. This function accepts a Python object as input and returns a JSON string representing the object, allowing efficient data interchange and serialization.
 
-Example - Converting Python Object to JSON String:
+Example of converting Python object to JSON string:
 
 ```python
 import json
@@ -134,7 +134,7 @@ In this example, we have used the `json.dump()` method to convert the dictionary
 
 When working with JSON files in Python, you may encounter common errors that can affect the loading, parsing, and processing of JSON data. One such error is the `ValueError: Extra data error`. This error occurs when there is additional data present in the JSON file that is not compatible with the expected JSON structure.
 
-### Example 1: A Loading of JSON with Extra Data
+First example - a loading of JSON with extra data:
 
 ```python
 import json
@@ -150,7 +150,7 @@ except ValueError as e:
 
 In this example, the `data` variable contains two JSON objects separated by a space. When we try to load this data using `json.loads()`, it raises a `ValueError` with the message `Extra data` because multiple JSON objects are not valid in a single JSON file.
 
-### Example 2: Read a JSON File with Extra Data
+Second example of reading a JSON file with extra data:
 
 ```python
 import json
