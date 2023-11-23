@@ -121,7 +121,7 @@ outer()  # output: inner: nonlocal, outer: nonlocal
 
 In this example, `x` is a local variable in the `outer` function. The `inner` function has access to this variable using the `nonlocal` keyword, so we can modify its value. When we call the `outer` function, the `inner` function is executed and the value of `x` is changed to `nonlocal`. This change is reflected in the `outer` function when we `print` the value of `x` after the `inner` function is executed.  
   
-## Best Practices for Using Global Variables in Function  
+## Python's Global Variables in Function - Best Practices of Using 
 
 Global variables are variables that can be accessed and modified from any part of the program. In Python, a variable's scope determines where it can be accessed. The best practice for using global variables in Python is to minimize their usage, as too many global variables can make the program difficult to understand, debug, and maintain.
 
