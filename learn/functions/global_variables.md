@@ -64,7 +64,7 @@ func()
 print(global_var)    # Output: "I have been modified."
 ```
 
-In the above code, a **global variable** named `global_var` is declared and initialized outside the function. The `func()` function accesses and modifies the value of `global_var` using the `global` keyword. Finally, the modified value of the global variable is printed.
+In Python, to set a global variable you need to declare and initialize a variable outside of any function or block. In the above code, a **global variable** named `global_var` is declared and initialized outside the function. The `func()` function accesses and modifies the value of `global_var` using the `global` keyword. Finally, the modified value of the global variable is printed.
 
 ### Local Variable Example
 
