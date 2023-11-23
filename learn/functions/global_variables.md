@@ -10,11 +10,18 @@ In Python, variables are used to store values that can be accessed and manipulat
 
 The scope of a variable in Python defines its accessibility. There are two types of scopes in Python: **Global** scope and **Local** scope. A global scope means that a variable is accessible throughout the program, while a local scope means that a variable is accessible only within the function where it is defined.
 
+### Example 1: How to Define a Global Variable in Python
+
+```python
+# Define a global variable
+global_var = 10
+```
+
 In Python, global variables can be accessed and modified from any function or module in the program. However, assigning a value to a global variable inside a function creates a new local variable within that function.
 
 Here are some examples of how the scope of global variables works in Python:
 
-### Example 1: Accessing a Global Variable Inside a Function
+### Example 2: Accessing a Global Variable Inside a Function
 
 ```python
 x = 5    #global variable
@@ -27,7 +34,7 @@ func()   #calling the function
 
 In this example, the function `func` is accessing the global variable `x` which is defined outside of any function.
 
-### Example 2: Accessing the Global Variable Outside the Function
+### Example 3: Accessing the Global Variable Outside the Function
 
 ```python
 x = 5   #global variable
