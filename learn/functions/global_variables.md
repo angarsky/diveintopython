@@ -46,7 +46,7 @@ In this example, the function `func` is creating a new local variable `x` by ass
 
 **Global variables** are variables that can be accessed and modified throughout the code, regardless of where they are declared. The **variable scopes** in Python determine the accessibility of variables in different parts of the code. Python supports three variable scopes - **local, global, and nonlocal**. **Local variables** are variables that are declared and used within a particular function or block of code, and their scope is limited to that particular function or block of code.
 
-### Global Variable Example
+### How to Change a Global Variable in Function
 
 ```python
 # declaring and initializing a global variable
@@ -66,7 +66,7 @@ print(global_var)    # Output: "I have been modified."
 
 In Python, to set a global variable you need to declare and initialize a variable outside of any function or block. In the above code, a **global variable** named `global_var` is declared and initialized outside the function. The `func()` function accesses and modifies the value of `global_var` using the `global` keyword. Finally, the modified value of the global variable is printed.
 
-### Local Variable Example
+### The Attempt to Access a Local Variable Beyond Its Function
 
 ```python
 def func():
@@ -121,8 +121,9 @@ outer()  # output: inner: nonlocal, outer: nonlocal
 
 In this example, `x` is a local variable in the `outer` function. The `inner` function has access to this variable using the `nonlocal` keyword, so we can modify its value. When we call the `outer` function, the `inner` function is executed and the value of `x` is changed to `nonlocal`. This change is reflected in the `outer` function when we `print` the value of `x` after the `inner` function is executed.  
   
-## Python's Global Variables in Function - Best Practices of Using 
+## The `global` Keyword - Python's Global Variables in Function
 
+Let's review how to use global variables in functions in Python.
 Global variables are variables that can be accessed and modified from any part of the program. In Python, a variable's scope determines where it can be accessed. The best practice for using global variables in Python is to minimize their usage, as too many global variables can make the program difficult to understand, debug, and maintain.
 
 One example of a global variable is the power function in Python. We can use a loop to calculate the power of a number. Here is an example:
