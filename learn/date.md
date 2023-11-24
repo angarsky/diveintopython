@@ -59,7 +59,7 @@ print(calendar.monthrange(2023, 5))
 
 The `month()` function returns a formatted string representing the calendar for the given year and month. The `calendar()` function returns a multi-line string representing the calendar for the entire year. The `isleap()` function returns `True` if the given year is a leap year, and `False` otherwise. The `monthrange()` function returns a tuple containing the first weekday of the month and the number of days in the month.
 
-You can use these functions to generate calendars and manipulate them as needed for your Python applications.
+You can use these functions to generate `calendar` instances and manipulate them as needed in your Python applications.
 
 ## Python's Dateutil Module
 
