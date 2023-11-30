@@ -182,7 +182,7 @@ def greet(name):
     message = "Hello, " + name + "!"
     return message
     
-print(greet("Alice"))  # Output: Hello, Alice!
+print(greet("Alice"))   # Output: Hello, Alice!
 ```
 
 In this example, we declare a local variable `message` inside the `greet()` function. This variable is only accessible within the function and cannot be accessed from outside. The function takes a `name` parameter and returns a greeting message with the name included.  
