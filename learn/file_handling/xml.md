@@ -11,7 +11,7 @@ The most commonly used libraries for parsing XML files are `[lxml]`(https://pypi
 
 ### Using lxml library
 
-The `lxml` library is popular and efficient for parsing XML files. You can install the `lxml` library by using the `pip` command.
+The `lxml` library is a popular XML files reader, it is quite efficient for parsing XML data. You can install the `lxml` library by using the `pip` command.
 
 ```python
 from lxml import etree
