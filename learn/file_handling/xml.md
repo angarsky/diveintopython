@@ -7,7 +7,7 @@ XML files in Python allow for the manipulation and parsing of XML data. XML ([Ex
 
 To read data from an XML file with Python, you can use in-built XML parser module. In this part we will learn how to parse XML data in Python by exploring popular Python libraries.
 
-The most commonly used libraries for parsing XML files are `[lxml]`(https://pypi.org/project/lxml/) and `ElementTree`.
+The most commonly used libraries for parsing XML files are [lxml](https://pypi.org/project/lxml/) and `ElementTree`.
 
 ### Using lxml library
 
