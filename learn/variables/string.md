@@ -36,6 +36,39 @@ print(result) # Output: Hello World
 
 In the example above, we have created two string variables `str1` and `str2` containing the strings "Hello" and "World" respectively. We then use the `+` operator to add one string to another, along with a space character, to create a single string result. Finally, we print the result of adding to the console, which outputs "Hello World".
 
+## A Variable in a String
+
+In Python, you can include variables within strings using different methods. Here are a few commonly used ways to achieve this:
+
+**String Concatenation**: you can concatenate strings and variables using the `+` operator:
+
+```python
+name = "Alice"
+age = 30
+message = "Hello, my name is " + name + " and I am " + str(age) + " years old."
+print(message)
+```
+
+**Using the `str.format()` Method**: this method allows you to embed variables in a string using placeholders `{}`:
+
+```python
+name = "Bob"
+age = 25
+message = "Hello, my name is {} and I am {} years old.".format(name, age)
+print(message)
+```
+
+**Using f-strings (formatted string literals)**: introduced in Python 3.6, f-strings provide a concise way to embed variables directly within strings by prefixing the string with `f` and using `{}` to enclose variables:
+
+```python
+name = "Charlie"
+age = 35
+message = f"Hello, my name is {name} and I am {age} years old."
+print(message)
+```
+
+All of these methods achieve the same result, but f-strings are often preferred due to their readability and ease of use. They allow you to directly reference variables within the string, making the code cleaner and more understandable.
+
 ## String Length
 
 You can get the length of a string using the built-in function `len()`. You can also check if a string is empty using this method.
