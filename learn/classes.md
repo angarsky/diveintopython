@@ -23,7 +23,7 @@ In Python, a class is a blueprint for creating objects (also known as instances)
 
 The `class` keyword is used to create a class. Here is an example of a simple `Person` class:
 
-```python
+```python3
 class Person:
     def __init__(self, name, age):
         self.name = name
