@@ -52,7 +52,7 @@ Python class is a blueprint for creating objects that have a set of attributes a
 
 - **Inheritance:** Classes can be used to create new classes that inherit properties and methods from existing ones. This allows you to reuse code and avoid writing redundant code.
 
-```python
+```python3
 class Employee:
     """A class representing an employee."""
 
