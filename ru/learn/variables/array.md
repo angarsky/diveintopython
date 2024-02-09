@@ -420,7 +420,7 @@ print(element)  # Output: 50
 
 1. Использование цикла for с обычным списком Python:
    
-   ```python
+```python
 my_list = [1, 2, 3, 4, 5]
 for element in my_list:
     print(element)
@@ -438,7 +438,7 @@ for element in my_list:
 
 2. Использование цикла "for" с массивом NumPy:
    
-   ```python
+```python
 import numpy as np
 
 my_array = np.array([1, 2, 3, 4, 5])
@@ -447,7 +447,6 @@ for element in my_array:
 ```
 
 Вывод:
-
 
 ```python
 1
