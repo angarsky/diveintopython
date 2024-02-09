@@ -11,11 +11,7 @@ In this article, we'll look at the basics of regex, including common use cases, 
 - **Simplified Syntax:** Python's [re](https://docs.python.org/3/library/re.html) module simplifies the implementation of regex.
 - **Pattern Matching Power:** Enables matching complex patterns that would be challenging to find with traditional methods.
   
-## What is regex in Python  
-
-Regex, short for Regular Expressions, is a powerful tool in Python for searching, matching, and manipulating text patterns. The Python regex library, known as `re`, provides a rich set of functions that allow you to implement sophisticated text processing tasks with ease. By using regex in Python, you can perform highly efficient text searches, replacements, and more. To access these functionalities, you first need to `import regex` module in your Python script.
-
-### Usage of Regular Expressions in Python
+## Usage of Regular Expressions in Python
 
 Regular expressions can be employed in a myriad of scenarios ranging from simple string matching to complex text parsing tasks such as:
 
@@ -26,9 +22,7 @@ Regular expressions can be employed in a myriad of scenarios ranging from simple
 
 For those looking to experiment with Python regex online, numerous platforms and regex testers are available that allow immediate feedback and learning.
 
-### Python Regex Code Examples
-
-#### Email Address Found
+### Email Address Found
 
 ```python
 import re
@@ -39,7 +33,7 @@ match = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', text)
 print("Email Address Found:", match)
 ```
 
-#### Valid Phone Number
+### Validate Phone Number
 
 ```python
 import re
@@ -94,7 +88,7 @@ print("Is the email valid?", validate_email(email))
   
 ## Regex matcher  
 
-Key functions in the Python [re](https://docs.python.org/3/library/re.html) module are match and `search`, each serving a distinct purpose in regex matching.
+Key functions in the Python `re` module are match and `search`, each serving a distinct purpose in regex matching.
 
 ### Match vs. Search
 
@@ -254,7 +248,7 @@ print(match.group(2))  # Output: abc
 
 ### Test Your Regex Online
 
-Before integrating complex expressions into your code, leverage a python regex online tester such as Pythex or Regex101. These tools provide real-time feedback and helpful explanations on your regex patterns and their matches.
+Before integrating complex expressions into your code, leverage a python regex online tester such as [Pythex](https://pythex.org/) or [Regex101](https://regex101.com/). These tools provide real-time feedback and helpful explanations on your regex patterns and their matches.
 
 Incorporating these regex Python cheat sheet tips and functions into your programming arsenal will streamline your text processing and data analysis tasks. Remember, practice makes perfect, especially when mastering the art of regex in Python.  
   
@@ -264,7 +258,7 @@ Discover how to efficiently split strings in Python using regular expressions (r
 
 ### How to Use Python Regex Split
 
-To use Python regex split, you first need to `import` the [re](https://docs.python.org/3/library/re.html) module which contains the `split` method. This powerful method allows you to split a string by the occurrences of a pattern defined by regex.
+To use Python regex split, you first need to `import` the `re` module which contains the `split` method. This powerful method allows you to split a string by the occurrences of a pattern defined by regex.
 
 ### Code Example of splitting the string by comma followed by a space
 
@@ -301,7 +295,7 @@ By incorporating Python regex split into your projects, you unlock a higher leve
   
 ## Find all  
 
-Discovering all occurrences that match a pattern in a string is a common task in data processing and analysis. Python, with its rich library ecosystem, offers a straightforward approach to this through the [re](https://docs.python.org/3/library/re.html) module, especially when working with regular expressions (regex). In this post, we'll explore how to use Python regex functions to find all matches, focusing on common tasks like email extraction.
+Discovering all occurrences that match a pattern in a string is a common task in data processing and analysis. Python, with its rich library ecosystem, offers a straightforward approach to this through the `re` module, especially when working with regular expressions (regex). In this post, we'll explore how to use Python regex functions to find all matches, focusing on common tasks like email extraction.
 
 ### Python Regex Find All
 
@@ -324,14 +318,6 @@ print(emails)
 # Output: ['info@example.com', 'support@example.org']
 ```
 
-### Conclusion
-
-The `re` module in Python, especially `re.findall()`, is a powerful tool for regex pattern matching and extraction, such as finding all occurrences of a pattern or extracting email addresses from text. Whether you're handling data analysis, text processing, or simply automating mundane tasks, mastering Python regex will significantly boost your productivity.
-
----
-
-For more tips on using Python and regex, continue exploring with related topics like `re.match()`, `re.search()`, and regex patterns for data validation.  
-  
 ## Regex sub, search  
 
 In Python, regex (regular expressions) are utilized for string searching and manipulation. Two powerful functions in this domain are `regex.sub()` and `regex.search()`. By mastering these, you can efficiently perform **Python regex substitution** and search operations in your text processing tasks.
@@ -365,4 +351,4 @@ else:
     print("No email found.")
 ```
 
-By incorporating **regex.search() Python** techniques alongside **Python regex sub capture group** functionality, you can achieve comprehensive text analysis and manipulation. These tools are vital for data cleaning, parsing, and more sophisticated text processing tasks.  
+By incorporating **regex.search()** techniques alongside **regex sub capture group** functionality, you can achieve comprehensive text analysis and manipulation. These tools are vital for data cleaning, parsing, and more sophisticated text processing tasks.  
