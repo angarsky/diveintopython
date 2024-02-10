@@ -132,6 +132,12 @@ print(my_dict['person3']['name']) # output: 'Alex'
 Similarly, you can update values in the nested dictionaries:
 
 ```python
+# create a dictionary of dictionaries
+my_dict = {
+    'person1': {'name': 'John', 'age': 28},
+    'person2': {'name': 'Jane', 'age': 32}
+}
+
 # updating a person's age in the dictionary of dictionaries
 my_dict['person1']['age'] = 30
 
