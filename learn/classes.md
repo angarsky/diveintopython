@@ -83,7 +83,7 @@ An object is an instance of a class that encapsulates data along with methods or
 
 ### Example of Creating Python Objects
 
-```python
+```python3
 
 class Car:
     def __init__(self, make, model):
