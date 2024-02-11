@@ -30,7 +30,7 @@ Python also allows printing multiple variables:
 print("The answer is:", 42)
 ```
 
-You can also use various options with the print() function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
+You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
 
 ## Formatting
 
@@ -47,7 +47,7 @@ print(f"My name is {name} and I am {age} years old.")
 
 `f-strings` (or formatted string literals) are a feature introduced in Python 3.6 that provide a convenient way to embed expressions inside string literals, using a syntax that starts with the letter 'f'.
 
-With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces {}. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
+With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces `{}`. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
 
 - Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
 
