@@ -5,7 +5,7 @@ A Boolean variable is a variable that can hold one of two possible values: True 
 
 ## Bool Variable Declaration in Python
 
-To declare a Boolean variable in Python, you simply assign the value `True` or `False` to a variable name. Here's an example:
+To declare a Boolean variable in Python, you simply assign the value True or False to a variable name. Here's an example:
 
 ```python
 x = True
