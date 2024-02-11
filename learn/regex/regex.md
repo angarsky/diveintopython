@@ -31,7 +31,7 @@ Below is a table summarizing these elements:
 | `?` | Matches 0 or 1 repetition |
 | `{m,n}` | Matches from m to n repetitions |
 | `[]` | Matches any character within brackets |
-| `|` | Logical OR |
+| `\|` | Logical OR |
 | `()` | Groups patterns |
 
 ## Practical Examples
