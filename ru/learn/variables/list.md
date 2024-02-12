@@ -1,5 +1,5 @@
 [!NOTE]
->  Вы можете прочитать эту статью на сайте: https://diveintopython.org/ ru/learn/variables/list
+>  Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/list
 
 Список в Python - это коллекция значений или элементов, которая упорядочена, изменяема и позволяет дубликаты. Списки являются одной из наиболее часто используемых структур данных в Python.
 
@@ -204,8 +204,3 @@ print(my_list)  # Output: []
 my_list = [1, 2, 3, 4, 5]
 del my_list
 ```
-
-
-
-
-
