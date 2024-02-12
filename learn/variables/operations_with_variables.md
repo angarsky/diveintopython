@@ -46,7 +46,7 @@ z = [1, 2, 3]
 print(isinstance(z, list))  # Output: True
 ```
 
-### Using the `__class__` attribute
+### Using the `__class__` Attribute
 
 This attribute returns the class of an object.
 
@@ -65,7 +65,7 @@ print(z.__class__)  # Output: <class 'list'>
 
 This example shows how to print a type of a variable in Python.
 
-### Using the `type()` function with an `assert` statement
+### Using the `type()` Function with an `assert` Statement
 
 This is a way to check the type of a variable and raise an error if the type is not as expected.
 
@@ -86,9 +86,9 @@ These are ways how to get a type of a variable in Python, for example, you can c
 
 ## Deleting Variables
 
-### Using the `del` statement
+### Using the `del` Statement
 
-In Python, the del statement is used to delete a variable or an item from a list, dictionary or any other collection object. The syntax for using del is:
+In Python, the `del` statement is used to delete a variable or an item from a list, dictionary or any other collection object. The syntax for using del is:
 
 ```python
 del object
@@ -120,7 +120,7 @@ In the third example, the item with key `'b'` is deleted from the dictionary `my
 
 Note that `del` only deletes the reference to the object, not the object itself. If the object is still referenced elsewhere in the code, it will not be deleted from memory.
 
-### Assigning `None` to the variable
+### Assigning `None` to the Variable
 
 One more method to clear a variable is to assign the value `None` to a variable to indicate that it has no value. The `None` value is a built-in constant that represents the absence of a value. Here's an example:
 
@@ -131,7 +131,7 @@ print(x)  # Output: None
 
 In this example, we assign the value `None` to the variable `x`. When we print the value of `x`, we see that it outputs `None`.
 
-### Using the `locals()` or `globals()` functions
+### Using the `locals()` or `globals()` Functions
 
 You can use the `locals()` and `globals()` functions to access the local and global namespace, respectively. These functions return a dictionary that contains all the variables and their values in the current namespace. You can use these functions to remove variables from the namespace by using the `del` statement.
 
@@ -185,7 +185,7 @@ for var in locals().copy():
 
 The above code will delete all variables from the global and local namespaces except for the built-in Python variables (which start with `__`). Keep in mind that this can be dangerous as it will delete all your variables and you won't be able to access them later in your program. So, make sure you use it with caution.
 
-### Using the `__del__()` method
+### Using the `__del__()` Method
 
 The `__del__()` method is a special method that is called when an object is about to be destroyed or garbage collected. You can define this method in your class to perform any cleanup tasks that are required before the object is destroyed.
 
@@ -246,9 +246,9 @@ print(copy_list)  # Output: [1, 2, 3]
 
 It is important to use the appropriate method for copying variables in order to avoid unexpected behavior in your code.
 
-### Check if a variable is defined or not
+### Check if a Variable is Defined or not
 
-You can use the in operator to check if a variable has been defined or not.
+You can use the `in` operator to check if a variable has been defined or not.
 
 Here's an example:
 
@@ -268,11 +268,11 @@ if 'my_variable' in locals() and locals()['my_variable'] is not None or 'my_vari
     print('my_variable is defined and has a non-None value')
 else:
     print('my_variable is not defined or has a value of None')
- ```
+```
  
 This code checks both that the variable is defined and that it has a non-`None` value. If both conditions are met, it will print `'my_variable is defined and has a non-None value'`, otherwise it will print `'my_variable is not defined or has a value of None'`.
 
-### Check if a variable is empty
+### Check if a Variable is Empty
 
 In Python, there are several ways to check if a variable is empty:
 
@@ -281,8 +281,10 @@ In Python, there are several ways to check if a variable is empty:
 ```python
 if my_variable:
     # do something
+    pass
 else:
     # the variable is empty
+    pass
 ```
 
 If `my_variable` is empty or evaluates to `False`, the `else` block will be executed.
@@ -292,19 +294,23 @@ If `my_variable` is empty or evaluates to `False`, the `else` block will be exec
 ```python
 if not my_variable:
     # the variable is empty
+    pass
 else:
     # do something
+    pass
 ```
 
-If `my_variable` is empty or evaluates to `False`, the if block will be executed.
+If `my_variable` is empty or evaluates to `False`, the `if` block will be executed.
 
 - Using the built-in `len()` function:
 
 ```python
 if len(my_variable) == 0:
     # the variable is empty
+    pass
 else:
     # do something
+    pass
 ```
 
 If `my_variable` has a length of 0, it is considered empty.
@@ -314,13 +320,15 @@ If `my_variable` has a length of 0, it is considered empty.
 ```python
 if my_variable is None:
     # the variable is empty
+    pass
 else:
     # do something
+    pass
 ```
 
 If `my_variable` is equal to `None`, it is considered empty. However, it's important to note that `None` is a specific value in Python and is not the same as an empty string, list, or other data types.
 
-### Getting the name of a variable
+### Getting the Name of a Variable
 
 Variables are simply names that refer to objects in memory. In Python you can get the name of a variable using the `locals()` or `globals()` functions, depending on whether the variable is in the local or global namespace.
 
@@ -336,7 +344,7 @@ This code assigns the value `42` to the variable `x`. Then it uses a list compre
 
 Note that this approach assumes that the variable has a unique value in the namespace, which may not always be the case. Also, it's generally not recommended to rely on variable names in your code logic, as it can make your code more brittle and harder to refactor.
 
-### Check if a variable exists
+### Check if a Variable Exists
 
 You can check if a variable exists in Python by using the `in` keyword along with the `locals()` or `globals()` function. Here is an example:
 
