@@ -253,7 +253,7 @@ Note that when performing bitwise operations, we need to convert the binary stri
 
 There are several ways of iterating over the characters in a string in Python. Here are a few examples:
 
-- Using a for loop:
+- Using a `for` loop:
 
 ```python
 my_string = "Hello, world!"
@@ -261,7 +261,7 @@ for char in my_string:
     print(char)
 ```
 
-- Using a while loop:
+- Using a `while` loop:
 
 ```python
 my_string = "Hello, world!"
@@ -279,7 +279,7 @@ char_list = [char for char in my_string]
 print(char_list)
 ```
 
-- Using the map() function:
+- Using the `map()` function:
 
 ```python
 my_string = "Hello, world!"
@@ -287,7 +287,7 @@ char_list = list(map(str, my_string))
 print(char_list)
 ```
 
-- Using the enumerate() function:
+- Using the `enumerate()` function:
 
 ```python
 my_string = "Hello, world!"
