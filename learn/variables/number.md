@@ -82,7 +82,7 @@ print(f"{x:.2f}")  # Output: 3.14
 ```
 The `f` before the string indicates that it is an f-string, and the `"{x:.2f}"` inside the string tells Python to format the value of `x` as a float with 2 decimal places.
 
-### Using the `%` operator:
+### Using the `%` operator
 
 ```python
 x = 3.14159
