@@ -1,5 +1,5 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/regex/syntax.md
+> Read this tutorial on the website: https://diveintopython.org/learn/regex/syntax
 
 Regular expressions (regex) are a powerful tool for pattern matching and data extraction in text processing. Python's `re` module provides a comprehensive set of functions to work with regular expressions. This article dives into the syntax of regular expressions in Python, accompanied by practical examples to help you grasp the concepts better.
 
