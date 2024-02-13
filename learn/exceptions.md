@@ -157,7 +157,7 @@ In the above code, attempting to divide by zero raises a `ZeroDivisionError`, wh
 
 To catch any exception, you can use a bare `except:` clause, which will catch all exceptions. However, catching all exceptions is generally discouraged as it can make debugging more challenging.
 
-### Catching any exception
+### Example of Catching any Exception
 
 ```python
 try:
@@ -167,7 +167,7 @@ except:
     print("An unexpected error occurred!")
 ```
 
-### Exceptions Specific Handling
+### Specific Exceptions Handling
 
 For a finer control over which exceptions to catch, Python allows specifying multiple `except` blocks, each handling a different type of exception.
 
@@ -175,7 +175,7 @@ For a finer control over which exceptions to catch, Python allows specifying mul
 
 Special caution is needed when dealing with `SystemExit` as catching this exception can interfere with the normal shutdown process of a script. `SystemExit` is raised by the `sys.exit()` function and should generally be allowed to propagate.
 
-> **Note:** Use `except SystemExit` to explicitly catch a `SystemExit` exception if you have a specific cleanup operation necessary before the script exits.
+> Note: Use `except SystemExit` to explicitly catch a `SystemExit` exception if you have a specific cleanup operation necessary before the script exits.
 
 ### Logging Exception
 
