@@ -1,5 +1,5 @@
 > [!NOTE]
-> Прочитайте это руководство на веб-сайте: https://diveintopython.org/ru/learn/variables/dictionary/key-value-operations
+> Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/dictionary/key-value-operations
 
 Довольно часто мы сталкиваемся с ситуациями, когда нам нужно работать с ключами или значениями словаря. К счастью, словари предлагают разнообразие операций для работы с ключами и значениями.
 
