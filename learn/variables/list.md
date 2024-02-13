@@ -185,7 +185,7 @@ Both methods create a new list object that contains the same elements as the ori
 
 ## List Clearing
 
-In Python, list.clear() is a built-in method that removes all items from a list.
+In Python, `list.clear()` is a built-in method that removes all items from a list.
 
 Here's an example og how to clear a list:
 
