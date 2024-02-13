@@ -115,7 +115,7 @@ except ValueError as e:
 
 This code will specifically tell you if a `ZeroDivisionError` or a `ValueError` was caught.
 
-### Utilizing Python Exception Hierarchy Table
+### Utilizing Exception Hierarchy Table
 
 Python's exception hierarchy allows exceptions to be caught based on their specificity. Here is a simplified view of the exception hierarchy:
 
@@ -153,7 +153,7 @@ except ZeroDivisionError:
 
 In the above code, attempting to divide by zero raises a `ZeroDivisionError`, which is then caught by the `except` block, preventing the program from crashing.
 
-### Python Catch Any Exception
+### Catch Any Exception
 
 To catch any exception, you can use a bare `except:` clause, which will catch all exceptions. However, catching all exceptions is generally discouraged as it can make debugging more challenging.
 
@@ -177,11 +177,11 @@ Special caution is needed when dealing with `SystemExit` as catching this except
 
 > **Note:** Use `except SystemExit` to explicitly catch a `SystemExit` exception if you have a specific cleanup operation necessary before the script exits.
 
-### Python Logging Exception
+### Logging Exception
 
 Logging exceptions can provide a wealth of information for debugging. Python's [logging](https://docs.python.org/3/library/logging.html) module can be used to log exceptions, providing not just the error message but also the traceback.
 
-### Logging an exception
+### Logging an Exception Example
 
 ```python
 import logging
@@ -195,7 +195,7 @@ except ZeroDivisionError:
 
 This will log the exception's message along with the traceback, aiding in debugging.
 
-### Python Exception Handling Best Practices
+### Exception Handling Best Practices
 
 1. **Catch specific exceptions** whenever possible.
 2. **Use `finally`** for cleanup actions that must be executed under all circumstances.
@@ -282,11 +282,11 @@ Understanding and implementing raise exception strategies are crucial skills in 
 
 When working with Python, handling exceptions becomes an integral part of writing robust and error-free code. The `try/except/else` construct is a powerful feature that allows developers to anticipate potential errors, handle them gracefully, and also execute code that should run only if no exceptions were raised. This guide will demonstrate how to effectively use this construct with examples, focusing on how to `print` and throw exceptions in Python.
 
-### Understanding Try/Except/Else
+### Understanding `try/Except/else`
 
 The `try` block lets you test a block of code for errors. The `except` block enables you to handle the error. The `else` block executes a piece of code when there are no exceptions. Learning to use these constructs proficiently can greatly improve your code's reliability and readability.
 
-### Basic Syntax
+### Basic Syntax of `try/except/else`
 
 ```python
 try:
@@ -319,7 +319,7 @@ else:
 
 In this example, the `except` block catches the `ZeroDivisionError`, thereby preventing the program from crashing, and uses `print exception python` to inform the user about the mistake.
 
-### File Reading with `Exception` Handling
+### File Reading with Exception Handling
 
 Reading files without knowing if they exist can lead to an `IOError`. Here’s how to handle such scenarios.
 
@@ -381,7 +381,7 @@ Here’s a step-by-step guide:
 
 > Note: The `try/finally` construct can be used with or without the `except` block. However, this section focuses on the use without explicit exception handling (`except`).
 
-### Code Examples
+### Code Examples for `try/finally`
 
 To illustrate the `try/finally` construct, let's look at two examples. 
 
