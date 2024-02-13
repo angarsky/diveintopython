@@ -82,7 +82,7 @@ print(f"{x:.2f}")  # Output: 3.14
 ```
 The `f` before the string indicates that it is an f-string, and the `"{x:.2f}"` inside the string tells Python to format the value of `x` as a float with 2 decimal places.
 
-### Using the `%` operator:
+### Using the `%` operator
 
 ```python
 x = 3.14159
@@ -140,22 +140,8 @@ if num % 1 == 0:
     print("The number is whole.")
 else:
     print("The number is not whole.") # Output: "The number is whole."
- ```
+ ``` 
  
- ## Rounding a Number
- 
-To round a number in Python, you can use the `round()` function. The `round()` function takes one required argument, which is the number you want to round, and an optional argument, which is the number of decimal places you want to round to.
-
-Here's an example:
-
-```python
-number = 3.14159
-rounded_number = round(number, 2)
-print(rounded_number) # Output: 3.14
-```
-
-Note that if the number to be rounded is exactly halfway between two possible rounded values, `round()` will round to the nearest even number. For example, `round(2.5)` will return `2`, while `round(3.5)` will return `4`.
-
 ## Generating a Random Number
 
 To get a random number in Python, you can use the random module. Here's an example of how to generate a random integer between 0 and 10:
