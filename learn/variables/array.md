@@ -163,7 +163,7 @@ for row in array_2d:
 
 ### How to Create a NumPy Array in Python
 
-To create a [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) in Python, you can use the `numpy.array()` function. Here's an example of np array initialization:
+To create a [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) in Python, you can use the `numpy.array()` function. Here's an example of `np` array initialization:
 
 ```python
 import numpy as np
