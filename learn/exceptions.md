@@ -215,7 +215,7 @@ Exception handling is a fundamental concept in Python that allows a developer to
 
 ### How to `raise` an Exception
 
-Raising an exception in Python is straightforward. You can use the `raise` keyword followed by an instance of the exception you want to throw. This is commonly referred to as raise exception`.
+Raising an exception in Python is straightforward. You can use the `raise` keyword followed by an instance of the exception you want to throw. This is commonly referred to as raise exception.
 
 ### Example: Raising `ValueError`
 
