@@ -9,7 +9,7 @@ Python's exception system is hierarchical, with all exceptions inheriting from t
   
 ## Why Exceptions are Used  
 
-In Python programming, exceptions are an essential part of writing clean, robust, and efficient code. Exceptions are used for handling errors gracefully and managing the program flow when unexpected issues occur. By leveraging the `try except` structure, programmers can anticipate potential problems and ensure that their code can deal with unusual circumstances without crashing. The `python exception` mechanism enhances the code's reliability and user experience by dealing with errors and providing informative feedback.
+In Python programming, exceptions are an essential part of writing clean, robust, and efficient code. Exceptions are used for handling errors gracefully and managing the program flow when unexpected issues occur. By leveraging the `try except` structure, programmers can anticipate potential problems and ensure that their code can deal with unusual circumstances without crashing. The Python exception mechanism enhances the code's reliability and user experience by dealing with errors and providing informative feedback.
 
 ### Understanding Try Except in Python
 
@@ -19,7 +19,7 @@ The basic structure of handling exceptions in Python involves the `try` and `exc
    
 2. **Except Block:** The code inside this block will be executed if an error occurs in the try block. This allows for error handling, logging, or recovery actions.
 
-### Basic Try Except
+### Example: Basic Try Except
 
 ```python
 try:
@@ -32,7 +32,7 @@ except ZeroDivisionError:
 
 Python allows handling multiple exceptions to deal with different error types distinctly. This capability is crucial for creating more granular error handling logic and providing specific responses for different error conditions.
 
-### Multiple Try Except
+### Example: Multiple Try Except
 
 ```python
 try:
@@ -83,7 +83,7 @@ Python exceptions cover a wide range of error types, from syntax errors to runti
 
 When an exception occurs, it can be helpful to know exactly what type of exception you're dealing with. You can catch and `print` the exception type using the `try` and `except` statements with `except Exception as e`.
 
-### Print an Exception
+### Example: Print an Exception
 
 ```python
 try:
@@ -99,7 +99,7 @@ This example will output:
 Caught an exception: ValueError
 ```
 
-### Print Specific Exceptions
+### Example: Print Specific Exceptions
 
 You can also catch and handle multiple specific exceptions separately:
 
@@ -141,7 +141,7 @@ Python's built-in exceptions cover a wide range of error conditions. From `Value
 
 The basic structure for handling exceptions in Python involves the `try` and `except` blocks. You place the code that might raise an exception inside the `try` block and the code to execute if an exception occurs in the `except` block.
 
-### Basic `try` and `except` block
+### Example: Basic `try` and `except` block
 
 ```python
 try:
@@ -157,7 +157,7 @@ In the above code, attempting to divide by zero raises a `ZeroDivisionError`, wh
 
 To catch any exception, you can use a bare `except:` clause, which will catch all exceptions. However, catching all exceptions is generally discouraged as it can make debugging more challenging.
 
-### Example of Catching any Exception
+### Example: Catching any Exception
 
 ```python
 try:
@@ -181,7 +181,7 @@ Special caution is needed when dealing with `SystemExit` as catching this except
 
 Logging exceptions can provide a wealth of information for debugging. Python's [logging](https://docs.python.org/3/library/logging.html) module can be used to log exceptions, providing not just the error message but also the traceback.
 
-### Logging an Exception Example
+### Example: Logging an Exception Example
 
 ```python
 import logging
@@ -215,9 +215,9 @@ Exception handling is a fundamental concept in Python that allows a developer to
 
 ### How to `raise` an Exception
 
-Raising an exception in Python is straightforward. You can use the `raise` keyword followed by an instance of the exception you want to throw. This is commonly referred to as `python raise exception`.
+Raising an exception in Python is straightforward. You can use the `raise` keyword followed by an instance of the exception you want to throw. This is commonly referred to as raise exception`.
 
-### Raising `ValueError`
+### Example: Raising `ValueError`
 
 ```python
 def check_age(age):
@@ -286,7 +286,7 @@ When working with Python, handling exceptions becomes an integral part of writin
 
 The `try` block lets you test a block of code for errors. The `except` block enables you to handle the error. The `else` block executes a piece of code when there are no exceptions. Learning to use these constructs proficiently can greatly improve your code's reliability and readability.
 
-### Basic Syntax of `try/except/else`
+### Example: Basic Syntax of `try/except/else`
 
 ```python
 try:
@@ -304,7 +304,7 @@ else:
 
 Let's dive into some practice examples to understand how to implement these constructs in day-to-day coding tasks.
 
-### Handling a `ZeroDivisionError`
+### Example: Handling a `ZeroDivisionError`
 
 Here, we will handle a division by zero error, which is a common pitfall for beginners.
 
@@ -319,7 +319,7 @@ else:
 
 In this example, the `except` block catches the `ZeroDivisionError`, thereby preventing the program from crashing, and uses `print exception python` to inform the user about the mistake.
 
-### File Reading with Exception Handling
+### Example: File Reading with Exception Handling
 
 Reading files without knowing if they exist can lead to an `IOError`. Here’s how to handle such scenarios.
 
@@ -335,7 +335,7 @@ else:
 
 This code snippet gracefully informs the user when a file doesn't exist instead of abruptly terminating the program.
 
-### Printing and Throwing Exceptions
+## Printing and Throwing Exceptions
 
 ### How to `print` an Exception
 
@@ -426,7 +426,7 @@ The `try/finally` construct in Python is a critical feature for error handling a
   
 ## Merging `finally` and `except` through Nesting  
 
-When working with Python exception handling, it's essential to understand how to effectively manage both errors and the clean-up process. Merging `finally` and `except` blocks through nesting provides a sophisticated way to handle exceptions (`python except exception as e`) and ensure that necessary clean-up operations are performed irrespective of whether an error occurred. This approach is particularly useful in scenarios where you need a high level of control over error handling and resource management.
+When working with Python exception handling, it's essential to understand how to effectively manage both errors and the clean-up process. Merging `finally` and `except` blocks through nesting provides a sophisticated way to handle exceptions (`except Exception as e`) and ensure that necessary clean-up operations are performed irrespective of whether an error occurred. This approach is particularly useful in scenarios where you need a high level of control over error handling and resource management.
 
 ### Understanding Python Nested Try Except
 
@@ -534,7 +534,7 @@ except ValueError as e:
     print("Exception:", str(e))
 ```
 
-> **Note**: Always consider using built-in exception classes before creating custom ones, as your needs may already be covered by Python's standard library.  
+> Note: Always consider using built-in exception classes before creating custom ones, as your needs may already be covered by Python's standard library.  
   
 ## Designing Exceptions  
 
@@ -554,7 +554,7 @@ except ZeroDivisionError as e:
 
 In this example, if the division by zero occurs, the `except` block catches the `ZeroDivisionError`, and prints a custom error message.
 
-### Print Exception Stack Trace
+### Example: Print Exception Stack Trace
 
 For debugging purposes, it might be imperative to see the sequence of function calls that led to the error. This is where printing the stack trace becomes useful. Python provides the [traceback](https://docs.python.org/3/library/traceback.html) module, which can be used to `print` the stack trace. Here's how you can do it:
 
