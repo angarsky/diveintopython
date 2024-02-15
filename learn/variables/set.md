@@ -9,14 +9,16 @@ A set is a collection of unique elements, much like a mathematical set. A set is
 
 For example, you can create a set of integers as follows:
 
-makefile
-Copy code
+```python
 my_set = {1, 2, 3, 4, 5}
+```
+
 Or, you can create a set of strings as follows:
 
-arduino
-Copy code
+```python
 my_set = {'apple', 'banana', 'orange', 'grape'}
+```
+
 You can perform various operations on sets, such as adding or removing elements, finding the intersection or union of sets, or checking if an element is a member of a set.
 
 You can use Python's set operations and methods for data manipulation. Here are some of the most commonly used ones:
