@@ -1,5 +1,5 @@
 > [!NOTE]
->   Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/string/read-from-file
+> Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/string/read-from-file
 
 Чтобы прочитать файл в строку на Python, вы можете использовать встроенную функцию `open()`, чтобы открыть файл, и прочитать его содержимое, используя метод `read()`.
 
