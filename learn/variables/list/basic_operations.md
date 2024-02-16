@@ -268,7 +268,7 @@ else:
     print("3 is not in the list") # Output: 3 is in the list
 ```
 
-The index method returns the index of the first occurrence of the item in the list. If the item is not in the list, it raises a `ValueError`. Here's an example:
+The `index` method returns the index of the first occurrence of the item in the list. If the item is not in the list, it raises a `ValueError`. Here's an example:
 
 ```python
 my_list = ["apple", "banana", "cherry"]
