@@ -90,7 +90,6 @@ print(x)
 
 Simple statements are essential to programming in Python and are often used in combination with more complex statements to create robust programs and applications.
 
-To learn more about simple statements and how they can be used in Python, check out the [official Python documentation](https://www.python.org/) or consult with a professional Python programmer.  
   
 ## Expression statements  
 
