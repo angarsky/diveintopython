@@ -18,14 +18,6 @@ The `numpy` library in Python offers several features that make it essential for
 
 > Note: Numpy's powerful data structures and computational tools are the foundation upon which libraries like Pandas, Matplotlib, SciPy, and scikit-learn are built.
 
-### Installing Numpy
-
-To make use of the `numpy` library in Python, it first needs to be installed. This can typically be done using a Python package manager such as pip. The installation command is as follows:
-
-```python
-pip install numpy
-```
-
 ## How to Start Using `numpy`  
 
 ### Installing NumPy
