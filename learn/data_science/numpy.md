@@ -20,7 +20,7 @@ The `numpy` library in Python offers several features that make it essential for
 
 ### Installing Numpy
 
-To make use of the [numpy](https://pypi.org/project/numpy/) library in Python, it first needs to be installed. This can typically be done using a Python package manager such as pip. The installation command is as follows:
+To make use of the `numpy` library in Python, it first needs to be installed. This can typically be done using a Python package manager such as pip. The installation command is as follows:
 
 ```python
 pip install numpy
@@ -30,7 +30,7 @@ pip install numpy
 
 ### Installing NumPy
 
-To begin using NumPy in your Python projects, the first step is **installing numpy**. NumPy can be installed using various package managers, but the most common and straightforward method is through pip, Python's package installer. Here's a step-by-step guide to **how to install [numpy](https://pypi.org/project/numpy/) in python**:
+To begin using NumPy in your Python projects, the first step is **installing numpy**. NumPy can be installed using various package managers, but the most common and straightforward method is through pip, Python's package installer. Here's a step-by-step guide to **how to install `numpy` in python**:
 
 1. Open your command line or terminal.
 2. Type the following command and press Enter:
@@ -41,11 +41,11 @@ pip install numpy
 
 This command fetches the NumPy package from PyPI (Python Package Index) and installs it in your Python environment. 
 
->Note: Ensure your pip is updated to avoid any installation issues. You can update pip using `pip install --upgrade pip` command.
+> Note: Ensure your pip is updated to avoid any installation issues. You can update pip using `pip install --upgrade pip` command.
 
 ### How to Import NumPy in Python
 
-Once [numpy](https://pypi.org/project/numpy/) download and installation is complete, you'll need to `import` it into your Python script to start utilizing its functionalities. Here's how you can do it:
+Once `numpy` download and installation is complete, you'll need to `import` it into your Python script to start utilizing its functionalities. Here's how you can do it:
 
 ```python
 import numpy as np
@@ -95,9 +95,9 @@ There are numerous functions available in NumPy; below is a brief overview of so
 
 These basic functions and examples provide a solid foundation for beginning your journey with NumPy. As you become more comfortable with these operations, you'll find NumPy to be an incredibly powerful tool for numerical computing in Python.  
   
-## Array  
+## Arrays in NumPy
 
-Arrays play a crucial role in Python, especially for numeric computation, which is made easier and more efficient by the Numpy library. A [numpy](https://pypi.org/project/numpy/) array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
+Arrays play a crucial role in Python, especially for numeric computation, which is made easier and more efficient by the Numpy library. A `numpy` array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
 
 ### Understanding Numpy Arrays
 
@@ -127,7 +127,7 @@ np_array = np.array(my_list)
 print(np_array)
 ```
 
-### Print `numpy` array
+### Print `numpy` Array
 
 To `print` a `numpy` array, you can simply use the Python `print` function:
 
@@ -141,7 +141,7 @@ np_array = np.array([1, 2, 3])
 print(np_array)
 ```
 
-### Appending Elements with `numpy append()`
+### Appending Elements with numpy `append()`
 
 Appending elements to an array is a common operation. With `numpy`, you can easily append elements using the `np.append()` method:
 
@@ -157,7 +157,7 @@ new_np_array = np.append(np_array, [4])
 print(new_np_array)
 ```
 
-> **Note:** The `np.append()` method returns a new array. It does not change the original array.
+> Note: The `np.append()` method returns a new array. It does not change the original array.
 
 ### Calculating Sum with `np.sum()`
 
@@ -175,11 +175,11 @@ sum = np.sum(np_array)
 print(sum)
 ```
 
-> **Note:** `np.sum()` can be very powerful, especially when used with multi-dimensional arrays, as you can calculate sums along specific axes.
+> Note: `np.sum()` can be very powerful, especially when used with multi-dimensional arrays, as you can calculate sums along specific axes.
 
 ### Frequently Used Numpy Array Operations
 
-For quick reference, here are some of the most frequently used [numpy](https://pypi.org/project/numpy/) array operations, along with their descriptions:
+For quick reference, here are some of the most frequently used `numpy` array operations, along with their descriptions:
 
 | Operation | Description |
 |----------------|-------------------------------------------------|
