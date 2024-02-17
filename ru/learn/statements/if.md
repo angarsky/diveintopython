@@ -60,7 +60,7 @@ else:
 <expression_if_true> if <condition> else <expression_if_false>
 ```
 
-### Проверьте, Является ли Число Четным Или Нечетным
+### Проверьте, Является ли Число Четным  или Нечетным
 
 ```python
 
