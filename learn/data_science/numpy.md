@@ -1,5 +1,5 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/data_science/numpy
+> Read this tutorial on the website: https://diveintopython.org/learn/data-science/numpy
 
 NumPy, short for Numerical Python, is a fundamental package for high-performance scientific computing and data analysis in Python. It provides an efficient multidimensional array object called ndarray, which allows for fast array-oriented arithmetic computations. Beyond its core array object, NumPy also offers a wide range of mathematical functions to perform operations on these arrays, from basic linear algebra and statistical operations to complex Fourier transforms. By providing tools to efficiently operate on large data sets, NumPy serves as the backbone for a plethora of scientific and engineering applications, making it an indispensable tool for researchers, data scientists, and anyone involved in data-intensive computations. With its combination of power, flexibility, and speed, NumPy has become a cornerstone in the Python scientific computing ecosystem, interfacing well with other libraries and platforms to provide a robust environment for numerical computations.  
   
