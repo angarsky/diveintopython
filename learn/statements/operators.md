@@ -295,7 +295,7 @@ print(b1 < b2)  ### Output
 
 ```
 
-In this code, we have defined a custom behavior for the '<' operator for the `Book` class. It compares two books based on the number of `pages` they have. If the number of `pages` in the `self` object is less than the number of `pages` in the `other` object, it will `return` `True`.
+In this code, we have defined a custom behavior for the `<` operator for the `Book` class. It compares two books based on the number of `pages` they have. If the number of `pages` in the `self` object is less than the number of `pages` in the `other` object, it will `return` `True`.
  
 Overall, operator overloading in Python helps you to write more readable and expressive code. It makes your code look cleaner and easier to understand.  
   
