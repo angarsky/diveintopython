@@ -1,5 +1,5 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/data_science
+> Read this tutorial on the website: https://diveintopython.org/learn/data-science
 
 Python has become the go-to programming language for data science professionals across the globe. Its simplicity and readability, combined with the powerful libraries available, make it an excellent choice for data analysis, machine learning, and more. Python's versatility allows it to be used in a wide range of applications, from simple data manipulation tasks to complex deep learning projects.
 
