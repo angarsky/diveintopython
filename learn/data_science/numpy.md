@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/data_science/numpy
+
 NumPy, short for Numerical Python, is a fundamental package for high-performance scientific computing and data analysis in Python. It provides an efficient multidimensional array object called ndarray, which allows for fast array-oriented arithmetic computations. Beyond its core array object, NumPy also offers a wide range of mathematical functions to perform operations on these arrays, from basic linear algebra and statistical operations to complex Fourier transforms. By providing tools to efficiently operate on large data sets, NumPy serves as the backbone for a plethora of scientific and engineering applications, making it an indispensable tool for researchers, data scientists, and anyone involved in data-intensive computations. With its combination of power, flexibility, and speed, NumPy has become a cornerstone in the Python scientific computing ecosystem, interfacing well with other libraries and platforms to provide a robust environment for numerical computations.  
   
 ## What is `numpy` in Python  
@@ -22,19 +25,6 @@ To make use of the [numpy](https://pypi.org/project/numpy/) library in Python, i
 ```python
 pip install numpy
 ```
-
-### Understanding Numpy Arrays
-
-Numpy arrays come with a lot of built-in properties that make it easy to perform complex computations. A few important properties are summarized in the table below:
-
-| Property | Description |
-|----------|-------------|
-| dtype | The data type of the array elements |
-| shape | The dimensions of the array (rows, columns) |
-| size | The total number of elements in the array |
-| ndim | The number of dimensions (or axes) of the array |
-
-These properties help in understanding the structure and type of data that your Numpy array is handling, leading to more efficient and effective data manipulation and analysis.
 
 ## How to Start Using `numpy`  
 
@@ -108,6 +98,19 @@ These basic functions and examples provide a solid foundation for beginning your
 ## Array  
 
 Arrays play a crucial role in Python, especially for numeric computation, which is made easier and more efficient by the Numpy library. A [numpy](https://pypi.org/project/numpy/) array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
+
+### Understanding Numpy Arrays
+
+Numpy arrays come with a lot of built-in properties that make it easy to perform complex computations. A few important properties are summarized in the table below:
+
+| Property | Description |
+|----------|-------------|
+| dtype | The data type of the array elements |
+| shape | The dimensions of the array (rows, columns) |
+| size | The total number of elements in the array |
+| ndim | The number of dimensions (or axes) of the array |
+
+These properties help in understanding the structure and type of data that your Numpy array is handling, leading to more efficient and effective data manipulation and analysis.
 
 ### Creating a Numpy Array
 
