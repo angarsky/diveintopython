@@ -91,7 +91,7 @@ These basic functions and examples provide a solid foundation for beginning your
 
 Arrays play a crucial role in Python, especially for numeric computation, which is made easier and more efficient by the Numpy library. A `numpy` array is a grid of values, all of the same type, and is indexed by a tuple of nonnegative integers. The number of dimensions is the rank of the array; the shape of an array is a tuple of integers giving the size of the array along each dimension.
 
-### Understanding Numpy Arrays
+### Understanding NumPy Arrays
 
 Numpy arrays come with a lot of built-in properties that make it easy to perform complex computations. A few important properties are summarized in the table below:
 
@@ -104,7 +104,7 @@ Numpy arrays come with a lot of built-in properties that make it easy to perform
 
 These properties help in understanding the structure and type of data that your Numpy array is handling, leading to more efficient and effective data manipulation and analysis.
 
-### Creating a Numpy Array
+### Creating a NumPy Array
 
 To start working with `numpy` arrays, you first need to `import` the Numpy library. Then you could convert a python list to `numpy` array or instantiate it directly:
 
@@ -169,7 +169,7 @@ print(sum)
 
 > Note: `np.sum()` can be very powerful, especially when used with multi-dimensional arrays, as you can calculate sums along specific axes.
 
-### Frequently Used Numpy Array Operations
+### Frequently Used NumPy Array Operations
 
 For quick reference, here are some of the most frequently used `numpy` array operations, along with their descriptions:
 
@@ -184,7 +184,7 @@ For quick reference, here are some of the most frequently used `numpy` array ope
 
 Utilizing `numpy` array operations such as converting Python lists to `numpy` arrays, appending elements, and calculating sums, can greatly enhance the efficiency and performance of data manipulation and numerical computations in Python. Remember to `import` Numpy and leverage these built-in functions for more effective coding.  
   
-## Numpy matrix  
+## Numpy Matrix  
 
 Numpy is a fundamental package for scientific computing in Python. It provides a powerful object for matrix operations, which is an essential aspect of data science and mathematical computing. Matrix multiplication is one of the critical operations that Numpy makes very efficient and easy to perform. 
 
