@@ -133,7 +133,7 @@ np_array = np.array([1, 2, 3])
 print(np_array)
 ```
 
-### Appending Elements with numpy `append()`
+### Appending Elements with NumPy `append()`
 
 Appending elements to an array is a common operation. With `numpy`, you can easily append elements using the `np.append()` method:
 
