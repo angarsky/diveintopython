@@ -3,7 +3,7 @@
 
 Even though tuples are immutable, they support various operations such as indexing, slicing, and concatenation that can be performed on them. In this article, we will explore the different operations that can be performed on tuples in Python and their syntax.
 
-## Sorting Tuples in Python
+## Sorting List of Tuples in Python
 
 Tuples can be sorted using the built-in `sorted()` function or the `sort()` method. Here's an example of sorting tuples based on the first element:
 
