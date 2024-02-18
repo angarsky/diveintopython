@@ -137,7 +137,7 @@ random.random()
 
 Random sampling is a powerful technique that can be used to select subsets of data for analysis and modeling. In Python, the `random` module makes it easy to generate random samples from lists and other data sources. By using the `random.sample()` function, we can quickly generate random shuffle list of a specified size.  
   
-## Random with the `randint` Method  
+## Random with the `randint()` Method  
 
 Python's Random `randint()` method is used to generate a random integer between the given range of values. The `randint()` function is part of the `random` module in Python. 
 
@@ -163,7 +163,7 @@ print(number)
 
 In summary, Python's `random.randint()` is a simple and efficient way to generate random integers, and it is a useful tool in many programming projects.  
   
-## Random with the `uniform` Function
+## Random with the `uniform()` Function
 
 The `random.uniform()` is a Python function that generates random floating-point numbers within a specified range. It is a part of the `random` module, which is used for generating random data.
 
