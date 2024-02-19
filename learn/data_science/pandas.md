@@ -67,17 +67,13 @@ Output:
   
 ## Install `pandas`  
 
-Pandas is a powerful data manipulation and analysis library for Python. Installing `pandas` in your Python environment is a straightforward process that can enhance your data analysis capabilities significantly. Here's a step-by-step guide on how to do it, along with some basic usage examples.
-
-### Step 1 Install Pandas
-
 To get started, you need to install Pandas. This can be done using either pip or conda, depending on your Python environment.
 
 ### Using pip
 
 If you're using pip, open your terminal or command prompt and execute the following command:
 
-```pythonbash
+```python
 pip install pandas
 ```
 
@@ -85,7 +81,7 @@ pip install pandas
 
 For those who prefer Conda, the command differs slightly:
 
-```pythonbash
+```python
 conda install pandas
 ```
 
