@@ -142,14 +142,6 @@ None is a special data type in Python that represents the absence of a value.
 a = None
 ```
 
-> Note: In Python, you can declare a variable without assigning it a value by simply using the variable name followed by an equal sign (=).
-
-Let's see how to define a variable in Python without assigning it a value:
-
-```python
-variable_name =
-```
-
 ## Character Variable
 
 In Python, a character variable is a single character stored in a variable. Unlike some other programming languages, Python does not have a separate data type for characters. Instead, a character is simply a string of length 1 in Python.
