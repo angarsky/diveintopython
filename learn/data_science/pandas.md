@@ -23,7 +23,7 @@ One of the reasons why the [pandas](https://pypi.org/project/pandas/) library is
 
 > Note: It's important to `import` the `pandas` library before executing these code snippets. This is typically done with the line `import pandas as pd`.
 
-### Reading data from a CSV file
+### Example: Reading data from a CSV file
 
 ```python
 import pandas as pd
@@ -33,7 +33,7 @@ data = pd.read_csv('example.csv')
 print(data.head())
 ```
 
-### Writing data to a CSV file
+### Example: Writing data to a CSV file
 
 ```python
 # Assuming 'data' is a DataFrame that you have previously created and manipulated
@@ -44,7 +44,7 @@ data.to_csv('modified_example.csv', index=False)
 
 At the core of the `pandas` library is the DataFrame object, which can be thought of as a relational data table, with rows and columns. Here's how you can create a DataFrame from scratch and inspect its contents.
 
-### Сreate DataFrame()`
+### Example: Сreate DataFrame()`
 
 ```python
 # Creating a DataFrame from a dictionary
@@ -55,32 +55,15 @@ df = pd.DataFrame({
 print(df)
 ```
 
-```python
 Output:
+
+```python
+
    A  B
 0  1  a
 1  2  b
 2  3  c
 ```
-
-### `head()` Method
-
-To quickly inspect the first few rows of a DataFrame, you can use the `head()` method. This is extremely useful for getting a feel for the data without displaying the entire dataset.
-
-```python
-# Displaying the first 3 rows of the DataFrame
-print(df.head(3))
-```
-
-```python
-Output is the same as the dataframe creation output since the dataframe contains only 3 rows.
-```
-
-> Note: Exploring the Python `pandas` documentation can provide insights into more advanced functionalities and methods available in the `pandas` library.
-
-### Conclusion
-
-In summary, `pandas` is an indispensable library for anyone working with data in Python, offering powerful data manipulation and analysis capabilities. Whether you are just starting out in data science or are a seasoned analyst, `pandas` can streamline your data analysis workflow, making data manipulation and exploration both efficient and intuitive.  
   
 ## Install `pandas`  
 
@@ -106,7 +89,7 @@ For those who prefer Conda, the command differs slightly:
 conda install pandas
 ```
 
->Note: Ensure your internet connection is active as these commands download `pandas` from the respective repositories.
+> Note: Ensure your internet connection is active as these commands download `pandas` from the respective repositories.
 
 ### Step 2 Import Pandas
 
@@ -154,6 +137,19 @@ df.to_csv('path_to_save_file.csv', index=False)
 ```
 
 > Note: Setting `index=False` prevents `pandas` from writing row indices into the CSV file.
+
+### `head()` Method
+
+To quickly inspect the first few rows of a DataFrame, you can use the `head()` method. This is extremely useful for getting a feel for the data without displaying the entire dataset.
+
+```python
+# Displaying the first 3 rows of the DataFrame
+print(df.head(3))
+```
+
+Output is the same as the dataframe creation output since the dataframe contains only 3 rows.
+
+> Note: Exploring the Python `pandas` documentation can provide insights into more advanced functionalities and methods available in the `pandas` library.
 
 ### Summary
 
@@ -244,7 +240,7 @@ Integrating `snowflake-connector-python` with `pandas` is a common practice that
 
 Before diving into code examples, ensure you have the Snowflake connector installed in your Python environment. This can be done using pip:
 
-```pythonbash
+```python
 pip install snowflake-connector-python
 ```
 
@@ -266,7 +262,7 @@ conn = connect(user='YOUR_USERNAME',
 print("Successfully connected to Snowflake!")
 ```
 
->Note: Replace `YOUR_USERNAME`, `YOUR_PASSWORD`, `YOUR_ACCOUNT`, etc., with your actual Snowflake credentials.
+> Note: Replace `YOUR_USERNAME`, `YOUR_PASSWORD`, `YOUR_ACCOUNT`, etc., with your actual Snowflake credentials.
 
 ### Querying Data with `execute()` Method
 
@@ -286,7 +282,7 @@ for row in results:
     print(row)
 ```
 
->Note: Don't forget to replace `YOUR_TABLE` with the name of your actual table in Snowflake.
+> Note: Don't forget to replace `YOUR_TABLE` with the name of your actual table in Snowflake.
 
 ### Integrating with Pandas
 
@@ -336,9 +332,9 @@ Using the `groupby()` function in pandas involves a few simple steps:
 2. Apply the `groupby()` function on your pandas DataFrame.
 3. Specify the aggregation functions to summarize the grouped data.
 
-Note: Aggregation functions include operations like mean(), sum(), max(), min(), and many more.
+> Note: Aggregation functions include operations like mean(), sum(), max(), min(), and many more.
 
-### Code Example 1 - Basic Grouping
+### Example: Basic Grouping
 
 Let's start with a simple example to group a pandas DataFrame by a single column.
 
@@ -358,7 +354,7 @@ print(grouped_df)
 
 This code Groups the DataFrame by the 'Category' column and calculates the mean of the 'Values' for each category.
 
-### Code Example 2 - Multiple Keys Grouping
+### Example: Multiple Keys Grouping
 
 You can also group by multiple columns for more detailed analysis.
 
@@ -381,8 +377,4 @@ Here, the DataFrame is grouped by both 'Category' and 'Subcategory', and the sum
 2. **Use Appropriate Aggregations**: Select aggregation functions that make sense for your data and analysis objectives.
 3. **Leverage Grouped Data**: Use the grouped object for further analysis or visualization to derive insights.
 
-Note: Remember that the result of a `groupby` operation is not a DataFrame, but a GroupBy object. You can convert it to a DataFrame by applying an aggregation method.
-
-### Conclusion
-
-The `pandas groupby` function is a powerful tool for data analysis, allowing for complex data grouping and aggregation in an efficient manner. Whether you are dealing with a simple groupby pandas DataFrame operation or more elaborate grouping with multiple keys, mastering the `groupby()` method can significantly enhance your data analysis capabilities in Python. Remember to explore the various aggregation functions available in pandas to make the most out of your grouped data.  
+> Note: Remember that the result of a `groupby` operation is not a DataFrame, but a GroupBy object. You can convert it to a DataFrame by applying an aggregation method.
