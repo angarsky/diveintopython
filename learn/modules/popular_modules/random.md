@@ -40,7 +40,7 @@ In this example, the `random.choice(seq)` function is used to generate a random 
 
 ## Random Seed  
 
-Random Seed plays a crucial role in generating random numbers in Python. It is used to initialize the pseudo-random number generator, which is a function that generates a sequence of numbers that appear to be `random`, but are actually deterministic. 
+Random Seed plays a crucial role in generating random numbers in Python. It is used to initialize the pseudo-random number generator, which is a function that generates a sequence of numbers that appear to be random, but are actually deterministic. 
 
 ```python
 import random
@@ -53,7 +53,7 @@ for i in range(5):
     print(random.random())
 ```
 
-In this example, we set the random seed value to `123`, which ensures that the same sequence of `random` numbers is generated every time the code is run.
+In this example, we set the random seed value to `123`, which ensures that the same sequence of random numbers is generated every time the code is run.
 
 ```python
 import random
