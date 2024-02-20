@@ -7,7 +7,7 @@ Functions in Python play a crucial role in programming as they serve as reusable
 
 Python supports multiple programming paradigms, one of which is functional programming. Functional programming is a programming paradigm that focuses on the use of pure functions, avoiding shared state, mutable data, and side-effects. In Python, this paradigm is typically used through the use of higher-order functions and `lambda` expressions.
 
-### Higher-order function example
+### Higher-order Function Example
 
 ```python
 def apply_twice(f):
@@ -36,7 +36,7 @@ squared_numbers = list(map(lambda x: x**2, numbers))
 
 In summary, Python supports functional programming paradigms through higher-order functions and `lambda` expressions. 
 
-## How to write a function in python
+## How to Write a Function in Python
 
 In Python, a function is defined using the `def` keyword, followed by the name of the function, and a set of parentheses that may contain parameters. The code block that performs the task is indented under the `def` statement.
 
@@ -51,7 +51,7 @@ def greet(name):
 greet("John") # Output: Hello, John
 ```
 
-### Function with a return value example
+### Function with a Return Value Example
 
 ```python
 def square(number):
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     main()
 ```  
   
-## Function typing in Python: types of arguments and return values  
+## Function Typing in Python: Types of Arguments and Return Values  
 
 Function typing specifies the types of arguments and the expected return value of a function. Python supports positional, keyword, default and variable-length arguments for a function. Function arguments refer to the values passed to a function, and return values are the results of the executed code. 
 
@@ -139,7 +139,7 @@ In this example, the `*` numbers syntax in the function definition tells Python 
 
 As you can see, you can pass any number of arguments to the `calculate_sum` function, and it will work correctly.
 
-## How to properly name a function in Python
+## How to Properly Name a Function in Python
 
 1. Function names must **start with a letter or underscore** `_`, followed by any combination of letters, numbers, or underscores.
 Example: `def my_function():`
@@ -158,7 +158,7 @@ Example: `def calculate_total_with_discount():`
 
 Overall, it is recommended to choose a function name that is **descriptive**, **easy to understand**, and follows the naming conventions for Python functions.
 
-## How to return multiple values from a function
+## How to Return Multiple Values from a Function
 
 In Python, a function can only directly return a single value. However, you can return multiple values by packaging them into a data structure like a tuple, list, or dictionary. Here's an example of a function that returns multiple values using a tuple:
 
