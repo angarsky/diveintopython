@@ -1,3 +1,6 @@
+> [!NOTE]
+> Read this tutorial on the website: https://diveintopython.org/learn/data-science/pandas
+
 Pandas is a powerful, open-source library in Python specifically designed for data manipulation and analysis. It provides developers and data scientists with high-level, flexible, and versatile data structures called DataFrame and Series, enabling them to work efficiently with structured data. Developed by Wes McKinney, pandas stands as a fundamental tool in the field of data science and analytics, greatly simplifying the process of data cleaning, exploration, and visualization. Whether you are dealing with large datasets from various sources or performing complex data transformations and analysis, pandas offers a comprehensive range of functionalities that cater to a wide array of data operations, making it an indispensable tool in the Python programming ecosystem for data analysis and related tasks.  
   
 ## What is `pandas` in Python  
