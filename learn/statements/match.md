@@ -22,7 +22,7 @@ def describe_number(num):
 
 In this example, the `describe_number` function takes a `num` parameter and returns a string based on the value of `num`. If `num` is `0`, it returns ``Zero``. If `num` is `1`, it returns `Single`. Otherwise, it returns `Multiple` using a wildcard match pattern with `_`.
 
-Here is another python case statement example:
+Here is another Python case statement example:
 
 ```python
 def calculate_discount(total_amount):
