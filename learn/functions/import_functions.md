@@ -3,7 +3,7 @@
 
 In Python, functions play a vital role in programming as they help in creating reusable code. However, sometimes it can be tedious to rewrite the same function over and over again. Luckily, Python makes it easy to reuse functions by allowing you to import them from different files. In this article, we will explore how to import functions from another Python's file.  
   
-## Python's `Import` Function: How to Use It for Enhanced Code Reusability  
+## Python's `import` Function: How to Use It for Enhanced Code Reusability  
 
 Python's **import function** is a powerful tool for enhanced code reusability. It allows us to import functions from other files, which can save us a lot of time and effort when building larger projects. 
 
