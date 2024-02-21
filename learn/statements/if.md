@@ -26,7 +26,7 @@ else:
 
 ```
 
-### Even numbers
+### Even Numbers
 
 ```python
 num = 4
@@ -63,8 +63,6 @@ Ternary statements provide a concise way to write one line if statement. It is a
 ### Check if a number is odd or even
 
 ```python
-
-
 num = 7
 result = "Even" if num % 2 == 0 else "Odd"
 print(result)  # Output: Odd
