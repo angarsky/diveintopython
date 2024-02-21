@@ -64,7 +64,7 @@ Output:
 2  3  c
 ```
   
-## Install `pandas`  
+## How to Install `pandas` in Python  
 
 To get started, you need to install Pandas. This can be done using either pip or conda, depending on your Python environment.
 
@@ -86,7 +86,7 @@ conda install pandas
 
 > Note: Ensure your internet connection is active as these commands download `pandas` from the respective repositories.
 
-### Step 2 Import Pandas
+### Import Pandas
 
 Once installed, you can `import` `pandas` into your Python script or interactive session to confirm it's ready to use. Here are the basic steps:
 
@@ -102,7 +102,13 @@ import pandas as pd
 
 This simple line of code makes all the functionality of `pandas` available in your script as `pd`.
 
-### Example of Basic Pandas Usage
+### Summary
+
+Installing `pandas` in Python enriches your toolbox with a robust library for data manipulation and analysis. Whether using pip or conda, the installation is user-friendly and quick. Remember to `import` `pandas` with `import `pandas` as pd` at the beginning of your script to access its functionalities. Starting with simple tasks like reading from and saving to CSV files can serve as a solid foundation for more complex data analysis tasks using pandas.
+
+Happy data crunching!
+
+## Examples of Basic Pandas Usage
 
 With `pandas` successfully installed and imported, you're now ready to dive into some basic data manipulation tasks.
 
@@ -146,11 +152,6 @@ Output is the same as the dataframe creation output since the dataframe contains
 
 > Note: Exploring the Python `pandas` documentation can provide insights into more advanced functionalities and methods available in the `pandas` library.
 
-### Summary
-
-Installing `pandas` in Python enriches your toolbox with a robust library for data manipulation and analysis. Whether using pip or conda, the installation is user-friendly and quick. Remember to `import` `pandas` with `import `pandas` as pd` at the beginning of your script to access its functionalities. Starting with simple tasks like reading from and saving to CSV files can serve as a solid foundation for more complex data analysis tasks using pandas.
-
-Happy data crunching!  
   
 ## Concept of Dataframe in `pandas`  
 
@@ -198,11 +199,9 @@ df_list = pd.DataFrame(data_list, columns=['Name', 'Age', 'City'])
 print(df_list)
 ```
 
-### Note on Converting Lists to `pandas` DataFrame
+> Note: When converting lists to a `pandas` DataFrame, specifying column names is optional. However, doing so improves readability and ease of data handling.
 
-When converting lists to a `pandas` DataFrame, specifying column names is optional. However, doing so improves readability and ease of data handling.
-
-### Additional Features of `pandas` df
+### Additional Features of `pandas` DataFrame
 
 Pandas DataFrames come equipped with a vast array of methods and properties, making data manipulation and analysis not only possible but also highly efficient. Here are a few notable features:
 
