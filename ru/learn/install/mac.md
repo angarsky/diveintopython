@@ -89,7 +89,7 @@ export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
 
 Чтобы обновить Python на Mac, вы можете использовать терминал для установки последней версии с помощью homebrew или pyenv. Сначала проверьте вашу текущую версию Python, набрав `python --version` в терминале. Затем используйте соответствующую команду для установки последней версии. Для пользователей Homebrew выполните `brew upgrade python`, а для пользователей pyenv - `pyenv install [latest-version]`. Обновляя Python, вы можете наслаждаться последними функциями и исправлениями ошибок.
 
-## Ошибка: `python Command Not Found`
+## Ошибка: `python command not found`
 
 Если вы сталкиваетесь с ошибкой **python command not found** на вашем macOS, это означает, что ваша система не может найти утилиту командной строки Python.
 
