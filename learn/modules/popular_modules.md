@@ -92,7 +92,7 @@ logger.error('Error Message')
 logger.critical('Critical Error Message')
 ```
 
-In the above code example, we have created an instance of a `logger` using the `getLogger()` method and set its level to `DEBUG`. We have also defined a custom `formatter` for the log messages. We have added two handlers to the `logger` - a file handler to write the log messages to a file (`my_log.log`) and a stream handler to print the log messages to the console. We have set the [logging](https://docs.python.org/3/library/logging.html) level for both handlers to `DEBUG`. We have then logged messages of different levels (debug, info, warning, error, and critical) using the logger's methods (`debug()`, `info()`, `warning()`, `error()`, and `critical()`). 
+In the above code example, we have created an instance of a `logger` using the `getLogger()` method and set its level to `DEBUG`. We have also defined a custom `formatter` for the log messages. We have added two handlers to the `logger` - a file handler to write the log messages to a file (`my_log.log`) and a stream handler to print the log messages to the console. We have set the logging level for both handlers to `DEBUG`. We have then logged messages of different levels (debug, info, warning, error, and critical) using the logger's methods (`debug()`, `info()`, `warning()`, `error()`, and `critical()`). 
 
 In summary, the `logging` module in Python is a powerful tool for debugging and monitoring programs. With its various levels of `logging` and flexible configuration options, it enables developers to record messages of different levels and store them in various formats, like files or standard output.  
   
