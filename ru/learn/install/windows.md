@@ -27,7 +27,7 @@
 
 Следуя этим шагам, вы легко можете запустить скрипт Python на Windows.
 
-## Добавить Python в Путь Windows
+## Добавить Python в `Path` Windows
 
 Чтобы добавить Python в путь Windows, следуйте этим шагам:
 
