@@ -5,7 +5,7 @@ There are two types of loops in Python: `for` loops and `while` loops.
 
 The `for` loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The `while` loop is used for executing a block of code repeatedly as long as a certain condition is `true`. In the `while` loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.
 
-## `For` Loop Syntax in Python
+## `for` Loop Syntax in Python
 
 An example how to use the `for` for a looping through a list in Python:
 
@@ -17,7 +17,7 @@ for car in cars:
 
 In this example, we have a list of cars, and we want to print each car on a new line. We use the `for` loop to iterate over each element in the list, and for each element, we print it to the console using the `print` function.
 
-### Inline `For` Loop
+### Inline `for` Loop
 
 In this example, we have a list of numbers, and we want to create a new list that contains the square of each number. Instead of using a traditional `for` loop, we use a list comprehension, which is a more concise way of achieving the same result.
 
@@ -29,7 +29,7 @@ print(squares)
 
 In this case, the expression is `x**2`, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: `[1, 4, 9, 16, 25]`.
 
-### `For` Loop with Index
+### `for` Loop with Index
 
 In this example, the `loop` iterates over the `cars` list and prints the index and value of each element:
 
@@ -53,7 +53,7 @@ b = 3
 print(power(a, b))
 ```
 
-## `While` Loops in Python
+## `while` Loops in Python
 
 Here is an example of the `while` loop that counts from `1` to `10`:
 
@@ -68,7 +68,7 @@ In this example, the loop starts with count equal to `1`. The condition count `<
 
 > Note: Python does not have a built-in `do-while` loop like some other programming languages. However, you can achieve similar functionality using a combination of a `while` loop and an initial check.
 
-## `Break` and `Continue` Statements
+## `break` and `continue` Statements
 
 In Python, `break` and `continue` are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
 
@@ -181,7 +181,7 @@ print("Loop Ended")
 # Loop Ended
 ```
 
-In this example, the while loop will keep asking the user to enter a `number`, and compute its square if the `input` is a `number`. If the `input` is 'stop', the loop will break, and control will be transferred to the statement after the loop.
+In this example, the `while` loop will keep asking the user to enter a `number`, and compute its square if the `input` is a `number`. If the `input` is 'stop', the loop will break, and control will be transferred to the statement after the loop.
 
 This approach helps to avoid infinite loops in Python, and to control the flow of execution based on certain criteria.  
   
@@ -228,7 +228,7 @@ for row in numbers:
 
 In this example, we have a 3 by 3 matrix that is represented by a multi-dimensional list. The nested for loop iterates over the elements of the matrix and prints each number on a new line.
 
-### Nested `While` Loops in Python
+### Nested `while` Loops in Python
 
 Nested `while` loops in Python use one or more inner loops that repeat the same process multiple times. They are used to iterate over elements of a nested data structure until a certain condition is met.
 
@@ -303,6 +303,7 @@ squares = [x**2 for x in range(10)]
 print(squares)
 ```
 Output:
+
 ```python
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
