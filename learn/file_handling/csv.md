@@ -228,6 +228,7 @@ with open('example.csv', newline='') as csvfile:
     for row in reader:
         print(row)
 ```
+
 In the above example, we open the CSV file `example.csv` and assign it to the `csvfile` variable. Then we create a `csv.reader` object, which we can iterate over line by line using a `for` loop. Each `row` in the loop is represented as a list of values.
 
 ### Writing to New Line in CSV
@@ -240,6 +241,7 @@ with open('example.csv', mode='a', newline='') as csvfile:
     row = ['value1', 'value2', 'value3']
     writer.writerow(row)
 ```
+
 In the above example, we open the CSV file `example.csv` in 'append' `mode` and assign it to the `csvfile` variable. Then we create a `csv.writer` object, which we can use to write a new line to the CSV file using the `writerow()` method. The `row` variable is a list of values to write to the new line in the CSV file.
 
 By using these simple examples, we can easily read and write to CSV files line by line in Python.  
