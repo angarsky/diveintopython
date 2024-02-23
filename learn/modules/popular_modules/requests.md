@@ -22,7 +22,7 @@ response = requests.get('https://www.example.com')
 print(response.text)
 ```
 
-In this example, we `import` the Requests module and use the `requests.get` method to send a GET request to the website specified in the parameter. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.
+In this example, we `import` the Requests module and use the `requests.get()` method to send a GET request to the website specified in the parameter. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.
 
 Here's another example showing how to send a POST request with some data:
 
@@ -34,7 +34,7 @@ response = requests.post('https://www.example.com', data=data)
 print(response.text)
 ```
 
-In this example, we use the `requests.post` method to send a POST request to the website specified in the parameter. We also pass in some `data` as a dictionary, which will be sent as form `data` with the request. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.  
+In this example, we use the `requests.post()` method to send a POST request to the website specified in the parameter. We also pass in some `data` as a dictionary, which will be sent as form `data` with the request. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.  
 
   
 ## Requests with JSON  
@@ -341,7 +341,7 @@ In the code snippet above, we `import` the Python 'requests' module, use the URL
 
 Python provides a library called `Flask` which is widely used for building REST APIs. To create a RESTful API using `Flask`, you need to install `Flask` and use the routing capabilities to define API endpoints. 
 
-#### How to create an API endpoint using Flask
+### How to create an API endpoint using Flask
 
 ```python
 from flask import Flask
