@@ -124,4 +124,4 @@ In the above code, `sum_n()` is a **recursive function** that calculates the sum
 
 In each recursive call, the function adds the current value of `n` to the accumulator and passes the result to the next recursive call, without keeping the previous call's stack frame in memory. This way, the function uses a constant amount of memory on the call stack, and avoids the risk of stack overflow for large values of `n`.
 
->Note that tail recursion optimization can only be applied to recursive functions that have a tail call, i.e., a recursive call that occurs at the end of the function's execution.
+> Note that tail recursion optimization can only be applied to recursive functions that have a tail call, i.e., a recursive call that occurs at the end of the function's execution.
