@@ -225,7 +225,7 @@ print(date)  # output: 2023-05-14
 
 ## Datetime to Epoch Conversion
 
-You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Let's look at the example how to convert a Python datetime object to a timestam:
+You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Let's look at the example how to convert a Python `datetime` object to a timestam:
 
 ```python
 import datetime
