@@ -321,7 +321,7 @@ one_day = datetime.timedelta(days=1)
 tomorrow = now + one_day
 
 # print the result 
-print(tomorrow)
+print(tomorrow) 
 ```
 
 Вот также пример того, как найти разницу во времени или разницу между временами в Python:
