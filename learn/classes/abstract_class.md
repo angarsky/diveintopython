@@ -178,12 +178,11 @@ print("Area of Rectangle:", r.area())  # Area of Rectangle: 50
 print("Perimeter of Rectangle:", r.perimeter()) # Perimeter of Rectangle: 30
 ```
 
-In the above example, Shape is an interface with two abstract methods called area() and perimeter(). Rectangle is a class that implements the Shape interface and provides its implementation for the area() and perimeter() methods.  
+In the above example, `Shape`is an interface with two abstract methods called `area()` and `perimeter()`. `Rectangle` is a class that implements the Shape interface and provides its implementation for the `area()` and `perimeter()` methods.  
   
 ## Polymorphism in Python Abstract Classes  
 
 An abstract class is a class that cannot be instantiated, but it can be used as a base for other classes. It is a way to define a common interface for a group of related classes. Polymorphism is the ability of an object to take on many forms. In Python, abstract classes can be used to implement polymorphism.
-
 
 ```python
 from abc import ABC, abstractmethod
@@ -209,7 +208,7 @@ c.move() ### This will print "cat is jumping"
 
 ```
   
-## Usage of Python Abstract Base Classes
+## Usage of Python Abstract Base Classes (ABC)
 
 Abstract classes in Python are classes that cannot be instantiated, and are meant to be inherited by other classes. They are useful for defining common methods and properties that should be implemented by their concrete subclasses. 
 
