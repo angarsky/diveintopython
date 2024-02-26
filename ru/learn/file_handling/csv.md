@@ -150,7 +150,7 @@ print(df.head())
 
 ### Разбор Csv-Файла с Помощью Pandas
 
-После загрузки CSV-файла нам нужно разобрать данные, чтобы извлечь необходимую информацию. [Pandas](https://pypi.org/project/pandas/) предоставляет множество операций для разбора и манипуляции с данными CSV. Вот пример того, как разобрать данные с использованием Pandas:
+После загрузки CSV-файла нам нужно разобрать данные, чтобы извлечь необходимую информацию. Pandas предоставляет множество операций для разбора и манипуляции с данными CSV. Вот пример того, как разобрать данные с использованием Pandas:
 
 ```python
 import pandas as pd
@@ -161,7 +161,7 @@ print(df.head())
 
 ### Запись Dataframe в CSV с Использованием Pandas
 
-После обработки данных CSV мы можем захотеть записать новый DataFrame в новый CSV-файл. [Pandas](https://pypi.org/project/pandas/) предоставляет простой способ записи DataFrame в CSV-файлы используя `to_csv()`. Вот пример:
+После обработки данных CSV мы можем захотеть записать новый DataFrame в новый CSV-файл. Pandas предоставляет простой способ записи DataFrame в CSV-файлы используя `to_csv()`. Вот пример:
 
 ```python
 import pandas as pd
@@ -178,7 +178,7 @@ new_df.to_csv('new_file.csv', index=False)
 
 ### Использование Модуля CSV
 
-Модуль csv - это встроенный модуль в Python, который позволяет читать и записывать файлы CSV. Вот пример экспорта словаря в файл CSV с использованием модуля [csv](https://docs.python.org/3/library/csv.html):
+Модуль csv - это встроенный модуль в Python, который позволяет читать и записывать файлы CSV. Вот пример экспорта словаря в файл CSV с использованием модуля `csv`:
 
 ```python
 import csv
@@ -216,7 +216,7 @@ df.to_csv('data.csv', index=False)
 
 ## Чтение CSV Файла Построчно
 
-Для построчного чтения CSV-файла в Python мы можем использовать встроенный модуль [csv](https://docs.python.org/3/library/csv.html).
+Для построчного чтения CSV-файла в Python мы можем использовать встроенный модуль `csv`.
 
 ### Построчное Чтение CSV Файла
 
@@ -259,7 +259,7 @@ with open('example.csv') as file:
         print(row['column_name'])
 ```
 
-В этом примере кода мы сначала `import` модуль [csv](https://docs.python.org/3/library/csv.html). Затем мы используем оператор `with` для открытия CSV файла `example.csv`. Создаем объект `DictReader` под названием `reader`, используя файл CSV `file`. Затем мы итерируем через каждую `row` в `reader` и `print` значение `column_name` в каждой строке.
+В этом примере кода мы сначала `import` модуль `csv`. Затем мы используем оператор `with` для открытия CSV файла `example.csv`. Создаем объект `DictReader` под названием `reader`, используя файл CSV `file`. Затем мы итерируем через каждую `row` в `reader` и `print` значение `column_name` в каждой строке.
 
 ```python
 import pandas as pd
@@ -269,4 +269,4 @@ column_data = data['column_name']
 print(column_data)
 ```
 
-В этом примере кода мы сначала `import` модуль [pandas](https://pypi.org/project/pandas/) и создаем `DataFrame` с названием `data`, используя функцию `read_csv()` и передавая имя файла CSV `example.csv`. Затем мы присваиваем данные в `column_name` новой переменной `column_data`. В конце мы `print` `column_data`.
+В этом примере кода мы сначала `import` модуль `pandas` и создаем `DataFrame` с названием `data`, используя функцию `read_csv()` и передавая имя файла CSV `example.csv`. Затем мы присваиваем данные в `column_name` новой переменной `column_data`. В конце мы `print` `column_data`.

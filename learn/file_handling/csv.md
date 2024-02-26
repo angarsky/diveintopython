@@ -150,7 +150,7 @@ print(df.head())
 
 ### Parse CSV File using Pandas
 
-After loading the CSV file, we need to parse the data to extract the required information. [Pandas](https://pypi.org/project/pandas/) provides a lot of operations to parse and manipulate CSV data. Here's an example of how to parse data using Pandas:
+After loading the CSV file, we need to parse the data to extract the required information. Pandas provides a lot of operations to parse and manipulate CSV data. Here's an example of how to parse data using Pandas:
 
 ```python
 import pandas as pd
@@ -161,7 +161,7 @@ print(df.head())
 
 ### Write DataFrame to CSV using Pandas
 
-After processing the CSV data, we may want to write the new DataFrame to a new CSV file. [Pandas](https://pypi.org/project/pandas/) provides an easy way to write the DataFrame to CSV files using `to_csv()`. Here's an example:
+After processing the CSV data, we may want to write the new DataFrame to a new CSV file. Pandas provides an easy way to write the DataFrame to CSV files using `to_csv()`. Here's an example:
 
 ```python
 import pandas as pd
@@ -178,7 +178,7 @@ Exporting `data` to CSV (Comma Separated Values) is a common task in `data` proc
 
 ### Using csv module
 
-The csv module is a built-in module in Python that enables reading and writing of CSV files. Here's an example of exporting a dictionary to a CSV file using the [csv](https://docs.python.org/3/library/csv.html) module:
+The csv module is a built-in module in Python that enables reading and writing of CSV files. Here's an example of exporting a dictionary to a CSV file using the `csv` module:
 
 ```python
 import csv
@@ -216,7 +216,7 @@ This code creates a CSV file with the same format as the previous example. The `
 
 ## Read CSV Line by Line  
 
-To read a CSV file in Python line by line, we can use the built-in [csv](https://docs.python.org/3/library/csv.html) module. 
+To read a CSV file in Python line by line, we can use the built-in `csv`. 
 
 ### Reading CSV Line by Line
 
@@ -259,7 +259,7 @@ with open('example.csv') as file:
         print(row['column_name'])
 ```
 
-In this code example, we first `import` the [csv](https://docs.python.org/3/library/csv.html) module. We then use the `with` statement to open the CSV file `example.csv`. We create a `DictReader` object called `reader` using the CSV file `file`. We then iterate through each `row` in `reader` and `print` the value of `column_name` in each row.
+In this code example, we first `import` the `csv` module. We then use the `with` statement to open the CSV file `example.csv`. We create a `DictReader` object called `reader` using the CSV file `file`. We then iterate through each `row` in `reader` and `print` the value of `column_name` in each row.
 
 ```python
 import pandas as pd
@@ -269,4 +269,4 @@ column_data = data['column_name']
 print(column_data)
 ```
 
-In this code example, we first `import` the [pandas](https://pypi.org/project/pandas/) module and create a `DataFrame` called `data` using the `read_csv()` function and passing the CSV file name `example.csv`. We then assign the data in `column_name` to a new variable `column_data`. Finally, we `print` `column_data`.  
+In this code example, we first `import` the `pandas` module and create a `DataFrame` called `data` using the `read_csv()` function and passing the CSV file name `example.csv`. We then assign the data in `column_name` to a new variable `column_data`. Finally, we `print` `column_data`.  
