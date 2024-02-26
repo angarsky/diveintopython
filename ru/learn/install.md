@@ -10,7 +10,7 @@
 1. Посетите официальный сайт Python: https://www.python.org/
 2. Перейдите в раздел `Downloads`.
 3. Выберите версию Python, которую хотите установить.
-4. Выберите соответствующий установщик для вашей операционной системы. Python доступен для [Windows](/learn/install/windows.md), [macOS](/learn/install/mac.md) и [Linux](/learn/install/linux.md).
+4. Выберите соответствующий установщик для вашей операционной системы. Python доступен для [Windows](/ru/learn/install/windows.md), [macOS](/ru/learn/install/mac.md) и [Linux](/ru/learn/install/linux.md).
 * Для Windows: Скачайте исполняемый установщик (файл `.exe`).
 * Для macOS: Скачайте установщик macOS (файл `.pkg`).
 * Для Linux: В большинстве дистрибутивов Linux Python уже предустановлен. Однако, если вам нужна определенная версия или вы хотите установить Python с нуля, вы можете скачать исходный код и следовать предоставленным инструкциям.
