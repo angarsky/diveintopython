@@ -65,6 +65,7 @@ def create_adder(num):
 add5 = create_adder(5)
 print(add5(3))    # Output: 8
 ```
+
 In this example, we define a function `create_adder` that takes a parameter `num`. Inside `create_adder`, we define another function `adder` that takes a parameter `x` and returns the sum of `num` and `x`. Finally, `create_adder` returns `adder`.
 
 We then create a new function `add5` by calling `create_adder(5)`. This means that `add5` is now a reference to `adder` with `num` set to 5. When we call `add5(3)`, we pass the parameter `x` as `3`, which results in the output `8`.
@@ -133,6 +134,7 @@ subtract_func = operate('subtract')
 print(add_func(10, 5)) #output: 15
 print(subtract_func(10, 5)) #output: 5
 ```
+
 By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.
 
 ## Understanding the Different Ways of Defining and Returning Functions in Python 
