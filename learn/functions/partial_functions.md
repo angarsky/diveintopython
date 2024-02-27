@@ -131,7 +131,7 @@ print(list(result))    # Output: [2, 4, 6, 8, 10]
 
 In this example, the `multiply` function is defined as a partial function that accepts two arguments, `x` and `y`. The first argument `x` is fixed to the value `2`, and the second argument `y` is passed as a variable parameter using `map` function to multiply each item in the list by `2` and return the result. This results in a more concise and readable code.  
   
-## When to use partial functions vs. lambdas in Python: key differences and similarities  
+## When to Use Partial Functions vs. Lambdas in Python: Key Differences and Similarities  
 
 Partial functions are functions that have a fixed set of predefined arguments, and the rest of the arguments can be passed at a later time. On the other hand, lambda functions are anonymous functions that can be defined on the fly.
 
@@ -143,7 +143,7 @@ Key differences and similarities:
 - Partial functions can have a fixed set of predefined arguments, while lambdas can have any number of arguments.
 - Both partial functions and lambdas can be used as arguments to other functions.
 
-### Example of using a partial function
+### Example of Using a Partial Function
 
 ```python
 import functools
@@ -156,7 +156,7 @@ double = functools.partial(multiply, y=2)
 print(double(3))   # Output: 6
 ```
 
-### Example of using a lambda function
+### Example of Using a Lambda Function
 
 ```python
 add = lambda x, y: x + y
@@ -164,7 +164,7 @@ add = lambda x, y: x + y
 print(add(2, 3))   # Output: 5
 ```  
   
-## How to create partial functions in Python: a step-by-step tutorial  
+## How to Create Partial Functions in Python: a Step-by-step Tutorial  
 
 To create a partial function in Python, you need to follow the following steps:
 
@@ -199,7 +199,7 @@ print(cube(5)) #Output: 125
 
 In this example, partial functions called `square` and `cube` are created using the `power()` function, with the exponent parameter set to 2 and 3, respectively. When `square(5)` is called, it returns 25, and when `cube(5)` is called, it returns 125.  
   
-## Enhancing code readability with partial functions in Python: tips and tricks  
+## Enhancing Code Readability with Partial Functions in Python: Tips and Tricks  
 
 One way to use partial functions is to reduce code duplication. For example, suppose we have two functions that compute the `average` of two numbers: 
 
