@@ -22,7 +22,7 @@ The `numpy` library in Python offers several features that make it essential for
 
 ### Installing NumPy
 
-To begin using NumPy in your Python projects, the first step is **installing numpy**. NumPy can be installed using various package managers, but the most common and straightforward method is through pip, Python's package installer. Here's a step-by-step guide to **how to install `numpy` in python**:
+To begin using NumPy in your Python projects, the first step is **installing numpy**. NumPy can be installed using various package managers, but the most common and straightforward method is through `pip`, Python's package installer. Here's a step-by-step guide to **how to install `numpy` in python**:
 
 1. Open your command line or terminal.
 2. Type the following command and press Enter:
