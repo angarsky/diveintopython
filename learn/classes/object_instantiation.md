@@ -99,6 +99,7 @@ print(employee1.firstname)
 print(employee1.get_fullname())
 print(employee1.salary)
 ```
+
 In this example, we defined a class called `Employee` with three attributes, `firstname`, `lastname` and `salary`. We instantiated an object `employee1` and passed three arguments to the constructor method. Finally, we printed the values of the firstname, get_fullname() and salary attributes. 
 
 In Python, instantiating objects is a powerful and flexible way to create objects with specific behaviors and attributes.  
