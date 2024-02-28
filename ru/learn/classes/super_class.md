@@ -207,7 +207,7 @@ obj = C()
 obj.some_method()
 ```
 
-Выход:
+Вывод:
 
 ```python
 Method from class A
