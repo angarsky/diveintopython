@@ -96,7 +96,7 @@ Here are two examples of how to use import functions in Python:
 
 ### Example 1: Importing Functions from a Separate File
 
-```python
+```python3
 # Suppose we have a file named `my_functions.py` that contains the following functions:
 def add(a, b):
     return a + b
@@ -119,7 +119,7 @@ Here, we import the `add` and `subtract` functions from the `my_functions.py` fi
 
 Suppose we have two lists, `numbers1` and `numbers2`, and we want to add them element-wise. We can use the **map function with multiple arguments** to achieve this:
 
-```python
+```python3
 numbers1 = [1, 2, 3, 4, 5]
 numbers2 = [5, 4, 3, 2, 1]
 
