@@ -87,7 +87,7 @@ In summary, Python provides multiple libraries to work with PDF files, enabling 
   
 ### How to Extract Text from PDF with Python
 
-To extract `text` from a PDF with Python, you can use the [PyPDF2](https://pypi.org/project/PyPDF2/) or [pdfminer](https://pypi.org/project/pdfminer/) libraries. These libraries allow you to parse the PDF and extract the `text` content.
+To extract `text` from a PDF with Python, you can use the `PyPDF2` or [pdfminer](https://pypi.org/project/pdfminer/) libraries. These libraries allow you to parse the PDF and extract the `text` content.
 
 ### Example Using `PyPDF2`
 
@@ -133,7 +133,7 @@ Both of these methods will allow you to extract `text` content from a PDF with P
   
 ### How to Combine PDF Pages
 
-Merging multiple PDF files into a single document is a common task in document processing. The [PyPDF2](https://pypi.org/project/PyPDF2/) library in Python makes it easy to merge multiple PDF files into a single document.
+Merging multiple PDF files into a single document is a common task in document processing. The `PyPDF2` library in Python makes it easy to merge multiple PDF files into a single document.
 
 ### Merge Two PDF Pages Using `PyPDF2`
 
@@ -171,11 +171,11 @@ with open('merged_pdf.pdf', 'wb') as f:
     merger.write(f)
 ```
 
-Using the above code examples, you can merge multiple PDF pages or entire PDF files in Python using the [PyPDF2](https://pypi.org/project/PyPDF2/) library. By combining PDF files, you can easily create a single document that is easier to manage and distribute.  
+Using the above code examples, you can merge multiple PDF pages or entire PDF files in Python using the `PyPDF2` library. By combining PDF files, you can easily create a single document that is easier to manage and distribute.  
   
 ### How to Remove Watermark from PDF
 
-Removing watermark from PDF files in Python is easy and can be done using a number of libraries. Here are some solutions to remove watermarks using [PyPDF2](https://pypi.org/project/PyPDF2/) and `PyMuPDF` libraries.
+Removing watermark from PDF files in Python is easy and can be done using a number of libraries. Here are some solutions to remove watermarks using `PyPDF2` and `PyMuPDF` libraries.
 
 ```python
 # Solution 1
@@ -223,7 +223,7 @@ for page in pdf:
 pdf.save('filename_nw.pdf')
 ```
 
-With these simple solutions, you can easily remove watermarks from PDF files using Python and the [PyPDF2](https://pypi.org/project/PyPDF2/) and PyMuPDF libraries.  
+With these simple solutions, you can easily remove watermarks from PDF files using Python and the `PyPDF2` and PyMuPDF libraries.  
   
 ### How to convert `HTML` to PDF
 

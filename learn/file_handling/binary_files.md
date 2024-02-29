@@ -87,6 +87,7 @@ with open("file.bin", "rb") as f:
     data = f.read()
     print(data)
 ```
+
 This code opens a binary file named `file.bin` in read mode using the `with` statement. The `rb` mode ensures the file is read in binary format. The `read()` method is used to read the entire file and the content is then printed out to the console.
 
 ```python
@@ -94,4 +95,5 @@ with open("file.bin", "wb") as f:
     data = b"\x48\x65\x6c\x6c\x6f" # Hello in binary
     f.write(data)
 ```
+
 This code creates a binary file named `file.bin` in write mode using the `with` statement. The `wb` mode ensures the file is written in binary format. The `b` prefix before the string literal indicates that the string is in binary format. The `write()` method is used to write binary data to the file. This code writes the binary data for the string `Hello` to the file.  
