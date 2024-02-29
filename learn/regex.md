@@ -59,7 +59,7 @@ Exploring the capabilities of regular expressions in Python opens up a new dimen
 
 ### Example: the `findall()` Usage
 
-In this example, we use regex to find occurrences of a specific word in a text, demonstrating the use of the python regex word boundary.
+In this example, we use `regex` to find occurrences of a specific word in a text, demonstrating the use of the python regex word boundary.
 
 ```python
 import re
@@ -154,6 +154,7 @@ text = "Hello World! Welcome to the World of Python."
 new_text = re.sub(r"World", "Universe", text)
 print(new_text)
 ```
+
 Output: `Hello Universe! Welcome to the Universe of Python.`
 
 This example demonstrates how to replace all instances of `World` with `Universe` in the given string.

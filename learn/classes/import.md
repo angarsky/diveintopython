@@ -22,7 +22,7 @@ Once we import the module, we can use its functions and attributes.
 
 In Python, we can access the attributes of an object using the `.` notation. For instance, given an object `obj`, we can access its attributes using `obj.attribute`. For example, consider the following class definition:
 
-```python
+```python3
 import math
 class Circle:
     def __init__(self, radius):
@@ -111,7 +111,7 @@ This will only import `Class1` into `script.py`.
 
 In Python, we can import classes with aliases to make our code more readable and concise. Aliases allow us to use a shorter, more convenient name for a class, without having to type out its full name every time we use it. 
 
-```python
+```python3
 # Importing the math module and aliasing it as m
 import math as m
 
@@ -121,7 +121,7 @@ print(m.sqrt(4))  # Output: 2.0
 
 In this example, we're importing the `math` module and aliasing it as `m`. This allows us to use `m` as a shorthand for `math` throughout our code. We then use the `m.sqrt()` method to calculate the square root of 4 and print the result.
 
-```python
+```python3
 # Importing the square and cube functions from the math module and aliasing them as sq and cu
 from math import sqrt as sq, pow as cu
 

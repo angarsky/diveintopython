@@ -12,7 +12,7 @@ A class constructor in Python is a special method that is executed when an objec
 Let's explore how to instantiate a class in Python. 
 In order to accomplish this, we must perform class instantiation in Python by creating an instance of the class that invokes its constructor method. Here's an example of a simple class and how to instantiate an object of that class.
 
-```python
+```python3
 class Recipe:
     def __init__(self, name, ingredients):
         self.name = name
@@ -71,7 +71,7 @@ Instantiating an object, in Python, means creating an instance of a class. When 
 
 To instantiate a Python class, you need to use the constructor method, which is the `__init__()` method. The constructor method initializes the attributes or properties of an object. 
 
-```python
+```python3
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -84,7 +84,7 @@ print(person1.age)
 
 In this example, we defined a class called `Person` with two attributes, `name` and `age`. We instantiated an object `person1` and passed two arguments to the constructor method. Finally, we printed the values of the name and age attributes. 
 
-```python
+```python3
 class Employee:
     def __init__(self, firstname, lastname, salary):
         self.firstname = firstname
@@ -109,7 +109,7 @@ The `__init__()` method is used in Python classes to initialize newly-created ob
 
 Here's an example of a class with an `__init__()` method:
 
-```python
+```python3
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -125,7 +125,7 @@ In this example, the `Person` class has an `init` method that takes two argument
 
 You can also have optional or default arguments in the `__init__()` method:
 
-```python
+```python3
 class Rectangle:
     def __init__(self, width=0, height=0):
         self.width = width
@@ -152,7 +152,7 @@ In Python, the `__init__()` method is called when an object of a class is create
 
 One way to customize object initialization is to define a custom method that initializes the attributes. This method can take parameters which are used to set the values of the attributes. Here is an example:
 
-```python
+```python3
 class Car:
     def set_values(self, make, model, year):
         self.make = make
@@ -170,7 +170,7 @@ In this example, we defined a custom method `set_values()` to initialize the att
 
 Another way to customize object initialization is to use class-level attributes. These attributes can be set in the class definition and used to initialize the attributes of the object. Here is an example:
 
-```python
+```python3
 class Car:
     make = ''
     model = ''
@@ -194,7 +194,7 @@ In this example, we defined `make`, `model`, and `year` as class-level attribute
 
 Object-oriented programming allows us to create objects with different properties. We can initialize an object with fixed properties or flexible properties by passing different arguments to the constructor. In Python, we can use the `__init__()` method to initialize an object with flexible properties. 
 
-```python
+```python3
 class Rectangle:
     def __init__(self, width, height):
         self.width = width
@@ -207,7 +207,7 @@ print(rect.height)  # Output: 10
 
 In the above example, we initialized the `Rectangle` object with fixed properties `width` and `height`. The object returned by the constructor will always have the same properties.
 
-```python
+```python3
 class Circle:
     def __init__(self, radius, color='red', border=None):
         self.radius = radius
@@ -226,18 +226,20 @@ In the above example, we initialized the `Circle` object with flexible propertie
 
 The `__new__()` method is used in Python to create objects dynamically. It allows the developer to create a class object using the class name, and then you can add attribute after init of python class. 
 
-```python
+```python3
 class Person:
     pass
 
 dave = Person.__new__(Person)
 dave.name = "Dave"
 dave.age = 25
+
+print(dave.name)
 ```
 
 In the above example, we create a class called `Person` and then use the .new() method to create an object called `dave`. We then add the attributes `name` and `age` to this object after initialization. 
 
-```python
+```python3
 class Car:
     def __init__(self, model, make):
         self.model = model
@@ -246,6 +248,8 @@ class Car:
 car = Car.__new__(Car)
 car.__init__("Corvette", "Chevrolet")
 car.color = "red"
+
+print(car.color)
 ```
 
 In this example, we create a class called `Car` and define its attributes during initialization using `__init__()`. We then create an object called `car` using the `__new__()` method and initialize it with the model and make attributes. Finally, we add the attribute `color` to the `car` object after initialization.

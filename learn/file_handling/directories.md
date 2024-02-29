@@ -29,7 +29,7 @@ except OSError as error:
 
 ### Example 2: Get the Current Working Directory
 
-To get the current working directory using the [os](https://docs.python.org/3/library/os.html) module in Python, we can use the `os.getcwd()` function. Here's an example:
+To get the current working directory using the `os` module in Python, we can use the `os.getcwd()` function. Here's an example:
 
 ```python
 import os
@@ -41,7 +41,7 @@ cwd = os.getcwd()
 print("Current working directory:", cwd)
 ```
 
-By using the [os](https://docs.python.org/3/library/os.html) module, we can perform various operations related to the operating system, including file operations, `directory` operations, and process management.  
+By using the `os` module, we can perform various operations related to the operating system, including file operations, `directory` operations, and process management.  
   
 ## How to Get List of Files in Directory  
 
@@ -78,7 +78,7 @@ In summary, by using `os.listdir()` you can easily get a list of files in a dire
   
 ## How to Get Current Directory  
 
-To get the current directory, you can use the [os](https://docs.python.org/3/library/os.html) module. The `os.getcwd()` method returns the current working directory as a string.
+To get the current directory, you can use the `os` module. The `os.getcwd()` method returns the current working directory as a string.
 
 ```python
 import os
@@ -182,7 +182,7 @@ Make sure to replace `/my/directory` with the actual path of the directory you w
 
 ## Creating Directory in Python  
 
-To create a directory in Python, you can use the [os](https://docs.python.org/3/library/os.html) module. You can also check whether the directory already exists or not before creating it using the `os.path.exists()` method. The `os.makedirs()` method creates a directory and all its parent directories if they do not exist.
+To create a directory in Python, you can use the `os` module. You can also check whether the directory already exists or not before creating it using the `os.path.exists()` method. The `os.makedirs()` method creates a directory and all its parent directories if they do not exist.
 
 ```python
 import os
@@ -256,7 +256,7 @@ In conclusion, the above two methods can be used to copy a file from one directo
   
 ## How to Delete Directory  
 
-To delete a directory in Python, we can use the [os](https://docs.python.org/3/library/os.html) module which provides us with the necessary methods to remove files and directories. One way to delete all files in a directory is by iterating over all files and deleting them one by one. Another way is to simply remove the directory using the `os.rmdir()` method.
+To delete a directory in Python, we can use the `os` module which provides us with the necessary methods to remove files and directories. One way to delete all files in a directory is by iterating over all files and deleting them one by one. Another way is to simply remove the directory using the `os.rmdir()` method.
 
 ### Delete all Files in a Directory
 
@@ -295,7 +295,7 @@ With the above code examples, you can now easily delete all files in a directory
   
 ## Read all Files in a Directory  
 
-If you want to read all `files` in a directory using Python, you can use the [os](https://docs.python.org/3/library/os.html) module. Here are two examples of how to accomplish this task:
+If you want to read all `files` in a directory using Python, you can use the `os` module. Here are two examples of how to accomplish this task:
 
 ```python
 import os

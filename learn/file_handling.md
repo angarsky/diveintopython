@@ -27,7 +27,7 @@ for line in file:
     print(line)
 ```
 
-### Handling the `No Such File or Directory` Error
+### Handling the `No such file or directory` Error
 
 It's not uncommon to encounter a `No such file or directory` error when working with files in Python. To handle this error, you can use a `try` and `except` block to catch the error and handle it accordingly. The following code demonstrates how to handle a `No such file or directory` error in Python:
 
