@@ -316,7 +316,7 @@ The `pandas` library is a fundamental tool for data manipulation and analysis in
 
 ### Understanding `groupby()` in Pandas
 
-The `groupby` method in the pandas library is instrumental for segmenting data into groups based on some criteria. a pandas DataFrame can be grouped by one or more columns or even a combination of pandas Series and columns. This function is vital for performing statistical analysis, data summarization, and various transformations.
+The `groupby()` method in the pandas library is instrumental for segmenting data into groups based on some criteria. a pandas DataFrame can be grouped by one or more columns or even a combination of pandas Series and columns. This function is vital for performing statistical analysis, data summarization, and various transformations.
 
 ### How to Use `groupby()`
 

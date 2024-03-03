@@ -189,6 +189,7 @@ In both examples, we define a function (`square_numbers`) and then call it using
 The timeit module provides different methods for measuring execution time. Here are some of them.
 
 #### `timeit.timeit()`
+
 The `timeit.timeit()` method is used to measure the execution time of a code snippet. It takes the code as a string, the number of executions, and an optional setup statement.
 
 ```python
@@ -201,6 +202,7 @@ print(f"Execution time: {execution_time} seconds")
 ```
 
 #### `timeit.repeat()`
+
 The `timeit.repeat()` method allows you to repeat the measurement multiple times and returns a list of execution times.
 
 ```python
@@ -215,6 +217,7 @@ print(f"Execution times: {execution_times}")
 In this example, the code is executed 10,000 times, and the measurement is repeated 5 times.
 
 #### `timeit.default_timer()`
+
 The `timeit.default_timer()` method returns the current time according to the highest-resolution clock available on the platform.
 
 ```python
