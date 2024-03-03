@@ -88,7 +88,7 @@ my_obj.my_method()
 
 In this example, we define a parent class `MyParentClass` with a method `my_method()`. We then define a child class `MyChildClass` that overrides `my_method()` and uses `super()` to call the same method in the parent class. When we instantiate an object of `MyChildClass`, the `my_method()` method in the parent class is called first, followed by the same method in the child class.  
   
-## The Role of `super` in Class Inheritance  
+## The Role of `super()` in Class Inheritance  
 
 In Python, `super()` is a built-in function that gives access to methods of a parent class through inheritance. It is used to call a method of the parent class without explicitly naming the parent class. It is also used in Python 3 abstract classes to call `super().__init__()` method.
 
