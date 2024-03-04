@@ -160,6 +160,7 @@ my_obj = MyClass('John', 30)
 name = my_obj.name
 print(name) # Output: 'John'
 ```
+
 In conclusion, getting attributes of Python object types can be done by using the `getattr()` function or by accessing them directly using the dot notation.  
 
 ## Exploring Attribute Inheritance and Searching  
@@ -317,6 +318,7 @@ print(my_car.color)
 # 
 # AttributeError: 'Car' object has no attribute 'color'
 ```
+
 Explanation: In this example, we are trying to access the attribute 'color', which does not exist in the `my_car` object.
 
 To fix this error, you need to either add the `color` attribute to the `Car` class or use an existing attribute.

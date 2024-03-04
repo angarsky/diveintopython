@@ -199,6 +199,7 @@ class Rectangle:
 r = Rectangle(5, 4)
 print(r.get_area())  # Output: 9
 ```
+
 In this example, the `__init__` method incorrectly calculates the area of the rectangle. The area should be calculated as `length * width`, but the provided code adds them together instead.
 
 ```python
@@ -221,6 +222,7 @@ c = Calculator()
 c.add(5, 7)
 print(c.divide(0))  # Output: "Cannot divide by zero"
 ```
+
 In this example, the `divide` method incorrectly allows division by zero. Instead, it should return an error message if the divisor is zero.
 
 To avoid logic errors in Python classes, it's important to carefully plan the algorithmic logic and to thoroughly test the code. Additionally, using tools like debugging and code reviews can help catch and fix logic errors more quickly.  

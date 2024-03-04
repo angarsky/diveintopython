@@ -73,7 +73,6 @@ print(MyClass.counter)  # Output: 1
 ```
 
 In the above example, `increment_counter` method is decorated with `@classmethod` which makes it a class method. It increments the `counter` class variable by 1.
-
   
 ## Exploring Class Property Decorator  
 

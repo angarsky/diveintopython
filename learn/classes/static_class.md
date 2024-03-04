@@ -333,6 +333,7 @@ Python static methods are called on the class and do not take any special first 
 | Can access class-level variables | Cannot access class-level variables |
 
 ### Example 1: Class method
+
 ```python
 class Car:
     wheels = 4
@@ -352,6 +353,7 @@ print(car1.wheels) # Output: 3
 ```
 
 ### Example 2: Static method
+
 ```python
 class Formatter:
     @staticmethod
