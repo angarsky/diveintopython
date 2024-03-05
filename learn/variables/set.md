@@ -73,7 +73,7 @@ As above, you can create a set in Python by using a set literal or the `set()` f
 
 In Python, you can add to a set an element using the `add()` method. Here's an example of adding to a set:
 
-```python
+```python3
 my_set = {1, 2, 3}  # create a set with initial values
 my_set.add(4)  # add a new value to the set
 print(my_set)  # output: {1, 2, 3, 4}
@@ -87,7 +87,7 @@ In Python, the `set` data type represents a collection of unique elements. The `
 
 Here is an example of how to remove from a set:
 
-```python
+```python3
 # create a set
 my_set = {1, 2, 3, 4, 5}
 
@@ -101,7 +101,7 @@ It's important to note that if the element to be removed is not in the set, the 
 
 Here's an example of using the discard method in Python:
 
-```python
+```python3
 # create a set
 my_set = {1, 2, 3, 4, 5}
 
@@ -124,7 +124,7 @@ If you need to access a specific element in a set, you can use the `in` keyword 
 
 Here are some examples:
 
-```python
+```python3
 # Creating a set
 my_set = {1, 2, 3, 4, 5}
 
@@ -154,7 +154,7 @@ In Python, you can use the built-in `len()` function to get the number of elemen
 
 For example, consider the following set:
 
-```python
+```python3
 my_set = {1, 2, 3, 4, 5}
 print(len(my_set)) # Output: 5
 ```
@@ -167,7 +167,7 @@ In Python, you can sort a set using the built-in `sorted()` function or the `sor
 
 Using `sorted()` function:
 
-```python
+```python3
 my_set = {4, 1, 3, 2, 5}
 sorted_set = sorted(my_set)
 print(sorted_set)   # Output: [1, 2, 3, 4, 5]
@@ -177,7 +177,7 @@ When `sorted()` is applied to a set, it returns a new sorted list containing all
 
 Using `sort()` method:
 
-```python
+```python3
 my_set = {4, 1, 3, 2, 5}
 sorted_list = list(my_set)
 sorted_list.sort()
@@ -189,7 +189,7 @@ print(sorted_set)   # Output: {1, 2, 3, 4, 5}
 
 In both cases, the resulting set will be sorted in ascending order. If you want to sort in descending order of a set, you can use the `reverse=True` argument in `sorted()` function or the `sort()` method's reverse parameter.
 
-```python
+```python3
 my_set = {4, 1, 3, 2, 5}
 sorted_set_desc = sorted(my_set, reverse=True)
 print(sorted_set_desc)   # Output: [5, 4, 3, 2, 1]
@@ -229,7 +229,7 @@ In Python intersection of sets can be found using the `intersection()` method.
 
 Let's see how to get intersection of two sets in Python:
 
-```python
+```python3
 set1 = {1, 2, 3, 4}
 set2 = {3, 4, 5, 6}
 set3 = {4, 5, 6, 7}
@@ -243,7 +243,7 @@ print(intersection_set)  # Output: {4}
 
 The difference of sets in Python ca be find using the "-" operator or the `difference()` method. Here's an example:
 
-```python
+```python3
 set1 = {1, 2, 3, 4, 5}
 set2 = {3, 4, 5, 6, 7}
 
@@ -262,7 +262,7 @@ Uion of sets in Python can be obtained using the `union()` method or the pipe (`
 
 Here is an example of using the `union()` method:
 
-```python
+```python3
 set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 set3 = {3, 4, 5}
@@ -273,7 +273,7 @@ print(union_set)  # Output: {1, 2, 3, 4, 5}
 
 Alternatively, we can use the pipe (`|`) operator to achieve the same result:
 
-```python
+```python3
 set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 set3 = {3, 4, 5}
@@ -288,7 +288,7 @@ The `pop()` method in Python's set data type removes and returns an arbitrary el
 
 Here is an example usage:
 
-```python
+```python3
 my_set = {1, 2, 3, 4}
 popped_element = my_set.pop()
 print(popped_element)  # output: an arbitrary element from the set, e.g. 1

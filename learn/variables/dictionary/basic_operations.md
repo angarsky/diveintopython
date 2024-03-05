@@ -19,7 +19,7 @@ Here, `my_dict` is the dictionary you want to add an element to, `key` is the ke
 
 For example, if you have an empty dictionary and you want to add a new item to it with the key `"name"` and the value `"John"`, you can do the following:
 
-```python
+```python3
 my_dict = {}
 my_dict["name"] = "John"
 print(my_dict) # Output: {'name': 'John'}.
@@ -50,7 +50,7 @@ To delete an item from a dictionary in Python, you can use the `del` keyword alo
 
 Here is an example of how to remove a key from dictionary along with its value:
 
-```python
+```python3
 # create a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
@@ -69,7 +69,7 @@ We will show you how to iterate over a dictionary in Python using a `for` loop. 
 
 - Iterate over the keys:
 
-```python
+```python3
 # create a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
@@ -88,7 +88,7 @@ c
 
 - Iterate over the values:
 
-```python
+```python3
 # create a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
@@ -107,7 +107,7 @@ Output:
 
 - Iterate over the key-value pairs:
 
-```python
+```python3
 # create a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
@@ -210,7 +210,7 @@ You can use the built-in `json` module in Python to convert a dictionary to JSON
 
 Here is an example code snippet:
 
-```python
+```python3
 import json
 
 # sample dictionary

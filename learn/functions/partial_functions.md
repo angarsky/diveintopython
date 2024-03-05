@@ -9,7 +9,7 @@ A **partial function** in Python is a function that is defined with some of its 
 
 For example, consider the following normal function that adds two numbers. We can create a new partial function from this function by setting one of the arguments:
 
-```python
+```python3
 from functools import partial
 
 def add(a, b):
@@ -24,7 +24,7 @@ Here, we have created a new partial function called `add_3` which adds 3 to any 
 
 We can also use partial functions to modify an existing function by passing a new value for one of its arguments:
 
-```python
+```python3
 from functools import partial
 
 mod = partial(pow, 2)
@@ -44,7 +44,7 @@ The keywords used in this answer are function and partial function.
 
 Suppose we have a function that calculates the area of a rectangle. We need to calculate the area of several rectangles with a fixed `width` of `10`. Instead of creating a new function, we can create a partial function with the fixed width argument:
 
-```python
+```python3
 from functools import partial
 
 def calculate_area(length, width):
@@ -61,7 +61,7 @@ print(area2) # 70
 
 Suppose we have a function that generates a URL from a path and some query parameters. We need to generate URLs with a fixed path and some variable query parameters. Instead of repeating the path argument every time, we can create a partial function with the fixed path argument:
 
-```python
+```python3
 from functools import partial
 
 def generate_url(path, params):
@@ -120,7 +120,7 @@ This way, we can easily calculate the exponential value of a variable `x` for di
 
 Another example of using partial functions in Python is the implementation of the `multiply` function. Suppose we have a list of numbers that we want to multiply by a fixed value `x`. We can define a partial function using the `partial` function from the `functools` module to create a new function that multiplies a given number by `x`.
 
-```python
+```python3
 from functools import partial
 
 multiply = partial(lambda x, y: x * y, 2)
@@ -145,7 +145,7 @@ Key differences and similarities:
 
 ### Example of Using a Partial Function
 
-```python
+```python3
 import functools
 
 def multiply(x, y):
@@ -184,7 +184,7 @@ print(multiply_by_two(5)) # Output: 10
 
 In this example, a partial function called `multiply_by_two` is created from the `multiply()` function, with the first parameter set to 2. When `multiply_by_two()` is called with the parameter 5, it multiplies 2 by 5 and returns 10.
 
-```python
+```python3
 import functools
 
 def power(base, exponent):
@@ -213,7 +213,7 @@ def average_three(a, b, c):
 
 We can use a partial function to **avoid duplicating** the code for adding up the numbers: 
 
-```python
+```python3
 from functools import partial 
 
 def add(*args): 

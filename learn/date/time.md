@@ -15,7 +15,7 @@ In Python, you can use the `strftime()` method from the `time` module to format 
 
 You can combine these format codes with other characters to create the desired time format. Here is an example of how to get the formatted time in Python:
 
-```python
+```python3
 import time
 
 # Get the current time
@@ -99,7 +99,7 @@ So `time.time()` function can be used for counting time in Python.
 
 If you want to measure time in milliseconds in Python, you can use the `time` module's `time()` function along with the `perf_counter()` function. Here's an example:
 
-```python
+```python3
 import time
 
 # Get the current time in milliseconds
@@ -253,7 +253,7 @@ This will print the current time in milliseconds. Note that the result is rounde
 
 To create a timer in Python, you can use the built-in `time` module. Here's an example code snippet that demonstrates how to create a timer:
 
-```python
+```python3
 import time
 
 def countdown(t):
@@ -283,7 +283,7 @@ In Python, the `time` module provides a range of functions for working with time
 - **ctime()** - This function takes a time in seconds and returns a string representation of that time in the format "Day Month Date Time Year".
 Example usage:
 
-```python
+```python3
 import time
 
 current_time = time.time()
@@ -294,7 +294,7 @@ print("Current time: ", time_string)
 - **gmtime()** - This function takes a time in seconds and returns a struct_time object representing the UTC time.
 Example usage:
 
-```python
+```python3
 import time
 
 current_time = time.time()
@@ -352,7 +352,7 @@ Using `monotonic()` ensures that the elapsed time is calculated based on a monot
 
 If you want to stop the execution of a Python program after a certain amount of time, you can use the `signal` module along with a timer. The `signal` module allows you to handle various signals, including a timer signal, to control the program's behavior. Here's an example that demonstrates how to stop the program after a specified duration:
 
-```python
+```python3
 import signal
 import time
 
@@ -387,7 +387,7 @@ In this example, the program sets an alarm using `signal.alarm(duration)`, where
 
 To time the execution of a specific function in Python, you can use the `time` module and a decorator. Here's an example of how you can time a function using a decorator:
 
-```python
+```python3
 import time
 
 def timer_decorator(func):

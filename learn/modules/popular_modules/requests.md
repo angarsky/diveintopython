@@ -15,7 +15,7 @@ pip install requests
 
 Once you’ve installed the Requests library, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
 
-```python
+```python3
 import requests
 
 response = requests.get('https://www.example.com')
@@ -26,7 +26,7 @@ In this example, we `import` the Requests module and use the `requests.get()` me
 
 Here's another example showing how to send a POST request with some data:
 
-```python
+```python3
 import requests
 
 data = {'key': 'value'}
@@ -157,7 +157,7 @@ response = requests.get('https://example.com', headers=headers)
 
 The `response` object contains the server's `response` to the request. It includes attributes such as the `response` status code, content, and headers. Here's an example:
 
-```python
+```python3
 import requests
 
 response = requests.get('https://example.com')
@@ -304,7 +304,7 @@ curl -X POST \
 
 ### Python `request` Code
 
-```python
+```python3
 import requests
 
 url = 'https://httpbin.org/post'

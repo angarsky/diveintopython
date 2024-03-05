@@ -81,7 +81,7 @@ An iterator is an object that enables sequential iteration (looping) over a coll
 
 You can create an iterator using the generator class in Python. The generator class is a type of object that is used to create iterable objects using the `yield` statement.
 
-```python
+```python3
 class MyGenerator:
     def __init__(self):
         self.num = 0
@@ -129,7 +129,7 @@ Attribute references are used to access attributes of an object in Python. They 
 
 The `getattr()` function takes two arguments - the object whose attribute needs to be accessed and the name of the attribute as a string. If the attribute is not found, an `AttributeError` is raised.
 
-```python
+```python3
 
 class Dog:
     def __init__(self, name, breed):
@@ -152,7 +152,7 @@ In second case, we create a dictionary object `my_cat` and access the `name` att
 
 In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
 
-```python
+```python3
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -167,7 +167,7 @@ print(p)  ### Output
 
 In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` dunder method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` magic method to get its string representation.
 
-```python
+```python3
 class Car:
     def __init__(self, make, model, year):
         self.make = make
@@ -208,7 +208,7 @@ Python provides multiple ways to compare values, variables, or expressions. Some
 
 The `__lt__()` method is used to implement the less than comparison operator in Python. It returns `True` if the first string is less than the second string and `False` otherwise. 
 
-```python
+```python3
 string1 = "apple"
 string2 = "banana"
 if string1.__lt__(string2):
@@ -220,7 +220,7 @@ else:
 #string1 is less than string2
 ```
 
-```python
+```python3
 fruits = ["apple", "banana", "orange", "kiwi"]
 sorted_fruits = sorted(fruits, key=lambda x: x.__lt__("c"))
 print(sorted_fruits)

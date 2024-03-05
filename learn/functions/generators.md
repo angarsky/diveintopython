@@ -9,7 +9,7 @@ Benefits of using generator functions include improved performance efficiency, b
 
 ### Example 1: Regular Python function
 
-```python
+```python3
 def power(n):
     result = []
     for i in range(n):
@@ -21,7 +21,7 @@ print(power(5)) # Output: [1, 2, 4, 8, 16]
 
 ### Example 2: Python generator function 
 
-```python
+```python3
 def power(n):
     for i in range(n):
         yield 2**i
@@ -151,7 +151,7 @@ By utilizing the **advanced techniques** discussed below, you can **manipulate**
 
 One of the primary benefits of generator functions is the **ability to delay execution on the fly** until the output is actually needed. This can significantly improve the performance of your code by avoiding the need to generate and store all output in memory.
 
-```python 
+```python3
 def fibonacci(n):
     a, b = 0, 1
     for _ in range(n):
@@ -203,7 +203,7 @@ In this example, we create a generator function that creates multiple threads us
 
 ### Example: A Generator Function that Produces Values in a Geometric Sequence
 
-```python
+```python3
 def geometric_sequence(start, factor):
     value = start
     while True:

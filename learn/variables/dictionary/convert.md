@@ -7,7 +7,7 @@ In Python, dictionaries are one of the most commonly used data structures, as th
 
 Let's look at the example of how to convert variables into a dictionary in Python:
 
-```python
+```python3
 # define variables
 name = "John"
 age = 25
@@ -34,7 +34,7 @@ In this example, we define three variables: `name`, `age`, and `gender`. Then, w
 
 To convert a list to a dictionary in Python, you can use the `dict()` constructor function. The list should contain tuples where each tuple contains a key-value pair. Here is an example:
 
-```python
+```python3
 my_list = [('a', 1), ('b', 2), ('c', 3)]
 my_dict = dict(my_list)
 print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
@@ -48,7 +48,7 @@ You can convert a string to a dictionary in Python using the `json` module, whic
 
 Here's an example:
 
-```python
+```python3
 import json
 
 # Sample string
@@ -73,7 +73,7 @@ In this example, the `json.loads()` method is used to convert the string to a di
 
 In Python, you can convert a tuple to a dictionary using the `dict()` function which we mentioned earlier. Here's an example:
 
-```python
+```python3
 # Define a tuple
 my_tuple = ('apple', 'pineapple', 'cherry')
 

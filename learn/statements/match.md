@@ -43,7 +43,7 @@ In conclusion, the `match` statement is a powerful addition to the Python langua
 
 Unfortunately, Python does not have a native switch case statement. However, there are several methods to emulate its functionality through other constructs such as if-elif-else statements or dictionaries.
 
-```python
+```python3
 def switch_case(argument):
     if argument == 0:
         return "Zero"
@@ -57,7 +57,7 @@ def switch_case(argument):
 print(switch_case(2)) # Output: Two
 ```
 
-```python
+```python3
 def switch_case(argument):
     return {
         0: "Zero",

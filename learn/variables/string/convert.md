@@ -7,7 +7,7 @@ In the process of working with data, it is often necessary to convert one data t
 
 To convert a non-string object to a string in Python, you can use the `str()` function. Here are some examples how to cast data:
 
-```python
+```python3
 # convert an integer to a string
 num = 42
 str_num = str(num)
@@ -35,7 +35,7 @@ In Python, you can convert a Unicode string to a regular string (also known as a
 
 Here's an example:
 
-```python
+```python3
 unicode_string = "Hello, World! 🌍"
 byte_string = unicode_string.encode("utf-8")
 print(byte_string) # Output: b'Hello, World! \xf0\x9f\x8c\x8d'
@@ -70,7 +70,7 @@ This will output:
 
 Alternatively, you could use a loop to iterate over the string and append each letter to a new list:
 
-```python
+```python3
 my_string = "hello"
 letters_list = []
 for letter in my_string:
@@ -122,7 +122,7 @@ If you have a string that is not one of the above values and you want to treat i
 
 You can convert a string to its hexadecimal representation in Python using the `encode()` method and the `'hex'` encoding. Let's see how to encode with an example:
 
-```python
+```python3
 string = "Hello, world!"
 hex_string = string.encode('hex')
 
@@ -152,7 +152,7 @@ Here, `separator_string` is the string that you want to use to separate the elem
 
 For example, if you have a list of strings and you want to join them into a single string separated by commas, you could use the following code:
 
-```python
+```python3
 my_list = ['mango', 'pineapple', 'banana']
 separator = ', '
 result = separator.join(my_list)

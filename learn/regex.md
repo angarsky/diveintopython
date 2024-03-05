@@ -27,7 +27,7 @@ For those looking to experiment with Python regex online, numerous platforms and
 
 ### Example: Email Address Found
 
-```python
+```python3
 import re
 
 text = "For more information, contact us at info@example.com."
@@ -38,7 +38,7 @@ print("Email Address Found:", match)
 
 ### Example: Validate Phone Number
 
-```python
+```python3
 import re
 
 def validate_phone_number(number):
@@ -61,7 +61,7 @@ Exploring the capabilities of regular expressions in Python opens up a new dimen
 
 In this example, we use `regex` to find occurrences of a specific word in a text, demonstrating the use of the python regex word boundary.
 
-```python
+```python3
 import re
 
 text = "Python is powerful. Python is easy to learn."
@@ -75,7 +75,7 @@ print("Occurrences of 'Python':", len(matches))
 
 Here, we validate an `email` address using a regular expression, showcasing the versatility of regex in Python.
 
-```python
+```python3
 import re
 
 def validate_email(email):
@@ -101,7 +101,7 @@ Here are two examples demonstrating the use of `re.match()` and `re.search()` in
 
 ### Example: Using `re.match()`
 
-```python
+```python3
 import re
 
 pattern = r"Python"
@@ -119,7 +119,7 @@ In this scenario, since Python is not at the beginning, `re.match()` will return
 
 ### Example: Using `re.search()`
 
-```python
+```python3
 import re
 
 pattern = r"Python"
@@ -147,7 +147,7 @@ The `re` module in Python provides a method called `sub()` which stands for subs
 
 ### Example: Simple Word Replacement
 
-```python
+```python3
 import re
 
 text = "Hello World! Welcome to the World of Python."
@@ -161,7 +161,7 @@ This example demonstrates how to replace all instances of `World` with `Universe
 
 ### Example: Removing Punctuation
 
-```python
+```python3
 import re
 
 text = "Hello, World! How are you today?"
@@ -183,7 +183,7 @@ Looking for a Python regex tester to validate and refine your regular expression
 
 ### Example: Search Emails by Pattern
 
-```python
+```python3
 import re
 
 text = "Contact us at support@example.com or sales@example.net"
@@ -198,7 +198,7 @@ for match in matches:
 
 ### Example: Search Phone Numbers by Pattern
 
-```python
+```python3
 import re
 
 text = "Reach us at +1-555-123-4567 or +1-555-765-4321"
@@ -221,7 +221,7 @@ Regular expressions (regex) in Python are indispensable for anyone who needs to 
 
 - **search()**: Finds the first occurrence of a pattern within a string. Returns a match object if found, else None.
 
-```python
+```python3
 import re
 result = re.search(r'\d+', 'Episode 8: The Last Stand')
 print(result.group())  # Output: 8
@@ -239,7 +239,7 @@ print(results)  # Output: ['3', '5', '9']
 
 Grouping in regex allows you to pick out parts of the matching text. Use the `group()` method to access matched patterns.
 
-```python
+```python3
 import re
 pattern = re.compile(r'(\d+)([a-z]+)')
 match = pattern.search("123abc")
@@ -261,7 +261,7 @@ To use Python regex split, you first need to `import` the `re` module which cont
 
 ### Example: Splitting the String by Comma Followed by a Space
 
-```python
+```python3
 import re
 
 # Example string
@@ -277,7 +277,7 @@ In this example, `\s` is a regex that matches any whitespace character. Combined
 
 ### Example: Splitting by Multiple Delimiters
 
-```python
+```python3
 import re
 
 # Example string with multiple delimiters
@@ -305,7 +305,7 @@ The `re.findall()` function in Python is designed for retrieving all non-overlap
 
 For a more practical application, let's use `re.findall()` to extract email addresses from a text:
 
-```python
+```python3
 import re
 
 text = "For more information, contact us at info@example.com or support@example.org."
@@ -324,7 +324,7 @@ In Python, regex (regular expressions) are utilized for string searching and man
 
 The `re.sub()` function in Python is used for **Python regex substitution**. It replaces occurrences of a pattern in a string with a specified replacement. It's particularly useful when you want to modify strings in a sophisticated manner, including using **Python regex sub capture group**s to manipulate specific parts of the matched text.
 
-```python
+```python3
 import re
 
 text = "2024 is the year of code"
@@ -337,7 +337,7 @@ print(result)  # Output: XXXX is the year of code
 
 The `regex.search()` function in Python scans a string for the first location where a specified regex pattern is found. It returns a match object if a match is found and `None` if no match is found. This is perfect for checking the presence of patterns in strings.
 
-```python
+```python3
 import re
 
 text = "Reach me at email@example.com"

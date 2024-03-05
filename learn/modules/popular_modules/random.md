@@ -9,7 +9,7 @@ The [random](https://docs.python.org/3/library/random.html) module (`random` lib
 
 ### Get Random Number
 
-```python
+```python3
 import random
 
 # Generate a random number between 1 and 10 (inclusive)
@@ -24,7 +24,7 @@ In the above example, the `random.randint(a, b)` function is used to generate a 
 
 ### Random Select from List
 
-```python
+```python3
 import random
 
 # Generate a random choice from a list of options
@@ -55,7 +55,7 @@ for i in range(5):
 
 In this example, we set the random seed value to `123`, which ensures that the same sequence of random numbers is generated every time the code is run.
 
-```python
+```python3
 import random
 
 # Setting different random seed values
@@ -78,7 +78,7 @@ Overall, `random` seed is an essential feature in generating and reproducing `ra
 
 If you're looking to generate a random string in Python, there are a few different methods you can use depending on your needs. Here are two examples:
 
-```python
+```python3
 import random
 import string
 
@@ -116,7 +116,7 @@ Random sampling is an important statistical technique used by data analysts and 
 
 In Python, the `random` module provides several functions to generate `random` data. To generate a `random` sample from a list, we can use the `random.sample()` function. This function takes two arguments: the list from which we want to generate a `random` sample and the number of samples we want to generate.
 
-```python
+```python3
 import random
 
 mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9]

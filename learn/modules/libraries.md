@@ -51,7 +51,7 @@ A library is a collection of modules that come together to provide a particular 
 
 #### Example of Using the `numpy` Library
 
-```python
+```python3
 import numpy as np
 
 arr = np.array([1, 2, 3, 4, 5])
@@ -64,7 +64,7 @@ Packages, on the other hand, are a collection of libraries. They are a way of gr
 
 #### Example of Using the `scipy` Package
 
-```python
+```python3
 from scipy import constants
 
 print(constants.pi)
@@ -91,7 +91,7 @@ print(f"The current directory is: {current_working_directory}")
 
 ### An Example of Using a Library
 
-```python
+```python3
 import numpy as np
 
 ### Create a two-dimensional array using numpy library
@@ -111,7 +111,7 @@ import library_name
 ```
 Here, `library_name` is the name of the library you want to import. Once you import the library, you can access its functions and classes using the dot notation.
 
-```python
+```python3
 import math
 
 result = math.sqrt(25)
@@ -175,7 +175,7 @@ for package in pkg_resources.working_set:
 
 ### Get Libraries List with the `subprocess`
 
-```python
+```python3
 import subprocess
 output = subprocess.check_output(['pip', 'freeze'])
 for line in output.splitlines():

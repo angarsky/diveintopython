@@ -18,7 +18,7 @@ Converting a tuple to a list is a common operation in Python, especially when we
 
 Here's an example:
 
-```python
+```python3
 # Define a tuple
 my_tuple = (1, 2, 3, 4, 5)
 
@@ -35,7 +35,7 @@ We can convert a list back to a tuple using the built-in `tuple()` function. Thi
 
 Here's an example:
 
-```python
+```python3
 # Define a list
 my_list = [1, 2, 3, 4, 5]
 
@@ -50,7 +50,7 @@ print(my_tuple) # Output: (1, 2, 3, 4, 5)
 
 You can convert a Python tuple to a string using the `join()` method. Here's an example:
 
-```python
+```python3
 my_tuple = ('apple', 'banana', 'cherry')
 my_string = ', '.join(my_tuple)
 print(my_string) # Output: apple, banana, cherry
@@ -62,7 +62,7 @@ print(my_string) # Output: apple, banana, cherry
 
 To convert a string back to a tuple in Python, you can use the `split()` method. Here's an example:
 
-```python
+```python3
 my_string = 'apple, banana, cherry'
 my_tuple = tuple(my_string.split(', '))
 print(my_tuple) # Output: ('apple', 'banana', 'cherry')
@@ -74,7 +74,7 @@ print(my_tuple) # Output: ('apple', 'banana', 'cherry')
 
 To convert a Python tuple to a dictionary, you can use the `dict()` constructor function. Here's an example:
 
-```python
+```python3
 my_tuple = ('a', 1), ('b', 2), ('c', 3)
 my_dict = dict(my_tuple)
 print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
@@ -84,7 +84,7 @@ print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
 
 To convert a Python dictionary back to a tuple, you can use the `items()` method of the dictionary object to get a list of (key, value) pairs, and then convert that list to a tuple using the `tuple()` constructor function. Here's an example:
 
-```python
+```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 my_tuple = tuple(my_dict.items())
 print(my_tuple) # Output: (('a', 1), ('b', 2), ('c', 3))

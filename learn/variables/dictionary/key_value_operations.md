@@ -7,7 +7,7 @@ Quite often we face situations when we need to operate with keys or values of a 
 
 To get dictionary keys in Python, you can use the `keys()` method. Here's an example of keyset getting:
 
-```python
+```python3
 # Creating a dictionary
 my_dict = {"name": "Sam", "age": 35, "city": "Boston"}
 
@@ -24,7 +24,7 @@ Note that `keys()` returns a view object, which is a dynamic view on the diction
 
 To convert dictionary keys to list in Python, you can use the `keys()` method and the `list()` function. Here's an example:
 
-```python
+```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 keys_list = list(my_dict.keys())
 print(keys_list)  # Output: ['a', 'b', 'c']
@@ -36,7 +36,7 @@ In the code above, `my_dict.keys()` returns a `dict_keys` object containing the 
 
 In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Let's see how to check if key exists in dictionary in Python:
 
-```python
+```python3
 # Creating a dictionary
 my_dict = {"name": "Sam", "age": 35, "city": "Boston"}
 
@@ -68,7 +68,6 @@ In Python, you can delete a key from a dictionary using the del statement or the
 Here is an example using the del statement to delete a key from a dictionary:
 
 ```python
-Copy code
 my_dict = {"a": 1, "b": 2, "c": 3}
 
 del my_dict["b"]
@@ -81,7 +80,6 @@ In the above example, the key `"b"` is deleted from the `my_dict` dictionary usi
 Here is an example using the `pop()` method to delete a key from a dictionary:
 
 ```python
-Copy code
 my_dict = {"a": 1, "b": 2, "c": 3}
 
 my_dict.pop("b")
@@ -97,7 +95,7 @@ You can use the `values()` method of a Python dictionary to get a list of its va
 
 Here's an example:
 
-```python
+```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 values_list = list(my_dict.values())
 print(values_list) # Output: [1, 2, 3]

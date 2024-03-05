@@ -11,7 +11,7 @@ Python static class is a class that does not require an instance to be created. 
 
 In addition to understanding the concept of a static method, it's crucial to grasp the significance of a static class in Python.
 
-```python
+```python3
 class MyClass:
     @staticmethod
     def static_method():
@@ -22,7 +22,7 @@ MyClass.static_method()   # Output: This is a static method in a class
 
 In the above example, `static_method()` is a static method in `MyClass`. It can be called using the class name without an instance of the class.
 
-```python
+```python3
 class Calculator:
     @staticmethod
     def add_numbers(x, y):
@@ -42,7 +42,7 @@ Python allows us to create static classes and static methods within a class. A s
 
 To create static classes and static methods, we simply use the `@staticmethod` decorator in Python. 
 
-```python
+```python3
 class Math:
     @staticmethod
     def add(x, y):
@@ -59,7 +59,7 @@ print(Math.subtract(5, 2))  # Output: 3
 
 In the above example, we created a **static class** called **Math** that contains two **static methods** called **add** and **subtract**. We can call these methods directly from the class without the need to create an instance of the class.
 
-```python
+```python3
 class Person:
     count = 0
 
@@ -90,7 +90,6 @@ To call a static method in a class, you need to define a static method using a b
 class MyClass:
     
     @staticmethod  ### Defining static method
-
     def my_static_method():
         print("This is a static method.")
         
@@ -100,7 +99,7 @@ MyClass.my_static_method()   ### Output
 
 ```
 
-```python
+```python3
 class Math:
     
     @staticmethod   ### Defining static method
@@ -197,7 +196,7 @@ Static classes in Python are classes that have class-level attributes and method
 
 ### Python Static Class
 
-```python
+```python3
 class StaticClass:
     @staticmethod
     def my_static_method():
@@ -231,7 +230,7 @@ print(result)
 
 In this example, we have created a static class `MathUtils` and defined a static method `add_numbers` that takes two arguments and returns their sum. The static method can be called directly from the class `MathUtils` without creating an instance of the class.
 
-```python
+```python3
 class StringUtils:
     @staticmethod
     def reverse_string(string):
@@ -259,7 +258,7 @@ Here are two code examples that demonstrate the usage of static variables in Pyt
 
 ### Example 1: Counting Instances
 
-```python
+```python3
 class Car:
     # Static variable to keep track of the number of instances
     count = 0
@@ -282,7 +281,7 @@ In the above example, the `count` variable is a static variable that keeps track
 
 ### Example 2: Common Configuration
 
-```python
+```python3
 class Circle:
     # Class-level constant for pi
     PI = 3.14159
@@ -334,7 +333,7 @@ Python static methods are called on the class and do not take any special first 
 
 ### Example 1: Class method
 
-```python
+```python3
 class Car:
     wheels = 4
 

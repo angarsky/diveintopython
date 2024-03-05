@@ -9,7 +9,7 @@ The `for` loop is used for iterating over a sequence (that is either a list, a t
 
 An example how to use the `for` for a looping through a list in Python:
 
-```python
+```python3
 cars = ["bmw", "audi", "renault"]
 for car in cars:
     print(car)
@@ -21,7 +21,7 @@ In this example, we have a list of cars, and we want to print each car on a new 
 
 In this example, we have a list of numbers, and we want to create a new list that contains the square of each number. Instead of using a traditional `for` loop, we use a list comprehension, which is a more concise way of achieving the same result.
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5]
 squares = [x**2 for x in numbers]
 print(squares)
@@ -33,15 +33,15 @@ In this case, the expression is `x**2`, which is the square of the current numbe
 
 In this example, the `loop` iterates over the `cars` list and prints the index and value of each element:
 
-```python
+```python3
 cars = ["bmw", "audi", "renault"]
 for i in range(len(cars)):
-    print(i, car[i])
+    print(i, cars[i])
 ```
 
 ### Power Function in Python Using a Loop
 
-```python
+```python3
 def power(a, b):
     pow = 1
     for i in range(b):
@@ -57,7 +57,7 @@ print(power(a, b))
 
 Here is an example of the `while` loop that counts from `1` to `10`:
 
-```python
+```python3
 count = 1
 while count <= 10:
     print(count)
@@ -74,7 +74,7 @@ In Python, `break` and `continue` are reserved keywords used to modify the behav
 
 ### Example: How to `break` a `for` Loop
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 3:
@@ -89,7 +89,7 @@ In this example, the loop iterates over the `numbers` list and prints each numbe
 
 The `continue`, on the other hand, is used to **skip loop iteration** based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the `for` loop in Python:
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 3:
@@ -103,7 +103,7 @@ In this example, the loop iterates over the `numbers` list and prints each numbe
 
 Using `continue` in `while` loop in Python is a way to skip certain iterations of the loop and proceed to the next iteration. This can be useful when you need to skip over certain values or conditions in your loop.
 
-```python
+```python3
 i = 0
 while i < 10:
     i += 1
@@ -114,7 +114,7 @@ while i < 10:
 
 In this example, the loop iterates over the numbers 1 through 10. However, when the value of `i` is even, the `continue` statement is triggered, causing the loop to skip to the next iteration without executing any more code in the current iteration.
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 while my_list:
     val = my_list.pop()
@@ -139,7 +139,7 @@ while <condition>:
 
 Here, `<condition>` is the loop's condition that initially decides whether the loop should be executed or not, and `<break-condition>` is an additional conditional statement that defines the condition(s) for stopping the loop. Once this condition is met, the loop is automatically terminated, and control is transferred to the next statement after the loop.
 
-```python
+```python3
 n = 1
 while n <= 10:
     print(n)
@@ -162,7 +162,7 @@ In this example, the while loop will `print` numbers from 1 to 5, and then `stop
 
 ### How to Stop an Infinite Loop in Python
 
-```python
+```python3
 while True:
     value = input("Enter a number: ")
     if value == "stop":
@@ -189,7 +189,7 @@ This approach helps to avoid infinite loops in Python, and to control the flow o
 
 To count in a `for` loop in Python, you can use a loop counter variable. This variable keeps track of the number of times the `for` loop has executed. Here are two examples:
 
-```python
+```python3
 count = 0
 for i in range(10):
     count += 1
@@ -198,7 +198,7 @@ print("The loop executed", count, "times.")
 
 In this example, we create a variable `count` and set its initial value to 0. We then use a `for` loop to iterate 10 times, incrementing the `count` variable by 1 each time. Finally, we `print` out the total number of times the loop executed.
 
-```python
+```python3
 fruits = ['apple', 'banana', 'cherry']
 for i, fruit in enumerate(fruits, 1):
     print(i, fruit)
@@ -218,7 +218,7 @@ The most common type of nested loop in Python is the nested for loop. This loop 
 
 #### Simple Example of Nested `for` Loops
 
-```python
+```python3
 numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 for row in numbers:
@@ -234,7 +234,7 @@ Nested `while` loops in Python use one or more inner loops that repeat the same 
 
 #### Example of Nested `while` Loops
 
-```python
+```python3
 x = 1
 y = 1
 
@@ -255,7 +255,7 @@ Overall, nested loops are an important concept in Python programming, and they c
 
 The `range` statement in Python is a built-in function that can be used to generate a sequence of numbers. It is often used in `for` loops to repeat a task a certain number of times. Here are two examples of how to use the `range` statement in Python:
 
-```python
+```python3
 for i in range(5):
     print(i)
 
@@ -268,7 +268,7 @@ In the first example, the `for` loop is used to iterate through a range of numbe
 
 ### A Reverse `for` Loop
 
-```python
+```python3
 for i in range(5, 0, -1):
     print(i)
 # Output:
@@ -279,7 +279,7 @@ for i in range(5, 0, -1):
 # 1
 ```
 
-```python
+```python3
 a = ['1', '2', '3', '4', '5']
 
 for i in reversed(a):
@@ -298,7 +298,7 @@ Using the `range` statement in Python is an efficient way to loop through a sequ
 
 List comprehension makes it easier to write a for loop in one line in Python. Using a single line loop can help simplify the code and make it more concise.
 
-```python
+```python3
 squares = [x**2 for x in range(10)]
 print(squares)
 ```
@@ -308,7 +308,7 @@ Output:
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 ```
 
-```python
+```python3
 even_numbers = [num for num in range(20) if num % 2 == 0]
 print(even_numbers)
 

@@ -29,7 +29,7 @@ In this example, we create a class variable `team_name` to store the name of the
 
 To access a class variable, you can use the class name followed by the variable name, separated by a dot. This allows you to retrieve the shared data that applies to all instances of the class.
 
-```python
+```python3
 class Team:
     team_name = "Python Developers"
 
@@ -43,7 +43,7 @@ In this example, `the team_name` class variable is accessed using the class name
 
 Modifying the value of a class variable is straightforward. You use the class name to reference the variable and assign a new value to it.
 
-```python
+```python3
 class Team:
     team_name = "Python Developers"
 
@@ -119,7 +119,7 @@ In this example, we define a class attribute `kingdom` to store the kingdom clas
 
 Properties in Python are special methods that act like attributes. They are created using the `@property` decorator to define a method as an attribute, providing additional functionality like getters, setters, and deleters.
 
-```python
+```python3
 class Circle:
     def __init__(self, radius):
         self._radius = radius
@@ -208,7 +208,7 @@ In this example, we define a global variable `global_var` with the value `10`. T
 
 Global variables can be used within functions, classes, or any other scope without the need for special declarations. You can access and modify global variables directly from within these scopes.
 
-```python
+```python3
 global_var = 10
 
 class MyClass:
@@ -228,7 +228,7 @@ In this example, the global variable `global_var` is accessed and assigned to an
 
 Modifying the value of a global variable is straightforward. You can access and update its value from any part of the program.
 
-```python
+```python3
 global_var = 10
 
 def modify_global_variable():
@@ -254,7 +254,7 @@ In Python, you can check if a class has a specific attribute using the built-in 
 
 To use `hasattr()`, provide the object (in this case, the class or an instance of the class) and the attribute name as arguments. The function returns a Boolean value, indicating whether the attribute exists in the class.
 
-```python
+```python3
 class MyClass:
     var = 10
 
@@ -360,7 +360,7 @@ In this example, we create a class private variable `__private_var`.
 
 Attempting to access a class private variable from outside the class will result in an AttributeError. Private variables are intended to be used only within the class to encapsulate data.
 
-```python
+```python3
 class MyClass:
     __private_var = 10
 
@@ -424,7 +424,7 @@ In this example, we create a class global variable `global_var`.
 
 Class global variables can be accessed and used from any part of your program, including within classes and functions.
 
-```python
+```python3
 global_var = 10
 
 class MyClass:
@@ -443,7 +443,7 @@ In this example, we define a class global variable `global_var` and access it fr
 
 Class global variables provide a way to share data across different parts of your program. They are often used to store information that is relevant to the entire application.
 
-```python
+```python3
 user_name = "John"
 
 class User:
@@ -467,7 +467,7 @@ In Python, attributes and properties can have different levels of visibility and
 
 Public attributes and properties have no name restrictions. They are accessible from anywhere in your code, both within and outside the class. By default, if an attribute or property does not have a name with a double underscore prefix, it is considered public.
 
-```python
+```python3
 class Person:
     def __init__(self, name):
         self.name = name  # Public attribute
@@ -497,7 +497,7 @@ In the examples above, attributes like `name`, `radius`, and `value` are public 
 
 In Python, attributes and properties can be marked as protected by prefixing their names with a single underscore. This is a naming convention that suggests that these attributes should not be accessed directly from outside the class, although they can still be accessed.
 
-```python
+```python3
 class Employee:
     def __init__(self, name, _salary):
         self.name = name
@@ -518,7 +518,7 @@ In the `Employee` class, `_salary` is marked as a protected attribute. Although 
 
 Attributes and properties can be made private in Python by prefixing their names with a double underscore. This naming convention implies that these attributes should not be accessed directly from outside the class. Attempting to do so will result in a name mangling transformation.
 
-```python
+```python3
 class BankAccount:
     def __init__(self, account_number, __balance):
         self.account_number = account_number

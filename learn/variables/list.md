@@ -36,7 +36,7 @@ If the list index is out of range, Python will return an error.
 
 ## Changing or Replacing an Item of a List
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 my_list[0] = 0
 print(my_list) # Output: [0, 2, 3, 4, 5]
@@ -50,7 +50,7 @@ There are several methods which can help you to add an item to a list
 
 Here's an example which shows how to add an element to a list using `insert()` method:
 
-```python
+```python3
 my_list = [1, 2, 3, 4]
 my_list.insert(2, "hello")
 print(my_list)  # [1, 2, 'hello', 3, 4]
@@ -60,7 +60,7 @@ print(my_list)  # [1, 2, 'hello', 3, 4]
 
 To insert an element to the end of a Python list, you can use the `append()` method. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4]
 my_list.append(5)
 print(my_list)  # [1, 2, 3, 4, 5]
@@ -78,7 +78,7 @@ The `extend()` method in Python is used to append elements from an iterable (suc
 
 Here's an example:
 
-```python
+```python3
 # Create a list
 my_list = [1, 2, 3]
 
@@ -104,7 +104,7 @@ print(my_list) # Output: [1, 2, 4, 5]
 
 There is also the `del` statement, whic can be used to remove an item from a list. Here is an example of item deleting:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 del my_list[2]
 print(my_list)
@@ -120,14 +120,14 @@ The output of this code will be:
 
 So if you want to remove the first element from a list in Python, you can use the `del` statement which we reviewd before, or the `pop()` method. Here are example of pop() method:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 my_list.pop(0)
 print(my_list) # Output: [2, 3, 4, 5]
 ```
 Let's also see on the example how to remove `None` from list in Python useing a list comprehension:
 
-```python
+```python3
 original_list = [1, None, "hello", None, 5.7, None, "world"]
 new_list = [item for item in original_list if item is not None]
 print(new_list) # Output: [1, 'hello', 5.7, 'world']
@@ -147,7 +147,7 @@ print(my_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 
 If you want to sort the list in descending order, you can pass the `reverse=True` argument to the `sort()` method:
 
-```python
+```python3
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 
 my_list.sort(reverse=True)
@@ -157,7 +157,7 @@ print(my_list) # Output: [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
 
 You can also use the built-in `sorted()` function to sort a list, which returns a new sorted list and leaves the original list unchanged:
 
-```python
+```python3
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
 
 sorted_list = sorted(my_list)
@@ -169,7 +169,7 @@ print(sorted_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 
 To copy a list in Python, you can use the slice operator or the `copy()` method. Here's an example using both methods:
 
-```python
+```python3
 # Using the slice operator
 original_list = [1, 2, 3, 4, 5]
 new_list = original_list[:]
@@ -189,7 +189,7 @@ In Python, `list.clear()` is a built-in method that removes all items from a lis
 
 Here's an example og how to clear a list:
 
-```python
+```python3
 my_list = [1, 2, 3, 4]
 my_list.clear()
 print(my_list)  # Output: []

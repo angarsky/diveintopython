@@ -9,7 +9,7 @@ In Python, an **abstract class** is a class that is designed to be inherited by 
 
 An abstract base class in Python is defined using the `abc` module. It allows us to specify that a class must implement specific methods, but it doesn't provide an implementation for those methods. Any class that inherits from an abstract base class must implement all the abstract methods. 
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -32,7 +32,7 @@ print(r.area())    ### Output 30
 
 In the above example, `Shape` is an abstract base class that defines an abstract method `area`. `Rectangle` is a concrete class that inherits from `Shape` and implements the `area` method. 
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -114,7 +114,7 @@ An abstract class is a Python class that cannot be instantiated, and it is used 
 
 ### Example of a Python Abstract Base Class
 
-```python
+```python3
 from abc import ABC, abstractmethod
  
 class Animal(ABC):
@@ -148,7 +148,7 @@ An interface is a collection of abstract methods that defines the behavior of a 
 
 #### Example of a Python Interface
 
-```python
+```python3
 from abc import ABC, abstractmethod
  
 class Shape(ABC):
@@ -184,7 +184,7 @@ In the above example, `Shape`is an interface with two abstract methods called `a
 
 An abstract class is a class that cannot be instantiated, but it can be used as a base for other classes. It is a way to define a common interface for a group of related classes. Polymorphism is the ability of an object to take on many forms. In Python, abstract classes can be used to implement polymorphism.
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -216,7 +216,7 @@ One way to implement abstract classes in Python is to use abstract base classes 
 
 The following code example shows how to define an abstract base class `Animal`, which defines two abstract methods `speak` and `move` that must be implemented by any concrete subclass:
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Animal(ABC):
@@ -242,7 +242,7 @@ Another benefit of using ABCs in Python is that they can be used to enforce cert
 
 For example, if you want to define a function that accepts only objects that have a `draw` method, you could define an ABC called `Drawable`, which defines an abstract method `draw`:
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Drawable(ABC):

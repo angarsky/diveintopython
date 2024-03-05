@@ -31,7 +31,7 @@ for line in file:
 
 It's not uncommon to encounter a `No such file or directory` error when working with files in Python. To handle this error, you can use a `try` and `except` block to catch the error and handle it accordingly. The following code demonstrates how to handle a `No such file or directory` error in Python:
 
-```python
+```python3
 try:
     file = open('example.txt', 'r')
 except FileNotFoundError:
@@ -172,7 +172,7 @@ To get the size of a file in Python, you can use various methods provided by the
 
 The `os.path` module provides a convenient method, `getsize()`, to retrieve the size of a file in bytes.
 
-```python
+```python3
 import os
 
 file_path = "example.txt"
@@ -190,7 +190,7 @@ In this example, we use the `getsize()` function from the `os.path` module to ob
 
 Another way to retrieve the size of a file is by using the `os.stat()` function, which returns a named tuple containing file attributes, including the file size.
 
-```python
+```python3
 import os
 
 file_path = "example.txt"
@@ -226,7 +226,7 @@ In this example, we use the `os.path` module, specifically the `splitext()` func
 
 To check if a file exists, you can use the built-in [os](https://docs.python.org/3/library/os.html) module which provides functionality for interacting with the operating system. 
 
-```python
+```python3
 import os
 
 # Define the path of the file to check

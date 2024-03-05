@@ -17,7 +17,7 @@ Here, `string` is the original string to be converted to lowercase. The method r
 
 For example, consider the following code snippet:
 
-```python
+```python3
 string = "Hello World"
 new_string = string.lower()
 print(new_string) # Output: hello world
@@ -37,7 +37,7 @@ Here, `string` is the original string to be converted to uppercase. The method r
 
 For example, consider the following code snippet:
 
-```python
+```python3
 string = "Hello World"
 new_string = string.upper()
 print(new_string) # Output: HELLO WORLD
@@ -49,7 +49,7 @@ In this example, the `upper()` method is used to convert all the lowercase chara
 
 The `capitalize()` method only capitalizes the first letter of the string, and leaves the rest of the letters in lowercase. Here's an example:
 
-```python
+```python3
 string = "hello world"
 capitalized_string = string.capitalize()
 print(capitalized_string) # Output: Hello world

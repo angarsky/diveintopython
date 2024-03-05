@@ -43,7 +43,7 @@ Here is a list of some commonly used date and time formats in Python:
 
 To extract the current date from a `datetime` object in Python, you can use the `date()` method. Here's an example of how to convert a `datetime` object to a `date` object by accessing the `date()` method of the `datetime` object:
 
-```python
+```python3
 from datetime import datetime
 
 current_datetime = datetime.now()
@@ -56,7 +56,7 @@ This code will output the current date in the format YYYY-MM-DD. For example, if
 
 Here's also an example of getting the current date and time:
 
-```python
+```python3
 from datetime import datetime
 
 # Get the current date and time
@@ -69,7 +69,7 @@ print(current_datetime)  # Output: Current date and time in the format YYYY-MM-D
 
 To extract the year from a datetime object in Python, you can use the year attribute. Here's an example:
 
-```python
+```python3
 from datetime import datetime
 
 # Create a datetime object
@@ -85,7 +85,7 @@ print(year) # Output: 2023
 
 In Python's `datetime` module, you can format a datetime object to display the time in AM/PM format using the `%I` and `%p` directives in the strftime method. Here's an example:
 
-```python
+```python3
 from datetime import datetime
 
 # Get the current datetime
@@ -104,7 +104,7 @@ This code will output the current time in the format "hh:mm AM/PM". For example,
 
 In Python, you can retrieve the current time in a "clock time" format using the `datetime` module. Here's an example:
 
-```python
+```python3
 from datetime import datetime
 
 # Get the current time
@@ -126,7 +126,7 @@ To convert a Python `datetime` object to a string, you can use the `strftime()` 
 
 Here's an example of how to format the current date and time:
 
-```python
+```python3
 import datetime
 
 now = datetime.datetime.now()  # Get the current datetime object
@@ -138,7 +138,7 @@ print(formatted_date)  # Print the formatted datetime string
 
 You can use the `datetime` module in Python to convert a string to a datetime object in Python. Here's an example of string to time conversion:
 
-```python
+```python3
 from datetime import datetime
 
 # define the format of the input string
@@ -162,7 +162,7 @@ The same algorithm can be used to convert a string to a `date` object.
 
 Let's look at the examle of string to `date` object converting in Python:
 
-```python
+```python3
 from datetime import datetime
 
 date_string = "2023-05-22"
@@ -200,6 +200,7 @@ print(now) # This will output the current date and time in the format YYYY-MM-DD
 If you want to display only the current time without the date, you can use the `strftime()` method to format the output before printing:
 
 ```python
+import datetime
 current_time = datetime.datetime.now().strftime("%H:%M:%S")
 print("Current time:", current_time)
 ```
@@ -227,7 +228,7 @@ print(date)  # output: 2023-05-14
 
 You can convert a Python `datetime` object to epoch time (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC) using the `timestamp()` method. Let's look at the example how to convert a Python `datetime` object to a timestam:
 
-```python
+```python3
 import datetime
 
 # Create a datetime object for May 14, 2023 at 12:34:56 UTC
@@ -267,7 +268,7 @@ The `strptime()` method takes two arguments: the string you want to parse, and a
 
 Here's an example of how to parse a date string in the format "YYYY-MM-DD":
 
-```python
+```python3
 import datetime
 
 date_string = "2023-05-14"
@@ -284,7 +285,7 @@ To work with timezones, you need to use the `pytz` library. This library provide
 
 Here's an example of how you can work with timezones using the `datetime` module and `pytz` library in Python:
 
-```python
+```python3
 import datetime
 import pytz
 
@@ -308,7 +309,7 @@ The `datetime` module in Python provides various classes for working with dates,
 
 Here's an example of how to use `timedelta`:
 
-```python
+```python3
 import datetime
 
 # create a datetime object for the current time
@@ -326,7 +327,7 @@ print(tomorrow)
 
 Here's also an example of how to find time delta or time difference in Python:
 
-```python
+```python3
 import datetime
 
 # create two datetime objects
@@ -352,7 +353,7 @@ In Python, you can compare `datetime` objects using the comparison operators (`<
 
 Let's look at the example of how to compare dates in Python:
 
-```python
+```python3
 from datetime import datetime
 
 # create datetime objects
@@ -370,7 +371,7 @@ As a result of comparing dates we get "date1 is before date2".
 
 You can also compare `datetime` objects with `date` objects. In that case, the `date` object is treated as if it has a time of midnight. For example:
 
-```python
+```python3
 from datetime import datetime, date
 
 # create datetime and date objects
@@ -390,7 +391,7 @@ To add time to a Python `datetime` object, you can use the `timedelta` class fro
 
 Here's an example code snippet that shows how to add 3 days to the current date:
 
-```python
+```python3
 from datetime import datetime, timedelta
 
 current_date = datetime.now()
@@ -406,7 +407,7 @@ You can adjust the number of days to add by changing the value of the days argum
 
 The `isoformat()` method is used to get the string representation of a date or time object in ISO 8601 format. Here's an example:
 
-```python
+```python3
 import datetime
 
 # create a datetime object for May 14, 2023 at 2:30 PM
@@ -468,7 +469,7 @@ You can customize the format string based on your specific requirements. For mor
 
 The `datetime` module provides the `date` class, which allows you to work specifically with dates (without considering time). Here's an example of how to use the `date` class:
 
-```python
+```python3
 from datetime import date
 
 # Create a date object for May 22, 2023

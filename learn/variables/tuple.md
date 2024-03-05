@@ -33,7 +33,7 @@ As we already mentioned, the indexing in Python starts from 0. It means that the
 
 Here is an example of accessing tuple elements using indexing:
 
-```python
+```python3
 my_tuple = ('apple', 'banana', 'cherry')
 print(my_tuple[0])   # Output: 'apple'
 print(my_tuple[1])   # Output: 'banana'
@@ -46,7 +46,7 @@ In Python, tuples are immutable, meaning once they are created, their elements c
 
 **Using the `+` operator to create a new tuple**:
 
-```python
+```python3
 existing_tuple = (1, 2, 3)
 new_element = 4
 
@@ -58,7 +58,7 @@ print(new_tuple)
 
 **Using the `+=` augmented assignment operator**:
 
-```python
+```python3
 existing_tuple = (1, 2, 3)
 new_element = 4
 
@@ -74,7 +74,7 @@ Both of these methods create a new tuple by combining the elements of the existi
 
 You can sort a list of tuples in Python using the sorted function, and passing a key argument that specifies how to compare the elements in each tuple. Here's an example:
 
-```python
+```python3
 # define a list of tuples
 my_list = [(1, 2), (3, 1), (2, 4)]
 
@@ -86,7 +86,7 @@ print(sorted_list) # Output: [(1, 2), (2, 4), (3, 1)]
 
 You can also sort the list of tuples in reverse order by setting the reverse argument to True:
 
-```python
+```python3
 # define a list of tuples
 my_list = [(1, 2), (3, 1), (2, 4)]
 
@@ -102,7 +102,7 @@ A named tuple is a subclass of the built-in tuple data type that allows for fiel
 
 Named tuples are created using the `collections.namedtuple` function. Here's an example:
 
-```python
+```python3
 from collections import namedtuple
 
 # create a named tuple with two fields: 'x' and 'y'
@@ -145,7 +145,7 @@ print(my_list[0][1])   # Output: 2
 
 To append a tuple to a list in Python, you can use the `append()` method. Here's an example:
 
-```python
+```python3
 my_list = [(1, 2), (3, 4)]
 new_tuple = (5, 6)
 my_list.append(new_tuple)

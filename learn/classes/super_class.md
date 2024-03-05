@@ -9,7 +9,7 @@ The `super()` function in python is used to call a method in a parent class from
 
 ### Using `super()` in Python Class
 
-```python
+```python3
 class MyParentClass:
     def do_something(self):
         print("Parent class doing something.")
@@ -31,7 +31,7 @@ Abstract class is a class that cannot be instantiated and is meant to be subclas
 
 ### Define an Abstract Class
 
-```python
+```python3
 import abc
 
 class MyAbstractClass(metaclass=abc.ABCMeta):
@@ -66,7 +66,7 @@ In this example, we define an abstract class `MyAbstractClass` with an abstract 
 
 ### Define a Parent Class
 
-```python
+```python3
 class MyParentClass:
     
     def my_method(self):
@@ -92,7 +92,7 @@ In this example, we define a parent class `MyParentClass` with a method `my_meth
 
 In Python, `super()` is a built-in function that gives access to methods of a parent class through inheritance. It is used to call a method of the parent class without explicitly naming the parent class. It is also used in Python 3 abstract classes to call `super().__init__()` method.
 
-```python
+```python3
 class Parent:
     def __init__(self, name):
         self.name = name
@@ -108,7 +108,7 @@ print(child.name) # Output: John
 
 In the above example, `Child` class inherits `Parent` class and initializes `name` attribute using `super()` function.
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Parent(ABC):
@@ -136,7 +136,7 @@ The `super()` function in Python is used to call a method of a super class from 
 
 In Python 3, `super()` takes two arguments: the first is the subclass calling `super()`, and the second is either the subclass instance or the class itself. For example:
 
-```python
+```python3
 class A:
     def __init__(self):
         print("I am in A's __init__")
@@ -157,7 +157,7 @@ In this example, `super().__init__()` calls the `__init__()` method of class `A`
 
 Another use case is with abstract classes that contain `super().__init__()` in their `__init__()` method:
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class MyAbstractClass(ABC):
@@ -189,7 +189,7 @@ Python supports multiple inheritance, which means a class can inherit from multi
 
 Example:
 
-```python
+```python3
 class A:
     def some_method(self):
         print("Method from class A")
@@ -222,7 +222,7 @@ Method Resolution Order (MRO) is a critical concept in multiple inheritances. Py
 
 Example:
 
-```python
+```python3
 class A:
     def some_method(self):
         print("Method from class A")
@@ -262,7 +262,7 @@ Multi-level inheritance is a common pattern in object-oriented programming, wher
 
 Example:
 
-```python
+```python3
 class Grandparent:
     def speak(self):
         print("Grandparent speaks")

@@ -21,7 +21,7 @@ In Python, the `date` module is not a standalone module. However, the `datetime`
 
 Here's an example of using the `date` class to work with dates in Python:
 
-```python
+```python3
 from datetime import date
 
 # Create a date object for May 22, 2023
@@ -41,7 +41,7 @@ The `calendar` module in Python provides functions to work with calendars. It al
 
 Here is an example of how to use the `calendar` module:
 
-```python
+```python3
 import calendar
 
 # Print the calendar for the current month
@@ -67,7 +67,7 @@ The `dateutil` module is a third-party module in Python that provides various ut
 
 Here are some examples of what you can do with the `dateutil` module:
 
-```python
+```python3
 from dateutil import parser
 from dateutil.relativedelta import relativedelta
 from dateutil.rrule import rrule, DAILY
@@ -95,7 +95,7 @@ The `dateutil` module also provides many other useful features such as time zone
 
 In Python, you can convert a `date` object to a `datetime` object by using the `datetime.combine()` method. This method allows you to combine the `date` object with a separate `time` object to create a new `datetime` object. Here's an example:
 
-```python
+```python3
 from datetime import date, datetime, time
 
 # Create a date object
@@ -116,7 +116,7 @@ To parse a date from a string in Python, you can use the `datetime.strptime()` f
 
 Here's an example of how to create a date from a string in Python:
 
-```python
+```python3
 from datetime import datetime
 
 date_string = "2023-05-22"
@@ -137,7 +137,7 @@ To convert a `date` object to a string in Python, you can use the `strftime()` m
 
 Here's an example of converting a `date` object to a string:
 
-```python
+```python3
 from datetime import date
 
 my_date = date(2023, 5, 22)
@@ -154,7 +154,7 @@ To get today's date in Python, you can use the `date` class from the `datetime` 
 
 Here's an example of getting today's date:
 
-```python
+```python3
 from datetime import date
 
 # Get today's date
@@ -169,7 +169,7 @@ To convert a timestamp to a `date` object in Python, you can use the `fromtimest
 
 Here's an example of converting a timestamp to a `date` object:
 
-```python
+```python3
 from datetime import date
 
 timestamp = 1621687200  # Example timestamp value
@@ -210,7 +210,7 @@ To get the date representing yesterday in Python, you can use the `date` class f
 
 Here's an example of getting yesterday's date:
 
-```python
+```python3
 from datetime import date, timedelta
 
 # Get today's date
@@ -242,7 +242,7 @@ There is no special function or method for number of months calculation.
 
 Here's an example of calculating the number of months between two dates using simple formulas:
 
-```python
+```python3
 from datetime import date
 
 # Define the start and end dates

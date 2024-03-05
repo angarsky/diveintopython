@@ -148,7 +148,7 @@ In Python, importing modules is essential for reusing code. You can import a mod
 
 ### Import an Entire Module
 
-```python
+```python3
 import math
 
 print(math.sqrt(64)) # Output: 8.0
@@ -158,7 +158,7 @@ In this example, we import the `math` module and use the `sqrt()` function to ge
 
 ### Import Specific Functions from a Module
 
-```python
+```python3
 from datetime import date
 
 today = date.today()
@@ -196,18 +196,7 @@ for module in pkgutil.walk_packages():
     print(module.name)
 ```
 
-Alternatively, you can use the [pip](https://pypi.org/project/pip/) `module` to get a list of all the installed Python packages and their versions.
-
-```python
-import pip
-
-for package in pip.get_installed_distributions():
-    print(package.key, package.version)
-```
-
-Make sure to have installed `pip` module in your environment like this: `python -m ensurepip --upgrade`
-
-By using `pkgutil` or  `pip` module in Python, you can easily generate a list of modules available or installed in the Python environment. This can be helpful while building and testing the applications.  
+By using `pkgutil` module in Python, you can easily generate a list of modules available or installed in the Python environment. This can be helpful while building and testing the applications.  
   
 ## Error: no Module Named  
 

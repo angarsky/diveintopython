@@ -53,7 +53,7 @@ After installing and importing NumPy, you can start using it to perform various 
 
 One of the fundamental operations in NumPy is creating arrays. Use `np.array()` function to create a NumPy array:
 
-```python
+```python3
 import numpy as np
 my_array = np.array([1, 2, 3, 4, 5])
 print(my_array)
@@ -65,7 +65,7 @@ This code will result in a 1-dimensional array containing the numbers 1 through 
 
 Another useful function to generate arrays is `np.arange()`, which creates arrays with regularly incrementing values.
 
-```python
+```python3
 import numpy as np
 range_array = np.arange(0, 10, 2)
 print(range_array)
@@ -108,7 +108,7 @@ These properties help in understanding the structure and type of data that your 
 
 To start working with `numpy` arrays, you first need to `import` the Numpy library. Then you could convert a python list to `numpy` array or instantiate it directly:
 
-```python
+```python3
 import numpy as np
 
 # Python list
@@ -123,7 +123,7 @@ print(np_array)
 
 To `print` a `numpy` array, you can simply use the Python `print` function:
 
-```python
+```python3
 import numpy as np
 
 # Defining a numpy array
@@ -137,7 +137,7 @@ print(np_array)
 
 Appending elements to an array is a common operation. With `numpy`, you can easily append elements using the `np.append()` method:
 
-```python
+```python3
 import numpy as np
 
 # Defining a numpy array
@@ -155,7 +155,7 @@ print(new_np_array)
 
 Numpy provides a convenient way to calculate the `sum` of the elements in an array using the `np.sum()` method. This is very useful for numerical computations:
 
-```python
+```python3
 import numpy as np
 
 # Defining a numpy array
@@ -202,7 +202,7 @@ Matrix multiplication, also known as the dot product, is a fundamental operation
 
 This function is versatile and can handle both matrices and 2D arrays, delivering the dot product.
 
-```python
+```python3
 import numpy as np
 
 # Define two matrices
@@ -219,7 +219,7 @@ print(C)
 
 When dealing with Numpy matrices explicitly, you can directly use the `*` operator for matrix multiplication.
 
-```python
+```python3
 import numpy as np
 
 # Define two matrices

@@ -21,7 +21,7 @@ The basic structure of handling exceptions in Python involves the `try` and `exc
 
 ### Example: Basic Try Except
 
-```python
+```python3
 try:
     result = 10 / 0
 except ZeroDivisionError:
@@ -159,7 +159,7 @@ To catch any exception, you can use a bare `except:` clause, which will catch al
 
 ### Example: Catching any Exception
 
-```python
+```python3
 try:
     # Code that might raise any exception
     result = 10 / unknown_var
@@ -183,7 +183,7 @@ Logging exceptions can provide a wealth of information for debugging. Python's [
 
 ### Example: Logging an Exception Example
 
-```python
+```python3
 import logging
 
 try:
@@ -219,7 +219,7 @@ Raising an exception in Python is straightforward. You can use the `raise` keywo
 
 ### Example: Raising `ValueError`
 
-```python
+```python3
 def check_age(age):
     if age < 18:
         raise ValueError("Access denied due to age restrictions.")
@@ -238,7 +238,7 @@ except ValueError as err:
 
 You can also define your own exception classes by inheriting from Python's built-in `Exception` class. This is useful when throw exception needs to be more specific to your application's context.
 
-```python
+```python3
 class AgeRestrictionError(Exception):
     """Exception raised for errors in age restrictions."""
 
@@ -323,7 +323,7 @@ In this example, the `except` block catches the `ZeroDivisionError`, thereby pre
 
 Reading files without knowing if they exist can lead to an `IOError`. Here’s how to handle such scenarios.
 
-```python
+```python3
 try:
     with open('nonexistent_file.txt', 'r') as file:
         print(file.read())
@@ -527,7 +527,7 @@ When an exception is raised, it can be caught using a `try` and `except` block. 
 
 In this example, we access the message of a exception message within an `except` block:
 
-```python
+```python3
 try:
     raise ValueError("A sample value error")
 except ValueError as e:

@@ -7,7 +7,7 @@ In this article, we will explore the different types of operators in Python and 
 
 The `in` operator in Python is used to check whether a value is present in a sequence or not. It returns a Boolean value `True` if the value is found in the sequence and `False` otherwise. 
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 x = 3
 
@@ -21,7 +21,7 @@ else:
 # Element is present in the list
 ```
 
-```python
+```python3
 my_string = "Hello World"
 x = "o"
 
@@ -41,7 +41,7 @@ With the `in` operator, we can easily check the existence of elements in a list,
 
 The `and` operator in Python is used in `if` statements to test if multiple conditions are true. It returns `True` if both conditions are true, and `False` otherwise. Here are two examples:
 
-```python
+```python3
 x = 5
 y = 10
 if x > 0 and y > 0:
@@ -52,7 +52,7 @@ else:
 
 In this example, the `and` operator is used to determine if both `x` and `y` are positive. Since `x` and `y` are both greater than 0, the `if` statement evaluates to `True` and `Both x and y are positive` is printed.
 
-```python
+```python3
 name = "John"
 age = 25
 if name == "John" and age == 25:
@@ -71,7 +71,7 @@ The `or` operator in Python is a logical operator that returns `True` if either 
 
 ### The `or` Operator in a Conditional Statement
 
-```python
+```python3
 age = 25
 if age < 18 or age > 60:
     print("You are not eligible for this job")
@@ -85,7 +85,7 @@ In this example, the `or` operator is used to check if the `age` variable is eit
 
 ### The `or` Operator in a Boolean Expression
 
-```python
+```python3
 x = 5
 y = 10
 result = x > 3 or y < 9
@@ -128,7 +128,7 @@ The not equal operator in Python is used to compare two values and returns `True
 value1 != value2
 ```
 
-```python
+```python3
 a = 5
 b = 3
 if a != b:
@@ -139,7 +139,7 @@ if a != b:
 # a is not equal to b
 ```
 
-```python
+```python3
 name1 = "John"
 name2 = "Mary"
 if name1 != name2:
@@ -157,7 +157,7 @@ In Python, there are three types of division operators: the single forward slash
 
 The `/` operator performs regular division and returns a float answer, while the `//` operator performs floor division and returns the integer value of the quotient. The `%` operator returns the remainder of the division. The another name of the `%` is **modulo operator**
 
-```python
+```python3
 x = 10
 y = 3
 result = x / y
@@ -166,7 +166,7 @@ print(result)
 
 Output: `3.3333333333333335`
 
-```python
+```python3
 x = 10
 y = 3
 floor_division = x // y 
@@ -187,7 +187,7 @@ Overall, understanding these operators and their differences is important in Pyt
 
 The `:` operator in Python is used for slicing sequences such as lists, tuples, and strings. It allows you to extract a portion of a sequence by specifying a start and end index separated by a colon. You can also specify a step size. This operator is very useful when working with data in Python.
 
-```python
+```python3
 ### create a list
 
 my_list = [0, 1, 2, 3, 4, 5]
@@ -229,7 +229,7 @@ The `:` operator is an essential tool in Python for working with sequences. Its 
 
 Boolean operators in Python are used to evaluate true or false conditions. These operators include `and`, `or` and `not`. In Python, boolean operations are created with the keywords `and`, `or` and `not`.
 
-```python
+```python3
 x = 5
 y = 10
 z = 15
@@ -239,7 +239,7 @@ if x < y and z > y:
 # Output: `Both conditions are true`
 ```
 
-```python
+```python3
 x = 5
 y = 10
 z = 15
@@ -259,7 +259,7 @@ In Python, Operator Overloading enables us to define the behavior of operators i
 
 Here are two code examples that demonstrate operator overloading in Python:
 
-```python
+```python3
 class Rectangle:
     def __init__(self, length, width):
         self.length = length
@@ -279,7 +279,7 @@ print(r1 + r2)  ### Output
 
 In the above code, we have defined a custom behavior for the '+' operator for the `Rectangle` class. When we add two `Rectangle` objects using '+' operator, it will create a new `Rectangle` object with the sum of the `length` and `width` of both rectangles.
 
-```python
+```python3
 class Book:
     def __init__(self, title, author, pages):
         self.title = title
@@ -307,7 +307,7 @@ Python provides a variety of math operators that can be used to perform mathemat
 
 The addition operator in Python is represented by a `+`. It is used to add two or more numbers, as shown below:
 
-```python
+```python3
 # Adding two numbers
 num1 = 10
 num2 = 20
@@ -323,7 +323,7 @@ print(result)  # Output: 35
 
 The division operator in Python is represented by a `/`. It is used to divide one number by another number and returns a floating-point value as the result:
 
-```python
+```python3
 # Division of two numbers
 num1 = 10
 num2 = 2
@@ -444,7 +444,7 @@ The exponentiation operator in Python is represented by `**` and is used to rais
 
 Here are two code examples to demonstrate the usage of the exponentiation operator in Python:
 
-```python
+```python3
 num = 2
 exp = 3
 result = num ** exp
@@ -452,7 +452,7 @@ print(result)
 
 ```
 
-```python
+```python3
 num = 2
 exp = 3
 num **= exp

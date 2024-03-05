@@ -26,7 +26,7 @@ print(add(3, 4))  # Output: 7
 
 ### Using Within Higher-Order Functions
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5]
 doubled = list(map(lambda x: x * 2, numbers))
 print(doubled)  # Output: [2, 4, 6, 8, 10]
@@ -34,7 +34,7 @@ print(doubled)  # Output: [2, 4, 6, 8, 10]
 
 ### Sorting a List of Tuples
 
-```python
+```python3
 students = [('Alice', 25), ('Bob', 20), ('Charlie', 30)]
 students.sort(key=lambda x: x[1])
 print(students)  # Output: [('Bob', 20), ('Alice', 25), ('Charlie', 30)]
@@ -58,7 +58,7 @@ Key points to remember:
 
 ### Example of a lambda function
 
-```python 
+```python3 
 x = lambda a : a + 10
 print(x(5)) # output: 15
 ```
@@ -69,22 +69,22 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 
 1. **Sorting a list of tuples**: Lambda functions can be used as a **key argument** in the `sorted()` function to sort a list of tuples based on a specific element in the tuple.
 
-```python 
- # Sorting a list of tuples based on the age of a person
- people = [('Jane', 23), ('John', 19), ('Adam', 25), ('Kate', 18)]
- sorted_people = sorted(people, key=lambda x: x[1])
- print(sorted_people)
- # Output: [('Kate', 18), ('John', 19), ('Jane', 23), ('Adam', 25)]
+```python3 
+# Sorting a list of tuples based on the age of a person
+people = [('Jane', 23), ('John', 19), ('Adam', 25), ('Kate', 18)]
+sorted_people = sorted(people, key=lambda x: x[1])
+print(sorted_people)
+# Output: [('Kate', 18), ('John', 19), ('Jane', 23), ('Adam', 25)]
 ```
 
 2. **Filtering a list**: Lambda functions can be used with `filter()` to create a new list that satisfies a specific condition.
 
-```python 
+```python3 
  # Filter a list of numbers greater than 5
- numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
- filtered_numbers = list(filter(lambda x: x > 5, numbers))
- print(filtered_numbers)
- # Output: [6, 7, 8, 9, 10]
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filtered_numbers = list(filter(lambda x: x > 5, numbers))
+print(filtered_numbers)
+# Output: [6, 7, 8, 9, 10]
 ```
 
 ## Differences Between Lambda and Regular Functions in Python
@@ -109,7 +109,7 @@ In this example, a `lambda` function is defined with the parameter `a`. The func
 
 The `map()` function is used to apply a given lambda function **to each element in a collection**. The result is a new collection with the lambda function applied to every element. Here is an example of using the map function to add a constant value to each element in a list using a lambda function:
 
-```python 
+```python3 
 numbers = [1, 2, 3, 4, 5]
 add_two = lambda x: x + 2
 result = map(add_two, numbers)

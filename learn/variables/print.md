@@ -51,7 +51,7 @@ With `f-strings`, you can embed expressions inside string literals by enclosing 
 
 - Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
 
-```python
+```python3
 name = "John"
 age = 30
 location = "New York"
@@ -65,7 +65,7 @@ In this example, the string `"My name is {}, I'm {} years old, and I live in {}.
 
 - Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
 
-```python
+```python3
 name = "John"
 age = 25
 print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
@@ -79,7 +79,7 @@ String templates provide a way to create strings that include placeholders for v
 
 To use string templates in Python, you can use the `string.Template` class. Here's an example:
 
-```python
+```python3
 from string import Template
 
 name = "Alice"

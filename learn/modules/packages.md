@@ -25,7 +25,7 @@ Python provides a rich set of built-in modules and there are thousands of third-
 
 In summary, modules and packages are the fundamental building blocks of Python code organization and reuse, which play a significant role in developing complex applications quickly and efficiently.
 
-```python
+```python3
 import math
 
 # use functions from math module
