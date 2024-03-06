@@ -41,6 +41,7 @@ print(my_string[2:-1])  # Output: "llo, world"
 my_string = "Hello,world"
 my_list = my_string.split(",")
 print(my_list) # Output: ['Hello', 'world']
+```
 
 You can remove the first character from a string in Python using string slicing. Here's an example:
 
