@@ -105,6 +105,7 @@ if my_string.isnumeric():
     print("String is a number")
 else:
     print("String is not a number") # Output: String is a number
+```
 
 ### Using `isdigit()` method
 
