@@ -68,7 +68,6 @@ The key 'country' is not present in the dictionary
 Вот пример использования инструкции del для удаления ключа из словаря:
 
 ```python
-Copy code
 my_dict = {"a": 1, "b": 2, "c": 3}
 
 del my_dict["b"]
@@ -81,7 +80,6 @@ print(my_dict)  # Output: {"a": 1, "c": 3}
 Вот пример использования метода `pop()` для удаления ключа из словаря:
 
 ```python
-Copy code
 my_dict = {"a": 1, "b": 2, "c": 3}
 
 my_dict.pop("b")
