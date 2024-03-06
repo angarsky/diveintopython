@@ -70,21 +70,21 @@ print(x(5)) # output: 15
 1. **Сортировка списка кортежей**: Функции Lambda могут использоваться в качестве **аргумента ключа** в функции `sorted()` для сортировки списка кортежей на основе конкретного элемента в кортеже.
 
 ```python 
- # Sorting a list of tuples based on the age of a person
- people = [('Jane', 23), ('John', 19), ('Adam', 25), ('Kate', 18)]
- sorted_people = sorted(people, key=lambda x: x[1])
- print(sorted_people)
- # Output: [('Kate', 18), ('John', 19), ('Jane', 23), ('Adam', 25)]
+# Sorting a list of tuples based on the age of a person
+people = [('Jane', 23), ('John', 19), ('Adam', 25), ('Kate', 18)]
+sorted_people = sorted(people, key=lambda x: x[1])
+print(sorted_people)
+# Output: [('Kate', 18), ('John', 19), ('Jane', 23), ('Adam', 25)]
 ```
 
 2. **Фильтрация списка**: Лямбда-функции могут использоваться с `filter()` для создания нового списка, который удовлетворяет определенному условию.
 
 ```python 
- # Filter a list of numbers greater than 5
- numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
- filtered_numbers = list(filter(lambda x: x > 5, numbers))
- print(filtered_numbers)
- # Output: [6, 7, 8, 9, 10]
+# Filter a list of numbers greater than 5
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+filtered_numbers = list(filter(lambda x: x > 5, numbers))
+print(filtered_numbers)
+# Output: [6, 7, 8, 9, 10]
 ```
 
 ## Различия Между Лямбда-Функциями и Обычными Функциями в Python
