@@ -446,6 +446,7 @@ print(joined_string)  # Output: ['H e l l o' 'W o r l d' 'P y t h o n']
 my_list = [1, 2, 3, 4, 5]
 array_sum = sum(my_list)
 print(array_sum)
+```
 
 2. NumPy array:
 
