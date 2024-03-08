@@ -3,7 +3,7 @@
 
 PDF is a widely-used document format `for` digital publications. Python, on the other hand, is a versatile programming language with a vast `range` of applications in today's digital world. When used together, Python can become an efficient tool in manipulating and extracting information from [PDF](https://en.wikipedia.org/wiki/PDF) documents. In this article, we will explore the different ways Python can be used `for` PDF processing, and how it can help us improve our productivity and efficiency.  
   
-### Python PDF Libraries
+## Python PDF Libraries
 
 To work with PDF files in Python, there are various libraries available. Some of the popular libraries to use Python with PDF are PyPDF2, reportlab, and fpdf. 
 
