@@ -59,7 +59,7 @@ print(Math.subtract(5, 2))  # Output: 3
 
 In the above example, we created a **static class** called **Math** that contains two **static methods** called **add** and **subtract**. We can call these methods directly from the class without the need to create an instance of the class.
 
-```python3
+```python
 class Person:
     count = 0
 

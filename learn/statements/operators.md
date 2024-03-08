@@ -259,7 +259,7 @@ In Python, Operator Overloading enables us to define the behavior of operators i
 
 Here are two code examples that demonstrate operator overloading in Python:
 
-```python3
+```python
 class Rectangle:
     def __init__(self, length, width):
         self.length = length

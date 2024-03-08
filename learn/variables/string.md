@@ -289,7 +289,7 @@ print(char_list)
 
 - Using the `enumerate()` function:
 
-```python3
+```python
 my_string = "Hello, world!"
 for index, char in enumerate(my_string):
     print(f"Character at index {index}: {char}")

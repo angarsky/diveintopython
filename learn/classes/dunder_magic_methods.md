@@ -152,7 +152,7 @@ In second case, we create a dictionary object `my_cat` and access the `name` att
 
 In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
 
-```python3
+```python
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -167,7 +167,7 @@ print(p)  ### Output
 
 In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` dunder method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` magic method to get its string representation.
 
-```python3
+```python
 class Car:
     def __init__(self, make, model, year):
         self.make = make
