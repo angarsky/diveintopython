@@ -1,5 +1,5 @@
-[!NOTE]
->  Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/dictionary
+> [!NOTE]
+> Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/dictionary
 
 Python предоставляет несколько встроенных типов коллекций для хранения и манипуляции данными. Некоторые из часто используемых типов коллекций в Python:
 

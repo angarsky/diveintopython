@@ -1,5 +1,5 @@
-[!NOTE]
->  Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/number
+> [!NOTE]
+> Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/number
 
 Python поддерживает несколько числовых типов данных, которые используются для различных математических операций в программировании. К этим типам данных относятся целые числа, числа с плавающей точкой и комплексные числа. Понимание этих типов данных и их характеристик является важным для любого программиста, который хочет работать с числовыми данными в Python.
 
@@ -105,6 +105,7 @@ if my_string.isnumeric():
     print("String is a number")
 else:
     print("String is not a number") # Output: String is a number
+```
 
 ### Using `isdigit()` method
 

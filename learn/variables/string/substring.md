@@ -11,7 +11,7 @@ Let's review the most common operations and methods related to substring.
 
 String slicing is the process of creating a new substring from an existing string in Python. You can slice a string using the syntax `[start:end]` to extract a portion of the string that starts at the `start` index and ends at the `end` index (not inclusive). Here are some examples:
 
-```python
+```python3
 my_string = "Hello, world!"
 
 # Get the substring from index 0 to index 4 (not inclusive)
@@ -41,6 +41,7 @@ To split a string on a delimiter, you can also use the `split()` method. This me
 my_string = "Hello,world"
 my_list = my_string.split(",")
 print(my_list) # Output: ['Hello', 'world']
+```
 
 You can remove the first character from a string in Python using string slicing. Here's an example:
 
@@ -64,7 +65,7 @@ To check if a Python string contains a specific substring, you can use the `in` 
 
 Here's an example using the in keyword:
 
-```python
+```python3
 my_string = "Hello, world!"
 if "world" in my_string:
     print("Substring found!")
@@ -75,7 +76,7 @@ else:
 
 Here's an example using the `find()` method:
 
-```python
+```python3
 my_string = "Hello, world!"
 if my_string.find("world") != -1:
     print("Substring found!")
@@ -102,7 +103,7 @@ print(reversed_string)  # Output: "olleh"
 
 - Using a loop:
 
-```python
+```python3
 string = "hello"
 reversed_string = ""
 for char in string:
@@ -158,7 +159,7 @@ where:
 
 Here's an example of using the endswith() method:
 
-```python
+```python3
 s = "Python is a great programming language"
 print(s.endswith("language"))  # True
 print(s.endswith("Python"))    # False
@@ -173,7 +174,7 @@ It is also a built-in method in Python that is used for splitting and parsing a 
 
 Here's an example:
 
-```python
+```python3
 s = "Hello World! How are you?"
 
 words = s.split()
@@ -185,7 +186,7 @@ In the above example, the `split()` method is called on the string `s`, which co
 
 You can also specify a different separator using the `split()` method. For example:
 
-```python
+```python3
 s = "mango,pineapple,banana"
 
 fruits = s.split(",")
@@ -223,7 +224,7 @@ To remove a specific character or a substring from a string in Python, you can u
 
 Here is an example of using the replace() method to remove a specific character:
 
-```python
+```python3
 my_string = "Hello, World!"
 new_string = my_string.replace("o", "")
 print(new_string) # Output: Hell, Wrld!
@@ -237,7 +238,7 @@ You can truncate a string by specifying the maximum length of the string you wan
 
 Here's an example:
 
-```python
+```python3
 text = "This is a long text that needs to be truncated."
 max_length = 20
 truncated_text = text[:max_length] + "..." if len(text) > max_length else text
@@ -256,7 +257,7 @@ You can use the built-in `count` method to count the number of occurrences of a 
 
 Here's a counter of substring `"is"`:
 
-```python
+```python3
 string = "Hello, world! This is a sample string."
 substring = "is"
 

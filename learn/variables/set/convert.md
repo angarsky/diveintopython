@@ -35,7 +35,7 @@ Converting a set to a list can help preserve the order of the elements and make 
 
 In Python a set to a list conversion can be done using the built-in `list()` function. Here's an example of getting list from set:
 
-```python
+```python3
 # Define a set
 my_set = {1, 2, 3, 4, 5}
 
@@ -48,7 +48,7 @@ print(my_list) # Output: [1, 2, 3, 4, 5]
 
 Note that the order of elements in the original set is preserved in the resulting list. If the order of the elements is not important, you can also convert a set to a list using the `list()` function directly on the set itself, like so:
 
-```python
+```python3
 # Define a set
 my_set = {1, 2, 3, 4, 5}
 
@@ -79,7 +79,7 @@ In Python, you can create a set of lists using the built-in `set()` function. Ho
 
 Here is an example of how to create a set of lists:
 
-```python
+```python3
 set_of_lists = set()
 
 list1 = [1, 2, 3]
@@ -99,7 +99,7 @@ To add a list to a set in Python, you can use the `update()` method or the `|` o
 
 Here's an example using the `update()` method:
 
-```python
+```python3
 my_set = {1, 2, 3}
 my_list = [4, 5, 6]
 my_set.update(my_list)
@@ -108,7 +108,7 @@ print(my_set)  # output: {1, 2, 3, 4, 5, 6}
 
 And here's an example using the `|` operator:
 
-```python
+```python3
 my_set = {1, 2, 3}
 my_list = [4, 5, 6]
 my_set |= set(my_list)

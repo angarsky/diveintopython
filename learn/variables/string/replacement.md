@@ -17,7 +17,7 @@ The `replace()` method returns a new string with the specified replacements made
 
 For example, consider the following code snippet:
 
-```python
+```python3
 string = "Hello World"
 new_string = string.replace("Hello", "Hi")
 print(new_string) # Output: Hi World
@@ -35,7 +35,7 @@ This is a built-in string method that returns a copy of the string with leading 
 
 Here's an example of spaces removing:
 
-```python
+```python3
 string = "  hello world  "
 new_string = string.strip()
 print(new_string) # Output: "hello world"
@@ -45,7 +45,7 @@ As you can see, the `strip()` method removed the leading and trailing spaces fro
 
 For example:
 
-```python
+```python3
 string = "  hello world  "
 new_string = string.lstrip()
 print(new_string) # Output: "hello world  "
@@ -57,7 +57,7 @@ In this case, only the leading spaces were removed, and the trailing spaces rema
 
 You can remove newline characters from a string using the `replace()` method. Here's an example:
 
-```python
+```python3
 string_with_newline = "This is a string\nwith a newline character."
 string_without_newline = string_with_newline.replace("\n", "")
 print(string_without_newline) # Output: This is a stringwith a newline character.

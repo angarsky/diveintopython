@@ -7,7 +7,7 @@ Even though tuples are immutable, they support various operations such as indexi
 
 Tuples can be sorted using the built-in `sorted()` function or the `sort()` method. Here's an example of sorting tuples based on the first element:
 
-```python
+```python3
 tuples = [(3, 'apple'), (1, 'orange'), (2, 'banana')]
 sorted_tuples = sorted(tuples, key=lambda x: x[0])
 print(sorted_tuples)  # Output: [(1, 'orange'), (2, 'banana'), (3, 'apple')]
@@ -15,7 +15,7 @@ print(sorted_tuples)  # Output: [(1, 'orange'), (2, 'banana'), (3, 'apple')]
 
 Alternatively, you can use the `sort()` method on the list of tuples, like this:
 
-```python
+```python3
 tuples = [(3, 'apple'), (1, 'orange'), (2, 'banana')]
 tuples.sort(key=lambda x: x[0])
 print(tuples)  # Output: [(1, 'orange'), (2, 'banana'), (3, 'apple')]
@@ -29,7 +29,7 @@ To compare tuples in Python, you can compare their elements one by one in a pair
 
 Here's an example code that compares two tuples:
 
-```python
+```python3
 tuple1 = (1, 2, 3)
 tuple2 = (1, 2, 4)
 
@@ -67,7 +67,7 @@ Tuple slicing uses the syntax `tuple[start:end:step]` to specify a range of elem
 
 Here's an example:
 
-```python
+```python3
 my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[1:4])  # Output: (2, 3, 4)
 ```
@@ -106,7 +106,7 @@ Tuple comprehension is a feature in Python that allows you to create a new tuple
 
 The syntax for tuple comprehension is similar to list comprehension, except that the result is enclosed in parentheses instead of square brackets. Here's an example:
 
-```python
+```python3
 numbers = (1, 2, 3, 4, 5)
 squares = tuple(x ** 2 for x in numbers)
 print(squares)  # Output: (1, 4, 9, 16, 25)
@@ -114,7 +114,7 @@ print(squares)  # Output: (1, 4, 9, 16, 25)
 
 Tuple comprehension can also include conditional expressions, which allows you to filter elements based on some condition. Here's an example:
 
-```python
+```python3
 numbers = (1, 2, 3, 4, 5)
 even_squares = tuple(x ** 2 for x in numbers if x % 2 == 0)
 print(even_squares)  # Output: (4, 16)
@@ -143,7 +143,7 @@ for item in my_tuple:
 
 If you also need the index of each item in the tuple, you can use the `enumerate()` function:
 
-```python
+```python3
 my_tuple = (1, 2, 3, 4, 5)
 for index, item in enumerate(my_tuple):
     print(index, item)

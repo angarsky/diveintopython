@@ -27,7 +27,7 @@ String concatenation is the process of combining two or more strings into a sing
 
 Let's look at an example of appending a string:
 
-```python
+```python3
 str1 = "Hello"
 str2 = "World"
 result = str1 + " " + str2
@@ -42,7 +42,7 @@ In Python, you can include variables within strings using different methods. Her
 
 **String Concatenation**: you can concatenate strings and variables using the `+` operator:
 
-```python
+```python3
 name = "Alice"
 age = 30
 message = "Hello, my name is " + name + " and I am " + str(age) + " years old."
@@ -51,7 +51,7 @@ print(message)
 
 **Using the `str.format()` Method**: this method allows you to embed variables in a string using placeholders `{}`:
 
-```python
+```python3
 name = "Bob"
 age = 25
 message = "Hello, my name is {} and I am {} years old.".format(name, age)
@@ -75,14 +75,14 @@ You can get the length of a string using the built-in function `len()`. You can 
 
 Here is an example of calculating the characters that a string contains:
 
-```python
+```python3
 my_string = "Hello, world!"
 print(len(my_string))  # Output: 13
 ```
 
 In this example, the `len()` function returns the number of characters in the `my_string` variable, which is 13. You can also use `len()` to get the length of a string variable that is empty or contains whitespace:
 
-```python
+```python3
 empty_string = ""
 print(len(empty_string))  # Output: 0
 
@@ -98,7 +98,7 @@ In Python, you can use various comparison operators to compare strings. Here are
 
 The `==` operator: checks if two strings are equal.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -111,7 +111,7 @@ else:
 
 The `!=` operator: checks if two strings are not equal.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -124,7 +124,7 @@ else:
 
 The `<` operator: checks if the first string is less than the second string in lexicographical order.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -137,7 +137,7 @@ else:
 
 The `>` operator: checks if the first string is greater than the second string in lexicographical order.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -150,7 +150,7 @@ else:
 
 The `<=` operator: checks if the first string is less than or equal to the second string in lexicographical order.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -163,7 +163,7 @@ else:
 
 The `>=` operator: checks if the first string is greater than or equal to the second string in lexicographical order.
 
-```python
+```python3
 str1 = "mango"
 str2 = "pineapple"
 
@@ -182,7 +182,7 @@ You can create a multiline string by enclosing the text in triple quotes, either
 
 For example:
 
-```python
+```python3
 multiline_string = '''
 This is a multiline string
 that spans multiple lines.
@@ -230,7 +230,7 @@ decimal_num = int(binary_str, 2)
 
 - Bitwise operations on binary strings:
 
-```python
+```python3
 binary_str1 = '0b1101'
 binary_str2 = '0b1010'
 
@@ -255,7 +255,7 @@ There are several ways of iterating over the characters in a string in Python. H
 
 - Using a `for` loop:
 
-```python
+```python3
 my_string = "Hello, world!"
 for char in my_string:
     print(char)
@@ -263,7 +263,7 @@ for char in my_string:
 
 - Using a `while` loop:
 
-```python
+```python3
 my_string = "Hello, world!"
 i = 0
 while i < len(my_string):
@@ -273,7 +273,7 @@ while i < len(my_string):
 
 - Using a list comprehension:
 
-```python
+```python3
 my_string = "Hello, world!"
 char_list = [char for char in my_string]
 print(char_list)
@@ -281,7 +281,7 @@ print(char_list)
 
 - Using the `map()` function:
 
-```python
+```python3
 my_string = "Hello, world!"
 char_list = list(map(str, my_string))
 print(char_list)

@@ -83,7 +83,7 @@ car2 = Car("Honda", "Accord", 2021)
 
 - Objects: An object is an instance of a class. It has all the attributes and methods defined in the class.
 
-```python
+```python3
 class Player:
     def __init__(self, name, position, number):
         self.name = name
@@ -100,7 +100,7 @@ When working with class objects, there may be some common issues that can occur.
 
 1. `AttributeError`: This error occurs when trying to access an attribute that does not exist in the class or object. To solve this error, make sure the attribute exists and has been properly defined.
 
-```python
+```python3
 class MyClass:
     def __init__(self, val):
         self.value = val
@@ -113,7 +113,7 @@ print(obj.value)  # Output: 5
 
 2. `TypeError`: This error occurs when a function or method is called with the wrong number or type of arguments. To solve this error, make sure the function or method is called with the correct number and type of arguments.
 
-```python
+```python3
 class MyClass:
     def __init__(self, val):
         self.value = val
@@ -135,7 +135,7 @@ Python object types have attributes that represent characteristics or behaviors 
 
 The `getattr()` function takes two arguments, the object and attribute `name,` and returns the value of the attribute.
 
-```python
+```python3
 class MyClass:
   def __init__(self, name, age):
     self.name = name
@@ -150,7 +150,7 @@ print(name) # Output: 'John'
 
 You can also access the attributes of an object directly using the dot notation.
 
-```python
+```python3
 class MyClass:
   def __init__(self, name, age):
     self.name = name
@@ -205,7 +205,7 @@ In this example, `A` is the parent class, `B` is the child class and `C` is the 
 
 ### Attribute search order
 
-```python
+```python3
 class A:
     x = 10
 
@@ -261,13 +261,13 @@ In both examples, the `dir` function is used to get a list of all the attributes
 
 In Python, you can check the `type` of an object by using the `type()` function. This function returns the `type` of the object that you pass as an argument. Here are two examples to illustrate how to use the `type()` function:
 
-```python
+```python3
 # Checking the type of an integer
 number = 42
 print(type(number))  # Output: <class 'int'>
 ```
 
-```python
+```python3
 # Checking the type of a list
 fruits = ['apple', 'banana', 'cherry']
 print(type(fruits))  # Output: <class 'list'>
@@ -323,7 +323,7 @@ Explanation: In this example, we are trying to access the attribute 'color', whi
 
 To fix this error, you need to either add the `color` attribute to the `Car` class or use an existing attribute.
 
-```python
+```python3
 class Car:
     def __init__(self, make, model, color):
         self.make = make
@@ -357,7 +357,7 @@ Explanation: In this example, we are trying to add a string `value` to the `tota
 
 To fix this error, you can use the `isinstance()` function to check `if` the `value` is numerical before adding it to the `total` variable.
 
-```python
+```python3
 def get_average(numbers):
     total = 0
     count = 0
@@ -382,7 +382,7 @@ In Python, you can list all available methods in your class using the `dir()` or
 
 ### Using `dir()` Function
 
-```python
+```python3
 class MyClass:
     def __init__(self):
         self.my_var = "Hello world"
@@ -404,7 +404,7 @@ print(dir(MyClass))
 
 ### Using `vars()` Function
 
-```python
+```python3
 class MyClass:
     def __init__(self):
         self.my_var = "Hello world"

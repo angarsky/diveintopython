@@ -17,7 +17,7 @@ Some common types of class decorators include:
 
 Here are two examples of using class decorators:
 
-```python
+```python3
 def add_method(cls):
     def square(self, x):
         return x * x
@@ -80,7 +80,7 @@ In Python, a class decorator is a function that can be used to modify or add new
 
 A class method decorator is a function that modifies a method of a class and expects the first argument to be the class object. Here's an example:
 
-```python
+```python3
 class MyClass:
     my_var = "hello"
 
@@ -94,7 +94,7 @@ MyClass.my_method()
 
 A class property decorator is a function that modifies a class property and returns a new property object. Here's an example:
 
-```python
+```python3
 class MyClass:
     def __init__(self, my_var):
         self._my_var = my_var
@@ -125,7 +125,7 @@ Python decorators are used to extend and modify the behavior or properties of a 
 
 1. **Class Method Decorator:** Python decorators provide an easy way to modify the behavior of a class method in some manner. Class method decorators can be used to verify inputs, output or modify behavior before class method responses.
 
-```python
+```python3
 class Pizza:
     def __init__(self, toppings):
         self.toppings = toppings
@@ -136,13 +136,12 @@ class Pizza:
         return cls(['mozzarella', 'tomatoes'])
 
 print(Pizza.recommend().toppings)
-### Output
 
 ```
 
 2. **Class Property Decorator:** class decorator can be used to define class properties in a concise and easy to read manner. For instance, they can be used to compute attributes that are not available when the class is first defined.
 
-```python
+```python3
 class Person:
     def __init__(self, name):
         self.name = name
@@ -159,7 +158,6 @@ class Person:
  
 person = Person('jessica')
 print(person.name)
-### Output
 
 ```
   
@@ -171,7 +169,7 @@ Here are some best practices to keep in mind while using class method decorator 
 
 1. Use `@classmethod` to define a class method decorator.
 
-```python
+```python3
 class MyClass:
 
     def __init__(self, value):
@@ -183,13 +181,13 @@ class MyClass:
         return cls(value)
 
 obj = MyClass.from_string('10')
-print(obj.value) ### Output
+print(obj.value) 
 
 ```
 
 2. Use `@property` to define a class property decorator.
 
-```python
+```python3
 class MyClass:
 
     def __init__(self, value):
@@ -219,7 +217,7 @@ In conclusion, class decorator, class method decorator, and class property decor
 
 One of the most common real-world applications of class property decorator is working with database queries. 
 
-```python
+```python3
 class User:
     def __init__(self, name, email):
         self.name = name
@@ -237,7 +235,7 @@ In the above example, the `email_id property` only exposes the user's email addr
 
 Another common example of using class property decorator is for validation purposes. 
 
-```python
+```python3
 class User:
     def __init__(self, name, age):
         self.name = name

@@ -11,7 +11,7 @@ Conversions between lists and NumPy arrays provide flexibility in data manipulat
 
 To convert a NumPy array to a Python list, you can use the `tolist()` method provided by the NumPy library. This method converts a NumPy array into a nested Python list. Here's an example:
 
-```python
+```python3
 import numpy as np
 
 numpy_array = np.array([1, 2, 3, 4, 5])
@@ -21,7 +21,7 @@ print(python_list) # Output: [1, 2, 3, 4, 5]
 
 Similarly, if you have a multidimensional NumPy array, the `tolist()` method will convert it to a nested Python list structure:
 
-```python
+```python3
 import numpy as np
 
 numpy_array = np.array([[1, 2, 3], [4, 5, 6]])
@@ -35,7 +35,7 @@ In this example, the numpy_array is a 2D NumPy array with two rows and three col
 
 To convert a Python list to an array, you can use the `array()` function provided by the NumPy library. The `array()` function creates a new NumPy array from the elements of the given list. Here is an example of converting list to array:
 
-```python
+```python3
 import numpy as np
 
 my_list = [1, 2, 3, 4, 5]
@@ -47,7 +47,7 @@ NumPy arrays are homogeneous, meaning they can only hold elements of the same da
 
 For example:
 
-```python
+```python3
 import numpy as np
 
 my_list = [1, 2.5, 'three', True]
@@ -65,7 +65,7 @@ Converting between strings and arrays in Python can be useful when working with 
 
 To convert a Python string into an array of individual characters, you can iterate over the string and create a list of characters. Here's an example:
 
-```python
+```python3
 string = "Hello, world!"
 array = [char for char in string]
 print(array) # Output: ['H', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd', '!']
@@ -87,7 +87,7 @@ In this example, the `split()` method splits the string into a list of substring
 
 To convert an array (or list) to a string in Python, you can use the `join()` method. The `join()` method concatenates the elements of an iterable into a single string, using a specified delimiter. Here's an example:
 
-```python
+```python3
 array = ['Hello', 'world', 'How', 'are', 'you?']
 string = ' '.join(array)
 print(string) # Output: Hello world How are you?
@@ -95,7 +95,7 @@ print(string) # Output: Hello world How are you?
 
 By changing the delimiter passed to the `join()` method, you can modify the way the elements are separated in the resulting string. For example, using a comma (',') as the delimiter:
 
-```python
+```python3
 array = ['apple', 'banana', 'orange']
 string = ', '.join(array)
 print(string) # Output: apple, banana, orange

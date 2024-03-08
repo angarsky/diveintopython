@@ -102,7 +102,7 @@ Python Graphics library provides a simple way to create and manipulate graphics 
 
 Matplotlib is a widely used Python Graphics library that can create a variety of 2D and 3D graphics. Here's an example of how to plot a line graph using Matplotlib:
 
-```python
+```python3
 import matplotlib.pyplot as plt
 
 x = [1, 2, 3, 4]

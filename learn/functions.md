@@ -9,7 +9,7 @@ Python supports multiple programming paradigms, one of which is functional progr
 
 ### Higher-order Function Example
 
-```python
+```python3
 def apply_twice(f):
     def wrapper(x):
         return f(f(x))
@@ -21,8 +21,8 @@ def add_two(x):
 ### Using apply_twice to add two to a number four times
 
 applied_four_times = apply_twice(apply_twice(add_two))
-result = applied_four_times(10) ### Result will be 18
-
+result = applied_four_times(10) 
+print(result) ### Result will be 18
 ```
 
 ### Lambda Expression Example
@@ -44,7 +44,7 @@ To call a function in Python, simply use the name of the function, followed by t
 
 ### Basic Function Example
 
-```python
+```python3
 def greet(name):
     print("Hello, " + name)
 
@@ -53,7 +53,7 @@ greet("John") # Output: Hello, John
 
 ### Function with a Return Value Example
 
-```python
+```python3
 def square(number):
     return number * number
 
@@ -84,7 +84,7 @@ help(greet)
 
 In Python, **function parameters** can have default values that are used if no value is provided when the function is called.
 
-```python
+```python3
 def greet(name="there"):
     print("Hello, " + name)
 
@@ -94,7 +94,7 @@ greet("John") # Output: Hello, John
 
 The **main function** is a convention in Python, where code to be executed directly is placed within a `if __name__ == '__main__':` block, ensuring it is only executed when the file is run directly, and not imported as a module.
 
-```python
+```python3
 def main():
     print("Hello World")
 
@@ -162,7 +162,7 @@ Overall, it is recommended to choose a function name that is **descriptive**, **
 
 In Python, a function can only directly return a single value. However, you can return multiple values by packaging them into a data structure like a tuple, list, or dictionary. Here's an example of a function that returns multiple values using a tuple:
 
-```python
+```python3
 def get_user_info():
     name = "John Doe"
     age = 30

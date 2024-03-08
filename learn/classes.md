@@ -163,7 +163,7 @@ Classes in Python are the blueprint for creating objects. An object is an instan
 
 To create a class in Python, we use the `class` keyword followed by the name of the class. Here is an example:
 
-```python
+```python3
 class Dog:
    def __init__(self, name, breed):
       self.name = name
@@ -201,7 +201,7 @@ Here are two examples to differentiate between methods and functions in Python:
 
 ### A Method Example
 
-```python
+```python3
 # Define a list
 my_list = [1, 2, 3, 4, 5]
 
@@ -216,7 +216,7 @@ In the example above, the `append()` method is associated with the `my_list` obj
 
 ### A Function Example
 
-```python
+```python3
 # Define a function to calculate the area of a rectangle
 def calculate_area(length, width):
     area = length * width
@@ -273,7 +273,7 @@ In Python programming, a class is a blueprint for creating objects with common a
 
 ### Class Tree Example
 
-```python
+```python3
 class Animal:
     def __init__(self, name, sound):
         self.name = name
@@ -294,7 +294,7 @@ In this example, we define two classes, `Animal` and `Dog`. The `Dog` class inhe
 
 ### More Complex Class Tree Example
 
-```python
+```python3
 class A:
     def method(self):
         print("Method of class A")
@@ -328,7 +328,7 @@ In Python, inheritance allows a class to inherit properties and methods of anoth
 
 Python also allows a class to inherit from two classes and calls it a two-level inheritance. In this case, the new class inherits from a class that has already inherited from another class.
 
-```python
+```python3
 class A:
     def hello(self):
         print("Hello from A")
@@ -349,7 +349,7 @@ In the code above, the class `C` inherits from class `B`, which already inherits
 
 Python allows a class to inherit from multiple classes at the same time. This is known as multiple inheritance and enables the new class to have the characteristics of both classes. 
 
-```python
+```python3
 class A:
     def hello(self):
         print("Hello from A")

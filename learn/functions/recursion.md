@@ -9,7 +9,7 @@ Recursive functions are functions that **call themselves** during execution to s
 
 ### Example 1: Factorial Calculation Using Recursion
 
-```python
+```python3
 def factorial(n):
     if n == 0:
         return 1
@@ -25,7 +25,7 @@ In this example, the `factorial()` function takes an integer `n` as input and **
 
 ### Example 2: Fibonacci Series Calculation Using Recursion
 
-```python
+```python3
 def fibonacci(n):
     if n <= 1:
         return n
@@ -109,7 +109,7 @@ In the above code, the `memo` dictionary is used to store previously computed Fi
 
 Tail recursion optimization is a way to optimize recursive functions so that they use less space on the call stack. 
 
-```python
+```python3
 def sum_n(n, acc=0):
     if n == 0:
         return acc

@@ -31,7 +31,7 @@ print(type(z))  # Output: <class 'complex'>
 
 To check whether a variable is a number in Python, you can use the `isinstance()` function to check if the variable belongs to the int, float or complex data type. Here's an example:
 
-```python
+```python3
 x = 10
 y = 3.14
 z = 2 + 3j
@@ -48,7 +48,7 @@ You can round a number using the built-in `round()` function. The `round()` func
 
 Here's an example:
 
-```python
+```python3
 x = 3.14159
 rounded_x = round(x, 2)
 print(rounded_x) # Output: 3.14
@@ -68,7 +68,7 @@ In Python, there are several ways to format numbers. Here are some examples:
 
 ### Using the built-in `format()` function
 
-```python
+```python3
 x = 3.14159
 print("{:.2f}".format(x))  # Output: 3.14
 ```
@@ -84,7 +84,7 @@ The `f` before the string indicates that it is an f-string, and the `"{x:.2f}"` 
 
 ### Using the `%` operator
 
-```python
+```python3
 x = 3.14159
 print("%.2f" % x)  # Output: 3.14
 ```
@@ -103,7 +103,8 @@ if my_string.isnumeric():
     print("String is a number")
 else:
     print("String is not a number") # Output: String is a number
-
+```
+    
 ### Using `isdigit()` method
 
 ```python
@@ -241,7 +242,7 @@ Euler's number, also known as the mathematical constant `e`, is a mathematical c
 
 Here's an example of how to calculate Euler's number:
 
-```python
+```python3
 import math
 
 e = math.e
@@ -253,7 +254,7 @@ print(e) # Output: 2.718281828459045
 
 To extract a number from a string in Python, you can use regular expressions with the `re` module. Here's an example:
 
-```python
+```python3
 import re
 
 string = "The price is $12.34"
@@ -280,7 +281,7 @@ print(number) # Output: 12.34
 
 To find the digits of a number in Python, you can convert the number to a string and then iterate over the string to extract each digit. Here's an example:
 
-```python
+```python3
 num = 12345
 
 # Convert number to string

@@ -23,7 +23,7 @@ Here are some examples of how the scope of global variables works in Python:
 
 ### Example 2: Accessing a Global Variable Inside a Function
 
-```python
+```python3
 x = 5    #global variable
 def func():
   print(x)   #accessing a global variable inside a function
@@ -36,7 +36,7 @@ In this example, the function `func` is accessing the global variable `x` which 
 
 ### Example 3: Accessing the Global Variable Outside the Function
 
-```python
+```python3
 x = 5   #global variable
 def func():
   x = 10   #creating a new local variable
@@ -55,7 +55,7 @@ In this example, the function `func` is creating a new local variable `x` by ass
 
 ### How to Change a Global Variable in Function
 
-```python
+```python3
 # declaring and initializing a global variable
 global_var = "I am a global variable."
 
@@ -75,7 +75,7 @@ In Python, to set a global variable you need to declare and initialize a variabl
 
 ### The Attempt to Access a Local Variable Beyond Its Function
 
-```python
+```python3
 def func():
     # declaring and initializing a local variable
     local_var = "I am a local variable."
@@ -97,7 +97,7 @@ Global variables are variables that can be accessed and modified from anywhere i
 
 Non-local variables in Python are variables that are defined in an outer function but can be accessed in an inner function. The `nonlocal` keyword is used to declare a non-local variable in Python.
 
-```python
+```python3
 count = 0  # global variable
 
 def increment():
@@ -111,7 +111,7 @@ increment()  # output: 2
 
 In this example, `count` is a global variable that can be accessed and modified from anywhere in the program. The `global` keyword is used inside the `increment` function to indicate that we are modifying the global variable `count`.
 
-```python
+```python3
 def outer():
     x = "local"  # local variable
     
@@ -135,7 +135,7 @@ Global variables are variables that can be accessed and modified from any part o
 
 One example of a global variable is the power function in Python. We can use a loop to calculate the power of a number. Here is an example:
 
-```python
+```python3
 power = 1
 
 def calculate_power(num, exponent):
@@ -153,7 +153,7 @@ In this example, we declare a global variable `power` outside the function `calc
 
 ### Program to Count the Number of Times a Function is Called
 
-```python
+```python3
 count = 0
 
 def my_function():
@@ -176,7 +176,7 @@ Advanced tips for Python variable scopes include avoiding global variables as mu
 
 Function naming conventions in Python follow the same [PEP 8 guidelines](https://peps.python.org/pep-0008/#function-and-variable-names), using lowercase letters and underscores to separate words. Function names should also be descriptive and convey the purpose of the function.
 
-```python
+```python3
 # Local variable
 def greet(name):
     message = "Hello, " + name + "!"

@@ -77,7 +77,7 @@ After executing the `del` statement, the dictionary `my_dict` will be completely
 
 You can get value from dictionary using its keys. Here's an example:
 
-```python
+```python3
 # Creating a dictionary
 my_dict = {'apple': 3, 'banana': 5, 'orange': 2}
 
@@ -88,7 +88,7 @@ print(my_dict['banana']) # Output: 5
 
 You can also get the value associated with a key in a dictionary using the `get()` method. Here's an example:
 
-```python
+```python3
 # create a dictionary
 my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
 
@@ -105,7 +105,7 @@ If the key is not found in the dictionary, `get()` returns None by default.
 
 You can nest a dictionary into a dictionary by simply using a dictionary as a value in another dictionary. Here's an example:
 
-```python
+```python3
 # create a dictionary of dictionaries
 my_dict = {
     'person1': {'name': 'John', 'age': 28},
@@ -131,7 +131,7 @@ print(my_dict['person3']['name']) # output: 'Alex'
 
 Similarly, you can update values in the nested dictionaries:
 
-```python
+```python3
 # create a dictionary of dictionaries
 my_dict = {
     'person1': {'name': 'John', 'age': 28},
@@ -151,7 +151,7 @@ Overall, combining dictionaries in Python is a simple and powerful way to store 
 
 This topic is quite similar to nested dictionaries - you can create a dictionary of objects by using the object instances as values and using unique keys to access the objects. Here's an example:
 
-```python
+```python3
 class Person:
     def __init__(self, name, age):
         self.name = name
@@ -178,7 +178,7 @@ print(people["person2"].age)    # outputs 30
 
 Let's review an example of how to reverse keys and values in dictionary in Python. For this purpose you can use a dictionary comprehension and swap the keys and values in each key-value pair:
 
-```python
+```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
 reversed_dict = {value: key for key, value in my_dict.items()}

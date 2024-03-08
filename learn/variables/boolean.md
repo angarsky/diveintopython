@@ -14,7 +14,7 @@ y = False
 
 You can also use Boolean operators such as `and`, `or`, and `not` to combine or negate Boolean values. For example:
 
-```python
+```python3
 a = True
 b = False
 print(a and b)  # False
@@ -30,7 +30,7 @@ As we already mentioned, boolean variable is mainly used in the conditional and 
 
 ### Conditional statements
 
-```python
+```python3
 # Declaring a boolean variable
 is_raining = True
 
@@ -45,7 +45,7 @@ else:
 
 ### Loop statements
 
-```python
+```python3
 # Declaring a boolean variable
 has_items = True
 

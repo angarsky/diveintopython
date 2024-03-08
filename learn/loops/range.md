@@ -18,7 +18,7 @@ for i in range(10):
 
 ### Example 2: Printing Even Numbers from 2 to 10
 
-```python
+```python3
 for i in range(2, 11, 2):
     print(i)
 ```
@@ -33,7 +33,7 @@ This function can be used with a `for` loop to iterate through a certain range o
 
 Here is an example of using `range` with a `for` loop to print out a sequence of integers:
 
-```python
+```python3
 for num in range(1, 10):
     print(num)
 
@@ -106,7 +106,7 @@ In Python 2, `range()` and `xrange()` are used to generate a sequence of numbers
 
 Here is an example of using `range()`:
 
-```python
+```python3
 for i in range(5):
     print(i)
 
@@ -140,7 +140,7 @@ Overall, `xrange()` is recommended for large sequences in Python 2 as it is more
 
 Python's [random](https://docs.python.org/3/library/random.html) module is a powerful tool for generating random numbers. One of the common use cases for `random` is to generate random integers within a specific range. This can be achieved by using the `range` function in conjunction with `random`.
 
-```python
+```python3
 import random
 
 # Generate a random number in the range 0 to 9
@@ -151,7 +151,7 @@ print(num)
 
 In the example above, we `import` the `random` module and use the `randint` function to generate a random integer between 0 and 9 (inclusive).
 
-```python
+```python3
 import random
 
 # Generate 10 random integers in the range 0 to 9

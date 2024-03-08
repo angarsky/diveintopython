@@ -215,7 +215,7 @@ A global variable in Python is a variable that is defined outside a function and
 
 Here's an example how to set a global variable in Python:
 
-```python
+```python3
 x = 10
 
 def my_function():
@@ -232,7 +232,7 @@ A local variable is a variable that is defined inside a function and can only be
 
 Here's an example of defining a local variable in Python:
 
-```python
+```python3
 def my_function():
     y = 5
     print(y)

@@ -13,7 +13,7 @@ In Python, you can sort an array (or list) using the `sorted()` function. The `s
 
 Here's an example of how to use `sorted()` for sorting an array:
 
-```python
+```python3
 my_array = [5, 2, 1, 4, 3]
 sorted_array = sorted(my_array)
 print(sorted_array)  # Output: [1, 2, 3, 4, 5]
@@ -23,7 +23,7 @@ In this example, `sorted(my_array)` returns a new list that contains the element
 
 It's important to note that the `sorted()` function returns a new sorted list and does not modify the original array in place. If you want to sort the original array itself, you can use the `sort()` method of the array instead:
 
-```python
+```python3
 my_array = [5, 2, 1, 4, 3]
 my_array.sort()
 print(my_array)  # Output: [1, 2, 3, 4, 5]
@@ -35,7 +35,7 @@ In this case, `my_array.sort()` sorts the elements of `my_array` in place, modif
 
 To shuffle an array in Python, you can use the `random.shuffle()` function from the `random` module. This function shuffles the elements of a sequence randomly, in-place. Here's an example:
 
-```python
+```python3
 import random
 
 my_array = [1, 2, 3, 4, 5]
@@ -53,7 +53,7 @@ Let's review the way of appending or pushing elements to an array.
 
 Appending an element to an existing array in Python can be done using the `append()` method provided by the list data type. Here is an example of how to add an element to an array (or list):
 
-```python
+```python3
 array = ['apple', 'banana', 'orange']
 array.append('grape')
 print(array) # Output: ['apple', 'banana', 'orange', 'grape']
@@ -71,7 +71,7 @@ As you see, the `append()` method allows you easily expand the array (or list) b
 
 In Python, the concept of "pushing" elements into an array is typically associated with mutable data structures like lists. Mutable data structures allow you to modify the elements by adding, removing, or modifying values. Therefore it is the same approach as `append()` method, you can "push" elements into an array using a list:
 
-```python
+```python3
 my_list = []  # Initialize an empty list
 
 # Pushing elements into the list
@@ -90,7 +90,7 @@ To concatenate arrays in Python, you can use various methods, depending on the t
 
 1. Using the `+` operator with standard Python lists:
 
-```python
+```python3
 array1 = [1, 2, 3]
 array2 = [4, 5, 6]
 concatenated = array1 + array2
@@ -99,7 +99,7 @@ print(concatenated) # Output: [1, 2, 3, 4, 5, 6]
 
 2. Using the `concatenate()` function from NumPy:
 
-```python
+```python3
 import numpy as np
 
 array1 = np.array([1, 2, 3])
@@ -110,7 +110,7 @@ print(concatenated) # Output: [1 2 3 4 5 6]
 
 3. Using the `hstack()` or `vstack()` functions from NumPy for horizontal or vertical concatenation, respectively:
 
-```python
+```python3
 import numpy as np
 
 array1 = np.array([1, 2, 3])
@@ -121,7 +121,7 @@ print(concatenated) # Output: [1 2 3 4 5 6]
 
 In this example, we use the `hstack()` function to horizontally stack `array1` and `array2`, resulting in a new array `concatenated` that contains the concatenated elements in a single row.
 
-```python
+```python3
 import numpy as np
 
 array1 = np.array([1, 2, 3])
@@ -160,7 +160,7 @@ print(my_list)
 
 If you are working with NumPy arrays, you can use the `concatenate()` function to combine two arrays along a specified axis. Here's an example:
 
-```python
+```python3
 import numpy as np
 
 array1 = np.array([1, 2, 3])
@@ -175,7 +175,7 @@ print(extended_array)
 
 If you are using the built-in `array` module, you can use the `extend()` method to add elements from another iterable to the end of the array. Here's an example:
 
-```python
+```python3
 import array as arr
 
 my_array = arr.array('i', [1, 2, 3])
@@ -192,7 +192,7 @@ In Python, there is no built-in function called `sizeof()` to directly get the s
 
 Here's an example:
 
-```python
+```python3
 import sys
 
 my_list = [10, 20, 30, 40, 50]
@@ -214,7 +214,7 @@ You can reverse or flip an array (list) in Python using various methods. Here ar
 
 1. Using the `reverse()` method:
 
-```python
+```python3
 my_list = [10, 20, 30, 40, 50]
 my_list.reverse()
 print(my_list)  # Output: [50, 40, 30, 20, 10]
@@ -265,7 +265,7 @@ Transposing a NumPy Array:
 
 To transpose a NumPy array, you can use the `transpose()` function provided by the NumPy library, as shown in the previous example. Here's an example specific to a NumPy array:
 
-```python
+```python3
 import numpy as np
 
 # Create a sample array
@@ -306,7 +306,7 @@ if my_list == []:
 
 2. NumPy array:
 
-```python
+```python3
 import numpy as np
 
 my_array = np.array([])  # Empty NumPy array
@@ -406,7 +406,7 @@ You can join an array in Python using several different methods. Here are a few 
 
 For a standard Python list, you can use the `join()` method of strings to join the elements of the list into a single string. Here's an example:
 
-```python
+```python3
 my_list = ['Hello', 'World', 'Python']
 
 # Join the list elements with a space separator
@@ -421,7 +421,7 @@ In this example, the `join()` method is used with a space `' '` as the separator
 
 For a NumPy array, you can use the join() method of NumPy's char object to join the elements of the array into a single string. Here's an example:
 
-```python
+```python3
 import numpy as np
 
 my_array = np.array(['Hello', 'World', 'Python'])
@@ -446,6 +446,7 @@ For a standard Python list, you can use the built-in `sum()` function to calcula
 my_list = [1, 2, 3, 4, 5]
 array_sum = sum(my_list)
 print(array_sum)
+```
 
 2. NumPy array:
 
@@ -499,7 +500,7 @@ You can use various methods to flatten an array in Python. Here are a few approa
 
 You can use list comprehension and recursion to flatten a nested list. Here's an example:
 
-```python
+```python3
 def flatten_list(nested_list):
     flattened = []
     for item in nested_list:
@@ -542,7 +543,7 @@ print(flattened_array) # Output: [1 2 3 4 5 6]
 
 To convert a 1d array to a 2d array in Python, you can use the `reshape()` method provided by the NumPy library. The `reshape()` method allows you to change the shape of an array without modifying its data. Here's an example how to reshape an array:
 
-```python
+```python3
 import numpy as np
 
 # 1d array
@@ -573,7 +574,7 @@ To split an array into chunks in Python, you can use various methods depending o
 
 If you have a list, you can use list comprehension to split it into chunks of a specific size. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 chunk_size = 3
 
@@ -601,7 +602,7 @@ print(chunks)
 
 If you are using the built-in `array` module, you can use a loop to split the array into chunks. Here's an example:
 
-```python
+```python3
 import array as arr
 
 my_array = arr.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
@@ -622,7 +623,7 @@ To slice an array (or list) in Python, you can use the slice notation `array[sta
 
 Here are some examples of slicing an array in Python:
 
-```python
+```python3
 my_array = [10, 20, 30, 40, 50, 60, 70, 80]
 
 # Slice from index 2 to 5 (exclusive)
@@ -658,7 +659,7 @@ To plot an array in Python, you can use various libraries depending on the type 
 
 Matplotlib is a widely used plotting library in Python. You can use it to plot 1D and 2D arrays. Here's an example:
 
-```python
+```python3
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -849,7 +850,7 @@ Let's revew how to compare arrays in Python. Here are a few approaches:
 
 If you are working with NumPy arrays, you can use the element-wise comparison operators provided by NumPy. Here's an example:
 
-```python
+```python3
 import numpy as np
 
 array1 = np.array([1, 2, 3])
@@ -867,7 +868,7 @@ You can also use other element-wise comparison operators such as `<`, `>`, `<=`,
 
 If you have lists, you can compare them using the `==` operator. Here's an example:
 
-```python
+```python3
 list1 = [1, 2, 3]
 list2 = [1, 4, 3]
 
@@ -883,7 +884,7 @@ print(result)
 
 If you are using the built-in `array` module, you can compare arrays element-wise using a loop. Here's an example:
 
-```python
+```python3
 import array as arr
 
 array1 = arr.array('i', [1, 2, 3])
@@ -975,7 +976,7 @@ In Python, you can use the `pop()` method to remove and return an element from a
 
 If you are working with a list, you can use the `pop()` method to remove and return the last element. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 
 popped_element = my_list.pop()
@@ -1046,7 +1047,7 @@ print(my_list) # Output: []
 
 Let's look at how to remove duplicates from a sorted array in Python. Here's a common method using a list:
 
-```python
+```python3
 sorted_array = [1, 1, 2, 2, 3, 4, 4, 5, 5, 5]
 
 # Create a new list with unique elements
@@ -1060,7 +1061,7 @@ print(unique_array)  # Output: [1, 2, 3, 4, 5]
 
 Alternatively, if you are working with a NumPy array, you can use the `np.unique()` function to achieve the same result:
 
-```python
+```python3
 import numpy as np
 
 sorted_array = np.array([1, 1, 2, 2, 3, 4, 4, 5, 5, 5])

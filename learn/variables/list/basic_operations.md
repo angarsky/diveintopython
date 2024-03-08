@@ -42,14 +42,14 @@ Where:
 
 For example, to create a new list with the squares of the numbers from `1` to `5`, you can use a list comprehension like this:
 
-```python
+```python3
 squares = [x**2 for x in range(1, 6)]
 print(squares)  # Output: [1, 4, 9, 16, 25]
 ```
 
 You can also use an `if` statement to filter the elements based on a condition. For example, to create a new list with the even numbers from `1` to `10`, you can use a list comprehension like this:
 
-```python
+```python3
 evens = [x for x in range(1, 11) if x % 2 == 0]
 print(evens)  # Output: [2, 4, 6, 8, 10]
 ```
@@ -60,7 +60,7 @@ In Python, you can get the length of a list by using the built-in `len()` functi
 
 Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 length = len(my_list)
 print(length)  # Output: 5
@@ -70,7 +70,7 @@ print(length)  # Output: 5
 
 Here's an example using checking:
 
-```python
+```python3
 my_list = []
 if len(my_list) == 0:
     print("The list is empty")
@@ -84,7 +84,7 @@ To reverse a list in Python, you can use the built-in `reverse()` method or slic
 
 Using the `reverse()` method:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 my_list.reverse()
 print(my_list) # Output: [5, 4, 3, 2, 1]
@@ -92,7 +92,7 @@ print(my_list) # Output: [5, 4, 3, 2, 1]
 
 Using slicing notation:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 reversed_list = my_list[::-1]
 print(reversed_list) # Output: [5, 4, 3, 2, 1]
@@ -106,7 +106,7 @@ The `filter()` function takes two arguments: a function and an iterable. The fun
 
 Here's an example that filters a list of numbers to only include the even ones:
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 def is_even(num):
@@ -129,7 +129,7 @@ print(concatenated_list) # Output: [1, 2, 3, 4, 5, 6]
 
 One more way of joining the lists is `extend()` method:
 
-```python
+```python3
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 list1.extend(list2)
@@ -140,7 +140,7 @@ print(list1) # Output: [1, 2, 3, 4, 5, 6]
 
 To join a Python list into a string, you can use the `join()` method. Here's an example:
 
-```python
+```python3
 my_list = ['apple', 'banana', 'orange']
 my_string = ', '.join(my_list)
 print(my_string) # Output: apple, banana, orange
@@ -168,7 +168,7 @@ This would set the variable `element` to the value 8.
 
 You can loop through a list in Python using a `for` loop. Here's an example of how to iterate through a list:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 for item in my_list:
     print(item)
@@ -187,7 +187,7 @@ print(my_list) # Output: [1, 2, 3, 4, 5]
 
 If you want to print each item in the list on a separate line, you can use a loop to iterate over the list and print each item one by one. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 for item in my_list:
     print(item)
@@ -215,7 +215,7 @@ where `start` is the index of the first item to include, `end` is the index of t
 
 Here are some examples to illustrate how to use list slicing:
 
-```python
+```python3
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # get first three items
@@ -242,7 +242,7 @@ my_list[3:6] = [0] # Output: [0, 1, 2, 0, 6, 7, 8, 9]
 
 In Python, you can compare two lists using the comparison operators (<, <=, >, >=, ==, !=). Here's an example of two lists comparing:
 
-```python
+```python3
 list1 = [1, 2, 3]
 list2 = [1, 2, 4]
 
@@ -260,7 +260,7 @@ In Python, the list data type is a built-in type that represents a collection of
 
 The `in` keyword returns True if the item is in the list and False otherwise. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5]
 if 3 in my_list:
     print("3 is in the list")
@@ -270,7 +270,7 @@ else:
 
 The `index` method returns the index of the first occurrence of the item in the list. If the item is not in the list, it raises a `ValueError`. Here's an example:
 
-```python
+```python3
 my_list = ["apple", "banana", "cherry"]
 index = my_list.index("banana")
 print(index)  # Output: 1
@@ -282,7 +282,7 @@ In Python, `map()` is a built-in function that applies a function to each elemen
 
 Here's an example of how to use `map()` to apply a function to every element of a list:
 
-```python
+```python3
 # Define a function to apply to each element of the list
 def double(x):
     return x * 2
@@ -304,7 +304,7 @@ You can split a list in Python using the `split()` method, which is available fo
 
 Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 split_index = 5
 
@@ -319,7 +319,7 @@ print(list_b) # Output: [6, 7, 8, 9, 10]
 
 To remove duplicates from a Python list, you can use the built-in `set()` function. Here's an example:
 
-```python
+```python3
 my_list = [1, 2, 3, 3, 4, 5, 5, 5, 6]
 new_list = list(set(my_list))
 print(new_list) # Output: [1, 2, 3, 4, 5, 6]

@@ -45,7 +45,8 @@ At the core of the `pandas` library is the DataFrame object, which can be though
 
 ### Example: Сreate DataFrame()`
 
-```python
+```python3
+import pandas as pd
 # Creating a DataFrame from a dictionary
 df = pd.DataFrame({
     'A': [1, 2, 3],
@@ -161,7 +162,7 @@ In the world of data analysis and manipulation using Python, `pandas` dataframes
 
 One common task in data analysis is converting existing data structures into `pandas` DataFrames to leverage pandas' powerful data manipulation and analysis features. A particularly useful case is converting a dictionary to a `pandas` DataFrame. This can be easily achieved using the `DataFrame` constructor provided by pandas:
 
-```python
+```python3
 import pandas as pd
 
 # Sample dictionary
@@ -185,7 +186,7 @@ Similarly, converting a list to a `pandas` DataFrame is another task data analys
 
 Here's how to convert a list of lists into a DataFrame. Each inner list becomes a row in the DataFrame.
 
-```python
+```python3
 import pandas as pd
 
 # Sample list of lists
@@ -332,7 +333,7 @@ Using the `groupby()` function in pandas involves a few simple steps:
 
 Let's start with a simple example to group a pandas DataFrame by a single column.
 
-```python
+```python3
 import pandas as pd
 
 # Sample DataFrame

@@ -76,7 +76,7 @@ To create an array of a specific size in Python, you can use various methods, in
 
 Using a list comprehension:
 
-```python
+```python3
 n = 5
 my_array = [0] * n
 print(my_array) # Output: [0, 0, 0, 0, 0]
@@ -84,7 +84,7 @@ print(my_array) # Output: [0, 0, 0, 0, 0]
 
 Using NumPy:
 
-```python
+```python3
 import numpy as np
 
 n = 5
@@ -98,7 +98,7 @@ To generate a random array in Python, you can use the `random module` from the P
 
 Using the random module:
 
-```python
+```python3
 import random
 
 # Generate a random array of size n
@@ -110,7 +110,7 @@ print(random_array)  # Output: [47, 92, 32, 12, 80]
 
 Using the numpy library:
 
-```python
+```python3
 import numpy as np
 
 # Generate a random array of size n
@@ -140,7 +140,7 @@ print(arr2)
 
 You can also create a two-dimensional array using a list of lists, where each inner list represents a row. Here's an example of how to create and initialize a 2D array using nested lists:
 
-```python
+```python3
 # Create a 2D array with 3 rows and 4 columns
 array_2d = [[0, 1, 2, 3],
             [4, 5, 6, 7],
@@ -165,7 +165,7 @@ for row in array_2d:
 
 To create a [NumPy array](https://numpy.org/doc/stable/reference/generated/numpy.array.html) in Python, you can use the `numpy.array()` function. Here's an example of `np` array initialization:
 
-```python
+```python3
 import numpy as np
 
 # Create a 1-dimensional array
@@ -191,7 +191,7 @@ In the above example, we create an array of strings called `array` using a list.
 
 In Python, you can create an array (or list) of dictionaries by simply initializing a list and adding dictionaries as its elements. Each dictionary can contain key-value pairs representing different properties or attributes. Here's an example:
 
-```python
+```python3
 # Create an array of dictionaries
 array_of_dictionaries = [
     {"name": "John", "age": 25, "city": "New York"},
@@ -653,7 +653,7 @@ for item in array:
 
 You can also convert a Python list into a JSON array using the `json.dumps()` function. Here's an example:
 
-```python
+```python3
 import json
 
 # Python list
@@ -703,7 +703,7 @@ print(last_element)  # Output: 5
 
 If you are using the built-in array module, you can use indexing to access the last element. Here's an example:
 
-```python
+```python3
 import array as arr
 
 my_array = arr.array('i', [1, 2, 3, 4, 5])
@@ -786,7 +786,7 @@ print(bit_list)  # Output: [True, False, True, True, False, False, False, False,
 
 In Python, associative arrays are typically implemented using dictionaries. Dictionaries are unordered collections of key-value pairs, where each key is unique and associated with a value. They provide a way to store and retrieve data based on a specific key rather than numerical indices. Here's an example of how to work with dictionaries as associative arrays in Python:
 
-```python
+```python3
 # Creating an associative array (dictionary)
 student_scores = {
     "John": 85,
@@ -824,7 +824,7 @@ In Python, you can use the built-in `list` data structure to create a dynamic ar
 
 Here's an example of how to create and use a dynamic array in Python:
 
-```python
+```python3
 # Create an empty dynamic array
 my_array = []
 

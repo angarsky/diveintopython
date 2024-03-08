@@ -13,7 +13,7 @@ This built-in `type()` function returns the data type of a variable, it is the e
 
 Let's see how to print type of variable in Python:
 
-```python
+```python3
 x = 23
 print(type(x))   # Output: <class 'int'>
 
@@ -35,7 +35,7 @@ This built-in function checks whether a variable is an instance of a specified c
 
 So here we are checking type of variable in Python:
 
-```python
+```python3
 x = 5
 print(isinstance(x, int))  # Output: True
 
@@ -52,7 +52,7 @@ This attribute returns the class of an object.
 
 Example:
 
-```python
+```python3
 x = 17
 print(x.__class__)  # Output: <class 'int'>
 
@@ -226,7 +226,7 @@ To copy variable in Python you can use assignment operator `=` or the `copy()` m
 
 - Shallow copy: When you use the assignment operator to copy a list, dictionary, or other mutable objects, you create a shallow copy. This means that the new variable refers to the same object in memory as the original variable. Any changes made to the original variable will be reflected in the copy, and vice versa. For example:
 
-```python
+```python3
 original_list = [1, 2, 3]
 copy_list = original_list  # Shallow copy
 original_list[0] = 4
@@ -235,7 +235,7 @@ print(copy_list)  # Output: [4, 2, 3]
 
 - Deep copy: If you want to create a new object in memory that is a copy of the original variable, you can use the `copy()` method. This creates a deep copy, which means that any changes made to the original variable will not be reflected in the copy, and vice versa. For example:
 
-```python
+```python3
 import copy
 
 original_list = [1, 2, 3]
@@ -252,7 +252,7 @@ You can use the `in` operator to check if a variable has been defined or not.
 
 Here's an example:
 
-```python
+```python3
 if 'my_variable' in locals() or 'my_variable' in globals():
     print('my_variable is defined')
 else:
@@ -263,7 +263,7 @@ This code checks if the variable `my_variable` is defined in either the local or
 
 Note that if the variable has been defined but has a value of `None`, this method will still consider it as defined. If you want to check specifically for a non-`None` value, you can modify the code like this:
 
-```python
+```python3
 if 'my_variable' in locals() and locals()['my_variable'] is not None or 'my_variable' in globals() and globals()['my_variable'] is not None:
     print('my_variable is defined and has a non-None value')
 else:
@@ -334,7 +334,7 @@ Variables are simply names that refer to objects in memory. In Python you can ge
 
 Here's an example:
 
-```python
+```python3
 x = 42
 var_name = [k for k,v in locals().items() if v is x][0]
 print(var_name)
@@ -348,7 +348,7 @@ Note that this approach assumes that the variable has a unique value in the name
 
 You can check if a variable exists in Python by using the `in` keyword along with the `locals()` or `globals()` function. Here is an example:
 
-```python
+```python3
 if 'my_variable' in locals():
     print("my_variable exists in the local scope.")
 
@@ -360,7 +360,7 @@ In the above example, we check if a variable named `my_variable` exists in eithe
 
 Note that checking for the existence of a variable using the `in` keyword and `locals()` or `globals()` function will only work for variables that have already been defined in the program. If you are unsure if a variable has been defined or not, you can use a `try`-`except` block to catch a `NameError` exception that would be raised if the variable does not exist. Here is an example:
 
-```python
+```python3
 try:
     my_variable
     print("my_variable exists.")

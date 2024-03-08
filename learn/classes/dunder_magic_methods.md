@@ -81,7 +81,7 @@ An iterator is an object that enables sequential iteration (looping) over a coll
 
 You can create an iterator using the generator class in Python. The generator class is a type of object that is used to create iterable objects using the `yield` statement.
 
-```python
+```python3
 class MyGenerator:
     def __init__(self):
         self.num = 0
@@ -129,7 +129,7 @@ Attribute references are used to access attributes of an object in Python. They 
 
 The `getattr()` function takes two arguments - the object whose attribute needs to be accessed and the name of the attribute as a string. If the attribute is not found, an `AttributeError` is raised.
 
-```python
+```python3
 
 class Dog:
     def __init__(self, name, breed):
@@ -208,7 +208,7 @@ Python provides multiple ways to compare values, variables, or expressions. Some
 
 The `__lt__()` method is used to implement the less than comparison operator in Python. It returns `True` if the first string is less than the second string and `False` otherwise. 
 
-```python
+```python3
 string1 = "apple"
 string2 = "banana"
 if string1.__lt__(string2):
@@ -220,7 +220,7 @@ else:
 #string1 is less than string2
 ```
 
-```python
+```python3
 fruits = ["apple", "banana", "orange", "kiwi"]
 sorted_fruits = sorted(fruits, key=lambda x: x.__lt__("c"))
 print(sorted_fruits)

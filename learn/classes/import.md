@@ -11,7 +11,7 @@ The import statement in Python allows us to use external modules and packages th
 
 We can use the `import` statement in Python to import external modules and packages that provide additional functionality. For instance, to use the `math` module in Python, we can write:
 
-```python
+```python3
 import math
 print(math.pi)
 ```
@@ -78,7 +78,7 @@ To import all classes from `my_module.py` into another script, you can use the f
 ```python
 # script.py
 
-# from my_module import *
+from my_module import *
 ```
 
 This will import both `Class1` and `Class2` into `script.py`.
@@ -102,7 +102,7 @@ To import only `Class1` into another script, you can use the following syntax:
 ```python
 # script.py
 
-# from my_module import Class1
+from my_module import Class1
 ```
 
 This will only import `Class1` into `script.py`.  

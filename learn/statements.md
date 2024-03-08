@@ -17,7 +17,7 @@ In this example, the value `10` is assigned to the variable `x` using the assign
 
 ### Conditional Statement
 
-```python
+```python3
 x = 3
 if x < 5:
     print("x is less than 5")
@@ -103,7 +103,7 @@ print(y)
 
 In this example, we assign the value `5` to the variable `x`, then add `3` to `x` and assign the result (`8`) to the variable `y`. Finally, we `print` the value of `y`.
 
-```python
+```python3
 def square(x):
     return x * x
 
@@ -159,7 +159,7 @@ finally:
 
 ### Examples of Error Processing
 
-```python
+```python3
 try:
     x = 1/0
 except ZeroDivisionError:
@@ -183,5 +183,4 @@ finally:
 # Output:
 
 # Error: File not found or could not be written
-```  
-  
+```

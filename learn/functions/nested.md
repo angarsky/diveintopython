@@ -11,7 +11,7 @@ Nested functions are useful in situations where we need to define a helper funct
 
 ### Two Examples of Nested Functions in Python
 
-```python
+```python3
 def outer_function(x):
     def inner_function(y):
         return x + y
@@ -25,7 +25,7 @@ In this example, we define two functions: the `outer_function` and the `inner_fu
 
 We assign the output of `outer_function(5)` to the variable `add_five`, which becomes a function that adds `5` to its argument. When we call `add_five(3)`, we get `8` as the result.
 
-```python
+```python3
 def outer_function():
     x = 1
     def inner_function():
@@ -65,7 +65,7 @@ In this instance, `double_odd_numbers` encompasses `is_odd` and `double` functio
 
 Another notable advantage of nested functions is their ability to generate closures. This enables nested functions to access and manipulate variables from their enclosing function. For instance:
 
-```python
+```python3
 def power_function(base):
     def exponent_power(exponent):
         result = 1
@@ -100,7 +100,7 @@ In conclusion, creating nested functions in Python is a useful technique for org
 
 Nested functions are functions **inside other functions**. These functions are particularly useful in programming. They can be used in real-world applications in Python. For instance, a nested function could define a function that calls another function. Or, a nested function could define a function that uses a previously defined function. In addition, a nested function could provide a local scope.
 
-```python
+```python3
 def parent_function(x):
     def child_function(y):
         return y * 2
@@ -111,7 +111,7 @@ print(parent_function(5))
 
 In this example, `child_function` is a nested function. It is defined inside `parent_function`. `parent_function` takes in a parameter `x`. Then it uses `child_function` to double `x`. Finally, it returns the sum of `x` and `child_function(x)`. When we run `parent_function(5)`, we get 15 as the result.
 
-```python
+```python3
 def adder(a):
     def inner(x):
         return x + a
@@ -142,7 +142,7 @@ Nested functions refer to defining a function within another function in Python.
 
 To use nested functions in Python, define the outer function and then define the inner function within it. The inner function has access to the variables within the outer function, but not vice versa. Here are two examples:
 
-```python
+```python3
 # Example 1: Power function using nested functions
 def power_function(num):
     def inner_power(power):
@@ -156,7 +156,7 @@ print(square_function(5))  # Output: 32
 print(cube_function(5))  # Output: 243
 ```
 
-```python
+```python3
 # Example 2: Functions in a loop
 def generate_functions():
     functions = []
@@ -182,7 +182,7 @@ Nested functions are functions that are defined inside another function. These f
 
 ### Nested Function
 
-```python
+```python3
 def outer_func(x):
    def inner_func(y):
        return x*y

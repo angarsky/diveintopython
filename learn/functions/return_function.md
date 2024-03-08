@@ -12,7 +12,7 @@ In the following examples, Python functions are utilized to return other functio
 
 Consider `function1`, which returns another function, `function2`. This inner function `function2` multiplies its argument by a specified value, `a`. When `function1(5)` is called, it returns `function2` with `a` set to `5`. The resulting function is assigned to the variable `multiply_by_5`. Subsequently, calling `multiply_by_5(3)` outputs `15`.
 
-```python
+```python3
 def function1(a):
     def function2(b):
         return a * b
@@ -29,7 +29,7 @@ In this scenario, `function3` determines which function to return based on the v
 
 By passing either `add` or `multiply` to `function3`, it returns the corresponding inner function. For instance, if `operation_type` is set to `add`, the `add_numbers` function is assigned to the `math_function` variable. Invoking `math_function(3, 5)` will add the two numbers, resulting in an output of `8`.
 
-```python
+```python3
 def function3(operation):
     def add_numbers(a, b):
         return a + b
@@ -56,7 +56,7 @@ In Python, functions can be nested, which means you can define one function insi
 
 ### Example 1: Returning a Function from a Function
 
-```python 
+```python3
 def create_adder(num):
     def adder(x):
         return num + x
@@ -72,7 +72,7 @@ We then create a new function `add5` by calling `create_adder(5)`. This means th
 
 ### Example 2: Nested Functions
 
-```python 
+```python3 
 def outer_function(num):
     def inner_function(x):
         return num + x
@@ -115,7 +115,7 @@ By calling `multiply(2)` and `multiply(3)`, we create two new functions `double`
 
 ### Example 2: Returning a Function That Performs Mathematical Operations:
 
-```python
+```python3
 def operate(operation):
     def inner(num1, num2):
         if operation == 'add':
@@ -172,7 +172,7 @@ print(cube(3)) # Output: 27
 
 In this example, a nested function `exponent` is defined inside the `power` function. The `exponent` function calculates a number raised to a power. The `power` function returns the `exponent` function. Two variables `square` and `cube` are assigned by calling the `power` function with different base values. The final two print statements call `square` and `cube` with different exponent values.
 
-```python
+```python3
 def operation(operator):
     def calculate(num1, num2):
         if operator == '+':

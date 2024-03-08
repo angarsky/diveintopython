@@ -35,7 +35,7 @@ In the above example, we defined a `Person` class with a constructor that initia
 
 ### Example 2: Class Method vs Static Method
 
-```python
+```python3
 class Calculator:
     @classmethod
     def add(cls, num1, num2):
@@ -58,7 +58,7 @@ In this example, we defined a `Calculator` class with two methods: `add` as a cl
 
 An abstract class method is a method that is declared in an abstract base class but does not have an implementation. It is used to define a method that must be implemented by any class that inherits from the abstract class. Abstract class methods are created using the `@abstractmethod` decorator. Here is an example of an abstract class method in Python:
 
-```python
+```python3
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
@@ -123,7 +123,7 @@ In Python, we can differentiate between public, private, and protected methods b
 
 Public methods are accessible from anywhere within or outside the class. They play a significant role in interacting with the class's attributes and functionality. When developers create a method without any underscore prefix, it automatically becomes a public method.
 
-```python
+```python3
 class MyClass:
     def public_method(self):
         print("This is a public method")
@@ -138,7 +138,7 @@ As shown in the example, the `public_method()` is accessible outside the class `
 
 Private methods in Python are designed to be accessed only from within the class in which they are defined. They are indicated by prefixing the method name with double underscores `__`.
 
-```python
+```python3
 class MyClass:
     def __private_method(self):
         print("This is a private method")
@@ -153,7 +153,7 @@ Trying to access a private method from outside the class results in an Attribute
 
 Protected methods are indicated by prefixing the method name with a single underscore `_`. They can be accessed from within the class itself and its subclasses.
 
-```python
+```python3
 class MyClass:
     def _protected_method(self):
         print("This is a protected method")
@@ -176,7 +176,7 @@ Getter method allows to access the value of a private instance variable from out
 
 Here's a simple example class with getter and setter methods:
 
-```python
+```python3
 class MyClass:
     def __init__(self):
         self._value = None
@@ -194,7 +194,7 @@ print(obj.get_value())
 
 Now, you can use these methods to access and set the value of `value` attribute of `MyClass`.
 
-```python
+```python3
 class MyClass:
     def __init__(self):
         self._value = None
@@ -224,7 +224,7 @@ In Python, both methods and functions are used to perform a specific task. Howev
 
 Functions are defined outside the class and can be called anywhere in the code using its name. They take input parameters and `return` a value. Here's an example of a function that takes two numbers as input and returns their sum:
 
-```python
+```python3
 def add_numbers(x, y):
     return x + y
 
@@ -240,7 +240,7 @@ Methods, on the other hand, are defined inside classes and are called on instanc
 
 Here's an example of a method that takes one input parameter and modifies the state of the instance:
 
-```python
+```python3
 class Car:
     def __init__(self, make, model):
         self.make = make
@@ -263,7 +263,7 @@ In summary, functions are standalone blocks of code that take input parameters a
 
 Method overriding is a feature in object-oriented programming that allows a subclass to provide a different implementation of a method that is already defined in its superclass. In Python, method overriding is straightforward and is achieved by defining a method in the subclass with the same name as the method in the superclass.
 
-```python
+```python3
 class Parent:
   def my_method(self):
     print("Parent method called")
@@ -279,7 +279,7 @@ obj.my_method() ### prints Child method called
 
 In this example, the `Child` class extends the `Parent` class and overrides the `my_method()` method. When we create an object of the `Child` class and call `my_method()`, it will print `Child method called` instead of `Parent method called`.
 
-```python
+```python3
 class Animal:
   def move(self):
     print("Animal is moving")

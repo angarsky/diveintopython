@@ -16,7 +16,7 @@ if 1 > 2:
 
 An if statement can also be combined with an `else` statement to execute different blocks of code based on whether the `condition` is true or false. The syntax for an if-else statement is:
 
-```python
+```python3
 if 2 > 1:
    ##### Execute block of code if the condition is true
     print('True')
@@ -28,7 +28,7 @@ else:
 
 ### Even Numbers
 
-```python
+```python3
 num = 4
 if num % 2 == 0:
     print("Even")
@@ -38,7 +38,7 @@ else:
 
 ### Maximum of Two Numbers
 
-```python
+```python3
 num1 = 10
 num2 = 20
 if num1 > num2:
@@ -62,7 +62,7 @@ Ternary statements provide a concise way to write one line if statement. It is a
 
 ### Check if a number is odd or even
 
-```python
+```python3
 num = 7
 result = "Even" if num % 2 == 0 else "Odd"
 print(result)  # Output: Odd
@@ -72,7 +72,7 @@ In the example above, the ternary statement checks if the number is even or odd 
 
 ### Check if a list is empty or not
 
-```python
+```python3
 my_list = [1, 2, 3]
 result = "Not Empty" if my_list else "Empty"
 print(result)  # Output: Not Empty
@@ -86,7 +86,7 @@ Overall, ternary statements provide a clean and efficient way to write condition
 
 To check if a number is between two numbers in Python, you can use an `if` statement with logical operators. Here are two examples:
 
-```python
+```python3
 x = 5
 if 2 <= x <= 8:
     print("x is between 2 and 8")
@@ -96,7 +96,7 @@ else:
 
 In this example, the `if` statement checks if `x` is between `2` and `8` (inclusive). If `x` is between `2` and `8`, the statement `print(`x is between 2 and 8`)` will be executed, otherwise, `print(`x is not between 2 and 8`)` will be executed.
 
-```python
+```python3
 y = 10
 if not (y < 2 or y > 8):
     print("y is between 2 and 8")
@@ -112,7 +112,7 @@ Use these examples to check if your number is between two numbers in Python.
 
 In Python, an `if` statement can be used in list comprehension to filter out only the values that meet a specific condition. This is extremely useful for creating a new list that contains only the desired values without needing to write a loop. 
 
-```python
+```python3
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 even_numbers = [num for num in numbers if num % 2 == 0]
 print(even_numbers)
@@ -120,7 +120,7 @@ print(even_numbers)
 
 This code creates a new list called `even_numbers` containing only the even numbers from the original list `numbers`. 
 
-```python
+```python3
 words = ["apple", "banana", "cherry", "date"]
 short_words = [word for word in words if len(word) < 6]
 print(short_words)
@@ -134,7 +134,7 @@ By using `if` statement in list comprehension, we can drastically reduce the amo
 
 Nested If statements are used in Python programming when two or more conditions need to be checked simultaneously. It is a conditional statement inside another, creating a hierarchical structure of decision-making.
 
-```python
+```python3
 age = 18
 if age >= 18:
     print("You are legally an adult")
@@ -146,7 +146,7 @@ else:
 
 In this example, the first `if` statement checks if the `age` is greater than or equal to 18. If `True`, the second `if` statement checks if `age` is equal to 18. If both conditions are `True`, it prints the congratulations message. If not, it only prints the message of being a legally adult.
 
-```python
+```python3
 x = 5
 y = 10
 z = 15
@@ -183,7 +183,7 @@ else:
 
 Here, `condition` is a boolean expression that evaluates to `True` or `False`. If `condition` is `True`, then the statements inside the `if` block are executed. If `condition` is `False`, then the statements inside the `elif` block are executed. If none of the conditions are `True`, then the statements inside the `else` block are executed.
 
-```python
+```python3
 age = 25
 
 if age < 18:
@@ -196,7 +196,7 @@ else:
 
 In this example, we are checking the `age` of a person. If the `age` is less than 18, it prints `You are a minor`. If the `age` is between 18 and 65, it prints `You are an adult`. If the `age` is greater than 65, it prints `You are a senior citizen`.
 
-```python
+```python3
 score = 80
 
 if score >= 90:
@@ -232,7 +232,7 @@ if condition3:
 
 Here, each `if` statement checks a separate condition and executes the corresponding block of code if the condition is true.
 
-```python
+```python3
 x = 5
 y = 8
 
@@ -261,7 +261,7 @@ if condition1 and \
 
 Here, the backslashes (`\`) indicate that the `if` statement is continued on the next line.
 
-```python
+```python3
 x = 5
 y = 8
 
