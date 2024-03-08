@@ -3,11 +3,11 @@
 
 PDF is a widely-used document format `for` digital publications. Python, on the other hand, is a versatile programming language with a vast `range` of applications in today's digital world. When used together, Python can become an efficient tool in manipulating and extracting information from [PDF](https://en.wikipedia.org/wiki/PDF) documents. In this article, we will explore the different ways Python can be used `for` PDF processing, and how it can help us improve our productivity and efficiency.  
   
-### Use Python with PDF
+### Python PDF Libraries
 
 To work with PDF files in Python, there are various libraries available. Some of the popular libraries to use Python with PDF are PyPDF2, reportlab, and fpdf. 
 
-### Reading PDF with Python
+## Reading PDF with Python
 
 To read a PDF `file`, you can use the [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example:
 
@@ -33,7 +33,7 @@ for page in range(num_pages):
 pdf_file.close()
 ```
 
-### Generating PDF with Python
+## Generating PDF with Python
 
 To generate new PDF files from scratch, you can use the [reportlab](https://pypi.org/project/reportlab/) or `fpdf` library. Here's an example using `reportlab`:
 
@@ -52,7 +52,7 @@ pdf_file.save()
 
 Similarly, you can use `fpdf` library to create PDF. 
 
-### Editing PDF with Python
+## Editing PDF with Python
 
 To edit existing PDF files, you can use [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example to rotate the pages in a PDF file:
 
@@ -85,11 +85,11 @@ pdf_output.close()
 
 In summary, Python provides multiple libraries to work with PDF files, enabling you to read, generate, and edit PDFs programmatically.  
   
-### How to Extract Text from PDF with Python
+## How to Extract Text from PDF with Python
 
 To extract `text` from a PDF with Python, you can use the `PyPDF2` or [pdfminer](https://pypi.org/project/pdfminer/) libraries. These libraries allow you to parse the PDF and extract the `text` content.
 
-### Example Using `PyPDF2`
+### Example 1: Using `PyPDF2`
 
 ```python
 import PyPDF2
@@ -105,7 +105,7 @@ for page_num in range(pdf_reader.numPages):
 print(text)
 ```
 
-### Example Using `pdfminer`
+### Example 2: Using `pdfminer`
 
 ```python
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -131,7 +131,7 @@ def pdf_to_text(pdf_path):
 
 Both of these methods will allow you to extract `text` content from a PDF with Python.  
   
-### How to Combine PDF Pages
+## How to Combine PDF Pages
 
 Merging multiple PDF files into a single document is a common task in document processing. The `PyPDF2` library in Python makes it easy to merge multiple PDF files into a single document.
 
@@ -173,7 +173,7 @@ with open('merged_pdf.pdf', 'wb') as f:
 
 Using the above code examples, you can merge multiple PDF pages or entire PDF files in Python using the `PyPDF2` library. By combining PDF files, you can easily create a single document that is easier to manage and distribute.  
   
-### How to Remove Watermark from PDF
+## How to Remove Watermark from PDF
 
 Removing watermark from PDF files in Python is easy and can be done using a number of libraries. Here are some solutions to remove watermarks using `PyPDF2` and `PyMuPDF` libraries.
 
@@ -225,7 +225,7 @@ pdf.save('filename_nw.pdf')
 
 With these simple solutions, you can easily remove watermarks from PDF files using Python and the `PyPDF2` and PyMuPDF libraries.  
   
-### How to convert `HTML` to PDF
+## How to convert `HTML` to PDF
 
 Converting `HTML` to PDF is a common task in web development. Fortunately, Python provides several libraries to accomplish this task effortlessly. Here are two examples of how to convert `HTML` to PDF using popular Python libraries:
 
