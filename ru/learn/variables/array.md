@@ -1,5 +1,5 @@
 > [!NOTE]
->   Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/array
+> Вы можете прочитать эту статью на сайте: https://diveintopython.org/ru/learn/variables/array
 
 Официальная документация Python содержит информацию о [массивах](https://docs.python.org/3/library/array.html). 
 Однако в Python встроенная структура данных, обычно используемая для представления массивов, - это [список](/learn/variables/list.md). Официальная документация в основном сосредоточена на списках, а не на отдельном типе данных массива. 
