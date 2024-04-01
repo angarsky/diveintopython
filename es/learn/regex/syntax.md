@@ -1,102 +1,102 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/regex/syntax
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/regex/syntax
 
-Regular expressions (regex) are a powerful tool for pattern matching and data extraction in text processing. Python's `re` module provides a comprehensive set of functions to work with regular expressions. This article dives into the syntax of regular expressions in Python, accompanied by practical examples to help you grasp the concepts better.
+Las expresiones regulares (regex) son una herramienta poderosa para la coincidencia de patrones y extracción de datos en el procesamiento de texto. El módulo `re` de Python proporciona un conjunto completo de funciones para trabajar con expresiones regulares. Este artículo se sumerge en la sintaxis de las expresiones regulares en Python, acompañado por ejemplos prácticos para ayudarte a comprender mejor los conceptos.
 
-## Regular Expression Syntax
+## Sintaxis de Expresión Regular
 
-Regular expressions use a sequence of characters to define a search pattern. Here's a quick overview of some common regex syntax elements in Python:
+Las expresiones regulares utilizan una secuencia de caracteres para definir un patrón de búsqueda. Aquí tienes un rápido resumen de algunos elementos comunes de la sintaxis de regex en Python:
 
-- **`.`** (Dot): Matches any single character except newline `'
+- **`.`** (Punto): Coincide con cualquier carácter único excepto nueva línea `'
 '`.
-- **`^`** (Caret): Matches the start of the string.
-- **`$`** (Dollar): Matches the end of the string.
-- **`*`** (Asterisk): Matches 0 or more repetitions of the preceding element.
-- **`+`** (Plus): Matches 1 or more repetitions of the preceding element.
-- **`?`** (Question Mark): Matches 0 or 1 repetition of the preceding element.
-- **`{m,n}`** (Braces): Matches from m to n repetitions of the preceding element.
-- **`[]`** (Square Brackets): Matches any single character contained within the brackets.
-- **`|`** (Pipe): Acts as a logical OR between expressions.
-- **`()`** (Parentheses): Groups patterns together.
+- **`^`** (Símbolo de intercalación): Coincide con el inicio de la cadena.
+- **`$`** (Dólar): Coincide con el final de la cadena.
+- **`*`** (Asterisco): Coincide con 0 o más repeticiones del elemento precedente.
+- **`+`** (Más): Coincide con 1 o más repeticiones del elemento precedente.
+- **`?`** (Signo de interrogación): Coincide con 0 o 1 repetición del elemento precedente.
+- **`{m,n}`** (Llaves): Coincide de m a n repeticiones del elemento precedente.
+- **`[]`** (Corchetes): Coincide con cualquier carácter único contenido dentro de los corchetes.
+- **`|`** (Tubo): Actúa como un OR lógico entre expresiones.
+- **`()`** (Paréntesis): Agrupa patrones juntos.
 
-Below is a table summarizing these elements:
+A continuación, se muestra una tabla que resume estos elementos:
 
-| Symbol | Description |
-|--------|-------------|
-| `.` | Matches any character except newline |
-| `^` | Matches the start of the string |
-| `$` | Matches the end of the string |
-| `*` | Matches 0 or more repetitions |
-| `+` | Matches 1 or more repetitions |
-| `?` | Matches 0 or 1 repetition |
-| `{m,n}` | Matches from m to n repetitions |
-| `[]` | Matches any character within brackets |
-| `\|` | Logical OR |
-| `()` | Groups patterns |
+| Símbolo | Descripción |
+|---------|-------------|
+| `.` | Coincide con cualquier carácter excepto nueva línea |
+| `^` | Coincide con el inicio de la cadena |
+| `$` | Coincide con el final de la cadena |
+| `*` | Coincide con 0 o más repeticiones |
+| `+` | Coincide con 1 o más repeticiones |
+| `?` | Coincide con 0 o 1 repetición |
+| `{m,n}` | Coincide de m a n repeticiones |
+| `[]` | Coincide con cualquier carácter dentro de los corchetes |
+| `|` | OR lógico |
+| `()` | Agrupa patrones |
 
-## Practical Examples
+## Ejemplos Prácticos
 
-Let's apply these elements in practical examples using Python's `re` module:
+Vamos a aplicar estos elementos en ejemplos prácticos utilizando el módulo `re` de Python:
 
-1. **Finding all instances of 'a' in a string:**
+1. **Encontrando todas las instancias de 'a' en una cadena:**
 
 ```python
 import re
 re.findall('a', 'Mary had a little lamb')
 ```
 
-2. **Searching for any character between 'a' and 'z':**
+2. **Buscando cualquier carácter entre 'a' y 'z':**
 
 ```python
 re.findall('[a-z]', 'Hello World!')
 ```
 
-3. **Matching any digit in a string:**
+3. **Coincidencia de cualquier dígito en una cadena:**
 
 ```python
 re.findall('\d', 'The room number is 42.')
 ```
 
-4. **Finding three consecutive digits:**
+4. **Encontrar tres dígitos consecutivos:**
 
 ```python
 re.findall('\d{3}', 'Call 911 for emergency')
 ```
 
-5. **Searching for words starting with 'S':**
+5. **Buscando palabras que comiencen con 'S':**
 
 ```python
 re.findall(r'S\w+', 'The Sun is shining in the Sky.')
 ```
 
-6. **Matching a word at the beginning of a string:**
+6. **Coincidir una palabra al inicio de una cadena:**
 
 ```python
 re.match('^Hello', 'Hello, world!')
 ```
 
-7. **Finding sequences of non-whitespace characters:**
+7. **Encontrar secuencias de caracteres que no sean espacios en blanco:**
 
 ```python
 re.findall('\S+', 'Hello, world! How are you?')
 ```
 
-8. **Replacing all digits with a hash (#):**
+8. **Reemplazando todos los dígitos por un símbolo de numeral (#):**
 
 ```python
 re.sub('\d', '#', 'Password123')
 ```
 
-9. **Splitting a string by any whitespace:**
+9. **Dividir una cadena por cualquier espacio en blanco:**
 
 ```python
 re.split('\s+', 'Split this string by spaces')
 ```
 
-10. **Checking if a string ends with 'world':**
+10. **Verificando si una cadena termina con 'world':**
 
 ```python
 bool(re.search('world$', 'Hello, world'))
 ```
 
-These examples showcase the versatility and power of regular expressions in Python for various text processing tasks. By mastering the syntax and applying it through practical examples, you can leverage regular expressions to efficiently search, match, and manipulate strings in your Python projects.
+Estos ejemplos muestran la versatilidad y el poder de las expresiones regulares en Python para diversas tareas de procesamiento de texto. Al dominar la sintaxis y aplicarla a través de ejemplos prácticos, puedes aprovechar las expresiones regulares para buscar, coincidir y manipular cadenas de manera eficiente en tus proyectos de Python.

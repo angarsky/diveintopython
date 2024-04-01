@@ -1,33 +1,33 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/regex
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/regex
 
-Regular expressions, or `regex` for short, are essential tools in the Python programmer's toolkit. They provide a powerful way to match patterns within text, enabling developers to search, manipulate, and even validate data efficiently. Whether you're parsing through volumes of log files, cleaning up user input data, or searching for specific patterns within a block of text, regex offers a concise and fast way to get the job done.
+Las expresiones regulares, o `regex` para abreviar, son herramientas esenciales en el conjunto de herramientas del programador de Python. Proporcionan una manera poderosa de coincidir patrones dentro del texto, permitiendo a los desarrolladores buscar, manipular e incluso validar datos de manera eficiente. Ya sea que estés analizando grandes volúmenes de archivos de registros, limpiando datos de entrada de usuarios o buscando patrones específicos dentro de un bloque de texto, regex ofrece una manera concisa y rápida de realizar el trabajo.
 
-At its core, regex in Python is supported through the `re` module, which comes built into the standard library. This module encapsulates all the functionality for regex operations, including functions for searching, splitting, replacing, and compiling regular expressions. Understanding the syntax and special characters used in regex can initially seem daunting, but mastering these can significantly enhance your productivity and capabilities as a programmer.
+En su núcleo, regex en Python es compatible a través del módulo `re`, que viene integrado en la biblioteca estándar. Este módulo encapsula toda la funcionalidad para operaciones de regex, incluyendo funciones para buscar, dividir, reemplazar y compilar expresiones regulares. Entender la sintaxis y los caracteres especiales usados en regex puede parecer desalentador inicialmente, pero dominar estos puede mejorar significativamente tu productividad y capacidades como programador.
 
-In this article, we'll look at the basics of regex, including common use cases, key functions in the `re` module, and some tips to make your expressions both effective and efficient. Whether you're new to programming or looking to refine your pattern-matching skills, regex in Python is a versatile tool well worth learning.  
+En este artículo, veremos los conceptos básicos de regex, incluyendo casos de uso comunes, funciones clave en el módulo `re`, y algunos consejos para hacer tus expresiones tanto efectivas como eficientes. Ya seas nuevo en la programación o busques refinar tus habilidades de coincidencia de patrones, regex en Python es una herramienta versátil que vale la pena aprender.
 
-## Advantages of Regular Expressions in Python
+## Ventajas de las Expresiones Regulares en Python
 
-- **Efficiency in Text Processing:** Quickly search, match, or replace patterns in text.
-- **Versatility:** From data validation to web scraping, regex finds its application.
-- **Simplified Syntax:** Python's [re](https://docs.python.org/3/library/re.html) module simplifies the implementation of regex.
-- **Pattern Matching Power:** Enables matching complex patterns that would be challenging to find with traditional methods.
-  
-## Usage of Regular Expressions in Python
+- **Eficiencia en el Procesamiento de Texto:** Busca, coincide o reemplaza rápidamente patrones en el texto.
+- **Versatilidad:** Desde la validación de datos hasta el web scraping, regex encuentra su aplicación.
+- **Sintaxis Simplificada:** El módulo [re](https://docs.python.org/3/library/re.html) de Python simplifica la implementación de regex.
+- **Poder de Coincidencia de Patrones:** Permite coincidir patrones complejos que serían desafiantes de encontrar con métodos tradicionales.
 
-Regular expressions can be employed in a myriad of scenarios ranging from simple string matching to complex text parsing tasks such as:
+## Uso de Expresiones Regulares en Python
 
-- Data validation (emails, phone numbers)
+Las expresiones regulares pueden emplearse en una miríada de escenarios que van desde la coincidencia de cadenas simples hasta tareas complejas de análisis de texto como:
+
+- Validación de datos (correos electrónicos, números de teléfono)
 - Web scraping
-- Log file analysis
-- Text data pre-processing in Machine Learning tasks
+- Análisis de archivos de registro
+- Pre-procesamiento de datos de texto en tareas de Aprendizaje Automático
 
-For those looking to experiment with Python regex online, numerous platforms and regex testers are available that allow immediate feedback and learning.
+Para aquellos que buscan experimentar con regex de Python en línea, numerosas plataformas y probadores de regex están disponibles que permiten retroalimentación e aprendizaje inmediatos.
 
-### Example: Email Address Found
+### Ejemplo: Dirección de Correo Electrónico Encontrada
 
-```python3
+```python
 import re
 
 text = "For more information, contact us at info@example.com."
@@ -36,9 +36,9 @@ match = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b', text)
 print("Email Address Found:", match)
 ```
 
-### Example: Validate Phone Number
+### Ejemplo: Validar Número de Teléfono
 
-```python3
+```python
 import re
 
 def validate_phone_number(number):
@@ -50,18 +50,18 @@ number = "+1234567890"
 print("Is Valid Phone Number:", validate_phone_number(number))
 ```
 
-Exploring the capabilities of regular expressions in Python opens up a new dimension of possibilities for text processing and data manipulation. Whether it's through online platforms or hands-on coding, mastering `regex` is a valuable skill in any programmer's toolkit.  
+Explorar las capacidades de las expresiones regulares en Python abre una nueva dimensión de posibilidades para el procesamiento de texto y la manipulación de datos. Ya sea a través de plataformas en línea o codificación práctica, dominar `regex` es una habilidad valiosa en el conjunto de herramientas de cualquier programador.
 
-## Key Features of Python Regex Library
+## Características Clave de la Biblioteca Regex de Python
 
-- **Regex in Python** helps in pattern matching, searching, and complex text manipulation.
-- **Python regex word boundary** (`\b`) feature allows precise searches by marking the start or end of a word, enhancing the accuracy of your text processing tasks.
+- **Regex en Python** ayuda en la coincidencia de patrones, búsqueda y manipulación de texto compleja.
+- **Límite de palabra regex de Python** (`\b`) permite búsquedas precisas al marcar el inicio o el fin de una palabra, mejorando la precisión de tus tareas de procesamiento de texto.
 
-### Example: the `findall()` Usage
+### Ejemplo: el Uso de `findall()`
 
-In this example, we use `regex` to find occurrences of a specific word in a text, demonstrating the use of the python regex word boundary.
+En este ejemplo, usamos `regex` para encontrar ocurrencias de una palabra específica en un texto, demostrando el uso del límite de palabra regex de Python.
 
-```python3
+```python
 import re
 
 text = "Python is powerful. Python is easy to learn."
@@ -71,11 +71,11 @@ matches = re.findall(pattern, text)
 print("Occurrences of 'Python':", len(matches))
 ```
 
-### Example: Validate Email
+### Ejemplo: Validar Correo Electrónico
 
-Here, we validate an `email` address using a regular expression, showcasing the versatility of regex in Python.
+Aquí, validamos una dirección de `email` utilizando una expresión regular, mostrando la versatilidad de regex en Python.
 
-```python3
+```python
 import re
 
 def validate_email(email):
@@ -87,21 +87,21 @@ def validate_email(email):
 email = "example@example.com"
 print("Is the email valid?", validate_email(email))
 ```
-  
-## Regex matcher  
 
-Key functions in the Python `re` module are `match` and `search`, each serving a distinct purpose in regex matching.
+## Comparador Regex
+
+Las funciones clave en el módulo `re` de Python son `match` y `search`, cada una sirve a un propósito distinto en la coincidencia regex.
 
 ### Match vs. Search
 
-- **python match regex**: The `re.match()` function checks for a match only at the beginning of the string. If the pattern is not at the start, it returns None.
-- **python regex search**: Contrary to match, `re.search()` scans the entire string looking for a match anywhere in the text.
+- **python match regex**: La función `re.match()` verifica si hay una coincidencia solo al inicio de la cadena. Si el patrón no está al principio, retorna None.
+- **python regex search**: Contrario a match, `re.search()` escanea toda la cadena buscando una coincidencia en cualquier parte del texto.
 
-Here are two examples demonstrating the use of `re.match()` and `re.search()` in Python.
+Aquí hay dos ejemplos que demuestran el uso de `re.match()` y `re.search()` en Python.
 
-### Example: Using `re.match()`
+### Ejemplo: Usando `re.match()`
 
-```python3
+```python
 import re
 
 pattern = r"Python"
@@ -115,11 +115,11 @@ else:
     print("No match found")
 ```
 
-In this scenario, since Python is not at the beginning, `re.match()` will return `No match found`.
+En este escenario, dado que Python no está al inicio, `re.match()` devolverá `No match found`.
 
-### Example: Using `re.search()`
+### Ejemplo: Usando `re.search()`
 
-```python3
+```python
 import re
 
 pattern = r"Python"
@@ -133,21 +133,21 @@ else:
     print("No match found")
 ```
 
-Here, `re.search()` scans the entire string and successfully finds Python, returning `Match found: Python`.
+Aquí, `re.search()` examina toda la cadena y encuentra exitosamente Python, devolviendo `Coincidencia encontrada: Python`.
 
-Understanding the difference between match and `search` in Python regex matching is crucial for effectively manipulating and searching strings in Python applications.  
-  
-## Regex Replace  
+Entender la diferencia entre coincidencia y `search` en las coincidencias de expresiones regulares de Python es crucial para manipular y buscar cadenas de manera efectiva en aplicaciones de Python.
 
-Are you looking to master the art of **Python Regex Replace**? This powerful technique allows you to search for patterns within strings and replace them with desired text, making data manipulation smoother than ever. Whether you're working with data cleaning, processing, or even web scraping, understanding how to utilize **Python string replace regex** can significantly enhance your coding efficiency. Here's a concise guide with practical examples to get you started:
+## Regex Reemplazar
 
-## Using `re.sub()` for Python Regex Replace All
+¿Estás buscando dominar el arte de **Python Regex Reemplazar**? Esta poderosa técnica te permite buscar patrones dentro de cadenas y reemplazarlos con texto deseado, haciendo que la manipulación de datos sea más suave que nunca. Ya sea que estés trabajando con limpieza de datos, procesamiento o incluso raspar web, entender cómo utilizar **Python string replace regex** puede aumentar significativamente tu eficiencia en la codificación. Aquí tienes una guía concisa con ejemplos prácticos para comenzar:
 
-The `re` module in Python provides a method called `sub()` which stands for substitute. It's the cornerstone for performing **python replaceall regex** operations. The syntax is straightforward: `re.sub(pattern, replacement, string)`. This method searches for the pattern in the given string and replaces it with the replacement string.
+## Usando `re.sub()` para Python Regex Reemplazar Todo
 
-### Example: Simple Word Replacement
+El módulo `re` en Python proporciona un método llamado `sub()` que significa sustituir. Es la piedra angular para realizar operaciones de **python replaceall regex**. La sintaxis es sencilla: `re.sub(pattern, replacement, string)`. Este método busca el patrón en la cadena dada y lo reemplaza con la cadena de reemplazo.
 
-```python3
+### Ejemplo: Reemplazo Simple de Palabra
+
+```python
 import re
 
 text = "Hello World! Welcome to the World of Python."
@@ -155,13 +155,13 @@ new_text = re.sub(r"World", "Universe", text)
 print(new_text)
 ```
 
-Output: `Hello Universe! Welcome to the Universe of Python.`
+Salida: `¡Hola Universo! Bienvenido al Universo de Python.`
 
-This example demonstrates how to replace all instances of `World` with `Universe` in the given string.
+Este ejemplo demuestra cómo reemplazar todas las instancias de `World` con `Universe` en la cadena dada.
 
-### Example: Removing Punctuation
+### Ejemplo: Removiendo Puntuación
 
-```python3
+```python
 import re
 
 text = "Hello, World! How are you today?"
@@ -169,21 +169,21 @@ clean_text = re.sub(r"[,!.?]", "", text)
 print(clean_text)
 ```
 
-Output: `Hello World How are you today`
+Salida: `Hello World How are you today`
 
-Here, we efficiently remove all common punctuation marks from our string, showcasing the utility of `re.sub()` for text cleaning purposes.
+Aquí, eliminamos eficientemente todos los signos de puntuación comunes de nuestra cadena, mostrando la utilidad de `re.sub()` para fines de limpieza de texto.
 
-Mastering **Python string replace regex** with `re.sub()` function offers a flexible and powerful way to manipulate strings in Python. Its ability to search and replace patterns makes it an invaluable tool for anyone looking to perform sophisticated text processing tasks effortlessly.
+Dominar **Python string replace regex** con la función `re.sub()` ofrece una manera flexible y poderosa de manipular cadenas en Python. Su capacidad para buscar y reemplazar patrones lo hace una herramienta invaluable para cualquier persona que busque realizar tareas de procesamiento de texto sofisticadas sin esfuerzo.
 
-Remember, the key to proficiency with **Python replaceall regex** is practice. Implement these examples in your projects, and you'll soon discover even more ways to streamline your code with Python's regex capabilities.  
-  
-## Regex Tester  
+Recuerda, la clave para la competencia con **Python replaceall regex** es la práctica. Implementa estos ejemplos en tus proyectos, y pronto descubrirás aún más formas de optimizar tu código con las capacidades de regex de Python.
 
-Looking for a Python regex tester to validate and refine your regular expressions efficiently? Testing Python regex patterns is essential in data parsing, cleansing, and preparation tasks. With a Python regex tester, you can swiftly test, debug, and optimize your regular expressions to match or extract the exact data set you need.
+## Probador de Regex
 
-### Example: Search Emails by Pattern
+¿Buscas un probador de regex de Python para validar y refinar tus expresiones regulares de manera eficiente? Probar patrones de regex de Python es esencial en tareas de análisis, limpieza y preparación de datos. Con un probador de regex de Python, puedes probar, depurar y optimizar rápidamente tus expresiones regulares para coincidir o extraer exactamente el conjunto de datos que necesitas.
 
-```python3
+### Ejemplo: Buscar correos electrónicos por patrón
+
+```python
 import re
 
 text = "Contact us at support@example.com or sales@example.net"
@@ -196,9 +196,9 @@ for match in matches:
     print("Email found:", match)
 ```
 
-### Example: Search Phone Numbers by Pattern
+### Ejemplo: Buscar Números Telefónicos por Patrón
 
-```python3
+```python
 import re
 
 text = "Reach us at +1-555-123-4567 or +1-555-765-4321"
@@ -211,23 +211,23 @@ for match in matches:
     print("Phone number found:", match)
 ```
 
-These examples highlight the utility of a Python regex tester in extracting and verifying data patterns swiftly. Whether you're working on data scraping, validation, or preprocessing tasks, regular expressions are invaluable tools in your Python toolkit. By leveraging a Python regex tester, you can ensure your expressions are accurate, efficient, and ready for any data challenge.
- 
-## Mastering Python Regex
+Estos ejemplos destacan la utilidad de un probador de regex de Python en extraer y verificar patrones de datos rápidamente. Ya sea que estés trabajando en tareas de raspado de datos, validación o preprocesamiento, las expresiones regulares son herramientas invaluables en tu kit de herramientas de Python. Al aprovechar un probador de regex de Python, puedes asegurarte de que tus expresiones sean precisas, eficientes y listas para cualquier desafío de datos.
 
-Regular expressions (regex) in Python are indispensable for anyone who needs to manage, search, or manipulate text efficiently. Whether you're looking to refine your coding skills or streamline your data processing tasks, this regex Python cheat sheet covers essential patterns, functions, and tips to enhance your programming workflow. Let's dive into regex Python search functions, how to utilize the python regex group feature for complex pattern matching, and where to test your expressions with python regex online tools.
+## Dominando Regex de Python
 
-### Essential Regex Functions
+Las expresiones regulares (regex) en Python son indispensables para cualquiera que necesite gestionar, buscar o manipular texto de manera eficiente. Ya sea que estés buscando refinar tus habilidades de codificación o optimizar tus tareas de procesamiento de datos, esta hoja de trucos de regex Python cubre patrones esenciales, funciones y consejos para mejorar tu flujo de trabajo de programación. Profundicemos en las funciones de búsqueda de regex Python, cómo utilizar la característica de grupo de regex python para hacer coincidir patrones complejos, y dónde probar tus expresiones con herramientas en línea de regex python.
 
-- **search()**: Finds the first occurrence of a pattern within a string. Returns a match object if found, else None.
+### Funciones Esenciales de Regex
 
-```python3
+- **search()**: Encuentra la primera ocurrencia de un patrón dentro de una cadena. Retorna un objeto de coincidencia si se encuentra, de lo contrario None.
+
+```python
 import re
 result = re.search(r'\d+', 'Episode 8: The Last Stand')
 print(result.group())  # Output: 8
 ```
 
-- **findall()**: Returns all non-overlapping matches of a pattern in a string, as a list of strings.
+- **findall()**: Devuelve todas las coincidencias no superpuestas de un patrón en una cadena, como una lista de cadenas.
 
 ```python
 import re
@@ -235,11 +235,11 @@ results = re.findall(r'\d+', '3 apples, 5 oranges, 9 berries')
 print(results)  # Output: ['3', '5', '9']
 ```
 
-### Grouping with Parentheses
+### Agrupación con Paréntesis
 
-Grouping in regex allows you to pick out parts of the matching text. Use the `group()` method to access matched patterns.
+La agrupación en regex te permite seleccionar partes del texto que coincide. Usa el método `group()` para acceder a patrones coincidentes.
 
-```python3
+```python
 import re
 pattern = re.compile(r'(\d+)([a-z]+)')
 match = pattern.search("123abc")
@@ -247,21 +247,21 @@ print(match.group(1))  # Output: 123
 print(match.group(2))  # Output: abc
 ```
 
-## Test Your Regex Online
+## Prueba Tu Regex En Línea
 
-Before integrating complex expressions into your code, leverage a python regex online tester such as [Regex101](https://regex101.com/). These tools provide real-time feedback and helpful explanations on your regex patterns and their matches.
+Antes de integrar expresiones complejas en tu código, aprovecha un probador de regex en línea de Python como [Regex101](https://regex101.com/). Estas herramientas proporcionan retroalimentación en tiempo real y explicaciones útiles sobre tus patrones de regex y sus coincidencias.
 
-Incorporating these regex Python cheat sheet tips and functions into your programming arsenal will streamline your text processing and data analysis tasks. Remember, practice makes perfect, especially when mastering the art of regex in Python.  
-  
-## RegEx `split()` Method  
+Incorporar estos consejos y funciones de hoja de trucos de regex de Python en tu arsenal de programación agilizará tus tareas de procesamiento de texto y análisis de datos. Recuerda, la práctica hace al maestro, especialmente cuando se domina el arte de regex en Python.
 
-Discover how to efficiently split strings in Python using regular expressions (regex). The Python regex split methods allow for advanced string splitting capabilities, beyond what the basic `split()` function offers. Mastering python regex split, python split on regex, or python split by regex techniques can elevate your string manipulation skills in Python programming.
+## Método `split()` de RegEx 
 
-To use Python regex split, you first need to `import` the `re` module which contains the `split` method. This powerful method allows you to split a string by the occurrences of a pattern defined by regex.
+Descubre cómo dividir cadenas de manera eficiente en Python utilizando expresiones regulares (regex). Los métodos de división con regex de Python permiten capacidades avanzadas de división de cadenas, más allá de lo que ofrece la función básica `split()`. Dominar la división con regex en Python, dividir en Python usando regex o dividir por regex en Python puede elevar tus habilidades de manipulación de cadenas en la programación en Python.
 
-### Example: Splitting the String by Comma Followed by a Space
+Para usar la división con regex en Python, primero necesitas `importar` el módulo `re` que contiene el método `split`. Este poderoso método te permite dividir una cadena por las ocurrencias de un patrón definido por regex.
 
-```python3
+### Ejemplo: Dividiendo la Cadena por Coma Seguida de un Espacio
+
+```python
 import re
 
 # Example string
@@ -273,11 +273,11 @@ print(words)
 # Output: ['Words', 'separated', 'by', 'commas.']
 ```
 
-In this example, `\s` is a regex that matches any whitespace character. Combined with `,`, it effectively splits the string wherever a comma followed by a space is found.
+En este ejemplo, `\s` es un regex que coincide con cualquier carácter de espacio en blanco. Combinado con `,`, efectivamente divide la cadena dondequiera que se encuentre una coma seguida de un espacio.
 
-### Example: Splitting by Multiple Delimiters
+### Ejemplo: Dividiendo por Múltiples Delimitadores
 
-```python3
+```python
 import re
 
 # Example string with multiple delimiters
@@ -289,23 +289,23 @@ print(words)
 # Output: ['Words', 'separated by', 'different', 'delimiters!']
 ```
 
-Here, `[;,.]` signifies a character set consisting of a semicolon, comma, and period. This allows the split to occur on any of these characters followed by a space, showcasing the versatility of using python split by regex for more complex string manipulation tasks.
+Aquí, `[;,.]` significa un conjunto de caracteres que consiste en un punto y coma, coma y punto. Esto permite que la división ocurra en cualquiera de estos caracteres seguidos por un espacio, mostrando la versatilidad de usar la división por regex en python para tareas de manipulación de cadenas más complejas.
 
-By incorporating Python regex split into your projects, you unlock a higher level of string processing capability, enabling more precise and varied data parsing and manipulation techniques.  
-  
-## How to Use `re.findall()`  
+Al incorporar la división por regex de Python en tus proyectos, desbloqueas un nivel superior de capacidad de procesamiento de cadenas, permitiendo técnicas de análisis y manipulación de datos más precisas y variadas.
 
-Discovering all occurrences that match a pattern in a string is a common task in data processing and analysis. Python, with its rich library ecosystem, offers a straightforward approach to this through the `re` module, especially when working with regular expressions (regex). In this post, we'll explore how to use Python regex functions to find all matches, focusing on common tasks like email extraction.
+## Cómo usar `re.findall()`
 
-The `re.findall()` function in Python is designed for retrieving all non-overlapping matches of a pattern in a string, returning them as a list. This capability is incredibly useful for tasks that require pattern matching like extracting email addresses from a text.
+Descubrir todas las ocurrencias que coinciden con un patrón en una cadena es una tarea común en el procesamiento y análisis de datos. Python, con su rico ecosistema de bibliotecas, ofrece un enfoque directo para esto a través del módulo `re`, especialmente cuando se trabaja con expresiones regulares (regex). En esta publicación, exploraremos cómo usar las funciones de regex de Python para encontrar todas las coincidencias, centrándonos en tareas comunes como la extracción de correos electrónicos.
 
-### Key Methods
+La función `re.findall()` en Python está diseñada para recuperar todas las coincidencias no superpuestas de un patrón en una cadena, devolviéndolas como una lista. Esta capacidad es increíblemente útil para tareas que requieren coincidencia de patrones, como extraer direcciones de correo electrónico de un texto.
 
-- `re.findall(pattern, string, flags=0)`: Searches the string for all matches of the pattern and returns them as a list.
+### Métodos Clave
 
-For a more practical application, let's use `re.findall()` to extract email addresses from a text:
+- `re.findall(pattern, string, flags=0)`: Busca en la cadena todas las coincidencias del patrón y las devuelve como una lista.
 
-```python3
+Para una aplicación más práctica, usemos `re.findall()` para extraer direcciones de correo electrónico de un texto:
+
+```python
 import re
 
 text = "For more information, contact us at info@example.com or support@example.org."
@@ -316,15 +316,15 @@ print(emails)
 # Output: ['info@example.com', 'support@example.org']
 ```
 
-## RegEx: `sub()` and `search()` methods
+## RegEx: `sub()` y `search()` métodos
 
-In Python, regex (regular expressions) are utilized for string searching and manipulation. Two powerful functions in this domain are `regex.sub()` and `regex.search()`. By mastering these, you can efficiently perform **Python regex substitution** and search operations in your text processing tasks.
+En Python, las regex (expresiones regulares) se utilizan para la búsqueda y manipulación de cadenas. Dos funciones poderosas en este dominio son `regex.sub()` y `regex.search()`. Al dominar estas, puedes realizar de manera eficiente **sustitución de regex en Python** y operaciones de búsqueda en tus tareas de procesamiento de texto.
 
-### Python Regex Sub re.sub()
+### Sustitución Regex en Python con re.sub()
 
-The `re.sub()` function in Python is used for **Python regex substitution**. It replaces occurrences of a pattern in a string with a specified replacement. It's particularly useful when you want to modify strings in a sophisticated manner, including using **Python regex sub capture group**s to manipulate specific parts of the matched text.
+La función `re.sub()` en Python se utiliza para **sustitución de regex en Python**. Reemplaza ocurrencias de un patrón en una cadena con un reemplazo especificado. Es particularmente útil cuando quieres modificar cadenas de una manera sofisticada, incluyendo el uso de **grupos de captura de sub regex en Python** para manipular partes específicas del texto coincidente.
 
-```python3
+```python
 import re
 
 text = "2024 is the year of code"
@@ -333,11 +333,11 @@ result = re.sub(r'\d+', 'XXXX', text)
 print(result)  # Output: XXXX is the year of code
 ```
 
-### Regex Search in Python
+### Búsqueda Regex en Python
 
-The `regex.search()` function in Python scans a string for the first location where a specified regex pattern is found. It returns a match object if a match is found and `None` if no match is found. This is perfect for checking the presence of patterns in strings.
+La función `regex.search()` en Python escanea una cadena en busca de la primera ubicación donde se encuentra un patrón regex especificado. Devuelve un objeto de coincidencia si se encuentra una coincidencia y `None` si no se encuentra ninguna coincidencia. Esto es perfecto para verificar la presencia de patrones en cadenas.
 
-```python3
+```python
 import re
 
 text = "Reach me at email@example.com"
@@ -349,4 +349,4 @@ else:
     print("No email found.")
 ```
 
-By incorporating `regex.search()` techniques alongside **regex sub capture group** functionality, you can achieve comprehensive text analysis and manipulation. These tools are vital for data cleaning, parsing, and more sophisticated text processing tasks.  
+Al incorporar técnicas de `regex.search()` junto con la funcionalidad de **grupo de subcaptura regex**, puedes lograr un análisis y manipulación de texto comprensivos. Estas herramientas son vitales para la limpieza de datos, el análisis sintáctico y tareas de procesamiento de texto más sofisticadas.
