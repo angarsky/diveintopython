@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/typical-errors
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/classes/typical-errors
 
-Python classes are an essential concept for beginner and advanced programmers. They are used to group variables and methods together to create objects that can be reused throughout the program. However, even the most seasoned Python programmers are bound to make a few errors along the way. In this article, we will explore some of the typical errors in Python that developers encounter when working with classes.  
+Las clases de Python son un concepto esencial para programadores principiantes y avanzados. Se utilizan para agrupar variables y métodos para crear objetos que pueden ser reutilizados en todo el programa. Sin embargo, incluso los programadores de Python más experimentados están obligados a cometer algunos errores en el camino. En este artículo, exploraremos algunos de los errores típicos en Python que los desarrolladores encuentran cuando trabajan con clases.  
   
-## Common Errors in Python Classes  
+## Errores comunes en las clases de Python
 
-When working with Python classes, it is common to make mistakes that can lead to unexpected results or errors. Here are some of the most common errors and how to avoid them:
+Cuando se trabaja con clases Python, es común cometer errores que pueden conducir a resultados inesperados o errores. Aquí están algunos de los errores más comunes y cómo evitarlos:
 
-### Forgetting to add `self` Parameter
+### Olvidar añadir el parámetro `self
 
-When defining a method in a class, it is important to include the `self` parameter as the first argument. This parameter represents the instance of the class and allows the method to access and modify its attributes.
+Cuando se define un método en una clase, es importante incluir el parámetro `self` como primer argumento. Este parámetro representa la instancia de la clase y permite al método acceder y modificar sus atributos.
 
 ```python
 class MyClass:
@@ -20,7 +20,7 @@ class MyClass:
 
 ### Overriding Built-in Methods
 
-Python has many built-in methods and functions that classes can override for customization. However, it is important to avoid doing so without understanding the implications, as it can lead to unexpected behavior.
+Python tiene muchos métodos y funciones incorporados que las clases pueden sobrescribir para personalizarlos. Sin embargo, es importante evitar hacerlo sin entender las implicaciones, ya que puede conducir a un comportamiento inesperado.
 
 ```python
 class MyClass:
@@ -29,17 +29,17 @@ class MyClass:
         pass
 ```
 
-By understanding these common errors and avoiding them, you can write more efficient, functional, and effective Python classes.  
+Si comprendes estos errores comunes y los evitas, podrás escribir clases Python más eficientes, funcionales y eficaces.  
   
-## Syntax and Name Errors in Python Classes  
+## Errores de Sintaxis y Nombres en Clases Python.
 
-Classes in Python are a great way to organize and structure your code. However, syntax and name errors can cause issues with your class. Here are some tips and examples on how to avoid these errors:
+Las clases en Python son una gran manera de organizar y estructurar tu código. Sin embargo, los errores de sintaxis y de nombre pueden causar problemas con tu clase. Aquí hay algunos consejos y ejemplos sobre cómo evitar estos errores:
 
-### Syntax Errors
+### Errores de Sintaxis
 
-Syntax errors occur when there is something wrong with the structure of the code. Here are some common syntax errors that you may encounter while working with Python classes:
+Los errores de sintaxis ocurren cuando hay algo mal en la estructura del código. Aquí hay algunos errores comunes de sintaxis que puedes encontrar mientras trabajas con clases Python:
 
-- **Missing Colons**: It's essential to add a colon at the end of the class definition.
+- **Faltan dos puntos**: Es esencial añadir dos puntos al final de la definición de la clase.
 
 ```python
 # Incorrect Syntax
@@ -53,7 +53,7 @@ class MyClass:
         pass
 ```
 
-- **Indented Blocks**: All the code in a class must be indented at the same level. Make sure to use a consistent number of spaces for indents.
+- Bloques indentados**: Todo el código de una clase debe estar sangrado al mismo nivel. Asegúrese de utilizar un número coherente de espacios para las sangrías.
 
 ```python
 # Incorrect Indentation
@@ -67,11 +67,11 @@ class MyClass:
         pass
 ```
 
-### Name Errors
+### Nombre Errores
 
-Name errors occur when you try to use a variable or function that is not defined in the scope of your class. Here are some common name errors that you may encounter while working with Python classes:
+Los errores de nombre ocurren cuando intentas usar una variable o función que no está definida en el ámbito de tu clase. Aquí hay algunos errores de nombre comunes que puedes encontrar mientras trabajas con clases Python:
 
-- **Undefined Variables**: Make sure to define all the variables you want to use in the class.
+- Variables no definidas**: Asegúrate de definir todas las variables que quieras usar en la clase.
 
 ```python
 # Incorrect Variable Name
@@ -85,7 +85,7 @@ class MyClass:
         self.my_variable = 10
 ```
 
-- **NameError: name is not defined**: Make sure to define all the functions you want to use in the class.
+- **NameError: name is not defined**: Asegúrese de definir todas las funciones que desea utilizar en la clase.
 
 ```python
 # Incorrect Function Name
@@ -105,17 +105,17 @@ class MyClass:
         print("Hello World")
 ```
 
-In summary, syntax and name errors can cause issues while working with Python classes. Ensure that you check your code carefully and watch out for these errors.  
+En resumen, los errores de sintaxis y de nombre pueden causar problemas al trabajar con clases Python. Asegúrate de revisar tu código cuidadosamente y presta atención a estos errores.  
   
-## Attribute and Type Errors in Python Classes  
+## Errores de Atributo y Tipo en Clases Python
 
-Python is an object-oriented programming language where everything is an object or a data type. While working with Python classes, sometimes developers encounter attribute and type errors which can prevent the execution of code. These errors can occur due to many reasons like incorrect syntax, wrong data types, misspelled variables, etc. 
+Python es un lenguaje de programación orientado a objetos donde todo es un objeto o un tipo de datos. Mientras se trabaja con clases Python, a veces los desarrolladores encuentran errores de atributo y tipo que pueden impedir la ejecución del código. Estos errores pueden ocurrir debido a muchas razones como sintaxis incorrecta, tipos de datos erróneos, variables mal escritas, etc.
 
-Here are some common attribute and type errors that developers face while working with Python classes along with their solutions:
+Aquí hay algunos errores comunes de atributo y tipo que los desarrolladores enfrentan mientras trabajan con clases Python junto con sus soluciones:
 
-### SyntaxError: invalid syntax
+### SyntaxError: sintaxis inválida
 
-Syntax errors occur when there is a mistake in the code syntax. This error can prevent code execution and halt the program. To resolve this error, developers need to check the variables, parameters, class declarations, and method declarations in the code.
+Los errores de sintaxis se producen cuando hay un error en la sintaxis del código. Este error puede impedir la ejecución del código y detener el programa. Para resolver este error, los desarrolladores deben comprobar las variables, parámetros, declaraciones de clases y declaraciones de métodos del código.
 
 ```python
 # class Dog:
@@ -125,7 +125,7 @@ Syntax errors occur when there is a mistake in the code syntax. This error can p
 #       self.breed = breed
 ```
 
-Add a comma between `self` and `name` in the `__init__` method parameters.
+Añade una coma entre `self` y `name` en los parámetros del método `__init__`.
 
 ```python
 # Solution:
@@ -136,9 +136,9 @@ class Dog:
       self.breed = breed
 ```
 
-### NameError: name is not defined
+### NameError: el nombre no está definido
 
-Name errors occur when an operation or function is performed on a variable from another area of visibility. 
+Los errores de nombre se producen cuando se realiza una operación o función sobre una variable desde otra área de visibilidad.
 
 ```python
 class Circle:
@@ -158,7 +158,7 @@ class Circle:
 # print(c.area())
 ```
 
-Add the class name before the `pi` variable to access global variables of the class.
+Añade el nombre de la clase antes de la variable `pi` para acceder a las variables globales de la clase.
 
 ```python3
 # Solution
@@ -179,11 +179,11 @@ c = Circle(4)
 print(c.area())
 ```
 
-In summary, understanding attribute and name errors while working with Python classes is important. Developers can fix these errors by identifying the problem and implementing the correct solution.  
+En resumen, es importante comprender los errores de atributo y de nombre al trabajar con clases Python. Los desarrolladores pueden corregir estos errores identificando el problema e implementando la solución correcta.  
   
-## Logic Errors in Python Classes  
+## Errores Lógicos en Clases Python
 
-Logic errors in Python classes occur when there is a mistake in the algorithmic logic of the implemented code. These errors may not result in a runtime error, but can lead to unexpected or undesired output.
+Los errores lógicos en las clases Python ocurren cuando hay un error en la lógica algorítmica del código implementado. Estos errores pueden no dar lugar a un error en tiempo de ejecución, pero pueden conducir a una salida inesperada o no deseada.
 
 ```python3
 class Rectangle:
@@ -200,7 +200,7 @@ r = Rectangle(5, 4)
 print(r.get_area())  # Output: 9
 ```
 
-In this example, the `__init__` method incorrectly calculates the area of the rectangle. The area should be calculated as `length * width`, but the provided code adds them together instead.
+En este ejemplo, el método `__init__` calcula incorrectamente el área del rectángulo. El área debería calcularse como `longitud * anchura`, pero el código proporcionado los suma en su lugar.
 
 ```python3
 class Calculator:
@@ -223,15 +223,15 @@ c.add(5, 7)
 print(c.divide(0))  # Output: "Cannot divide by zero"
 ```
 
-In this example, the `divide` method incorrectly allows division by zero. Instead, it should return an error message if the divisor is zero.
+En este ejemplo, el método `divide` permite incorrectamente la división por cero. En su lugar, debería devolver un mensaje de error si el divisor es cero.
 
-To avoid logic errors in Python classes, it's important to carefully plan the algorithmic logic and to thoroughly test the code. Additionally, using tools like debugging and code reviews can help catch and fix logic errors more quickly.  
+Para evitar errores lógicos en las clases Python, es importante planificar cuidadosamente la lógica algorítmica y probar a fondo el código. Además, el uso de herramientas como la depuración y la revisión de código puede ayudar a detectar y corregir errores lógicos más rápidamente.  
   
-## Enhancing Stability  
+## Mejora de la estabilidad
 
-In order to enhance stability in Python, there are several tips that can be followed:
+Con el fin de mejorar la estabilidad en Python, hay varios consejos que se pueden seguir:
 
-1. **Avoid using global variables** - Global variables can make it difficult to understand the flow of your code and can lead to unexpected side effects. Instead, use local variables or pass variables as arguments to functions.
+1. **Evita usar variables globales** - Las variables globales pueden dificultar la comprensión del flujo de tu código y pueden conducir a efectos secundarios inesperados. En su lugar, utiliza variables locales o pasa variables como argumentos a funciones.
 
 ```python
 ### BAD - using global variable
@@ -249,7 +249,7 @@ def increment(count):
     return count
 ```
 
-2. **Handle exceptions** - Unexpected errors can occur during program execution, so it's important to handle them gracefully using try/except blocks.
+2. **Manejar excepciones** - Durante la ejecución del programa pueden producirse errores inesperados, por lo que es importante manejarlos con elegancia utilizando bloques try/except.
 
 ```python
 try:
@@ -262,4 +262,4 @@ except Exception:
 
 ```
 
-By following these tips, you can improve the stability and reliability of your Python code.  
+Siguiendo estos consejos, puedes mejorar la estabilidad y fiabilidad de tu código Python.

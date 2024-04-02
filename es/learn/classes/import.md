@@ -1,26 +1,26 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/import
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/classes/import
 
-In Python, you can import a class from another file, providing a wealth of benefits in terms of code organization, maintainability, and collaboration. This feature allows programmers to leverage pre-existing code modules, making their programs more efficient and concise. By importing classes, developers can access and utilize the functionality provided by these classes without the need to rewrite the entire code from scratch. In this article, we will explore how to import a class from another file in Python.
+En Python, se puede importar una clase de otro archivo, lo que proporciona una gran cantidad de beneficios en términos de organización del código, mantenibilidad y colaboración. Esta característica permite a los programadores aprovechar módulos de código preexistentes, haciendo que sus programas sean más eficientes y concisos. Al importar clases, los desarrolladores pueden acceder y utilizar la funcionalidad proporcionada por estas clases sin necesidad de reescribir todo el código desde cero. En este artículo, exploraremos cómo importar una clase desde otro archivo en Python.
   
-## Imports and Attributes  
+## Importaciones y Atributos
 
-The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
+La sentencia import en Python nos permite utilizar módulos y paquetes externos que proporcionan funcionalidad adicional. Los atributos en Python se refieren a las propiedades o valores asociados a un objeto a los que podemos acceder y modificar.
 
-### Importing Modules in Python Using The `Import` Command
+### Importando Módulos en Python Usando el Comando `Import
 
-We can use the `import` statement in Python to import external modules and packages that provide additional functionality. For instance, to use the `math` module in Python, we can write:
+Podemos utilizar la sentencia `import` en Python para importar módulos externos y paquetes que proporcionan funcionalidad adicional. Por ejemplo, para usar el módulo `math` en Python, podemos escribir:
 
 ```python3
 import math
 print(math.pi)
 ```
 
-Once we import the module, we can use its functions and attributes.
+Una vez que importamos el módulo, podemos utilizar sus funciones y atributos.
 
-### Using Attributes in Python
+### Uso de atributos en Python
 
-In Python, we can access the attributes of an object using the `.` notation. For instance, given an object `obj`, we can access its attributes using `obj.attribute`. For example, consider the following class definition:
+En Python, podemos acceder a los atributos de un objeto utilizando la notación `.`. Por ejemplo, dado un objeto `obj`, podemos acceder a sus atributos usando `obj.attribute`. Por ejemplo, considera la siguiente definición de clase:
 
 ```python3
 import math
@@ -33,35 +33,35 @@ print(c.radius)  # Output: 2
 print(c.area)  # Output: 12.566370614359172
 ```
 
-Here, we define a class `Circle` that represents a circle with a given `radius`. We use the `math` module to calculate the area of the circle using the formula `pi * radius ** 2`.
+Aquí definimos una clase `Circle` que representa un círculo con un `radio` dado. Usamos el módulo `math` para calcular el área del círculo usando la fórmula `pi * radio ** 2`.
  
-> Note that we assign the value of the area to an attribute `area` of the object. Here, we create an instance `c` of the `Circle` class with `radius` `2`. We then access its attributes using the `.` notation. We print the values of the `radius` and `area` attributes, which are `2` and `12.57` (approx.), respectively. 
+> Observa que asignamos el valor del área a un atributo `area` del objeto. Aquí creamos una instancia `c` de la clase `Circle` con `radio` `2`. A continuación accedemos a sus atributos utilizando la notación `.`. Imprimimos los valores de los atributos `radio` y `área`, que son `2` y `12.57` (aprox.), respectivamente.
 
-## Importing a Single Class Using the `From` Statement
+## Importando una Clase Usando la Sentencia `From
 
-Let's explore how to import a single class from another Python file using the `from` keyword.
+Vamos a explorar cómo importar una sola clase de otro archivo Python utilizando la palabra clave `from`.
 
-You can achieve this by specifying the file name and the class you want to import, like this: `from my_module import MyClass`.
+Puedes conseguir esto especificando el nombre del archivo y la clase que quieres importar, como esto: `from mi_modulo import MiClase`.
 
-In this example, we import the `MyClass` class from a file called `my_module`. We can then create an instance of `MyClass` and use its methods as desired.
+En este ejemplo, importamos la clase `MyClass` de un fichero llamado `my_module`. Podemos entonces crear una instancia de `MyClass` y utilizar sus métodos como deseemos.
 
-For example: `from path.to.my_module import MyClass`. We import the `MyClass` class from a file located at a specific path (`path/to/my_module`). This is useful when the file you wish to import from is located in a subdirectory of your project.
+Por ejemplo: `from ruta.a.mi_modulo import MiClase`. Importamos la clase `MiClase` de un fichero situado en una ruta específica (`ruta/a/mi_módulo`). Esto es útil cuando el archivo que desea importar se encuentra en un subdirectorio de su proyecto.
 
-In Python, importing a class from another file is a straightforward process that allows us to harness the advantages offered by imported files.
+En Python, importar una clase desde otro fichero es un proceso sencillo que nos permite aprovechar las ventajas que ofrecen los ficheros importados.
 
-## Importing Multiple Classes  
+## Importando Múltiples Clases
 
-In Python, it's possible to import multiple classes from a module by listing the class names and separating them with commas.
+En Python, es posible importar múltiples clases desde un módulo listando los nombres de las clases y separándolos con comas.
 
-For example, you can import `class1`, `class2`, and `class3` from the module named `module_name` as follows: `from module_name import class1, class2, class3`.
+Por ejemplo, puedes importar `clase1`, `clase2`, y `clase3` del módulo llamado `nombre_del_módulo` de la siguiente manera: from nombre_del_módulo import class1, class2, class3`.
 
-Alternatively, you can use the `from module_name import *` syntax to import all classes from module_name. However, it's worth noting that this approach is discouraged because it can lead to naming conflicts, especially when multiple classes with the same name exist in different modules.
+También puedes utilizar la sintaxis `from nombre_módulo import *` para importar todas las clases de nombre_módulo. Sin embargo, vale la pena señalar que este enfoque se desaconseja porque puede dar lugar a conflictos de nombres, especialmente cuando existen varias clases con el mismo nombre en diferentes módulos.
 
-## Importing All Classes from a Module Using the `From` Command
+## Importar todas las clases de un módulo usando el comando `From
 
-To import all classes from a module in Python, you can use the `*` notation. This allows you to avoid having to specify each individual class name when importing from another file in a different directory.
+Para importar todas las clases de un módulo en Python, puedes usar la notación `*`. Esto te permite evitar tener que especificar cada nombre de clase individual al importar desde otro archivo en un directorio diferente.
 
-Assuming we have a module named `my_module.py` containing the classes `Class1` and `Class2`.
+Suponiendo que tenemos un módulo llamado `my_module.py` que contiene las clases `Class1` y `Class2`.
 
 ```python
 # my_module.py
@@ -73,7 +73,7 @@ class Class2:
     pass
 ```
 
-To import all classes from `my_module.py` into another script, you can use the following syntax:
+Para importar todas las clases de `my_module.py` en otro script, puedes usar la siguiente sintaxis:
 
 ```python
 # script.py
@@ -81,11 +81,11 @@ To import all classes from `my_module.py` into another script, you can use the f
 from my_module import *
 ```
 
-This will import both `Class1` and `Class2` into `script.py`.
+Esto importará tanto `Class1` como `Class2` en `script.py`.
 
-If you only need to use one class from a module, it is generally better to be more specific about what you import to avoid any potential naming conflicts or performance issues.
+Si sólo necesitas usar una clase de un módulo, generalmente es mejor ser más específico sobre lo que importas para evitar posibles conflictos de nombres o problemas de rendimiento.
 
-Assuming we have a module named `my_module.py` containing the classes `Class1` and `Class2`.
+Suponiendo que tenemos un módulo llamado `my_module.py` que contiene las clases `Class1` y `Class2`.
 
 ```python
 # my_module.py
@@ -97,7 +97,7 @@ class Class2:
     pass
 ```
 
-To import only `Class1` into another script, you can use the following syntax:
+Para importar sólo `Clase1` en otro script, puede utilizar la siguiente sintaxis:
 
 ```python
 # script.py
@@ -105,11 +105,11 @@ To import only `Class1` into another script, you can use the following syntax:
 from my_module import Class1
 ```
 
-This will only import `Class1` into `script.py`.  
+Esto sólo importará `Class1` en `script.py`.  
   
-## Importing Classes with Aliases  
+## Importar clases con alias
 
-In Python, we can import classes with aliases to make our code more readable and concise. Aliases allow us to use a shorter, more convenient name for a class, without having to type out its full name every time we use it. 
+En Python, podemos importar clases con alias para hacer nuestro código más legible y conciso. Los alias nos permiten usar un nombre más corto y conveniente para una clase, sin tener que escribir su nombre completo cada vez que la usamos.
 
 ```python3
 # Importing the math module and aliasing it as m
@@ -119,7 +119,7 @@ import math as m
 print(m.sqrt(4))  # Output: 2.0
 ```
 
-In this example, we're importing the `math` module and aliasing it as `m`. This allows us to use `m` as a shorthand for `math` throughout our code. We then use the `m.sqrt()` method to calculate the square root of 4 and print the result.
+En este ejemplo, importamos el módulo `math` y lo llamamos `m`. Esto nos permite utilizar `m` como abreviatura de `math` en todo nuestro código. Usamos el método `m.sqrt()` para calcular la raíz cuadrada de 4 e imprimir el resultado.
 
 ```python3
 # Importing the square and cube functions from the math module and aliasing them as sq and cu
@@ -132,17 +132,17 @@ print(sq(4))  # Output: 2.0
 print(cu(3, 3))  # Output: 27.0
 ```
 
-In this example, we're importing the `sqrt` and `pow` functions from the `math` module and aliasing them as `sq` and `cu`, respectively. This allows us to use `sq` and `cu` as shorthands for `sqrt` and `pow` throughout our code. We then use the `sq()` function to calculate the square root of 4 and the `cu()` function to calculate the cube of 3 and print the results.
+En este ejemplo, importamos las funciones `sqrt` y `pow` del módulo `math` y las llamamos `sq` y `cu`, respectivamente. Esto nos permite utilizar `sq` y `cu` como abreviaturas de `sqrt` y `pow` en todo nuestro código. A continuación, utilizamos la función `sq()` para calcular la raíz cuadrada de 4 y la función `cu()` para calcular el cubo de 3 e imprimir los resultados.
 
-Overall, using aliases can make our Python code more succinct and easier to read, especially when dealing with complicated classes or modules.  
+En general, el uso de alias puede hacer que nuestro código Python sea más sucinto y fácil de leer, especialmente cuando se trata de clases o módulos complicados.  
   
-## Importing Classes from a Submodule or Package  
+## Importar clases desde un submódulo o paquete
 
-To import a class from another file/module in Python, we can use the `import` keyword followed by the name of the module or file where the class is defined, and then access the class using the dot syntax.
+Para importar una clase desde otro archivo/módulo en Python, podemos usar la palabra clave `import` seguida del nombre del módulo o archivo donde está definida la clase, y luego acceder a la clase usando la sintaxis de puntos.
 
-Suppose we have a module `my_module.py` with a class `MyClass` defined inside it. To import that class into another file, we can do `from my_module import MyClass`.
+Supongamos que tenemos un módulo `my_module.py` con una clase `MyClass` definida en su interior. Para importar esa clase a otro fichero, podemos hacer `from mi_módulo import MiClase`.
 
-Suppose we have a package called `example` that contains a submodule `utils` with a class `MyUtils` defined inside it. To import that class into another file, we can do:
+Supongamos que tenemos un paquete llamado `example` que contiene un submódulo `utils` con una clase `MyUtils` definida en su interior. Para importar esa clase en otro fichero, podemos hacer:
 
 ```python
 # we are importing the class MyUtils from the utils submodule inside the example package
@@ -152,40 +152,40 @@ Suppose we have a package called `example` that contains a submodule `utils` wit
 # obj = MyUtils()
 ```
 
-After importing the class, we can create an instance of it by calling the constructor with parentheses.
+Después de importar la clase, podemos crear una instancia de la misma llamando al constructor con paréntesis.
 
-## Importing Classes from a Parent Directory with `sys.path`
+## Importar clases desde un directorio padre con `sys.path`.
 
-The `sys` module in Python provides access to various system-specific parameters and functions. The `sys.path` list is one of the attributes in this module and contains the directories where Python searches for modules. To import classes or modules from a directory outside the default search path, you can manipulate this list.
+El módulo `sys` de Python proporciona acceso a varios parámetros y funciones específicos del sistema. La lista `sys.path` es uno de los atributos de este módulo y contiene los directorios donde Python busca módulos. Para importar clases o módulos desde un directorio fuera de la ruta de búsqueda por defecto, puedes manipular esta lista.
 
-Here's a step-by-step guide to importing all classes from another folder in the parent directory:
+Aquí tienes una guía paso a paso para importar todas las clases desde otra carpeta del directorio padre:
 
-1. **Identify the Target Directory**: First, you need to identify the directory from which you want to import classes. This directory should be in the parent directory of your current script.
-2. **Update `sys.path`**: To add the target directory to `sys.path`, you can use the `sys.path.append()` method. For example:
+1. **Identificar el directorio de destino**: Primero, necesitas identificar el directorio desde el cual quieres importar las clases. Este directorio debe estar en el directorio padre de tu script actual.
+2. **Actualizar `sys.path`**: Para añadir el directorio de destino a `sys.path`, puedes utilizar el método `sys.path.append()`. Por ejemplo:
 
 ```python
 import sys
 sys.path.append('/path/to/your/directory')
 ```
 
-Replace `'/path/to/your/directory'` with the actual path to your target directory.
+Sustituya `'/ruta/a/su/directorio'` por la ruta real a su directorio de destino.
 
-3. **Import Modules**: Once the target directory is added to `sys.path`, you can import modules and classes from that directory as if they were in the current directory. For example:
+3. **Importar módulos**: Una vez que el directorio de destino se añade a `sys.path`, puede importar módulos y clases de ese directorio como si estuvieran en el directorio actual. Por ejemplo:
 
 ```python
 from target_directory import module_name
 ```
 
-Replace `target_directory` with the name of the folder you want to import from and `module_name` with the name of the module or class you want to use.
+Sustituya `directorio_de_objetivo` por el nombre de la carpeta desde la que desea importar y `nombre_del_módulo` por el nombre del módulo o clase que desea utilizar.
 
-If you want to import all classes or modules from the target directory, you can use a wildcard import:
+Si desea importar todas las clases o módulos del directorio de destino, puede utilizar un comodín de importación:
 
 ```python
 from target_directory import *
 ```
 
-Be cautious when using wildcard imports, as they can lead to naming conflicts and make your code harder to understand.
+Tenga cuidado al utilizar importaciones comodín, ya que pueden dar lugar a conflictos de nombres y hacer que su código sea más difícil de entender.
 
-4. **Import and Use**: With the modules and classes imported, you can use them in your code as needed. Remember that the target directory should contain an `__init__.py` file to be recognized as a package.
+4. **Importar y usar**: Con los módulos y clases importados, puedes usarlos en tu código según necesites. Recuerda que el directorio de destino debe contener un archivo `__init__.py` para ser reconocido como paquete.
 
-Python's `import sys` command can be a powerful tool when you need to import classes or modules from directories located outside the default search path. By manipulating the `sys.path` variable, you can extend Python's capabilities to include additional directories, allowing you to organize your code more effectively and maintain a clean project structure. 
+El comando `import sys` de Python puede ser una poderosa herramienta cuando necesites importar clases o módulos de directorios situados fuera de la ruta de búsqueda por defecto. Manipulando la variable `sys.path`, puedes extender las capacidades de Python para incluir directorios adicionales, permitiéndote organizar tu código más efectivamente y mantener una estructura de proyecto limpia.
