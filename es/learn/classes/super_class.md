@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/super-class
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/classes/super-class
 
-In this article, we will delve into the intricacies of Python Super Classes. Get ready to unlock the full potential of Python Development by mastering the vital elements of Super Class in Python.  
+En este artículo, profundizaremos en las complejidades de las Súper Clases de Python. Prepárate para desbloquear todo el potencial de desarrollo de Python por el dominio de los elementos vitales de la Super Clase en Python.  
   
-## Understanding Python's Super Class  
+## Entendiendo las Super Clases de Python
 
-The `super()` function in python is used to call a method in a parent class from a child class. The `super()` function helps in creating a hierarchy among classes in Python that is easy to maintain and understand. In Python 3, `super()` is commonly used for initializing abstract classes.
+La función `super()` en python se utiliza para llamar a un método en una clase padre desde una clase hija. La función `super()` ayuda a crear una jerarquía entre clases en Python que es fácil de mantener y entender. En Python 3, `super()` se utiliza comúnmente para inicializar clases abstractas.
 
-### Using `super()` in Python Class
+### Uso de `super()` en clases Python
 
 ```python3
 class MyParentClass:
@@ -23,13 +23,13 @@ child = MyChildClass()
 child.do_something()
 ```
 
-In conclusion, `super()` is a powerful function in Python that provides a clean and concise way to call parent class methods from a child class. It helps to create a clear hierarchy among classes and to maintain clean code.  
+En conclusión, `super()` es una potente función de Python que proporciona una forma limpia y concisa de llamar a los métodos de la clase padre desde una clase hija. Ayuda a crear una jerarquía clara entre las clases y a mantener un código limpio.  
   
-## Python Abstract Class  
+## Clase Abstracta en Python
 
-Abstract class is a class that cannot be instantiated and is meant to be subclassed by other classes. The `super()` function is used to access and call methods from a parent or superclass in Python. Here are two code examples that illustrate the use of `super()` in Python abstract classes.
+Una clase abstracta es una clase que no puede ser instanciada y está destinada a ser subclasificada por otras clases. La función `super()` se utiliza para acceder y llamar a métodos de una clase padre o superclase en Python. Aquí hay dos ejemplos de código que ilustran el uso de `super()` en las clases abstractas de Python.
 
-### Define an Abstract Class
+### Definir una Clase Abstracta
 
 ```python3
 import abc
@@ -62,9 +62,9 @@ my_obj.my_method()
 # Calling my_method in MySubclass
 ```
 
-In this example, we define an abstract class `MyAbstractClass` with an abstract method `my_method()`. The class has an `__init__` method that uses `super()` to call the `__init__` method of the superclass. We then define a subclass `MySubclass` that overrides the `__init__` method and implements the `my_method()` method. When we instantiate an object of `MySubclass`, both `__init__` methods are called in order, and the `my_method()` method of `MySubclass` is called.
+En este ejemplo, definimos una clase abstracta `MyAbstractClass` con un método abstracto `my_method()`. La clase tiene un método `__init__` que utiliza `super()` para llamar al método `__init__` de la superclase. Luego definimos una subclase `MiSubclase` que sobrescribe el método `__init__` e implementa el método `my_method()`. Cuando instanciamos un objeto de `MiSubclase`, ambos métodos `__init__` son llamados en orden, y el método `my_method()` de `MiSubclase` es llamado.
 
-### Define a Parent Class
+### Definir una Clase Padre
 
 ```python3
 class MyParentClass:
@@ -86,11 +86,11 @@ my_obj.my_method()
 # Calling my_method in MyChildClass
 ```
 
-In this example, we define a parent class `MyParentClass` with a method `my_method()`. We then define a child class `MyChildClass` that overrides `my_method()` and uses `super()` to call the same method in the parent class. When we instantiate an object of `MyChildClass`, the `my_method()` method in the parent class is called first, followed by the same method in the child class.  
+En este ejemplo, definimos una clase padre `MyParentClass` con un método `my_method()`. Luego definimos una clase hija `MiClaseHija` que sobrescribe `mi_método()` y utiliza `super()` para llamar al mismo método de la clase padre. Cuando instanciamos un objeto de `MyChildClass`, el método `my_method()` de la clase padre es llamado primero, seguido por el mismo método en la clase hija.  
   
-## The Role of `super()` in Class Inheritance  
+## El papel de `super()` en la herencia de clases
 
-In Python, `super()` is a built-in function that gives access to methods of a parent class through inheritance. It is used to call a method of the parent class without explicitly naming the parent class. It is also used in Python 3 abstract classes to call `super().__init__()` method.
+En Python, `super()` es una función incorporada que da acceso a los métodos de una clase padre a través de la herencia. Se utiliza para llamar a un método de la clase padre sin nombrar explícitamente la clase padre. También se utiliza en las clases abstractas de Python 3 para llamar al método `super().__init__()`.
 
 ```python3
 class Parent:
@@ -106,7 +106,7 @@ child = Child("John", 10)
 print(child.name) # Output: John
 ```
 
-In the above example, `Child` class inherits `Parent` class and initializes `name` attribute using `super()` function.
+En el ejemplo anterior, la clase `Child` hereda la clase `Parent` e inicializa el atributo `name` utilizando la función `super()`.
 
 ```python3
 from abc import ABC, abstractmethod
@@ -128,13 +128,13 @@ child = Child("John")
 print(child.calculate(4, 5)) # Output: 9
 ```
 
-In the above example, `Parent` class is an abstract class. `Child` class inherits `Parent` class and initializes the parent class using `super().__init__()` method. The `calculate()` method is implemented in `Child` class. 
+En el ejemplo anterior, la clase `Parent` es una clase abstracta. La clase `Child` hereda la clase `Parent` e inicializa la clase padre usando el método `super().__init__()`. El método `calculate()` se implementa en la clase `Child`.
 
-## The Power of Super Class  
+## El Poder de la Superclase
 
-The `super()` function in Python is used to call a method of a super class from a sub class. It is very powerful and useful, and it can simplify inheritance hierarchies when used appropriately. 
+La función `super()` en Python se utiliza para llamar a un método de una superclase desde una subclase. Es muy potente y útil, y puede simplificar las jerarquías de herencia cuando se utiliza adecuadamente.
 
-In Python 3, `super()` takes two arguments: the first is the subclass calling `super()`, and the second is either the subclass instance or the class itself. For example:
+En Python 3, `super()` toma dos argumentos: el primero es la subclase que llama a `super()`, y el segundo es la instancia de la subclase o la propia clase. Por ejemplo:
 
 ```python3
 class A:
@@ -153,9 +153,9 @@ b = B()
 
 ```
 
-In this example, `super().__init__()` calls the `__init__()` method of class `A`, the super class of `B`. This way, both `A` and `B` are initialized when a new object of `B` is created.
+En este ejemplo, `super().__init__()` llama al método `__init__()` de la clase `A`, la superclase de `B`. De esta forma, tanto `A` como `B` se inicializan cuando se crea un nuevo objeto de `B`.
 
-Another use case is with abstract classes that contain `super().__init__()` in their `__init__()` method:
+Otro caso es el de las clases abstractas que contienen `super().__init__()` en su método `__init__()`:
 
 ```python3
 from abc import ABC, abstractmethod
@@ -179,15 +179,15 @@ c = MyClass()
 
 ```
 
-In this example, `MyAbstractClass` is an abstract class that defines an `abstractmethod()` called `my_abstract_method()`. The `MyClass` class inherits from `MyAbstractClass` and defines its own implementation of `my_abstract_method()`. When a new object of `MyClass` is created, its `__init__()` method calls `super().__init__()`, which initializes the abstract class `MyAbstractClass`. 
+En este ejemplo, `MyAbstractClass` es una clase abstracta que define un `abstractmethod()` llamado `my_abstract_method()`. La clase `MyClass` hereda de `MyAbstractClass` y define su propia implementación de `my_abstract_method()`. Cuando se crea un nuevo objeto de `MyClass`, su método `__init__()` llama a `super().__init__()`, que inicializa la clase abstracta `MyAbstractClass`.
 
-Overall, the `super()` function is a powerful tool in Python that can simplify inheritance hierarchies and streamline object initialization.  
+En general, la función `super()` es una poderosa herramienta en Python que puede simplificar las jerarquías de herencia y agilizar la inicialización de objetos.  
   
-## Implementing Multiple Inheritance With Super Class  
+## Implementación de Herencia Múltiple con la Superclase
 
-Python supports multiple inheritance, which means a class can inherit from multiple parent classes. In such cases, the `super()` function plays a crucial role in managing the order in which the parent classes' methods are called. When dealing with multiple inheritances, you can use `super()` to navigate the method resolution order (MRO) effectively.
+Python soporta herencia múltiple, lo que significa que una clase puede heredar de múltiples clases padre. En tales casos, la función `super()` juega un papel crucial en la gestión del orden en que los métodos de las clases padre son llamados. Cuando se trata de herencias múltiples, puede utilizar `super()` para navegar por el orden de resolución de métodos (MRO) de manera efectiva.
 
-Example:
+Ejemplo:
 
 ```python3
 class A:
@@ -207,20 +207,20 @@ obj = C()
 obj.some_method()
 ```
 
-Output:
+Salida:
 
 ```python
 Method from class A
 Method from class C
 ```
 
-In this example, class `C` inherits from both `A` and `B`. The `super()` function helps call the method from class `A` in the MRO, followed by its own method.
+En este ejemplo, la clase `C` hereda tanto de `A` como de `B`. La función `super()` ayuda a llamar al método de la clase `A` en el MRO, seguido de su propio método.
 
-## Method Resolution Order (MRO)
+## Orden de Resolución de Métodos (MRO)
 
-Method Resolution Order (MRO) is a critical concept in multiple inheritances. Python uses the C3 linearization algorithm to determine the order in which methods are called. Understanding the MRO can help you predict how `super()` functions in complex inheritance hierarchies.
+El Orden de Resolución de Métodos (MRO) es un concepto crítico en las herencias múltiples. Python utiliza el algoritmo de linealización C3 para determinar el orden en que los métodos son llamados. Entender el MRO puede ayudarte a predecir cómo funciona `super()` en jerarquías de herencia complejas.
 
-Example:
+Ejemplo:
 
 ```python3
 class A:
@@ -244,7 +244,7 @@ obj = D()
 obj.some_method()
 ```
 
-Output:
+Salida:
 
 ```python
 Method from class B
@@ -252,15 +252,15 @@ Method from class C
 Method from class D
 ```
 
-In this example, `D` inherits from both `B` and `C`, and the MRO ensures the correct order of method calls.
+En este ejemplo, `D` hereda tanto de `B` como de `C`, y el MRO asegura el orden correcto de las llamadas a los métodos.
 
-Including these sections in your article will provide a comprehensive understanding of how `super()` works in different inheritance scenarios and the significance of Method Resolution Order in Python.
+Incluir estas secciones en tu artículo te proporcionará una comprensión completa de cómo funciona `super()` en diferentes escenarios de herencia y la importancia del Orden de Resolución de Métodos en Python.
 
-## Multi-Level Inheritance With Super Class
+## Herencia Multinivel con la Superclase
 
-Multi-level inheritance is a common pattern in object-oriented programming, where a subclass inherits from another subclass. In such scenarios, `super()` allows you to access and extend the behavior of the parent class without tightly coupling your code to specific class names.
+La herencia multinivel es un patrón común en la programación orientada a objetos, donde una subclase hereda de otra subclase. En tales escenarios, `super()` te permite acceder y extender el comportamiento de la clase padre sin acoplar estrechamente tu código a nombres de clase específicos.
 
-Example:
+Ejemplo:
 
 ```python3
 class Grandparent:
@@ -281,7 +281,7 @@ obj = Child()
 obj.speak()
 ```
 
-Output:
+Salida:
 
 ```python
 Grandparent speaks
@@ -289,4 +289,4 @@ Parent speaks
 Child speaks
 ```
 
-Here, the `super()` function ensures that each level of the class hierarchy contributes to the final behavior.
+Aquí, la función `super()` asegura que cada nivel de la jerarquía de clases contribuye al comportamiento final.
