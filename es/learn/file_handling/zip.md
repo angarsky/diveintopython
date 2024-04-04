@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/zip
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/file-handling/zip
 
-Zip files are a popular way to compress and bundle multiple files into a single archive. They are commonly used for tasks such as file compression, data backup, and file distribution. Zipping or compressing files in Python is a useful way to save space on your hard drive and make it easier to transfer files over the internet. 
-  
-## How to Zip a File in Python  
+Los archivos zip son una forma popular de comprimir y agrupar múltiples archivos en un solo archivo. Se utilizan comúnmente para tareas tales como la compresión de archivos, la copia de seguridad de datos y la distribución de archivos. Comprimir archivos en Python es una manera útil de ahorrar espacio en tu disco duro y facilitar la transferencia de archivos por internet.
 
-The [zipfile](https://docs.python.org/3/library/zipfile.html) module in Python provides functionalities to create, read, write, append, and extract ZIP files.
+## Cómo comprimir un archivo en Python
 
-### Zip a Single File
+El módulo [zipfile](https://docs.python.org/3/library/zipfile.html) en Python proporciona funcionalidades para crear, leer, escribir, agregar y extraer archivos ZIP.
 
-You can use the `zipfile` module to create a [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) file containing a single file. Here is how you can do it:
+### Comprimir un archivo único
+
+Puedes utilizar el módulo `zipfile` para crear un archivo [zip](https://en.wikipedia.org/wiki/ZIP_(file_format)) que contenga un solo archivo. Aquí te mostramos cómo puedes hacerlo:
 
 ```python
 import zipfile
@@ -30,11 +30,11 @@ zip_object.write(file_name, compress_type=zipfile.ZIP_DEFLATED)
 zip_object.close()
 ```
 
-In the above code, we first imported the `zipfile` module. Then we defined the name of the zip file and the name of the source file. We created a `ZipFile` object and added the source file to it using the `write()` method. We then closed the zip file using the `close()` method.
+En el código anterior, primero importamos el módulo `zipfile`. Luego definimos el nombre del archivo zip y el nombre del archivo fuente. Creamos un objeto `ZipFile` y agregamos el archivo fuente usando el método `write()`. Luego cerramos el archivo zip usando el método `close()`.
 
-### Zip Multiple Files
+### Comprimir Múltiples Archivos
 
-You can also create a zip file containing multiple files. Here is an example:
+También puedes crear un archivo zip que contenga múltiples archivos. Aquí hay un ejemplo:
 
 ```python
 import zipfile
@@ -59,13 +59,13 @@ for file_name in file_names:
 zip_object.close()
 ```
 
-In the above example, we defined the names of multiple source files in a list. We then added each of these files to the zip file using a `for` loop and the `write()` method. Finally, we closed the zip file using the `close()` method.
+En el ejemplo anterior, definimos los nombres de varios archivos fuente en una lista. Luego agregamos cada uno de estos archivos al archivo zip usando un bucle `for` y el método `write()`. Finalmente, cerramos el archivo zip usando el método `close()`.
 
-To compress the zip file even further, you can set the `compress_type` argument to `zipfile.ZIP_DEFLATED`. This applies the [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE) compression method to the files being zipped.  
-  
-## Unzip a File in Python  
+Para comprimir aún más el archivo zip, puedes establecer el argumento `compress_type` en `zipfile.ZIP_DEFLATED`. Esto aplica el método de compresión [DEFLATE](https://en.wikipedia.org/wiki/DEFLATE) a los archivos que se están comprimiendo.
 
-It is straightforward to extract zip files in Python using the `zipfile` module. Here are two ways to do it:
+## Descomprimir un Archivo en Python
+
+Es sencillo extraer archivos zip en Python usando el módulo `zipfile`. Aquí tienes dos maneras de hacerlo:
 
 ```python
 import zipfile
@@ -74,9 +74,9 @@ with zipfile.ZipFile('myzipfile.zip', 'r') as zip_ref:
     zip_ref.extractall('destination_folder')
 ```
 
-In this example, we first import the `zipfile` module. We then create an instance of the `ZipFile` class for the zip file we want to extract. The `r` argument indicates that we want to read from the zip file, and `myzipfile.zip` is the name of the file we want to extract.
+En este ejemplo, primero importamos el módulo `zipfile`. Luego creamos una instancia de la clase `ZipFile` para el archivo zip que queremos extraer. El argumento `r` indica que queremos leer del archivo zip, y `myzipfile.zip` es el nombre del archivo que queremos extraer.
 
-The `extractall()` method extracts all files from the zip file and saves them into the specified `destination_folder`. If `destination_folder` does not exist, it will be created.
+El método `extractall()` extrae todos los archivos del archivo zip y los guarda en la `destination_folder` especificada. Si `destination_folder` no existe, será creada.
 
 ```python
 import zipfile
@@ -87,6 +87,6 @@ with zipfile.ZipFile('myzipfile.zip', 'r') as zip_ref:
             zip_ref.extract(file, 'destination_folder')
 ```
 
-In this example, we again import the `zipfile` module and create an instance of the `ZipFile` class. We then loop through all files in the zip file using `namelist()`. If a file has a `.txt` extension, we extract it to `destination_folder`.
+En este ejemplo, volvemos a importar el módulo `zipfile` y creamos una instancia de la clase `ZipFile`. Luego recorremos todos los archivos en el archivo zip utilizando `namelist()`. Si un archivo tiene una extensión `.txt`, lo extraemos a `destination_folder`.
 
-By using these two code examples, you can easily extract files from zip files in Python. Remember to adjust the file paths and naming to fit your specific needs.  
+Al utilizar estos dos ejemplos de código, puedes extraer fácilmente archivos de archivos zip en Python. Recuerda ajustar las rutas de los archivos y los nombres para que se ajusten a tus necesidades específicas.

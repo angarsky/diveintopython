@@ -1,17 +1,17 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/xml
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/file-handling/xml
 
-XML files in Python allow for the manipulation and parsing of XML data. XML ([Extensible Markup Language](https://en.wikipedia.org/wiki/XML)) is a widely used data interchange format. 
-  
-## Open XML File and Read Data with Python  
+Los archivos XML en Python permiten la manipulación y el análisis de datos XML. XML ([Lenguaje de Marcado Extensible](https://en.wikipedia.org/wiki/XML)) es un formato de intercambio de datos ampliamente utilizado.
 
-To read data from an XML file with Python, you can use in-built XML parser module. In this part we will learn how to parse XML data in Python by exploring popular Python libraries.
+## Abrir archivo XML y leer datos con Python
 
-The most commonly used libraries for parsing XML files are [lxml](https://pypi.org/project/lxml/) and `ElementTree`.
+Para leer datos de un archivo XML con Python, puedes usar el módulo analizador XML incorporado. En esta parte aprenderemos cómo analizar datos XML en Python explorando librerías populares de Python.
 
-### Using lxml library
+Las librerías más comúnmente usadas para analizar archivos XML son [lxml](https://pypi.org/project/lxml/) y `ElementTree`.
 
-The `lxml` library is a popular XML files reader, it is quite efficient for parsing XML data. You can install the `lxml` library by using the `pip` command.
+### Usando la librería lxml
+
+La librería `lxml` es un lector popular de archivos XML, es bastante eficiente para analizar datos XML. Puedes instalar la librería `lxml` usando el comando `pip`.
 
 ```python
 from lxml import etree
@@ -21,11 +21,11 @@ for elem in root.iter():
     print(elem.tag, elem.text)
 ```
 
-### Using ElementTree
+### Usando ElementTree
 
-ElementTree is an in-built library that allows to parse XML files. With ElementTree, come built-in modules that allow parsing and creating of elements. To use the ElementTree library, you need to `import` it.
+ElementTree es una biblioteca integrada que permite parsear archivos XML. Con ElementTree, vienen módulos integrados que permiten el parseo y creación de elementos. Para usar la biblioteca ElementTree, necesitas `importarla`.
 
-Here's an example of how you can parse an XML file using `ElementTree`:
+Aquí tienes un ejemplo de cómo puedes parsear un archivo XML usando `ElementTree`:
 
 ```python
 import xml.etree.ElementTree as ET
@@ -37,13 +37,13 @@ for elem in root:
     print(elem.tag, elem.text)
 ```
 
-By using either of these methods, you can read XML files efficiently.  
-  
-## How to Write XML  
+Al utilizar cualquiera de estos métodos, puedes leer archivos XML de manera eficiente.
 
-To write XML in Python, you can use the ElementTree XML API library. Here are two code examples to demonstrate how to create and write XML:
+## Cómo escribir XML
 
-### Example 1: Creating and Writing XML in Python
+Para escribir XML en Python, puedes utilizar la biblioteca ElementTree XML API. Aquí hay dos ejemplos de código para demostrar cómo crear y escribir XML:
+
+### Ejemplo 1: Creando y escribiendo XML en Python
 
 ```python
 import xml.etree.cElementTree as ET
@@ -62,7 +62,7 @@ tree = ET.ElementTree(root)
 tree.write("person.xml")
 ```
 
-### Example 2: Creating and Writing XML with Attributes
+### Ejemplo 2: Creando y Escribiendo XML con Atributos
 
 ```python
 import xml.etree.cElementTree as ET
@@ -81,13 +81,13 @@ tree = ET.ElementTree(root)
 tree.write("person.xml", encoding="utf-8", xml_declaration=True)
 ```
 
-In both examples, the `ElementTree()` class is used to create an XML element `tree`. The `write()` method is then used to write the element `tree` to an XML file. By specifying `encoding` and xml_declaration in the second example, a custom-formatted XML file is created with an XML declaration at the top.  
+En ambos ejemplos, se utiliza la clase `ElementTree()` para crear un elemento XML `árbol`. A continuación, se utiliza el método `write()` para escribir el elemento `tree` en un archivo XML. Especificando `encoding` y xml_declaration en el segundo ejemplo, se crea un archivo XML con un formato personalizado y una declaración XML en la parte superior.  
   
-## How to Convert XML to JSON  
+## Cómo convertir XML a JSON
 
-Converting XML to JSON is a common task that can be achieved easily. 
+Convertir XML a JSON es una tarea común que se puede lograr fácilmente.
 
-The [xmltodict](https://pypi.org/project/xmltodict/) module allows us to convert an XML document into a dictionary, which can then be easily converted into JSON using the built-in `json` module. Below is an example code snippet that demonstrates how to use this approach:
+El módulo [xmltodict](https://pypi.org/project/xmltodict/) nos permite convertir un documento XML en un diccionario, que luego puede convertirse fácilmente en JSON utilizando el módulo `json` incorporado. A continuación se muestra un fragmento de código de ejemplo que demuestra cómo utilizar este enfoque:
 
 ```python
 import xmltodict
@@ -107,7 +107,7 @@ json_data = json.dumps(dict_data)
 print(json_data)
 ```
 
-The `xml.etree.ElementTree` module allows us to parse the XML document and create an Element object, which can be traversed to get the required data. Once we have the data as a dictionary, we can use the `json` module to convert it to JSON. Here is an example code snippet that demonstrates how to use this approach:
+El módulo `xml.etree.ElementTree` nos permite analizar el documento XML y crear un objeto Element, que puede ser recorrido para obtener los datos requeridos. Una vez que tenemos los datos en forma de diccionario, podemos utilizar el módulo `json` para convertirlos a JSON. A continuación se muestra un fragmento de código de ejemplo que demuestra cómo utilizar este enfoque:
 
 ```python
 import xml.etree.ElementTree as ET
@@ -129,11 +129,11 @@ json_data = json.dumps(xml_dict)
 print(json_data)
 ```
 
-## How to Convert XML to CSV   
+## Cómo convertir XML a CSV
 
-To convert XML to CSV, you can use the `xml.etree.ElementTree` module and the [csv](https://docs.python.org/3/library/csv.html) module. Here are two code examples to help you get started:
+Para convertir XML a CSV, puedes usar el módulo `xml.etree.ElementTree` y el módulo [csv](https://docs.python.org/3/library/csv.html). Aquí tienes dos ejemplos de código para ayudarte a comenzar:
 
-### Example 1: Using ElementTree and CSV modules
+### Ejemplo 1: Usando los módulos ElementTree y CSV
 
 ```python
 import csv
@@ -169,7 +169,7 @@ for item in root.findall('.//item'):
 csv_file.close()
 ```
 
-### Example 2: Using pandas
+### Ejemplo 2: Usando `pandas`
 
 ```python
 import pandas as pd
@@ -196,4 +196,4 @@ for node in root:
 df.to_csv('example.csv', index=False)
 ```
 
-In both of these examples, the `xml.etree.ElementTree` module is used to parse the XML file and extract the data. The `csv` module (in Example 1) or the [pandas](https://pypi.org/project/pandas/) library (in Example 2) is used to write the data to a CSV file.  
+En ambos ejemplos, el módulo `xml.etree.ElementTree` se utiliza para analizar el archivo XML y extraer los datos. El módulo `csv` (en el Ejemplo 1) o la biblioteca [pandas](https://pypi.org/project/pandas/) (en el Ejemplo 2) se utilizan para escribir los datos en un archivo CSV.
