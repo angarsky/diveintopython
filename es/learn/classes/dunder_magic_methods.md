@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/dunder-magic-methods
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/classes/dunder-magic-methods
 
-**Dunder** (double underscore) or **magic** methods are special methods in Python that allow for customization of classes and objects. These methods are called **magic** because they can change the behavior of code in unexpected ways. Understanding and implementing these methods can greatly enhance the functionality and flexibility of your Python programs.  
+Los métodos **Dunder** (doble guión bajo) o **magic** son métodos especiales en Python que permiten personalizar clases y objetos. Estos métodos se llaman **mágicos** porque pueden cambiar el comportamiento del código de formas inesperadas. Entender e implementar estos métodos puede mejorar enormemente la funcionalidad y flexibilidad de tus programas Python.  
   
-## Constructing Objects and Expressions  
+## Construyendo Objetos y Expresiones
 
-In Python, objects are instances of classes, which define the attributes and methods of the object. The process of creating an object in Python involves defining a class, which specifies the structure and behavior of the object, and then creating instances of that class.
+En Python, los objetos son instancias de clases, que definen los atributos y métodos del objeto. El proceso de crear un objeto en Python implica definir una clase, que especifica la estructura y el comportamiento del objeto, y luego crear instancias de esa clase.
 
-### Defining Classes in Python
+### Definición de Clases en Python
 
-To define a class in Python, you use the `class` keyword, followed by the name of the class. For example, the following code defines a simple class called `Person`:
+Para definir una clase en Python, se utiliza la palabra clave `class`, seguida del nombre de la clase. Por ejemplo, el siguiente código define una clase simple llamada `Persona`:
 
 ```python
 class Person:
@@ -21,15 +21,15 @@ class Person:
         print(f"Hello, my name is {self.name} and I am {self.age} years old.")
 ```
 
-The `__init__` method is a special method that is called when an instance of the class is created. It initializes the attributes of the object.
+El método `__init__` es un método especial que se llama cuando se crea una instancia de la clase. Inicializa los atributos del objeto.
 
-### Python `__init__` Magic Method
+### Método mágico `__init__` de Python
 
-The `__init__` method is a special magic method that is called when an instance of a class is created. It initializes the attributes of the object. In the example above, the `__init__` method takes two parameters, `name` and `age`, which are used to initialize the `name` and `age` attributes of the object.
+El método `__init__` es un método mágico especial que se llama cuando se crea una instancia de una clase. Inicializa los atributos del objeto. En el ejemplo anterior, el método `__init__` toma dos parámetros, `name` y `age`, que se utilizan para inicializar los atributos `name` y `age` del objeto.
 
-### Creating Instances of Classes in Python
+### Creando Instancias de Clases en Python
 
-To create an instance of a class, you call the class as if it were a function, passing any arguments that the `__init__` dunder method requires. For example, the following code creates two instances of the `Person` class:
+Para crear una instancia de una clase, se llama a la clase como si fuera una función, pasando cualquier argumento que el método `__init__` dunder requiera. Por ejemplo, el siguiente código crea dos instancias de la clase `Persona`:
 
 ```python
 # Defining a car class
@@ -50,7 +50,7 @@ car1 = Car("Honda", "Accord", 2021)
 car1.describe_car()
 
 # Output: The car is a 2021 Honda Accord.
-``` 
+```
 
 ```python
 # Defining a book class
@@ -71,15 +71,15 @@ book1 = Book("The Alchemist", "Paulo Coelho", 208)
 book1.describe_book()
 
 # Output: The book 'The Alchemist' is written by Paulo Coelho and has 208 pages.
-```  
-  
-## Creating Iterator Objects  
+```
 
-An iterator is an object that enables sequential iteration (looping) over a collection of items, one item at a time. In Python, you can create iterator objects using classes or functions.
+## Creación de objetos iteradores
 
-### Python Generator Class
+Un iterador es un objeto que permite la iteración secuencial (bucle) sobre una colección de elementos, un elemento cada vez. En Python, puedes crear objetos iteradores usando clases o funciones.
 
-You can create an iterator using the generator class in Python. The generator class is a type of object that is used to create iterable objects using the `yield` statement.
+### Clase Generadora de Python
+
+Puedes crear un iterador utilizando la clase generador en Python. La clase generador es un tipo de objeto que se utiliza para crear objetos iterables utilizando la sentencia `yield`.
 
 ```python3
 class MyGenerator:
@@ -113,21 +113,21 @@ for x in gen:
     print(x)
 ```
 
-In this example, `MyGenerator` is a generator class that inherits from the built-in `object` class. It defines an `__init__()` method that initializes the `num` attribute to 0. It also defines `__iter__()` method that returns the iterator object (`self` in this case) and `__next__()` magic method that generates the next value in the sequence.
+En este ejemplo, `MyGenerator` es una clase generadora que hereda de la clase incorporada `object`. Define un método `__init__()` que inicializa el atributo `num` a 0. También define el método `__iter__()` que devuelve el objeto iterador (`self` en este caso) y el método mágico `__next__()` que genera el siguiente valor de la secuencia.
 
-You can also create an iterator using a Python function generator. A function generator is afunction that contains the `yield` statement.
+También puedes crear un iterador usando un generador de funciones de Python. Un generador de funciones es una función que contiene la sentencia `yield`.
 
-In this example, `my_generator` function is a function generator that uses the `yield` statement to generate the next value in the sequence. 
+En este ejemplo, la función `my_generator` es un generador de funciones que utiliza la sentencia `yield` para generar el siguiente valor de la secuencia.
 
-In both examples above, you can create an iterator object as follows:
+En los dos ejemplos anteriores, puedes crear un objeto iterador de la siguiente manera:
 
-Both code examples will output the values `0`, `1`, `2`, `3`, `4`, and `5` when iterated over.  
+Ambos ejemplos de código mostrarán los valores `0`, `1`, `2`, `3`, `4`, y `5` cuando se itere sobre ellos.  
   
-## Handling Attribute References  
+## Manejo de referencias a atributos
 
-Attribute references are used to access attributes of an object in Python. They can be accessed using the dot notation syntax and can also be accessed dynamically using the `getattr()` function.
+Las referencias a atributos se utilizan para acceder a los atributos de un objeto en Python. Se puede acceder a ellas usando la sintaxis de la notación de puntos y también se puede acceder dinámicamente usando la función `getattr()`.
 
-The `getattr()` function takes two arguments - the object whose attribute needs to be accessed and the name of the attribute as a string. If the attribute is not found, an `AttributeError` is raised.
+La función `getattr()` toma dos argumentos - el objeto cuyo atributo necesita ser accedido y el nombre del atributo como cadena. Si no se encuentra el atributo, se produce un error `AttributeError`.
 
 ```python3
 
@@ -144,13 +144,13 @@ cat_name = getattr(my_cat, "name")
 print(cat_name) ### Output
 ```
 
-In first case, we create a `Dog` class and access the `name` attribute using the dot notation syntax.
+En el primer caso, creamos una clase `Dog` y accedemos al atributo `name` utilizando la sintaxis de notación por puntos.
 
-In second case, we create a dictionary object `my_cat` and access the `name` attribute dynamically using the `getattr()` function. We store the value of the attribute in `cat_name` and print it out.  
+En el segundo caso, creamos un objeto diccionario `mi_gato` y accedemos al atributo `nombre` dinámicamente usando la función `getattr()`. Almacenamos el valor del atributo en `cat_name` y lo imprimimos.  
   
-## Representing Objects as Strings with Magic Method 
+## Representando Objetos como Cadenas con el Método Mágico
 
-In Python, we can represent objects as string using the `__repr__()`  dunder method. This method is called when we use the `repr()` function or when we print an object using `print()` function.
+En Python, podemos representar objetos como cadenas usando el método `__repr__()`. Este método es llamado cuando usamos la función `repr()` o cuando imprimimos un objeto usando la función `print()`.
 
 ```python
 class Point:
@@ -165,7 +165,7 @@ p = Point(2, 3)
 print(p)  ### Output
 ```
 
-In the above code, we have defined a `Point` class with `x` and `y` attributes. We have also defined a `__repr__()` dunder method that returns a string representation of the `Point` object. When we print the `p` object, it calls the `__repr__()` magic method to get its string representation.
+En el código anterior, hemos definido una clase `Point` con atributos `x` y `y`. También hemos definido un método `__repr__()` dunder que devuelve una representación de cadena del objeto `Point`. Cuando imprimimos el objeto `p`, éste llama al método mágico `__repr__()` para obtener su representación en cadena.
 
 ```python
 class Car:
@@ -181,13 +181,13 @@ c = Car("Toyota", "Camry", 2021)
 print(c)  ### Output
 ```
 
-In this example, we have defined a `Car` class with `make`, `model`, and `year` attributes. We have also defined a `__repr__()` method that returns a string representation of the `Car` object. When we print the `c` object, it calls the `__repr__()` dunder method to get its string representation.  
+En este ejemplo, hemos definido una clase `Car` con los atributos `make`, `model` y `year`. También hemos definido un método `__repr__()` que devuelve una representación en forma de cadena del objeto `Car`. Cuando imprimimos el objeto `c`, éste llama al método `__repr__()` para obtener su representación en cadena.  
   
-## Cleaning Up Objects with Dunder Method 
+## Limpiando Objetos con el Método Dunder
 
-In Python, objects are automatically garbage collected when they are no longer needed. However, sometimes it may be necessary to define additional cleanup actions for an object. This can be done using the `__del__` method, which is called when the object is about to be destroyed.
+En Python, los objetos son automáticamente recolectados cuando ya no son necesarios. Sin embargo, a veces puede ser necesario definir acciones de limpieza adicionales para un objeto. Esto puede hacerse usando el método `__del__`, que es llamado cuando el objeto está a punto de ser destruido.
 
-This dunder method is useful for releasing resources such as files, network connections, or other system-level objects that are not automatically managed by Python.
+Este método dunder es útil para liberar recursos como archivos, conexiones de red, u otros objetos a nivel de sistema que no son gestionados automáticamente por Python.
 
 ```python
 class MyClass:
@@ -198,15 +198,15 @@ class MyClass:
         self.file.close()
 ```
 
-In this example, the `MyClass` constructor creates a file object and stores it in the `file` instance variable. When the object is destroyed, the `__del__` method is called, which closes the file.
+En este ejemplo, el constructor `MyClass` crea un objeto fichero y lo almacena en la variable de instancia `file`. Cuando se destruye el objeto, se llama al método `__del__`, que cierra el fichero.
   
-## Performing Comparisons with Dunder Methods  
+## Realizando Comparaciones con Métodos Dunder
 
-Python provides multiple ways to compare values, variables, or expressions. Some commonly used operators for performing comparisons include `==`, `!=`, `>`, `<`, `>=`, `<=`, `in`, and `is`.
+Python proporciona múltiples formas de comparar valores, variables o expresiones. Algunos operadores comúnmente usados para realizar comparaciones incluyen `==`, `!=`, `>`, `<`, `>=`, `<=`, `in`, y `is`.
 
-### Python Compare Strings
+### Python Compara Cadenas
 
-The `__lt__()` method is used to implement the less than comparison operator in Python. It returns `True` if the first string is less than the second string and `False` otherwise. 
+El método `__lt__()` se utiliza para implementar el operador de comparación menor que en Python. Devuelve `True` si la primera cadena es menor que la segunda y `False` en caso contrario.
 
 ```python3
 string1 = "apple"
@@ -229,4 +229,4 @@ print(sorted_fruits)
 # ['orange', 'kiwi', 'apple', 'banana']
 ```
 
-In the above example, we have sorted the list of fruits in ascending order based on whether the first character of each string is less than or greater than `c`. `lambda x: x.__lt__(`c`)` returns `True` if the first character of `x` is less than `c` and `False` otherwise.  
+En el ejemplo anterior, hemos ordenado la lista de frutas en orden ascendente en función de si el primer carácter de cada cadena es menor o mayor que `c`. lambda x: x.__lt__(`c`)` devuelve `Verdadero` si el primer carácter de `x` es menor que `c` y `Falso` en caso contrario.

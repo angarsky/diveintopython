@@ -1,19 +1,19 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/methods
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/classes/methods
 
-This article explores the ins and outs of working with methods and functions in classes in Python. Specifically, we delve into the important concepts of the class constructor (or `__init__` method), abstract class methods, and the difference between class methods and static methods. So if you're looking to elevate your understanding of functions in a class, read on!  
+Este artículo explora los entresijos del trabajo con métodos y funciones en clases en Python. Específicamente, profundizamos en los conceptos importantes del constructor de clase (o método `__init__`), métodos abstractos de clase, y la diferencia entre métodos de clase y métodos estáticos. Así que si estás buscando elevar tu comprensión de las funciones en una clase, ¡sigue leyendo!  
   
-## Mastering the Python Class Constructor   
+## Dominando el Constructor de Clase de Python
 
-We can define functions in a class, known as methods. The class constructor or `__init__` method is a special method that is called when an object of the class is created. It is used to initialize the instance variables of a class.
+Podemos definir funciones en una clase, conocidas como métodos. El constructor de clase o método `__init__` es un método especial que se llama cuando se crea un objeto de la clase. Se utiliza para inicializar las variables de instancia de una clase.
 
-An abstract class method is a method that is declared but contains no implementation. It is used as a template for other methods that are defined in a subclass.
+Un método abstracto de clase es un método que se declara pero no contiene implementación. Se utiliza como plantilla para otros métodos que se definen en una subclase.
 
-A class method is a method that is bound to the class and not the instance of the class. It can be accessed using the class name.
+Un método de clase es un método vinculado a la clase y no a la instancia de la clase. Se puede acceder a él utilizando el nombre de la clase.
 
-A static method is a method that is bound to the class and not the instance of the class. It does not take any argument like self or cls.
+Un método estático es un método que está vinculado a la clase y no a la instancia de la clase. No toma ningún argumento como self o cls.
 
-### Example 1: Class Constructor
+### Ejemplo 1: Constructor de Clase
 
 ```python
 class Person:
@@ -31,9 +31,9 @@ print(p1.age)
 # 36
 ```
 
-In the above example, we defined a `Person` class with a constructor that initializes the name and age attributes of the class. We then created an object of the class `p1` and accessed its attributes using dot notation.
+En el ejemplo anterior, hemos definido una clase `Persona` con un constructor que inicializa los atributos nombre y edad de la clase. A continuación, creamos un objeto de la clase `p1` y accedemos a sus atributos utilizando la notación de puntos.
 
-### Example 2: Class Method vs Static Method
+### Ejemplo 2: Método de clase vs Método estático
 
 ```python3
 class Calculator:
@@ -52,11 +52,11 @@ print(Calculator.multiply(2,3))
 # 6
 ```
 
-In this example, we defined a `Calculator` class with two methods: `add` as a class method and `multiply` as a static method. We accessed these methods using the class name `Calculator` without creating an object of the class. We used the `@classmethod` and `@staticmethod` decorators to define these methods.  
+En este ejemplo, definimos una clase `Calculator` con dos métodos: `add` como método de clase y `multiply` como método estático. Accedimos a estos métodos utilizando el nombre de la clase `Calculator` sin crear un objeto de la clase. Utilizamos los decoradores `@classmethod` y `@staticmethod` para definir estos métodos.  
 
-## Python Abstract Class Method
+## Método de clase abstracta de Python
 
-An abstract class method is a method that is declared in an abstract base class but does not have an implementation. It is used to define a method that must be implemented by any class that inherits from the abstract class. Abstract class methods are created using the `@abstractmethod` decorator. Here is an example of an abstract class method in Python:
+Un método de clase abstracta es un método que se declara en una clase base abstracta pero que no tiene implementación. Se utiliza para definir un método que debe ser implementado por cualquier clase que herede de la clase abstracta. Los métodos de clase abstracta se crean utilizando el decorador `@abstractmethod`. Este es un ejemplo de un método de clase abstracta en Python:
 
 ```python3
 from abc import ABC, abstractmethod
@@ -80,10 +80,10 @@ class Square(Shape):
 my_square = Square(5)
 print(my_square.area()) # Output: 25
 ```
-  
-## Method Overloading  
 
-Method overloading is a feature in Python that allows a class to have multiple methods with the same name but with different parameters. This feature helps to provide flexibility and reusability to the code design. It is different from method overriding that allows a subclass to provide its implementation of a method defined in its superclass.
+## Sobrecarga de métodos
+
+La sobrecarga de métodos es una característica de Python que permite a una clase tener múltiples métodos con el mismo nombre pero con diferentes parámetros. Esta característica ayuda a proporcionar flexibilidad y reutilización al diseño del código. Es diferente de la sobrecarga de métodos que permite a una subclase proporcionar su implementación de un método definido en su superclase.
 
 ```python
 class Example:
@@ -107,21 +107,21 @@ class Example:
             print("Method with three parameters:", a, b, c)
 ```
 
-In the first example, we define a class with two methods with the same name but with different parameters. Python does not support method overloading directly, so the last method definition overwrites the previous one. Thus, when we create an object of the class and call the `method`, we will get the output of the last method definition.
+En el primer ejemplo, definimos una clase con dos métodos con el mismo nombre pero con parámetros diferentes. Python no soporta la sobrecarga de métodos directamente, por lo que la última definición de método sobrescribe a la anterior. Así, cuando creamos un objeto de la clase y llamamos al `method`, obtendremos la salida de la última definición de método.
 
-In the second example, we define a class with a single `method` that takes multiple optional parameters. We can use conditional statements to check the number of parameters passed and `print` the output accordingly. This approach provides reusability to the code as we can call the same `method` with different parameters.  
+En el segundo ejemplo, definimos una clase con un único `método` que toma múltiples parámetros opcionales. Podemos utilizar sentencias condicionales para comprobar el número de parámetros pasados e `imprimir` la salida en consecuencia. Este enfoque proporciona reutilización al código ya que podemos llamar al mismo `método` con diferentes parámetros.  
   
-## Public, Private and Protected Methods in Python
+## Métodos Públicos, Privados y Protegidos en Python
 
-In Python, we can differentiate between public, private, and protected methods based on their access level. 
+En Python, podemos diferenciar entre métodos públicos, privados y protegidos basándonos en su nivel de acceso.
 
-- **Public methods** are those that can be accessed from anywhere within or outside the class.
-- **Private methods** in a Python's class are those that can only be accessed from inside the class.
-- **Protected methods** are those that can only be accessed from inside the class and its subclasses.
+- **Métodos públicos** son aquellos a los que se puede acceder desde cualquier lugar dentro o fuera de la clase.
+- **Métodos privados** en una clase de Python son aquellos a los que sólo se puede acceder desde dentro de la clase.
+- **Métodos protegidos** son aquellos a los que sólo se puede acceder desde dentro de la clase y sus subclases.
 
-### Public Methods
+### Métodos Públicos
 
-Public methods are accessible from anywhere within or outside the class. They play a significant role in interacting with the class's attributes and functionality. When developers create a method without any underscore prefix, it automatically becomes a public method.
+Los métodos públicos son accesibles desde cualquier lugar dentro o fuera de la clase. Desempeñan un papel importante en la interacción con los atributos y la funcionalidad de la clase. Cuando los desarrolladores crean un método sin ningún prefijo de guión bajo, se convierte automáticamente en un método público.
 
 ```python3
 class MyClass:
@@ -132,11 +132,11 @@ obj = MyClass()
 obj.public_method()  # Accessing the public method
 ```
 
-As shown in the example, the `public_method()` is accessible outside the class `MyClass`. These methods allow external code to interact with the class's functionalities directly.
+Como se muestra en el ejemplo, el `public_method()` es accesible fuera de la clase `MyClass`. Estos métodos permiten al código externo interactuar directamente con las funcionalidades de la clase.
 
-### Python Private Methods
+### Métodos Privados de Python
 
-Private methods in Python are designed to be accessed only from within the class in which they are defined. They are indicated by prefixing the method name with double underscores `__`.
+Los métodos privados en Python están diseñados para ser accedidos sólo desde dentro de la clase en la que están definidos. Se indican anteponiendo al nombre del método un doble guión bajo `__`.
 
 ```python3
 class MyClass:
@@ -147,11 +147,11 @@ obj = MyClass()
 obj.__private_method()  # Attempting to access the private method (Raises an error)
 ```
 
-Trying to access a private method from outside the class results in an AttributeError. Python name mangling makes the method name prefixed with double underscores harder to access directly from external code. These methods are used for internal class operations, enhancing encapsulation and preventing accidental misuse or overriding.
+Al intentar acceder a un método privado desde fuera de la clase se produce un AttributeError. La manipulación de nombres en Python hace que el nombre del método prefijado con doble guión bajo sea más difícil de acceder directamente desde código externo. Estos métodos se utilizan para operaciones internas de la clase, mejorando la encapsulación y previniendo el mal uso accidental o la sobreescritura.
 
-### Protected Methods
+### Métodos Protegidos
 
-Protected methods are indicated by prefixing the method name with a single underscore `_`. They can be accessed from within the class itself and its subclasses.
+Los métodos protegidos se indican anteponiendo al nombre del método un guión bajo `_`. Se puede acceder a ellos desde la propia clase y sus subclases.
 
 ```python3
 class MyClass:
@@ -166,15 +166,15 @@ obj = SubClass()
 obj.access_protected()  # Accessing the protected method from the subclass
 ```
 
-Protected methods provide a way to allow subclasses to access certain methods while still preventing direct access from external code. However, unlike some other languages, Python doesn't enforce strict visibility restrictions.
+Los métodos protegidos proporcionan una forma de permitir a las subclases acceder a ciertos métodos mientras se evita el acceso directo desde código externo. Sin embargo, a diferencia de otros lenguajes, Python no impone restricciones estrictas de visibilidad.
 
-## Python Getter and Setter Methods  
+## Métodos Getter y Setter de Python
 
-Python offers getter and setter convenience methods to control access to the private instance variables for classes. The getter and setter methods are important because without them, the private instance variables would not be accessible outside of the class.
+Python ofrece métodos getter y setter para controlar el acceso a las variables de instancia privadas de las clases. Los métodos getter y setter son importantes porque sin ellos, las variables de instancia privadas no serían accesibles fuera de la clase.
 
-Getter method allows to access the value of a private instance variable from outside a class, and the setter method allows to set the value of a private instance variable from outside a class.
+El método getter permite acceder al valor de una variable de instancia privada desde fuera de una clase, y el método setter permite establecer el valor de una variable de instancia privada desde fuera de una clase.
 
-Here's a simple example class with getter and setter methods:
+He aquí una simple clase de ejemplo con métodos getter y setter:
 
 ```python3
 class MyClass:
@@ -192,7 +192,7 @@ obj.set_value(10)
 print(obj.get_value())
 ```
 
-Now, you can use these methods to access and set the value of `value` attribute of `MyClass`.
+Ahora, puedes utilizar estos métodos para acceder y establecer el valor del atributo `value` de `MyClass`.
 
 ```python3
 class MyClass:
@@ -212,17 +212,17 @@ obj.value = 10
 print(obj.value) 
 ```
 
-Now, you can use the property `value` of `MyClass` to get and set the value of `value` attribute:
+Ahora, puedes utilizar la propiedad `value` de `MyClass` para obtener y establecer el valor del atributo `value`:
 
-In conclusion, getter and setter methods provide a controlled way to access and set the values of private instance variables in Python classes.  
+En conclusión, los métodos getter y setter proporcionan una forma controlada de acceder y establecer los valores de las variables de instancia privadas en las clases Python.  
   
-## Method vs Function  
+## Método vs Función
 
-In Python, both methods and functions are used to perform a specific task. However, they have some distinct differences.
+En Python, tanto los métodos como las funciones se utilizan para realizar una tarea específica. Sin embargo, tienen algunas diferencias.
 
-### Functions
+### Funciones
 
-Functions are defined outside the class and can be called anywhere in the code using its name. They take input parameters and `return` a value. Here's an example of a function that takes two numbers as input and returns their sum:
+Las funciones se definen fuera de la clase y pueden ser llamadas en cualquier parte del código usando su nombre. Toman parámetros de entrada y `devuelven` un valor. Aquí hay un ejemplo de una función que toma dos números como entrada y devuelve su suma:
 
 ```python3
 def add_numbers(x, y):
@@ -232,13 +232,13 @@ result = add_numbers(3, 5)
 print(result)  # Output: 8
 ```
 
-To use this function, we can call it and provide the input parameters:
+Para utilizar esta función, podemos llamarla y proporcionar los parámetros de entrada:
 
-### Methods
+### Métodos
 
-Methods, on the other hand, are defined inside classes and are called on instances of that class. They have access to the instance attributes and can modify its state.
+Los métodos, por otro lado, se definen dentro de las clases y son llamados en instancias de esa clase. Tienen acceso a los atributos de la instancia y pueden modificar su estado.
 
-Here's an example of a method that takes one input parameter and modifies the state of the instance:
+Aquí hay un ejemplo de un método que toma un parámetro de entrada y modifica el estado de la instancia:
 
 ```python3
 class Car:
@@ -255,13 +255,13 @@ my_car.accelerate(20)
 print(my_car.speed)  # Output: 20
 ```
 
-In this example, the `accelerate()` method is defined inside the `Car` class and is called on an instance of the `Car` class. It accelerates the speed of the car by adding the input parameter to the `speed` attribute of the instance.
+En este ejemplo, el método `accelerate()` se define dentro de la clase `Car` y se llama a una instancia de la clase `Car`. Acelera la velocidad del coche añadiendo el parámetro de entrada al atributo `speed` de la instancia.
 
-In summary, functions are standalone blocks of code that take input parameters and return a value, while methods are defined inside classes and are called on instances of that class, with access to the instance attributes and the ability to modify its state.  
+En resumen, las funciones son bloques de código independientes que toman parámetros de entrada y devuelven un valor, mientras que los métodos se definen dentro de las clases y se invocan sobre instancias de esa clase, con acceso a los atributos de la instancia y la posibilidad de modificar su estado.  
   
-## Override Class Method
+## Anular Método de Clase
 
-Method overriding is a feature in object-oriented programming that allows a subclass to provide a different implementation of a method that is already defined in its superclass. In Python, method overriding is straightforward and is achieved by defining a method in the subclass with the same name as the method in the superclass.
+La sobreescritura de métodos es una característica de la programación orientada a objetos que permite a una subclase proporcionar una implementación diferente de un método que ya está definido en su superclase. En Python, la sobreescritura de métodos es sencilla y se consigue definiendo un método en la subclase con el mismo nombre que el método en la superclase.
 
 ```python3
 class Parent:
@@ -277,7 +277,7 @@ obj.my_method() ### prints Child method called
 
 ```
 
-In this example, the `Child` class extends the `Parent` class and overrides the `my_method()` method. When we create an object of the `Child` class and call `my_method()`, it will print `Child method called` instead of `Parent method called`.
+En este ejemplo, la clase `Child` extiende la clase `Parent` y sobrescribe el método `my_method()`. Cuando creamos un objeto de la clase `Child` y llamamos a `my_method()`, se imprimirá `Child method called` en lugar de `Parent method called`.
 
 ```python3
 class Animal:
@@ -294,6 +294,6 @@ obj.move() ### prints "Animal is moving" and "Bird is flying
 
 ```
 
-In this example, the `Bird` class extends the `Animal` class and override class method `move()`. However, it also calls the superclass's implementation of `move()` first using the `super()` function, and then adds its own implementation of `Bird is flying`. The output will be `Animal is moving` and `Bird is flying`. 
+En este ejemplo, la clase `Bird` extiende la clase `Animal` y anula el método de la clase `move()`. Sin embargo, también llama a la implementación de la superclase de `move()` primero usando la función `super()`, y luego añade su propia implementación de `Bird is flying`. La salida será `Animal se mueve` y `Pájaro vuela`.
 
-Using method overriding in Python allows for more flexibility and customization in the behavior of your classes.  
+Usar la sobreescritura de métodos en Python permite una mayor flexibilidad y personalización en el comportamiento de tus clases.
