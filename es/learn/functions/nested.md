@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/nested
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/functions/nested
 
-Nested functions are a **powerful tool** available in Python programming that allows one to define functions inside other functions. Such a concept of nesting one function inside another can create more organized and manageable code. With the help of nested functions, the code becomes easier to read and is also more efficient. In this article, we will take a closer look at what are nested functions and why they are used in Python.  
-  
-## Understanding Python's Nested Functions  
+Las funciones anidadas son una **herramienta poderosa** disponible en la programación de Python que permite definir funciones dentro de otras funciones. Tal concepto de anidar una función dentro de otra puede crear un código más organizado y manejable. Con la ayuda de funciones anidadas, el código se vuelve más fácil de leer y también es más eficiente. En este artículo, vamos a examinar más de cerca qué son las funciones anidadas y por qué se utilizan en Python.
 
-Nested functions in Python refer to creating functions inside another function. In other words, a function can be defined inside another function, and it can access the variables declared in its outer function.
+## Entendiendo las Funciones Anidadas de Python
 
-Nested functions are useful in situations where we need to define a helper function that is only needed within the scope of the outer function. Nested functions improve readability and help modularize code.
+Las funciones anidadas en Python se refieren a la creación de funciones dentro de otra función. En otras palabras, una función puede ser definida dentro de otra función, y puede acceder a las variables declaradas en su función exterior.
 
-### Two Examples of Nested Functions in Python
+Las funciones anidadas son útiles en situaciones en las que necesitamos definir una función auxiliar que solo es necesaria dentro del alcance de la función exterior. Las funciones anidadas mejoran la legibilidad y ayudan a modularizar el código.
+
+### Dos Ejemplos de Funciones Anidadas en Python
 
 ```python3
 def outer_function(x):
@@ -21,9 +21,9 @@ add_five = outer_function(5)
 print(add_five(3)) # Output: 8
 ```
 
-In this example, we define two functions: the `outer_function` and the `inner_function`. The `outer_function` takes one argument `x` and returns the `inner_function`. The `inner_function`, in turn, takes one argument `y` and returns the sum of `x` and `y`. 
+En este ejemplo, definimos dos funciones: la `outer_function` y la `inner_function`. La `outer_function` toma un argumento `x` y devuelve la `inner_function`. La `inner_function`, a su vez, toma un argumento `y` y devuelve la suma de `x` y `y`.
 
-We assign the output of `outer_function(5)` to the variable `add_five`, which becomes a function that adds `5` to its argument. When we call `add_five(3)`, we get `8` as the result.
+Asignamos la salida de `outer_function(5)` a la variable `add_five`, que se convierte en una función que suma `5` a su argumento. Cuando llamamos a `add_five(3)`, obtenemos `8` como resultado.
 
 ```python3
 def outer_function():
@@ -36,17 +36,17 @@ def outer_function():
 print(outer_function()) # Output: 3
 ```
 
-In this example, we define an `outer_function` that initializes a variable `x` to 1 and returns the output of the `inner_function`. The `inner_function` initializes a variable `y` to `2` and returns the sum of `x` and `y`.
+En este ejemplo, definimos una `outer_function` que inicializa una variable `x` en 1 y retorna el resultado de la `inner_function`. La `inner_function` inicializa una variable `y` en `2` y retorna la suma de `x` y `y`.
 
-When we call `outer_function()`, we get `3` as the result, which is the sum of `x` and `y`. The `inner_function` is called within the scope of the `outer_function`, and it has access to the variable `x` declared in the `outer_function`.  
-  
-## Advantages of Using Nested Functions in Python  
+Cuando llamamos a `outer_function()`, obtenemos `3` como resultado, que es la suma de `x` y `y`. La `inner_function` es llamada dentro del alcance de la `outer_function`, y tiene acceso a la variable `x` declarada en la `outer_function`.
 
-Nested functions within Python code offer a range of benefits, empowering developers to create a more robust and adaptable programming structure, enhance code readability, and craft modular code that is simpler to maintain.
+## Ventajas de Usar Funciones Anidadas en Python
 
-### Encapsulation and Modularity
+Las funciones anidadas dentro del código de Python ofrecen una gama de beneficios, capacitando a los desarrolladores para crear una estructura de programación más robusta y adaptable, mejorar la legibilidad del código y elaborar código modular que es más simple de mantener.
 
-A primary advantage of nested functions lies in their capacity to define helper functions within a specific function's scope. By doing so, it prevents cluttering the global namespace and promotes code organization. Consider the following example:
+### Encapsulación y Modularidad
+
+Una ventaja principal de las funciones anidadas radica en su capacidad para definir funciones auxiliares dentro del alcance de una función específica. Al hacerlo, evita saturar el espacio de nombres global y promueve la organización del código. Considere el siguiente ejemplo:
 
 ```python
 def double_odd_numbers(numbers):
@@ -59,11 +59,11 @@ def double_odd_numbers(numbers):
     return [double(num) for num in numbers if is_odd(num)]
 ```
 
-In this instance, `double_odd_numbers` encompasses `is_odd` and `double` functions, streamlining comprehension as these functions are solely utilized within the main function's context.
+En esta instancia, `double_odd_numbers` engloba las funciones `is_odd` y `double`, simplificando la comprensión ya que estas funciones son utilizadas únicamente dentro del contexto de la función principal.
 
-### Closure Creation
+### Creación de Cierres
 
-Another notable advantage of nested functions is their ability to generate closures. This enables nested functions to access and manipulate variables from their enclosing function. For instance:
+Otra ventaja notable de las funciones anidadas es su capacidad para generar cierres. Esto permite que las funciones anidadas accedan y manipulen variables de su función envolvente. Por ejemplo:
 
 ```python3
 def power_function(base):
@@ -82,23 +82,23 @@ print(square(3))  # Output: 8
 print(cube(2))    # Output: 9
 ```
 
-In this scenario, `power_function` produces a new function, `exponent_power`, capable of computing the power of a base raised to a given exponent. Utilizing this nested structure, functions like `square` and `cube` acquire access to the base variable from the enclosing function, simplifying the creation of new functions with different base values.
+En este escenario, `power_function` produce una nueva función, `exponent_power`, capaz de calcular la potencia de una base elevada a un exponente dado. Utilizando esta estructura anidada, funciones como `square` y `cube` adquieren acceso a la variable base de la función envolvente, simplificando la creación de nuevas funciones con diferentes valores base.
 
-By leveraging nested functions, Python developers can enhance code modularity, readability, and exploit powerful closure functionalities to create more versatile and efficient code structures.  
-  
-## Creating Nested Functions in Python
+Al aprovechar las funciones anidadas, los desarrolladores de Python pueden mejorar la modularidad del código, la legibilidad y explotar poderosas funcionalidades de cierre para crear estructuras de código más versátiles y eficientes.
 
-Nested functions in Python refer to the process of creating a function inside another function. This process allows for better organization and readability of code. To create a nested function in Python, follow these steps:
+## Creando Funciones Anidadas en Python
 
-1. **Create** the outer function.
-2. **Define** the inner function within the outer function.
-3. **Call** the inner function within the outer function or return it.
+Las funciones anidadas en Python se refieren al proceso de crear una función dentro de otra función. Este proceso permite una mejor organización y legibilidad del código. Para crear una función anidada en Python, sigue estos pasos:
 
-In conclusion, creating nested functions in Python is a useful technique for organizing and streamlining code. It allows for better readability and can streamline complex processes.  
-  
-## Examples of Python Nested Functions in Real-World Applications  
+1. **Crear** la función externa.
+2. **Definir** la función interna dentro de la función externa.
+3. **Llamar** a la función interna dentro de la función externa o devolverla.
 
-Nested functions are functions **inside other functions**. These functions are particularly useful in programming. They can be used in real-world applications in Python. For instance, a nested function could define a function that calls another function. Or, a nested function could define a function that uses a previously defined function. In addition, a nested function could provide a local scope.
+En conclusión, crear funciones anidadas en Python es una técnica útil para organizar y simplificar el código. Permite una mejor legibilidad y puede agilizar procesos complejos.
+
+## Ejemplos de Funciones Anidadas de Python en Aplicaciones del Mundo Real
+
+Las funciones anidadas son funciones **dentro de otras funciones**. Estas funciones son particularmente útiles en la programación. Se pueden utilizar en aplicaciones del mundo real en Python. Por ejemplo, una función anidada podría definir una función que llama a otra función. O, una función anidada podría definir una función que utiliza una función previamente definida. Además, una función anidada podría proporcionar un ámbito local.
 
 ```python3
 def parent_function(x):
@@ -109,7 +109,7 @@ def parent_function(x):
 print(parent_function(5))
 ```
 
-In this example, `child_function` is a nested function. It is defined inside `parent_function`. `parent_function` takes in a parameter `x`. Then it uses `child_function` to double `x`. Finally, it returns the sum of `x` and `child_function(x)`. When we run `parent_function(5)`, we get 15 as the result.
+En este ejemplo, `child_function` es una función anidada. Está definida dentro de `parent_function`. `parent_function` toma un parámetro `x`. Luego usa `child_function` para duplicar `x`. Finalmente, devuelve la suma de `x` y `child_function(x)`. Cuando ejecutamos `parent_function(5)`, obtenemos 15 como resultado.
 
 ```python3
 def adder(a):
@@ -123,7 +123,7 @@ print(x(5))
 print(y(5))
 ```
 
-In this example, `inner` is a nested function. It is defined inside `adder`. `adder` takes in a parameter a. `adder` returns `inner`. `inner` takes in a parameter `x`. It returns the sum of `x` and `a`. When we call `adder(3)`, we get `inner`. We store the `inner` as `x`. The same is true for `adder(5)` which we store as `y`. When we call `x(5)`, we get 8 as the result. When we call `y(5)`, we get 10 as the result.
+En este ejemplo, `inner` es una función anidada. Se define dentro de `adder`. `adder` toma un parámetro a. `adder` devuelve `inner`. `inner` toma un parámetro `x`. Devuelve la suma de `x` y `a`. Cuando llamamos a `adder(3)`, obtenemos `inner`. Almacenamos `inner` como `x`. Lo mismo ocurre con `adder(5)` que almacenamos como `y`. Cuando llamamos a `x(5)`, obtenemos 8 como resultado. Cuando llamamos a `y(5)`, obtenemos 10 como resultado.
 
 ```python
 def exponential(x):
@@ -134,13 +134,13 @@ def exponential(x):
 print(exponential(2))
 ```
 
-In this example, `square` is a nested function. It is defined inside `exponential`. `exponential` takes in a parameter `x`. `exponential` returns the square of `x` raised to the fourth power. `square` takes in a parameter `y`. It returns the square of `y`. When we run `exponential(2)`, we get 16 as the result.  
-  
-## Best Practices for Using Nested Functions in Python  
+En este ejemplo, `square` es una función anidada. Está definida dentro de `exponential`. `exponential` recibe un parámetro `x`. `exponential` devuelve el cuadrado de `x` elevado a la cuarta potencia. `square` toma un parámetro `y`. Devuelve el cuadrado de `y`. Cuando ejecutamos `exponential(2)`, obtenemos 16 como resultado.
 
-Nested functions refer to defining a function within another function in Python. This can be useful for code organization and encapsulation. Best practices for using nested functions include avoiding excessive nesting, ensuring each function has a clear and specific purpose, and using appropriate variable scopes.
+## Mejores prácticas para usar funciones anidadas en Python
 
-To use nested functions in Python, define the outer function and then define the inner function within it. The inner function has access to the variables within the outer function, but not vice versa. Here are two examples:
+Las funciones anidadas se refieren a definir una función dentro de otra función en Python. Esto puede ser útil para la organización y encapsulación del código. Las mejores prácticas para usar funciones anidadas incluyen evitar una anidación excesiva, asegurar que cada función tenga un propósito claro y específico, y usar los ámbitos de las variables adecuadamente.
+
+Para usar funciones anidadas en Python, define la función exterior y luego define la función interior dentro de ella. La función interior tiene acceso a las variables dentro de la función exterior, pero no viceversa. Aquí hay dos ejemplos:
 
 ```python3
 # Example 1: Power function using nested functions
@@ -172,15 +172,15 @@ for j, f in enumerate(functions_list):
     print(f(j))  # Output: 4 5 6 7 8
 ```
 
-In the first example, a power function is created using nested functions. The outer function takes a number and returns the inner function, which calculates the power of that number. The inner function is defined within the scope of the outer function, allowing it to access the `num` parameter and calculate the power.
+En el primer ejemplo, se crea una función de potencia utilizando funciones anidadas. La función externa toma un número y devuelve la función interna, que calcula la potencia de ese número. La función interna se define dentro del alcance de la función externa, permitiéndole acceder al parámetro `num` y calcular la potencia.
 
-In the second example, a list of functions is generated using a loop and nested functions. The inner function is defined within the loop, giving it access to the loop variable `i`. The resulting list of functions can then be used to perform calculations using different values of `i`.  
-  
-## Differences Between Nested Functions and Anonymous Functions in Python  
+En el segundo ejemplo, se genera una lista de funciones utilizando un bucle y funciones anidadas. La función interna se define dentro del bucle, dándole acceso a la variable de bucle `i`. La lista resultante de funciones puede entonces ser utilizada para realizar cálculos usando diferentes valores de `i`.
 
-Nested functions are functions that are defined inside another function. These functions are only accessible from within the outer containing function. On the other hand, anonymous functions are functions without names that are defined using the lambda keyword. These functions can be defined anywhere in the program and can be passed as arguments to other functions.
+## Diferencias Entre Funciones Anidadas y Funciones Anónimas en Python  
 
-### Nested Function
+Las funciones anidadas son funciones que se definen dentro de otra función. Estas funciones solo son accesibles desde dentro de la función contenedora externa. Por otro lado, las funciones anónimas son funciones sin nombre que se definen utilizando la palabra clave lambda. Estas funciones pueden definirse en cualquier lugar del programa y pueden pasarse como argumentos a otras funciones.
+
+### Función Anidada
 
 ```python3
 def outer_func(x):
@@ -192,9 +192,9 @@ result = outer_func(5)
 print(result(7))  # Output: 35
 ```
 
-In this example, the function `inner_func` is defined inside `outer_func`, making it a nested function. We then return `inner_func` as the result of calling `outer_func`. The variable `result` is assigned to the inner function with `x` set to `5`. We then call `result` with `y` equal to `7` to get the output of `35`.
+En este ejemplo, la función `inner_func` se define dentro de `outer_func`, convirtiéndola en una función anidada. Luego devolvemos `inner_func` como resultado de llamar a `outer_func`. La variable `result` se asigna a la función interna con `x` establecido en `5`. Luego llamamos a `result` con `y` igual a `7` para obtener la salida de `35`.
 
-### Anonymous Function
+### Función Anónima
 
 ```python
 list_nums = [1, 2, 3, 4, 5]
@@ -202,15 +202,15 @@ new_list = list(map(lambda x: x*2, list_nums))
 print(new_list)  # Output: [2, 4, 6, 8, 10]
 ```
 
-In this example, we use an anonymous function defined by the `lambda` keyword and passed it as an argument to the `map` function. This function multiplies each element of `list_nums` by `2` and returns a new list with the mapped results stored in `new_list`.  
-  
-## Common Errors to Avoid When Using Nested Functions in Python Programming  
+En este ejemplo, utilizamos una función anónima definida por la palabra clave `lambda` y la pasamos como un argumento a la función `map`. Esta función multiplica cada elemento de `list_nums` por `2` y retorna una nueva lista con los resultados mapeados almacenados en `new_list`.
 
-To avoid common errors when using nested functions in Python programming, it is important to ensure that function names and variables are **not repeated** within a nested function and its parent function, as this may cause confusion and errors.
+## Errores Comunes a Evitar al Usar Funciones Anidadas en la Programación de Python
 
-Other common errors to avoid include improperly calling a function within another function, and using loops incorrectly within nested functions. Additionally, care must be taken when using functional programming techniques and power functions in nested functions.
+Para evitar errores comunes al usar funciones anidadas en la programación de Python, es importante asegurarse de que los nombres de las funciones y las variables **no se repitan** dentro de una función anidada y su función principal, ya que esto puede causar confusión y errores.
 
-For example, the following code illustrates a common error when a variable is defined in both a parent and nested function:
+Otros errores comunes a evitar incluyen llamar incorrectamente a una función dentro de otra función, y usar bucles de manera incorrecta dentro de funciones anidadas. Además, se debe tener cuidado al usar técnicas de programación funcional y funciones de potencia en funciones anidadas.
+
+Por ejemplo, el siguiente código ilustra un error común cuando una variable se define tanto en una función principal como en una función anidada:
 
 ```python
 def parent_func():
