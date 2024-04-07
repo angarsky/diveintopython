@@ -1,16 +1,16 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/print
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/print
 
-Printing refers to the process of displaying the output of a program on the console or terminal. It is an essential operation that allows you to communicate with the user or to debug your code by showing the values of variables, the results of calculations, or other information.
-There is also such a thing as formatting, which is often used in printing. String formatting (also known as interpolation) is the process of inserting variables or values into a string.
+Imprimir se refiere al proceso de mostrar la salida de un programa en la consola o terminal. Es una operación esencial que te permite comunicarte con el usuario o depurar tu código al mostrar los valores de las variables, los resultados de cálculos u otra información.
+También existe algo llamado formateo, que a menudo se utiliza al imprimir. El formateo de cadenas (también conocido como interpolación) es el proceso de insertar variables o valores en una cadena.
 
-## Printing
+## Impresión
 
-To print variable in Python, you can use the `print()` function.
+Para imprimir una variable en Python, puedes usar la función `print()`.
 
-The `print()` function takes one or more arguments separated by commas and displays them on the console or terminal.
+La función `print()` toma uno o más argumentos separados por comas y los muestra en la consola o terminal.
 
-Let's look at examples of how to print a variable and string in Python:
+Veamos ejemplos de cómo imprimir una variable y una cadena en Python:
 
 ```python
 # Print a string
@@ -23,20 +23,20 @@ print(43)
 print(3.14)
 ```
 
-Python also allows printing multiple variables:
+Python también permite imprimir múltiples variables:
 
 ```python
 # Print multiple items
 print("The answer is:", 42)
 ```
 
-You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
+También puedes usar diversas opciones con la función `print()`, como especificar el separador entre elementos, terminar la salida con un carácter de nueva línea y redirigir la salida a un archivo u otro flujo.
 
-## Formatting
+## Formateo
 
-There are several ways to format strings in Python, let's go through this one by one with examples.
+Hay varias maneras de formatear cadenas en Python, vamos a verlas una por una con ejemplos.
 
-- Using f-strings: This method involves using placeholders in a string, which are then replaced by values inside curly braces `{}` preceded by the letter `f`. For example:
+- Usando f-strings: Este método implica el uso de marcadores de posición en una cadena, que luego son reemplazados por valores dentro de llaves `{}` precedidas por la letra `f`. Por ejemplo:
 
 ```python
 # Print using formatted strings
@@ -45,11 +45,11 @@ age = 32
 print(f"My name is {name} and I am {age} years old.")
 ```
 
-`f-strings` (or formatted string literals) are a feature introduced in Python 3.6 that provide a convenient way to embed expressions inside string literals, using a syntax that starts with the letter 'f'.
+Las `f-strings` (o literales de cadena formateados) son una característica introducida en Python 3.6 que proporciona una forma conveniente de incrustar expresiones dentro de literales de cadena, utilizando una sintaxis que comienza con la letra 'f'.
 
-With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces `{}`. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
+Con las `f-strings`, puedes incrustar expresiones dentro de literales de cadena al encerrarlas en llaves `{}`. Las expresiones dentro de las llaves se evalúan en tiempo de ejecución, y sus valores se insertan en la cadena. Así que esto ayuda a imprimir para ayudar a múltiples variables en una cadena.
 
-- Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+- Utilizando el método `format()` y llaves: Puedes usar `{}` dentro de una cadena para indicar dónde deseas insertar los valores de las variables, y luego usar el método `format()` para sustituir los valores reales. Aquí hay un ejemplo:
 
 ```python3
 name = "John"
@@ -59,11 +59,11 @@ location = "New York"
 print("My name is {}, I'm {} years old, and I live in {}.".format(name, age, location))
 ```
 
-This code will output: `My name is John, I'm 30 years old, and I live in New York.`
+Este código mostrará: `My name is John, I'm 30 years old, and I live in New York.`
 
-In this example, the string `"My name is {}, I'm {} years old, and I live in {}."` contains three curly brackets `{}` to indicate where the variable values should be inserted. The `format()` method is called on the string, and the variables `name`, `age`, and `location` are passed as arguments to the method.
+En este ejemplo, la cadena `"My name is {}, I'm {} years old, and I live in {}."` contiene tres llaves `{}` para indicar dónde se deben insertar los valores de las variables. El método `format()` es llamado en la cadena, y las variables `name`, `age` y `location` son pasadas como argumentos al método.
 
-- Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
+- Usando el operador `%`: Este método implica usar marcadores de posición en una cadena, que luego son reemplazados por valores usando el operador `%`. Por ejemplo:
 
 ```python3
 name = "John"
@@ -71,13 +71,13 @@ age = 25
 print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
 ```
 
-Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
+Aquí, `%s` es un marcador de posición para una cadena, y `%d` es un marcador de posición para un entero.
 
-## String Template
+## Plantilla de Cadena
 
-String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
+Las plantillas de cadena proporcionan una forma de crear cadenas que incluyen marcadores de posición para valores que se completarán más tarde. Esto puede ser útil cuando quieres generar cadenas dinámicas basadas en alguna entrada.
 
-To use string templates in Python, you can use the `string.Template` class. Here's an example:
+Para usar plantillas de cadena en Python, puedes usar la clase `string.Template`. Aquí hay un ejemplo:
 
 ```python3
 from string import Template
@@ -97,6 +97,6 @@ result = template.substitute(name=name, age=age)
 print(result)  # Output: My name is Alice and I am 30 years old.
 ```
 
-In the above example, we first create a string template with placeholders for the name and age using the `${}` syntax. We then create a `Template` object from the template string and use the `substitute` method to replace the placeholders with actual values. Finally, we print the resulting string.
+En el ejemplo anterior, primero creamos una plantilla de cadena con espacios reservados para el nombre y la edad usando la sintaxis `${}`. Luego, creamos un objeto `Template` a partir de la cadena de plantilla y usamos el método `substitute` para reemplazar los espacios reservados con valores reales. Finalmente, imprimimos la cadena resultante.
 
-Note that you need to pass the values for the placeholders as keyword arguments to the `substitute` method.
+Ten en cuenta que necesitas pasar los valores para los espacios reservados como argumentos de palabras clave al método `substitute`.

@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/statements
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/statements
 
-In Python, statements are instructions or commands that you write to perform specific actions or tasks. They are the building blocks of a Python program. 
-  
-## What is a Statement in Python?  
+En Python, las declaraciones son instrucciones o comandos que escribes para realizar acciones o tareas específicas. Son los bloques de construcción de un programa de Python.
 
-A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a line of code that performs a specific action. It is the smallest unit of code that can be executed by the Python interpreter. 
+## ¿Qué es una Declaración en Python?
 
-### Assignment Statement
+Una [declaración](https://en.wikipedia.org/wiki/Statement_(computer_science)) es una línea de código que realiza una acción específica. Es la unidad más pequeña de código que puede ser ejecutada por el intérprete de Python.
+
+### Declaración de Asignación
 
 ```python
 x = 10
 ```
 
-In this example, the value `10` is assigned to the variable `x` using the assignment statement. 
+En este ejemplo, el valor `10` se asigna a la variable `x` utilizando la declaración de asignación.
 
-### Conditional Statement
+### Declaración Condicional
 
 ```python3
 x = 3
@@ -25,33 +25,33 @@ else:
     print("x is greater than or equal to 5")
 ```
 
-In this example, the if-else statement is used to check the value of `x` and `print` a corresponding message. 
+En este ejemplo, la declaración if-else se utiliza para verificar el valor de `x` e `imprimir` un mensaje correspondiente.
 
-By using statements, programmers can instruct the computer to perform a variety of tasks, from simple arithmetic operations to complex decision-making processes. Proper use of statements is crucial to writing efficient and effective Python code.  
+Al usar declaraciones, los programadores pueden instruir al ordenador para que realice una variedad de tareas, desde operaciones aritméticas simples hasta complejos procesos de toma de decisiones. El uso adecuado de declaraciones es crucial para escribir código Python eficiente y efectivo.
 
-## Statement Set  
+## Conjunto de Declaraciones
 
-Here's a table summarizing various types of statements in Python:
+Aquí hay una tabla que resume varios tipos de declaraciones en Python:
 
-| Statement                | Description                                                       |
-|--------------------------|-------------------------------------------------------------------|
-| Multi-Line Statements    | Statements spanning multiple lines using line continuation or braces.|
-| Compound Statements      | Statements that contain other statements (e.g., [if](/learn/statements/if.md), while, for).   |
-| Simple Statements        | Basic standalone statements that perform a single action.          |
-| Expression Statements    | Statements that evaluate and produce a value.                      |
-| `pass` Statement           | A placeholder statement that does nothing.                        |
-| `del` Statement            | Used to delete references to objects.                              |
-| `return` Statement         | Terminates a function and returns a value (optional).              |
-| `import` Statement         | Imports modules or specific objects from modules.                  |
-| `continue` and `break` Statements | Control flow statements used in loops (`continue` skips to the next iteration, `break` exits the loop). |
+| Declaración                | Descripción                                                       |
+|----------------------------|-------------------------------------------------------------------|
+| Declaraciones Multilínea   | Declaraciones que abarcan varias líneas usando continuación de línea o llaves.|
+| Declaraciones Compuestas   | Declaraciones que contienen otras declaraciones (por ejemplo, [if](/es/learn/statements/if.md), while, for).   |
+| Declaraciones Simples      | Declaraciones básicas independientes que realizan una sola acción.          |
+| Declaraciones de Expresión | Declaraciones que evalúan y producen un valor.                      |
+| Declaración `pass`           | Una declaración de marcador de posición que no hace nada.                        |
+| Declaración `del`            | Se usa para eliminar referencias a objetos.                              |
+| Declaración `return`         | Termina una función y devuelve un valor (opcional).              |
+| Declaración `import`         | Importa módulos o objetos específicos de módulos.                  |
+| Declaraciones `continue` y `break` | Declaraciones de control de flujo utilizadas en bucles (`continue` salta a la próxima iteración, `break` sale del bucle). |
 
-Please note that this table provides a brief overview of each statement type, and there may be additional details and variations for each statement.
+Tenga en cuenta que esta tabla proporciona una breve visión general de cada tipo de declaración, y puede haber detalles y variaciones adicionales para cada declaración.
 
-## Multi-Line Statements  
+## Declaraciones Multilínea
 
-Multi-line statements are a convenient way to write long code in Python without making it cluttered. They allow you to write several lines of code as a single statement, making it easier for developers to read and understand the code. Here are two examples of multi-line statements in Python:
+Las declaraciones multilínea son una forma conveniente de escribir código largo en Python sin que este se vea desordenado. Te permiten escribir varias líneas de código como una sola declaración, facilitando que los desarrolladores lean y comprendan el código. Aquí hay dos ejemplos de declaraciones multilínea en Python:
 
-1. Using backslash:
+1. Usando barra invertida:
 
 ```python
 total = 10 + \
@@ -61,7 +61,7 @@ print(total) ### Output
 
 ```
 
-2. Using parentheses:
+2. Usando paréntesis:
 
 ```python
 fruit_list = ('Apple',
@@ -72,11 +72,11 @@ print(fruit_list) ### Output
 
 ```
 
-## Simple Statements  
+## Declaraciones Simples
 
-Simple statements are the smallest unit of execution in Python programming language and they do not contain any logical or conditional expressions. They are usually composed of a single line of code and can perform basic operations such as assigning values to variables, printing out values, or calling functions.
+Las declaraciones simples son la unidad más pequeña de ejecución en el lenguaje de programación Python y no contienen expresiones lógicas o condicionales. Por lo general, están compuestas por una sola línea de código y pueden realizar operaciones básicas, como asignar valores a variables, imprimir valores o llamar a funciones.
 
-Examples of simple statements in Python:
+Ejemplos de declaraciones simples en Python:
 
 ```python
 ### Assigning a value to a variable
@@ -88,12 +88,11 @@ x = 5
 print(x)
 ```
 
-Simple statements are essential to programming in Python and are often used in combination with more complex statements to create robust programs and applications.
+Las declaraciones simples son esenciales para programar en Python y a menudo se utilizan en combinación con declaraciones más complejas para crear programas y aplicaciones robustas.
 
-  
-## Expression statements  
+## Declaraciones de expresión
 
-Expression statements in Python are lines of code that evaluate and produce a value. They are used to assign values to variables, call functions, and perform other operations that produce a result.
+Las declaraciones de expresión en Python son líneas de código que evalúan y producen un valor. Se utilizan para asignar valores a variables, llamar funciones y realizar otras operaciones que producen un resultado.
 
 ```python
 x = 5
@@ -101,7 +100,7 @@ y = x + 3
 print(y)
 ```
 
-In this example, we assign the value `5` to the variable `x`, then add `3` to `x` and assign the result (`8`) to the variable `y`. Finally, we `print` the value of `y`.
+En este ejemplo, asignamos el valor `5` a la variable `x`, luego sumamos `3` a `x` y asignamos el resultado (`8`) a la variable `y`. Finalmente, hacemos `print` del valor de `y`.
 
 ```python3
 def square(x):
@@ -111,26 +110,26 @@ result = square(5)
 print(result)
 ```
 
-In this example, we define a function `square` that takes one argument (`x`) and returns its square. We then call the function with the argument `5` and assign the result (`25`) to the variable `result`. Finally, we `print` the value of `result`.
+En este ejemplo, definimos una función `square` que toma un argumento (`x`) y devuelve su cuadrado. Luego llamamos a la función con el argumento `5` y asignamos el resultado (`25`) a la variable `result`. Finalmente, hacemos `print` del valor de `result`.
 
-Overall, expression statements are an essential part of Python programming and allow for the execution of mathematical and computational operations.
+En general, las sentencias de expresión son una parte esencial de la programación en Python y permiten la ejecución de operaciones matemáticas y computacionales.
 
-## The `assert` Statement  
+## La sentencia `assert`
 
-The `assert` statement in Python is used to test conditions and trigger an error if the condition is not met. It is often used for debugging and testing purposes.
+La sentencia `assert` en Python se utiliza para probar condiciones y desencadenar un error si la condición no se cumple. A menudo se utiliza para depuración y propósitos de prueba.
 
 ```python
 assert condition, message
 ```
 
-Where `condition` is the expression that is tested, and `message` is the optional error message that is displayed when the condition is not met.
+Donde `condition` es la expresión que se prueba, y `message` es el mensaje de error opcional que se muestra cuando la condición no se cumple.
 
 ```python
 x = 5
 assert x == 5, "x should be 5"
 ```
 
-In this example, the `assert` statement tests whether `x` is equal to `5`. If the condition is met, the statement has no effect. If the condition is not met, an error will be raised with the message `x should be 5`.
+En este ejemplo, la instrucción `assert` prueba si `x` es igual a `5`. Si se cumple la condición, la instrucción no tiene efecto. Si la condición no se cumple, se generará un error con el mensaje `x should be 5`.
 
 ```python
 def divide(x, y):
@@ -138,13 +137,13 @@ def divide(x, y):
     return x / y
 ```
 
-In this example, the `assert` statement tests whether `y` is not equal to `0` before performing the division. If the condition is met, the division proceeds as normal. If the condition is not met, an error will be raised with the message `Cannot divide by zero`.
+En este ejemplo, la afirmación `assert` prueba si `y` no es igual a `0` antes de realizar la división. Si se cumple la condición, la división procede con normalidad. Si la condición no se cumple, se generará un error con el mensaje `Cannot divide by zero`.
 
-Overall, `assert` statements are a useful tool in Python for debugging and testing, as they can help catch errors early on. They are also easily disabled in production code to avoid any unnecessary overhead.  
-  
-## The `try` Statement  
+En general, las afirmaciones `assert` son una herramienta útil en Python para la depuración y pruebas, ya que pueden ayudar a detectar errores desde el principio. También se pueden desactivar fácilmente en el código de producción para evitar cualquier sobrecarga innecesaria.
 
-The `try` statement in Python is used to catch exceptions that may occur during the execution of a block of code. It ensures that even when an error occurs, the code does not stop running.
+## La sentencia `try`
+
+La sentencia `try` en Python se utiliza para capturar excepciones que pueden ocurrir durante la ejecución de un bloque de código. Asegura que incluso cuando ocurre un error, el código no deja de ejecutarse.
 
 ```python
 try:
@@ -157,7 +156,7 @@ finally:
     # Block of code that is always executed regardless of whether an exception was thrown or not
 ```
 
-### Examples of Error Processing
+### Ejemplos de Procesamiento de Errores
 
 ```python3
 try:
