@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/loops
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/loops
 
-There are two types of loops in Python: `for` loops and `while` loops.
+Hay dos tipos de bucles en Python: bucles `for` y bucles `while`.
 
-The `for` loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The `while` loop is used for executing a block of code repeatedly as long as a certain condition is `true`. In the `while` loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.
+El bucle `for` se utiliza para iterar sobre una secuencia (que puede ser una lista, una tupla, un conjunto, un diccionario, una cadena u otro objeto iterable) y ejecutar un bloque de código para cada elemento en la secuencia. El bucle `while` se utiliza para ejecutar un bloque de código repetidamente mientras una condición determinada sea `true`. En el bucle `while`, la condición se verifica al principio de cada iteración, y se sale del bucle cuando la condición se vuelve falsa. Es importante asegurarse de que la condición eventualmente se vuelva falsa, de lo contrario, el bucle seguirá ejecutándose indefinidamente, lo cual se denomina un bucle infinito.
 
-## `for` Loop Syntax in Python
+## Sintaxis del bucle `for` en Python
 
-An example how to use the `for` for a looping through a list in Python:
+Un ejemplo de cómo usar el `for` para iterar a través de una lista en Python:
 
 ```python3
 cars = ["bmw", "audi", "renault"]
@@ -15,11 +15,11 @@ for car in cars:
     print(car)
 ```
 
-In this example, we have a list of cars, and we want to print each car on a new line. We use the `for` loop to iterate over each element in the list, and for each element, we print it to the console using the `print` function.
+En este ejemplo, tenemos una lista de coches, y queremos imprimir cada coche en una nueva línea. Utilizamos el bucle `for` para iterar sobre cada elemento en la lista, y para cada elemento, lo imprimimos en la consola usando la función `print`.
 
-### Inline `for` Loop
+### Bucle `for` en Línea
 
-In this example, we have a list of numbers, and we want to create a new list that contains the square of each number. Instead of using a traditional `for` loop, we use a list comprehension, which is a more concise way of achieving the same result.
+En este ejemplo, tenemos una lista de números, y queremos crear una nueva lista que contenga el cuadrado de cada número. En lugar de usar un bucle `for` tradicional, utilizamos una comprensión de lista, que es una forma más concisa de lograr el mismo resultado.
 
 ```python3
 numbers = [1, 2, 3, 4, 5]
@@ -27,11 +27,11 @@ squares = [x**2 for x in numbers]
 print(squares)
 ```
 
-In this case, the expression is `x**2`, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: `[1, 4, 9, 16, 25]`.
+En este caso, la expresión es `x**2`, que es el cuadrado del número actual en la iteración, y el iterable es la lista de números. El resultado de la comprensión de lista es una nueva lista que contiene el cuadrado de cada número: `[1, 4, 9, 16, 25]`.
 
-### `for` Loop with Index
+### Bucle `for` con Índice
 
-In this example, the `loop` iterates over the `cars` list and prints the index and value of each element:
+En este ejemplo, el `bucle` itera sobre la lista `cars` e imprime el índice y valor de cada elemento:
 
 ```python3
 cars = ["bmw", "audi", "renault"]
@@ -39,7 +39,7 @@ for i in range(len(cars)):
     print(i, cars[i])
 ```
 
-### Power Function in Python Using a Loop
+### Función de Potencia en Python Usando un Bucle
 
 ```python3
 def power(a, b):
@@ -53,9 +53,9 @@ b = 3
 print(power(a, b))
 ```
 
-## `while` Loops in Python
+## Bucles `while` en Python
 
-Here is an example of the `while` loop that counts from `1` to `10`:
+Aquí tienes un ejemplo del bucle `while` que cuenta de `1` a `10`:
 
 ```python3
 count = 1
@@ -64,15 +64,15 @@ while count <= 10:
     count += 1
 ```
 
-In this example, the loop starts with count equal to `1`. The condition count `<= 10` is `true`, so the code within the loop is executed. This code prints the value of count (which is currently `1`) and then increments count by `1` using the `+=` operator. The loop then checks the condition again, which is still `true` because count is now `2`. This process repeats until count reaches `11`, at which point the condition becomes `false` and the loop terminates.
+En este ejemplo, el bucle comienza con count igual a `1`. La condición count `<= 10` es `verdadera`, por lo que el código dentro del bucle se ejecuta. Este código imprime el valor de count (que actualmente es `1`) y luego incrementa count en `1` usando el operador `+=`. Luego, el bucle verifica de nuevo la condición, que sigue siendo `verdadera` porque count ahora es `2`. Este proceso se repite hasta que count alcanza `11`, momento en el cual la condición se vuelve `falsa` y el bucle termina.
 
-> Note: Python does not have a built-in `do-while` loop like some other programming languages. However, you can achieve similar functionality using a combination of a `while` loop and an initial check.
+> Nota: Python no tiene un bucle `do-while` como otros lenguajes de programación. Sin embargo, puedes lograr una funcionalidad similar usando una combinación de un bucle `while` y una verificación inicial.
 
-## `break` and `continue` Statements
+## Declaraciones `break` y `continue`
 
-In Python, `break` and `continue` are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
+En Python, `break` y `continue` son palabras clave reservadas utilizadas para modificar el comportamiento de los bucles. Te permiten controlar cuándo un bucle debe terminar o saltar ciertas iteraciones basado en una condición.
 
-### Example: How to `break` a `for` Loop
+### Ejemplo: Cómo `break` un bucle `for`
 
 ```python3
 numbers = [1, 2, 3, 4, 5]
@@ -83,11 +83,11 @@ for num in numbers:
     print(num)
 ```
 
-In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `break` statement end `for` loop. The output would be: `1 2`.
+En este ejemplo, el bucle itera sobre la lista `numbers` e imprime cada número. Sin embargo, cuando el valor de `num` es igual a `3`, la instrucción `break` termina el bucle `for`. La salida sería: `1 2`.
 
-### How to Use `continue` with a `for` Loop 
+### Cómo usar `continue` en un bucle `for`
 
-The `continue`, on the other hand, is used to **skip loop iteration** based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the `for` loop in Python:
+El `continue`, por otro lado, se utiliza para **saltarse una iteración del bucle** basándose en una condición. Cuando se encuentra, hace que la iteración actual del bucle termine y continúa con la siguiente iteración. Aquí tienes un ejemplo de cómo saltarse una iteración en el bucle `for` en Python:
 
 ```python3
 numbers = [1, 2, 3, 4, 5]
@@ -97,11 +97,11 @@ for num in numbers:
     print(num)
 ```
 
-In this example, the loop iterates over the `numbers` list and prints each number. However, when the value of `num` is equal to `3`, the `continue` statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: `1 2 4 5`.
+En este ejemplo, el bucle itera sobre la lista `numbers` e imprime cada número. Sin embargo, cuando el valor de `num` es igual a `3`, se ejecuta la declaración `continue`, lo que causa que la iteración actual del bucle termine y continúe con la siguiente iteración. La salida sería: `1 2 4 5`.
 
-### Example of `continue` in a `while` Loop   
+### Ejemplo de `continue` en un bucle `while`
 
-Using `continue` in `while` loop in Python is a way to skip certain iterations of the loop and proceed to the next iteration. This can be useful when you need to skip over certain values or conditions in your loop.
+Usar `continue` en un bucle `while` en Python es una forma de omitir ciertas iteraciones del bucle y proceder a la siguiente iteración. Esto puede ser útil cuando necesitas saltarte ciertos valores o condiciones en tu bucle.
 
 ```python3
 i = 0
@@ -112,7 +112,7 @@ while i < 10:
     print(i)
 ```
 
-In this example, the loop iterates over the numbers 1 through 10. However, when the value of `i` is even, the `continue` statement is triggered, causing the loop to skip to the next iteration without executing any more code in the current iteration.
+En este ejemplo, el bucle itera sobre los números del 1 al 10. Sin embargo, cuando el valor de `i` es par, se activa la instrucción `continue`, lo que hace que el bucle salte a la siguiente iteración sin ejecutar más código en la iteración actual.
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -123,11 +123,11 @@ while my_list:
     print(val)
 ```
 
-In this example, the loop iterates over the values in `my_list`. When the value of `val` is equal to 3, the `continue` statement causes the loop to skip to the next iteration without printing the value.  
+En este ejemplo, el bucle itera sobre los valores en `my_list`. Cuando el valor de `val` es igual a 3, la sentencia `continue` hace que el bucle salte a la próxima iteración sin imprimir el valor.
 
-## How to `break` a `while` Loop  
+## Cómo `break` un bucle `while`
 
-To break a `while` loop in Python, you can use the `break` statement. This statement is responsible for stopping the loop from iterating further, as soon as a certain condition gets fulfilled. The syntax for using `break` in a `while` loop is as follows:
+Para romper un bucle `while` en Python, puedes usar la sentencia `break`. Esta sentencia es responsable de detener el bucle para que no itere más, tan pronto como se cumple una cierta condición. La sintaxis para usar `break` en un bucle `while` es la siguiente:
 
 ```python
 while <condition>:
@@ -137,7 +137,7 @@ while <condition>:
         break
 ```
 
-Here, `<condition>` is the loop's condition that initially decides whether the loop should be executed or not, and `<break-condition>` is an additional conditional statement that defines the condition(s) for stopping the loop. Once this condition is met, the loop is automatically terminated, and control is transferred to the next statement after the loop.
+Aquí, `<condition>` es la condición del bucle que inicialmente decide si el bucle debe ejecutarse o no, y `<break-condition>` es una declaración condicional adicional que define la(s) condición(es) para detener el bucle. Una vez que se cumple esta condición, el bucle se termina automáticamente y el control se transfiere a la siguiente declaración después del bucle.
 
 ```python3
 n = 1
@@ -158,9 +158,9 @@ print("Loop Ended")
 # Loop Ended
 ```
 
-In this example, the while loop will `print` numbers from 1 to 5, and then `stop` as soon as `n == 5`. The `break` statement is used to achieve this, and the output shows that the loop ended after completing the execution of the desired condition.
+En este ejemplo, el bucle while va a `print` números del 1 al 5, y luego `stop` en cuanto `n == 5`. Se utiliza la instrucción `break` para lograr esto, y la salida muestra que el bucle terminó después de completar la ejecución de la condición deseada.
 
-### How to Stop an Infinite Loop in Python
+### Cómo Detener un Bucle Infinito en Python
 
 ```python3
 while True:
@@ -181,13 +181,13 @@ print("Loop Ended")
 # Loop Ended
 ```
 
-In this example, the `while` loop will keep asking the user to enter a `number`, and compute its square if the `input` is a `number`. If the `input` is 'stop', the loop will break, and control will be transferred to the statement after the loop.
+En este ejemplo, el bucle `while` seguirá pidiéndole al usuario que ingrese un `number`, y calculará su cuadrado si el `input` es un `number`. Si el `input` es 'stop', el bucle se romperá y el control se transferirá a la declaración después del bucle.
 
-This approach helps to avoid infinite loops in Python, and to control the flow of execution based on certain criteria.  
-  
-## A Count in a `for` Loop  
+Este enfoque ayuda a evitar bucles infinitos en Python, y a controlar el flujo de ejecución basado en ciertos criterios.
 
-To count in a `for` loop in Python, you can use a loop counter variable. This variable keeps track of the number of times the `for` loop has executed. Here are two examples:
+## Un Conteo en un Bucle `for`
+
+Para contar en un bucle `for` en Python, puedes usar una variable contador de bucle. Esta variable lleva un registro del número de veces que se ha ejecutado el bucle `for`. Aquí hay dos ejemplos:
 
 ```python3
 count = 0
@@ -196,7 +196,7 @@ for i in range(10):
 print("The loop executed", count, "times.")
 ```
 
-In this example, we create a variable `count` and set its initial value to 0. We then use a `for` loop to iterate 10 times, incrementing the `count` variable by 1 each time. Finally, we `print` out the total number of times the loop executed.
+En este ejemplo, creamos una variable `count` y establecemos su valor inicial en 0. Luego usamos un bucle `for` para iterar 10 veces, incrementando la variable `count` en 1 cada vez. Finalmente, hacemos un `print` del número total de veces que se ejecutó el bucle.
 
 ```python3
 fruits = ['apple', 'banana', 'cherry']
@@ -204,19 +204,19 @@ for i, fruit in enumerate(fruits, 1):
     print(i, fruit)
 ```
 
-In this example, we use the built-in `enumerate()` function to loop over a list of `fruits` and their indices. We start the index at 1 by passing the second argument to `enumerate()`. Inside the loop, we `print` out the index and the `fruit` name.
+En este ejemplo, usamos la función incorporada `enumerate()` para iterar sobre una lista de `fruits` y sus índices. Comenzamos el índice en 1 pasando el segundo argumento a `enumerate()`. Dentro del bucle, `print` el índice y el nombre del `fruit`.
 
-By using a loop counter variable, you can easily keep track of the number of times a `for` loop has executed in Python. This can be useful for debugging, testing, and analyzing performance.  
+Al usar una variable de contador de bucle, puedes llevar fácilmente la cuenta de la cantidad de veces que un bucle `for` se ha ejecutado en Python. Esto puede ser útil para depurar, probar y analizar el rendimiento.
 
-## Nested Loops  
+## Bucles Anidados
 
-Nested loops are loops that are placed inside another loop. In Python, nested loops are primarily used for iterating over arrays, matrices, and multi-dimensional lists. They are useful for solving problems that involve repeating a task for each element of a nested structure.
+Los bucles anidados son bucles que se colocan dentro de otro bucle. En Python, los bucles anidados se utilizan principalmente para iterar sobre matrices, matrices y listas multidimensionales. Son útiles para resolver problemas que involucran repetir una tarea para cada elemento de una estructura anidada.
 
-### Nested For Loops in Python
+### Bucles `for` Anidados en Python
 
-The most common type of nested loop in Python is the nested for loop. This loop is used to iterate over elements in a nested structure using two or more `for` statements.
+El tipo más común de bucle anidado en Python es el bucle for anidado. Este bucle se utiliza para iterar sobre elementos en una estructura anidada usando dos o más declaraciones `for`.
 
-#### Simple Example of Nested `for` Loops
+#### Ejemplo Simple de Bucles `for` Anidados
 
 ```python3
 numbers = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -226,13 +226,13 @@ for row in numbers:
         print(num)
 ```
 
-In this example, we have a 3 by 3 matrix that is represented by a multi-dimensional list. The nested for loop iterates over the elements of the matrix and prints each number on a new line.
+En este ejemplo, tenemos una matriz de 3 por 3 que está representada por una lista multidimensional. El bucle anidado for itera sobre los elementos de la matriz e imprime cada número en una nueva línea.
 
-### Nested `while` Loops in Python
+### Bucles `while` Anidados en Python
 
-Nested `while` loops in Python use one or more inner loops that repeat the same process multiple times. They are used to iterate over elements of a nested data structure until a certain condition is met.
+Los bucles `while` anidados en Python utilizan uno o más bucles internos que repiten el mismo proceso varias veces. Se utilizan para iterar sobre elementos de una estructura de datos anidada hasta que se cumpla una cierta condición.
 
-#### Example of Nested `while` Loops
+#### Ejemplo de Bucles `while` Anidados
 
 ```python3
 x = 1
@@ -247,26 +247,25 @@ while x <= 5:
     x += 1
 ```
 
-In this example, we use two nested `while` loops to `print` a triangle of `numbers`. The outer `while` loop iterates over each `row` of the triangle, `while` the inner `while` loop iterates over each number in that row.
+En este ejemplo, utilizamos dos bucles `while` anidados para `print` un triángulo de `numbers`. El bucle `while` externo itera sobre cada `row` del triángulo, `while` el bucle `while` interno itera sobre cada número en esa fila.
 
-Overall, nested loops are an important concept in Python programming, and they can help you solve complex problems by iterating over nested data structures. By incorporating nested for and `while` loops into your code, you can write more efficient, readable and powerful programs.  
-  
-## How to Use a `for` Loop with a `range` Statement  
+En general, los bucles anidados son un concepto importante en la programación de Python, y pueden ayudarte a resolver problemas complejos iterando sobre estructuras de datos anidadas. Al incorporar bucles `for` y `while` anidados en tu código, puedes escribir programas más eficientes, legibles y potentes.
 
-The `range` statement in Python is a built-in function that can be used to generate a sequence of numbers. It is often used in `for` loops to repeat a task a certain number of times. Here are two examples of how to use the `range` statement in Python:
+## Cómo Usar un Bucle `for` con una Declaración `range`
+
+La declaración `range` en Python es una función integrada que se puede utilizar para generar una secuencia de números. A menudo se usa en bucles `for` para repetir una tarea un cierto número de veces. Aquí hay dos ejemplos de cómo usar la declaración `range` en Python:
 
 ```python3
 for i in range(5):
     print(i)
 
-
 for i in range(0, 10, 2):
     print(i)
 ```
 
-In the first example, the `for` loop is used to iterate through a range of numbers from 0 to 4. In the second example, the `range` function is called with three arguments: the starting number (0), the ending number (10), and the step (2). This will generate a sequence of numbers from 0 to 10 (not including 10) with a step of 2. The `for` loop then iterates through this sequence and prints each number.
+En el primer ejemplo, el bucle `for` se utiliza para iterar a través de un rango de números del 0 al 4. En el segundo ejemplo, la función `range` se llama con tres argumentos: el número inicial (0), el número final (10) y el paso (2). Esto generará una secuencia de números del 0 al 10 (sin incluir el 10) con un paso de 2. Luego, el bucle `for` itera a través de esta secuencia e imprime cada número.
 
-### A Reverse `for` Loop
+### Un Bucle `for` Inverso
 
 ```python3
 for i in range(5, 0, -1):
@@ -292,17 +291,18 @@ for i in reversed(a):
 # 1
 ```
 
-Using the `range` statement in Python is an efficient way to loop through a sequence of numbers and perform a task. It is a commonly used technique in programming and is easy to implement with the `for` loop in Python.  
+Usar la instrucción `range` en Python es una forma eficiente de recorrer una secuencia de números y realizar una tarea. Es una técnica comúnmente utilizada en la programación y es fácil de implementar con el bucle `for` en Python.
 
-## One Line `for` Loop  
+## Bucle `for` en Una Línea
 
-List comprehension makes it easier to write a for loop in one line in Python. Using a single line loop can help simplify the code and make it more concise.
+La comprensión de listas facilita escribir un bucle for en una línea en Python. Usar un bucle de una sola línea puede ayudar a simplificar el código y hacerlo más conciso.
 
 ```python3
 squares = [x**2 for x in range(10)]
 print(squares)
 ```
-Output:
+
+Salida:
 
 ```python
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
@@ -317,6 +317,6 @@ print(even_numbers)
 # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
 
-In both examples, the `for` loop is condensed into a single line using list comprehension. The loop iterates over a `range` of values and applies a condition to the given `range`. This results in a list with the desired output.
+En ambos ejemplos, el bucle `for` se condensa en una sola línea usando comprensión de listas. El bucle itera sobre un `range` de valores y aplica una condición al `range` dado. Esto resulta en una lista con la salida deseada.
 
-Using a one line for loop in Python is a powerful tool that can optimize your code and make it more efficient.  
+Usar un bucle for de una línea en Python es una herramienta poderosa que puede optimizar tu código y hacerlo más eficiente.
