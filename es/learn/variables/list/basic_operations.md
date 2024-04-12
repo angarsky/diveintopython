@@ -1,64 +1,64 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/list/basic-operations
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/list/basic-operations
 
-Python lists are versatile and commonly used data structures that allow you to store collections of elements, including numbers, strings, and even other lists. They support various basic operations and methods that enable you to manipulate and work with the list elements easily. Some of the commonly used operations and methods for lists include indexing, slicing, appending, inserting, deleting, sorting, and searching for elements. Let's review the basic list methods and functions step by step.
+Las listas de Python son estructuras de datos versátiles y comúnmente utilizadas que te permiten almacenar colecciones de elementos, incluyendo números, cadenas y hasta otras listas. Soportan varias operaciones básicas y métodos que te permiten manipular y trabajar fácilmente con los elementos de la lista. Algunas de las operaciones y métodos comúnmente usados para listas incluyen indexación, rebanado, agregar, insertar, eliminar, ordenar y buscar elementos. Revisemos los métodos y funciones básicas de las listas paso a paso.
 
-## Defining an Index of an Element
+## Definiendo un Índice de un Elemento
 
-A list is an ordered collection of elements that can be of any type. Each element in a list has a unique index, which represents its position in the list. List indexes start at 0, which means that the first element in a list has an index of 0, the second element has an index of 1, and so on.
+Una lista es una colección ordenada de elementos que pueden ser de cualquier tipo. Cada elemento en una lista tiene un índice único, que representa su posición en la lista. Los índices de las listas comienzan en 0, lo que significa que el primer elemento en una lista tiene un índice de 0, el segundo elemento tiene un índice de 1, y así sucesivamente.
 
-Let's look at ways of getting index of item in Python list.
+Veamos formas de obtener el índice de un elemento en una lista de Python.
 
-There is no direct method called `indexof()` for finding the index of an element in a list. However, you can use the `index()` method that is built into Python to get index of item in list.
+No existe un método directo llamado `indexof()` para encontrar el índice de un elemento en una lista. Sin embargo, puedes usar el método `index()` que está incorporado en Python para obtener el índice de un elemento en la lista.
 
-The `index()` method takes an element as an argument and returns the index of the first occurrence of that element in the list. For example, let's say you have a list of strings:
+El método `index()` toma un elemento como argumento y devuelve el índice de la primera ocurrencia de ese elemento en la lista. Por ejemplo, digamos que tienes una lista de cadenas:
 
 ```python
 my_list = ['apple', 'banana', 'cherry', 'banana', 'date']
 ```
 
-You can find the index of the first occurrence of the element 'banana' using the `index()` method like this:
+Puedes encontrar el índice de la primera aparición del elemento 'banana' utilizando el método `index()` de esta manera:
 
 ```python
 index_of_banana = my_list.index('banana')   # 1
 ```
 
-The `index()` method raises a `ValueError` if the element is not found in the list.
+El método `index()` genera un `ValueError` si el elemento no se encuentra en la lista.
 
-## List Comprehension in Python
+## Comprensión de listas en Python
 
-Let's review what is list comprehension in Python. List comprehension is a concise way to create a new list in Python by applying an expression to each element of an existing list or iterable. The basic syntax of a list comprehension is:
+Revisemos qué es la comprensión de listas en Python. La comprensión de listas es una manera concisa de crear una nueva lista en Python aplicando una expresión a cada elemento de una lista existente o iterable. La sintaxis básica de una comprensión de lista es:
 
 ```python
 new_list = [expression(item) for item in iterable if condition]
 ```
 
-Where:
+Dónde:
 
-- `expression` is an operation that will be applied to each element of the iterable.
-- `item` is the variable that represents each element of the iterable.
-- `iterable` is a sequence of elements, such as a list or a range.
-- `condition` is an optional expression that filters the elements based on a condition.
+- `expression` es una operación que se aplicará a cada elemento del iterable.
+- `item` es la variable que representa a cada elemento del iterable.
+- `iterable` es una secuencia de elementos, como una lista o un rango.
+- `condition` es una expresión opcional que filtra los elementos basada en una condición.
 
-For example, to create a new list with the squares of the numbers from `1` to `5`, you can use a list comprehension like this:
+Por ejemplo, para crear una nueva lista con los cuadrados de los números del `1` al `5`, puedes usar una comprensión de lista así:
 
 ```python3
 squares = [x**2 for x in range(1, 6)]
 print(squares)  # Output: [1, 4, 9, 16, 25]
 ```
 
-You can also use an `if` statement to filter the elements based on a condition. For example, to create a new list with the even numbers from `1` to `10`, you can use a list comprehension like this:
+También puedes usar una sentencia `if` para filtrar los elementos basándose en una condición. Por ejemplo, para crear una nueva lista con los números pares del `1` al `10`, puedes usar una comprensión de lista de esta manera:
 
 ```python3
 evens = [x for x in range(1, 11) if x % 2 == 0]
 print(evens)  # Output: [2, 4, 6, 8, 10]
 ```
 
-## Determining the Length of a List
+## Determinando la Longitud de una Lista
 
-In Python, you can get the length of a list by using the built-in `len()` function. To count the number of elements in a list in Python, you can use the `len()` function as well.
+En Python, puedes obtener la longitud de una lista utilizando la función integrada `len()`. Para contar el número de elementos en una lista en Python, también puedes usar la función `len()`.
 
-Here's an example:
+Aquí hay un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -66,9 +66,9 @@ length = len(my_list)
 print(length)  # Output: 5
 ```
 
-> You can also use the `len()` function to check if a Python list is empty, as there is no `isEmpty()` method in Python.
+> También puedes usar la función `len()` para comprobar si una lista de Python está vacía, ya que no hay un método `isEmpty()` en Python.
 
-Here's an example using checking:
+Aquí hay un ejemplo usando la comprobación:
 
 ```python3
 my_list = []
@@ -78,11 +78,11 @@ else:
     print("The list is not empty")
 ```
 
-## List Reversing
+## Inversión de Listas
 
-To reverse a list in Python, you can use the built-in `reverse()` method or slicing notation. Here are examples of both:
+Para invertir una lista en Python, puedes utilizar el método integrado `reverse()` o la notación de rebanada. Aquí hay ejemplos de ambos:
 
-Using the `reverse()` method:
+Usando el método `reverse()`:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -90,7 +90,7 @@ my_list.reverse()
 print(my_list) # Output: [5, 4, 3, 2, 1]
 ```
 
-Using slicing notation:
+Usando la notación de segmentación:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -98,13 +98,13 @@ reversed_list = my_list[::-1]
 print(reversed_list) # Output: [5, 4, 3, 2, 1]
 ```
 
-## List Filtering in Python
+## Filtrado de Listas en Python
 
-In Python, you can use the `filter()` function to filter a list, i.e. to create a new list that contains only the elements from an existing list that satisfy a certain condition.
+En Python, puedes utilizar la función `filter()` para filtrar una lista, es decir, para crear una nueva lista que contenga solo los elementos de una lista existente que satisfacen una cierta condición.
 
-The `filter()` function takes two arguments: a function and an iterable. The function should return True or False for each element in the iterable. The `filter()` function then returns a new iterable that contains only the elements for which the function returned True.
+La función `filter()` toma dos argumentos: una función y un iterable. La función debe devolver True o False para cada elemento en el iterable. La función `filter()` entonces devuelve un nuevo iterable que contiene solo los elementos para los cuales la función devolvió True.
 
-Here's an example that filters a list of numbers to only include the even ones:
+Aquí hay un ejemplo que filtra una lista de números para incluir solo los pares:
 
 ```python3
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -116,9 +116,9 @@ even_numbers = list(filter(is_even, numbers))
 print(even_numbers)  # Output: [2, 4, 6, 8, 10]
 ```
 
-## List Concatenation or Joining
+## Concatenación o Unión de Listas
 
-In Python, you can concatenate two or more lists using the `+` operator. Here's an example of merging two lists:
+En Python, puedes concatenar dos o más listas usando el operador `+`. Aquí tienes un ejemplo de cómo unir dos listas:
 
 ```python
 list1 = [1, 2, 3]
@@ -127,7 +127,7 @@ concatenated_list = list1 + list2
 print(concatenated_list) # Output: [1, 2, 3, 4, 5, 6]
 ```
 
-One more way of joining the lists is `extend()` method:
+Una forma más de unir las listas es el método `extend()`:
 
 ```python3
 list1 = [1, 2, 3]
@@ -136,9 +136,9 @@ list1.extend(list2)
 print(list1) # Output: [1, 2, 3, 4, 5, 6]
 ```
 
-## Joining List Items
+## Uniendo Elementos de Lista
 
-To join a Python list into a string, you can use the `join()` method. Here's an example:
+Para unir una lista de Python en una cadena, puedes usar el método `join()`. Aquí tienes un ejemplo:
 
 ```python3
 my_list = ['apple', 'banana', 'orange']
@@ -146,27 +146,27 @@ my_string = ', '.join(my_list)
 print(my_string) # Output: apple, banana, orange
 ```
 
-You can use any separator string you like in the `join()` method, including an empty string if you want to concatenate the elements together without any separator.
+Puedes usar cualquier cadena separadora que desees en el método `join()`, incluyendo una cadena vacía si quieres concatenar los elementos juntos sin ningún separador.
 
-## List of Lists in Python
+## Lista de Listas en Python
 
-In Python, a list of lists can be created by nesting one or more lists inside another list. Here is an example of creating lists inside a list:
+En Python, una lista de listas puede ser creada anidando una o más listas dentro de otra lista. Aquí hay un ejemplo de cómo crear listas dentro de una lista:
 
 ```python
 list_of_lists = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 ```
 
-You can access elements of the list within list using nested indexing. For example, to access the second element of the third sub-list, you would use the following code:
+Puedes acceder los elementos de la lista dentro de la lista usando indexación anidada. Por ejemplo, para acceder al segundo elemento de la tercera sub-lista, usarías el siguiente código:
 
 ```python
 element = list_of_lists[2][1]
 ```
 
-This would set the variable `element` to the value 8.
+Esto establecería la variable `element` con el valor 8.
 
-## Looping Through the List
+## Iterando a Través de la Lista
 
-You can loop through a list in Python using a `for` loop. Here's an example of how to iterate through a list:
+Puedes iterar a través de una lista en Python usando un bucle `for`. Aquí tienes un ejemplo de cómo iterar a través de una lista:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -174,18 +174,18 @@ for item in my_list:
     print(item)
 ```
 
-You can also loop through a list of strings or any other type of data. The syntax for the `for` loop is the same regardless of the type of data in the list.
+También puedes recorrer una lista de cadenas o cualquier otro tipo de datos. La sintaxis para el bucle `for` es la misma independientemente del tipo de datos en la lista.
 
-## Printing a List in Python
+## Imprimiendo una Lista en Python
 
-To print a list in Python, you can simply use the `print` function and pass the list as an argument. Here's an example of printing a list:
+Para imprimir una lista en Python, puedes simplemente usar la función `print` y pasar la lista como argumento. Aquí tienes un ejemplo de cómo imprimir una lista:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 print(my_list) # Output: [1, 2, 3, 4, 5]
 ```
 
-If you want to print each item in the list on a separate line, you can use a loop to iterate over the list and print each item one by one. Here's an example:
+Si quieres imprimir cada elemento de la lista en una línea separada, puedes usar un bucle para iterar sobre la lista e imprimir cada elemento uno por uno. Aquí tienes un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -193,9 +193,9 @@ for item in my_list:
     print(item)
 ```
 
-## Python List Summation
+## Suma de Listas en Python
 
-To find the sum of a list in Python, you can use the built-in `sum()` function. Here's an example of how to summarize the elements of a list :
+Para encontrar la suma de una lista en Python, puedes usar la función incorporada `sum()`. Aquí tienes un ejemplo de cómo resumir los elementos de una lista:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -203,17 +203,17 @@ list_sum = sum(my_list)
 print(list_sum) # Output: 15
 ```
 
-## Slicing a List in Python
+## Dividir una Lista en Python
 
-In Python, you can use slice notation to extract a portion of a list. The basic syntax for list slicing is:
+En Python, se puede usar la notación de segmento para extraer una porción de una lista. La sintaxis básica para la división de listas es:
 
 ```python
 my_list[start:end:step]
 ```
 
-where `start` is the index of the first item to include, `end` is the index of the first item to exclude, and `step` is the number of items to skip between each item in the slice (the default is 1).
+donde `start` es el índice del primer elemento a incluir, `end` es el índice del primer elemento a excluir y `step` es el número de elementos a omitir entre cada elemento en el segmento (el predeterminado es 1).
 
-Here are some examples to illustrate how to use list slicing:
+Aquí hay algunos ejemplos para ilustrar cómo usar el segmentado de listas:
 
 ```python3
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -231,16 +231,16 @@ print(my_list[1::2])  # output: [1, 3, 5, 7, 9]
 print(my_list[::-1])  # output: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
 ```
 
-You can also replace multiple elements using slicing. Here's an example:
+También puedes reemplazar múltiples elementos usando el corte. Aquí tienes un ejemplo:
 
 ```python
 my_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 my_list[3:6] = [0] # Output: [0, 1, 2, 0, 6, 7, 8, 9]
 ```
 
-## Lists Comparison
+## Comparación de Listas
 
-In Python, you can compare two lists using the comparison operators (<, <=, >, >=, ==, !=). Here's an example of two lists comparing:
+En Python, puedes comparar dos listas utilizando los operadores de comparación (<, <=, >, >=, ==, !=). Aquí tienes un ejemplo de comparación entre dos listas:
 
 ```python3
 list1 = [1, 2, 3]
@@ -254,11 +254,11 @@ else:
     print("list1 is greater than list2")
 ```
 
-## Checking If a List Contains an Element
+## Verificando Si una Lista Contiene un Elemento
 
-In Python, the list data type is a built-in type that represents a collection of ordered items. The `contains` method is not a built-in method for Python lists, but you can check whether an item is in a list using the `in` keyword or the `index` method.
+En Python, el tipo de datos de lista es un tipo incorporado que representa una colección de elementos ordenados. El método `contains` no es un método incorporado para las listas de Python, pero puedes verificar si un elemento está en una lista usando la palabra clave `in` o el método `index`.
 
-The `in` keyword returns True if the item is in the list and False otherwise. Here's an example:
+La palabra clave `in` devuelve Verdadero si el elemento está en la lista y Falso de lo contrario. Aquí hay un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -268,7 +268,7 @@ else:
     print("3 is not in the list") # Output: 3 is in the list
 ```
 
-The `index` method returns the index of the first occurrence of the item in the list. If the item is not in the list, it raises a `ValueError`. Here's an example:
+El método `index` devuelve el índice de la primera aparición del elemento en la lista. Si el elemento no está en la lista, genera un `ValueError`. Aquí hay un ejemplo:
 
 ```python3
 my_list = ["apple", "banana", "cherry"]
@@ -276,11 +276,11 @@ index = my_list.index("banana")
 print(index)  # Output: 1
 ```
 
-## List Mapping
+## Mapeo de Listas
 
-In Python, `map()` is a built-in function that applies a function to each element of an iterable (like a list, tuple, or set) and returns a new iterable with the transformed values.
+En Python, `map()` es una función incorporada que aplica una función a cada elemento de un iterable (como una lista, tupla o conjunto) y devuelve un nuevo iterable con los valores transformados.
 
-Here's an example of how to use `map()` to apply a function to every element of a list:
+Aquí tienes un ejemplo de cómo usar `map()` para aplicar una función a cada elemento de una lista:
 
 ```python3
 # Define a function to apply to each element of the list
@@ -298,11 +298,11 @@ print(list(new_list))
 # Output: [2, 4, 6, 8, 10]
 ```
 
-## Splitting Elements of a List
+## Dividiendo Elementos de una Lista
 
-You can split a list in Python using the `split()` method, which is available for strings but not for lists. However, you can use slicing to extract a portion of a list and create a new list with those elements.
+Puedes dividir una lista en Python usando el método `split()`, el cual está disponible para cadenas pero no para listas. Sin embargo, puedes usar el corte para extraer una porción de una lista y crear una nueva lista con esos elementos.
 
-Here's an example:
+Aquí hay un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -315,9 +315,9 @@ print(list_a) # Output: [1, 2, 3, 4, 5]
 print(list_b) # Output: [6, 7, 8, 9, 10]
 ```
 
-## Removing Duplicates from List in Python
+## Eliminando Duplicados de una Lista en Python
 
-To remove duplicates from a Python list, you can use the built-in `set()` function. Here's an example:
+Para eliminar duplicados de una lista en Python, puedes usar la función integrada `set()`. Aquí tienes un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 3, 4, 5, 5, 5, 6]

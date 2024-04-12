@@ -1,26 +1,26 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables
 
-Variables play a crucial role in Python, as they provide a way to store and manipulate data throughout a program. By assigning values to variables, we can easily refer to and update data as needed, making our code more efficient and readable. Overall, variables are a fundamental concept in Python programming and are essential for any kind of data manipulation and analysis. Let's review this topic in details.
+Las variables juegan un papel crucial en Python, ya que proporcionan una forma de almacenar y manipular datos a lo largo de un programa. Al asignar valores a las variables, podemos referirnos fácilmente y actualizar los datos según sea necesario, haciendo nuestro código más eficiente y legible. En general, las variables son un concepto fundamental en la programación de Python y son esenciales para cualquier tipo de manipulación y análisis de datos. Revisemos este tema en detalle.
 
-## Variable Definition
+## Definición de Variable
 
-Let's define what a variable is in Python. It is a named location in the computer's memory that stores a value. It is like a container that can hold different types of data, such as numbers, strings or booleans.
+Definamos qué es una variable en Python. Es una ubicación nombrada en la memoria del ordenador que almacena un valor. Es como un contenedor que puede contener diferentes tipos de datos, como números, cadenas o booleanos.
 
-To create a variable in Python, you need to give it a name and assign a value to it using the assignment operator `=`.
+Para crear una variable en Python, necesitas darle un nombre y asignarle un valor utilizando el operador de asignación `=`.
 
-## Variable Naming Convention
+## Convención de Nombramiento de Variables
 
-In Python, variable names are case sensitive and can be any combination of letters, numbers, and underscores. However, there are guidelines and variable naming conventions in Python  that make your code more readable and maintainable:
+En Python, los nombres de las variables distinguen entre mayúsculas y minúsculas y pueden ser cualquier combinación de letras, números y guiones bajos. Sin embargo, hay pautas y convenciones de nombramiento de variables en Python que hacen que tu código sea más legible y mantenible:
 
-- Use lowercase letters for variable names. In Python, it is customary to use lowercase letters for variable names.
-- Use underscores to separate words in variable names. If a variable name consists of more than one word, use underscores to separate them. For example, `first_name` is a better variable name than `firstname`
-- Avoid using reserved keywords. Python has reserved keywords that have special meaning in the language, such as `if`, `else`, `while`, and `for`. Avoid using these keywords as variable names.
-- Use descriptive names for variables. Choose descriptive names that reflect the purpose of the variable. For example, `count` is a better variable name than `c`
-- Use singular nouns for variable names. For example, `student` is a better variable name than `students`.
-- Be consistent with naming conventions within your code and across your team.
+- Usa letras minúsculas para los nombres de las variables. En Python, es costumbre usar letras minúsculas para los nombres de las variables.
+- Usa guiones bajos para separar palabras en los nombres de las variables. Si un nombre de variable consta de más de una palabra, utiliza guiones bajos para separarlas. Por ejemplo, `first_name` es un mejor nombre de variable que `firstname`
+- Evita usar palabras reservadas. Python tiene palabras reservadas que tienen un significado especial en el lenguaje, como `if`, `else`, `while` y `for`. Evita usar estas palabras reservadas como nombres de variables.
+- Usa nombres descriptivos para las variables. Elige nombres descriptivos que reflejen el propósito de la variable. Por ejemplo, `count` es un mejor nombre de variable que `c`
+- Usa sustantivos singulares para los nombres de las variables. Por ejemplo, `student` es un mejor nombre de variable que `students`.
+- Sé consistente con las convenciones de nombramiento dentro de tu código y a través de tu equipo.
 
-Here are some examples of good variable names in Python:
+Aquí hay algunos ejemplos de buenos nombres de variables en Python:
 
 ```python
 first_name
@@ -30,13 +30,13 @@ is_student
 num_of_courses
 ```
 
-Remember that good variable naming conventions not only help you set a valid variable name, but also make your code more readable, maintainable, and reduce the risk of bugs.
+Recuerda que buenas convenciones de nombramiento de variables no solo te ayudan a establecer un nombre válido para la variable, sino que también hacen tu código más legible, mantenible y reducen el riesgo de errores.
 
-## Variable Declaration
+## Declaración de Variables
 
-In Python, you don't need to explicitly declare a variable before using it. You can create a variable simply by assigning a value to it.
+En Python, no necesitas declarar explícitamente una variable antes de usarla. Puedes crear una variable simplemente asignándole un valor.
 
-However, it is important to note that variables in Python are dynamically typed, which means that the data type of a variable is determined at runtime based on the type of the value assigned to it. This means that the same variable can hold different types of values at different times. For example:
+Sin embargo, es importante notar que las variables en Python son de tipado dinámico, lo que significa que el tipo de datos de una variable se determina en tiempo de ejecución basado en el tipo de valor asignado a ella. Esto significa que la misma variable puede contener diferentes tipos de valores en diferentes momentos. Por ejemplo:
 
 ```python
 y = 5
@@ -45,31 +45,31 @@ y = "hello"
 print(y) # Output: hello
 ```
 
-In this example, we first created a variable named `y` and assigned it the value `5`. We then changed the value of `y` to a string `hello`. The program printed the value of `y`, which is the string `hello`.
+En este ejemplo, primero creamos una variable llamada `y` y le asignamos el valor `5`. Luego cambiamos el valor de `y` por una cadena `hello`. El programa imprimió el valor de `y`, que es la cadena `hello`.
 
-## Data Types
+## Tipos de Datos
 
-There are nine data types in Python:
+Hay nueve tipos de datos en Python:
 
-- Integers
-- Floating-point numbers
-- Complex
-- Strings
-- Booleans
-- Lists
-- Tuples
-- Sets
-- Dictionaries
+- Enteros
+- Números de punto flotante
+- Complejos
+- Cadenas
+- Booleanos
+- Listas
+- Tuplas
+- Conjuntos
+- Diccionarios
 
-The first three types can conditionally be combined into numeric group.
+Los primeros tres tipos pueden condicionalmente combinarse en un grupo numérico.
 
-### Numeric Types
+### Tipos Numéricos
 
-Numeric types are used to represent numbers in Python. There are three types of numeric data types in Python:
+Los tipos numéricos se utilizan para representar números en Python. Hay tres tipos de datos numéricos en Python:
 
-- **Integer**: Integers are whole numbers without any decimal point. Example: 5, 10, -3.
-- **Float**: Floats are numbers with decimal points. Example: 2.5, -0.1, 3.14.
-- **Complex**: Complex numbers are numbers with a real and imaginary part. They are denoted by adding a `j` at the end of the imaginary part. Example: 2 + 3j, -4j.
+- **Entero**: Los enteros son números enteros sin ningún punto decimal. Ejemplo: 5, 10, -3.
+- **Flotante**: Los flotantes son números con puntos decimales. Ejemplo: 2.5, -0.1, 3.14.
+- **Complejo**: Los números complejos son números con una parte real y otra imaginaria. Se denotan añadiendo una `j` al final de la parte imaginaria. Ejemplo: 2 + 3j, -4j.
 
 ```python
 # integer
@@ -80,73 +80,73 @@ b = 3.14
 c = 2 + 3j
 ```
 
-### Boolean Type
+### Tipo Booleano
 
-Boolean type is a data type that can have only two values - `True` or `False`.
+El tipo booleano es un tipo de dato que solo puede tener dos valores: `True` o `False`.
 
 ```python
 a = True
 b = False
 ```
 
-### String Type
+### Tipo de Cadena
 
-Strings (also known as string literal) are used to represent text data in Python. They are enclosed in quotes (single or double) and can contain letters, numbers, and special characters. Let's see what a string is with an example:
+Las cadenas (también conocidas como literal de cadena) se utilizan para representar datos de texto en Python. Están encerradas entre comillas (simples o dobles) y pueden contener letras, números y caracteres especiales. Veamos qué es una cadena con un ejemplo:
 
 ```python
 a = "Hello, World!"
 b = 'Python is cool'
 ```
 
-### List Type
+### Tipo de Lista
 
-Lists are used to store a collection of items. They can contain any type of data and are denoted by square brackets.
+Las listas se usan para almacenar una colección de elementos. Pueden contener cualquier tipo de dato y se denotan con corchetes.
 
 ```python
 a = [1, 2, 3, 4, 5]
 b = ['mango', 'pineapple', 'orange']
 ```
 
-### Tuple Type
+### Tipo Tupla
 
-Tuples are similar to lists, but they are immutable, meaning their contents cannot be changed. They are denoted by parentheses.
+Las tuplas son similares a las listas, pero son inmutables, lo que significa que su contenido no puede ser cambiado. Se denotan con paréntesis.
 
 ```python
 a = (1, 2, 3)
 b = ('red', 'green', 'blue')
 ```
 
-### Set Type
+### Tipo de Conjunto
 
-Sets are used to store unique values. They are denoted by curly braces.
+Los conjuntos se utilizan para almacenar valores únicos. Se denotan mediante llaves.
 
 ```python
 a = {1, 2, 3, 4, 5}
 b = {'mango', 'pineapple', 'orange'}
 ```
 
-### Dictionary Type
+### Tipo de Diccionario
 
-Dictionaries are used to store key-value pairs. Each key is associated with a value, and they are denoted by curly braces with key-value pairs separated by colons.
+Los diccionarios se utilizan para almacenar pares clave-valor. Cada clave está asociada con un valor, y están denotados por llaves con pares clave-valor separados por dos puntos.
 
 ```python
 a = {'name': 'John', 'age': 30, 'city': 'New York'}
 b = {'mango': 1.99, 'pineapple': 0.99, 'orange': 2.99}
 ```
 
-### None Type
+### Tipo None
 
-None is a special data type in Python that represents the absence of a value.
+None es un tipo de dato especial en Python que representa la ausencia de un valor.
 
 ```python
 a = None
 ```
 
-## Character Variable
+## Variable de Carácter
 
-In Python, a character variable is a single character stored in a variable. Unlike some other programming languages, Python does not have a separate data type for characters. Instead, a character is simply a string of length 1 in Python.
+En Python, una variable de carácter es un único carácter almacenado en una variable. A diferencia de algunos otros lenguajes de programación, Python no tiene un tipo de datos separado para los caracteres. En cambio, un carácter es simplemente una cadena de longitud 1 en Python.
 
-To declare a character variable in Python, you can assign a single character to a variable using single quotes, double quotes, or triple quotes. Here are some examples:
+Para declarar una variable de carácter en Python, puedes asignar un único carácter a una variable usando comillas simples, comillas dobles o comillas triples. Aquí hay algunos ejemplos:
 
 ```python
 char1 = 'a'
@@ -154,24 +154,24 @@ char2 = "b"
 char3 = '''c'''
 ```
 
-In the examples above, `char1`, `char2`, and `char3` are all character variables that store the characters `a`, `b`, and `c`, respectively.
+En los ejemplos anteriores, `char1`, `char2` y `char3` son todas variables de caracteres que almacenan los caracteres `a`, `b` y `c`, respectivamente.
 
-You can also use indexing to extract a single character from a string variable. For example:
+También puedes usar la indexación para extraer un solo carácter de una variable de cadena. Por ejemplo:
 
 ```python
 string = "hello"
 char = string[0]   # Output: 'h'
 ```
 
-In the example above, `char` is a character variable that stores the first character of the string `hello`.
+En el ejemplo anterior, `char` es una variable de carácter que almacena el primer carácter de la cadena `hello`.
 
-## Declaring Variables’ Types
+## Declarando Tipos de Variables
 
-As it was mentioned above, Python is a dynamically typed language, which means that you do not need to declare the type of a variable explicitly. Instead, the type of a variable is determined at runtime based on the value it is assigned.
+Como se mencionó anteriormente, Python es un lenguaje de tipado dinámico, lo que significa que no es necesario declarar explícitamente el tipo de una variable. En cambio, el tipo de una variable se determina en tiempo de ejecución en función del valor que se le asigna.
 
-However, starting from Python 3.5, the language includes a syntax for type annotations, which allow you to specify the expected type of a variable. This can be useful for improving code readability, documentation, and type checking.
+Sin embargo, a partir de Python 3.5, el lenguaje incluye una sintaxis para las anotaciones de tipo, que le permiten especificar el tipo esperado de una variable. Esto puede ser útil para mejorar la legibilidad del código, la documentación y la comprobación de tipos.
 
-Here's an example of how you can use type annotations in Python:
+Aquí hay un ejemplo de cómo puedes usar las anotaciones de tipo en Python:
 
 ```python
 # declare a variable with an integer type annotation
@@ -185,15 +185,15 @@ def add_numbers(a: int, b: int) -> int:
     return a + b
 ```
 
-Note that type annotations are optional, and Python will still work even if you do not use them. However, using type annotations can help catch certain types of errors at compile time, rather than at runtime.
+Tenga en cuenta que las anotaciones de tipo son opcionales, y Python seguirá funcionando incluso si no las usa. Sin embargo, utilizar anotaciones de tipo puede ayudar a detectar ciertos tipos de errores en tiempo de compilación, en lugar de en tiempo de ejecución.
 
-## Variables and Constants
+## Variables y Constantes
 
-In Python, variables are used to store data or values that can be changed or updated during the course of the program. On the other hand, constant variables, as the name suggests, are variables that cannot be changed once they are assigned a value.
+En Python, las variables se utilizan para almacenar datos o valores que pueden ser cambiados o actualizados durante el curso del programa. Por otro lado, las variables constantes, como sugiere el nombre, son variables que no pueden ser cambiadas una vez que se les asigna un valor.
 
-In Python, there is no specific way to declare a variable or a constant variable, as variables are dynamically typed and their type can change during the program execution. However, a common convention to differentiate between variables and constant variables is to use all capital letters for the latter.
+En Python, no hay una forma específica de declarar una variable o una variable constante, ya que las variables son de tipado dinámico y su tipo puede cambiar durante la ejecución del programa. Sin embargo, una convención común para diferenciar entre variables y variables constantes es utilizar letras mayúsculas para estas últimas.
 
-For example, let's say we want to declare a variable to store the age of a person and a constant variable to store the value of pi. We can declare them as follows:
+Por ejemplo, digamos que queremos declarar una variable para almacenar la edad de una persona y una variable constante para almacenar el valor de pi. Podemos declararlas de la siguiente manera:
 
 ```python
 # variable to store age
@@ -203,17 +203,17 @@ age = 30
 PI = 3.14159
 ```
 
-In the above example, `age` is a variable that can be changed, while `PI` is a constant variable that cannot be changed once assigned a value.
+En el ejemplo anterior, `age` es una variable que puede cambiarse, mientras que `PI` es una variable constante que no puede cambiarse una vez se le ha asignado un valor.
 
-It is important to note that this convention does not actually make the variable constant, and it is still possible to modify the value of a constant variable in Python. However, following this convention helps in distinguishing between variables that are intended to be changed during the program execution and those that are intended to be constant.
+Es importante notar que esta convención no hace realmente a la variable constante, y todavía es posible modificar el valor de una variable constante en Python. Sin embargo, seguir esta convención ayuda a distinguir entre variables que se pretende cambiar durante la ejecución del programa y aquellas que se pretende sean constantes.
 
-## Global and Local Variables Defining
+## Definiendo Variables Globales y Locales
 
-There are two types of variables in Python: **global** and **local**.
+Hay dos tipos de variables en Python: **globales** y **locales**.
 
-A global variable in Python is a variable that is defined outside a function and can be accessed by any part of the program, including functions. Global variables in Python have a global scope, which means they are accessible from anywhere in the code.
+Una variable global en Python es una variable que se define fuera de una función y puede ser accedida por cualquier parte del programa, incluyendo funciones. Las variables globales en Python tienen un alcance global, lo que significa que son accesibles desde cualquier lugar en el código.
 
-Here's an example how to set a global variable in Python:
+Aquí hay un ejemplo de cómo establecer una variable global en Python:
 
 ```python3
 x = 10
@@ -224,13 +224,13 @@ def my_function():
 my_function() # output: 10
 ```
 
-In the example above, `x` is a global variable that can be accessed by the `my_function` function. When the function is called, it prints the value of `x`.
+En el ejemplo anterior, `x` es una variable global que puede ser accedida por la función `my_function`. Cuando se llama a la función, imprime el valor de `x`.
 
-Now let's see what a local variable is in Python.
+Ahora veamos qué es una variable local en Python.
 
-A local variable is a variable that is defined inside a function and can only be accessed within that function. Local variables have a local scope, which means they are only accessible within the block of code where they are defined.
+Una variable local es una variable que se define dentro de una función y solo puede ser accedida desde esa función. Las variables locales tienen un alcance local, lo que significa que solo son accesibles dentro del bloque de código donde están definidas.
 
-Here's an example of defining a local variable in Python:
+Aquí hay un ejemplo de cómo definir una variable local en Python:
 
 ```python3
 def my_function():
@@ -240,9 +240,9 @@ def my_function():
 my_function() # output: 5
 ```
 
-In the example above, `y` is a local variable that can only be accessed within the `my_function` function. When the function is called, it prints the value of `y`.
+En el ejemplo anterior, `y` es una variable local que solo se puede acceder dentro de la función `my_function`. Cuando se llama a la función, esta imprime el valor de `y`.
 
-It's important to note that if you define a local variable with the same name as a global variable, the local variable will take precedence within the function. Here's an example:
+Es importante tener en cuenta que si defines una variable local con el mismo nombre que una variable global, la variable local tendrá prioridad dentro de la función. Aquí hay un ejemplo:
 
 ```python
 x = 10
@@ -255,4 +255,4 @@ my_function() # output: 5
 print(x) # output: 10
 ```
 
-In the example above, `my_function` defines a local variable `x` with a value of `5`. When the function is called, it prints the value of the local variable, which is `5`. However, the global variable `x` still has a value of `10`, which is printed when it is called outside of the function.
+En el ejemplo anterior, `my_function` define una variable local `x` con un valor de `5`. Cuando se llama a la función, imprime el valor de la variable local, que es `5`. Sin embargo, la variable global `x` todavía tiene un valor de `10`, que se imprime cuando se la llama fuera de la función.

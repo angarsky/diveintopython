@@ -1,18 +1,18 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/boolean
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/boolean
 
-A Boolean variable is a variable that can hold one of two possible values: `True` or `False`. Boolean variables are often used in conditional statements and loops to control the flow of the program.
+Una variable booleana es una variable que puede contener uno de dos posibles valores: `True` o `False`. Las variables booleanas se utilizan a menudo en declaraciones condicionales y bucles para controlar el flujo del programa.
 
-## Bool Variable Declaration in Python
+## Declaración de Variable Bool en Python
 
-To declare a Boolean variable in Python, you simply assign the value `True` or `False` to a variable name. Here's an example:
+Para declarar una variable Booleana en Python, simplemente asignas el valor `True` o `False` a un nombre de variable. Aquí hay un ejemplo:
 
 ```python
 x = True
 y = False
 ```
 
-You can also use Boolean operators such as `and`, `or`, and `not` to combine or negate Boolean values. For example:
+También puedes utilizar operadores booleanos como `and`, `or` y `not` para combinar o negar valores booleanos. Por ejemplo:
 
 ```python3
 a = True
@@ -22,13 +22,13 @@ print(a or b)   # True
 print(not a)    # False
 ```
 
-In this example, `a and b` evaluates to `False` because both `a` and `b` are not `True`. `a or b` evaluates to `True` because at least one of `a` and `b` is `True`. And `not a` evaluates to `False` because `a` is `True` and the `not` operator negates it.
+En este ejemplo, `a and b` se evalúa como `False` porque tanto `a` como `b` no son `True`. `a or b` se evalúa como `True` porque al menos uno entre `a` y `b` es `True`. Y `not a` se evalúa como `False` porque `a` es `True` y el operador `not` lo niega.
 
-## Examples of Boolean Variable Usage
+## Ejemplos de uso de variable booleana
 
-As we already mentioned, boolean variable is mainly used in the conditional and loop statements.
+Como ya mencionamos, la variable booleana se utiliza principalmente en los enunciados condicionales y de bucle.
 
-### Conditional statements
+### Enunciados condicionales
 
 ```python3
 # Declaring a boolean variable
@@ -43,7 +43,7 @@ else:
 # Output: Bring an umbrella
 ```
 
-### Loop statements
+### Declaraciones de bucle
 
 ```python3
 # Declaring a boolean variable

@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/case-change
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/string/case-change
 
-There are some methods in Python which are commonly used to normalize string inputs, to convert strings to uppercase or lowercase, and to capitalize the first letter of a sentence or word. These methods can be particularly useful when dealing with user input or when working with text data that needs to be standardized or formatted consistently.
+Hay algunos métodos en Python que se usan comúnmente para normalizar las entradas de cadenas, convertir cadenas a mayúsculas o minúsculas, y capitalizar la primera letra de una oración o palabra. Estos métodos pueden ser especialmente útiles al tratar con entradas de usuarios o al trabajar con datos de texto que necesitan ser estandarizados o formateados de manera consistente.
 
-## String to lowercase
+## Cadena a minúsculas
 
-The `lower()` and `upper()` methods are used to convert all the characters in a string to lowercase and uppercase, respectively.
+Los métodos `lower()` y `upper()` se utilizan para convertir todos los caracteres en una cadena a minúsculas y mayúsculas, respectivamente.
 
-The `lower()` method converts all uppercase characters in the string to their lowercase equivalents, while leaving any existing lowercase characters unchanged. The method has the following syntax:
+El método `lower()` convierte todos los caracteres en mayúsculas de la cadena a sus equivalentes en minúsculas, mientras que deja los caracteres en minúsculas existentes sin cambios. El método tiene la siguiente sintaxis:
 
 ```python
 string.lower()
 ```
 
-Here, `string` is the original string to be converted to lowercase. The method returns a new string with all the uppercase characters converted to lowercase.
+Aquí, `string` es la cadena original que se convertirá en minúsculas. El método devuelve una nueva cadena con todos los caracteres en mayúsculas convertidos en minúsculas.
 
-For example, consider the following code snippet:
+Por ejemplo, considera el siguiente fragmento de código:
 
 ```python3
 string = "Hello World"
@@ -23,19 +23,19 @@ new_string = string.lower()
 print(new_string) # Output: hello world
 ```
 
-In this example, the `lower()` method is used to convert all the uppercase characters in the string variable to lowercase. The resulting lowercase string is then printed out using the `print()` function.
+En este ejemplo, el método `lower()` se utiliza para convertir todos los caracteres en mayúsculas de la variable de cadena a minúsculas. La cadena en minúsculas resultante se imprime luego utilizando la función `print()`.
 
-## String to uppercase
+## Cadena a mayúsculas
 
-Similarly, the `upper()` method converts all lowercase characters in the string to their uppercase equivalents, while leaving any existing uppercase characters unchanged. The method has the following syntax:
+De manera similar, el método `upper()` convierte todos los caracteres en minúsculas de la cadena a sus equivalentes en mayúsculas, mientras deja sin cambios cualquier carácter en mayúsculas existente. El método tiene la siguiente sintaxis:
 
 ```python
 string.upper()
 ```
 
-Here, `string` is the original string to be converted to uppercase. The method returns a new string with all the lowercase characters converted to uppercase.
+Aquí, `string` es la cadena original que será convertida a mayúsculas. El método devuelve una nueva cadena con todos los caracteres en minúsculas convertidos a mayúsculas.
 
-For example, consider the following code snippet:
+Por ejemplo, considera el siguiente fragmento de código:
 
 ```python3
 string = "Hello World"
@@ -43,11 +43,11 @@ new_string = string.upper()
 print(new_string) # Output: HELLO WORLD
 ```
 
-In this example, the `upper()` method is used to convert all the lowercase characters in the `string` variable to uppercase. The resulting uppercase string is then printed out using the print() function.
+En este ejemplo, el método `upper()` se utiliza para convertir todos los caracteres en minúsculas en la variable `string` a mayúsculas. La cadena resultante en mayúsculas se imprime luego utilizando la función print().
 
-## Capitalize a string in Python
+## Capitalizar una cadena en Python
 
-The `capitalize()` method only capitalizes the first letter of the string, and leaves the rest of the letters in lowercase. Here's an example:
+El método `capitalize()` solo pone en mayúscula la primera letra de la cadena y deja el resto de las letras en minúsculas. Aquí hay un ejemplo:
 
 ```python3
 string = "hello world"

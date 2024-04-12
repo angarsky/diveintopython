@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/statements/if
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/statements/if
 
-In Python, the `if` statement is used for conditional execution of code. It allows you to specify a condition and execute a block of code only if that condition evaluates to `True`.  
-  
-## How to Use the `if` Statement in Python  
+En Python, la sentencia `if` se utiliza para la ejecución condicional de código. Te permite especificar una condición y ejecutar un bloque de código solo si esa condición se evalúa como `True`.
 
-The `if` statements in Python are conditional statements used to execute a block of code based on certain conditions. The basic syntax of an `if` statement is:
+## Cómo usar la sentencia `if` en Python
+
+Las sentencias `if` en Python son declaraciones condicionales utilizadas para ejecutar un bloque de código basado en ciertas condiciones. La sintaxis básica de una sentencia `if` es:
 
 ```python
 if 1 > 2:
@@ -14,7 +14,7 @@ if 1 > 2:
 
 ```
 
-An if statement can also be combined with an `else` statement to execute different blocks of code based on whether the `condition` is true or false. The syntax for an if-else statement is:
+Una declaración `if` también puede combinarse con una declaración `else` para ejecutar diferentes bloques de código basados en si la `condition` es verdadera o falsa. La sintaxis para una declaración if-else es:
 
 ```python3
 if 2 > 1:
@@ -26,7 +26,7 @@ else:
 
 ```
 
-### Even Numbers
+### Números Pares
 
 ```python3
 num = 4
@@ -36,7 +36,7 @@ else:
     print("Odd")
 ```
 
-### Maximum of Two Numbers
+### Máximo de Dos Números
 
 ```python3
 num1 = 10
@@ -48,19 +48,19 @@ else:
 
 ```
 
-Use if statements in Python to control your program’s flow and make decisions based on specific conditions.  
-  
-## Ternary Operator
+Utiliza declaraciones `if` en Python para controlar el flujo de tu programa y tomar decisiones basadas en condiciones específicas.
 
-Ternary statements provide a concise way to write one line if statement. It is an inline if statement that consists of three operands: a condition, an expression to execute if the condition is true, and an expression to execute if the condition is false. 
+## Operador Ternario
 
-### Ternary `if` Statement Syntax
+Las declaraciones ternarias proporcionan una forma concisa de escribir una declaracion `if` en una línea. Es una declaración `if` inline que consta de tres operandos: una condición, una expresión a ejecutar si la condición es verdadera y una expresión a ejecutar si la condición es falsa.
+
+### Sintaxis de la Declaración Ternaria `if`
 
 ```python
 <expression_if_true> if <condition> else <expression_if_false>
 ```
 
-### Check if a number is odd or even
+### Verifica si un número es impar o par
 
 ```python3
 num = 7
@@ -68,9 +68,9 @@ result = "Even" if num % 2 == 0 else "Odd"
 print(result)  # Output: Odd
 ```
 
-In the example above, the ternary statement checks if the number is even or odd with **ternary operator** `if`. If the number is divisible by 2 (i.e., the remainder of the division is zero), the `result` variable will be assigned the string `'Even'`, and if it's not divisible by 2 (i.e., the remainder is one), the `result` variable will be assigned the string `'Odd'`.
+En el ejemplo anterior, la declaración ternaria verifica si el número es par o impar con **operador ternario** `if`. Si el número es divisible por 2 (es decir, el resto de la división es cero), la variable `result` será asignada con la cadena `'Even'`, y si no es divisible por 2 (es decir, el resto es uno), la variable `result` será asignada con la cadena `'Odd'`.
 
-### Check if a list is empty or not
+### Comprobar si una lista está vacía o no
 
 ```python3
 my_list = [1, 2, 3]
@@ -78,13 +78,13 @@ result = "Not Empty" if my_list else "Empty"
 print(result)  # Output: Not Empty
 ```
 
-In the example above, the ternary statement checks if the `my_list` variable is empty or not. If `my_list` is not empty, the `result` variable will be assigned the string `Not Empty`, and if it's empty, the `result` variable will be assigned the string `Empty`.
+En el ejemplo anterior, la declaración ternaria verifica si la variable `my_list` está vacía o no. Si `my_list` no está vacía, la variable `result` será asignada con la cadena `Not Empty`, y si está vacía, la variable `result` será asignada con la cadena `Empty`.
 
-Overall, ternary statements provide a clean and efficient way to write conditional statements in Python.  
-  
-## The `if` Statement Between Two Numbers  
+En general, las declaraciones ternarias proporcionan una manera limpia y eficiente de escribir declaraciones condicionales en Python.
 
-To check if a number is between two numbers in Python, you can use an `if` statement with logical operators. Here are two examples:
+## La declaración `if` entre dos números
+
+Para verificar si un número está entre dos números en Python, puedes usar una declaración `if` con operadores lógicos. Aquí hay dos ejemplos:
 
 ```python3
 x = 5
@@ -94,7 +94,7 @@ else:
     print("x is not between 2 and 8")
 ```
 
-In this example, the `if` statement checks if `x` is between `2` and `8` (inclusive). If `x` is between `2` and `8`, the statement `print(`x is between 2 and 8`)` will be executed, otherwise, `print(`x is not between 2 and 8`)` will be executed.
+En este ejemplo, la sentencia `if` verifica si `x` está entre `2` y `8` (inclusive). Si `x` está entre `2` y `8`, se ejecutará la sentencia `print(`x is between 2 and 8`)`, de lo contrario, se ejecutará `print(`x is not between 2 and 8`)`.
 
 ```python3
 y = 10
@@ -104,13 +104,13 @@ else:
     print("y is not between 2 and 8")
 ```
 
-In this example, the `if` statement checks if `y` is **not** less than `2` or **not** greater than `8`. If `y` is between `2` and `8`, the statement `print(y is between 2 and 8)` will be executed, otherwise, `print(y is not between 2 and 8)` will be executed.
+En este ejemplo, la sentencia `if` verifica si `y` **no** es menor que `2` o **no** es mayor que `8`. Si `y` está entre `2` y `8`, la sentencia `print(y is between 2 and 8)` se ejecutará, de lo contrario, `print(y is not between 2 and 8)` se ejecutará.
 
-Use these examples to check if your number is between two numbers in Python.  
-  
-## The `if` Statement in a List Comprehension  
+Usa estos ejemplos para verificar si tu número está entre dos números en Python.
 
-In Python, an `if` statement can be used in list comprehension to filter out only the values that meet a specific condition. This is extremely useful for creating a new list that contains only the desired values without needing to write a loop. 
+## La sentencia `if` en una Comprensión de Listas
+
+En Python, una sentencia `if` se puede usar en la comprensión de listas para filtrar solo los valores que cumplen con una condición específica. Esto es extremadamente útil para crear una nueva lista que contiene solo los valores deseados sin necesidad de escribir un bucle.
 
 ```python3
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -118,7 +118,7 @@ even_numbers = [num for num in numbers if num % 2 == 0]
 print(even_numbers)
 ```
 
-This code creates a new list called `even_numbers` containing only the even numbers from the original list `numbers`. 
+Este código crea una nueva lista llamada `even_numbers` que contiene solo los números pares de la lista original `numbers`.
 
 ```python3
 words = ["apple", "banana", "cherry", "date"]
@@ -126,13 +126,13 @@ short_words = [word for word in words if len(word) < 6]
 print(short_words)
 ```
 
-This example uses list comprehension to create a new list called `short_words` that only contains words with less than six characters from the original list `words`.
+Este ejemplo utiliza la comprensión de listas para crear una nueva lista llamada `short_words` que solo contiene palabras con menos de seis caracteres de la lista original `words`.
 
-By using `if` statement in list comprehension, we can drastically reduce the amount of code needed to create a new filtered list. This can result in more readable and concise code that is easier to maintain.  
-  
-## Nested `if` Statements  
+Al usar la instrucción `if` en la comprensión de listas, podemos reducir drásticamente la cantidad de código necesario para crear una nueva lista filtrada. Esto puede resultar en un código más legible y conciso que es más fácil de mantener.
 
-Nested If statements are used in Python programming when two or more conditions need to be checked simultaneously. It is a conditional statement inside another, creating a hierarchical structure of decision-making.
+## Sentencias `if` Anidadas  
+
+Las sentencias If anidadas se usan en la programación de Python cuando se necesitan verificar dos o más condiciones simultáneamente. Es una declaración condicional dentro de otra, creando una estructura jerárquica de toma de decisiones.
 
 ```python3
 age = 18
@@ -144,7 +144,7 @@ else:
     print("You are not yet an adult")
 ```
 
-In this example, the first `if` statement checks if the `age` is greater than or equal to 18. If `True`, the second `if` statement checks if `age` is equal to 18. If both conditions are `True`, it prints the congratulations message. If not, it only prints the message of being a legally adult.
+En este ejemplo, la primera sentencia `if` verifica si la `age` es mayor o igual a 18. Si es `True`, la segunda sentencia `if` verifica si `age` es igual a 18. Si ambas condiciones son `True`, imprime el mensaje de felicitaciones. Si no, solo imprime el mensaje de ser legalmente adulto.
 
 ```python3
 x = 5
@@ -162,15 +162,15 @@ else:
         print("z is the largest")
 ```
 
-In this example, there are three variables, and the nested `if` statements checks which one of them is the largest. If `x` is greater than `y`, then it checks if `x` is greater than `z`. If it's `True`, it prints `x is the largest`. If the first condition is `False`, then it checks if `z` is greater than `y`. If it's `True`, it prints `z is the largest`. If none of these conditions are `True`, then `y` must be the largest, and it prints `y is the largest`.
+En este ejemplo, hay tres variables, y los `if` anidados comprueban cuál de ellas es la mayor. Si `x` es mayor que `y`, entonces verifica si `x` es mayor que `z`. Si es `True`, imprime `x es el mayor`. Si la primera condición es `False`, entonces verifica si `z` es mayor que `y`. Si es `True`, imprime `z es el mayor`. Si ninguna de estas condiciones es `True`, entonces `y` debe ser el mayor, e imprime `y es el mayor`.
 
-These are just simple examples to illustrate the concept of nested If statements in Python and how they can be used in programming.  
-  
-## The `elif` Statement in Python  
+Estos son solo ejemplos simples para ilustrar el concepto de sentencias If anidadas en Python y cómo se pueden utilizar en la programación.
 
-Elif `statement` in Python is a conditional `statement` that helps you to check multiple conditions in a program. It is used in conjunction with the `if` and `else` statements. 
+## La sentencia `elif` en Python
 
-### Syntax
+La sentencia `elif` en Python es una sentencia condicional que te ayuda a verificar múltiples condiciones en un programa. Se utiliza en conjunto con las sentencias `if` y `else`.
+
+### Sintaxis
 
 ```python
 if condition:
@@ -181,7 +181,7 @@ else:
     statement(s)
 ```
 
-Here, `condition` is a boolean expression that evaluates to `True` or `False`. If `condition` is `True`, then the statements inside the `if` block are executed. If `condition` is `False`, then the statements inside the `elif` block are executed. If none of the conditions are `True`, then the statements inside the `else` block are executed.
+Aquí, `condition` es una expresión booleana que se evalúa en `True` o `False`. Si `condition` es `True`, entonces se ejecutan las instrucciones dentro del bloque `if`. Si `condition` es `False`, entonces se ejecutan las instrucciones dentro del bloque `elif`. Si ninguna de las condiciones es `True`, entonces se ejecutan las instrucciones dentro del bloque `else`.
 
 ```python3
 age = 25
@@ -194,7 +194,7 @@ else:
     print("You are a senior citizen")
 ```
 
-In this example, we are checking the `age` of a person. If the `age` is less than 18, it prints `You are a minor`. If the `age` is between 18 and 65, it prints `You are an adult`. If the `age` is greater than 65, it prints `You are a senior citizen`.
+En este ejemplo, estamos verificando la `age` de una persona. Si la `age` es menor de 18, imprime `You are a minor`. Si la `age` está entre 18 y 65, imprime `You are an adult`. Si la `age` es mayor de 65, imprime `You are a senior citizen`.
 
 ```python3
 score = 80
@@ -211,15 +211,15 @@ else:
     print("You have failed the exam")
 ```
 
-In this example, we are checking the `score` of a student. Depending on the `score`, it prints different messages. If the `score` is greater than or equal to 90, it prints `You have secured an A grade`. If the `score` is between 80 and 89, it prints `You have secured a B grade`. If the `score` is between 70 and 79, it prints `You have secured a C grade`. If the `score` is between 60 and 69, it prints `You have secured a D grade`. If the `score` is less than 60, it prints `You have failed the exam`.  
+En este ejemplo, estamos verificando el `score` de un estudiante. Dependiendo del `score`, imprime diferentes mensajes. Si el `score` es mayor o igual a 90, imprime `You have secured an A grade`. Si el `score` está entre 80 y 89, imprime `You have secured a B grade`. Si el `score` está entre 70 y 79, imprime `You have secured a C grade`. Si el `score` está entre 60 y 69, imprime `You have secured a D grade`. Si el `score` es menos de 60, imprime `You have failed the exam`.
 
-## Multiple `if` Statements  
+## Múltiples declaraciones `if`
 
-In Python, multiple `if` statements can be used to check multiple conditions in a single execution block. There are two ways of writing multiple `if` statements in Python - using multiple `if` statements and using a multiline `if` statement.
+En Python, se pueden utilizar múltiples declaraciones `if` para verificar múltiples condiciones en un solo bloque de ejecución. Hay dos maneras de escribir múltiples declaraciones `if` en Python: usando múltiples declaraciones `if` y utilizando una declaración `if` multilínea.
 
-### Example of Multiple `if` Statements
+### Ejemplo de Múltiples Declaraciones `if`
 
-The syntax for using multiple `if` statements is as follows:
+La sintaxis para usar múltiples declaraciones `if` es la siguiente:
 
 ```python
 if condition1:
@@ -230,7 +230,7 @@ if condition3:
     # do something else again
 ```
 
-Here, each `if` statement checks a separate condition and executes the corresponding block of code if the condition is true.
+Aquí, cada sentencia `if` verifica una condición separada y ejecuta el bloque de código correspondiente si la condición es verdadera.
 
 ```python3
 x = 5
@@ -248,9 +248,9 @@ if y < 10:
 # y is less than 10
 ```
 
-### Another example of Multiline `if` Statement
+### Otro ejemplo de la sentencia `if` multilínea
 
-The syntax for using a multiline `if` statement is as follows:
+La sintaxis para usar una sentencia `if` multilínea es la siguiente:
 
 ```python
 if condition1 and \
@@ -259,7 +259,7 @@ if condition1 and \
    # do something
 ```
 
-Here, the backslashes (`\`) indicate that the `if` statement is continued on the next line.
+Aquí, las barras invertidas (`\`) indican que la declaración `if` continúa en la línea siguiente.
 
 ```python3
 x = 5
@@ -274,4 +274,4 @@ if x > 0 and \
 # x is a positive number and y is less than 10
 ```
 
-Overall, both methods are useful for checking multiple conditions in Python, but multiline `if` statements can make the code more readable and easier to manage.  
+En general, ambos métodos son útiles para verificar múltiples condiciones en Python, pero las declaraciones `if` en múltiples líneas pueden hacer que el código sea más legible y fácil de manejar.
