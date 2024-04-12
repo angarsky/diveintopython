@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/binary-files
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/file-handling/binary-files
 
-Binary files are computer files that contain data in a format that can be easily read and manipulated by machines. [Binary files](https://en.wikipedia.org/wiki/Binary_file) are important because they allow programmers to work with data in a way that is both efficient and secure. This article will discuss the basics of binary files in Python, how to read and write them, and some common use cases where they are most beneficial.  
-  
-## How to Read a Binary File  
+Los archivos binarios son archivos de computadora que contienen datos en un formato que las máquinas pueden leer y manipular fácilmente. [Archivos binarios](https://en.wikipedia.org/wiki/Binary_file) son importantes porque permiten a los programadores trabajar con datos de una manera que es eficiente y segura. Este artículo discutirá los conceptos básicos de los archivos binarios en Python, cómo leerlos y escribirlos, y algunos casos de uso comunes donde son más beneficiosos.
 
-In Python, we can use the `open()` function to open a binary file and read the contents.
+## Cómo Leer un Archivo Binario
 
-### Open a binary file in a read mode
+En Python, podemos usar la función `open()` para abrir un archivo binario y leer su contenido.
+
+### Abrir un archivo binario en modo de lectura
 
 ```python
 file = open("example.bin", "rb")
@@ -22,14 +22,14 @@ file.close()
 print(binary_data)
 ```
 
-In the code above:
+En el código anterior:
 
-- We open the binary file `example.bin` using the `open()` function, with the mode `rb` (read binary).
-- We read the contents of the file using the `.read()` method and store it in the variable `binary_data`.
-- We close the file using the `.close()` method.
-- We print the contents of the file using the `print()` function.
+- Abrimos el archivo binario `example.bin` usando la función `open()`, con el modo `rb` (lectura binaria).
+- Leemos el contenido del archivo usando el método `.read()` y lo almacenamos en la variable `binary_data`.
+- Cerramos el archivo usando el método `.close()`.
+- Imprimimos el contenido del archivo usando la función `print()`.
 
-### Open a binary file in a read mode using the `with` statement
+### Abrir un archivo binario en modo de lectura usando la declaración `with`
 
 ```python
 with open("example.bin", "rb") as file:
@@ -39,23 +39,23 @@ with open("example.bin", "rb") as file:
 print(binary_data)
 ```
 
-In the code above:
+En el código anterior:
 
-- We open the binary file ``example.bin`` using the `open()` function and the mode ``rb`` (read binary) using `with` statement.
-- We read the contents of the file using the `.read()` method and store it in the variable `binary_data`.
-- We print the contents of the file using the `print()` function.
+- Abrimos el archivo binario `example.bin` usando la función `open()` y el modo `rb` (leer binario) usando la declaración `with`.
+- Leemos el contenido del archivo utilizando el método `.read()` y lo almacenamos en la variable `binary_data`.
+- Imprimimos el contenido del archivo utilizando la función `print()`.
 
-Using the `with` statement to open a file ensures that the file is closed automatically after reading its contents.  
-  
-## How to Write a Binary File
+Usar la declaración `with` para abrir un archivo asegura que el archivo se cierre automáticamente después de leer su contenido.
 
-To write a binary file, you need to use the built-in `open()` function with a mode parameter of `wb`. This will open the file in binary mode, allowing you to write binary data to it. Here are the steps to write a binary file:
+## Cómo Escribir un Archivo Binario
 
-1. Open the file in binary mode using the `open()` function with a mode parameter of `wb`.
-2. Write the binary data to the file using the `write()` method of the file object.
-3. Close the file using the `close()` method of the file object.
+Para escribir un archivo binario, necesitas usar la función incorporada `open()` con un parámetro de modo de `wb`. Esto abrirá el archivo en modo binario, permitiéndote escribir datos binarios en él. Aquí están los pasos para escribir un archivo binario:
 
-### Open a file in a binary mode
+1. Abrir el archivo en modo binario usando la función `open()` con un parámetro de modo de `wb`.
+2. Escribir los datos binarios en el archivo utilizando el método `write()` del objeto archivo.
+3. Cerrar el archivo utilizando el método `close()` del objeto archivo.
+
+### Abrir un archivo en un modo binario
 
 ```python
 file = open('binaryfile.bin', 'wb')
@@ -69,18 +69,18 @@ finally:
     file.close()
 ```
 
-In conclusion, writing binary files is a simple process that involves opening the file in binary mode and writing binary data to it using the `write()` method of the file object.  
-  
-## A List of the File Modes for Binary Files  
+En conclusión, escribir archivos binarios es un proceso simple que involucra abrir el archivo en modo binario y escribir datos binarios en él usando el método `write()` del objeto de archivo.
 
-When working with binary files, you need to open them in the correct file mode to ensure the file is being read and/or written correctly. There are six file modes for binary files:
+## Una Lista de los Modos de Archivo para Archivos Binarios
 
-1. **rb**: Read mode (binary) - opens the file for reading in binary format.
-2. **rb+**: Read and write mode (binary) - opens the file for reading and writing in binary format.
-3. **wb**: Write mode (binary) - opens the file for writing in binary format. If the file already exists, it will be truncated.
-4. **wb+**: Write and read mode (binary) - opens the file for reading and writing in binary format. If the file already exists, it will be truncated.
-5. **ab**: Append mode (binary) - opens the file for writing in binary format. New data will be written at the end of the file.
-6. **ab+**: Append and read mode (binary) - opens the file for reading and writing in binary format. New data will be written at the end of the file.
+Cuando se trabaja con archivos binarios, necesitas abrirlos en el modo de archivo correcto para asegurarte de que el archivo se esté leyendo y/o escribiendo correctamente. Hay seis modos de archivo para archivos binarios:
+
+1. **rb**: Modo lectura (binario) - abre el archivo para leer en formato binario.
+2. **rb+**: Modo lectura y escritura (binario) - abre el archivo para leer y escribir en formato binario.
+3. **wb**: Modo escritura (binario) - abre el archivo para escribir en formato binario. Si el archivo ya existe, será truncado.
+4. **wb+**: Modo escritura y lectura (binario) - abre el archivo para leer y escribir en formato binario. Si el archivo ya existe, será truncado.
+5. **ab**: Modo adjuntar (binario) - abre el archivo para escribir en formato binario. Los nuevos datos serán escritos al final del archivo.
+6. **ab+**: Modo adjuntar y leer (binario) - abre el archivo para leer y escribir en formato binario. Los nuevos datos serán escritos al final del archivo.
 
 ```python
 with open("file.bin", "rb") as f:
@@ -88,7 +88,7 @@ with open("file.bin", "rb") as f:
     print(data)
 ```
 
-This code opens a binary file named `file.bin` in read mode using the `with` statement. The `rb` mode ensures the file is read in binary format. The `read()` method is used to read the entire file and the content is then printed out to the console.
+Este código abre un archivo binario llamado `file.bin` en modo lectura usando la sentencia `with`. El modo `rb` asegura que el archivo se lea en formato binario. El método `read()` se utiliza para leer el archivo completo y luego el contenido se imprime en la consola.
 
 ```python
 with open("file.bin", "wb") as f:
@@ -96,4 +96,4 @@ with open("file.bin", "wb") as f:
     f.write(data)
 ```
 
-This code creates a binary file named `file.bin` in write mode using the `with` statement. The `wb` mode ensures the file is written in binary format. The `b` prefix before the string literal indicates that the string is in binary format. The `write()` method is used to write binary data to the file. This code writes the binary data for the string `Hello` to the file.  
+Este código crea un archivo binario llamado `file.bin` en modo escritura utilizando la instrucción `with`. El modo `wb` asegura que el archivo se escriba en formato binario. El prefijo `b` antes de la literal de cadena indica que la cadena está en formato binario. El método `write()` se utiliza para escribir datos binarios en el archivo. Este código escribe los datos binarios para la cadena `Hello` en el archivo.
