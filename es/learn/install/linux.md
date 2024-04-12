@@ -1,23 +1,23 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/install/linux
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/install/linux
 
-Installing Python on Linux is a necessary step for anyone looking to develop applications or work with Python IDEs on Linux operating systems. Python is a powerful programming language that offers excellent functionality for coding and developing software. This guide will walk you through the steps required for installing Python on Linux, helping you get started with Python programming on Linux without any difficulty.  
-  
-## How to Install Python on Linux  
+Instalar Python en Linux es un paso necesario para cualquiera que busque desarrollar aplicaciones o trabajar con los IDEs de Python en sistemas operativos Linux. Python es un lenguaje de programación potente que ofrece una excelente funcionalidad para codificar y desarrollar software. Esta guía te guiará a través de los pasos necesarios para instalar Python en Linux, ayudándote a comenzar con la programación en Python en Linux sin dificultad.
 
-If you are using Linux as your operating system, you can easily install Python by following these simple steps:
+## Cómo Instalar Python en Linux
 
-1. Open your terminal and type the command `sudo apt-get install python` to install the latest version of Python. This will download Python for linux and install it.
-2. Once the installation is complete, check your Python version using the command `python --version`.
+Si estás utilizando Linux como tu sistema operativo, puedes instalar Python fácilmente siguiendo estos sencillos pasos:
 
-That's it! You have successfully installed Python on your Linux machine.
+1. Abre tu terminal y escribe el comando `sudo apt-get install python` para instalar la última versión de Python. Esto descargará Python para linux e iniciará su instalación.
+2. Una vez que la instalación esté completa, verifica tu versión de Python usando el comando `python --version`.
 
-By following these steps, you have installed Python on Linux using the command line interface. This method is the easiest and most popular way to install Python on Linux. Get started with coding in Python today!  
-  
-## Add Python to Linux Path   
+¡Eso es todo! Has instalado con éxito Python en tu máquina Linux.
 
-To add Python to the Linux path, you can use the `export` command to define the `$PATH` environment variable. First, determine where Python is installed on Linux by running the command `which python`. Once you have the path, export it by running `export PATH=$PATH:/path/to/python`. This will ensure that Python is accessible from anywhere in the terminal. Keywords: where is Python installed Linux, add Python to Linux path.  
-  
-## How to Run a Python Script in Linux  
+Siguiendo estos pasos, has instalado Python en Linux utilizando la interfaz de línea de comandos. Este método es la forma más fácil y más popular de instalar Python en Linux. ¡Comienza a codificar en Python hoy mismo!
 
-To run a Python script in Linux, first ensure that Python is installed on your system. Then, navigate to the directory containing the script using the terminal. Next, enter the command `python filename.py` to execute the script. Alternatively, you can make the script executable with the command `chmod +x filename.py` and then run it with `./filename.py`. With these simple steps, you can start running your Python scripts in Linux.  
+## Agregar Python al Path de Linux
+
+Para agregar Python al path de Linux, puedes usar el comando `export` para definir la variable de entorno `$PATH`. Primero, determina dónde está instalado Python en Linux ejecutando el comando `which python`. Una vez que tengas la ruta, expórtala ejecutando `export PATH=$PATH:/ruta/a/python`. Esto asegurará que Python sea accesible desde cualquier lugar en la terminal. Palabras clave: dónde está instalado Python Linux, agregar Python al path de Linux.
+
+## Cómo Ejecutar un Script de Python en Linux
+
+Para ejecutar un script de Python en Linux, primero asegúrate de que Python esté instalado en tu sistema. Luego, navega al directorio que contiene el script usando la terminal. A continuación, ingresa el comando `python nombrearchivo.py` para ejecutar el script. Alternativamente, puedes hacer que el script sea ejecutable con el comando `chmod +x nombrearchivo.py` y luego ejecutarlo con `./nombrearchivo.py`. Con estos sencillos pasos, puedes comenzar a ejecutar tus scripts de Python en Linux.

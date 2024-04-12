@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/partial-functions
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/functions/partial-functions
 
-Python offers a range of functions to developers. Partial functions in Python are an exciting addition that can be extremely useful, particularly when dealing with complex code. A partial function is a function that has some of its arguments already defined, making it easier to call. In this article, we explore the concept of partial functions in Python and how they can be used effectively in different programming scenarios.  
+Python ofrece una gama de funciones a los desarrolladores. Las funciones parciales en Python son una adición emocionante que puede ser extremadamente útil, especialmente cuando se trata de código complejo. Una función parcial es una función que ya tiene algunos de sus argumentos definidos, lo que facilita su llamada. En este artículo, exploramos el concepto de funciones parciales en Python y cómo se pueden utilizar eficazmente en diferentes escenarios de programación.
   
-## Understanding Python partial functions: a beginner's guide to function modification  
+## Entendiendo las funciones parciales de Python: una guía para principiantes sobre la modificación de funciones
 
-A **partial function** in Python is a function that is defined with some of its arguments already set. This allows us to create new functions from existing ones that have some of the arguments pre-configured. The resulting function is called a partial function. 
+Una **función parcial** en Python es una función que se define con algunos de sus argumentos ya establecidos. Esto nos permite crear nuevas funciones a partir de las existentes que tienen algunos de los argumentos preconfigurados. La función resultante se llama función parcial.
 
-For example, consider the following normal function that adds two numbers. We can create a new partial function from this function by setting one of the arguments:
+Por ejemplo, considera la siguiente función normal que suma dos números. Podemos crear una nueva función parcial a partir de esta función estableciendo uno de los argumentos:
 
 ```python3
 from functools import partial
@@ -20,9 +20,9 @@ add_3 = partial(add, 3)
 print(add_3(4)) # Output: 7
 ```
 
-Here, we have created a new partial function called `add_3` which adds 3 to any number we pass to it. We did this by using the `partial` function from the `functools` module.
+Aquí, hemos creado una nueva función parcial llamada `add_3` que suma 3 a cualquier número que le pasemos. Lo hicimos utilizando la función `partial` del módulo `functools`.
 
-We can also use partial functions to modify an existing function by passing a new value for one of its arguments:
+También podemos usar funciones parciales para modificar una función existente pasando un nuevo valor para uno de sus argumentos:
 
 ```python3
 from functools import partial
@@ -32,17 +32,17 @@ mod = partial(pow, 2)
 print(mod(3)) # Output: 8
 ```
 
-In this example, we have created a new partial function called `mod` which takes a number and computes its modulo with 2. 
-  
-## How to use partial functions in Python to simplify recurring code snippets  
+En este ejemplo, hemos creado una nueva función parcial llamada `mod` que toma un número y calcula su módulo con 2.
 
-Partial functions are functions that are defined with some of its arguments already set, which reduces the need to repeat code snippets in Python. They are created using the `functools` module's `partial()` method and can be used to simplify complex code.
+## Cómo usar funciones parciales en Python para simplificar fragmentos de código recurrentes
 
-The keywords used in this answer are function and partial function.
+Las funciones parciales son funciones que están definidas con algunos de sus argumentos ya establecidos, lo que reduce la necesidad de repetir fragmentos de código en Python. Se crean utilizando el método `partial()` del módulo `functools` y se pueden usar para simplificar el código complejo.
 
-### Two examples of using partial functions in Python
+Las palabras clave usadas en esta respuesta son función y función parcial.
 
-Suppose we have a function that calculates the area of a rectangle. We need to calculate the area of several rectangles with a fixed `width` of `10`. Instead of creating a new function, we can create a partial function with the fixed width argument:
+### Dos ejemplos de uso de funciones parciales en Python
+
+Supongamos que tenemos una función que calcula el área de un rectángulo. Necesitamos calcular el área de varios rectángulos con un `width` fijo de `10`. En lugar de crear una nueva función, podemos crear una función parcial con el argumento de ancho fijo:
 
 ```python3
 from functools import partial
@@ -59,7 +59,7 @@ print(area1) # 50
 print(area2) # 70
 ```
 
-Suppose we have a function that generates a URL from a path and some query parameters. We need to generate URLs with a fixed path and some variable query parameters. Instead of repeating the path argument every time, we can create a partial function with the fixed path argument:
+Supongamos que tenemos una función que genera una URL a partir de una ruta y algunos parámetros de consulta. Necesitamos generar URLs con una ruta fija y algunos parámetros de consulta variables. En lugar de repetir el argumento de ruta cada vez, podemos crear una función parcial con el argumento de ruta fijo:
 
 ```python3
 from functools import partial
@@ -77,15 +77,15 @@ url2 = generate_url_with_fixed_path({"q": "Java", "sort": "date"})
 
 print(url1) # https://example.com/search?q=Python
 print(url2) # https://example.com/search?q=Java&sort=date
-```  
-  
-## Exploring the advantages of partial functions in Python: a practical example  
+```
 
-Partial functions in Python are functions that are partially defined and contain fixed values for certain parameters. These functions offer several advantages, such as enhanced reusability and reduced code redundancy. A practical example of using partial functions in Python is the implementation of the exponential function, where a partial function can be created to predefine the base of the exponent.
+## Explorando las ventajas de las funciones parciales en Python: un ejemplo práctico
 
-### Function Example: Exponential Function
+Las funciones parciales en Python son funciones que están parcialmente definidas y contienen valores fijos para ciertos parámetros. Estas funciones ofrecen varias ventajas, como la reutilización mejorada y la reducción de la redundancia de código. Un ejemplo práctico del uso de funciones parciales en Python es la implementación de la función exponencial, donde se puede crear una función parcial para predefinir la base del exponente.
 
-The exponential function is used in many mathematical operations and can be easily implemented in Python using the `exp` function from the `math` module. However, if we want to calculate the exponential value of a number with different bases, we need to write separate lines of code for each operation. This can result in code redundancy and decreased readability.
+### Ejemplo de Función: Función Exponencial
+
+La función exponencial se utiliza en muchas operaciones matemáticas y se puede implementar fácilmente en Python usando la función `exp` del módulo `math`. Sin embargo, si queremos calcular el valor exponencial de un número con diferentes bases, necesitamos escribir líneas de código separadas para cada operación. Esto puede resultar en redundancia de código y disminución de la legibilidad.
 
 ```python
 import math
@@ -97,7 +97,7 @@ exponential_3 = math.exp(3 * x)
 exponential_4 = math.exp(4 * x)
 ```
 
-To avoid this and make the code more concise, we can use partial functions in Python. We can define a partial function for the `exp` function with a fixed parameter for the base using the `partial` function from the `functools` module. Then, we can call the partial function with the variable parameter `x`.
+Para evitar esto y hacer el código más conciso, podemos usar funciones parciales en Python. Podemos definir una función parcial para la función `exp` con un parámetro fijo para la base usando la función `partial` del módulo `functools`. Luego, podemos llamar a la función parcial con el parámetro variable `x`.
 
 ```python
 import math
@@ -114,11 +114,11 @@ exponential_3 = exp_base_3(x)
 exponential_4 = exp_base_4(x)
 ```
 
-This way, we can easily calculate the exponential value of a variable `x` for different bases using the defined partial functions without having to rewrite the code for each operation.
+De esta manera, podemos calcular fácilmente el valor exponencial de una variable `x` para diferentes bases utilizando las funciones parciales definidas sin tener que reescribir el código para cada operación.
 
-### Partial Function Example: Multiply Function
+### Ejemplo de Función Parcial: Función Multiplicar
 
-Another example of using partial functions in Python is the implementation of the `multiply` function. Suppose we have a list of numbers that we want to multiply by a fixed value `x`. We can define a partial function using the `partial` function from the `functools` module to create a new function that multiplies a given number by `x`.
+Otro ejemplo del uso de funciones parciales en Python es la implementación de la función `multiply`. Supongamos que tenemos una lista de números que queremos multiplicar por un valor fijo `x`. Podemos definir una función parcial usando la función `partial` del módulo `functools` para crear una nueva función que multiplica un número dado por `x`.
 
 ```python3
 from functools import partial
@@ -129,21 +129,21 @@ result = map(multiply, [1, 2, 3, 4, 5])
 print(list(result))    # Output: [2, 4, 6, 8, 10]
 ```
 
-In this example, the `multiply` function is defined as a partial function that accepts two arguments, `x` and `y`. The first argument `x` is fixed to the value `2`, and the second argument `y` is passed as a variable parameter using `map` function to multiply each item in the list by `2` and return the result. This results in a more concise and readable code.  
-  
-## When to Use Partial Functions vs. Lambdas in Python: Key Differences and Similarities  
+En este ejemplo, la función `multiply` se define como una función parcial que acepta dos argumentos, `x` e `y`. El primer argumento `x` se fija al valor `2`, y el segundo argumento `y` se pasa como un parámetro variable usando la función `map` para multiplicar cada elemento de la lista por `2` y devolver el resultado. Esto resulta en un código más conciso y legible.
 
-Partial functions are functions that have a fixed set of predefined arguments, and the rest of the arguments can be passed at a later time. On the other hand, lambda functions are anonymous functions that can be defined on the fly.
+## Cuándo Usar Funciones Parciales vs. Lambdas en Python: Diferencias Clave y Similitudes
 
-Use partial functions when you have a function with fixed arguments and you want to reuse it with different values for the remaining arguments. Use lambdas when you need to quickly define a simple function without giving it a name.
+Las funciones parciales son funciones que tienen un conjunto fijo de argumentos predefinidos, y el resto de los argumentos se pueden pasar más tarde. Por otro lado, las funciones lambda son funciones anónimas que se pueden definir sobre la marcha.
 
-Key differences and similarities:
+Usa funciones parciales cuando tengas una función con argumentos fijos y quieras reutilizarla con diferentes valores para los argumentos restantes. Usa lambdas cuando necesites definir rápidamente una función simple sin darle un nombre.
 
-- Partial functions are defined using the `functools.partial()` function, while lambda functions are defined using the `lambda` keyword.
-- Partial functions can have a fixed set of predefined arguments, while lambdas can have any number of arguments.
-- Both partial functions and lambdas can be used as arguments to other functions.
+Diferencias clave y similitudes:
 
-### Example of Using a Partial Function
+- Las funciones parciales se definen usando la función `functools.partial()`, mientras que las funciones lambda se definen usando la palabra clave `lambda`.
+- Las funciones parciales pueden tener un conjunto fijo de argumentos predefinidos, mientras que las lambdas pueden tener cualquier número de argumentos.
+- Tanto las funciones parciales como las lambdas se pueden usar como argumentos para otras funciones.
+
+### Ejemplo de Uso de una Función Parcial
 
 ```python3
 import functools
@@ -156,21 +156,21 @@ double = functools.partial(multiply, y=2)
 print(double(3))   # Output: 6
 ```
 
-### Example of Using a Lambda Function
+### Ejemplo de Uso de una Función Lambda
 
 ```python
 add = lambda x, y: x + y
 
 print(add(2, 3))   # Output: 5
-```  
-  
-## How to Create Partial Functions in Python: a Step-by-step Tutorial  
+```
 
-To create a partial function in Python, you need to follow the following steps:
+## Cómo Crear Funciones Parciales en Python: un Tutorial Paso a Paso  
 
-1. Import the `functools` module.
-2. Define the original function that you want to use as a partial function.
-3. Use the `partial()` function to create a new function that has some parameters already set.
+Para crear una función parcial en Python, necesitas seguir los siguientes pasos:
+
+1. Importar el módulo `functools`.
+2. Definir la función original que quieres usar como función parcial.
+3. Usar la función `partial()` para crear una nueva función que ya tenga algunos parámetros establecidos.
 
 ```python
 import functools
@@ -182,7 +182,7 @@ multiply_by_two = functools.partial(multiply, 2)
 print(multiply_by_two(5)) # Output: 10
 ```
 
-In this example, a partial function called `multiply_by_two` is created from the `multiply()` function, with the first parameter set to 2. When `multiply_by_two()` is called with the parameter 5, it multiplies 2 by 5 and returns 10.
+En este ejemplo, se crea una función parcial llamada `multiply_by_two` a partir de la función `multiply()`, con el primer parámetro establecido en 2. Cuando se llama a `multiply_by_two()` con el parámetro 5, multiplica 2 por 5 y devuelve 10.
 
 ```python3
 import functools
@@ -197,11 +197,11 @@ print(square(5)) # Output: 25
 print(cube(5)) #Output: 125
 ```
 
-In this example, partial functions called `square` and `cube` are created using the `power()` function, with the exponent parameter set to 2 and 3, respectively. When `square(5)` is called, it returns 25, and when `cube(5)` is called, it returns 125.  
-  
-## Enhancing Code Readability with Partial Functions in Python: Tips and Tricks  
+En este ejemplo, las funciones parciales llamadas `square` y `cube` se crean usando la función `power()`, con el parámetro del exponente establecido en 2 y 3, respectivamente. Cuando se llama a `square(5)`, devuelve 25, y cuando se llama a `cube(5)`, devuelve 125.
 
-One way to use partial functions is to reduce code duplication. For example, suppose we have two functions that compute the `average` of two numbers: 
+## Mejorando la Legibilidad del Código con Funciones Parciales en Python: Consejos y Trucos
+
+Una forma de usar funciones parciales es reducir la duplicación de código. Por ejemplo, supongamos que tenemos dos funciones que calculan el `average` de dos números:
 
 ```python
 def average(a, b): 
@@ -211,7 +211,7 @@ def average_three(a, b, c):
     return (a + b + c) / 3
 ```
 
-We can use a partial function to **avoid duplicating** the code for adding up the numbers: 
+Podemos usar una función parcial para **evitar duplicar** el código para sumar los números:
 
 ```python3
 from functools import partial 
@@ -226,7 +226,7 @@ print(average_two(4)) # prints 3.0
 print(average(1, 2, 3)) # prints 2.0
 ```
 
-Another way to use `partial` functions is to create defaults for optional parameters. For example, suppose we have a function that formats a number with a specified number of decimal places: 
+Otra forma de usar funciones `partial` es crear valores predeterminados para parámetros opcionales. Por ejemplo, supongamos que tenemos una función que formatea un número con una cantidad especificada de decimales:
 
 ```python
 from functools import partial 
@@ -240,4 +240,4 @@ print(format_number(3.14159, 2)) # prints 3.14
 print(format_two_digits(3.14159)) # prints 3.14
 ```
 
-In both cases, the use of partial functions makes the code more readable by explicitly stating the intent of the code in a way that is easier to understand and maintain.  
+En ambos casos, el uso de funciones parciales hace que el código sea más legible al expresar explícitamente la intención del código de una manera que es más fácil de entender y mantener.
