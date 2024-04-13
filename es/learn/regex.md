@@ -27,7 +27,7 @@ Para aquellos que buscan experimentar con regex de Python en línea, numerosas p
 
 ### Ejemplo: Dirección de Correo Electrónico Encontrada
 
-```python
+```python3
 import re
 
 text = "For more information, contact us at info@example.com."
