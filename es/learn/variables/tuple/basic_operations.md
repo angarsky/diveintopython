@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/tuple/basic-operations
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/tuple/basic-operations
 
-Even though tuples are immutable, they support various operations such as indexing, slicing, and concatenation that can be performed on them. In this article, we will explore the different operations that can be performed on tuples in Python and their syntax.
+Aunque las tuplas son inmutables, admiten varias operaciones como indexación, segmentación y concatenación que se pueden realizar en ellas. En este artículo, exploraremos las diferentes operaciones que se pueden realizar en las tuplas en Python y su sintaxis.
 
-## Sorting List of Tuples in Python
+## Ordenando Lista de Tuplas en Python
 
-Tuples can be sorted using the built-in `sorted()` function or the `sort()` method. Here's an example of sorting tuples based on the first element:
+Las tuplas se pueden ordenar utilizando la función incorporada `sorted()` o el método `sort()`. Aquí hay un ejemplo de ordenación de tuplas basado en el primer elemento:
 
 ```python3
 tuples = [(3, 'apple'), (1, 'orange'), (2, 'banana')]
@@ -13,7 +13,7 @@ sorted_tuples = sorted(tuples, key=lambda x: x[0])
 print(sorted_tuples)  # Output: [(1, 'orange'), (2, 'banana'), (3, 'apple')]
 ```
 
-Alternatively, you can use the `sort()` method on the list of tuples, like this:
+Alternativamente, puedes usar el método `sort()` en la lista de tuplas, así:
 
 ```python3
 tuples = [(3, 'apple'), (1, 'orange'), (2, 'banana')]
@@ -21,13 +21,13 @@ tuples.sort(key=lambda x: x[0])
 print(tuples)  # Output: [(1, 'orange'), (2, 'banana'), (3, 'apple')]
 ```
 
-The `sort()` method works similarly to s`orted()`, but sorts the list in place rather than returning a new sorted list.
+El método `sort()` funciona de manera similar a `sorted()`, pero ordena la lista in situ en lugar de devolver una nueva lista ordenada.
 
-## Tuples Comparing
+## Comparación de Tuplas
 
-To compare tuples in Python, you can compare their elements one by one in a pairwise fashion until a difference is found, or until all elements have been compared successfully.
+Para comparar tuplas en Python, puedes comparar sus elementos uno por uno de forma pareada hasta encontrar una diferencia, o hasta que todos los elementos hayan sido comparados con éxito.
 
-Here's an example code that compares two tuples:
+Aquí tienes un código de ejemplo que compara dos tuplas:
 
 ```python3
 tuple1 = (1, 2, 3)
@@ -39,58 +39,58 @@ else:
     print("The two tuples are not equal")
 ```
 
-## Tuples Indexing in Python
+## Indexación de Tuplas en Python
 
-Tuples can be indexed using square brackets [] and an index number. The index number starts from 0 for the first element and increases by 1 for each subsequent element. For example, consider the following tuple:
+Las tuplas pueden ser indexadas usando corchetes [] y un número de índice. El número de índice comienza desde 0 para el primer elemento y aumenta en 1 para cada elemento subsiguiente. Por ejemplo, considere la siguiente tupla:
 
 ```python
 my_tuple = (10, 20, 30, 40, 50)
 ```
 
-To access the first element of the tuple, you would use the index 0 like this:
+Para acceder al primer elemento de la tupla, usarías el índice 0 de esta manera:
 
 ```python
 print(my_tuple[0])   # Output: 10
 ```
 
-To access the third element of the tuple, you would use the index 2 like this:
+Para acceder al tercer elemento de la tupla, usarías el índice 2 de esta manera:
 
 ```python
 print(my_tuple[2])   # Output: 30
 ```
 
-## Tuple Slicing
+## Segmentación de Tuplas
 
-A tuple is an ordered, immutable collection of elements, and you can use slicing to extract a portion of the tuple.
+Una tupla es una colección ordenada e inmutable de elementos, y puedes usar la segmentación para extraer una porción de la tupla.
 
-Tuple slicing uses the syntax `tuple[start:end:step]` to specify a range of elements to be extracted from the tuple. The start parameter is the index of the first element to include in the slice (inclusive), end is the index of the last element to include in the slice (exclusive), and step is the increment between the indices.
+La segmentación de tuplas usa la sintaxis `tuple[start:end:step]` para especificar un rango de elementos a ser extraídos de la tupla. El parámetro start es el índice del primer elemento a incluir en el segmento (inclusivo), end es el índice del último elemento a incluir en el segmento (exclusivo) y step es el incremento entre los índices.
 
-Here's an example:
+Aquí hay un ejemplo:
 
 ```python3
 my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[1:4])  # Output: (2, 3, 4)
 ```
 
-You can also use negative indexing to slice a tuple from the end. For example:
+También puedes usar indexación negativa para cortar una tupla desde el final. Por ejemplo:
 
 ```python
 my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[-3:-1])  # Output: (3, 4)
 ```
 
-If you don't specify any of the parameters, Python uses the default values: start=0, end=len(tuple), and step=1. For example:
+Si no especificas ninguno de los parámetros, Python utiliza los valores predeterminados: `start=0`, `end=len(tuple)`, y `step=1`. Por ejemplo:
 
 ```python
 my_tuple = (1, 2, 3, 4, 5)
 print(my_tuple[:3])  # Output: (1, 2, 3)
 ```
 
-## Returning a Tuple
+## Devolviendo una Tupla
 
-You can use a tuple to return multiple values from a function.
+Puedes usar una tupla para devolver múltiples valores de una función.
 
-Here's an example of a function that returns a tuple:
+Aquí tienes un ejemplo de una función que devuelve una tupla:
 
 ```python
 def calculate_statistics(numbers):
@@ -100,11 +100,11 @@ def calculate_statistics(numbers):
     return total, count, average
 ```
 
-## Tuple Comprehension in Python
+## Comprensión de Tuplas en Python
 
-Tuple comprehension is a feature in Python that allows you to create a new tuple from an existing iterable by applying a transformation to each element of the iterable.
+La comprensión de tuplas es una característica en Python que te permite crear una nueva tupla a partir de un iterable existente, aplicando una transformación a cada elemento del iterable.
 
-The syntax for tuple comprehension is similar to list comprehension, except that the result is enclosed in parentheses instead of square brackets. Here's an example:
+La sintaxis para la comprensión de tuplas es similar a la comprensión de listas, excepto que el resultado se encierra entre paréntesis en lugar de corchetes. Aquí hay un ejemplo:
 
 ```python3
 numbers = (1, 2, 3, 4, 5)
@@ -112,7 +112,7 @@ squares = tuple(x ** 2 for x in numbers)
 print(squares)  # Output: (1, 4, 9, 16, 25)
 ```
 
-Tuple comprehension can also include conditional expressions, which allows you to filter elements based on some condition. Here's an example:
+La comprensión de tuplas también puede incluir expresiones condicionales, lo que te permite filtrar elementos en base a alguna condición. Aquí hay un ejemplo:
 
 ```python3
 numbers = (1, 2, 3, 4, 5)
@@ -120,20 +120,20 @@ even_squares = tuple(x ** 2 for x in numbers if x % 2 == 0)
 print(even_squares)  # Output: (4, 16)
 ```
 
-## Length of Tuple in Python
+## Longitud de una tupla en Python
 
-You can find the length of a tuple using the built-in `len()` function.
+Puedes encontrar la longitud de una tupla utilizando la función integrada `len()`.
 
-For example, suppose you have a tuple named `my_tuple`:
+Por ejemplo, supongamos que tienes una tupla llamada `my_tuple`:
 
 ```python
 my_tuple = (1, 2, 3, 4, 5)
 print(len(my_tuple)) # Output: 5
 ```
 
-## Looping Through a Tuple
+## Iterando a través de una tupla
 
-To loop through a tuple in Python, you can use a `for` loop. Here's an example:
+Para iterar a través de una tupla en Python, puedes usar un bucle `for`. Aquí hay un ejemplo:
 
 ```python
 my_tuple = (1, 2, 3, 4, 5)
@@ -141,7 +141,7 @@ for item in my_tuple:
     print(item)
 ```
 
-If you also need the index of each item in the tuple, you can use the `enumerate()` function:
+Si también necesitas el índice de cada elemento en la tupla, puedes usar la función `enumerate()`:
 
 ```python3
 my_tuple = (1, 2, 3, 4, 5)

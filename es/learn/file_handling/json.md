@@ -1,26 +1,26 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/json
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/file-handling/json
 
-JSON files have gained immense popularity due to their seamless compatibility with web-based systems. JSON, short for [JavaScript Object Notation](https://en.wikipedia.org/wiki/JSON), serves as a lightweight format for data exchange, making it a favored choice for web applications. Python, equipped with robust tools, stands as an excellent platform for handling JSON files. This article aims to delve into reading, manipulating JSON files, and their practical applications using Python. Understanding how to use JSON in Python is crucial for modern web development, data analysis, and system integration.
-  
-## Importing JSON Module
+Los archivos JSON han ganado una inmensa popularidad debido a su compatibilidad perfecta con los sistemas basados en la web. JSON, abreviatura de [Notación de Objetos de JavaScript](https://en.wikipedia.org/wiki/JSON), sirve como un formato ligero para el intercambio de datos, convirtiéndolo en una opción favorita para aplicaciones web. Python, equipado con herramientas robustas, se presenta como una excelente plataforma para manejar archivos JSON. Este artículo tiene como objetivo profundizar en la lectura, manipulación de archivos JSON y sus aplicaciones prácticas utilizando Python. Comprender cómo usar JSON en Python es crucial para el desarrollo web moderno, análisis de datos e integración de sistemas.\n",
 
-Python provides flexible instruments which allow to work with JSON.
-To initiate operations with JSON files in Python, one must first import the `json` module. This module equips Python with functionalities specifically tailored for handling JSON data.
+## Importando el Módulo JSON\
+       
+Python proporciona instrumentos flexibles que permiten trabajar con JSON.
+Para iniciar operaciones con archivos JSON en Python, primero se debe importar el módulo `json`. Este módulo equipa a Python con funcionalidades específicamente adaptadas para manejar datos JSON.
 
-Example of importing the JSON module:
+Ejemplo de importación del módulo JSON:
 
 ```python
 import json
 ```
 
-This function is employed to import JSON files into the Python environment for further handling and manipulation.
+Esta función se emplea para importar archivos JSON al entorno Python para su posterior manejo y manipulación.
 
-## How to Read JSON File in Python
+## Cómo leer archivos JSON en Python
 
-Reading JSON files in Python involves using the `load()` function from the json module. By employing this function, Python can effortlessly read and load JSON data from a file into its program.
+La lectura de archivos JSON en Python implica el uso de la función `load()` del módulo json. Empleando esta función, Python puede leer y cargar sin esfuerzo datos JSON desde un archivo a su programa.
 
-Example of reading a JSON file:
+Ejemplo de lectura de un archivo JSON:
 
 ```python
 with open('data.json') as file:
@@ -28,22 +28,22 @@ with open('data.json') as file:
     print(data)
 ```
 
-This example shows how to open JSON file in Python and work with it.
+Este ejemplo muestra cómo abrir un archivo JSON en Python y trabajar con él.
 
-## Functions of JSON Module
+## Funciones del módulo JSON
 
-The `json` module in Python offers various functions to handle JSON data efficiently.
+El módulo `json` de Python ofrece varias funciones para manejar datos JSON eficientemente.
 
-- **json.load()**: This function loads JSON data from a file-like object and converts it into a Python object. This function is particularly useful when you need to parse JSON file in Python and manipulate it within your program
-- **json.loads()**: json.loads() is used to parse a JSON string and convert it into a Python object.
-- **json.dump()**: The json.dump() function writes Python data into a JSON file.
-- **json.dumps()**: json.dumps() is used to convert a Python object (like a dictionary) into a JSON formatted string.
+- **json.load()**: Esta función carga datos JSON desde un objeto tipo archivo y los convierte en un objeto Python. Esta función es particularmente útil cuando necesitas parsear un archivo JSON en Python y manipularlo dentro de tu programa
+- **json.loads()**: json.loads() se utiliza para analizar una cadena JSON y convertirla en un objeto Python.
+- **json.dump()**: La función json.dump() escribe datos Python en un archivo JSON.
+- **json.dumps()**: json.dumps() se utiliza para convertir un objeto Python (como un diccionario) en una cadena con formato JSON.
 
-## How to Load JSON from File in Python Using `json.load()`
+## Cómo cargar JSON desde un archivo en Python usando `json.load()`.
 
-The `json.load()` function facilitates the loading of JSON data from a file into a Python object. It directly translates JSON-formatted data from a file into a compatible Python data structure, enabling easy access and manipulation.
+La función `json.load()` facilita la carga de datos JSON desde un fichero a un objeto Python. Traduce directamente los datos con formato JSON de un archivo a una estructura de datos compatible con Python, permitiendo un fácil acceso y manipulación.
 
-Example - how to load JSON file in Python:
+Ejemplo - cómo cargar un archivo JSON en Python:
 
 ```python
 import json
@@ -54,11 +54,11 @@ with open('data.json') as file:
     print(data)
 ```
 
-## Parsing JSON Strings with `json.loads()`
+## Análisis de cadenas JSON con `json.loads()`
 
-`json.loads()` parses a JSON-formatted string and converts it into a Python object. This function accepts a JSON string as input and generates the corresponding Python data structure, facilitating seamless data extraction and manipulation.
+`json.loads()` analiza una cadena formateada en JSON y la convierte en un objeto de Python. Esta función acepta una cadena JSON como entrada y genera la estructura de datos de Python correspondiente, facilitando la extracción y manipulación de datos sin problemas.
 
-Example - how to parse JSON string in Python:
+Ejemplo - cómo analizar una cadena JSON en Python:
 
 ```python
 import json
@@ -69,11 +69,11 @@ parsed_data = json.loads(json_string)
 print(parsed_data)
 ```
 
-## How to Write to JSON in Python Using `json.dump()`
+## Cómo escribir en JSON en Python usando `json.dump()`
 
-The `json.dump()` function writes Python data into a JSON file. It takes a Python object and directly writes it to a specified file in JSON format, suitable for storage or transmission.
+La función `json.dump()` escribe datos Python en un archivo JSON. Toma un objeto Python y lo escribe directamente en un archivo especificado en formato JSON, adecuado para su almacenamiento o transmisión.
 
-Example of writing to a JSON file:
+Ejemplo de escritura en un fichero JSON:
 
 ```python
 import json
@@ -84,11 +84,11 @@ with open('output.json', 'w') as file:
     json.dump(data, file)
 ```
 
-## Converting Python Objects to JSON Strings with `json.dumps()`
+## Convertir objetos Python en cadenas JSON con `json.dumps()`
 
-`json.dumps()` converts a Python object (like a dictionary or list) into a JSON-formatted string. This function accepts a Python object as input and returns a JSON string representing the object, allowing efficient data interchange and serialization.
+json.dumps()` convierte un objeto Python (como un diccionario o una lista) en una cadena con formato JSON. Esta función acepta un objeto Python como entrada y devuelve una cadena JSON representando el objeto, permitiendo un intercambio y serialización de datos eficiente.
 
-Example of converting Python object to JSON string:
+Ejemplo de conversión de un objeto Python a una cadena JSON:
 
 ```python
 import json
@@ -99,25 +99,25 @@ json_string = json.dumps(data)
 print(json_string)
 ```
 
-## Python Objects and Equivalent JSON Representations
+## Objetos Python y representaciones JSON equivalentes
 
-The table illustrates the mapping between Python data types and their corresponding representations in JSON format. When converting Python objects to JSON, dictionaries and lists map directly to JSON objects and arrays, respectively. Similarly, other Python data types like strings, integers, floats, boolean values, and None map to their respective JSON equivalents.
+La tabla ilustra el mapeo entre tipos de datos Python y sus correspondientes representaciones en formato JSON. Al convertir objetos Python a JSON, los diccionarios y las listas se convierten directamente en objetos JSON y matrices, respectivamente. Del mismo modo, otros tipos de datos Python como cadenas, enteros, flotantes, valores booleanos y None se asignan a sus respectivos equivalentes JSON.
 
-| Python Object  | Equivalent JSON Representation |
+| Objeto Python | Representación JSON Equivalente |
 | ------------- | ------------- |
-| Dictionary | Object  |
-| List  | Array  |
-| Tuple  | Array  |
-| String  | String  |
-| Integer  | Number  |
-| Float  | Number  |
-| True  | true  |
-| False  | false  |
-| None  | null  |
+| Diccionario Objeto
+| Lista Matriz
+| Tuple Array
+| Cadena
+| Número entero
+| Número flotante
+| Verdadero Verdadero
+| Falso False
+| Ninguno | null |
 
-## How to Write a JSON Pretty Object to a File  
+## Cómo escribir un objeto JSON Pretty en un fichero
 
-To print JSON in a more readable and organized format, you need to use the `pretty_print` flag. This flag will format the JSON by adding indentation, line breaks, and spaces between the elements. Below are two ways to write JSON pretty to a file.
+Para imprimir JSON en un formato más legible y organizado, necesitas usar la bandera `pretty_print`. Esta bandera formateará el JSON añadiendo sangría, saltos de línea y espacios entre los elementos. A continuación se presentan dos maneras de escribir JSON pretty a un archivo.
 
 ```python
 import json
@@ -128,13 +128,13 @@ with open('data.json', 'w') as file:
     json.dump(data, file, indent=4, sort_keys=True)
 ```
 
-In this example, we have used the `json.dump()` method to convert the dictionary object `data` to JSON and saved it to a file `data.json`. We have set the `indent` parameter to 4 to add indentation, and `sort_keys` parameter to True to sort the keys alphabetically.
-  
-## Common Errors with JSON Files
+En este ejemplo, hemos utilizado el método `json.dump()` para convertir el objeto diccionario `data` a JSON y guardarlo en un archivo `data.json`. Hemos establecido el parámetro `indent` a 4 para añadir indentación, y el parámetro `sort_keys` a True para ordenar las claves alfabéticamente.
 
-When working with JSON files in Python, you may encounter common errors that can affect the loading, parsing, and processing of JSON data. One such error is the `ValueError: Extra data error`. This error occurs when there is additional data present in the JSON file that is not compatible with the expected JSON structure.
+## Errores Comunes con Archivos JSON
 
-First example - a loading of JSON with extra data:
+Al trabajar con archivos JSON en Python, puedes encontrarte con errores comunes que pueden afectar la carga, el análisis y el procesamiento de datos JSON. Uno de esos errores es el `ValueError: Extra data error`. Este error ocurre cuando hay datos adicionales presentes en el archivo JSON que no son compatibles con la estructura JSON esperada.
+
+Primer ejemplo - una carga de JSON con datos extra:
 
 ```python
 import json
@@ -148,9 +148,9 @@ except ValueError as e:
     print("Error:", str(e))
 ```
 
-In this example, the `data` variable contains two JSON objects separated by a space. When we try to load this data using `json.loads()`, it raises a `ValueError` with the message `Extra data` because multiple JSON objects are not valid in a single JSON file.
+En este ejemplo, la variable `data` contiene dos objetos JSON separados por un espacio. Cuando intentamos cargar estos datos usando `json.loads()`, aparece un `ValueError` con el mensaje `Extra data` porque múltiples objetos JSON no son válidos en un único archivo JSON.
 
-Second example of reading a JSON file with extra data:
+Segundo ejemplo de lectura de un fichero JSON con datos extra:
 
 ```python
 import json
@@ -163,8 +163,8 @@ except ValueError as e:
     print("Error:", str(e))
 ```
 
-In this example, we are reading JSON data from a file called `data.json`. If the file contains extra data that does not conform to the expected JSON structure, the `json.load()` method will raise a `ValueError`.
+En este ejemplo, estamos leyendo datos JSON de un fichero llamado `data.json`. Si el archivo contiene datos adicionales que no se ajustan a la estructura JSON esperada, el método `json.load()` lanzará un `ValueError`.
 
-To handle the `ValueError: Extra data error`, you can catch the exception using a try-except block, as shown in the examples. This allows you to gracefully handle the error and provide appropriate feedback or take alternative actions.
+Para manejar el `ValueError: Extra data error`, puedes capturar la excepción utilizando un bloque try-except, como se muestra en los ejemplos. Esto te permite manejar el error con elegancia y proporcionar la información adecuada o tomar acciones alternativas.
 
-When encountering this error, it's important to carefully examine the JSON file to ensure its validity. Verify that the JSON structure is correct and there are no additional or unexpected data present.
+Cuando se encuentre con este error, es importante examinar cuidadosamente el archivo JSON para asegurarse de su validez. Compruebe que la estructura JSON es correcta y que no hay datos adicionales o inesperados.

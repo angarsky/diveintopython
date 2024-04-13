@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/substring
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/string/substring
 
-A substring is a sequence of characters that is part of a larger string. It is a contiguous sequence of characters within a string, which can be extracted or manipulated independently.
+Una subcadena es una secuencia de caracteres que forma parte de una cadena más grande. Es una secuencia contigua de caracteres dentro de una cadena, que puede ser extraída o manipulada de manera independiente.
 
-For example, in the string "Hello, World!", the substrings "Hello", "World", and "!" are all substrings of the original string.
+Por ejemplo, en la cadena "Hello, World!", las subcadenas "Hello", "World" y "!" son todas subcadenas de la cadena original.
 
-Let's review the most common operations and methods related to substring.
+Repasemos las operaciones y métodos más comunes relacionados con la subcadena.
 
-## String Slicing
+## División de Cadenas
 
-String slicing is the process of creating a new substring from an existing string in Python. You can slice a string using the syntax `[start:end]` to extract a portion of the string that starts at the `start` index and ends at the `end` index (not inclusive). Here are some examples:
+La división de cadenas es el proceso de crear una nueva subcadena a partir de una cadena existente en Python. Puedes dividir una cadena usando la sintaxis `[inicio:fin]` para extraer una porción de la cadena que comienza en el índice `inicio` y termina en el índice `fin` (no inclusivo). Aquí hay algunos ejemplos:
 
 ```python3
 my_string = "Hello, world!"
@@ -27,15 +27,15 @@ print(my_string[2:8:2])  # Output: "lo,"
 print(my_string[2:-1])  # Output: "llo, world"
 ```
 
-In the first example, we use slicing to extract the substring `"Hell"` from the `my_string` variable by specifying the starting index `0` and the ending index `4` (not inclusive).
+En el primer ejemplo, utilizamos el corte para extraer la subcadena `"Hell"` de la variable `my_string` especificando el índice de inicio `0` y el índice final `4` (no incluido).
 
-In the second example, we use slicing to extract the substring `"world!"` from the `my_string` variable by specifying only the starting index `7` and leaving the ending index blank. This tells Python to extract the substring from the starting index to the end of the string.
+En el segundo ejemplo, utilizamos el corte para extraer la subcadena `"world!"` de la variable `my_string` especificando solo el índice de inicio `7` y dejando el índice final en blanco. Esto le indica a Python que extraiga la subcadena desde el índice de inicio hasta el final de la cadena.
 
-In the third example, we use slicing to extract every other character from the substring `"lo, "`. We do this by specifying the starting index `2`, the ending index `8` (not inclusive), and a step of `2`.
+En el tercer ejemplo, utilizamos el corte para extraer cada otro carácter de la subcadena `"lo, "`. Esto lo hacemos especificando el índice de inicio `2`, el índice final `8` (no incluido) y un paso de `2`.
 
-In the fourth example, we use slicing to extract the substring `"llo, world"` from the `my_string` variable by specifying the starting index `2` and the ending index `-1`. The `-1` specifies the second-to-last character in the string as the ending index.
+En el cuarto ejemplo, utilizamos el corte para extraer la subcadena `"llo, world"` de la variable `my_string` especificando el índice de inicio `2` y el índice final `-1`. El `-1` especifica el penúltimo carácter en la cadena como el índice final.
 
-To split a string on a delimiter, you can also use the `split()` method. This method takes one argument, which is the delimiter character or string that you want to use to split the string. Here's an example:
+Para dividir una cadena en un delimitador, también puedes utilizar el método `split()`. Este método toma un argumento, que es el carácter o cadena delimitador que quieres usar para dividir la cadena. Aquí hay un ejemplo:
 
 ```python
 my_string = "Hello,world"
@@ -43,7 +43,7 @@ my_list = my_string.split(",")
 print(my_list) # Output: ['Hello', 'world']
 ```
 
-You can remove the first character from a string in Python using string slicing. Here's an example:
+Puedes eliminar el primer carácter de una cadena en Python usando el rebanado de cadenas. Aquí tienes un ejemplo:
 
 ```python
 string = "hello"
@@ -51,7 +51,7 @@ new_string = string[1:]
 print(new_string) # Output: ello
 ```
 
-String slicing also can be used to remove the last character from a string. Here is an example:
+El rebanado de cadenas también puede usarse para eliminar el último carácter de una cadena. Aquí hay un ejemplo:
 
 ```python
 my_string = "Hello World!"
@@ -59,11 +59,11 @@ new_string = my_string[:-1]
 print(new_string)  # Output: "Hello World"
 ```
 
-## String Subset
+## Subconjunto de Cadena
 
-To check if a Python string contains a specific substring, you can use the `in` keyword or the `find()` method.
+Para verificar si una cadena de Python contiene una subcadena específica, puedes usar la palabra clave `in` o el método `find()`.
 
-Here's an example using the in keyword:
+Aquí tienes un ejemplo usando la palabra clave in:
 
 ```python3
 my_string = "Hello, world!"
@@ -74,7 +74,7 @@ else:
 # Output: Substring found!
 ```
 
-Here's an example using the `find()` method:
+Aquí hay un ejemplo utilizando el método `find()`:
 
 ```python3
 my_string = "Hello, world!"
@@ -85,15 +85,15 @@ else:
 # Output: Substring found!
 ```
 
-In both examples, we check if the substring `"world"` is present in the string `my_string`. If the substring is found, we print `"Substring found!"`, otherwise we print `"Substring not found."`.
+En ambos ejemplos, verificamos si la subcadena `"world"` está presente en la cadena `my_string`. Si se encuentra la subcadena, imprimimos `"Subcadena encontrada!"`, de lo contrario imprimimos `"Subcadena no encontrada."`.
 
-## String Reverse
+## Inversión de Cadena
 
-There are several ways of reversing a string in Python. 
+Hay varias maneras de invertir una cadena en Python.
 
-Let's see how to reverse a string in python with examples::
+Veamos cómo invertir una cadena en python con ejemplos::
 
-- Using slicing:
+- Usando segmentación:
 
 ```python
 string = "hello"
@@ -101,7 +101,7 @@ reversed_string = string[::-1]
 print(reversed_string)  # Output: "olleh"
 ```
 
-- Using a loop:
+- Usando un bucle:
 
 ```python3
 string = "hello"
@@ -111,7 +111,7 @@ for char in string:
 print(reversed_string)  # Output: "olleh"
 ```
 
-- Using the reversed() function:
+- Utilizando la función `reversed()`:
 
 ```python
 string = "hello"
@@ -119,25 +119,25 @@ reversed_string = "".join(reversed(string))
 print(reversed_string)  # Output: "olleh"
 ```
 
-All of these methods will produce the same result, which is the reversed version of the original string.
+Todos estos métodos producirán el mismo resultado, que es la versión invertida de la cadena original.
 
-## The `startswith()` and `endswith()` Methods
+## Los Métodos `startswith()` y `endswith()`
 
-In Python, `startswith()` and `endswith()` are two string methods that are used to check whether a string starts or ends with a specific prefix or suffix, respectively. Here is an overview of these methods:
+En Python, `startswith()` y `endswith()` son dos métodos de cadena que se utilizan para verificar si una cadena comienza o termina con un prefijo o sufijo específico, respectivamente. Aquí hay una visión general de estos métodos:
 
-The `startswith()` method is used to check whether a string starts with a specific prefix. The method takes one or more prefixes as an argument and returns `True` if the string starts with any of them, and `False` otherwise. Here's the syntax for the `startswith()` method:
+El método `startswith()` se utiliza para verificar si una cadena comienza con un prefijo específico. El método toma uno o más prefijos como argumento y devuelve `True` si la cadena comienza con alguno de ellos, y `False` en caso contrario. Aquí está la sintaxis para el método `startswith()`:
 
 ```python
 string.startswith(prefix, start=0, end=len(string))
 ```
 
-where:
+donde:
 
-- `prefix` is the prefix to check.
-- `start` is an optional parameter that specifies the starting index of the string to search. By default, `start` is set to 0, which means the entire string will be searched.
-- `end` is an optional parameter that specifies the ending index of the string to search. By default, `end` is set to the length of the string.
+- `prefix` es el prefijo a verificar.
+- `start` es un parámetro opcional que especifica el índice inicial de la cadena a buscar. Por defecto, `start` se establece en 0, lo que significa que se buscará en toda la cadena.
+- `end` es un parámetro opcional que especifica el índice final de la cadena a buscar. Por defecto, `end` se establece en la longitud de la cadena.
 
-Here's an example of using the startswith() method:
+Aquí hay un ejemplo de cómo usar el método startswith():
 
 ```python
 s = "Python is a great programming language"
@@ -146,18 +146,18 @@ print(s.startswith("Java"))    # False
 print(s.startswith(("Java", "Python")))  # True (checking multiple prefixes)
 ```
 
-`The endswith()` method is used to check whether a string ends with a specific suffix. The method takes one or more suffixes as an argument and returns `True` if the string ends with any of them, and `False` otherwise. Here's the syntax for the `endswith()` method:
+El método `endswith()` se utiliza para verificar si un texto termina con un sufijo específico. El método toma uno o más sufijos como argumento y devuelve `True` si el texto termina con alguno de ellos, y `False` de lo contrario. Aquí está la sintaxis para el método `endswith()`:
 
 ```python
 string.endswith(suffix, start=0, end=len(string))
 ```
 
-where:
+donde:
 
-- `suffix` is the suffix to check.
-- `start` and `end` parameters have the same meaning as in the `startswith()` method.
+- `suffix` es el sufijo a verificar.
+- Los parámetros `start` y `end` tienen el mismo significado que en el método `startswith()`.
 
-Here's an example of using the endswith() method:
+Aquí hay un ejemplo de cómo usar el método endswith():
 
 ```python3
 s = "Python is a great programming language"
@@ -166,13 +166,13 @@ print(s.endswith("Python"))    # False
 print(s.endswith(("Python", "language")))  # True (checking multiple suffixes)
 ```
 
-In both methods, you can pass a tuple of prefixes or suffixes to check multiple possibilities. The `start` and `end` parameters are optional and can be used to search only a part of the string.
+En ambos métodos, puedes pasar una tupla de prefijos o sufijos para verificar múltiples posibilidades. Los parámetros `start` y `end` son opcionales y pueden usarse para buscar solo una parte de la cadena.
 
-## The `split()` Method
+## El método `split()`
 
-It is also a built-in method in Python that is used for splitting and parsing a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
+También es un método incorporado en Python que se utiliza para dividir y analizar una cadena en una lista de subcadenas basadas en un separador especificado. Por defecto, el separador utilizado es el espacio en blanco.
 
-Here's an example:
+Aquí hay un ejemplo:
 
 ```python3
 s = "Hello World! How are you?"
@@ -182,9 +182,9 @@ words = s.split()
 print(words)   # Output: ['Hello', 'World!', 'How', 'are', 'you?']
 ```
 
-In the above example, the `split()` method is called on the string `s`, which contains whitespace-separated words. The resulting list words contains all the words in the original string as separate elements.
+En el ejemplo anterior, el método `split()` se llama en la cadena `s`, que contiene palabras separadas por espacios en blanco. La lista resultante words contiene todas las palabras de la cadena original como elementos separados.
 
-You can also specify a different separator using the `split()` method. For example:
+También puedes especificar un separador diferente usando el método `split()`. Por ejemplo:
 
 ```python3
 s = "mango,pineapple,banana"
@@ -194,19 +194,19 @@ fruits = s.split(",")
 print(fruits)   # Output: ['mango', 'pineapple', 'banana']
 ```
 
-In this example, the `split()` method is called on the string `s`, which contains comma-separated fruit names. The resulting list fruits contains all the fruit names as separate elements, with the comma used as the separator.
+En este ejemplo, el método `split()` se llama en la cadena `s`, que contiene nombres de frutas separados por comas. La lista resultante fruits contiene todos los nombres de frutas como elementos separados, utilizando la coma como separador.
 
-## The `string.find()` Function
+## La función `string.find()`
 
-This is built-in Python function that returns the index of the first occurrence of a substring within a given string. If the substring is not found, it returns `-1`. The syntax for using `string.find()` is as follows:
+Esta es una función integrada en Python que devuelve el índice de la primera aparición de una subcadena dentro de una cadena dada. Si la subcadena no se encuentra, devuelve `-1`. La sintaxis para usar `string.find()` es la siguiente:
 
 ```python
 string.find(substring, start=0, end=len(string))
 ```
 
-where `string` is the string to search in, `substring` is the string to search for, `start` is the starting index of the search (default is 0), and `end` is the ending index of the search (default is the length of the string).
+donde `string` es la cadena en la que buscar, `substring` es la cadena a buscar, `start` es el índice de inicio de la búsqueda (por defecto es 0), y `end` es el índice de finalización de la búsqueda (por defecto es la longitud de la cadena).
 
-Here is an example:
+Aquí hay un ejemplo:
 
 ```python
 sentence = "The quick brown fox jumps over the lazy dog"
@@ -214,15 +214,15 @@ print(sentence.find("fox"))   # Output: 16
 print(sentence.find("cat"))   # Output: -1
 ```
 
-In the first line, we define a string sentence. Then we use the `find()` function to search for the substring `"fox"` in the `sentence` string. Since `"fox"` is found at index 16 in the `sentence` string, the `find()` function returns `16`. In the second line, we search for the substring `"cat"`, which is not found in the `sentence` string, so the `find()` function returns `-1`.
+En la primera línea, definimos una cadena de texto sentence. Luego usamos la función `find()` para buscar la subcadena `"fox"` en la cadena de texto `sentence`. Dado que `"fox"` se encuentra en el índice 16 en la cadena de texto `sentence`, la función `find()` devuelve `16`. En la segunda línea, buscamos la subcadena `"cat"`, la cual no se encuentra en la cadena de texto `sentence`, por lo tanto, la función `find()` devuelve `-1`.
 
-## The `replace()` Method
+## El Método `replace()`
 
-In Python, strings are immutable, which means that you cannot change a string once it has been created. However, you can create a new string that contains a modified version of the original string.
+En Python, las cadenas son inmutables, lo que significa que no puedes cambiar una cadena una vez que ha sido creada. Sin embargo, puedes crear una nueva cadena que contenga una versión modificada de la cadena original.
 
-To remove a specific character or a substring from a string in Python, you can use the `replace()` method or string slicing.
+Para eliminar un carácter específico o una subcadena de una cadena en Python, puedes usar el método `replace()` o el rebanado de cadenas.
 
-Here is an example of using the replace() method to remove a specific character:
+Aquí tienes un ejemplo de cómo usar el método replace() para eliminar un carácter específico:
 
 ```python3
 my_string = "Hello, World!"
@@ -230,13 +230,13 @@ new_string = my_string.replace("o", "")
 print(new_string) # Output: Hell, Wrld!
 ```
 
-Here, we replaced the character `"o"` with an empty string, effectively removing it from the original string.
+Aquí, reemplazamos el caracter `"o"` por una cadena vacía, eliminándolo efectivamente de la cadena original.
 
-## String Truncation
+## Truncamiento de Cadenas
 
-You can truncate a string by specifying the maximum length of the string you want to keep.
+Puedes truncar una cadena especificando la longitud máxima de la cadena que deseas conservar.
 
-Here's an example:
+He aquí un ejemplo:
 
 ```python3
 text = "This is a long text that needs to be truncated."
@@ -245,17 +245,17 @@ truncated_text = text[:max_length] + "..." if len(text) > max_length else text
 print(truncated_text) # Output: This is a long text...
 ```
 
-In this example, we first define a string `text` that we want to truncate. We also specify the maximum length of the truncated string using the `max_length` variable.
+En este ejemplo, primero definimos una cadena `text` que queremos truncar. También especificamos la longitud máxima de la cadena truncada usando la variable `max_length`.
 
-We then use slicing to get the first `max_length` characters of the string. If the length of the original string is greater than `max_length`, we append an ellipsis to the end of the truncated string using string concatenation. If the length of the original string is less than or equal to `max_length`, we simply assign the original string to the `truncated_text` variable.
+Luego usamos el corte para obtener los primeros caracteres `max_length` de la cadena. Si la longitud de la cadena original es mayor que `max_length`, añadimos una elipsis al final de la cadena truncada mediante la concatenación de cadenas. Si la longitud de la cadena original es menor o igual a `max_length`, simplemente asignamos la cadena original a la variable `truncated_text`.
 
-Finally, we print the truncated string using the `print()` function.
+Finalmente, imprimimos la cadena truncada usando la función `print()`.
 
-## The `count()` Method
+## El Método `count()`
 
-You can use the built-in `count` method to count the number of occurrences of a substring within a string.
+Puedes usar el método integrado `count` para contar el número de ocurrencias de una subcadena dentro de una cadena.
 
-Here's a counter of substring `"is"`:
+Aquí hay un contador de la subcadena `"is"`:
 
 ```python3
 string = "Hello, world! This is a sample string."
@@ -266,6 +266,6 @@ count = string.count(substring)
 print(count) # Output: 2
 ```
 
-In this example, we have a string `"Hello, world! This is a sample string."` and we want to count the number of occurrences of the substring `"is"`. We use the count method to count the number of times the substring appears in the string.
+En este ejemplo, tenemos una cadena `"Hello, world! This is a sample string."` y queremos contar el número de ocurrencias de la subcadena `"is"`. Usamos el método count para contar el número de veces que aparece la subcadena en la cadena.
 
-The output of this program will be `2`, because the substring `"is"` appears twice in the string.
+La salida de este programa será `2`, porque la subcadena `"is"` aparece dos veces en la cadena.

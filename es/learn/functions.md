@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/functions
 
-Functions in Python play a crucial role in programming as they serve as reusable blocks of code that can perform specific tasks. Once defined, you can call a function in Python by using its name and passing arguments (optional) in parentheses. You can lets you create multiple functions, each with their specific functionality, making it easier to organize and structure your code. Function typing and function documentation are essential elements that can make your code more readable and easier to debug, especially when working with larger projects. From this article we will learn what is a function in Python and how to call a function.
+Las funciones en Python juegan un papel crucial en la programación ya que sirven como bloques reutilizables de código que pueden realizar tareas específicas. Una vez definidas, puedes llamar a una función en Python usando su nombre y pasando argumentos (opcionales) entre paréntesis. Te permite crear múltiples funciones, cada una con su funcionalidad específica, facilitando la organización y estructuración de tu código. La tipificación de funciones y la documentación de funciones son elementos esenciales que pueden hacer que tu código sea más legible y fácil de depurar, especialmente cuando se trabaja con proyectos más grandes. A partir de este artículo aprenderemos qué es una función en Python y cómo llamar a una función.
 
-## Functional Programming  
+## Programación Funcional
 
-Python supports multiple programming paradigms, one of which is functional programming. Functional programming is a programming paradigm that focuses on the use of pure functions, avoiding shared state, mutable data, and side-effects. In Python, this paradigm is typically used through the use of higher-order functions and `lambda` expressions.
+Python admite múltiples paradigmas de programación, uno de los cuales es la programación funcional. La programación funcional es un paradigma de programación que se centra en el uso de funciones puras, evitando el estado compartido, los datos mutables y los efectos secundarios. En Python, este paradigma se utiliza típicamente mediante el uso de funciones de orden superior y expresiones `lambda`.
 
-### Higher-order Function Example
+### Ejemplo de Función de Orden Superior
 
 ```python3
 def apply_twice(f):
@@ -25,7 +25,7 @@ result = applied_four_times(10)
 print(result) ### Result will be 18
 ```
 
-### Lambda Expression Example
+### Ejemplo de Expresión Lambda
 
 ```python
 numbers = [1, 2, 3, 4, 5]
@@ -34,15 +34,15 @@ squared_numbers = list(map(lambda x: x**2, numbers))
 
 ```
 
-In summary, Python supports functional programming paradigms through higher-order functions and `lambda` expressions. 
+En resumen, Python soporta los paradigmas de programación funcional a través de funciones de orden superior y expresiones `lambda`.
 
-## How to Write a Function in Python
+## Cómo Escribir una Función en Python
 
-In Python, a function is defined using the `def` keyword, followed by the name of the function, and a set of parentheses that may contain parameters. The code block that performs the task is indented under the `def` statement.
+En Python, una función se define usando la palabra clave `def`, seguida del nombre de la función, y un conjunto de paréntesis que pueden contener parámetros. El bloque de código que realiza la tarea está indentado bajo la declaración `def`.
 
-To call a function in Python, simply use the name of the function, followed by the parentheses containing any necessary arguments.
+Para llamar a una función en Python, simplemente usa el nombre de la función, seguido de los paréntesis que contienen los argumentos necesarios si los hay.
 
-### Basic Function Example
+### Ejemplo de Función Básica
 
 ```python3
 def greet(name):
@@ -51,7 +51,7 @@ def greet(name):
 greet("John") # Output: Hello, John
 ```
 
-### Function with a Return Value Example
+### Ejemplo de Función con Valor de Retorno
 
 ```python3
 def square(number):
@@ -61,9 +61,9 @@ result = square(4)
 print(result) # Output: 16
 ```
 
-When a function has a `return` statement, it can return a single value, or multiple values separated by commas. These values can then be assigned to a variable or used directly.
+Cuando una función tiene una sentencia `return`, puede devolver un único valor o varios valores separados por comas. Estos valores pueden luego ser asignados a una variable o usados directamente.
 
-When you create a function in Python, it is good practice to specify **function typing** by adding type hints for parameters and return values. This makes it easier for other developers to understand the expected input and output of the function.
+Cuando creas una función en Python, es una buena práctica especificar el **tipado de función** añadiendo indicaciones de tipo para los parámetros y valores de retorno. Esto facilita a otros desarrolladores entender la entrada y salida esperadas de la función.
 
 ```python
 def sum_numbers(num1: int, num2: int) -> int:
@@ -72,7 +72,7 @@ def sum_numbers(num1: int, num2: int) -> int:
 print(sum_numbers(2, 3)) # Output: 5
 ```
 
-Function **documentation** can be added using docstrings, which describe what the function does, its parameters, and its return value. This information can be accessed using a `help` function.
+La **documentación** de funciones se puede agregar usando cadenas de documentación, las cuales describen qué hace la función, sus parámetros y su valor de retorno. Esta información se puede acceder utilizando una función `help`.
 
 ```python
 def greet(name):
@@ -82,7 +82,7 @@ def greet(name):
 help(greet)
 ```
 
-In Python, **function parameters** can have default values that are used if no value is provided when the function is called.
+En Python, los **parámetros de función** pueden tener valores predeterminados que se utilizan si no se proporciona ningún valor cuando se llama a la función.
 
 ```python3
 def greet(name="there"):
@@ -92,7 +92,7 @@ greet() # Output: Hello, there
 greet("John") # Output: Hello, John
 ```
 
-The **main function** is a convention in Python, where code to be executed directly is placed within a `if __name__ == '__main__':` block, ensuring it is only executed when the file is run directly, and not imported as a module.
+La **función principal** es una convención en Python, donde el código a ejecutar directamente se coloca dentro de un bloque `if __name__ == '__main__':`, asegurando que solo se ejecute cuando el archivo se ejecuta directamente, y no se importa como módulo.
 
 ```python3
 def main():
@@ -100,13 +100,13 @@ def main():
 
 if __name__ == "__main__":
     main()
-```  
-  
-## Function Typing in Python: Types of Arguments and Return Values  
+```
 
-Function typing specifies the types of arguments and the expected return value of a function. Python supports positional, keyword, default and variable-length arguments for a function. Function arguments refer to the values passed to a function, and return values are the results of the executed code. 
+## Tipado de Funciones en Python: Tipos de Argumentos y Valores de Retorno
 
-Here are some examples of functions in Python: 
+El tipado de funciones especifica los tipos de argumentos y el valor de retorno esperado de una función. Python soporta argumentos posicionales, de palabra clave, predeterminados y de longitud variable para una función. Los argumentos de la función se refieren a los valores que se pasan a una función, y los valores de retorno son los resultados del código ejecutado.
+
+Aquí hay algunos ejemplos de funciones en Python:
 
 ```python
 # Example of a function that returns a value
@@ -121,7 +121,7 @@ def get_student_details(name, age, student_id):
     return name, age, student_id
 ```
 
-In Python, variable-length function arguments are denoted using the `*` symbol. Here's an example of a Python function that takes variable-length arguments:
+En Python, los argumentos de función de longitud variable se denotan usando el símbolo `*`. Aquí hay un ejemplo de una función de Python que acepta argumentos de longitud variable:
 
 ```python
 def calculate_sum(*numbers):
@@ -135,32 +135,32 @@ sum2 = calculate_sum(10, 20)    # sum2 is 30
 sum3 = calculate_sum(5)         # sum3 is 5
 ```
 
-In this example, the `*` numbers syntax in the function definition tells Python to allow any number of arguments to be passed to the function. The function then uses a loop to iterate over all of the arguments and calculate their sum.
+En este ejemplo, la sintaxis de números `*` en la definición de la función le indica a Python que permita cualquier número de argumentos para ser pasados a la función. La función luego utiliza un bucle para iterar sobre todos los argumentos y calcular su suma.
 
-As you can see, you can pass any number of arguments to the `calculate_sum` function, and it will work correctly.
+Como puedes ver, puedes pasar cualquier número de argumentos a la función `calculate_sum`, y funcionará correctamente.
 
-## How to Properly Name a Function in Python
+## Cómo Nombrar Adecuadamente una Función en Python
 
-1. Function names must **start with a letter or underscore** `_`, followed by any combination of letters, numbers, or underscores.
-Example: `def my_function():`
+1. Los nombres de las funciones deben **empezar con una letra o un guión bajo** `_`, seguido por cualquier combinación de letras, números o guiones bajos.
+Ejemplo: `def my_function():`
 
-2. Function names should be **descriptive** and convey the purpose of the function.
-Example: `def calculate_total():`
+2. Los nombres de las funciones deben ser **descriptivos** y transmitir el propósito de la función.
+Ejemplo: `def calculate_total():`
 
-3. Function names are **case-sensitive**, meaning `my_function` and `My_Function` are different names.
-Example: `def my_function():` and `def My_Function():` are two different functions.
+3. Los nombres de las funciones son **sensibles a mayúsculas y minúsculas**, lo que significa que `my_function` y `My_Function` son nombres diferentes.
+Ejemplo: `def my_function():` y `def My_Function():` son dos funciones diferentes.
 
-4. Function names should not be the same as a **Python keyword**, such as `print` or `if`.
-Example: `def print():` is not a valid function name.
+4. Los nombres de las funciones no deben ser iguales a una **palabra clave de Python**, como `print` o `if`.
+Ejemplo: `def print():` no es un nombre válido para una función.
 
-5. Function names should follow the **"snake_case"** naming convention, where words are separated by underscores. This convention makes function names more readable and easier to understand.
-Example: `def calculate_total_with_discount():`
+5. Los nombres de las funciones deben seguir la convención de nomenclatura de **"snake_case"**, donde las palabras están separadas por guiones bajos. Esta convención hace que los nombres de las funciones sean más legibles y fáciles de entender.
+Ejemplo: `def calculate_total_with_discount():`
 
-Overall, it is recommended to choose a function name that is **descriptive**, **easy to understand**, and follows the naming conventions for Python functions.
+En general, se recomienda elegir un nombre de función que sea **descriptivo**, **fácil de entender**, y siga las convenciones de nomenclatura para funciones en Python.
 
-## How to Return Multiple Values from a Function
+## Cómo Devolver Múltiples Valores Desde una Función
 
-In Python, a function can only directly return a single value. However, you can return multiple values by packaging them into a data structure like a tuple, list, or dictionary. Here's an example of a function that returns multiple values using a tuple:
+En Python, una función solo puede devolver directamente un único valor. Sin embargo, puedes devolver múltiples valores empaquetándolos en una estructura de datos como una tupla, lista o diccionario. Aquí hay un ejemplo de una función que devuelve múltiples valores utilizando una tupla:
 
 ```python3
 def get_user_info():
@@ -182,4 +182,4 @@ print("Email:", user_email)
 # Email: johndoe@example.com
 ```
 
-This function `get_user_info()` returns the `name`, `age`, and `email` of a user. By separating the variables with commas in the return statement, Python automatically creates a tuple containing these values. We can then unpack the tuple into separate variables during the function call.
+Esta función `get_user_info()` devuelve el `name`, `age` y `email` de un usuario. Al separar las variables con comas en la sentencia de retorno, Python crea automáticamente una tupla que contiene estos valores. Luego, podemos desempaquetar la tupla en variables separadas durante la llamada a la función.

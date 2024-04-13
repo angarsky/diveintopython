@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/list/convert
+> Lee este tutorial en la página web: https://diveintopython.org/es/learn/variables/list/convert
 
-In Python, it's common to convert data to and from lists, as lists are a versatile data structure that can hold multiple items of varying data types. In some cases we need to change the type of data stored in a list. Let's review the most common cases of conversion.
+En Python, es común convertir datos de y hacia listas, ya que las listas son una estructura de datos versátil que puede contener múltiples elementos de diferentes tipos de datos. En algunos casos, necesitamos cambiar el tipo de datos almacenados en una lista. Revisemos los casos más comunes de conversión.
 
-## List to String Conversion in Python
+## Conversión de Lista a Cadena en Python
 
-To convert a list to a string in Python, you can use the `join()` method. Here's an example:
+Para convertir una lista en una cadena en Python, puedes usar el método `join()`. Aquí tienes un ejemplo:
 
 ```python3
 my_list = ["apple", "pineapple", "cherry"]
@@ -13,11 +13,11 @@ my_string = ", ".join(my_list)
 print(my_string) # Output: apple, pineapple, cherry
 ```
 
-## String to List Conversion
+## Conversión de Cadena a Lista
 
-To convert a Python string to a list, you can use the `split()` method. The `split()` method splits a string into a list of substrings based on a specified delimiter.
+Para convertir una cadena de Python en una lista, puedes usar el método `split()`. El método `split()` divide una cadena en una lista de subcadenas basadas en un delimitador especificado.
 
-Here's an example of how to get list from string:
+Aquí tienes un ejemplo de cómo obtener una lista a partir de una cadena:
 
 ```python3
 my_string = "Hello, World!"
@@ -25,9 +25,9 @@ my_list = my_string.split(", ")
 print(my_list) Output: ['Hello', 'World!']
 ```
 
-To convert a Python string into a list of characters, you can use the `list()` function, which takes a sequence (e.g., a string) as an argument and returns a list containing the elements of the sequence:
+Para convertir una cadena de Python en una lista de caracteres, puedes usar la función `list()`, la cual toma una secuencia (por ejemplo, una cadena) como argumento y devuelve una lista que contiene los elementos de la secuencia:
 
-Here's an example of string into list of characters convertion:
+Aquí tienes un ejemplo de conversión de cadena en lista de caracteres:
 
 ```python3
 my_string = "Hello, world!"
@@ -35,9 +35,9 @@ my_list = list(my_string)
 print(my_list) Output: ['H', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd', '!']
 ```
 
-## List to Dictionary Conversion
+## Conversión de Lista a Diccionario
 
-You can convert a list to a dictionary in Python using the `dict()` constructor. The list should contain key-value pairs as tuples, where the first element of each tuple is the key and the second element is the value. Here's an example:
+Puedes convertir una lista en un diccionario en Python usando el constructor `dict()`. La lista debe contener pares clave-valor como tuplas, donde el primer elemento de cada tupla es la clave y el segundo elemento es el valor. Aquí tienes un ejemplo:
 
 ```python3
 my_list = [("a", 1), ("b", 2), ("c", 3)]
@@ -45,20 +45,21 @@ my_dict = dict(my_list)
 print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
 ```
 
-## List to Set Conversion
+## Conversión de Lista a Conjunto
 
-To convert a list to a set in Python, you can use the built-in `set()` function. Here's an example:
+Para convertir una lista a conjunto en Python, puedes usar la función incorporada `set()`. Aquí tienes un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
 my_set = set(my_list)
 print(my_set) # Output: {1, 2, 3, 4, 5}
 ```
-You can also get a list of unique values using the `set()` function, by converting a list to a set, and then convert it back to a list.
 
-## Set to List Conversion
+También puedes obtener una lista de valores únicos usando la función `set()`, convirtiendo una lista en un conjunto, y luego convirtiéndola de nuevo en una lista.
 
-To convert a set to a list in Python, you can use the `list()` function. Here's an example:
+## Conversión de Conjunto a Lista
+
+Para convertir un conjunto en una lista en Python, puedes usar la función `list()`. Aquí tienes un ejemplo:
 
 ```python3
 my_set = {1, 2, 3, 4, 5}
@@ -66,11 +67,11 @@ my_list = list(my_set)
 print(my_list) # Output: [1, 2, 3, 4, 5]
 ```
 
-## Splitting String into List
+## Dividiendo una cadena en una lista
 
-You can use the `split()` method in Python to split a string into a list.
+Puedes usar el método `split()` en Python para dividir una cadena en una lista.
 
-Here's an example:
+Aquí tienes un ejemplo:
 
 ```python3
 string = "Hello World"
@@ -78,7 +79,7 @@ list = string.split()
 print(list) # Output: ['Hello', 'World']
 ```
 
-By default, the s`plit()` method splits the string on whitespace characters (spaces, tabs, and newlines). You can also specify a different delimiter by passing it as an argument to the `split()` method. For example, if you want to split a string on commas, you can do:
+De forma predeterminada, el método `split()` divide la cadena en caracteres de espacio en blanco (espacios, tabulaciones y saltos de línea). También puedes especificar un delimitador diferente pasándolo como argumento al método `split()`. Por ejemplo, si quieres dividir una cadena en comas, puedes hacer:
 
 ```python3
 string = "apple,banana,orange"
@@ -86,9 +87,9 @@ list = string.split(",")
 print(list) # Output: ['apple', 'banana', 'orange']
 ```
 
-## List to Tuple Conversion
+## Conversión de Lista a Tupla
 
-In Python, you can easily convert a list to a tuple using the built-in `tuple()` function. Here's an example:
+En Python, puedes convertir fácilmente una lista a una tupla usando la función integrada `tuple()`. Aquí hay un ejemplo:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -96,9 +97,9 @@ my_tuple = tuple(my_list)
 print(my_tuple) # Output: (1, 2, 3, 4, 5)
 ```
 
-## Tuple to List Conversion
+## Conversión de Tupla a Lista
 
-In Python, you can convert a tuple to a list using the built-in `list()` function. Here's an example:
+En Python, puedes convertir una tupla a una lista utilizando la función integrada `list()`. He aquí un ejemplo:
 
 ```python3
 my_tuple = (1, 2, 3, 4, 5)
@@ -106,11 +107,11 @@ my_list = list(my_tuple)
 print(my_list) # Output: [1, 2, 3, 4, 5]
 ```
 
-## Character List to Int List Conversion in Python
+## Conversión de Lista de Caracteres a Lista de Enteros en Python
 
-To convert a list of characters to a list of integers in Python, you can use a list comprehension along with the built-in `ord()` function, which returns the Unicode code point of a character.
+Para convertir una lista de caracteres a una lista de enteros en Python, puedes usar una comprensión de lista junto con la función incorporada `ord()`, que devuelve el punto de código Unicode de un carácter.
 
-Here's an example code:
+Aquí tienes un ejemplo de código:
 
 ```python3
 char_list = ['a', 'b', 'c', 'd']
