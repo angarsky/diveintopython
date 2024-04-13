@@ -1,25 +1,25 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/date
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/date
 
-Python provides built-in modules that allow you to work with date and time values in various formats. The [DateTime module](/learn/date/datetime.md) is a popular one for handling date and time objects, including time zones, time differences, and time arithmetic. The module also offers a wide range of formatting options to display dates and times in different ways. Additionally, Python's [Time module](/learn/date/time.md) provides functions for working with time values, such as getting the current time, measuring elapsed time, and setting timeouts. Understanding how to work with date and time values is essential for many programming tasks, including scheduling, data analysis, and database management.
+Python oferece módulos integrados que permitem trabalhar com valores de data e hora em vários formatos. O [módulo DateTime](/pt/learn/date/datetime.md) é um dos mais populares para lidar com objetos de data e hora, incluindo fuso horários, diferenças de tempo e aritmética de tempo. O módulo também oferece uma ampla gama de opções de formatação para exibir datas e horas de diferentes maneiras. Além disso, o [módulo Time](/pt/learn/date/time.md) do Python fornece funções para trabalhar com valores de tempo, como obter o tempo atual, medir o tempo decorrido e definir tempos de espera. Entender como trabalhar com valores de data e hora é essencial para muitas tarefas de programação, incluindo agendamento, análise de dados e gerenciamento de banco de dados.
 
-## Date and Time Variables in Python
+## Variáveis de Data e Hora em Python
 
-Python has several built-in modules for working with dates and times. Here are some of the most commonly used ones:
+Python tem vários módulos integrados para trabalhar com datas e horas. Aqui estão alguns dos mais usados:
 
-1. **datetime** module: Python datetime module provides classes for working with dates and times. It includes classes such as datetime, date, time, and timedelta that can be used to represent and manipulate dates, times, and durations.
+1. **módulo datetime**: O módulo datetime do Python fornece classes para trabalhar com datas e horas. Inclui classes como datetime, date, time e timedelta que podem ser usadas para representar e manipular datas, horas e durações.
 
-2. **time** module: This module provides functions to work with time-related functions, such as getting the current time, waiting for a certain amount of time, and converting between time representations.
+2. **módulo time**: Este módulo fornece funções para trabalhar com funções relacionadas ao tempo, como obter o tempo atual, esperar por uma certa quantidade de tempo e converter entre representações de tempo.
 
-3. **calendar** module: This module provides functions for working with calendars, such as getting the number of days in a month, determining the day of the week for a given date, and formatting dates in various ways.
+3. **módulo calendar**: Este módulo fornece funções para trabalhar com calendários, como obter o número de dias em um mês, determinar o dia da semana para uma data dada e formatar datas de várias maneiras.
 
-4. **dateutil** module: This module provides additional functionality for working with dates and times, including parsing dates and times from strings, handling time zones, and performing arithmetic with dates and times.
+4. **módulo dateutil**: Este módulo fornece funcionalidade adicional para trabalhar com datas e horas, incluindo a análise de datas e horas a partir de strings, lidando com fusos horários e realizando aritmética com datas e horas.
 
-## Date in Python
+## Data em Python
 
-In Python, the `date` module is not a standalone module. However, the `datetime` module provides a date class that allows you to work specifically with dates (without considering time).
+Em Python, o módulo `date` não é um módulo autônomo. No entanto, o módulo `datetime` fornece uma classe date que permite trabalhar especificamente com datas (sem considerar o tempo).
 
-Here's an example of using the `date` class to work with dates in Python:
+Aqui está um exemplo de como usar a classe `date` para trabalhar com datas em Python:
 
 ```python3
 from datetime import date
@@ -35,11 +35,11 @@ day = my_date.day
 print(year, month, day)
 ```
 
-## The Calendar Module
+## O Módulo Calendar
 
-The `calendar` module in Python provides functions to work with calendars. It allows you to generate calendars for a specific month or year and provides methods to manipulate those calendars.
+O módulo `calendar` em Python fornece funções para trabalhar com calendários. Ele permite que você gere calendários para um mês ou ano específico e fornece métodos para manipular esses calendários.
 
-Here is an example of how to use the `calendar` module:
+Aqui está um exemplo de como usar o módulo `calendar`:
 
 ```python3
 import calendar
@@ -57,15 +57,15 @@ print(calendar.isleap(2023))
 print(calendar.monthrange(2023, 5))
 ```
 
-The `month()` function returns a formatted string representing the calendar for the given year and month. The `calendar()` function returns a multi-line string representing the calendar for the entire year. The `isleap()` function returns `True` if the given year is a leap year, and `False` otherwise. The `monthrange()` function returns a tuple containing the first weekday of the month and the number of days in the month.
+A função `month()` retorna uma string formatada representando o calendário para o ano e mês dados. A função `calendar()` retorna uma string de múltiplas linhas representando o calendário para o ano inteiro. A função `isleap()` retorna `True` se o ano dado for um ano bissexto, e `False` caso contrário. A função `monthrange()` retorna uma tupla contendo o primeiro dia da semana do mês e o número de dias no mês.
 
-You can use these functions to generate `calendar` instances and manipulate them as needed in your Python applications.
+Você pode usar essas funções para gerar instâncias de `calendar` e manipulá-las conforme necessário em suas aplicações Python.
 
-## Python's Dateutil Module
+## Módulo Dateutil do Python
 
-The `dateutil` module is a third-party module in Python that provides various utilities for working with dates and times. It extends the functionality provided by the built-in `datetime` module and makes it easier to work with dates and times in Python.
+O módulo `dateutil` é um módulo de terceiros em Python que fornece várias utilidades para trabalhar com datas e horários. Ele extende a funcionalidade fornecida pelo módulo `datetime` embutido e facilita o trabalho com datas e horários em Python.
 
-Here are some examples of what you can do with the `dateutil` module:
+Aqui estão alguns exemplos do que você pode fazer com o módulo `dateutil`:
 
 ```python3
 from dateutil import parser
@@ -87,13 +87,13 @@ for d in dates:
     print(d)
 ```
 
-The `parser.parse()` method is used to parse a string representation of a date or time and convert it to a `datetime` object. The `relativedelta` class is used to add or subtract a certain amount of time from a `datetime` object. The `rrule()` function is used to generate a sequence of dates according to a set of rules specified by the user.
+O método `parser.parse()` é usado para analisar uma representação em string de uma data ou hora e convertê-la em um objeto `datetime`. A classe `relativedelta` é usada para adicionar ou subtrair uma certa quantidade de tempo de um objeto `datetime`. A função `rrule()` é usada para gerar uma sequência de datas de acordo com um conjunto de regras especificado pelo usuário.
 
-The `dateutil` module also provides many other useful features such as time zone support, parsing of relative dates and times, and working with time intervals.
+O módulo `dateutil` também fornece muitos outros recursos úteis, como suporte a fuso horário, análise de datas e horários relativos e trabalho com intervalos de tempo.
 
-## How to convert a Date Object to a Datetime Object
+## Como converter um Objeto Date em um Objeto Datetime
 
-In Python, you can convert a `date` object to a `datetime` object by using the `datetime.combine()` method. This method allows you to combine the `date` object with a separate `time` object to create a new `datetime` object. Here's an example:
+Em Python, você pode converter um objeto `date` em um objeto `datetime` usando o método `datetime.combine()`. Este método permite combinar o objeto `date` com um objeto `time` separado para criar um novo objeto `datetime`. Aqui está um exemplo:
 
 ```python3
 from datetime import date, datetime, time
@@ -110,11 +110,11 @@ my_datetime = datetime.combine(my_date, my_time)
 print(my_datetime)  # Output: 2023-05-22 14:30:00
 ```
 
-## String to Date Conversion in Python
+## Conversão de String para Data em Python
 
-To parse a date from a string in Python, you can use the `datetime.strptime()` function from the `datetime` module. The `strptime()` function allows you to parse a string representing a date and time according to a specified format.
+Para analisar uma data a partir de uma string em Python, você pode usar a função `datetime.strptime()` do módulo `datetime`. A função `strptime()` permite que você analise uma string representando uma data e hora de acordo com um formato especificado.
 
-Here's an example of how to create a date from a string in Python:
+Aqui está um exemplo de como criar uma data a partir de uma string em Python:
 
 ```python3
 from datetime import datetime
@@ -127,15 +127,15 @@ parsed_date = datetime.strptime(date_string, "%Y-%m-%d").date()
 print(parsed_date)
 ```
 
-You can customize the format code according to the structure of your date string. For example, if your date string is in the format "22/05/2023", you would use the format `%d/%m/%Y` in `strptime()`.
+Você pode personalizar o código de formato de acordo com a estrutura da sua string de data. Por exemplo, se sua string de data estiver no formato "22/05/2023", você usaria o formato `%d/%m/%Y` em `strptime()`.
 
-By parsing the date from a string, you can convert it into a `date` object and work with it using the available methods and attributes in Python's `datetime` module.
+Ao analisar a data a partir de uma string, você pode convertê-la em um objeto `date` e trabalhar com ele usando os métodos e atributos disponíveis no módulo `datetime` do Python.
 
-## Date to String Conversion
+## Conversão de Data para String
 
-To convert a `date` object to a string in Python, you can use the `strftime()` method from the datetime module. The `strftime()` method allows you to format a `date` object into a string representation according to a specified format.
+Para converter um objeto `date` em uma string em Python, você pode usar o método `strftime()` do módulo datetime. O método `strftime()` permite formatar um objeto `date` em uma representação em string de acordo com um formato especificado.
 
-Here's an example of converting a `date` object to a string:
+Aqui está um exemplo de conversão de um objeto `date` em uma string:
 
 ```python3
 from datetime import date
@@ -148,11 +148,11 @@ date_string = my_date.strftime("%Y-%m-%d")
 print(date_string)
 ```
 
-## How to Get Current Date from Datetime Module in Python
+## Como Obter a Data Atual do Módulo Datetime em Python
 
-To get today's date in Python, you can use the `date` class from the `datetime` module along with the `today()` method.
+Para obter a data de hoje em Python, você pode usar a classe `date` do módulo `datetime` juntamente com o método `today()`.
 
-Here's an example of getting today's date:
+Aqui está um exemplo de como obter a data de hoje:
 
 ```python3
 from datetime import date
@@ -163,11 +163,11 @@ today = date.today()
 print(today)  # Output: 2023-05-22
 ```
 
-## A Timestamp to a Date Object Conversion
+## Conversão de um Timestamp para um Objeto Data
 
-To convert a timestamp to a `date` object in Python, you can use the `fromtimestamp()` method of the `date` class from the `datetime` module.
+Para converter um timestamp para um objeto `date` em Python, você pode usar o método `fromtimestamp()` da classe `date` do módulo `datetime`.
 
-Here's an example of converting a timestamp to a `date` object:
+Aqui está um exemplo de como converter um timestamp para um objeto `date`:
 
 ```python3
 from datetime import date
@@ -180,13 +180,13 @@ converted_date = date.fromtimestamp(timestamp)
 print(converted_date)  # Output: 2021-05-23
 ```
 
-## How to Generate a Date in Python
+## Como Gerar uma Data em Python
 
-To generate a date in Python, you can use the `date` class from the `datetime` module. The `date` class allows you to create a `date` object representing a specific date.
+Para gerar uma data em Python, você pode usar a classe `date` do módulo `datetime`. A classe `date` permite que você crie um objeto `date` representando uma data específica.
 
-Here are a few examples of generating dates in Python:
+Aqui estão alguns exemplos de como gerar datas em Python:
 
-Generating today's date:
+Gerando a data de hoje:
 
 ```python
 from datetime import date
@@ -195,7 +195,7 @@ today = date.today()
 print(today)  # Output: Current date in the format YYYY-MM-DD
 ```
 
-Generating a specific date:
+Gerando uma data específica:
 
 ```python
 from datetime import date
@@ -204,11 +204,11 @@ my_date = date(2023, 5, 22)
 print(my_date)  # Output: 2023-05-22
 ```
 
-## How to Get Yesterday's Date
+## Como Obter a Data de Ontem
 
-To get the date representing yesterday in Python, you can use the `date` class from the `datetime` module along with the `timedelta` class. The `timedelta` class allows you to represent a duration or difference in time.
+Para obter a data referente a ontem em Python, você pode usar a classe `date` do módulo `datetime` junto com a classe `timedelta`. A classe `timedelta` permite representar uma duração ou diferença no tempo.
 
-Here's an example of getting yesterday's date:
+Aqui está um exemplo de como obter a data de ontem:
 
 ```python3
 from datetime import date, timedelta
@@ -222,11 +222,11 @@ yesterday = today - timedelta(days=1)
 print(yesterday)  # Output: Date representing yesterday
 ```
 
-## A Date Function
+## Uma Função de Data
 
-In Python, the `date` function is part of the `datetime` module and is used to create `date` objects that represent dates without any time components.
+Em Python, a função `date` faz parte do módulo `datetime` e é usada para criar objetos `date` que representam datas sem nenhum componente de tempo.
 
-Here's an example of using the `date` function to create a `date` object:
+Aqui está um exemplo de como usar a função `date` para criar um objeto `date`:
 
 ```python
 from datetime import date
@@ -236,11 +236,11 @@ my_date = date(2023, 5, 22)
 print(my_date)  # Output: 2023-05-22
 ```
 
-## How to Get Months' Number Between Two Dates
+## Como Obter o Número de Meses Entre Duas Datas
 
-There is no special function or method for number of months calculation.
+Não existe uma função ou método especial para o cálculo do número de meses.
 
-Here's an example of calculating the number of months between two dates using simple formulas:
+Aqui está um exemplo de como calcular o número de meses entre duas datas usando fórmulas simples:
 
 ```python3
 from datetime import date

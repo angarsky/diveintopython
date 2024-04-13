@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/csv
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/file-handling/csv
 
-CSV (Comma Separated Values) files are one of the most common data formats used in data science, machine learning, and analytics. Python is a powerful programming language that provides several tools and libraries to work with [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) files. In this article, we will explore the basics of working with CSV files in Python, including reading, writing, and manipulating data. We will also cover some advanced topics, such as handling large CSV files, dealing with missing data, and performing operations on CSV data using NumPy and Pandas libraries.  
-  
-## Open CSV File and Read Data with Python  
+Arquivos CSV (Valores Separados por Vírgula) são um dos formatos de dados mais comuns utilizados em ciência de dados, aprendizado de máquina e análise. Python é uma linguagem de programação poderosa que fornece várias ferramentas e bibliotecas para trabalhar com arquivos [CSV](https://en.wikipedia.org/wiki/Comma-separated_values). Neste artigo, exploraremos os conceitos básicos de trabalhar com arquivos CSV em Python, incluindo leitura, escrita e manipulação de dados. Também abordaremos alguns tópicos avançados, como lidar com arquivos CSV grandes, tratar dados faltantes e realizar operações em dados CSV usando as bibliotecas NumPy e Pandas.
 
-To open and read a CSV file in Python, you can use the built-in [csv](https://docs.python.org/3/library/csv.html) module.
+## Abrir Arquivo CSV e Ler Dados com Python
+
+Para abrir e ler um arquivo CSV em Python, você pode usar o módulo [csv](https://docs.python.org/3/library/csv.html) integrado.
 
 ```python
 import csv
@@ -16,7 +16,7 @@ with open('example.csv', 'r') as file:
         print(row)
 ```
 
-In this example, we use the `csv.reader()` function to read the contents of the CSV file named `example.csv`. We then loop through the rows of the file using a `for` loop and `print` each `row` to the console.
+Neste exemplo, usamos a função `csv.reader()` para ler o conteúdo do arquivo CSV chamado `example.csv`. Depois, percorremos as linhas do arquivo usando um laço `for` e `print` cada `row` no console.
 
 ```python
 import csv
@@ -28,15 +28,15 @@ with open('example.csv', 'w', newline='') as file:
     writer.writerow(['Jane', '30', 'Female'])
 ```
 
-In this example, we use the `csv.writer()` function to write `data` to a CSV file named `example.csv`. We create a new file with the `w` mode and specify `newline=''` to avoid extra line breaks. We then use the `writerow()` function to write each `row` of `data` to the file.
+Neste exemplo, utilizamos a função `csv.writer()` para escrever `data` em um arquivo CSV chamado `example.csv`. Criamos um novo arquivo com o modo `w` e especificamos `newline=''` para evitar quebras de linha extras. Em seguida, usamos a função `writerow()` para escrever cada `row` de `data` no arquivo.
 
-By using these code examples, you can easily provide **CSV reading** or **loading CSV**.  
-  
-## How to Save to a CSV File in Python  
+Ao usar esses exemplos de código, você pode facilmente providenciar **leitura de CSV** ou **carregamento de CSV**.
 
-Saving data in a CSV file is a common task in Python. CSV files are easy to read and can be easily opened in any spreadsheet software. In Python, we can use the `csv` module to write to a CSV file. Here are a few examples of how to save to a CSV file in Python.
+## Como Salvar em um Arquivo CSV em Python
 
-This example demonstrates how to write a simple list of values to a CSV file. 
+Salvar dados em um arquivo CSV é uma tarefa comum em Python. Arquivos CSV são fáceis de ler e podem ser facilmente abertos em qualquer software de planilha. No Python, podemos usar o módulo `csv` para escrever em um arquivo CSV. Aqui estão alguns exemplos de como salvar em um arquivo CSV em Python.
+
+Este exemplo demonstra como escrever uma lista simples de valores em um arquivo CSV.
 
 ```python
 import csv
@@ -51,15 +51,15 @@ with open('example.csv', mode='w') as file:
     writer.writerows(data)
 ```
 
-In the code above:
+No código acima:
 
-1. We `import` the `csv` module.
-2. We create a simple list of values called `data`.
-3. We open the CSV file in write mode using the `open()` function and specify the `mode` as `'w'`.
-4. We create a `csv.writer` object and pass the file object to the writer.
-5. We use the `writerows()` method to write the data to the CSV file.
+1. Nós `importamos` o módulo `csv`.
+2. Criamos uma lista simples de valores chamada `data`.
+3. Abrimos o arquivo CSV em modo de escrita usando a função `open()` e especificamos o `mode` como `'w'`.
+4. Criamos um objeto `csv.writer` e passamos o objeto do arquivo para o escritor.
+5. Usamos o método `writerows()` para escrever os dados no arquivo CSV.
 
-This example shows how to write a dictionary of values to a CSV file.
+Este exemplo mostra como escrever um dicionário de valores em um arquivo CSV.
 
 ```python
 import csv
@@ -79,22 +79,22 @@ with open('example.csv', mode='w', newline='') as file:
         writer.writerow(item)
 ```
 
-In the code above:
+No código acima:
 
-1. We `import` the `csv` module.
-2. We create a list of dictionaries called `data`.
-3. We open the CSV file in write mode using the `open()` function and specify the `mode` as `'w'`. We also set `newline` to `''` to prevent blank rows from being inserted between each row.
-4. We create a `csv.DictWriter` object and pass the file object to the `writer`. We also provide the `fieldnames` as a list.
-5. We use `writeheader()` method to write the `fieldnames` to the CSV file.
-6. We use the `writerow()` method to write each `row` of data to the CSV file.
+1. Nós `importamos` o módulo `csv`.
+2. Criamos uma lista de dicionários chamada `data`.
+3. Abrimos o ficheiro CSV em modo de escrita utilizando a função `open()` e especificamos o `mode` como `'w'`. Também definimos `newline` como `''` para evitar que linhas em branco sejam inseridas entre cada linha.
+4. Nós criamos um objeto `csv.DictWriter` e passamos o objeto arquivo para o `writer`. Também fornecemos os `nomes dos campos` como uma lista.
+5. Usamos o método `writeheader()` para escrever os `nomes dos campos` no arquivo CSV.
+6. Usamos o método `writerow()` para escrever cada `linha` de dados no arquivo CSV.
 
-By using the `csv` module in Python, you can easily save your data to a CSV file. These examples can be modified to meet your specific requirements.  
+Usando o módulo `csv` em Python, você pode facilmente salvar seus dados em um arquivo CSV. Estes exemplos podem ser modificados para atender às suas necessidades específicas.  
   
-## How to Convert JSON to CSV with Python  
+## Como converter JSON para CSV com Python
 
-Converting [json](https://docs.python.org/3/library/json.html) `data` to CSV format is a common task in `data` processing. Python offers an easy and efficient way to convert JSON `data` to CSV format using built-in modules such as `json` and `csv`.
+Converter `dados` [json](https://docs.python.org/3/library/json.html) para o formato CSV é uma tarefa comum no processamento de `dados`. Python oferece uma maneira fácil e eficiente de converter `dados` JSON para o formato CSV usando módulos embutidos como `json` e `csv`.
 
-### Using JSON and CSV modules
+### Usando os módulos JSON e CSV
 
 ```python
 import json
@@ -116,7 +116,7 @@ with open('data.csv', 'w', newline='') as file:
         writer.writerow(item.values())
 ```
 
-### Using Pandas Library
+### Usando a Biblioteca Pandas
 
 ```python
 import pandas as pd
@@ -132,15 +132,15 @@ df = pd.DataFrame(data)
 df.to_csv('data.csv', index=False)
 ```
 
-In both of these examples, we load the JSON data from a file, convert it to a Python object, and then write it to a CSV file using the `csv` module or [pandas](https://pypi.org/project/pandas/) library. With these methods, you can easily convert JSON data to CSV format in Python.  
+Em ambos os exemplos, carregamos os dados JSON de um ficheiro, convertemo-los para um objeto Python e, em seguida, escrevemo-los para um ficheiro CSV utilizando o módulo `csv` ou a biblioteca [pandas](https://pypi.org/project/pandas/). Com esses métodos, você pode facilmente converter dados JSON para o formato CSV em Python.  
   
-## Read CSV with Pandas  
+## Ler CSV com Pandas
 
-Pandas is a powerful open-source data analysis library for Python that offers easy-to-use data structures for data manipulation and analysis. In `pandas`, reading and manipulating CSV files is simple and efficient.
+Pandas é uma poderosa biblioteca de análise de dados de código aberto para Python que oferece estruturas de dados fáceis de usar para manipulação e análise de dados. No `pandas`, a leitura e manipulação de arquivos CSV é simples e eficiente.
 
-### Load CSV with Pandas
+### Carregar CSV com Pandas
 
-To load a CSV file with Pandas, we use `read_csv()`. Let's see how we can load a CSV file using Pandas:
+Para carregar um ficheiro CSV com o Pandas, usamos `read_csv()`. Vamos ver como podemos carregar um arquivo CSV usando o Pandas:
 
 ```python
 import pandas as pd
@@ -148,9 +148,9 @@ df = pd.read_csv('filename.csv')
 print(df.head())
 ```
 
-### Parse CSV File using Pandas
+### Analisar Arquivo CSV usando Pandas
 
-After loading the CSV file, we need to parse the data to extract the required information. Pandas provides a lot of operations to parse and manipulate CSV data. Here's an example of how to parse data using Pandas:
+Após carregar o arquivo CSV, precisamos analisar os dados para extrair as informações requeridas. Pandas oferece muitas operações para analisar e manipular dados em CSV. Aqui está um exemplo de como analisar dados usando Pandas:
 
 ```python
 import pandas as pd
@@ -159,9 +159,9 @@ df = df[df['column_name'] == 'required_value']
 print(df.head())
 ```
 
-### Write DataFrame to CSV using Pandas
+### Escrever DataFrame em CSV usando Pandas
 
-After processing the CSV data, we may want to write the new DataFrame to a new CSV file. Pandas provides an easy way to write the DataFrame to CSV files using `to_csv()`. Here's an example:
+Após processar os dados do CSV, podemos querer escrever o novo DataFrame em um novo arquivo CSV. Pandas oferece uma maneira fácil de escrever o DataFrame em arquivos CSV usando `to_csv()`. Aqui está um exemplo:
 
 ```python
 import pandas as pd
@@ -172,13 +172,13 @@ new_df = df[df['column_name'] == 'required_value']
 new_df.to_csv('new_file.csv', index=False)
 ```
 
-## Export to CSV  
+## Exportar para CSV
 
-Exporting `data` to CSV (Comma Separated Values) is a common task in `data` processing. Here are two ways to export `data` to CSV in Python:
+Exportar `data` para CSV (Valores Separados por Vírgula) é uma tarefa comum no processamento de `data`. Aqui estão duas maneiras de exportar `data` para CSV em Python:
 
-### Using csv module
+### Usando o módulo csv
 
-The csv module is a built-in module in Python that enables reading and writing of CSV files. Here's an example of exporting a dictionary to a CSV file using the `csv` module:
+O módulo csv é um módulo integrado no Python que permite a leitura e a escrita de arquivos CSV. Aqui está um exemplo de exportação de um dicionário para um arquivo CSV usando o módulo `csv`:
 
 ```python
 import csv
@@ -199,9 +199,9 @@ with open('data.csv', 'w', newline='') as file:
 # Adam,30
 ```
 
-### Using pandas module
+### Usando o módulo pandas
 
-Here's an example of exporting a pandas DataFrame to a CSV file.
+Aqui está um exemplo de exportação de um pandas DataFrame para um arquivo CSV.
 
 ```python
 import pandas as pd
@@ -212,13 +212,13 @@ df = pd.DataFrame(data)
 df.to_csv('data.csv', index=False)
 ```
 
-This code creates a CSV file with the same format as the previous example. The `index=False` parameter is used to remove the default row index column from the CSV file.
+Este código cria um arquivo CSV com o mesmo formato do exemplo anterior. O parâmetro `index=False` é utilizado para remover a coluna de índice de linha padrão do arquivo CSV.
 
-## Read CSV Line by Line  
+## Ler CSV Linha por Linha
 
-To read a CSV file in Python line by line, we can use the built-in `csv`. 
+Para ler um arquivo CSV em Python linha por linha, podemos usar o `csv` integrado.
 
-### Reading CSV Line by Line
+### Lendo CSV Linha por Linha
 
 ```python
 import csv
@@ -229,9 +229,9 @@ with open('example.csv', newline='') as csvfile:
         print(row)
 ```
 
-In the above example, we open the CSV file `example.csv` and assign it to the `csvfile` variable. Then we create a `csv.reader` object, which we can iterate over line by line using a `for` loop. Each `row` in the loop is represented as a list of values.
+No exemplo acima, abrimos o arquivo CSV `example.csv` e o atribuímos à variável `csvfile`. Em seguida, criamos um objeto `csv.reader`, sobre o qual podemos iterar linha por linha usando um laço `for`. Cada `row` no laço é representada como uma lista de valores.
 
-### Writing to New Line in CSV
+### Escrevendo em Nova Linha no CSV
 
 ```python
 import csv
@@ -242,13 +242,13 @@ with open('example.csv', mode='a', newline='') as csvfile:
     writer.writerow(row)
 ```
 
-In the above example, we open the CSV file `example.csv` in 'append' `mode` and assign it to the `csvfile` variable. Then we create a `csv.writer` object, which we can use to write a new line to the CSV file using the `writerow()` method. The `row` variable is a list of values to write to the new line in the CSV file.
+No exemplo acima, abrimos o arquivo CSV `example.csv` no `modo` 'anexar' e o atribuímos à variável `csvfile`. Em seguida, criamos um objeto `csv.writer`, que podemos usar para escrever uma nova linha no arquivo CSV usando o método `writerow()`. A variável `row` é uma lista de valores para escrever na nova linha no arquivo CSV.
 
-By using these simple examples, we can easily read and write to CSV files line by line in Python.  
-  
-## How to Read one Column CSV in Python  
+Usando esses exemplos simples, podemos facilmente ler e escrever em arquivos CSV linha por linha em Python.
 
-To read one column CSV in Python, you can use the `csv.DictReader()` function to read CSV files as dictionaries. Here are two examples:
+## Como Ler uma Coluna CSV em Python
+
+Para ler uma coluna CSV em Python, você pode usar a função `csv.DictReader()` para ler arquivos CSV como dicionários. Aqui estão dois exemplos:
 
 ```python
 import csv
@@ -259,7 +259,7 @@ with open('example.csv') as file:
         print(row['column_name'])
 ```
 
-In this code example, we first `import` the `csv` module. We then use the `with` statement to open the CSV file `example.csv`. We create a `DictReader` object called `reader` using the CSV file `file`. We then iterate through each `row` in `reader` and `print` the value of `column_name` in each row.
+Neste exemplo de código, primeiro `importamos` o módulo `csv`. Em seguida, usamos a instrução `with` para abrir o arquivo CSV `example.csv`. Criamos um objeto `DictReader` chamado `reader` usando o arquivo CSV `file`. Então iteramos através de cada `row` em `reader` e `printamos` o valor de `column_name` em cada linha.
 
 ```python
 import pandas as pd
@@ -269,4 +269,4 @@ column_data = data['column_name']
 print(column_data)
 ```
 
-In this code example, we first `import` the `pandas` module and create a `DataFrame` called `data` using the `read_csv()` function and passing the CSV file name `example.csv`. We then assign the data in `column_name` to a new variable `column_data`. Finally, we `print` `column_data`.  
+Neste exemplo de código, primeiro `import` o módulo `pandas` e criamos um `DataFrame` chamado `data` usando a função `read_csv()` e passando o nome do arquivo CSV `example.csv`. Em seguida, atribuímos os dados em `column_name` a uma nova variável `column_data`. Finalmente, nós `print` `column_data`.

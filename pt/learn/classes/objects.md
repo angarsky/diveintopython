@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/objects
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/classes/objects
 
-If you're looking to deepen your knowledge of programming in Python, it's essential to have a solid understanding of classes and objects. Essentially, a class is a blueprint for creating objects, while objects themselves are instances of these classes. In this guide, we'll explore the world of class objects, and delve into the basics of classes and objects in this powerful language. So whether you're just starting out with Python or seeking to improve your existing skills, read on to learn more about this crucial aspect of the language.  
-  
-## How to Create an Object in Python  
+Se você está procurando aprofundar seu conhecimento de programação em Python, é essencial ter uma sólida compreensão de classes e objetos. Essencialmente, uma classe é um modelo para criar objetos, enquanto os próprios objetos são instâncias dessas classes. Neste guia, vamos explorar o mundo dos objetos de classe e aprofundar nos conceitos básicos de classes e objetos nessa poderosa linguagem. Então, seja você iniciante em Python ou buscando melhorar suas habilidades existentes, continue lendo para aprender mais sobre esse aspecto crucial da linguagem.
 
-Classes and objects in Python are fundamental concepts in object-oriented programming. An object is simply an instance of a class.
+## Como Criar um Objeto em Python
+
+Classes e objetos em Python são conceitos fundamentais na programação orientada a objetos. Um objeto é simplesmente uma instância de uma classe.
 
 ```python
 # Creating a Class
@@ -26,14 +26,14 @@ car1.display() # The car is a 2018 Toyota Corolla.
 car2.display() # The car is a 2019 Honda Civic.
 ```
 
-In this example, we've created a class called `Car` that has three attributes: `make`, `model`, and `year`. The `__init__()` method is used to initialize the attributes when creating a new object. The `display()` method is used to print information about the car. We've created two objects (`car1` and `car2`) from the `Car` class. We've passed in values for the `make`, `model`, and `year` attributes for each car. We've then called the `display()` method on each object to print information about the car.
+Neste exemplo, criamos uma classe chamada `Car` que possui três atributos: `make`, `model` e `year`. O método `__init__()` é usado para inicializar os atributos ao criar um novo objeto. O método `display()` é usado para imprimir informações sobre o carro. Criamos dois objetos (`car1` e `car2`) da classe `Car`. Passamos valores para os atributos `make`, `model` e `year` para cada carro. Depois, chamamos o método `display()` em cada objeto para imprimir informações sobre o carro.
 
-To summarize, classes and objects in Python are used to create custom data types that can have attributes and methods. Using class objects in Python allows for more organized and modular code.  
-  
-## What is an Object in Python  
+Resumindo, classes e objetos em Python são usados para criar tipos de dados personalizados que podem ter atributos e métodos. Usar objetos de classe em Python permite um código mais organizado e modular.
 
-Class object in Python refers to a blueprint or a template for creating objects. It defines the attributes and methods that an object will have. 
-In Python, classes are used to create class objects which can be used to create instances or objects of that class. 
+## O que é um Objeto em Python
+
+Objeto de classe em Python refere-se a um esquema ou um modelo para criar objetos. Ele define os atributos e métodos que um objeto terá.
+Em Python, classes são usadas para criar objetos de classe que podem ser usados para criar instâncias ou objetos dessa classe.
 
 ```python
 class Car:
@@ -48,7 +48,7 @@ class Car:
         return f"{self.make} {self.model} ({self.year})"
 ```
 
-In this example, `Car` is a class object which defines the attributes - `make`, `model` and `year` of a car and a method `get_details()` that returns the details of the car.
+Neste exemplo, `Car` é um objeto de classe que define os atributos - `make`, `model` e `year` de um carro e um método `get_details()` que retorna os detalhes do carro.
 
 ```python
 class Dog:
@@ -62,13 +62,13 @@ class Dog:
         return "Woof! Woof!"
 ```
 
-In this example, `Dog` is another class object which defines the attributes - `breed` and `age` of a dog and a method `bark()` that returns the sound of a dog. 
-   
-## Exploring the Key Features of Class Object  
+Neste exemplo, `Dog` é outro objeto de classe que define os atributos - `breed` e `age` de um cachorro e um método `bark()` que retorna o som de um cachorro.
 
-A class object in Python is a blueprint for creating objects. It defines a set of attributes and methods that all objects created from that class will have.
+## Explorando as Principais Características do Objeto de Classe
 
-- Classes: A class is a blueprint for creating objects. It defines the attributes and methods that all objects created from that class will have. 
+Um objeto de classe em Python é um modelo para criar objetos. Ele define um conjunto de atributos e métodos que todos os objetos criados a partir dessa classe terão.
+
+- Classes: Uma classe é um modelo para criar objetos. Ela define os atributos e métodos que todos os objetos criados a partir dessa classe terão.
 
 ```python
 class Car:
@@ -81,7 +81,7 @@ car1 = Car("Toyota", "Camry", 2020)
 car2 = Car("Honda", "Accord", 2021)
 ```
 
-- Objects: An object is an instance of a class. It has all the attributes and methods defined in the class.
+- Objetos: Um objeto é uma instância de uma classe. Ele possui todos os atributos e métodos definidos na classe.
 
 ```python3
 class Player:
@@ -93,12 +93,12 @@ class Player:
 p1 = Player("LeBron James", "Small Forward", 23)
 print(p1.name, p1.position, p1.number)
 ```
-   
-## Troubleshooting Common Issues With Class Object  
 
-When working with class objects, there may be some common issues that can occur. Here are some of the most common issues and their solutions:
+## Solucionando Problemas Comuns com Objetos de Classe
 
-1. `AttributeError`: This error occurs when trying to access an attribute that does not exist in the class or object. To solve this error, make sure the attribute exists and has been properly defined.
+Ao trabalhar com objetos de classe, podem ocorrer alguns problemas comuns. Aqui estão alguns dos problemas mais comuns e suas soluções:
+
+1. `AttributeError`: Esse erro ocorre ao tentar acessar um atributo que não existe na classe ou objeto. Para resolver esse erro, certifique-se de que o atributo existe e foi devidamente definido.
 
 ```python3
 class MyClass:
@@ -111,7 +111,7 @@ print(obj.value)  # Output: 5
 # print(obj.foo)  Output: AttributeError: 'MyClass' object has no attribute 'foo'
 ```
 
-2. `TypeError`: This error occurs when a function or method is called with the wrong number or type of arguments. To solve this error, make sure the function or method is called with the correct number and type of arguments.
+2. `TypeError`: Esse erro ocorre quando uma função ou método é chamado com o número ou tipo errado de argumentos. Para resolver esse erro, certifique-se de que a função ou método seja chamado com o número e tipo corretos de argumentos.
 
 ```python3
 class MyClass:
@@ -127,13 +127,13 @@ print(obj.add(3))  # Output: 8
 # print(obj.add("3"))  Output: TypeError: unsupported operand type(s) for +: 'int' and 'str'
 ```
 
-## How to Get Attributes of Object  
+## Como Obter Atributos de um Objeto
 
-Python object types have attributes that represent characteristics or behaviors of the object. To get all attributes of object in Python, you can use the `getattr()` function or access them directly using the dot notation.
+Tipos de objeto em Python têm atributos que representam características ou comportamentos do objeto. Para obter todos os atributos de um objeto em Python, você pode usar a função `getattr()` ou acessá-los diretamente usando a notação por ponto.
 
-### Using `getattr()` function
+### Usando a função `getattr()`
 
-The `getattr()` function takes two arguments, the object and attribute `name,` and returns the value of the attribute.
+A função `getattr()` recebe dois argumentos, o objeto e o `name` do atributo, e retorna o valor do atributo.
 
 ```python3
 class MyClass:
@@ -146,9 +146,9 @@ name = getattr(my_obj, 'name')
 print(name) # Output: 'John'
 ```
 
-### Accessing attributes directly
+### Acessando atributos diretamente
 
-You can also access the attributes of an object directly using the dot notation.
+Você também pode acessar os atributos de um objeto diretamente usando a notação por ponto.
 
 ```python3
 class MyClass:
@@ -161,13 +161,13 @@ name = my_obj.name
 print(name) # Output: 'John'
 ```
 
-In conclusion, getting attributes of Python object types can be done by using the `getattr()` function or by accessing them directly using the dot notation.  
+Em conclusão, obter atributos de tipos de objeto Python pode ser feito usando a função `getattr()` ou acessando-os diretamente usando a notação ponto.
 
-## Exploring Attribute Inheritance and Searching  
+## Explorando Herança de Atributos e Busca
 
-Attributes can be inherited from parent classes to child classes. Attribute inheritance allows child classes to access and use attributes defined in their parent classes. Python provides a built-in function `issubclass()` to check whether a given class is a subclass of another class.
+Atributos podem ser herdados de classes pais para classes filhas. A herança de atributos permite que classes filhas acessem e usem atributos definidos em suas classes pais. Python oferece uma função embutida `issubclass()` para verificar se uma determinada classe é uma subclasse de outra classe.
 
-### Example of a Class in Python
+### Exemplo de uma Classe em Python
 
 ```python
 class Person:
@@ -181,9 +181,9 @@ class Student(Person):
         self.student_id = student_id
 ```
 
-In this example, `Student` is a child class of `Person`. The `Student` class inherits the `name` and `age` attributes from the `Person` class.
+Neste exemplo, `Student` é uma classe filha de `Person`. A classe `Student` herda os atributos `name` e `age` da classe `Person`.
 
-### Attribute inheritance
+### Herança de atributos
 
 ```python
 class A:
@@ -201,9 +201,9 @@ print(C.x)   # 10
 
 ```
 
-In this example, `A` is the parent class, `B` is the child class and `C` is the grandchild class. The `x` attribute defined in the `A` class is inherited by both `B` and `C` classes.
+Neste exemplo, `A` é a classe pai, `B` é a classe filha e `C` é a classe neta. O atributo `x` definido na classe `A` é herdado tanto pelas classes `B` quanto `C`.
 
-### Attribute search order
+### Ordem de busca de atributo
 
 ```python3
 class A:
@@ -219,11 +219,11 @@ print(C.x)   ### Output 20
 
 ```
 
-In this example, `A` is the parent class, `B` is the child class and `C` is the grandchild class. Both `A` and `B` classes have an attribute named `x`. In this case, the attribute search order is from the current class (which is `C`), to its parent class `B` and finally to the grandparent class `A`. The value of `x` found in the closest ancestor (`B`) is printed as the output. 
+Neste exemplo, `A` é a classe pai, `B` é a classe filha e `C` é a classe neta. Ambas as classes `A` e `B` possuem um atributo chamado `x`. Neste caso, a ordem de busca do atributo é da classe atual (que é `C`), para a sua classe pai `B` e finalmente para a classe avô `A`. O valor de `x` encontrado no ancestral mais próximo (`B`) é impresso como saída.
 
-## How to Print all Object Attributes  
+## Como Imprimir todos os Atributos de um Objeto
 
-To get attributes of an object in Python, you can use the built-in `dir` function. To print object attributes, you need to iterate over the output of the `dir` function and use the `getattr` function to get the values of the attributes. Here are two code examples:
+Para obter atributos de um objeto em Python, você pode usar a função embutida `dir`. Para imprimir atributos de objetos, você precisa iterar sobre a saída da função `dir` e usar a função `getattr` para obter os valores dos atributos. Aqui estão dois exemplos de código:
 
 ```python
 class MyClass:
@@ -255,11 +255,11 @@ for attr in attrs:
     print(f"{attr}: {getattr(person_obj, attr)}")
 ```
 
-In both examples, the `dir` function is used to get a list of all the attributes of the object. The first example uses a simple for loop to iterate over the list and `print` each attribute along with its `value` using the `getattr` function. The second example uses a list comprehension to filter out any `callable` attributes (such as methods) and any attributes that start with two underscores (which are considered private). The resulting list of attributes is then printed using `getattr`.  
-  
-## How to Check the Type of Object in Python  
+Em ambos os exemplos, a função `dir` é usada para obter uma lista de todos os atributos do objeto. O primeiro exemplo usa um laço de repetição simples para iterar sobre a lista e `print` cada atributo junto com seu `value` usando a função `getattr`. O segundo exemplo usa uma compreensão de lista para filtrar quaisquer atributos `callable` (como métodos) e quaisquer atributos que começam com dois sublinhados (que são considerados privados). A lista resultante de atributos é então impressa usando `getattr`.
 
-In Python, you can check the `type` of an object by using the `type()` function. This function returns the `type` of the object that you pass as an argument. Here are two examples to illustrate how to use the `type()` function:
+## Como Verificar o Tipo de Objeto em Python
+
+Em Python, você pode verificar o `type` de um objeto usando a função `type()`. Esta função retorna o `type` do objeto que você passar como argumento. Aqui estão dois exemplos para ilustrar como usar a função `type()`:
 
 ```python3
 # Checking the type of an integer
@@ -273,13 +273,13 @@ fruits = ['apple', 'banana', 'cherry']
 print(type(fruits))  # Output: <class 'list'>
 ```
 
-Using the `type()` function allows you to get the `type` of any Python object quickly and easily. This can be useful when you want to debug your code or write conditional statements based on the `type` of an object.  
-  
-## Serialize Object  
+Usar a função `type()` permite que você obtenha o `type` de qualquer objeto Python de forma rápida e fácil. Isso pode ser útil quando você quer depurar seu código ou escrever declarações condicionais baseadas no `type` de um objeto.
 
-Serialization in Python refers to the process of converting a Python object into a byte stream. This can be useful when transferring data between different systems or saving a program state to disk. The most common serialization module in Python is `pickle`, which can serialize most Python objects.  
+## Serializar Objeto
 
-Here are two examples of how to use [pickle](https://docs.python.org/3/library/pickle.html) to serialize an object in Python:
+Serialização em Python refere-se ao processo de converter um objeto Python em um fluxo de bytes. Isso pode ser útil ao transferir dados entre diferentes sistemas ou salvar o estado de um programa no disco. O módulo de serialização mais comum em Python é o `pickle`, que pode serializar a maioria dos objetos Python.
+
+Aqui estão dois exemplos de como usar [pickle](https://docs.python.org/3/library/pickle.html) para serializar um objeto em Python:
 
 ```python
 import pickle
@@ -295,15 +295,15 @@ my_object = MyClass('hello')
 serialized_object = pickle.dumps(my_object)
 ```
 
-In the first case, we create a dictionary object and dump it to a file using `pickle.dump()`. In the second case, we create a `MyClass` instance and serialize it to a byte string using `pickle.dumps()`. 
+No primeiro caso, criamos um objeto dicionário e o despejamos em um arquivo usando `pickle.dump()`. No segundo caso, criamos uma instância de `MyClass` e a serializamos para uma string de bytes usando `pickle.dumps()`.
 
-Using `pickle` for Python object serializing is easy and powerful. However, please note that `pickle` is not secure and should not be used to serialize or deserialize untrusted data.  
-  
-## Error: Python Object has no Attribute  
+Usar `pickle` para serializar objetos Python é fácil e poderoso. No entanto, observe que `pickle` não é seguro e não deve ser usado para serializar ou desserializar dados não confiáveis.
 
-When you encounter an error message that says `Python Object has no Attribute` in Python, it means that you are trying to access an attribute or method that does not exist in that object. It could be due to a typo in the attribute name or using the wrong variable to access the attribute.
+## Erro: Objeto Python não tem Atributo
 
-Here are two examples of how this error can occur and how to fix it:
+Quando você encontra uma mensagem de erro que diz `Python Object has no Attribute` em Python, significa que você está tentando acessar um atributo ou método que não existe nesse objeto. Isso pode ser devido a um erro de digitação no nome do atributo ou ao uso da variável errada para acessar o atributo.
+
+Aqui estão dois exemplos de como esse erro pode ocorrer e como corrigi-lo:
 
 ```python
 class Car:
@@ -319,9 +319,9 @@ print(my_car.color)
 # AttributeError: 'Car' object has no attribute 'color'
 ```
 
-Explanation: In this example, we are trying to access the attribute 'color', which does not exist in the `my_car` object.
+Explicação: Neste exemplo, estamos tentando acessar o atributo 'color', que não existe no objeto `my_car`.
 
-To fix this error, you need to either add the `color` attribute to the `Car` class or use an existing attribute.
+Para corrigir esse erro, você precisa adicionar o atributo `color` à classe `Car` ou usar um atributo existente.
 
 ```python3
 class Car:
@@ -353,9 +353,9 @@ average = get_average(my_nums)
 # TypeError: unsupported operand type(s) for +=: 'int' and 'str'
 ```
 
-Explanation: In this example, we are trying to add a string `value` to the `total` variable, which results in an error because the `numeric()` method only works with numerical values.
+Explicação: Neste exemplo, estamos tentando adicionar uma string `value` à variável `total`, o que resulta em um erro porque o método `numeric()` só funciona com valores numéricos.
 
-To fix this error, you can use the `isinstance()` function to check `if` the `value` is numerical before adding it to the `total` variable.
+Para corrigir esse erro, você pode usar a função `isinstance()` para verificar `if` o `value` é numérico antes de adicioná-lo à variável `total`.
 
 ```python3
 def get_average(numbers):
@@ -375,12 +375,12 @@ print(average)
 # 
 # 2.75
 ```
-  
-## How to List Available Methods in Class  
 
-In Python, you can list all available methods in your class using the `dir()` or `vars()` function. These functions allow you to introspect your class and see all the methods and attributes it contains. 
+## Como Listar os Métodos Disponíveis em uma Classe
 
-### Using `dir()` Function
+No Python, você pode listar todos os métodos disponíveis na sua classe usando a função `dir()` ou `vars()`. Essas funções permitem que você introspecte sua classe e veja todos os métodos e atributos que ela contém.
+
+### Usando a Função `dir()`
 
 ```python3
 class MyClass:
@@ -402,7 +402,7 @@ print(dir(MyClass))
 #  'my_method']
 ```
 
-### Using `vars()` Function
+### Utilizando a Função `vars()`
 
 ```python3
 class MyClass:
@@ -422,4 +422,4 @@ print(vars(MyClass))
 # <u>attribute '__weakref__' of 'MyClass' objects</u>, '__doc__': None}
 ```
 
-Using these functions can help you to understand how a class is structured and how to interact with it.  
+Utilizar estas funções pode ajudá-lo a entender como uma classe é estruturada e como interagir com ela.
