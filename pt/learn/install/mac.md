@@ -1,101 +1,100 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/install/mac
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/install/mac
 
-Installing Python on a Mac computer is a straightforward and simple process that can be accomplished in just a few minutes. 
-  
-## How to Install Python on Mac OS  
+Instalar o Python em um computador Mac é um processo simples e direto que pode ser realizado em apenas alguns minutos.
 
-To install Python on a Mac OS, you can follow these simple steps:
+## Como Instalar o Python no Mac OS
 
-1. Go to the official Python website and download the latest version of Python for Mac.
-2. Once the download is complete, open the installer and follow the instructions on the screen.
-3. Once the installation process is complete, you can check Python version on your mac by opening the terminal app and typing `python3 --version`.
-4. If Python is installed successfully, the version number will be displayed in the Terminal.
+Para instalar o Python em um Mac OS, você pode seguir estes passos simples:
 
-By following these steps, you can easily install Python on macbook and start working with this popular programming language. Remember to download Python for Mac from the official website to ensure that you have the latest and most secure version of the software.  
+1. Vá até o site oficial do Python e faça o download da versão mais recente do Python para Mac.
+2. Uma vez que o download esteja completo, abra o instalador e siga as instruções na tela.
+3. Após o processo de instalação estar completo, você pode verificar a versão do Python no seu mac abrindo o aplicativo terminal e digitando `python3 --version`.
+4. Se o Python estiver instalado com sucesso, o número da versão será exibido no Terminal.
 
-### How to Install Python with Brew  
+Seguindo estes passos, você pode facilmente instalar o Python no macbook e começar a trabalhar com esta popular linguagem de programação. Lembre-se de baixar o Python para Mac do site oficial para garantir que você tenha a versão mais recente e mais segura do software.
 
-To install Python on macOS using brew, follow these simple steps:
+### Como Instalar o Python com Brew
 
-1. Open the terminal on your macOS.
-2. Install brew if you haven't already by running the command:
+Para instalar o Python no macOS usando brew, siga estes passos simples:
+
+1. Abra o terminal no seu macOS.
+2. Instale o brew se você ainda não o fez, executando o comando:
 
 ```shell
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-3. After installation, run the command:
+3. Após a instalação, execute o comando:
 
 ```shell
 brew install python
 ```
 
-4. The latest version of Python will be installed on your macOS.
+4. A última versão do Python será instalada no seu macOS.
 
-Installing Python with brew on macOS is a simple and effective way to get the latest version of Python on your system. This process will save you time and will prevent the error: `python command not found` in macOS. 
+Instalar o Python com brew no macOS é uma maneira simples e eficaz de obter a última versão do Python no seu sistema. Esse processo vai te economizar tempo e vai prevenir o erro: `python command not found` no macOS.
 
-  
-## Add Python to MacOS Path   
+## Adicionar Python ao Caminho do MacOS
 
-To add Python to the macOS path, follow these simple steps:
+Para adicionar o Python ao caminho do macOS, siga estes passos simples:
 
-1. Open the Terminal app.
-2. Type `nano ~/.bash_profile` and press Enter.
-3. Add the following line to the file:
+1. Abra o aplicativo Terminal.
+2. Digite `nano ~/.bash_profile` e pressione Enter.
+3. Adicione a seguinte linha ao arquivo:
 
 ```shell
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/X.Y/bin"
 ```
 
-Replace `X.Y` with the version of Python you want to add to the path. For example, if you want to add Python 3.9, the line should be:
+Substitua `X.Y` pela versão do Python que você deseja adicionar ao path. Por exemplo, se você quiser adicionar o Python 3.9, a linha deve ser:
 
 ```shell
 export PATH="$PATH:/Library/Frameworks/Python.framework/Versions/3.9/bin"
 ```
 
-4. Save the file by pressing Ctrl+O, then press Enter.
-5. Close the file by pressing Ctrl+X.
-6. Restart the Terminal app for the changes to take effect.
+4. Salve o arquivo pressionando Ctrl+O, depois pressione Enter.
+5. Feche o arquivo pressionando Ctrl+X.
+6. Reinicie o aplicativo Terminal para que as mudanças tenham efeito.
 
-By adding Python to your macOS path, you can easily access it from any directory in the Terminal. This can be helpful for running Python scripts and managing Python packages.  
-  
-## How to Run a Python Script on Mac  
+Ao adicionar Python ao caminho do seu macOS, você pode acessá-lo facilmente de qualquer diretório no Terminal. Isso pode ser útil para executar scripts Python e gerenciar pacotes Python.
 
-If you're wondering how to run a Python script on your Mac, there are a few easy steps you can follow. First, you'll need to make sure Python is installed on your computer. You can check this by opening your Terminal application and typing `python` into the command line. 
+## Como Executar um Script Python no Mac
 
-If Python is not installed, you can download it from the official website. Once you've installed Python, you can use the Terminal application to navigate to the folder where your Python script is located. 
+Se você está se perguntando como executar um script Python no seu Mac, há alguns passos simples que você pode seguir. Primeiro, você precisará garantir que o Python está instalado no seu computador. Você pode verificar isso abrindo seu aplicativo Terminal e digitando `python` na linha de comando.
 
-To run the script, simply type `python your_script.py` into the terminal and hit enter. Your script should execute immediately. 
+Se o Python não estiver instalado, você pode baixá-lo do site oficial. Uma vez que você tenha instalado o Python, você pode usar o aplicativo Terminal para navegar até a pasta onde o seu script Python está localizado.
 
-In summary, to run a Python script on your Mac, you need to:
-- Check if Python is installed
-- Install Python if necessary
-- Navigate to the script in Terminal
-- Run the script using the `python your_script.py` command. 
+Para executar o script, simplesmente digite `python your_script.py` no terminal e pressione enter. Seu script deve ser executado imediatamente.
 
-By following these steps, you'll be able to run Python scripts on your Mac with ease.  
-  
-## Uninstall Python from Mac  
+Em resumo, para executar um script Python no seu Mac, você precisa:
+- Verificar se o Python está instalado
+- Instalar o Python, se necessário
+- Navegar até o script no Terminal
+- Executar o script usando o comando `python your_script.py`.
 
-To uninstall Python from Mac, follow these steps:
-1. Open the Finder
-2. Click on the Applications folder
-3. Locate the Python application and drag it to the trash
-4. Empty the trash
+Seguindo esses passos, você será capaz de executar scripts Python no seu Mac com facilidade.
 
-By following these steps, you can successfully uninstall Python from your Mac. It is important to note that some applications may rely on Python, so you should only uninstall it if you are certain it is no longer needed. Make sure to backup your data before performing any uninstallation steps.
-  
-## How to Update Python on Mac  
+## Desinstalar Python do Mac
 
-To upgrade Python on a Mac, you can use the terminal to install the latest version using homebrew or pyenv. First, check your current Python version by typing `python --version` in the terminal. Then, use the appropriate command to install the latest version. For Homebrew users, run `brew upgrade python` and for pyenv users, run `pyenv install [latest-version]`. By upgrading Python, you can enjoy the latest features and bug fixes.  
+Para desinstalar Python do Mac, siga estes passos:
+1. Abra o Finder
+2. Clique na pasta Aplicativos
+3. Localize a aplicação Python e arraste-a para a lixeira
+4. Esvazie a lixeira
 
-## Error: `python command not found`   
+Seguindo esses passos, você pode desinstalar com sucesso o Python do seu Mac. É importante notar que alguns aplicativos podem depender do Python, então você só deve desinstalá-lo se tiver certeza de que ele não é mais necessário. Certifique-se de fazer backup dos seus dados antes de realizar quaisquer passos de desinstalação.
 
-If you’re encountering the **python command not found** error on your macOS, it means that your system is unable to locate the Python command-line utility. 
+## Como Atualizar o Python no Mac
 
-This issue may arise due to multiple reasons, such as an outdated macOS version, incorrect installation path, or mistakenly removed system files. 
+Para atualizar o Python em um Mac, você pode usar o terminal para instalar a versão mais recente usando homebrew ou pyenv. Primeiro, verifique sua versão atual do Python digitando `python --version` no terminal. Depois, use o comando apropriado para instalar a versão mais recente. Para usuários do Homebrew, execute `brew upgrade python` e para usuários do pyenv, execute `pyenv install [latest-version]`. Atualizando o Python, você pode desfrutar dos recursos mais recentes e correções de bugs.
 
-To fix this issue, you can try updating your macOS to the latest version or reinstalling Python. Alternatively, you can set the correct path for Python using the terminal or modifying your system's environmental variables.
+## Erro: `python command not found`
 
-In summary, encountering the error `python command not found mac` is a common problem among macOS users. But with the right troubleshooting steps, you can quickly fix it and continue working on your Python projects.  
+Se você está encontrando o erro **python command not found** no seu macOS, significa que seu sistema não consegue localizar a utilidade de linha de comando do Python.
+
+Este problema pode surgir por várias razões, como uma versão desatualizada do macOS, caminho de instalação incorreto ou arquivos do sistema removidos por engano.
+
+Para corrigir este problema, você pode tentar atualizar seu macOS para a versão mais recente ou reinstalar o Python. Alternativamente, você pode definir o caminho correto para o Python usando o terminal ou modificando as variáveis ambientais do seu sistema.
+
+Em resumo, encontrar o erro `python command not found mac` é um problema comum entre os usuários do macOS. Mas com as etapas de solução de problemas corretas, você pode corrigi-lo rapidamente e continuar trabalhando em seus projetos Python.

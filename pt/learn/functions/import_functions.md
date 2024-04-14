@@ -1,100 +1,101 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/import-functions
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/functions/import-functions
 
-In Python, functions play a vital role in programming as they help in creating reusable code. However, sometimes it can be tedious to rewrite the same function over and over again. Luckily, Python makes it easy to reuse functions by allowing you to import them from different files. In this article, we will explore how to import functions from another Python's file.  
-  
-## Python's `import` Function: How to Use It for Enhanced Code Reusability  
+Em Python, funções desempenham um papel vital na programação, pois ajudam a criar código reutilizável. No entanto, às vezes pode ser tedioso reescrever a mesma função várias vezes. Felizmente, Python facilita a reutilização de funções, permitindo que você as importe de diferentes arquivos. Neste artigo, exploraremos como importar funções de outro arquivo do Python.
 
-Python's **import function** is a powerful tool for enhanced code reusability. It allows us to import functions from other files, which can save us a lot of time and effort when building larger projects. 
+## A função de `import` do Python: Como Usá-la para Melhorar a Reusabilidade do Código
 
-To import functions from a file, we first need to create a Python module. This is simply a file with a `.py` extension that contains the functions we want to import. We can then use the `import` keyword to bring those functions into our main script: `from my_module import my_function`
+A **função de import** do Python é uma ferramenta poderosa para melhorar a reusabilidade do código. Ela nos permite importar funções de outros arquivos, o que pode nos economizar muito tempo e esforço ao construir projetos maiores.
 
-Alternatively, we can also import the entire module and access its functions using dot notation: `import my_module`
+Para importar funções de um arquivo, primeiro precisamos criar um módulo Python. Isso é simplesmente um arquivo com extensão `.py` que contém as funções que queremos importar. Podemos então usar a palavra-chave `import` para trazer essas funções para o nosso script principal: `from my_module import my_function`
 
-By using the `import` function in Python, we can easily reuse code across multiple projects and improve our overall efficiency as developers.  
-  
-## The Different Ways to Import Functions from Files in Python
+Alternativamente, também podemos importar o módulo inteiro e acessar suas funções usando a notação de ponto: `import my_module`
 
-Importing functions in Python is a common practice to reuse code and improve code organization. There are different ways to import functions in Python, including importing a function from a file or importing a function as a module.
+Ao usar a função de `import` no Python, podemos facilmente reutilizar código em vários projetos e melhorar nossa eficiência geral como desenvolvedores.
 
-To import a function from a file in Python, use the following syntax: `from file_name import function_name`
+## As Diferentes Maneiras de Importar Funções de Arquivos em Python
 
-This allows you to use the function in your code without having to write the entire code again. For example:
+Importar funções em Python é uma prática comum para reutilizar código e melhorar a organização do código. Existem diferentes maneiras de importar funções em Python, incluindo a importação de uma função de um arquivo ou a importação de uma função como um módulo.
 
-Alternatively, you can import a function as a module, which can be useful if you want to import multiple Python's functions from the same module: `import file_name`
+Para importar uma função de um arquivo em Python, use a seguinte sintaxe: `from file_name import function_name`
 
-Overall, importing functions in Python is a powerful way to make your code more efficient and readable.  
-  
-## Call a Function from Another File
+Isso permite que você use a função em seu código sem ter que escrever o código inteiro novamente. Por exemplo:
 
-One of the common practices in Python is to reuse code by importing functions from other Python files. This allows you to bring specific functions into your current script. To do this, use the following syntax:
+Alternativamente, você pode importar uma função como um módulo, o que pode ser útil se você quiser importar múltiplas funções do Python do mesmo módulo: `import file_name`
+
+No geral, importar funções em Python é uma maneira poderosa de tornar seu código mais eficiente e legível.
+
+## Chamar uma Função de Outro Arquivo
+
+Uma das práticas comuns em Python é reutilizar código importando funções de outros arquivos do Python. Isso permite que você traga funções específicas para o seu script atual. Para fazer isso, use a seguinte sintaxe:
 
 ```python
 from file_name import function_name
 ```
 
-For instance, to import the `add` function from a file called `math_operations.py`, you can use:
+Por exemplo, para importar a função `add` de um arquivo chamado `math_operations.py`, você pode usar:
 
 ```python
 from math_operations import add
 ```
 
-Once you've imported the function, you can easily use it in your code. Here's an example:
+Uma vez que você tenha importado a função, pode usá-la facilmente em seu código. Aqui está um exemplo:
 
 ```python
 result = add(2, 3)
 print(result)  # Output: 5
 ```
-To import multiple specific functions, such as `add` and `subtract`, from `math_operations.py`, you can use the following syntax:
+
+Para importar múltiplas funções específicas, como `add` e `subtract`, de `math_operations.py`, você pode usar a seguinte sintaxe:
 
 ```python
 from math_operations import add, subtract
 ```
 
-Now both the `add` and `subtract` functions from the `math_operations.py` file can be called as follows:
+Agora, tanto a função `add` quanto a `subtract` do arquivo `math_operations.py` podem ser chamadas da seguinte forma:
 
 ```python
 print(add(2, 3))
 print(subtract(5, 3))
 ```
 
-This process is a powerful way to enhance code reusability in Python. By importing functions from other files, you can save time and effort and make your code more efficient and organized.
-  
-## Common Errors When Importing Functions in Python and How to Fix Them  
+Este processo é uma maneira poderosa de aumentar a reutilização do código em Python. Ao importar funções de outros arquivos, você pode economizar tempo e esforço e tornar seu código mais eficiente e organizado.
 
-When importing functions in Python, common errors include **import errors**, **syntax errors**, and **module attribute errors**. 
+## Erros Comuns ao Importar Funções em Python e Como Corrigi-los
 
-If you encounter an error when trying to call a function from another file, there are a few things you can try to fix it. First, make sure that the file you're trying to import from is located in the same directory as your Python script. If not, you may need to specify the path to the file.
+Ao importar funções em Python, os erros comuns incluem **erros de importação**, **erros de sintaxe** e **erros de atributo de módulo**.
 
-Next, check the syntax of the import statement to make sure it's correct. If you're using the `from` keyword, make sure you've included the correct function name. If you're using the `import` keyword, make sure you're referring to the correct module name.
+Se você encontrar um erro ao tentar chamar uma função de outro arquivo, há algumas coisas que você pode tentar para corrigi-lo. Primeiro, certifique-se de que o arquivo que você está tentando importar está localizado no mesmo diretório que o seu script Python. Se não, você pode precisar especificar o caminho para o arquivo.
 
-Finally, double-check the function name to make sure it's spelled correctly and that it's defined in the file you're trying to import from.
+Em seguida, verifique a sintaxe da declaração de importação para ter certeza de que está correta. Se você está usando a palavra-chave `from`, certifique-se de ter incluído o nome correto da função. Se você está usando a palavra-chave `import`, certifique-se de estar se referindo ao nome do módulo correto.
 
-For example, let's say you want to import the `runsqlscript` function from the `sqlideutils` module. Here's how you could do it using the `from` keyword: `from sqlideutils import runsqlscript`
+Finalmente, confira novamente o nome da função para garantir que está escrito corretamente e que está definido no arquivo de onde você está tentando importar.
 
-And here's how you could do it using the `import` keyword: `import sqlideutils` with `runsqlscript = sqlideutils.runsqlscript`
-  
-## Organizing Your Python Code: How to Create a Custom Module with Importable Functions  
+Por exemplo, vamos dizer que você quer importar a função `runsqlscript` do módulo `sqlideutils`. Aqui está como você poderia fazer usando a palavra-chave `from`:`from sqlideutils import runsqlscript`
 
-Organizing your Python code is crucial to make it readable, maintainable, and reusable. One way of achieving this is by creating a custom module containing **importable functions**.
+E aqui está como você poderia fazer usando a palavra-chave `import`:`import sqlideutils` com `runsqlscript = sqlideutils.runsqlscript`
 
-To create a custom module with importable functions, follow these steps:
+## Organizando Seu Código Python: Como Criar um Módulo Personalizado com Funções Importáveis
 
-1. **Create** a new Python file with the `.py` extension and give it a descriptive name (e.g., `myfunctions.py`).
-2. **Define** one or more functions in the file using the `def` keyword and a function name (e.g., `mod_function`).
-3. **Save** the file.
-4. **Import** the function(s) from the file into another Python script using the `import` keyword and the file name without the `.py` extension (e.g. `import myfunctions`).
-5. **Call** the imported function(s) in the script using the function name as defined in the file (e.g., `myfunctions.mod_function()`).
-  
-## Advanced Python Techniques: How to Build and Import External Packages with Multiple Functions
+Organizar o seu código Python é crucial para torná-lo legível, mantível e reutilizável. Uma maneira de alcançar isso é criando um módulo personalizado contendo **funções importáveis**.
 
-**Import functions** is an advanced Python technique that allows us to build and import external packages with **multiple functions**. It is a powerful feature that enhances code reusability and organization.
+Para criar um módulo personalizado com funções importáveis, siga estes passos:
 
-There are several ways to import multiple functions in Python. One way is to define functions in a separate file and then import them into the main script using the `import function from file` syntax. Another way is to use the `map` function with multiple arguments to apply a function to multiple iterables simultaneously.
+1. **Crie** um novo arquivo Python com a extensão `.py` e dê um nome descritivo (por exemplo, `myfunctions.py`).
+2. **Defina** uma ou mais funções no arquivo usando a palavra-chave `def` e um nome para a função (por exemplo, `mod_function`).
+3. **Salve** o arquivo.
+4. **Importe** a(s) função(ões) do arquivo em outro script Python usando a palavra-chave `import` e o nome do arquivo sem a extensão `.py` (por exemplo, `import myfunctions`).
+5. **Chame** a(s) função(ões) importada(s) no script usando o nome da função conforme definido no arquivo (por exemplo, `myfunctions.mod_function()`).
 
-Here are two examples of how to use import functions in Python:
+## Técnicas Avançadas de Python: Como Construir e Importar Pacotes Externos com Múltiplas Funções
 
-### Example 1: Importing Functions from a Separate File
+**Importar funções** é uma técnica avançada de Python que nos permite construir e importar pacotes externos com **múltiplas funções**. É um recurso poderoso que aumenta a reutilização do código e a organização.
+
+Existem várias maneiras de importar múltiplas funções em Python. Uma maneira é definir funções em um arquivo separado e, em seguida, importá-las para o script principal usando a sintaxe `import function from file`. Outra maneira é usar a função `map` com vários argumentos para aplicar uma função a múltiplos iteráveis simultaneamente.
+
+Aqui estão dois exemplos de como usar funções de importação em Python:
+
+### Exemplo 1: Importando Funções de um Arquivo Separado
 
 ```python3
 # Suppose we have a file named `my_functions.py` that contains the following functions:
@@ -113,11 +114,11 @@ print(result1)  # Output: 15
 print(result2)  # Output: 5
 ```
 
-Here, we import the `add` and `subtract` functions from the `my_functions.py` file and use them in the main script.
+Aqui, importamos as funções `add` e `subtract` do arquivo `my_functions.py` e as usamos no script principal.
 
-### Example 2: Using the Map Function with Multiple Arguments
+### Exemplo 2: Usando a Função Map com Múltiplos Argumentos
 
-Suppose we have two lists, `numbers1` and `numbers2`, and we want to add them element-wise. We can use the **map function with multiple arguments** to achieve this:
+Suponha que temos duas listas, `numbers1` e `numbers2`, e queremos somá-las elemento por elemento. Podemos usar a **função map com múltiplos argumentos** para conseguir isso:
 
 ```python3
 numbers1 = [1, 2, 3, 4, 5]
@@ -131,4 +132,4 @@ result = list(map(add, numbers1, numbers2))
 print(result)  # Output: [6, 6, 6, 6, 6]
 ```
 
-Here, we define the `add` function and use the map function to apply it to the `numbers1` and `numbers2` lists element-wise. The `result` is a new list containing the element-wise sum of the two lists.  
+Aqui, definimos a função `add` e usamos a função map para aplicá-la às listas `numbers1` e `numbers2` elemento por elemento. O `result` é uma nova lista contendo a soma elemento por elemento das duas listas.
