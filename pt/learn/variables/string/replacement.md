@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/replacement
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/string/replacement
 
-Quite often we need to replace one or more occurrences of a particular substring or character within a string with a different substring or character. This is a commonly used operation in computer programming and text processing, as it allows for the manipulation of text data in a flexible and efficient way. Here are some methods which can help with it.
+Com bastante frequência, precisamos substituir uma ou mais ocorrências de uma substring ou caractere específicos dentro de uma string por outra substring ou caractere. Essa é uma operação comumente usada na programação de computadores e no processamento de texto, pois permite a manipulação de dados de texto de maneira flexível e eficiente. Aqui estão alguns métodos que podem ajudar nisso.
 
-## String Substitution
+## Substituição de String
 
-In most programming languages, string substitution is typically performed using a combination of string manipulation functions and regular expressions. For example, in Python, the replace() method can be used to replace all occurrences of a particular substring within a string:
+Na maioria das linguagens de programação, a substituição de string é tipicamente realizada usando uma combinação de funções de manipulação de strings e expressões regulares. Por exemplo, em Python, o método `replace()` pode ser usado para substituir todas as ocorrências de uma substring específica dentro de uma string:
 
 ```python
 string.replace(old, new[, count])
 ```
 
-Here, `string` is the original string, `old` is the substring that needs to be replaced, `new` is the new substring that will substitute the old substring, and `count` (optional) is the number of times the replacement should be done.
+Aqui, `string` é a string original, `old` é a substring que precisa ser substituída, `new` é a nova substring que substituirá a antiga substring, e `count` (opcional) é o número de vezes que a substituição deve ser feita.
 
-The `replace()` method returns a new string with the specified replacements made.
+O método `replace()` retorna uma nova string com as substituições especificadas realizadas.
 
-For example, consider the following code snippet:
+Por exemplo, considere o seguinte trecho de código:
 
 ```python3
 string = "Hello World"
@@ -23,17 +23,17 @@ new_string = string.replace("Hello", "Hi")
 print(new_string) # Output: Hi World
 ```
 
-In this example, the `replace()` method is used for replacement the substring `"Hello"` with `"Hi"` in the `string` variable. The resulting string is then printed out using the `print()` function.
+Neste exemplo, o método `replace()` é usado para substituir a substring `"Hello"` por `"Hi"` na variável `string`. A string resultante é então impressa usando a função `print()`.
 
-Also you can use `replace()` method for replacing a single character in a string.
+Você também pode usar o método `replace()` para substituir um único caractere em uma string.
 
-Note that the original string variable is not modified by the `replace()` method; instead, a new string is created with the specified replacements made.
+Note que a variável de string original não é modificada pelo método `replace()`; em vez disso, uma nova string é criada com as substituições especificadas feitas.
 
-## The `strip()` Method
+## O Método `strip()`
 
-This is a built-in string method that returns a copy of the string with leading and trailing characters removed. The `strip()` method can be used to remove whitespace characters such as spaces, tabs, and newlines. In some other languages known as `trim()` method.
+Este é um método de string integrado que retorna uma cópia da string com caracteres iniciais e finais removidos. O método `strip()` pode ser usado para remover caracteres de espaço em branco como espaços, tabulações e novas linhas. Em alguns outros idiomas conhecido como método `trim()`.
 
-Here's an example of spaces removing:
+Aqui está um exemplo de remoção de espaços:
 
 ```python3
 string = "  hello world  "
@@ -41,9 +41,9 @@ new_string = string.strip()
 print(new_string) # Output: "hello world"
 ```
 
-As you can see, the `strip()` method removed the leading and trailing spaces from the original string. If you want to remove only the leading or trailing spaces, you can use the `lstrip()` or `rstrip()` methods, respectively.
+Como você pode ver, o método `strip()` removeu os espaços iniciais e finais da string original. Se você quiser remover apenas os espaços iniciais ou finais, você pode usar os métodos `lstrip()` ou `rstrip()`, respectivamente.
 
-For example:
+Por exemplo:
 
 ```python3
 string = "  hello world  "
@@ -51,11 +51,11 @@ new_string = string.lstrip()
 print(new_string) # Output: "hello world  "
 ```
 
-In this case, only the leading spaces were removed, and the trailing spaces remained. Similarly, if you use `rstrip()` instead of `lstrip()`, only the trailing spaces would be removed.
+Neste caso, apenas os espaços iniciais foram removidos, e os espaços finais permaneceram. Da mesma forma, se você usar `rstrip()` ao invés de `lstrip()`, apenas os espaços finais seriam removidos.
 
-## Remove Newline Characters
+## Remover Caracteres de Nova Linha
 
-You can remove newline characters from a string using the `replace()` method. Here's an example:
+Você pode remover caracteres de nova linha de uma string usando o método `replace()`. Aqui está um exemplo:
 
 ```python3
 string_with_newline = "This is a string\nwith a newline character."
@@ -63,4 +63,4 @@ string_without_newline = string_with_newline.replace("\n", "")
 print(string_without_newline) # Output: This is a stringwith a newline character.
 ```
 
-In the code above, we first define a string called `string_with_newline` which contains a newline character (`\n`). We then use the `replace()` method to replace all occurrences of the newline character with an empty string (`""`). The resulting string, `string_without_newline`, does not contain any newline characters. We then print the resulting string using the `print()` function.
+No código acima, primeiro definimos uma string chamada `string_with_newline` que contém um caractere de nova linha (`\n`). Em seguida, usamos o método `replace()` para substituir todas as ocorrências do caractere de nova linha por uma string vazia (`""`). A string resultante, `string_without_newline`, não contém nenhum caractere de nova linha. Então, imprimimos a string resultante usando a função `print()`.

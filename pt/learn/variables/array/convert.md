@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/array/convert
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/array/convert
 
-In Python, converting between lists and arrays is a common task when dealing with numerical data. The process of converting from a list to an array allows us to take advantage of efficient numerical computations and operations provided by libraries like NumPy. On the other hand, in some cases we need to make 2d array from 1d array. So let's review most common topics on conversions related to array.
+Em Python, converter entre listas e arrays é uma tarefa comum ao lidar com dados numéricos. O processo de conversão de uma lista para um array nos permite tirar vantagem de cálculos e operações numéricas eficientes fornecidos por bibliotecas como NumPy. Por outro lado, em alguns casos precisamos fazer um array 2d a partir de um array 1d. Então, vamos revisar os tópicos mais comuns sobre conversões relacionadas a array.
 
-## Conversion Between Lists and NumPy Arrays
+## Conversão Entre Listas e Arrays NumPy
 
-Conversions between lists and NumPy arrays provide flexibility in data manipulation and facilitate seamless integration with other numerical computing libraries in Python.
+Conversões entre listas e arrays NumPy fornecem flexibilidade na manipulação de dados e facilitam a integração perfeita com outras bibliotecas de computação numérica em Python.
 
-### How to Convert a NumPy Array to Python List
+### Como Converter um Array NumPy para Lista Python
 
-To convert a NumPy array to a Python list, you can use the `tolist()` method provided by the NumPy library. This method converts a NumPy array into a nested Python list. Here's an example:
+Para converter um array NumPy para uma lista Python, você pode usar o método `tolist()` fornecido pela biblioteca NumPy. Este método converte um array NumPy em uma lista Python aninhada. Aqui está um exemplo:
 
 ```python3
 import numpy as np
@@ -19,7 +19,7 @@ python_list = numpy_array.tolist()
 print(python_list) # Output: [1, 2, 3, 4, 5]
 ```
 
-Similarly, if you have a multidimensional NumPy array, the `tolist()` method will convert it to a nested Python list structure:
+Da mesma forma, se você tem um array multidimensional NumPy, o método `tolist()` irá convertê-lo para uma estrutura de lista Python aninhada:
 
 ```python3
 import numpy as np
@@ -29,11 +29,11 @@ python_list = numpy_array.tolist()
 print(python_list) # Output: [[1, 2, 3], [4, 5, 6]]
 ```
 
-In this example, the numpy_array is a 2D NumPy array with two rows and three columns. The `tolist()` method converts it into a nested Python list with the same structure.
+Neste exemplo, o numpy_array é um array NumPy 2D com duas linhas e três colunas. O método `tolist()` converte-o em uma lista Python aninhada com a mesma estrutura.
 
-### List to Array Conversion in Python
+### Conversão de Lista para Array em Python
 
-To convert a Python list to an array, you can use the `array()` function provided by the NumPy library. The `array()` function creates a new NumPy array from the elements of the given list. Here is an example of converting list to array:
+Para converter uma lista Python em um array, você pode usar a função `array()` fornecida pela biblioteca NumPy. A função `array()` cria um novo array NumPy a partir dos elementos da lista fornecida. Aqui está um exemplo de conversão de lista para array:
 
 ```python3
 import numpy as np
@@ -43,9 +43,9 @@ my_array = np.array(my_list)
 print(my_array) # Output: [1 2 3 4 5]
 ```
 
-NumPy arrays are homogeneous, meaning they can only hold elements of the same data type. If the elements of the list are of different types, NumPy will automatically upcast the elements to a common data type.
+Os arrays NumPy são homogêneos, o que significa que eles só podem conter elementos do mesmo tipo de dado. Se os elementos da lista forem de tipos diferentes, o NumPy automaticamente fará um *upcast* dos elementos para um tipo de dado comum.
 
-For example:
+Por exemplo:
 
 ```python3
 import numpy as np
@@ -55,15 +55,15 @@ my_array = np.array(my_list)
 print(my_array) # Output: ['1' '2.5' 'three' 'True']
 ```
 
-In this case, the elements of the list have different data types (int, float, str, and bool). NumPy upcasts all the elements to the common data type, which in this case is str. The resulting array contains strings representing the elements of the list.
+Neste caso, os elementos da lista têm diferentes tipos de dados (`int`, `float`, `str` e `bool`). O NumPy converte todos os elementos para o tipo de dado comum, que neste caso é `str`. O array resultante contém strings representando os elementos da lista.
 
-## Conversion Between String and Array
+## Conversão Entre String e Array
 
-Converting between strings and arrays in Python can be useful when working with textual data or when manipulating individual characters.
+Converter entre strings e arrays em Python pode ser útil ao trabalhar com dados textuais ou ao manipular caracteres individuais.
 
-### Python String into Array Conversion
+### Conversão de String Python em Array
 
-To convert a Python string into an array of individual characters, you can iterate over the string and create a list of characters. Here's an example:
+Para converter uma string Python em um array de caracteres individuais, você pode iterar sobre a string e criar uma lista de caracteres. Aqui está um exemplo:
 
 ```python3
 string = "Hello, world!"
@@ -71,9 +71,9 @@ array = [char for char in string]
 print(array) # Output: ['H', 'e', 'l', 'l', 'o', ',', ' ', 'w', 'o', 'r', 'l', 'd', '!']
 ```
 
-In the above example, we iterate over each character in the string using a list comprehension. Each character is added to the list, resulting in an array where each element represents an individual character from the string.
+No exemplo acima, iteramos sobre cada caractere na string usando uma compreensão de lista. Cada caractere é adicionado à lista, resultando em um array onde cada elemento representa um caractere individual da string.
 
-If you want to split the string into an array of words instead of characters, you can use the `split()` method. By default, the `split()` method splits the string based on whitespace characters (spaces, tabs, newlines). Here's an example:
+Se você quiser dividir a string em um array de palavras em vez de caracteres, você pode usar o método `split()`. Por padrão, o método `split()` divide a string com base em caracteres de espaço em branco (espaços, tabulações, novas linhas). Aqui está um exemplo:
 
 ```python
 string = "Hello, world! How are you?"
@@ -81,11 +81,11 @@ array = string.split()
 print(array) # Output: ['Hello,', 'world!', 'How', 'are', 'you?']
 ```
 
-In this example, the `split()` method splits the string into a list of substrings based on whitespace characters, resulting in an array where each element represents a word from the string.
+Neste exemplo, o método `split()` divide a string em uma lista de substrings baseada em caracteres de espaço em branco, resultando em uma matriz onde cada elemento representa uma palavra da string.
 
-### Array to String Conversion
+### Conversão de Array para String
 
-To convert an array (or list) to a string in Python, you can use the `join()` method. The `join()` method concatenates the elements of an iterable into a single string, using a specified delimiter. Here's an example:
+Para converter uma matriz (ou lista) em uma string em Python, você pode usar o método `join()`. O método `join()` concatena os elementos de um iterável em uma única string, usando um delimitador especificado. Aqui está um exemplo:
 
 ```python3
 array = ['Hello', 'world', 'How', 'are', 'you?']
@@ -93,7 +93,7 @@ string = ' '.join(array)
 print(string) # Output: Hello world How are you?
 ```
 
-By changing the delimiter passed to the `join()` method, you can modify the way the elements are separated in the resulting string. For example, using a comma (',') as the delimiter:
+Ao alterar o delimitador passado para o método `join()`, você pode modificar a maneira como os elementos são separados na string resultante. Por exemplo, usando uma vírgula (',') como o delimitador:
 
 ```python3
 array = ['apple', 'banana', 'orange']

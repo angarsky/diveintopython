@@ -1,31 +1,31 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/string
 
-Previously we've touched the topic of operations with variables. In this part we will dive into most common operations and methods with strings. This is not the whole list of possible string manipulations.
+Anteriormente, tocamos no tópico de operações com variáveis. Nesta parte, mergulharemos nas operações e métodos mais comuns com strings. Esta não é a lista completa de possíveis manipulações de strings.
 
-## String Variable Declaration
+## Declaração de Variável String
 
-You can declare a string variable by assigning a string value to a variable name using the equals sign `=`. Here's an example:
+Você pode declarar uma variável string atribuindo um valor de string a um nome de variável usando o sinal de igual `=`. Aqui está um exemplo:
 
 ```python
 my_string = "Hello, world!"
 ```
 
-In this example, we have declared a string variable called `my_string` and assigned it the value `"Hello, world!"`. Note that the string value is enclosed in quotation marks.
+Neste exemplo, declaramos uma variável de string chamada `my_string` e atribuímos a ela o valor `"Hello, world!"`. Observe que o valor da string está entre aspas.
 
-You can also declare an empty string variable by assigning an empty string value to a variable name, like this:
+Você também pode declarar uma variável de string vazia atribuindo um valor de string vazio a um nome de variável, assim:
 
 ```python
 my_string = ""
 ```
 
-In this case, we have declared a string variable called `my_string` and assigned it an empty string value.
+Neste caso, declaramos uma variável do tipo string chamada `my_string` e atribuímos a ela um valor de string vazio.
 
-## String Concatenation
+## Concatenação de Strings
 
-String concatenation is the process of combining two or more strings into a single string. In Python, you can concatenate strings using the `+` operator. One more option to append a string is using `+=` operator.
+Concatenação de strings é o processo de combinar duas ou mais strings em uma única string. Em Python, você pode concatenar strings usando o operador `+`. Uma outra opção para adicionar uma string é usando o operador `+=`.
 
-Let's look at an example of appending a string:
+Vamos olhar um exemplo de adição de uma string:
 
 ```python3
 str1 = "Hello"
@@ -34,13 +34,13 @@ result = str1 + " " + str2
 print(result) # Output: Hello World
 ```
 
-In the example above, we have created two string variables `str1` and `str2` containing the strings "Hello" and "World" respectively. We then use the `+` operator to add one string to another, along with a space character, to create a single string result. Finally, we print the result of adding to the console, which outputs "Hello World".
+No exemplo acima, criamos duas variáveis do tipo string `str1` e `str2` contendo as strings "Hello" e "World" respectivamente. Em seguida, usamos o operador `+` para adicionar uma string à outra, junto com um caractere de espaço, para criar um único resultado de string. Finalmente, imprimimos o resultado da adição no console, que exibe "Hello World".
 
-## A Variable in a String
+## Uma Variável em uma String
 
-In Python, you can include variables within strings using different methods. Here are a few commonly used ways to achieve this:
+Em Python, você pode incluir variáveis dentro de strings usando diferentes métodos. Aqui estão algumas maneiras comumente usadas para alcançar isso:
 
-**String Concatenation**: you can concatenate strings and variables using the `+` operator:
+**Concatenação de Strings**: você pode concatenar strings e variáveis usando o operador `+`:
 
 ```python3
 name = "Alice"
@@ -49,7 +49,7 @@ message = "Hello, my name is " + name + " and I am " + str(age) + " years old."
 print(message)
 ```
 
-**Using the `str.format()` Method**: this method allows you to embed variables in a string using placeholders `{}`:
+**Usando o método `str.format()`**: este método permite que você incorpore variáveis em uma string usando placeholders `{}`:
 
 ```python3
 name = "Bob"
@@ -58,7 +58,7 @@ message = "Hello, my name is {} and I am {} years old.".format(name, age)
 print(message)
 ```
 
-**Using f-strings (formatted string literals)**: introduced in Python 3.6, f-strings provide a concise way to embed variables directly within strings by prefixing the string with `f` and using `{}` to enclose variables:
+**Usando f-strings (literais de string formatada)**: introduzidos no Python 3.6, os f-strings fornecem uma maneira concisa de embutir variáveis diretamente dentro de strings prefixando a string com `f` e usando `{}` para envolver variáveis:
 
 ```python
 name = "Charlie"
@@ -67,20 +67,20 @@ message = f"Hello, my name is {name} and I am {age} years old."
 print(message)
 ```
 
-All of these methods achieve the same result, but f-strings are often preferred due to their readability and ease of use. They allow you to directly reference variables within the string, making the code cleaner and more understandable.
+Todos esses métodos alcançam o mesmo resultado, mas as f-strings são frequentemente preferidas devido à sua legibilidade e facilidade de uso. Elas permitem que você referencie diretamente variáveis dentro da string, tornando o código mais limpo e compreensível.
 
-## String Length
+## Comprimento da String
 
-You can get the length of a string using the built-in function `len()`. You can also check if a string is empty using this method.
+Você pode obter o comprimento de uma string usando a função integrada `len()`. Você também pode verificar se uma string está vazia usando este método.
 
-Here is an example of calculating the characters that a string contains:
+Aqui está um exemplo de como calcular os caracteres que uma string contém:
 
 ```python3
 my_string = "Hello, world!"
 print(len(my_string))  # Output: 13
 ```
 
-In this example, the `len()` function returns the number of characters in the `my_string` variable, which is 13. You can also use `len()` to get the length of a string variable that is empty or contains whitespace:
+Neste exemplo, a função `len()` retorna o número de caracteres na variável `my_string`, que é 13. Você também pode usar `len()` para obter o comprimento de uma variável de string que esteja vazia ou contenha espaços em branco:
 
 ```python3
 empty_string = ""
@@ -90,13 +90,13 @@ whitespace_string = "   "
 print(len(whitespace_string))  # Output: 3
 ```
 
-In both cases, the `len()` function returns the length of the string, which is 0 for the empty string and 3 for the string containing whitespace.
+Em ambos os casos, a função `len()` retorna o comprimento da string, que é 0 para a string vazia e 3 para a string que contém espaço em branco.
 
-## String Comparison
+## Comparação de Strings
 
-In Python, you can use various comparison operators to compare strings. Here are some examples:
+Em Python, você pode usar vários operadores de comparação para comparar strings. Aqui estão alguns exemplos:
 
-The `==` operator: checks if two strings are equal.
+O operador `==`: verifica se duas strings são iguais.
 
 ```python3
 str1 = "mango"
@@ -109,7 +109,7 @@ else:
 # Output: The two strings are not equal.
 ```
 
-The `!=` operator: checks if two strings are not equal.
+O operador `!=`: verifica se duas strings não são iguais.
 
 ```python3
 str1 = "mango"
@@ -122,7 +122,7 @@ else:
 # Output: The two strings are not equal.
 ```
 
-The `<` operator: checks if the first string is less than the second string in lexicographical order.
+O operador `<`: verifica se a primeira string é menor que a segunda string em ordem lexicográfica.
 
 ```python3
 str1 = "mango"
@@ -135,7 +135,7 @@ else:
 # Output: The first string comes before the second string.
 ```
 
-The `>` operator: checks if the first string is greater than the second string in lexicographical order.
+O operador `>`: verifica se a primeira string é maior que a segunda string em ordem lexicográfica.
 
 ```python3
 str1 = "mango"
@@ -148,7 +148,7 @@ else:
 # Output: The second string comes after the first string.
 ```
 
-The `<=` operator: checks if the first string is less than or equal to the second string in lexicographical order.
+O operador `<=`: verifica se a primeira string é menor ou igual à segunda string em ordem lexicográfica.
 
 ```python3
 str1 = "mango"
@@ -161,7 +161,7 @@ else:
 # Output: The first string comes before or is equal to the second string.
 ```
 
-The `>=` operator: checks if the first string is greater than or equal to the second string in lexicographical order.
+O operador `>=`: verifica se a primeira string é maior ou igual à segunda string em ordem lexicográfica.
 
 ```python3
 str1 = "mango"
@@ -174,13 +174,13 @@ else:
 # Output: The second string comes after the first string.
 ```
 
-Note that when comparing strings in Python, the comparison is done in lexicographical order, which means that the comparison is based on the ASCII values of the characters in the strings.
+Observe que ao comparar strings em Python, a comparação é feita em ordem lexicográfica, o que significa que a comparação é baseada nos valores ASCII dos caracteres nas strings.
 
-## Multiline String
+## String Multilinha
 
-You can create a multiline string by enclosing the text in triple quotes, either triple single quotes (''') or triple double quotes (""").
+Você pode criar uma string multilinha ao cercar o texto em aspas triplas, seja usando três aspas simples (''') ou três aspas duplas (""").
 
-For example:
+Por exemplo:
 
 ```python3
 multiline_string = '''
@@ -202,33 +202,33 @@ You can use single quotes
 or double quotes.
 ```
 
-Note that any whitespace, including newlines, in the triple-quoted string will be included in the string. If you want to exclude the whitespace at the beginning or end of a line, you can use string methods like strip() or rstrip().
+Observe que qualquer espaço em branco, incluindo novas linhas, na string delimitada por aspas triplas será incluído na string. Se você quiser excluir o espaço em branco no início ou no final de uma linha, pode usar métodos de string como strip() ou rstrip().
 
-## Binary String
+## String Binária
 
-A binary string can be represented using the prefix `0b` followed by a sequence of `0` and `1` digits. For example, the binary string `1101` can be represented as `0b1101`. Here are some examples of how to create and manipulate binary strings in Python:
+Uma string binária pode ser representada usando o prefixo `0b` seguido por uma sequência de dígitos `0` e `1`. Por exemplo, a string binária `1101` pode ser representada como `0b1101`. Aqui estão alguns exemplos de como criar e manipular strings binárias em Python:
 
-- Creating a binary string:
+- Criando uma string binária:
 
 ```python
 binary_str = '0b1101'
 ```
 
-- Converting a decimal integer to a binary string:
+- Convertendo um inteiro decimal para uma string binária:
 
 ```python
 decimal_num = 13
 binary_str = bin(decimal_num)
 ```
 
-- Converting a binary string to a decimal integer:
+- Convertendo uma string binária para um inteiro decimal:
 
 ```python
 binary_str = '0b1101'
 decimal_num = int(binary_str, 2)
 ```
 
-- Bitwise operations on binary strings:
+- Operações bitwise em strings binárias:
 
 ```python3
 binary_str1 = '0b1101'
@@ -247,13 +247,13 @@ result = int(binary_str1, 2) ^ int(binary_str2, 2)
 print(bin(result))  # Output: 0b0111
 ```
 
-Note that when performing bitwise operations, we need to convert the binary strings to decimal integers using the `int()` function with a second argument specifying the base (`2` in this case), and then convert the result back to a binary string using the `bin()` function.
+Observe que, ao realizar operações de bits, precisamos converter as strings binárias em inteiros decimais usando a função `int()` com um segundo argumento especificando a base (`2` neste caso) e, em seguida, converter o resultado de volta para uma string binária usando a função `bin()`.
 
-## Iterate on Chars
+## Iterar sobre caracteres
 
-There are several ways of iterating over the characters in a string in Python. Here are a few examples:
+Há várias maneiras de iterar sobre os caracteres de uma string em Python. Aqui estão alguns exemplos:
 
-- Using a `for` loop:
+- Usando um loop `for`:
 
 ```python3
 my_string = "Hello, world!"
@@ -261,7 +261,7 @@ for char in my_string:
     print(char)
 ```
 
-- Using a `while` loop:
+- Usando um laço `while`:
 
 ```python3
 my_string = "Hello, world!"
@@ -271,7 +271,7 @@ while i < len(my_string):
     i += 1
 ```
 
-- Using a list comprehension:
+- Usando uma compreensão de lista:
 
 ```python3
 my_string = "Hello, world!"
@@ -279,7 +279,7 @@ char_list = [char for char in my_string]
 print(char_list)
 ```
 
-- Using the `map()` function:
+- Usando a função `map()`:
 
 ```python3
 my_string = "Hello, world!"
@@ -287,7 +287,7 @@ char_list = list(map(str, my_string))
 print(char_list)
 ```
 
-- Using the `enumerate()` function:
+- Utilizando a função `enumerate()`:
 
 ```python
 my_string = "Hello, world!"
@@ -295,4 +295,4 @@ for index, char in enumerate(my_string):
     print(f"Character at index {index}: {char}")
 ```
 
-All of these methods will allow you to iterate over the characters in a string and perform operations on them. Choose the one that suits your needs best!
+Todos esses métodos permitirão que você itere sobre os caracteres em uma string e execute operações neles. Escolha aquele que melhor atenda às suas necessidades!

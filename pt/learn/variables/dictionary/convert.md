@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary/convert
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/dictionary/convert
 
-In Python, dictionaries are one of the most commonly used data structures, as they allow for fast and efficient lookups of values based on keys. While dictionaries are commonly created manually in Python code, it is often useful to convert data from other formats, such as lists or JSON, into dictionaries. Let's review the examples of conversion
+Em Python, os dicionários são uma das estruturas de dados mais usadas, pois permitem pesquisas rápidas e eficientes de valores com base em chaves. Embora os dicionários sejam normalmente criados manualmente no código Python, muitas vezes é útil converter dados de outros formatos, como listas ou JSON, em dicionários. Vamos rever os exemplos de conversão
 
-## Dictionary Creation using Variables
+## Criação de dicionário usando variáveis
 
-Let's look at the example of how to convert variables into a dictionary in Python:
+Vamos ver o exemplo de como converter variáveis num dicionário em Python:
 
 ```python3
 # define variables
@@ -24,15 +24,15 @@ my_dict = {
 print(my_dict)
 ```
 
-In this example, we define three variables: `name`, `age`, and `gender`. Then, we create a dictionary called `my_dict` and assign each variable to a key in the dictionary. Finally, we print the dictionary to verify that it contains the correct key-value pairs. The output should be:
+Neste exemplo, definimos três variáveis: `name`, `age` e `gender`. Depois, criamos um dicionário chamado `my_dict` e atribuímos cada variável a uma chave no dicionário. Por fim, imprimimos o dicionário para verificar se ele contém os pares chave-valor corretos. A saída deve ser:
 
 ```python
 {'name': 'John', 'age': 25, 'gender': 'male'}
 ```
 
-## List to Dictionary Conversion
+## Conversão de Lista para Dicionário
 
-To convert a list to a dictionary in Python, you can use the `dict()` constructor function. The list should contain tuples where each tuple contains a key-value pair. Here is an example:
+Para converter uma lista em um dicionário em Python, você pode usar a função construtora `dict()`. A lista deve conter tuplas onde cada tupla contém um par chave-valor. Aqui está um exemplo:
 
 ```python3
 my_list = [('a', 1), ('b', 2), ('c', 3)]
@@ -40,13 +40,13 @@ my_dict = dict(my_list)
 print(my_dict) # Output: {'a': 1, 'b': 2, 'c': 3}
 ```
 
-In this example, the list `my_list` contains three tuples, each of which represents a key-value pair. The `dict()` constructor function is used to convert the list into a dictionary, and the resulting dictionary is stored in the variable `my_dict`. The output shows the contents of the resulting dictionary.
+Neste exemplo, a lista `my_list` contém três tuplas, cada uma das quais representa um par chave-valor. A função construtora `dict()` é usada para converter a lista em um dicionário, e o dicionário resultante é armazenado na variável `my_dict`. A saída mostra o conteúdo do dicionário resultante.
 
-## String to Dictionary Conversion
+## Conversão de String para Dicionário
 
-You can convert a string to a dictionary in Python using the `json` module, which is built-in to Python.
+Você pode converter uma string para um dicionário em Python usando o módulo `json`, que já vem integrado ao Python.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 import json
@@ -61,17 +61,17 @@ dictionary = json.loads(string)
 print(dictionary)
 ```
 
-Output:
+Saída:
 
 ```python
 {'name': 'John', 'age': 30, 'city': 'New York'}
 ```
 
-In this example, the `json.loads()` method is used to convert the string to a dictionary. The resulting dictionary is stored in the `dictionary` variable and then printed.
+Neste exemplo, o método `json.loads()` é usado para converter a string em um dicionário. O dicionário resultante é armazenado na variável `dictionary` e em seguida impresso.
 
-## Tuple to Dictionary Conversion
+## Conversão de Tupla para Dicionário
 
-In Python, you can convert a tuple to a dictionary using the `dict()` function which we mentioned earlier. Here's an example:
+Em Python, você pode converter uma tupla em dicionário usando a função `dict()` que mencionamos anteriormente. Aqui está um exemplo:
 
 ```python3
 # Define a tuple
@@ -84,10 +84,10 @@ my_dict = dict(zip(range(len(my_tuple)), my_tuple))
 print(my_dict)
 ```
 
-Output:
+Saída:
 
 ```python
 {0: 'apple', 1: 'pineapple', 2: 'cherry'}
 ```
 
-In this example, the `zip()` function is used to combine the tuple elements with the indices of each element. Then, the `dict()` function is used to convert the zipped object into a dictionary.
+Neste exemplo, a função `zip()` é usada para combinar os elementos da tupla com os índices de cada elemento. Em seguida, a função `dict()` é usada para converter o objeto zipado em um dicionário.
