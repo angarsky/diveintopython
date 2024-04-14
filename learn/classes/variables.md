@@ -37,7 +37,7 @@ class Team:
 print("Team Name:", Team.team_name)  # Output: Team Name: Python Developers
 ```
 
-In this example, `the team_name` class variable is accessed using the class name, `Team.team_name`.
+In this example, the `team_name` class variable is accessed using the class name, `Team.team_name`.
 
 ### Modifying a Value of a Class Variable
 
