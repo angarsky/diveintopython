@@ -1,27 +1,26 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/global-variables
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/functions/global-variables
 
-In Python, variables are used to store values that can be accessed and manipulated within a program. However, the scope of a variable can differ depending on whether it is a global variable or a local variable. Global variables in Python can be accessed from any part of the program, while local variables are limited to the function or block in which they are defined. Understanding the differences between variable scopes is important for developing efficient and effective Python code.  
-  
-  
-## Scope of Global Variables in Python  
+Em Python, variáveis são usadas para armazenar valores que podem ser acessados e manipulados dentro de um programa. No entanto, o escopo de uma variável pode diferir dependendo se ela é uma variável global ou local. Variáveis globais em Python podem ser acessadas de qualquer parte do programa, enquanto variáveis locais são limitadas à função ou bloco no qual são definidas. Entender as diferenças entre os escopos das variáveis é importante para desenvolver códigos Python eficientes e eficazes.
 
-**Global variables** in Python are the variables that are defined outside of any function in a program. They can be accessed and modified by any function or module in the program. 
+## Escopo de Variáveis Globais em Python
 
-The scope of a variable in Python defines its accessibility. There are two types of scopes in Python: **Global** scope and **Local** scope. A global scope means that a variable is accessible throughout the program, while a local scope means that a variable is accessible only within the function where it is defined.
+**Variáveis globais** em Python são variáveis que são definidas fora de qualquer função em um programa. Elas podem ser acessadas e modificadas por qualquer função ou módulo no programa.
 
-### Example 1: How to Define a Global Variable in Python
+O escopo de uma variável em Python define sua acessibilidade. Existem dois tipos de escopos em Python: **Global** e **Local**. Um escopo global significa que uma variável é acessível em todo o programa, enquanto um escopo local significa que uma variável é acessível apenas dentro da função onde ela é definida.
+
+### Exemplo 1: Como Definir uma Variável Global em Python
 
 ```python
 # Define a global variable
 global_var = 10
 ```
 
-In Python, global variables can be accessed and modified from any function or module in the program. However, assigning a value to a global variable inside a function creates a new local variable within that function.
+Em Python, variáveis globais podem ser acessadas e modificadas de qualquer função ou módulo no programa. No entanto, atribuir um valor a uma variável global dentro de uma função cria uma nova variável local dentro dessa função.
 
-Here are some examples of how the scope of global variables works in Python:
+Aqui estão alguns exemplos de como o escopo de variáveis globais funciona em Python:
 
-### Example 2: Accessing a Global Variable Inside a Function
+### Exemplo 2: Acessando uma Variável Global Dentro de uma Função
 
 ```python3
 x = 5    #global variable
@@ -32,9 +31,9 @@ func()   #calling the function
 # Output: 5
 ```
 
-In this example, the function `func` is accessing the global variable `x` which is defined outside of any function.
+Neste exemplo, a função `func` está acessando a variável global `x`, que é definida fora de qualquer função.
 
-### Example 3: Accessing the Global Variable Outside the Function
+### Exemplo 3: Acessando a Variável Global Fora da Função
 
 ```python3
 x = 5   #global variable
@@ -47,13 +46,13 @@ print(x)    #accessing the global variable outside the function
 # Output: 10 5
 ```
 
-In this example, the function `func` is creating a new local variable `x` by assigning it a value of `10`. So, the `print` statement inside the function is referring to the local variable and not the global variable. However, when the `print` statement is called outside the function, it refers to the global variable `x`.  
-  
-## How Global Variables Work in Python  
+Neste exemplo, a função `func` está criando uma nova variável local `x` ao atribuir a ela um valor de `10`. Assim, a instrução `print` dentro da função está se referindo à variável local e não à variável global. No entanto, quando a instrução `print` é chamada fora da função, ela se refere à variável global `x`.
 
-**Global variables** are variables that can be accessed and modified throughout the code, regardless of where they are declared. The **variable scopes** in Python determine the accessibility of variables in different parts of the code. Python supports three variable scopes - **local, global, and nonlocal**. **Local variables** are variables that are declared and used within a particular function or block of code, and their scope is limited to that particular function or block of code.
+## Como Variáveis Globais Funcionam em Python
 
-### How to Change a Global Variable in Function
+**Variáveis globais** são variáveis que podem ser acessadas e modificadas ao longo do código, independentemente de onde são declaradas. Os **escopos de variáveis** em Python determinam a acessibilidade de variáveis em diferentes partes do código. Python suporta três escopos de variáveis - **local, global e não local**. **Variáveis locais** são variáveis que são declaradas e usadas dentro de uma função ou bloco de código específico, e seu escopo é limitado a essa função ou bloco de código específico.
+
+### Como Mudar uma Variável Global em Função
 
 ```python3
 # declaring and initializing a global variable
@@ -71,9 +70,9 @@ func()
 print(global_var)    # Output: "I have been modified."
 ```
 
-In Python, to set a global variable you need to declare and initialize a variable outside of any function or block. In the above code, a **global variable** named `global_var` is declared and initialized outside the function. The `func()` function accesses and modifies the value of `global_var` using the `global` keyword. Finally, the modified value of the global variable is printed.
+Em Python, para definir uma variável global você precisa declarar e inicializar uma variável fora de qualquer função ou bloco. No código acima, uma **variável global** chamada `global_var` é declarada e inicializada fora da função. A função `func()` acessa e modifica o valor de `global_var` usando a palavra-chave `global`. Finalmente, o valor modificado da variável global é impresso.
 
-### The Attempt to Access a Local Variable Beyond Its Function
+### A Tentativa de Acessar uma Variável Local Fora de Sua Função
 
 ```python3
 def func():
@@ -89,13 +88,13 @@ func()
 # print(local_var)    
 ```
 
-In the above code, `local_var` is a **local variable** declared and initialized within the `func()` function. The scope of this variable is limited to the function only. When the function is called, the value of `local_var` is printed. However, when we try to access this variable outside the function, we get a `NameError` as the variable is not defined in that scope.  
-  
-## The Role of Non-Local Variables in Python  
+No código acima, `local_var` é uma **variável local** declarada e inicializada dentro da função `func()`. O escopo desta variável é limitado apenas à função. Quando a função é chamada, o valor de `local_var` é impresso. No entanto, quando tentamos acessar esta variável fora da função, recebemos um `NameError` já que a variável não é definida neste escopo.
 
-Global variables are variables that can be accessed and modified from anywhere in the program, whereas local variables are only accessible within a specific function or block of code. The scope of a variable refers to the area in which it can be accessed. 
+## O Papel das Variáveis Não-Locais em Python
 
-Non-local variables in Python are variables that are defined in an outer function but can be accessed in an inner function. The `nonlocal` keyword is used to declare a non-local variable in Python.
+Variáveis globais são variáveis que podem ser acessadas e modificadas de qualquer lugar no programa, enquanto variáveis locais são acessíveis apenas dentro de uma função específica ou bloco de código. O escopo de uma variável refere-se à área na qual ela pode ser acessada.
+
+Variáveis não-locais em Python são variáveis que são definidas em uma função externa, mas que podem ser acessadas em uma função interna. A palavra-chave `nonlocal` é usada para declarar uma variável não-local em Python.
 
 ```python3
 count = 0  # global variable
@@ -109,7 +108,7 @@ increment()  # output: 1
 increment()  # output: 2
 ```
 
-In this example, `count` is a global variable that can be accessed and modified from anywhere in the program. The `global` keyword is used inside the `increment` function to indicate that we are modifying the global variable `count`.
+Neste exemplo, `count` é uma variável global que pode ser acessada e modificada de qualquer lugar no programa. A palavra-chave `global` é usada dentro da função `increment` para indicar que estamos modificando a variável global `count`.
 
 ```python3
 def outer():
@@ -126,14 +125,14 @@ def outer():
 outer()  # output: inner: nonlocal, outer: nonlocal
 ```
 
-In this example, `x` is a local variable in the `outer` function. The `inner` function has access to this variable using the `nonlocal` keyword, so we can modify its value. When we call the `outer` function, the `inner` function is executed and the value of `x` is changed to `nonlocal`. This change is reflected in the `outer` function when we `print` the value of `x` after the `inner` function is executed.  
-  
-## The `global` Keyword - Python's Global Variables in Function
+Neste exemplo, `x` é uma variável local na função `outer`. A função `inner` tem acesso a essa variável usando a palavra-chave `nonlocal`, então podemos modificar seu valor. Quando chamamos a função `outer`, a função `inner` é executada e o valor de `x` é mudado para `nonlocal`. Essa mudança é refletida na função `outer` quando `printamos` o valor de `x` após a execução da função `inner`.
 
-Let's review how to use global variables in functions in Python.
-Global variables are variables that can be accessed and modified from any part of the program. In Python, a variable's scope determines where it can be accessed. The best practice for using global variables in Python is to minimize their usage, as too many global variables can make the program difficult to understand, debug, and maintain.
+## A Palavra-chave `global` - Variáveis Globais em Função no Python
 
-One example of a global variable is the power function in Python. We can use a loop to calculate the power of a number. Here is an example:
+Vamos revisar como usar variáveis globais em funções no Python.
+Variáveis globais são variáveis que podem ser acessadas e modificadas de qualquer parte do programa. No Python, o escopo de uma variável determina onde ela pode ser acessada. A melhor prática para o uso de variáveis globais no Python é minimizar seu uso, pois muitas variáveis globais podem tornar o programa difícil de entender, depurar e manter.
+
+Um exemplo de variável global é a função de potência no Python. Podemos usar um loop para calcular a potência de um número. Aqui está um exemplo:
 
 ```python3
 power = 1
@@ -149,9 +148,9 @@ print("Power of 2^3 is", calculate_power(2, 3))
 print("Power of 5^4 is", calculate_power(5, 4))
 ```
 
-In this example, we declare a global variable `power` outside the function `calculate_power()`. Inside the function, we use this global variable to store the power of the number. We reset the value of the `power` variable to 1 for each new calculation.
+Neste exemplo, declaramos uma variável global `power` fora da função `calculate_power()`. Dentro da função, usamos essa variável global para armazenar a potência do número. Resetamos o valor da variável `power` para 1 a cada novo cálculo.
 
-### Program to Count the Number of Times a Function is Called
+### Programa para Contar o Número de Vezes que uma Função é Chamada
 
 ```python3
 count = 0
@@ -166,15 +165,15 @@ my_function()
 my_function()
 ```
 
-In this example, we declare the global variable `count` outside the function `my_function()`. Inside the function, we increment the value of the `count` variable every time the function is called. We then print the value of `count`. 
+Neste exemplo, declaramos a variável global `count` fora da função `my_function()`. Dentro da função, incrementamos o valor da variável `count` toda vez que a função é chamada. Em seguida, imprimimos o valor de `count`.
 
-Overall, it is generally best to avoid global variables in favor of local variables with more limited scope. However, in some cases, global variables may be necessary or useful, and we can use them carefully with the `global` keyword to access them inside functions.  
-  
-## Advanced Tips for Python Variable Scopes and Naming Conventions  
+No geral, é geralmente melhor evitar variáveis globais em favor de variáveis locais com escopo mais limitado. No entanto, em alguns casos, as variáveis globais podem ser necessárias ou úteis, e podemos usá-las cuidadosamente com a palavra-chave `global` para acessá-las dentro de funções.
 
-Advanced tips for Python variable scopes include avoiding global variables as much as possible to prevent naming conflicts and unexpected behavior. It is also recommended to use descriptive variable names that follow the [PEP 8 naming conventions](https://peps.python.org/pep-0008/#naming-conventions), such as using lowercase letters and underscores to separate words.
+## Dicas Avançadas para Escopos de Variáveis Python e Convenções de Nomes
 
-Function naming conventions in Python follow the same [PEP 8 guidelines](https://peps.python.org/pep-0008/#function-and-variable-names), using lowercase letters and underscores to separate words. Function names should also be descriptive and convey the purpose of the function.
+Dicas avançadas para escopos de variáveis Python incluem evitar variáveis globais tanto quanto possível para prevenir conflitos de nomes e comportamentos inesperados. Também é recomendado usar nomes de variáveis descritivos que sigam as [convenções de nomes PEP 8](https://peps.python.org/pep-0008/#naming-conventions), como o uso de letras minúsculas e underscores para separar palavras.
+
+Convenções de nomes de funções em Python seguem as mesmas [diretrizes PEP 8](https://peps.python.org/pep-0008/#function-and-variable-names), usando letras minúsculas e underscores para separar palavras. Os nomes das funções também devem ser descritivos e transmitir o propósito da função.
 
 ```python3
 # Local variable
@@ -185,4 +184,4 @@ def greet(name):
 print(greet("Alice"))   # Output: Hello, Alice!
 ```
 
-In this example, we declare a local variable `message` inside the `greet()` function. This variable is only accessible within the function and cannot be accessed from outside. The function takes a `name` parameter and returns a greeting message with the name included.  
+Neste exemplo, declaramos uma variável local `message` dentro da função `greet()`. Esta variável só é acessível dentro da função e não pode ser acessada de fora. A função recebe um parâmetro `name` e retorna uma mensagem de saudação com o nome incluído.

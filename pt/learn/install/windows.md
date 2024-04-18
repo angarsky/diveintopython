@@ -1,41 +1,41 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/install/windows
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/install/windows
 
-For Windows users, the process of installing Python on their computer can seem daunting. However, with the right guidance, it can be done with ease. In this article, we will provide instructions on how to install Python on Windows, so that you can start using this powerful programming language in your projects.  
-  
-## How to Install Python on Windows  
+Para usuários do Windows, o processo de instalar o Python em seu computador pode parecer assustador. No entanto, com a orientação correta, isso pode ser feito com facilidade. Neste artigo, forneceremos instruções sobre como instalar o Python no Windows, para que você possa começar a usar esta poderosa linguagem de programação em seus projetos.
 
-To install Python on Windows, follow these steps:
+## Como Instalar Python no Windows
 
-1. Visit the official Python website and navigate to the [download page](https://www.python.org/downloads/).
-2. Select the appropriate version of Python based on your Windows operating system. 
-3. Click the `Download` button and wait for **downloading python for windows**.
-4. Once downloaded, run the Python installer by double-clicking on the downloaded file. 
-4. Follow the prompts to complete the installation process.
+Para instalar o Python no Windows, siga estas etapas:
 
-Once you have installed Python on your Windows system, you can check windows python version by opening a command prompt and typing `python --version`.
-With these simple steps, you can install Python on your Windows system and start using it for your programming needs.  
-  
-## How to Run Python on Windows  
+1. Visite o site oficial do Python e navegue até a [página de download](https://www.python.org/downloads/).
+2. Selecione a versão apropriada do Python com base no seu sistema operacional Windows.
+3. Clique no botão `Download` e aguarde por **baixar python para o windows**.
+4. Uma vez baixado, execute o instalador do Python, dando um duplo clique no arquivo baixado.
+5. Siga as instruções para completar o processo de instalação.
 
-To run Python on Windows, you need to install Python and set up the environment variables. Follow these steps - 
-1. Download the latest version of Python from the official website and install it on your Windows computer.
-2. Add the Python installation path to the System Environment Variables. This will allow you to run a python script on any directory on your system without having to specify the full path.
-3. Open the Command Prompt by pressing the Windows key + R and type cmd, then press Enter.
-4. Navigate to the directory containing your Python script using the 'cd' command.
-5. To run a Python script, type python scriptname.py , then press Enter.
+Uma vez que tenha instalado o Python em seu sistema Windows, você pode verificar a versão do python no windows abrindo um prompt de comando e digitando `python --version`.
+Com esses passos simples, você pode instalar o Python em seu sistema Windows e começar a usá-lo para suas necessidades de programação.
 
-With these steps, you can easily run a Python script on Windows.
+## Como Executar Python no Windows
 
-## Add Python to Windows Path   
+Para executar Python no Windows, você precisa instalar o Python e configurar as variáveis de ambiente. Siga estes passos -
+1. Baixe a última versão do Python do site oficial e instale-a em seu computador Windows.
+2. Adicione o caminho de instalação do Python às Variáveis de Ambiente do Sistema. Isso permitirá que você execute um script python em qualquer diretório do seu sistema sem precisar especificar o caminho completo.
+3. Abra o Prompt de Comando pressionando a tecla Windows + R e digite cmd, depois pressione Enter.
+4. Navegue até o diretório que contém o seu script Python usando o comando 'cd'.
+5. Para executar um script Python, digite python nomedoscript.py, e então pressione Enter.
 
-To add Python to Windows Path, follow these steps:
+Com estes passos, você pode facilmente executar um script Python no Windows.
 
-1. Open the Start menu and search for `Environment Variables`
-2. Click on `Edit the system environment variables`
-3. Click on `Environment Variables` near the bottom right corner of the window that appears
-4. Under the `System Variables` section, scroll down and find `Path` and click on `Edit`
-5. Click on `New` and enter the path to your Python installation directory
-6. Click `OK` on each window to save the changes
+## Adicionar Python ao Caminho do Windows
 
-By adding the Python path in Windows, it will be easier to access and execute Python scripts from any directory on your computer.  
+Para adicionar o Python ao Caminho do Windows, siga estas etapas:
+
+1. Abra o menu Iniciar e procure por `Variáveis de Ambiente`
+2. Clique em `Editar as variáveis de ambiente do sistema`
+3. Clique em `Variáveis de Ambiente` próximo ao canto inferior direito da janela que aparece
+4. Na seção `Variáveis do Sistema`, desça até encontrar `Path` e clique em `Editar`
+5. Clique em `Novo` e insira o caminho para o diretório de instalação do Python
+6. Clique em `OK` em cada janela para salvar as mudanças
+
+Ao adicionar o caminho do Python no Windows, será mais fácil acessar e executar scripts Python de qualquer diretório no seu computador.

@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/modules/popular-modules/random
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/modules/popular-modules/random
 
-Random module in Python is a widely used library that allows developers to generate random numbers, shuffle lists, and make other random selections for their applications. It provides a range of functions that can be used to create random data and can be useful in various applications like gaming, simulations, cryptography and other areas where there is a need for randomness. With this module, developers have the freedom to create diversity in their application output, thus making the applications more intriguing.
+O módulo Random em Python é uma biblioteca amplamente utilizada que permite aos desenvolvedores gerar números aleatórios, embaralhar listas e fazer outras seleções aleatórias para suas aplicações. Ele fornece uma gama de funções que podem ser usadas para criar dados aleatórios e pode ser útil em várias aplicações como jogos, simulações, criptografia e outras áreas onde há uma necessidade de aleatoriedade. Com este módulo, os desenvolvedores têm a liberdade de criar diversidade em seus outputs de aplicativo, tornando as aplicações mais intrigantes.
 
-## Random Module Usage Examples  
+## Exemplos de Uso do Módulo Random
 
-The [random](https://docs.python.org/3/library/random.html) module (`random` library) in Python is used to generate pseudo-random numbers. 
+O módulo [random](https://docs.python.org/3/library/random.html) (biblioteca `random`) em Python é usado para gerar números pseudo-aleatórios.
 
-### Get Random Number
+### Obter Número Aleatório
 
 ```python3
 import random
@@ -20,9 +20,9 @@ print(random_number)
 # 5 (this number will be different each time the code is run)
 ```
 
-In the above example, the `random.randint(a, b)` function is used to generate a random integer between the values of `a` and `b`, inclusive of both endpoints. In this case, the random number generated will be between `1` and `10`.
+No exemplo acima, a função `random.randint(a, b)` é usada para gerar um número inteiro aleatório entre os valores de `a` e `b`, incluindo ambos os limites. Neste caso, o número aleatório gerado será entre `1` e `10`.
 
-### Random Select from List
+### Seleção Aleatória de Lista
 
 ```python3
 import random
@@ -36,11 +36,11 @@ print(random_option)
 # "paper" (this option will be different each time the code is run)
 ```
 
-In this example, the `random.choice(seq)` function is used to generate a random choice from a list of options. In this case, the random choice generated will be one of the three options in the `options` list - `rock`, `paper`, or `scissors`.  
+Neste exemplo, a função `random.choice(seq)` é usada para gerar uma escolha aleatória de uma lista de opções. Neste caso, a escolha aleatória gerada será uma das três opções na lista `options` - `rock`, `paper` ou `scissors`.
 
-## Random Seed  
+## Semente Aleatória
 
-Random Seed plays a crucial role in generating random numbers in Python. It is used to initialize the pseudo-random number generator, which is a function that generates a sequence of numbers that appear to be random, but are actually deterministic. 
+A Semente Aleatória desempenha um papel crucial na geração de números aleatórios em Python. É usada para inicializar o gerador de números pseudo-aleatórios, que é uma função que gera uma sequência de números que parecem ser aleatórios, mas na verdade são determinísticos.
 
 ```python
 import random
@@ -53,7 +53,7 @@ for i in range(5):
     print(random.random())
 ```
 
-In this example, we set the random seed value to `123`, which ensures that the same sequence of random numbers is generated every time the code is run.
+Neste exemplo, definimos o valor da semente aleatória para `123`, o que garante que a mesma sequência de números aleatórios seja gerada todas as vezes que o código é executado.
 
 ```python3
 import random
@@ -70,13 +70,13 @@ print(list_1)
 print(list_2)
 ```
 
-In this example, we set different random seed values to generate two different lists. By doing this, we ensure that the lists are reproducible and can be generated again with the same `random` seed values. 
+Neste exemplo, definimos valores de semente aleatória diferentes para gerar duas listas diferentes. Ao fazer isso, garantimos que as listas sejam reprodutíveis e possam ser geradas novamente com os mesmos valores de semente `random`.
 
-Overall, `random` seed is an essential feature in generating and reproducing `random` numbers in Python. By setting the seed, we can ensure that our results are consistent and reproducible.  
-  
-## How to generate a Random String  
+No geral, a semente `random` é um recurso essencial na geração e reprodução de números `random` em Python. Ao definir a semente, podemos garantir que nossos resultados sejam consistentes e reprodutíveis.
 
-If you're looking to generate a random string in Python, there are a few different methods you can use depending on your needs. Here are two examples:
+## Como gerar uma String Aleatória
+
+Se você está procurando gerar uma string aleatória em Python, existem alguns métodos diferentes que você pode usar, dependendo de suas necessidades. Aqui estão dois exemplos:
 
 ```python3
 import random
@@ -90,7 +90,7 @@ def random_string(length):
 print(random_string(10))  # Output: 'gjwstqyeqh'
 ```
 
-In this example, we use Python's built-in `random` and `string` modules to generate a string of a given length. We first define a  **random function** called `random_string` which takes a `length` parameter that specifies the number of characters in the resulting string. We then use the `string.ascii_lowercase` constant to get all lowercase `letters` in the alphabet, and `random.choice` to randomly select characters from this string for the length of our specified string.
+Neste exemplo, usamos os módulos integrados do Python `random` e `string` para gerar uma string de um determinado comprimento. Primeiro definimos uma **função aleatória** chamada `random_string` que recebe um parâmetro `length` que especifica o número de caracteres na string resultante. Em seguida, usamos a constante `string.ascii_lowercase` para obter todas as `letras` minúsculas do alfabeto, e `random.choice` para selecionar aleatoriamente caracteres desta string pelo comprimento da nossa string especificada.
 
 ```python
 import random
@@ -104,17 +104,17 @@ def random_string(chars, length):
 print(random_string('ABC123', 8))  # Output: '31C1C1CA'
 ```
 
-If you want more control over the characters in the resulting string, you can specify a set of characters to choose from. In this example, we define our own set of characters to choose from by passing in a string of possible characters to the **random function** `random_string`. We then use `random.choice` to randomly select characters from this set for the length of our specified string.
+Se você deseja mais controle sobre os caracteres na string resultante, você pode especificar um conjunto de caracteres para escolher. Neste exemplo, definimos nosso próprio conjunto de caracteres para escolher, passando uma string de caracteres possíveis para a **função aleatória** `random_string`. Em seguida, usamos `random.choice` para selecionar aleatoriamente caracteres deste conjunto pelo comprimento da nossa string especificada.
 
-With these two examples, you should be able to easily generate random strings in Python for whatever purpose you need. Remember to `import` the necessary modules and choose the appropriate method based on your specific requirements.  
-  
-## Random Sampling  
+Com esses dois exemplos, você deve ser capaz de gerar facilmente strings aleatórias em Python para qualquer finalidade que você precise. Lembre-se de `importar` os módulos necessários e escolher o método apropriado baseado nos seus requisitos específicos.
 
-Random sampling is an important statistical technique used by data analysts and programmers to select a subset of data from a larger population in a [random](https://docs.python.org/3/library/random.html) manner. In Python, `random` sampling can be done using the built-in `random` module. This article will briefly discuss how to generate `random` samples in Python.
+## Amostragem Aleatória
 
-### Random Sampling in Python
+A amostragem aleatória é uma técnica estatística importante usada por analistas de dados e programadores para selecionar um subconjunto de dados de uma população maior de maneira [aleatória](https://docs.python.org/3/library/random.html). Em Python, a amostragem `random` pode ser feita usando o módulo `random` incluso. Este artigo discutirá brevemente como gerar amostras `random` em Python.
 
-In Python, the `random` module provides several functions to generate `random` data. To generate a `random` sample from a list, we can use the `random.sample()` function. This function takes two arguments: the list from which we want to generate a `random` sample and the number of samples we want to generate.
+### Amostragem Aleatória em Python
+
+Em Python, o módulo `random` fornece várias funções para gerar dados `random`. Para gerar uma amostra `random` de uma lista, podemos usar a função `random.sample()`. Esta função leva dois argumentos: a lista da qual queremos gerar uma amostra `random` e o número de amostras que queremos gerar.
 
 ```python3
 import random
@@ -135,13 +135,13 @@ random.random()
 # Output: `0.42323281409391506`
 ```
 
-Random sampling is a powerful technique that can be used to select subsets of data for analysis and modeling. In Python, the `random` module makes it easy to generate random samples from lists and other data sources. By using the `random.sample()` function, we can quickly generate random shuffle list of a specified size.  
-  
-## Random with the `randint()` Method  
+A amostragem aleatória é uma técnica poderosa que pode ser usada para selecionar subconjuntos de dados para análise e modelagem. Em Python, o módulo `random` facilita a geração de amostras aleatórias a partir de listas e outras fontes de dados. Utilizando a função `random.sample()`, podemos rapidamente gerar uma lista embaralhada aleatória de um tamanho especificado.
 
-Python's Random `randint()` method is used to generate a random integer between the given range of values. The `randint()` function is part of the `random` module in Python. 
+## Aleatório com o Método `randint()`
 
-Here is an example of how to use `randint()` to generate a random `number` between 0 and 9:
+O método `randint()` do Random Python é usado para gerar um número inteiro aleatório entre o intervalo de valores fornecido. A função `randint()` faz parte do módulo `random` em Python.
+
+Aqui está um exemplo de como usar `randint()` para gerar um `number` aleatório entre 0 e 9:
 
 ```python
 import random
@@ -150,9 +150,9 @@ number = random.randint(0, 9)
 print(number)
 ```
 
-This code will output a random integer between 0 and 9 (inclusive).
+Este código irá gerar um inteiro aleatório entre 0 e 9 (inclusive).
 
-You can also use `randint()` to generate a random `number` within a larger range. For example, to generate a random `number` between 100 and `200` (inclusive), you would use the following code:
+Você também pode usar `randint()` para gerar um `number` aleatório dentro de um intervalo maior. Por exemplo, para gerar um `number` aleatório entre 100 e `200` (inclusive), você usaria o seguinte código:
 
 ```python
 import random
@@ -161,15 +161,15 @@ number = random.randint(100, 200)
 print(number)
 ```
 
-In summary, Python's `random.randint()` is a simple and efficient way to generate random integers, and it is a useful tool in many programming projects.  
-  
-## Random with the `uniform()` Function
+Em resumo, o `random.randint()` do Python é uma maneira simples e eficiente de gerar números inteiros aleatórios, e é uma ferramenta útil em muitos projetos de programação.
 
-The `random.uniform()` is a Python function that generates random floating-point numbers within a specified range. It is a part of the `random` module, which is used for generating random data.
+## Aleatório com a Função `uniform()`
 
-Using `random.uniform()` function in Python is relatively easy. 
+A `random.uniform()` é uma função Python que gera números de ponto flutuante aleatórios dentro de um intervalo especificado. Faz parte do módulo `random`, que é usado para gerar dados aleatórios.
 
-### Generate a Random Float 
+Usar a função `random.uniform()` no Python é relativamente fácil.
+
+### Gerar um Float Aleatório
 
 ```python
 import random
@@ -178,6 +178,6 @@ x = random.uniform(0, 1)
 print(x)
 ```
 
-The `random.uniform()` function generates a random floating-point number within the specified range. The range is between 0 and 1.
+A função `random.uniform()` gera um número de ponto flutuante aleatório dentro do intervalo especificado. O intervalo está entre 0 e 1.
 
-Using `random.uniform()` function is especially useful when one needs to generate random floating-point numbers that are not integers. When combined with other functions and modules, it can be used to simulate real-world scenarios such as financial modeling, physics simulations, and modeling of biological systems in computational biology.  
+Usar a função `random.uniform()` é especialmente útil quando se precisa gerar números de ponto flutuante aleatórios que não são inteiros. Quando combinado com outras funções e módulos, pode ser usado para simular cenários do mundo real, como modelagem financeira, simulações de física e modelagem de sistemas biológicos em biologia computacional.

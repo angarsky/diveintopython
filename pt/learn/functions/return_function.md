@@ -1,16 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/return-function
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/functions/return-function
 
+Retornar uma função de uma função significa que uma função é criada e retornada como saída de outra função. Isso é possível em Python porque funções são objetos de primeira classe, o que significa que podem ser passadas como qualquer outro objeto, como inteiros, strings ou listas.
 
-Returning a function from a function means that a function is created and returned as output of another function. This is possible in Python because functions are first-class objects, which means they can be passed around just like any other object such as integers, strings, or lists.
+## Retorno de Função em Python
 
-## Return Function in Python
+Nos exemplos a seguir, funções Python são utilizadas para retornar outras funções, permitindo um comportamento dinâmico baseado em parâmetros de entrada.
 
-In the following examples, Python functions are utilized to return other functions, allowing for dynamic behavior based on input parameters.
+### Exemplo 1: Uso Básico do Retorno de Função
 
-### Example 1: Basic Usage of Function Return
-
-Consider `function1`, which returns another function, `function2`. This inner function `function2` multiplies its argument by a specified value, `a`. When `function1(5)` is called, it returns `function2` with `a` set to `5`. The resulting function is assigned to the variable `multiply_by_5`. Subsequently, calling `multiply_by_5(3)` outputs `15`.
+Considere `function1`, que retorna outra função, `function2`. Esta função interna `function2` multiplica seu argumento por um valor especificado, `a`. Quando `function1(5)` é chamada, ela retorna `function2` com `a` definido como `5`. A função resultante é atribuída à variável `multiply_by_5`. Posteriormente, chamar `multiply_by_5(3)` produz `15`.
 
 ```python3
 def function1(a):
@@ -23,11 +22,11 @@ result = multiply_by_5(3)
 print(result)  # Output: 15
 ```
 
-### Example 2: Conditional Return of Functions
+### Exemplo 2: Retorno Condicional de Funções
 
-In this scenario, `function3` determines which function to return based on the value of the `operation` parameter. It contains two inner functions: `add_numbers` and `multiply_numbers`, respectively performing addition and multiplication operations.
+Neste cenário, `function3` determina qual função retornar baseado no valor do parâmetro `operation`. Contém duas funções internas: `add_numbers` e `multiply_numbers`, respectivamente realizando operações de adição e multiplicação.
 
-By passing either `add` or `multiply` to `function3`, it returns the corresponding inner function. For instance, if `operation_type` is set to `add`, the `add_numbers` function is assigned to the `math_function` variable. Invoking `math_function(3, 5)` will add the two numbers, resulting in an output of `8`.
+Ao passar `add` ou `multiply` para `function3`, ela retorna a função interna correspondente. Por exemplo, se `operation_type` estiver definido como `add`, a função `add_numbers` é atribuída à variável `math_function`. Invocar `math_function(3, 5)` irá adicionar os dois números, resultando em uma saída de `8`.
 
 ```python3
 def function3(operation):
@@ -48,13 +47,13 @@ result = math_function(3, 5)
 print(result)  # Output: 8
 ```
 
-In summary, these examples illustrate how Python functions can be utilized to return other functions dynamically, providing versatility in handling operations based on input conditions.
+Em resumo, esses exemplos ilustram como as funções em Python podem ser utilizadas para retornar outras funções dinamicamente, proporcionando versatilidade no manuseio de operações baseadas em condições de entrada.
 
-## Exploring the Concept of Nested Functions and Returning Functions  
+## Explorando o Conceito de Funções Aninhadas e Retornando Funções
 
-In Python, functions can be nested, which means you can define one function inside another function. You can also return a function from another function in Python. This concept of nested functions and returning functions allows for more flexibility and is a powerful tool in programming.
+Em Python, as funções podem ser aninhadas, o que significa que você pode definir uma função dentro de outra função. Você também pode retornar uma função de outra função em Python. Esse conceito de funções aninhadas e retornando funções permite mais flexibilidade e é uma ferramenta poderosa na programação.
 
-### Example 1: Returning a Function from a Function
+### Exemplo 1: Retornando uma Função de uma Função
 
 ```python3
 def create_adder(num):
@@ -66,11 +65,11 @@ add5 = create_adder(5)
 print(add5(3))    # Output: 8
 ```
 
-In this example, we define a function `create_adder` that takes a parameter `num`. Inside `create_adder`, we define another function `adder` that takes a parameter `x` and returns the sum of `num` and `x`. Finally, `create_adder` returns `adder`.
+Neste exemplo, definimos uma função `create_adder` que recebe um parâmetro `num`. Dentro de `create_adder`, definimos outra função `adder` que recebe um parâmetro `x` e retorna a soma de `num` e `x`. Finalmente, `create_adder` retorna `adder`.
 
-We then create a new function `add5` by calling `create_adder(5)`. This means that `add5` is now a reference to `adder` with `num` set to 5. When we call `add5(3)`, we pass the parameter `x` as `3`, which results in the output `8`.
+Em seguida, criamos uma nova função `add5` chamando `create_adder(5)`. Isso significa que `add5` é agora uma referência a `adder` com `num` definido como 5. Quando chamamos `add5(3)`, passamos o parâmetro `x` como `3`, o que resulta na saída `8`.
 
-### Example 2: Nested Functions
+### Exemplo 2: Funções Aninhadas
 
 ```python3 
 def outer_function(num):
@@ -84,19 +83,20 @@ add5 = outer_function(5)
 print(add3(10))    # Output: 13
 print(add5(10))    # Output: 15
 ```
-In this example, we define a function `outer_function` that takes a parameter `num`. Inside `outer_function`, we define another function `inner_function` that takes a parameter `x` and returns the sum of `num` and `x`. Finally, `outer_function` returns `inner_function`.
 
-We then create two new functions `add3` and `add5` by calling `outer_function(3)` and `outer_function(5)` respectively. This means that `add3` is now a reference to `inner_function` with `num` set to 3, and `add5` is a reference to `inner_function` with `num` set to 5. When we call `add3(10)` and `add5(10)`, we pass the parameter `x` as `10`, which results in the output `13` and `15` respectively.
+Neste exemplo, definimos uma função `outer_function` que recebe um parâmetro `num`. Dentro de `outer_function`, definimos outra função `inner_function` que recebe um parâmetro `x` e retorna a soma de `num` e `x`. Finalmente, `outer_function` retorna `inner_function`.
 
-## Understanding the Advantages of Returning a Function from Another Function  
+Em seguida, criamos duas novas funções `add3` e `add5` chamando `outer_function(3)` e `outer_function(5)` respectivamente. Isso significa que `add3` agora é uma referência a `inner_function` com `num` definido como 3, e `add5` é uma referência a `inner_function` com `num` definido como 5. Quando chamamos `add3(10)` e `add5(10)`, passamos o parâmetro `x` como `10`, o que resulta na saída `13` e `15` respectivamente.
 
-One of the significant benefits of returning a function from another function in Python is that it provides flexibility. By returning a function, the programmer can create a more specific and customized function based on the inputs passed to the original function. It also allows for efficient code reuse.
+## Entendendo as Vantagens de Retornar uma Função de Outra Função
 
-Another advantage of returning a function from another function is that it can simplify code complexity, leading to a more readable code structure. The code becomes more organized and understandable, thus enhancing its maintenance and debugging processes.
+Um dos benefícios significativos de retornar uma função de outra função em Python é que isso proporciona flexibilidade. Ao retornar uma função, o programador pode criar uma função mais específica e personalizada com base nas entradas passadas para a função original. Isso também permite a reutilização eficiente do código.
 
-Here are two examples of returning a function from a function in Python:
+Outra vantagem de retornar uma função de outra função é que isso pode simplificar a complexidade do código, levando a uma estrutura de código mais legível. O código se torna mais organizado e compreensível, melhorando assim seus processos de manutenção e depuração.
 
-### Example 1: Returning a Function That Multiplies Any Number By a Given Factor:
+Aqui estão dois exemplos de retornar uma função de uma função em Python:
+
+### Exemplo 1: Retornando uma Função que Multiplica Qualquer Número por um Fator Dado:
 
 ```python
 def multiply(factor):
@@ -111,9 +111,9 @@ print(double(5)) #output: 10
 print(triple(5)) #output: 15
 ```
 
-By calling `multiply(2)` and `multiply(3)`, we create two new functions `double` and `triple`, respectively, that can be used to multiply any number by `2` or `3`.
+Ao chamar `multiply(2)` e `multiply(3)`, criamos duas novas funções `double` e `triple`, respectivamente, que podem ser usadas para multiplicar qualquer número por `2` ou `3`.
 
-### Example 2: Returning a Function That Performs Mathematical Operations:
+### Exemplo 2: Retornando uma Função que Realiza Operações Matemáticas:
 
 ```python3
 def operate(operation):
@@ -135,11 +135,11 @@ print(add_func(10, 5)) #output: 15
 print(subtract_func(10, 5)) #output: 5
 ```
 
-By calling `operate('add')` and `operate('subtract')`, we create two new functions `add_func` and `subtract_func`, respectively, that can be used to perform addition and subtraction operations on any two numbers.
+Ao chamar `operate('add')` e `operate('subtract')`, criamos duas novas funções `add_func` e `subtract_func`, respectivamente, que podem ser usadas para realizar operações de adição e subtração em quaisquer dois números.
 
-## Understanding the Different Ways of Defining and Returning Functions in Python 
+## Entendendo as Diferentes Maneiras de Definir e Retornar Funções em Python
 
-Returning a function from a function can be useful in situations where we need to create functions dynamically based on certain conditions.
+Retornar uma função de uma função pode ser útil em situações em que precisamos criar funções dinamicamente com base em certas condições.
 
 ```python
 def create_adder(num):
@@ -151,11 +151,11 @@ add5 = create_adder(5)
 print(add5(10)) # Output: 15
 ```
 
-In this example, we define a function called `create_adder` that takes a `num` parameter. Within the `create_adder` function, we define another function called `adder` that takes an `x` parameter and returns the sum of `num` and `x`. Finally, we return the `adder` function as an output. 
+Neste exemplo, definimos uma função chamada `create_adder` que recebe um parâmetro `num`. Dentro da função `create_adder`, definimos outra função chamada `adder` que recebe um parâmetro `x` e retorna a soma de `num` e `x`. Finalmente, retornamos a função `adder` como uma saída.
 
-We then assign the output of `create_adder(5)` to a variable called `add5`. This means that `add5` is now a function that takes a parameter `x` and returns the sum of `5` and `x`. When we call `add5(10)`, it returns `15`.
+Em seguida, atribuímos a saída de `create_adder(5)` a uma variável chamada `add5`. Isso significa que `add5` agora é uma função que recebe um parâmetro `x` e retorna a soma de `5` e `x`. Quando chamamos `add5(10)`, ela retorna `15`.
 
-## Exploring the Use Arguments in Returned Functions 
+## Explorando o Uso de Argumentos em Funções Retornadas
 
 ```python
 def power(base):
@@ -170,7 +170,7 @@ print(square(5)) # Output: 25
 print(cube(3)) # Output: 27
 ```
 
-In this example, a nested function `exponent` is defined inside the `power` function. The `exponent` function calculates a number raised to a power. The `power` function returns the `exponent` function. Two variables `square` and `cube` are assigned by calling the `power` function with different base values. The final two print statements call `square` and `cube` with different exponent values.
+Neste exemplo, uma função aninhada `exponent` é definida dentro da função `power`. A função `exponent` calcula um número elevado a uma potência. A função `power` retorna a função `exponent`. Duas variáveis `square` e `cube` são atribuídas chamando a função `power` com diferentes valores de base. As duas últimas instruções de impressão chamam `square` e `cube` com diferentes valores de expoente.
 
 ```python3
 def operation(operator):
@@ -199,4 +199,4 @@ print(division(5, 3)) # Output: 1.6666666666666667
 print(operation('%')(5, 3)) # Output: Invalid operator
 ```
 
-In this example, the `operation` function takes an `operator` parameter and returns the `calculate` function. The `calculate` function performs the arithmetic operation specified by the `operator` parameter on two number arguments. Four variables `addition`, `subtraction`, `multiplication`, and `division` are assigned by calling the `operation` function with different operator values. The final print statement shows what occurs when an invalid operator is used as an argument.  
+Neste exemplo, a função `operation` recebe um parâmetro `operator` e retorna a função `calculate`. A função `calculate` realiza a operação aritmética especificada pelo parâmetro `operator` em dois argumentos numéricos. Quatro variáveis `addition`, `subtraction`, `multiplication` e `division` são atribuídas chamando a função `operation` com diferentes valores de operador. A instrução print final mostra o que ocorre quando um operador inválido é usado como argumento.
