@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/variables
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/classes/variables
 
-Python is a powerful language that supports different types of variables and properties. In this article, we will discuss variables, attributes, and properties in Python to help you understand them better.  
-  
-## Understanding Variables, Attributes, and Properties   
+Python est un langage puissant qui prend en charge différents types de variables et propriétés. Dans cet article, nous discuterons des variables, attributs et propriétés en Python pour vous aider à mieux les comprendre.
 
-- **Variables:** A variable is a name that refers to a value. Variables can hold any type of object.
-- **Attributes:** An attribute is a value associated with an object. Attributes can be accessed using the dot notation.
-- **Properties:** A property is a way to define a method as an attribute. Properties are created using the `@property` decorator.
+## Comprendre les Variables, Attributs et Propriétés
 
-## Python Class Variables
+- **Variables :** Une variable est un nom qui fait référence à une valeur. Les variables peuvent contenir n'importe quel type d'objet.
+- **Attributs :** Un attribut est une valeur associée à un objet. Les attributs peuvent être accédés en utilisant la notation pointée.
+- **Propriétés :** Une propriété est une manière de définir une méthode comme un attribut. Les propriétés sont créées en utilisant le décorateur `@property`.
 
-In Python, class variables are a powerful way to share data among all instances of a class. Let's explore how to create, access, and modify class variables.
+## Variables de Classe Python
 
-### Creating a Class Variable
+En Python, les variables de classe sont un moyen puissant de partager des données parmi toutes les instances d'une classe. Explorons comment créer, accéder et modifier les variables de classe.
 
-To create a class variable in Python, you simply declare it within the class but outside of any methods. Class variables are shared among all instances of the class and can be used to store data that is common to all objects created from the class.
+### Créer une Variable de Classe
+
+Pour créer une variable de classe en Python, vous la déclarez simplement à l'intérieur de la classe mais à l'extérieur de toute méthode. Les variables de classe sont partagées parmi toutes les instances de la classe et peuvent être utilisées pour stocker des données communes à tous les objets créés à partir de la classe.
 
 ```python
 class Team:
@@ -23,11 +23,11 @@ class Team:
     team_name = "Python Developers"
 ```
 
-In this example, we create a class variable `team_name` to store the name of the team.
+Dans cet exemple, nous créons une variable de classe `team_name` pour stocker le nom de l'équipe.
 
-### Accessing a Class Variable in Python
+### Accéder à une Variable de Classe en Python
 
-To access a class variable, you can use the class name followed by the variable name, separated by a dot. This allows you to retrieve the shared data that applies to all instances of the class.
+Pour accéder à une variable de classe, vous pouvez utiliser le nom de la classe suivi du nom de la variable, séparés par un point. Cela vous permet de récupérer les données partagées qui s'appliquent à toutes les instances de la classe.
 
 ```python3
 class Team:
@@ -37,11 +37,11 @@ class Team:
 print("Team Name:", Team.team_name)  # Output: Team Name: Python Developers
 ```
 
-In this example, `the team_name` class variable is accessed using the class name, `Team.team_name`.
+Dans cet exemple, la variable de classe the `team_name` est accédée en utilisant le nom de la classe, `Team.team_name`.
 
-### Modifying a Value of a Class Variable
+### Modifier la Valeur d'une Variable de Classe
 
-Modifying the value of a class variable is straightforward. You use the class name to reference the variable and assign a new value to it.
+Modifier la valeur d'une variable de classe est simple. Vous utilisez le nom de la classe pour référencer la variable et lui assigner une nouvelle valeur.
 
 ```python3
 class Team:
@@ -54,15 +54,15 @@ Team.team_name = "Advanced Python Developers"
 print("Team Name:", Team.team_name)  # Output: Team Name: Advanced Python Developers
 ```
 
-In this example, we modified the value of the `team_name` class variable by assigning a new value to it using the class name. The updated value is then accessed through the class name as well.
+Dans cet exemple, nous avons modifié la valeur de la variable de classe `team_name` en lui assignant une nouvelle valeur en utilisant le nom de la classe. La valeur mise à jour est ensuite accédée également par le nom de la classe.
 
-## Python Instance Variables
+## Variables d'Instance Python
 
-In Python, instance variables are unique to each instance of a class. They are defined within the methods of a class and are specific to the object they belong to. Let's explore how to create and assign values to instance variables.
+En Python, les variables d'instance sont uniques à chaque instance d'une classe. Elles sont définies à l'intérieur des méthodes d'une classe et sont spécifiques à l'objet auquel elles appartiennent. Explorons comment créer et assigner des valeurs aux variables d'instance.
 
-### Creating an Instance Variable
+### Créer une Variable d'Instance
 
-To create an instance variable in Python, you can define it within the constructor method `__init__`. The constructor is a special method that gets called when an object of the class is created. Inside the constructor, you can initialize instance variables for the object.
+Pour créer une variable d'instance en Python, vous pouvez la définir à l'intérieur de la méthode constructeur `__init__`. Le constructeur est une méthode spéciale qui est appelée lorsqu'un objet de la classe est créé. À l'intérieur du constructeur, vous pouvez initialiser les variables d'instance pour l'objet.
 
 ```python
 class Person:
@@ -75,11 +75,11 @@ class Person:
 person = Person("Alice", 30)
 ```
 
-In this example, we define two instance variables, name and `age`, within the `__init__` method of the `Person` class. These variables are unique to each `person` object created from the class.
+Dans cet exemple, nous définissons deux variables d'instance, name et `age`, au sein de la méthode `__init__` de la classe `Person`. Ces variables sont uniques à chaque objet `person` créé à partir de la classe.
 
-### Assigning Values to an Instance Variable
+### Attribuer des Valeaux à une Variable d'Instance
 
-You can assign values to instance variables during the object's creation by passing arguments to the constructor. Additionally, you can modify or update the values of instance variables at any time after the object is created.
+Vous pouvez attribuer des valeurs aux variables d'instance lors de la création de l'objet en passant des arguments au constructeur. De plus, vous pouvez modifier ou mettre à jour les valeurs des variables d'instance à tout moment après que l'objet soit créé.
 
 ```python
 class Person:
@@ -95,17 +95,17 @@ person.name = "Bob"
 person.age = 35
 ```
 
-In this example, we first create a `person` object with initial values for `name` and `age`. Later, we modify the values of these instance variables by directly assigning new values to them.
+Dans cet exemple, nous créons d'abord un objet `person` avec des valeurs initiales pour `name` et `age`. Plus tard, nous modifions les valeurs de ces variables d'instance en leur attribuant directement de nouvelles valeurs.
 
-Instance variables are an essential part of object-oriented programming, as they allow objects to have their own data and state. These variables can store information specific to each object, making it easy to work with different instances of the same class.
+Les variables d'instance constituent une partie essentielle de la programmation orientée objet, car elles permettent aux objets d'avoir leurs propres données et état. Ces variables peuvent stocker des informations spécifiques à chaque objet, ce qui facilite le travail avec différentes instances de la même classe.
 
-## Python Class Attributes and Properties
+## Attributs et Propriétés de Classe en Python
 
-In Python, class attributes and properties work similarly to variables, but they offer more functionality and control. Let's delve into how to define and utilize class attributes and properties.
+En Python, les attributs et propriétés de classe fonctionnent de manière similaire aux variables, mais ils offrent plus de fonctionnalités et de contrôle. Examinons comment définir et utiliser les attributs et propriétés de classe.
 
-### Defining Class Attributes
+### Définir les Attributs de Classe
 
-Class attributes are shared among all instances of a class. They are declared within the class but outside of any methods. Class attributes can be accessed using the class name, and they are particularly useful for storing data common to all objects created from the class.
+Les attributs de classe sont partagés entre toutes les instances d'une classe. Ils sont déclarés au sein de la classe mais en dehors de toute méthode. Les attributs de classe peuvent être accédés en utilisant le nom de la classe, et ils sont particulièrement utiles pour stocker des données communes à tous les objets créés à partir de la classe.
 
 ```python
 class Animal:
@@ -113,11 +113,11 @@ class Animal:
     kingdom = "Animalia"
 ```
 
-In this example, we define a class attribute `kingdom` to store the kingdom classification for all animals. Class attributes are accessed using the class name, such as `Animal.kingdom`.
+Dans cet exemple, nous définissons un attribut de classe `kingdom` pour stocker la classification du règne pour tous les animaux. Les attributs de classe sont accessibles en utilisant le nom de la classe, tel que `Animal.kingdom`.
 
-### Using Properties
+### Utilisation des Propriétés
 
-Properties in Python are special methods that act like attributes. They are created using the `@property` decorator to define a method as an attribute, providing additional functionality like getters, setters, and deleters.
+Les propriétés en Python sont des méthodes spéciales qui agissent comme des attributs. Elles sont créées en utilisant le décorateur `@property` pour définir une méthode comme un attribut, offrant des fonctionnalités supplémentaires telles que les getters, les setters et les deleters.
 
 ```python3
 class Circle:
@@ -142,17 +142,17 @@ circle.radius = 7
 print("Modified Radius:", circle.radius)  # Output: Modified Radius: 7
 ```
 
-In this example, we use properties to control access to the `radius` attribute. The `@property` decorator defines a getter method, while `@radius.setter` defines a setter method.
+Dans cet exemple, nous utilisons des propriétés pour contrôler l'accès à l'attribut `radius`. Le décorateur `@property` définit une méthode getter, tandis que `@radius.setter` définit une méthode setter.
 
-Python class attributes and properties offer powerful ways to enhance the behavior of your classes and objects. They enable you to encapsulate data and provide controlled access to attributes, making your code more robust and maintainable.
+Les attributs et propriétés de classe Python offrent des moyens puissants pour améliorer le comportement de vos classes et objets. Ils vous permettent d'encapsuler des données et de fournir un accès contrôlé aux attributs, rendant votre code plus robuste et maintenable.
 
-## Private Variables in Python Classes
+## Variables Privées dans les Classes Python
 
-In Python, private variables are attributes or properties that are intended to be used only within the class and should not be accessed or modified from outside the class. They are denoted by adding a double underscore `__` before the variable or property name.
+En Python, les variables privées sont des attributs ou des propriétés qui sont destinés à être utilisés uniquement à l'intérieur de la classe et ne devraient pas être accédés ou modifiés de l'extérieur de la classe. Elles sont indiquées en ajoutant un double trait de soulignement `__` avant le nom de la variable ou de la propriété.
 
-### Defining Private Variables
+### Définir des Variables Privées
 
-To define a private variable in Python, you can use the double underscore prefix `__` before the variable name. This indicates that the variable should not be accessed or modified from outside the class.
+Pour définir une variable privée en Python, vous pouvez utiliser le préfixe à double trait de soulignement `__` avant le nom de la variable. Cela indique que la variable ne devrait pas être accédée ou modifiée de l'extérieur de la classe.
 
 ```python
 class MyClass:
@@ -164,11 +164,11 @@ class MyClass:
 obj1 = MyClass(5, 10)
 ```
 
-In this example, we define a private variable `__private_value` within the `MyClass` class. It's intended to be used only within the class.
+Dans cet exemple, nous définissons une variable privée `__private_value` au sein de la classe `MyClass`. Elle est destinée à être utilisée uniquement à l'intérieur de la classe.
 
-### Accessing Private Variables
+### Accéder aux Variables Privées
 
-Private variables can only be accessed from within the class itself. Attempting to access them from outside the class will result in an AttributeError. However, you can still access them using class methods or properties.
+Les variables privées ne peuvent être accessibles qu'à partir de l'intérieur de la classe elle-même. Tenter d'y accéder depuis l'extérieur de la classe entraînera une AttributeError. Cependant, vous pouvez toujours y accéder en utilisant des méthodes de classe ou des propriétés.
 
 ```python
 class MyClass:
@@ -186,27 +186,27 @@ obj1 = MyClass(5, 10)
 private_value = obj1.get_private_value()
 ```
 
-In this example, we create a method `get_private_value` within the class to access the private variable `__private_value`.
+Dans cet exemple, nous créons une méthode `get_private_value` dans la classe pour accéder à la variable privée `__private_value`.
 
-Private variables are valuable for encapsulating data and ensuring that it is not unintentionally modified from external code. They help maintain the integrity of your class and its data.
+Les variables privées sont utiles pour encapsuler des données et s'assurer qu'elles ne soient pas modifiées accidentellement par du code externe. Elles aident à maintenir l'intégrité de votre classe et de ses données.
 
-## Python Global Variables
+## Variables globales Python
 
-In Python, global variables are variables that can be accessed from any part of the program, whether it's inside a function, class, or any other scope. Global variables are defined outside of any function or class, making them accessible everywhere.
+En Python, les variables globales sont des variables qui peuvent être accédées de n'importe quelle partie du programme, que ce soit à l'intérieur d'une fonction, d'une classe, ou de tout autre portée. Les variables globales sont définies en dehors de toute fonction ou classe, ce qui les rend accessibles partout.
 
-### Defining Global Variables
+### Définir des Variables Globales
 
-To define a global variable in Python, you simply declare it outside of any function or class. This allows the variable to be accessed and modified from anywhere in the code.
+Pour définir une variable globale en Python, vous la déclarez simplement en dehors de toute fonction ou classe. Cela permet à la variable d'être accédée et modifiée de n'importe où dans le code.
 
 ```python
 global_var = 10
 ```
 
-In this example, we define a global variable `global_var` with the value `10`. This variable can be accessed and modified from anywhere in the program.
+Dans cet exemple, nous définissons une variable globale `global_var` avec la valeur `10`. Cette variable peut être accédée et modifiée de n'importe où dans le programme.
 
-### Using Global Variables
+### Utilisation des Variables Globales
 
-Global variables can be used within functions, classes, or any other scope without the need for special declarations. You can access and modify global variables directly from within these scopes.
+Les variables globales peuvent être utilisées dans les fonctions, les classes ou tout autre portée sans nécessité de déclarations spéciales. Vous pouvez accéder et modifier directement les variables globales depuis ces portées.
 
 ```python3
 global_var = 10
@@ -222,11 +222,11 @@ obj = MyClass()
 print(obj.instance_var)  # Output: 10
 ```
 
-In this example, the global variable `global_var` is accessed and assigned to an instance variable within the `MyClass` class.
+Dans cet exemple, la variable globale `global_var` est accédée et assignée à une variable d'instance au sein de la classe `MyClass`.
 
-### Modifying Global Variables
+### Modifier les Variables Globales
 
-Modifying the value of a global variable is straightforward. You can access and update its value from any part of the program.
+Modifier la valeur d'une variable globale est simple. Vous pouvez accéder à sa valeur et la mettre à jour depuis n'importe quelle partie du programme.
 
 ```python3
 global_var = 10
@@ -242,17 +242,17 @@ modify_global_variable()
 print(global_var)  # Output: 20
 ```
 
-In this example, we create a function `modify_global_variable` that uses the `global` keyword to modify the value of the global variable `global_var`. This change is reflected when accessing the variable outside the function.
+Dans cet exemple, nous créons une fonction `modify_global_variable` qui utilise le mot-clé `global` pour modifier la valeur de la variable globale `global_var`. Ce changement se reflète lorsque l'on accède à la variable à l'extérieur de la fonction.
 
-Python global variables are useful for sharing data that needs to be accessed across different parts of your program. However, it's essential to use them judiciously, as excessive use of global variables can make code harder to maintain and understand.
+Les variables globales Python sont utiles pour partager des données qui doivent être accessibles dans différentes parties de votre programme. Cependant, il est essentiel de les utiliser avec discernement, car l'utilisation excessive de variables globales peut rendre le code plus difficile à maintenir et à comprendre.
 
-## Checking if a Class Has an Attribute
+## Vérification de l'existence d'un attribut dans une classe
 
-In Python, you can check if a class has a specific attribute using the built-in function `hasattr()`. This function allows you to determine whether a class has a particular attribute, making it a valuable tool for dynamic attribute checking.
+En Python, vous pouvez vérifier si une classe possède un attribut spécifique en utilisant la fonction intégrée `hasattr()`. Cette fonction vous permet de déterminer si une classe a un attribut particulier, ce qui en fait un outil précieux pour la vérification dynamique d'attributs.
 
-### Using `hasattr()`
+### Utiliser `hasattr()`
 
-To use `hasattr()`, provide the object (in this case, the class or an instance of the class) and the attribute name as arguments. The function returns a Boolean value, indicating whether the attribute exists in the class.
+Pour utiliser `hasattr()`, fournissez l'objet (dans ce cas, la classe ou une instance de la classe) et le nom de l'attribut comme arguments. La fonction retourne une valeur booléenne, indiquant si l'attribut existe dans la classe.
 
 ```python3
 class MyClass:
@@ -267,11 +267,11 @@ else:
     print('Object does not have var attribute')
 ```
 
-In this example, we define a class `MyClass` with an attribute `var`. Using `hasattr()`, we check whether the `obj` instance has the `var` attribute.
+Dans cet exemple, nous définissons une classe `MyClass` avec un attribut `var`. En utilisant `hasattr()`, nous vérifions si l'instance `obj` possède l'attribut `var`.
 
-### Handling Attribute Existence
+### Gestion de l'existence des attributs
 
-`hasattr()` helps you write more robust code by allowing you to check the existence of attributes before accessing or modifying them. This can prevent unexpected errors in your program.
+`hasattr()` vous aide à écrire du code plus robuste en vous permettant de vérifier l'existence des attributs avant d'y accéder ou de les modifier. Cela peut prévenir des erreurs inattendues dans votre programme.
 
 ```python
 class MyClass:
@@ -288,17 +288,17 @@ else:
     print('Object does not have var attribute')
 ```
 
-In this extended example, if `hasattr()` confirms that the `var` attribute exists, we use `getattr()` to access the attribute's value safely.
+Dans cet exemple approfondi, si `hasattr()` confirme que l'attribut `var` existe, nous utilisons `getattr()` pour accéder en toute sécurité à la valeur de l'attribut.
 
-Using `hasattr()` can enhance the reliability of your code and improve error handling when working with dynamic attributes in Python classes. It's a useful technique for attribute validation.
+Utiliser `hasattr()` peut améliorer la fiabilité de votre code et améliorer la gestion des erreurs lors du travail avec des attributs dynamiques dans les classes Python. C'est une technique utile pour la validation d'attributs.
 
-## Printing and Retrieving Class Attributes in Python
+## Impression et Récupération des Attributs de Classe en Python
 
-In Python, you may want to list and access all attributes of a class. There's no built-in method for printing all attributes, but you can use a loop and the dir() function to achieve this. Let's explore how to print and retrieve class attributes.
+En Python, vous pouvez vouloir lister et accéder à tous les attributs d'une classe. Il n'y a pas de méthode intégrée pour imprimer tous les attributs, mais vous pouvez utiliser une boucle et la fonction dir() pour y parvenir. Explorons comment imprimer et récupérer les attributs de classe.
 
-### Using `dir()`
+### Utiliser `dir()`
 
-The `dir()` function in Python returns a list of all attributes of an object. While this includes internal attributes and methods, you can filter them out to obtain a list of class attributes.
+La fonction `dir()` en Python renvoie une liste de tous les attributs d'un objet. Bien que cela inclue les attributs et méthodes internes, vous pouvez les filtrer pour obtenir une liste des attributs de classe.
 
 ```python
 class MyClass:
@@ -316,13 +316,13 @@ for attr in attributes:
         print(f'{attr}: {value}')
 ```
 
-In this example, we use `dir(MyClass)` to obtain a list of all attributes. We then filter out internal attributes and print the names and values of class attributes.
+Dans cet exemple, nous utilisons `dir(MyClass)` pour obtenir une liste de tous les attributs. Nous filtrons ensuite les attributs internes et imprimons les noms et valeurs des attributs de classe.
 
-This technique allows you to get an overview of the attributes within a class.
+Cette technique vous permet d'obtenir un aperçu des attributs au sein d'une classe.
 
-### Using `vars()`
+### Utilisation de `vars()`
 
-While `vars()` is more commonly used to access instance variables, it can be applied to classes as well. It returns the `__dict__` attribute of an object, which contains the class attributes.
+Alors que `vars()` est plus communément utilisé pour accéder aux variables d'instance, il peut également être appliqué aux classes. Il retourne l'attribut `__dict__` d'un objet, qui contient les attributs de classe.
 
 ```python
 class MyClass:
@@ -337,28 +337,28 @@ for attr, value in class_attrs.items():
     print(f'{attr}: {value}')
 ```
 
-In this example, we use `vars(MyClass)` to retrieve the class attributes and print their names and values.
+Dans cet exemple, nous utilisons `vars(MyClass)` pour récupérer les attributs de la classe et imprimer leurs noms et valeurs.
 
-Both `dir()` and `vars()` provide methods to access and display class attributes, allowing you to better understand and work with your classes.
+Les méthodes `dir()` et `vars()` fournissent des moyens d'accéder et d'afficher les attributs des classes, vous permettant de mieux comprendre et travailler avec vos classes.
 
-## Class Private Variables
+## Variables Privées de Classe
 
-In Python, class private variables are variables that are intended to be used only within the class and should not be accessed or modified from outside the class. These variables are denoted with a double underscore prefix `__`. Let's explore how to create and work with class private variables.
+En Python, les variables privées de classe sont des variables qui sont destinées à être utilisées uniquement à l'intérieur de la classe et ne devraient pas être accédées ou modifiées depuis l'extérieur de la classe. Ces variables sont indiquées par un double underscore `__` en préfixe. Explorons comment créer et travailler avec des variables privées de classe.
 
-### Creating Class Private Variables
+### Créer des Variables Privées de Classe
 
-To create a class private variable in Python, add a double underscore `__` before the variable name within the class. This convention signifies that the variable should not be accessed directly from outside the class.
+Pour créer une variable privée de classe en Python, ajoutez un double underscore `__` avant le nom de la variable à l'intérieur de la classe. Cette convention signifie que la variable ne devrait pas être accédée directement depuis l'extérieur de la classe.
 
 ```python
 class MyClass:
     __private_var = 10
 ```
 
-In this example, we create a class private variable `__private_var`.
+Dans cet exemple, nous créons une variable privée de classe `__private_var`.
 
-### Accessing Class Private Variables
+### Accéder aux Variables Privées de Classe
 
-Attempting to access a class private variable from outside the class will result in an AttributeError. Private variables are intended to be used only within the class to encapsulate data.
+Tenter d'accéder à une variable privée de classe depuis l'extérieur de la classe entraînera une AttributeError. Les variables privées sont destinées à être utilisées uniquement au sein de la classe pour encapsuler des données.
 
 ```python3
 class MyClass:
@@ -373,11 +373,11 @@ obj = MyClass()
 print(obj.get_private_var())  # Output: 10
 ```
 
-In this example, we define a method `get_private_var` within the class to access the private variable `__private_var`.
+Dans cet exemple, nous définissons une méthode `get_private_var` au sein de la classe pour accéder à la variable privée `__private_var`.
 
-### The Role of Class Private Variables
+### Le Rôle des Variables Privées de Classe
 
-Private variables play a crucial role in encapsulating data and maintaining the integrity of a class's internal state. They prevent external code from unintentionally modifying or accessing sensitive data within the class.
+Les variables privées jouent un rôle crucial dans l'encapsulation des données et le maintien de l'intégrité de l'état interne d'une classe. Elles empêchent le code externe de modifier ou d'accéder accidentellement à des données sensibles au sein de la classe.
 
 ```python
 class BankAccount:
@@ -402,27 +402,27 @@ account = BankAccount("123456789", 1000)
 account.withdraw(500)
 ```
 
-In this example, the `BankAccount` class defines private variables `__account_number` and `__balance` to encapsulate sensitive account data. These private variables are accessed and modified using class methods like `withdraw`.
+Dans cet exemple, la classe `BankAccount` définit des variables privées `__account_number` et `__balance` pour encapsuler des données de compte sensibles. Ces variables privées sont accédées et modifiées à l'aide de méthodes de classe comme `withdraw`.
 
-Private variables are a fundamental aspect of data encapsulation and access control in object-oriented programming, ensuring that the integrity of a class's data is maintained.
+Les variables privées constituent un aspect fondamental de l'encapsulation des données et du contrôle d'accès dans la programmation orientée objet, garantissant que l'intégrité des données d'une classe est maintenue.
 
-## Python Class Global Variables
+## Variables Globales de Classe en Python
 
-In Python, class global variables are variables that are accessible from any part of the program. They are defined outside of any function or class, making them globally available. Let's explore how to create and work with class global variables.
+En Python, les variables globales de classe sont des variables accessibles de n'importe quelle partie du programme. Elles sont définies en dehors de toute fonction ou classe, les rendant globalement disponibles. Explorons comment créer et travailler avec des variables globales de classe.
 
-### Creating Class Global Variables
+### Création de Variables Globales de Classe
 
-To create a class global variable in Python, define the variable outside of any function or class. Global variables are available to all parts of your program.
+Pour créer une variable globale de classe en Python, définissez la variable en dehors de toute fonction ou classe. Les variables globales sont disponibles pour toutes les parties de votre programme.
 
 ```python
 global_var = 10
 ```
 
-In this example, we create a class global variable `global_var`.
+Dans cet exemple, nous créons une variable globale de classe `global_var`.
 
-### Accessing Class Global Variables
+### Accéder aux Variables Globales de Classe
 
-Class global variables can be accessed and used from any part of your program, including within classes and functions.
+Les variables globales de classe peuvent être accédées et utilisées de n'importe quelle partie de votre programme, y compris à l'intérieur des classes et des fonctions.
 
 ```python3
 global_var = 10
@@ -437,11 +437,11 @@ obj = MyClass()
 print(obj.instance_var)  # Output: 10
 ```
 
-In this example, we define a class global variable `global_var` and access it from within the `MyClass` class.
+Dans cet exemple, nous définissons une variable globale de classe `global_var` et y accédons depuis la classe `MyClass`.
 
-### The Role of Class Global Variables
+### Le rôle des variables globales de classe
 
-Class global variables provide a way to share data across different parts of your program. They are often used to store information that is relevant to the entire application.
+Les variables globales de classe fournissent un moyen de partager des données à travers différentes parties de votre programme. Elles sont souvent utilisées pour stocker des informations pertinentes pour l'ensemble de l'application.
 
 ```python3
 user_name = "John"
@@ -455,17 +455,17 @@ new_user = User(user_name)
 print(new_user.name)  # Output: John
 ```
 
-In this example, the class global variable `user_name` stores the name of a user and is accessible from within the `User` class.
+Dans cet exemple, la variable globale de classe `user_name` stocke le nom d'un utilisateur et est accessible depuis la classe `User`.
 
-Class global variables play a significant role in making data available across different parts of your program, allowing you to share information and maintain consistency throughout your codebase.
+Les variables globales de classe jouent un rôle significatif dans la mise à disposition des données à travers différentes parties de votre programme, vous permettant de partager des informations et de maintenir la cohérence dans l'ensemble de votre code.
 
-## Public, Protected, and Private Attributes and Properties in Python
+## Attributs et Propriétés Publics, Protégés et Privés en Python
 
-In Python, attributes and properties can have different levels of visibility and access control based on naming conventions. These levels include public, protected, and private.
+En Python, les attributs et propriétés peuvent avoir différents niveaux de visibilité et de contrôle d'accès basés sur des conventions de nommage. Ces niveaux comprennent public, protégé et privé.
 
-### Public Attributes and Properties
+### Attributs et Propriétés Publics
 
-Public attributes and properties have no name restrictions. They are accessible from anywhere in your code, both within and outside the class. By default, if an attribute or property does not have a name with a double underscore prefix, it is considered public.
+Les attributs et propriétés publics n'ont pas de restrictions de nom. Ils sont accessibles de partout dans votre code, tant à l'intérieur qu'à l'extérieur de la classe. Par défaut, si un attribut ou une propriété n'a pas de nom avec un préfixe double underscore, il est considéré comme public.
 
 ```python3
 class Person:
@@ -491,11 +491,11 @@ obj = MyClass(42)
 print(obj.value)  # Output: 42
 ```
 
-In the examples above, attributes like `name`, `radius`, and `value` are public and can be accessed from outside the classes.
+Dans les exemples ci-dessus, des attributs comme `name`, `radius` et `value` sont publics et peuvent être accédés de l'extérieur des classes.
 
-### Protected Attributes and Properties
+### Attributs et Propriétés Protégés
 
-In Python, attributes and properties can be marked as protected by prefixing their names with a single underscore. This is a naming convention that suggests that these attributes should not be accessed directly from outside the class, although they can still be accessed.
+En Python, les attributs et les propriétés peuvent être marqués comme protégés en préfixant leurs noms avec un seul trait de soulignement. Il s'agit d'une convention de nommage qui suggère que ces attributs ne devraient pas être accédés directement de l'extérieur de la classe, bien qu'ils puissent toujours l'être.
 
 ```python3
 class Employee:
@@ -512,11 +512,11 @@ print(employee._salary)  # Output: 50000
 print(employee._get_salary())  # Output: 50000
 ```
 
-In the `Employee` class, `_salary` is marked as a protected attribute. Although it's accessible, the single underscore indicates that it should not be accessed directly.
+Dans la classe `Employee`, `_salary` est marqué comme un attribut protégé. Bien qu'il soit accessible, le simple underscore indique qu'il ne devrait pas être accédé directement.
 
-### Private Attributes and Properties
+### Attributs et Propriétés Privés
 
-Attributes and properties can be made private in Python by prefixing their names with a double underscore. This naming convention implies that these attributes should not be accessed directly from outside the class. Attempting to do so will result in a name mangling transformation.
+Les attributs et propriétés peuvent être rendus privés en Python en préfixant leurs noms avec un double underscore. Cette convention de nommage implique que ces attributs ne devraient pas être accédés directement de l'extérieur de la classe. Tenter de le faire résultera en une transformation de mangling de nom.
 
 ```python3
 class BankAccount:
@@ -535,4 +535,4 @@ account = BankAccount("123456789", 1000)
 # print(account.__get_balance())
 ```
 
-In the `BankAccount` class, `__balance` is a private attribute, and `__get_balance` is a private method. Attempting to access them from outside the class results in an AttributeError.
+Dans la classe `BankAccount`, `__balance` est un attribut privé, et `__get_balance` est une méthode privée. Essayer d'y accéder depuis l'extérieur de la classe entraîne une AttributeError.

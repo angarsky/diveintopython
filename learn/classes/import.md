@@ -7,7 +7,7 @@ In Python, you can import a class from another file, providing a wealth of benef
 
 The import statement in Python allows us to use external modules and packages that provide additional functionality. Attributes in Python refer to the properties or values associated with an object that we can access and modify.
 
-### Importing Modules in Python Using The `Import` Command
+### Importing Modules in Python Using The `import` Command
 
 We can use the `import` statement in Python to import external modules and packages that provide additional functionality. For instance, to use the `math` module in Python, we can write:
 
@@ -37,7 +37,7 @@ Here, we define a class `Circle` that represents a circle with a given `radius`.
  
 > Note that we assign the value of the area to an attribute `area` of the object. Here, we create an instance `c` of the `Circle` class with `radius` `2`. We then access its attributes using the `.` notation. We print the values of the `radius` and `area` attributes, which are `2` and `12.57` (approx.), respectively. 
 
-## Importing a Single Class Using the `From` Statement
+## Importing a Single Class Using the `from` Statement
 
 Let's explore how to import a single class from another Python file using the `from` keyword.
 
