@@ -1,16 +1,16 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/object-instantiation
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/classes/object-instantiation
 
-Object instantiation is a fundamental concept in object-oriented programming that refers to the process of creating new objects from a class. This process involves using constructors, which are special methods that define how new objects are initialized. This article describes how to instantiate an object in Python and provides examples of how to create and use these objects in your code.  
-  
-## Exploring Python's Class Constructors  
+A instanciação de objeto é um conceito fundamental na programação orientada a objetos que se refere ao processo de criação de novos objetos a partir de uma classe. Esse processo envolve o uso de construtores, que são métodos especiais que definem como novos objetos são inicializados. Este artigo descreve como instanciar um objeto em Python e fornece exemplos de como criar e usar esses objetos em seu código.
 
-A class constructor in Python is a special method that is executed when an object of a class is instantiated. It is used to initialize the attributes of the class. The constructor method in Python is called `__init__()` and it is defined within the class.
+## Explorando os Construtores de Classe do Python
 
-### How to Instantiate a Python Class
+Um construtor de classe em Python é um método especial que é executado quando um objeto de uma classe é instanciado. Ele é usado para inicializar os atributos da classe. O método construtor em Python é chamado `__init__()` e é definido dentro da classe.
 
-Let's explore how to instantiate a class in Python. 
-In order to accomplish this, we must perform class instantiation in Python by creating an instance of the class that invokes its constructor method. Here's an example of a simple class and how to instantiate an object of that class.
+### Como Instanciar uma Classe Python
+
+Vamos explorar como instanciar uma classe em Python.
+Para realizar isso, devemos realizar a instanciação de classe em Python criando uma instância da classe que invoca seu método construtor. Aqui está um exemplo de uma classe simples e como instanciar um objeto dessa classe.
 
 ```python3
 class Recipe:
@@ -26,15 +26,15 @@ print("Recipe Name:", my_recipe.name)
 print("Ingredients:", my_recipe.ingredients)
 ```
 
-In the above example, the `Recipe` class has a constructor that sets the attributes `name` and `ingredients` for each new object that is instantiated. The `my_recipe` object is instantiated with the name "Spaghetti Bolognese" and a list of ingredients. The print statements will output `Recipe Name: Spaghetti Bolognese` and `Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']`.
+No exemplo acima, a classe `Recipe` possui um construtor que define os atributos `name` e `ingredients` para cada novo objeto que é instanciado. O objeto `my_recipe` é instanciado com o nome "Spaghetti Bolognese" e uma lista de ingredientes. As instruções de impressão vão gerar `Recipe Name: Spaghetti Bolognese` e `Ingredients: ['spaghetti', 'tomato sauce', 'ground beef']`.
 
-## Inheritance and Constructors in Python
+## Herança e Construtores em Python
 
-In Python, constructors play a crucial role in class inheritance, allowing child classes to inherit and extend attributes and behaviors from parent classes.
+Em Python, os construtores desempenham um papel crucial na herança de classes, permitindo que as classes filhas herdem e estendam atributos e comportamentos das classes pai.
 
-### Constructor Inheritance Basics
+### Básicos da Herança de Construtores
 
-Child classes inherit the constructor of their parent class, enabling them to reuse the initialization logic from the parent. For example:
+As classes filhas herdam o construtor de sua classe pai, permitindo-lhes reutilizar a lógica de inicialização do pai. Por exemplo:
 
 ```python
 class Vehicle:
@@ -48,11 +48,11 @@ class Car(Vehicle):
         self.year = year
 ```
 
-In this example, the Car class inherits from Vehicle and extends its attributes.
+Neste exemplo, a classe Car herda de Vehicle e estende seus atributos.
 
-### Constructor Overriding
+### Sobrescrita de Construtor
 
-Child classes can also override the parent class's constructor to customize initialization:
+Classes filhas também podem sobrescrever o construtor da classe pai para personalizar a inicialização:
 
 ```python
 class Bike(Vehicle):
@@ -61,15 +61,15 @@ class Bike(Vehicle):
         self.wheel_count = wheel_count
 ```
 
-### Abstract Base Classes
+### Classes Abstratas Básicas
 
-Abstract base classes allow you to enforce initialization patterns across a class hierarchy. Please refer to the [abstract classes page](/learn/classes/abstract_class.md) to read more.
+Classes abstratas básicas permitem que você imponha padrões de inicialização em uma hierarquia de classes. Consulte a [página de classes abstratas](/pt/learn/classes/abstract_class.md) para ler mais.
 
-## Delving into Python's Process of Instantiating Objects  
+## Mergulhando no Processo do Python de Instanciar Objetos
 
-Instantiating an object, in Python, means creating an instance of a class. When you create an instance of a class, you instantiate the object. In Python, the process of instantiating objects involves creating and initializing objects. 
+Instanciar um objeto, em Python, significa criar uma instância de uma classe. Quando você cria uma instância de uma classe, você instancia o objeto. No Python, o processo de instanciar objetos envolve criar e inicializar objetos.
 
-To instantiate a Python class, you need to use the constructor method, which is the `__init__()` method. The constructor method initializes the attributes or properties of an object. 
+Para instanciar uma classe Python, você precisa usar o método construtor, que é o método `__init__()`. O método construtor inicializa os atributos ou propriedades de um objeto.
 
 ```python3
 class Person:
@@ -82,7 +82,7 @@ print(person1.name)
 print(person1.age)
 ```
 
-In this example, we defined a class called `Person` with two attributes, `name` and `age`. We instantiated an object `person1` and passed two arguments to the constructor method. Finally, we printed the values of the name and age attributes. 
+Neste exemplo, definimos uma classe chamada `Person` com dois atributos, `name` e `age`. Instanciamos um objeto `person1` e passamos dois argumentos para o método construtor. Por fim, imprimimos os valores dos atributos nome e idade.
 
 ```python3
 class Employee:
@@ -100,15 +100,15 @@ print(employee1.get_fullname())
 print(employee1.salary)
 ```
 
-In this example, we defined a class called `Employee` with three attributes, `firstname`, `lastname` and `salary`. We instantiated an object `employee1` and passed three arguments to the constructor method. Finally, we printed the values of the firstname, get_fullname() and salary attributes. 
+Neste exemplo, definimos uma classe chamada `Employee` com três atributos, `firstname`, `lastname` e `salary`. Instanciamos um objeto `employee1` e passamos três argumentos para o método construtor. Finalmente, imprimimos os valores dos atributos firstname, get_fullname() e salary.
 
-In Python, instantiating objects is a powerful and flexible way to create objects with specific behaviors and attributes.  
-  
-## Initializing Objects Using the `__init__()` Method  
+No Python, instanciar objetos é uma forma poderosa e flexível de criar objetos com comportamentos e atributos específicos.
 
-The `__init__()` method is used in Python classes to initialize newly-created objects. It is automatically called when an object is created using the class constructor. 
+## Inicializando Objetos Usando o Método `__init__()`
 
-Here's an example of a class with an `__init__()` method:
+O método `__init__()` é usado em classes Python para inicializar objetos recém-criados. Ele é automaticamente chamado quando um objeto é criado usando o construtor da classe.
+
+Aqui está um exemplo de uma classe com um método `__init__()`:
 
 ```python3
 class Person:
@@ -122,9 +122,9 @@ print(p1.name)  ### Output Alice
 print(p1.age)  ### Output 25
 ```
 
-In this example, the `Person` class has an `init` method that takes two arguments: `name` and `age`. When you create a new `Person` object, you pass in values for these arguments, and the `__init__()` method sets the corresponding instance variables.
+Neste exemplo, a classe `Person` tem um método `init` que recebe dois argumentos: `name` e `age`. Quando você cria um novo objeto `Person`, você passa valores para esses argumentos, e o método `__init__()` define as variáveis de instância correspondentes.
 
-You can also have optional or default arguments in the `__init__()` method:
+Você também pode ter argumentos opcionais ou padrão no método `__init__()`:
 
 ```python3
 class Rectangle:
@@ -143,15 +143,15 @@ print(r2.width)  ### Output 10
 print(r2.height)  ### Output 20
 ```
 
-In this example, the `Rectangle` class has an `__init__()` method that takes two optional arguments: `width` and `height`. If no arguments are provided, the default values of `0` are used. 
-  
-## Customizing Python's Object Initialization  
+Neste exemplo, a classe `Rectangle` possui um método `__init__()` que aceita dois argumentos opcionais: `width` e `height`. Se nenhum argumento for fornecido, os valores padrão de `0` são usados.
 
-In Python, the `__init__()` method is called when an object of a class is created. It is used to initialize the attributes of the object. However, sometimes we may need to customize object initialization by specifying our own parameters. This can be achieved using the following methods:
+## Customizando a Inicialização de Objetos em Python
 
-### Creating Python Class without `__init__()`
+Em Python, o método `__init__()` é chamado quando um objeto de uma classe é criado. Ele é usado para inicializar os atributos do objeto. No entanto, às vezes, podemos precisar personalizar a inicialização do objeto especificando nossos próprios parâmetros. Isso pode ser alcançado usando os seguintes métodos:
 
-One way to customize object initialization is to define a custom method that initializes the attributes. This method can take parameters which are used to set the values of the attributes. Here is an example:
+### Criando Classe Python sem `__init__()`
+
+Uma maneira de personalizar a inicialização do objeto é definir um método personalizado que inicializa os atributos. Esse método pode receber parâmetros que são usados para definir os valores dos atributos. Aqui está um exemplo:
 
 ```python3
 class Car:
@@ -165,11 +165,11 @@ my_car.set_values('Toyota', 'Camry', 2022)
 print(my_car.make)  # Output: Toyota
 ```
 
-In this example, we defined a custom method `set_values()` to initialize the attributes `make`, `model`, and `year`. We then called this method on an object of the `Car` class to set the attribute values.
+Neste exemplo, definimos um método personalizado `set_values()` para inicializar os atributos `make`, `model` e `year`. Em seguida, chamamos este método em um objeto da classe `Car` para definir os valores dos atributos.
 
-### Creating Class with `__init__()`
+### Criando Classe com `__init__()`
 
-Another way to customize object initialization is to use class-level attributes. These attributes can be set in the class definition and used to initialize the attributes of the object. Here is an example:
+Outra forma de personalizar a inicialização do objeto é usar atributos de nível de classe. Esses atributos podem ser definidos na definição da classe e usados para inicializar os atributos do objeto. Aqui está um exemplo:
 
 ```python3
 class Car:
@@ -189,11 +189,11 @@ my_car.year = 2022
 print(my_car.make)  # Output: Toyota
 ```
 
-In this example, we defined `make`, `model`, and `year` as class-level attributes and set their default values to an empty string and `0`. We then used these attributes to initialize the object's attributes in the `__init__()` method. We can later modify the attribute values of the object as in the previous example.  
-  
-## Creating Python Class Object with Flexible Initializers  
+Neste exemplo, definimos `make`, `model` e `year` como atributos de nível de classe e definimos seus valores padrão para uma string vazia e `0`. Em seguida, usamos esses atributos para inicializar os atributos do objeto no método `__init__()`. Podemos mais tarde modificar os valores dos atributos do objeto como no exemplo anterior.
 
-Object-oriented programming allows us to create objects with different properties. We can initialize an object with fixed properties or flexible properties by passing different arguments to the constructor. In Python, we can use the `__init__()` method to initialize an object with flexible properties. 
+## Criando Objeto de Classe Python com Inicializadores Flexíveis
+
+A programação orientada a objetos nos permite criar objetos com diferentes propriedades. Podemos inicializar um objeto com propriedades fixas ou flexíveis, passando diferentes argumentos para o construtor. Em Python, podemos usar o método `__init__()` para inicializar um objeto com propriedades flexíveis.
 
 ```python3
 class Rectangle:
@@ -206,7 +206,7 @@ print(rect.width)   # Output: 5
 print(rect.height)  # Output: 10
 ```
 
-In the above example, we initialized the `Rectangle` object with fixed properties `width` and `height`. The object returned by the constructor will always have the same properties.
+No exemplo acima, inicializamos o objeto `Rectangle` com propriedades fixas `width` e `height`. O objeto retornado pelo construtor sempre terá as mesmas propriedades.
 
 ```python3
 class Circle:
@@ -221,11 +221,11 @@ print(circle.color)   # Output: red
 print(circle.border)  # Output: None
 ```
 
-In the above example, we initialized the `Circle` object with flexible properties `radius`, `color`, and `border`. We passed only one argument `radius` to the constructor, but we also specified default values for `color` and `border`. This allows us to create a `Circle` object with only one argument, or three arguments, or any number of arguments in between. 
+No exemplo acima, inicializamos o objeto `Circle` com propriedades flexíveis `radius`, `color` e `border`. Passamos apenas um argumento `radius` para o construtor, mas também especificamos valores padrão para `color` e `border`. Isso nos permite criar um objeto `Circle` com apenas um argumento, ou três argumentos, ou qualquer número de argumentos intermediário.
 
-## Object Creation using the `__new__()` Method  
+## Criação de Objetos usando o Método `__new__()`
 
-The `__new__()` method is used in Python to create objects dynamically. It allows the developer to create a class object using the class name, and then you can add attribute after init of python class. 
+O método `__new__()` é usado em Python para criar objetos dinamicamente. Ele permite que o desenvolvedor crie um objeto de classe usando o nome da classe, e então você pode adicionar atributo após a inicialização da classe python.
 
 ```python3
 class Person:
@@ -238,7 +238,7 @@ dave.age = 25
 print(dave.name)
 ```
 
-In the above example, we create a class called `Person` and then use the .new() method to create an object called `dave`. We then add the attributes `name` and `age` to this object after initialization. 
+No exemplo acima, criamos uma classe chamada `Person` e depois usamos o método .new() para criar um objeto chamado `dave`. Em seguida, adicionamos os atributos `name` e `age` a este objeto após a inicialização.
 
 ```python3
 class Car:
@@ -253,4 +253,4 @@ car.color = "red"
 print(car.color)
 ```
 
-In this example, we create a class called `Car` and define its attributes during initialization using `__init__()`. We then create an object called `car` using the `__new__()` method and initialize it with the model and make attributes. Finally, we add the attribute `color` to the `car` object after initialization.
+Neste exemplo, criamos uma classe chamada `Car` e definimos seus atributos durante a inicialização usando `__init__()`. Em seguida, criamos um objeto chamado `car` usando o método `__new__()` e o inicializamos com os atributos de modelo e marca. Finalmente, adicionamos o atributo `color` ao objeto `car` após a inicialização.

@@ -1,19 +1,19 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/date/time
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/date/time
 
-The Python time module is a powerful tool for working with time-related operations in Python. It provides functions for measuring time intervals, formatting and parsing time and date strings, and handling time zones. With the time module, you can easily work with time and date values, and perform a wide range of time-related operations in your Python code. Whether you need to measure the execution time of your code or work with date and time values, the Python's time module has got you covered.
+O módulo time do Python é uma ferramenta poderosa para trabalhar com operações relacionadas ao tempo em Python. Ele fornece funções para medir intervalos de tempo, formatação e análise de strings de data e hora, e manipulação de zonas de tempo. Com o módulo time, você pode facilmente trabalhar com valores de data e hora, e realizar uma ampla gama de operações relacionadas ao tempo em seu código Python. Se você precisa medir o tempo de execução do seu código ou trabalhar com valores de data e hora, o módulo time do Python te oferece cobertura.
 
-## Time Formats in Python
+## Formatos de Tempo em Python
 
-In Python, you can use the `strftime()` method from the `time` module to format time values according to various format codes. Here are some commonly used format codes for time formatting in Python:
+No Python, você pode usar o método `strftime()` do módulo `time` para formatar valores de tempo de acordo com vários códigos de formato. Aqui estão alguns códigos de formato comumente usados para formatação de tempo em Python:
 
-- **%H**: 2-digit hour in 24-hour format (00-23)
-- **%I**: 2-digit hour in 12-hour format (01-12)
-- **%M**: 2-digit minute (00-59)
-- **%S**: 2-digit second (00-59)
-- **%p**: AM/PM designation (AM or PM)
+- **%H**: Hora de 2 dígitos no formato de 24 horas (00-23)
+- **%I**: Hora de 2 dígitos no formato de 12 horas (01-12)
+- **%M**: Minuto de 2 dígitos (00-59)
+- **%S**: Segundo de 2 dígitos (00-59)
+- **%p**: Designação AM/PM (AM ou PM)
 
-You can combine these format codes with other characters to create the desired time format. Here is an example of how to get the formatted time in Python:
+Você pode combinar esses códigos de formato com outros caracteres para criar o formato de tempo desejado. Aqui está um exemplo de como obter o tempo formatado em Python:
 
 ```python3
 import time
@@ -34,11 +34,11 @@ print("Formatted Time (12-hour format):", formatted_time_am_pm)
 # Formatted Time (12-hour format): 12:34:56 PM
 ```
 
-## Python's `time.sleep()` Function
+## Função `time.sleep()` do Python
 
-The `time.sleep()` is a Python function that suspends the execution of the current thread for a specified number of seconds, so you can easily set your own waiting time.
+A `time.sleep()` é uma função do Python que suspende a execução do thread atual por um número especificado de segundos, assim você pode facilmente definir seu próprio tempo de espera.
 
-The syntax of `time.sleep()` for wait time or delay is the following:
+A sintaxe de `time.sleep()` para tempo de espera ou atraso é a seguinte:
 
 ```python
 import time
@@ -46,17 +46,17 @@ import time
 time.sleep(seconds)
 ```
 
-Where `seconds` is the number of seconds for which the thread should be suspended.
+Onde `seconds` é o número de segundos pelos quais a thread deve ser suspensa.
 
-The `sleep()` function accepts the sleep duration in seconds, not milliseconds. However, you can achieve a similar effect by dividing the desired time sleep duration in milliseconds by 1000 to convert it to seconds.
+A função `sleep()` aceita a duração do sono em segundos, não em milissegundos. No entanto, você pode alcançar um efeito semelhante dividindo o tempo desejado de duração do sono em milissegundos por 1000 para converter para segundos.
 
-Using `time.sleep()` function will help you to pause execution of the programm for the defined period of time. 
+Usar a função `time.sleep()` ajudará você a pausar a execução do programa pelo período de tempo definido.
 
-## `time.time()` Function in Python
+## Função `time.time()` em Python
 
-In Python, `time.time()` is a function that returns the current time in seconds since the Epoch (January 1, 1970, 00:00:00 UTC) as a floating-point number.
+Em Python, `time.time()` é uma função que retorna o horário atual em segundos desde a época (1 de janeiro de 1970, 00:00:00 UTC) como um número de ponto flutuante.
 
-Here's an example of how to use `time.time()` function for time measuring in Python:
+Aqui está um exemplo de como usar a função `time.time()` para medir o tempo em Python:
 
 ```python
 import time
@@ -72,9 +72,9 @@ elapsed_time = end_time - start_time
 print(f"The task took {elapsed_time:.2f} seconds to complete.")
 ```
 
-In this example, `start_time` and `end_time` are obtained by calling `time.time()` at the beginning and end of the time-consuming task, respectively. The difference between the two times gives the elapsed time, which is then printed out. The calculated running time is formatted as a string with two decimal places using f-strings.
+Neste exemplo, `start_time` e `end_time` são obtidos chamando `time.time()` no início e no fim da tarefa que consome tempo, respectivamente. A diferença entre os dois tempos dá o tempo decorrido, que é então impresso. O tempo de execução calculado é formatado como uma string com duas casas decimais usando f-strings.
 
-Here's also example of time computation for graph creation in Python using the `networkx` library:
+Aqui está também um exemplo de cálculo de tempo para criação de grafos em Python usando a biblioteca `networkx`:
 
 ```python
 import networkx as nx
@@ -93,11 +93,11 @@ time_taken = end_time - start_time
 print(f"Time taken to create the graph: {time_taken:.4f} seconds")
 ```
 
-So `time.time()` function can be used for counting time in Python.
+Portanto, a função `time.time()` pode ser usada para contar tempo em Python.
 
-## Time in Ms Measuring
+## Medindo Tempo em Ms
 
-If you want to measure time in milliseconds in Python, you can use the `time` module's `time()` function along with the `perf_counter()` function. Here's an example:
+Se você deseja medir o tempo em milissegundos em Python, você pode usar a função `time()` do módulo `time` juntamente com a função `perf_counter()`. Aqui está um exemplo:
 
 ```python3
 import time
@@ -116,35 +116,35 @@ execution_time_ms = int((end_time - start_time) * 1000)
 print("Execution Time in Milliseconds:", execution_time_ms)
 ```
 
-Output:
+Saída:
 
 ```python
 Current Time in Milliseconds: 1621842353154
 Execution Time in Milliseconds: 42
 ```
 
-In this example, `time.time()` is used to retrieve the current time as a floating-point number representing the number of seconds since the epoch. By multiplying it with 1000, we obtain the current time in milliseconds.
+Neste exemplo, `time.time()` é usado para recuperar o tempo atual como um número de ponto flutuante representando o número de segundos desde a época. Ao multiplicá-lo por 1000, obtemos o tempo atual em milissegundos.
 
-For measuring the execution time of a code block, we use `time.perf_counter()` to get the current high-resolution time in seconds. We capture the start time before the code block and the end time after the code block. By subtracting the start time from the end time, we obtain the elapsed time in seconds. Multiplying it by 1000 gives us the execution time in milliseconds.
+Para medir o tempo de execução de um bloco de código, usamos `time.perf_counter()` para obter o tempo de alta resolução atual em segundos. Capturamos o tempo de início antes do bloco de código e o tempo de término após o bloco de código. Subtraindo o tempo de início do tempo de término, obtemos o tempo decorrido em segundos. Multiplicando-o por 1000 nos dá o tempo de execução em milissegundos.
 
-## Python `timeit()` with Examples
+## Python `timeit()` com Exemplos
 
-Python's `timeit` module is a powerful tool for measuring the execution time of small code snippets. It provides a simple way to time the execution of code and compare the performance of different approaches. The `timeit` module can be particularly useful when you want to benchmark different implementations and determine which one is more efficient.
+O módulo `timeit` do Python é uma ferramenta poderosa para medir o tempo de execução de pequenos trechos de código. Ele oferece uma maneira simples de cronometrar a execução do código e comparar o desempenho de diferentes abordagens. O módulo `timeit` pode ser particularmente útil quando você quer comparar diferentes implementações e determinar qual delas é mais eficiente.
 
-### Python `timeit()` Parameters
+### Parâmetros do Python `timeit()`
 
-The `timeit` function in Python takes several parameters that allow you to customize its behavior:
+A função `timeit` em Python aceita vários parâmetros que permitem personalizar seu comportamento:
 
-- **stmt**: This is the statement you want to measure. It can be a string containing a single statement or multiple statements separated by semicolons.
-- **setup**: This parameter is optional and is used to set up the environment for the code to be measured. It can also be a string containing one or more statements.
-- **timer**: This parameter specifies the timer function to be used. If not specified, the default timer for the current platform will be used.
-- **number**: This parameter determines the number of executions of the code. The more executions, the more accurate the timing measurement.
+- **stmt**: Essa é a declaração que você deseja medir. Pode ser uma string contendo uma única declaração ou múltiplas declarações separadas por ponto e vírgula.
+- **setup**: Este parâmetro é opcional e é usado para configurar o ambiente para o código a ser medido. Também pode ser uma string contendo uma ou mais declarações.
+- **timer**: Este parâmetro especifica a função de temporização a ser usada. Se não especificado, o temporizador padrão para a plataforma atual será utilizado.
+- **number**: Esse parâmetro determina o número de execuções do código. Quanto mais execuções, mais precisa será a medida de tempo.
 
-### Timing Multiple Lines in Python Code
+### Cronometrando Múltiplas Linhas em Código Python
 
-You can use the `timeit` module to time multiple lines of Python code. Here are two examples using different approaches.
+Você pode usar o módulo `timeit` para cronometrar múltiplas linhas de código Python. Aqui estão dois exemplos usando abordagens diferentes.
 
-#### Example 1: **Using Semicolons**
+#### Exemplo 1: **Usando ponto e vírgula**
 
 ```python
 import timeit
@@ -163,7 +163,7 @@ execution_time = timeit.timeit(stmt=code_to_measure, number=10000)
 print(f"Execution time: {execution_time} seconds")
 ```
 
-#### Example 2: **Using Triple Quotes**
+#### Exemplo 2: **Usando Aspas Triplas**
 
 ```python
 import timeit
@@ -182,15 +182,15 @@ execution_time = timeit.timeit(stmt=code_to_measure, number=10000)
 print(f"Execution time: {execution_time} seconds")
 ```
 
-In both examples, we define a function (`square_numbers`) and then call it using the `timeit` module. The code to be measured is enclosed in triple quotes, allowing us to span multiple lines.
+Em ambos os exemplos, definimos uma função (`square_numbers`) e então a chamamos usando o módulo `timeit`. O código a ser medido é envolvido em aspas triplas, permitindo-nos abranger múltiplas linhas.
 
-### `timeit()` Methods
+### Métodos `timeit()`
 
-The timeit module provides different methods for measuring execution time. Here are some of them.
+O módulo timeit fornece diferentes métodos para medir o tempo de execução. Aqui estão alguns deles.
 
 #### `timeit.timeit()`
 
-The `timeit.timeit()` method is used to measure the execution time of a code snippet. It takes the code as a string, the number of executions, and an optional setup statement.
+O método `timeit.timeit()` é usado para medir o tempo de execução de um trecho de código. Ele recebe o código como uma string, o número de execuções e uma instrução de configuração opcional.
 
 ```python
 import timeit
@@ -203,7 +203,7 @@ print(f"Execution time: {execution_time} seconds")
 
 #### `timeit.repeat()`
 
-The `timeit.repeat()` method allows you to repeat the measurement multiple times and returns a list of execution times.
+O método `timeit.repeat()` permite que você repita a medição diversas vezes e retorna uma lista dos tempos de execução.
 
 ```python
 import timeit
@@ -214,11 +214,11 @@ execution_times = timeit.repeat(stmt=code_to_measure, number=10000, repeat=5)
 print(f"Execution times: {execution_times}")
 ```
 
-In this example, the code is executed 10,000 times, and the measurement is repeated 5 times.
+Neste exemplo, o código é executado 10.000 vezes, e a medição é repetida 5 vezes.
 
 #### `timeit.default_timer()`
 
-The `timeit.default_timer()` method returns the current time according to the highest-resolution clock available on the platform.
+O método `timeit.default_timer()` retorna o tempo atual de acordo com o relógio de maior resolução disponível na plataforma.
 
 ```python
 import timeit
@@ -234,11 +234,11 @@ execution_time = end_time - start_time
 print(f"Execution time: {execution_time} seconds")
 ```
 
-Using `timeit` methods, you can choose the one that best fits your measurement needs and easily compare the performance of different code implementations.
+Utilizando os métodos `timeit`, você pode escolher aquele que melhor se adapta às suas necessidades de medição e comparar facilmente o desempenho de diferentes implementações de código.
 
-## Getting Time in Milliseconds
+## Obtendo Tempo em Milissegundos
 
-To get the current time in milliseconds using Python, you can use the `time` module and its `time()` function, which returns the number of seconds since the Epoch (January 1, 1970, 00:00:00 UTC). You can then multiply this value by 1000 to get the time in milliseconds:
+Para obter o tempo atual em milissegundos usando Python, você pode usar o módulo `time` e sua função `time()`, que retorna o número de segundos desde a Época (1 de Janeiro de 1970, 00:00:00 UTC). Você pode então multiplicar esse valor por 1000 para obter o tempo em milissegundos:
 
 ```python
 import time
@@ -247,11 +247,11 @@ milliseconds = int(round(time.time() * 1000))
 print(milliseconds)
 ```
 
-This will print the current time in milliseconds. Note that the result is rounded to an integer using the `round()` function before converting it to an integer using `int()`. This is because `time.time()` returns a floating-point value with a high precision.
+Isso imprimirá o horário atual em milissegundos. Observe que o resultado é arredondado para um inteiro usando a função `round()` antes de convertê-lo em um inteiro usando `int()`. Isso porque `time.time()` retorna um valor de ponto flutuante com alta precisão.
 
-## A Python's Timer
+## Um Timer em Python
 
-To create a timer in Python, you can use the built-in `time` module. Here's an example code snippet that demonstrates how to create a timer:
+Para criar um timer em Python, você pode usar o módulo `time` incorporado. Aqui está um exemplo de trecho de código que demonstra como criar um timer:
 
 ```python3
 import time
@@ -272,16 +272,16 @@ t = 60
 countdown(t)
 ```
 
-This code will create a countdown timer for 60 seconds and print the remaining time on the screen every second until the timer is completed. You can adjust the value of t to set the desired length of the timer.
+Este código criará um temporizador regressivo de 60 segundos e imprimirá o tempo restante na tela a cada segundo até que o temporizador seja concluído. Você pode ajustar o valor de `t` para definir a duração desejada do temporizador.
 
-Using this functionality you can create a timer function to measure the elapsed time.
+Utilizando essa funcionalidade, você pode criar uma função de temporizador para medir o tempo decorrido.
 
-## Time Functions in Python
+## Funções de Tempo em Python
 
-In Python, the `time` module provides a range of functions for working with time. Here are some commonly used functions (apart from `time()` and `sleep()` which we've already mentioned):
+Em Python, o módulo `time` fornece uma gama de funções para trabalhar com tempo. Aqui estão algumas funções comumente usadas (à parte de `time()` e `sleep()`, que já mencionamos):
 
-- **ctime()** - This function takes a time in seconds and returns a string representation of that time in the format "Day Month Date Time Year".
-Example usage:
+- **ctime()** - Essa função recebe um tempo em segundos e retorna uma representação em string desse tempo no formato "Dia Mês Data Hora Ano".
+Exemplo de uso:
 
 ```python3
 import time
@@ -291,8 +291,8 @@ time_string = time.ctime(current_time)
 print("Current time: ", time_string)
 ```
 
-- **gmtime()** - This function takes a time in seconds and returns a struct_time object representing the UTC time.
-Example usage:
+- **gmtime()** - Esta função recebe um tempo em segundos e retorna um objeto struct_time representando o horário UTC.
+Exemplo de uso:
 
 ```python3
 import time
@@ -302,11 +302,11 @@ utc_time = time.gmtime(current_time)
 print("UTC time: ", utc_time)
 ```
 
-There are many more functions available in the Python's time module for working with time, including `localtime()`, `strftime()`, and `strptime()`.
+Existem muitas mais funções disponíveis no módulo time do Python para trabalhar com o tempo, incluindo `localtime()`, `strftime()` e `strptime()`.
 
-## The `perf_counter()` Function from the Time Module
+## A Função `perf_counter()` do Módulo Time
 
-In Python, the `perf_counter()` function from the `time` module is used to measure the elapsed time with the highest available resolution on the system. It provides a more precise timer compared to the regular `time()` function. Here's an example of how to use `perf_counter()`:
+No Python, a função `perf_counter()` do módulo `time` é usada para medir o tempo decorrido com a maior resolução disponível no sistema. Ela oferece um cronômetro mais preciso em comparação com a função `time()` regular. Aqui está um exemplo de como usar o `perf_counter()`:
 
 ```python
 import time
@@ -324,11 +324,11 @@ execution_time = end_time - start_time
 print(f"Execution time: {execution_time} seconds")
 ```
 
-By using `perf_counter()`, you can measure the execution time of a specific block of code with high precision. This function is commonly used for performance profiling and benchmarking purposes.
+Ao usar `perf_counter()`, você pode medir o tempo de execução de um bloco específico de código com alta precisão. Essa função é comumente usada para perfilamento de desempenho e fins de benchmarking.
 
-## The `monotonic()` Function of Time Module
+## A Função `monotonic()` do Módulo Time
 
-In Python, the `monotonic()` function from the `time` module is used to obtain a monotonic clock, which is a clock that continually increases and is unaffected by system time adjustments. It is suitable for measuring intervals and determining the elapsed time between events. Here's an example of how to use `monotonic()`:
+Em Python, a função `monotonic()` do módulo `time` é usada para obter um relógio monotônico, que é um relógio que aumenta continuamente e não é afetado por ajustes de tempo do sistema. É adequado para medir intervalos e determinar o tempo decorrido entre eventos. Aqui está um exemplo de como usar `monotonic()`:
 
 ```python
 import time
@@ -346,11 +346,11 @@ elapsed_time = end_time - start_time
 print(f"Elapsed time: {elapsed_time} seconds")
 ```
 
-Using `monotonic()` ensures that the elapsed time is calculated based on a monotonic clock, unaffected by system time changes, such as clock adjustments or time zone changes. It provides a reliable measure of elapsed time for performance measurements and benchmarking purposes.
+Usar `monotonic()` garante que o tempo decorrido seja calculado com base em um relógio monotônico, não afetado por alterações no horário do sistema, como ajustes de relógio ou mudanças de fuso horário. Ele fornece uma medida confiável de tempo decorrido para medições de desempenho e fins de benchmarking.
 
-## How to Stop a Program Execution After a Certain Period of Time
+## Como Parar a Execução de um Programa Após um Determinado Período de Tempo
 
-If you want to stop the execution of a Python program after a certain amount of time, you can use the `signal` module along with a timer. The `signal` module allows you to handle various signals, including a timer signal, to control the program's behavior. Here's an example that demonstrates how to stop the program after a specified duration:
+Se você deseja parar a execução de um programa Python após um determinado período de tempo, você pode usar o módulo `signal` juntamente com um temporizador. O módulo `signal` permite que você lide com vários sinais, incluindo um sinal de temporizador, para controlar o comportamento do programa. Aqui está um exemplo que demonstra como parar o programa após uma duração especificada:
 
 ```python3
 import signal
@@ -379,13 +379,13 @@ except TimeoutError:
     print("Program execution stopped after the specified duration")
 ```
 
-In this example, the program sets an alarm using `signal.alarm(duration)`, where duration is the desired duration in seconds. When the alarm is triggered after the specified duration, it raises a `TimeoutError` exception, which is caught by the try-except block. In the except block, you can handle the program termination or print a message to indicate that the program was stopped.
+Neste exemplo, o programa define um alarme usando `signal.alarm(duration)`, onde duração é a duração desejada em segundos. Quando o alarme é acionado após a duração especificada, ele gera uma exceção `TimeoutError`, que é capturada pelo bloco try-except. No bloco except, você pode tratar a terminação do programa ou imprimir uma mensagem para indicar que o programa foi interrompido.
 
-> Note: the signal module is not available on all platforms, and its behavior may vary. Additionally, this method may not be suitable for interrupting long-running or computationally intensive tasks. For more complex scenarios, you might need to consider multiprocessing or threading techniques to achieve the desired behavior.
+> Nota: o módulo signal não está disponível em todas as plataformas, e seu comportamento pode variar. Adicionalmente, esse método pode não ser adequado para interromper tarefas de longa duração ou intensivas em cálculo. Para cenários mais complexos, você pode precisar considerar técnicas de multiprocessing ou threading para alcançar o comportamento desejado.
 
-## How to Measure an Execution Time of a Function in Python
+## Como Medir um Tempo de Execução de uma Função em Python
 
-To time the execution of a specific function in Python, you can use the `time` module and a decorator. Here's an example of how you can time a function using a decorator:
+Para medir o tempo de execução de uma função específica em Python, você pode usar o módulo `time` e um decorador. Aqui está um exemplo de como você pode medir o tempo de uma função usando um decorador:
 
 ```python3
 import time
@@ -410,17 +410,17 @@ def my_function():
 my_function() # Output: Elapsed Time: 2.001987 seconds
 ```
 
-In this example, the `timer_decorator` function is a decorator that wraps the target function (`my_function`) with timing functionality. The decorator records the start time before invoking the function and the end time after the function completes. It calculates the elapsed time and prints it.
+Neste exemplo, a função `timer_decorator` é um decorador que envolve a função alvo (`my_function`) com funcionalidade de cronometragem. O decorador registra o horário de início antes de invocar a função e o horário de término após a conclusão da função. Ele calcula o tempo decorrido e o imprime.
 
-By applying the `@timer_decorator` decorator to the `my_function`, the function is automatically timed when called.
+Ao aplicar o decorador `@timer_decorator` à `my_function`, a função é automaticamente cronometrada quando chamada.
 
-You can use this decorator on any function you want to time by applying the `@timer_decorator` decorator above the function definition.
+Você pode usar esse decorador em qualquer função que deseja cronometrar aplicando o decorador `@timer_decorator` acima da definição da função.
 
-> Note: The example uses the `time.sleep(2)` function call to simulate a time-consuming operation. Replace it with the actual code or operation you want to time.
+> Nota: O exemplo utiliza a chamada da função `time.sleep(2)` para simular uma operação demorada. Substitua-a pelo código real ou operação que deseja cronometrar.
 
-## How to Get Current Time
+## Como Obter o Horário Atual
 
-If you want to know what time it is now, you can use the `time` module's `time()` function. Here is an example of getting current time in Python:
+Se você quer saber que horas são agora, pode usar a função `time()` do módulo `time`. Aqui está um exemplo de como obter o horário atual em Python:
 
 ```python
 import time
@@ -429,11 +429,11 @@ current_time = time.time()
 print("Current Time (in seconds since the epoch):", current_time)
 ```
 
-In this example, time.time() returns the current time as a floating-point number representing the number of seconds since the epoch. So this way we can get current Unix time in Python.
+Neste exemplo, `time.time()` retorna o tempo atual como um número de ponto flutuante representando o número de segundos desde a época. Dessa forma, podemos obter o tempo Unix atual em Python.
 
-## The `time.strftime()` Function
+## A Função `time.strftime()`
 
-The `strftime()` function in Python's `time` module is used to format a `time.struct_time` object or a time tuple into a string representation based on the specified format codes. Here's an example:
+A função `strftime()` no módulo `time` do Python é usada para formatar um objeto `time.struct_time` ou uma tupla de tempo em uma representação de string baseada nos códigos de formato especificados. Aqui está um exemplo:
 
 ```python
 import time
@@ -448,9 +448,9 @@ formatted_time = time.strftime("%Y-%m-%d %H:%M:%S", current_time)
 print("Formatted Time:", formatted_time) # Output: Formatted Time: 2023-05-22 12:34:56
 ```
 
-## Printing Time in Python
+## Imprimindo a Hora em Python
 
-To print the current time in Python, you can use the `time` module or the `datetime` module. Here is an example of using `time` module:
+Para imprimir a hora atual em Python, você pode usar o módulo `time` ou o módulo `datetime`. Aqui está um exemplo de uso do módulo `time`:
 
 ```python
 import time
@@ -461,9 +461,9 @@ formatted_time = time.strftime("%H:%M:%S", current_time)
 print("Current Time (using time module):", formatted_time)
 ```
 
-## How to Get Current Time
+## Como Obter a Hora Atual
 
-To retrieve the current time in Python, you can use either the `time` module or the `datetime` module. Here's how you can get the current time using `time` module:
+Para recuperar a hora atual em Python, você pode usar o módulo `time` ou o módulo `datetime`. Aqui está como você pode obter a hora atual usando o módulo `time`:
 
 ```python
 import time
@@ -472,7 +472,7 @@ current_time = time.localtime()
 print("Current Time (using time module):", time.strftime("%H:%M:%S", current_time))
 ```
 
-Here is also an example of how to get current time in milliseconds:
+Aqui está também um exemplo de como obter o horário atual em milissegundos:
 
 ```python
 import time
@@ -481,9 +481,9 @@ current_time_ms = int(time.time() * 1000)
 print("Current Time (in milliseconds using time module):", current_time_ms)
 ```
 
-## Generating a Timestamp in Python
+## Gerando um Timestamp em Python
 
-You can use the `time` module to generate a timestamp. Here is an example:
+Você pode usar o módulo `time` para gerar um timestamp. Aqui está um exemplo:
 
 ```python
 import time
