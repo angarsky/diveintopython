@@ -1,17 +1,17 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/operations-with-variables
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/operations-with-variables
 
-Python provides various operations and methods for working with data and performing various tasks. Let's review the most popular which relate to all variable types.
+Python oferece diversas operações e métodos para trabalhar com dados e realizar várias tarefas. Vamos revisar as mais populares que se relacionam a todos os tipos de variáveis.
 
-## Type Definition
+## Definição de Tipo
 
-There are several ways to check the type of a variable in Python. Let's see how to check a type of a variable in Python.
+Existem várias maneiras de verificar o tipo de uma variável em Python. Vamos ver como verificar o tipo de uma variável em Python.
 
-### Function `type()`
+### Função `type()`
 
-This built-in `type()` function returns the data type of a variable, it is the equivalent of `typeof` in other programming languages.
+Esta função integrada `type()` retorna o tipo de dados de uma variável, é o equivalente a `typeof` em outras linguagens de programação.
 
-Let's see how to print type of variable in Python:
+Vamos ver como imprimir o tipo de variável em Python:
 
 ```python3
 x = 23
@@ -27,13 +27,13 @@ w = True
 print(type(w))   # Output: <class 'bool'>
 ```
 
-In this example, the `type()` function is used to determine the type of variables `x`, `y`, `z`, and `w`. The output shows the class of the variable.
+Neste exemplo, a função `type()` é usada para determinar o tipo das variáveis `x`, `y`, `z` e `w`. A saída mostra a classe da variável.
 
-### Function `isinstance()`
+### Função `isinstance()`
 
-This built-in function checks whether a variable is an instance of a specified class or not. With this function we can easily check if a variable is `string` or not.
+Esta função integrada verifica se uma variável é uma instância de uma classe especificada ou não. Com essa função, podemos facilmente verificar se uma variável é `string` ou não.
 
-So here we are checking type of variable in Python:
+Então, aqui estamos verificando o tipo de variável em Python:
 
 ```python3
 x = 5
@@ -46,11 +46,11 @@ z = [1, 2, 3]
 print(isinstance(z, list))  # Output: True
 ```
 
-### Using the `__class__` Attribute
+### Usando o Atributo `__class__`
 
-This attribute returns the class of an object.
+Este atributo retorna a classe de um objeto.
 
-Example:
+Exemplo:
 
 ```python3
 x = 17
@@ -63,13 +63,13 @@ z = [1, 2, 3]
 print(z.__class__)  # Output: <class 'list'>
 ```
 
-This example shows how to print a type of a variable in Python.
+Este exemplo mostra como imprimir um tipo de uma variável em Python.
 
-### Using the `type()` Function with an `assert` Statement
+### Usando a Função `type()` com uma Declaração `assert`
 
-This is a way to check the type of a variable and raise an error if the type is not as expected.
+Esta é uma maneira de verificar o tipo de uma variável e gerar um erro se o tipo não for o esperado.
 
-Example:
+Exemplo:
 
 ```python
 x = 98
@@ -82,21 +82,21 @@ z = [1, 2, 3]
 assert type(z) == list
 ```
 
-These are ways how to get a type of a variable in Python, for example, you can check if a variable is a list (see the example above).
+Estas são maneiras de como obter um tipo de uma variável em Python, por exemplo, você pode verificar se uma variável é uma lista (veja o exemplo acima).
 
-## Deleting Variables
+## Deletando Variáveis
 
-### Using the `del` Statement
+### Usando a instrução `del`
 
-In Python, the `del` statement is used to delete a variable or an item from a list, dictionary or any other collection object. The syntax for using del is:
+Em Python, a instrução `del` é usada para deletar uma variável ou um item de uma lista, dicionário ou qualquer outro objeto de coleção. A sintaxe para usar del é:
 
 ```python
 del object
 ```
 
-Where `object` can be a variable, a list item, a dictionary item, or any other object.
+Onde `object` pode ser uma variável, um item de lista, um item de dicionário ou qualquer outro objeto.
 
-Here are a few examples:
+Aqui estão alguns exemplos:
 
 ```python
 # Delete a variable
@@ -112,30 +112,30 @@ my_dict = {'a': 1, 'b': 2, 'c': 3}
 del my_dict['b']
 ```
 
-In the first example, the variable `x` is deleted using the `del` statement. After the statement is executed, the variable `x` no longer exists.
+No primeiro exemplo, a variável `x` é deletada usando a instrução `del`. Após a execução da instrução, a variável `x` não existe mais.
 
-In the second example, the third item in the list `my_list` is deleted using del `my_list[2]`. After the statement is executed, `my_list` contains the items `[1, 2, 4, 5]`.
+No segundo exemplo, o terceiro item da lista `my_list` é deletado usando del `my_list[2]`. Após a execução da instrução, `my_list` contém os itens `[1, 2, 4, 5]`.
 
-In the third example, the item with key `'b'` is deleted from the dictionary `my_dict` using `del my_dict['b']`. After the statement is executed, `my_dict` contains the items `{'a': 1, 'c': 3}`.
+No terceiro exemplo, o item com chave `'b'` é deletado do dicionário `my_dict` usando `del my_dict['b']`. Após a execução da instrução, `my_dict` contém os itens `{'a': 1, 'c': 3}`.
 
-Note that `del` only deletes the reference to the object, not the object itself. If the object is still referenced elsewhere in the code, it will not be deleted from memory.
+Note que `del` apenas deleta a referência ao objeto, não o objeto em si. Se o objeto ainda estiver referenciado em outra parte do código, ele não será deletado da memória.
 
-### Assigning `None` to the Variable
+### Atribuindo `None` à Variável
 
-One more method to clear a variable is to assign the value `None` to a variable to indicate that it has no value. The `None` value is a built-in constant that represents the absence of a value. Here's an example:
+Mais um método para limpar uma variável é atribuir o valor `None` a uma variável para indicar que ela não possui valor. O valor `None` é uma constante embutida que representa a ausência de um valor. Aqui está um exemplo:
 
 ```python
 x = None
 print(x)  # Output: None
 ```
 
-In this example, we assign the value `None` to the variable `x`. When we print the value of `x`, we see that it outputs `None`.
+Neste exemplo, nós atribuímos o valor `None` à variável `x`. Quando imprimimos o valor de `x`, vemos que ele retorna `None`.
 
-### Using the `locals()` or `globals()` Functions
+### Usando as Funções `locals()` ou `globals()`
 
-You can use the `locals()` and `globals()` functions to access the local and global namespace, respectively. These functions return a dictionary that contains all the variables and their values in the current namespace. You can use these functions to remove variables from the namespace by using the `del` statement.
+Você pode usar as funções `locals()` e `globals()` para acessar respectivamente o namespace local e global. Essas funções retornam um dicionário que contém todas as variáveis e seus valores no namespace atual. Você pode usar essas funções para remover variáveis do namespace usando a instrução `del`.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python
 def my_function():
@@ -148,9 +148,9 @@ def my_function():
 my_function()
 ```
 
-In this example, we define a function `my_function()` that creates two variables `x` and `y`. We then use the del statement to remove the variable `y` from the local namespace by using `del locals()['y']`. After the statement is executed, `y` is no longer defined in the local namespace, so when we try to print its value, we get a `NameError`.
+Neste exemplo, definimos uma função `my_function()` que cria duas variáveis `x` e `y`. Em seguida, usamos a declaração del para remover a variável `y` do namespace local usando `del locals()['y']`. Após a declaração ser executada, `y` não está mais definida no namespace local, então, quando tentamos imprimir seu valor, obtemos um `NameError`.
 
-You can also use the `globals()` function to remove variables from the global namespace. Here's an example:
+Você também pode usar a função `globals()` para remover variáveis do namespace global. Aqui está um exemplo:
 
 ```python
 x = 5
@@ -165,9 +165,9 @@ print(x)  # This will raise a NameError
 print(y)  # Output: 10
 ```
 
-In this example, we define two variables `x` and `y` in the global namespace. We then define a function `my_function()` that uses `del globals()['x']` to remove the variable `x` from the global namespace. After the function is called, `x` is no longer defined in the global namespace, so when we try to print its value, we get a `NameError`. However, `y` is still defined in the global namespace, so we can print its value without any errors.
+Neste exemplo, definimos duas variáveis `x` e `y` no namespace global. Em seguida, definimos uma função `my_function()` que usa `del globals()['x']` para remover a variável `x` do namespace global. Após a função ser chamada, `x` não está mais definido no namespace global, então, quando tentamos imprimir seu valor, recebemos um `NameError`. No entanto, `y` ainda está definido no namespace global, então podemos imprimir seu valor sem quaisquer erros.
 
-In addition, you can clear all variables from the current namespace by using the `globals()` and `locals()` functions. Here's how you can do it:
+Além disso, você pode limpar todas as variáveis do namespace atual usando as funções `globals()` e `locals()`. Veja como você pode fazer isso:
 
 ```python
 # Clear all global variables
@@ -183,13 +183,13 @@ for var in locals().copy():
     del locals()[var]
 ```
 
-The above code will delete all variables from the global and local namespaces except for the built-in Python variables (which start with `__`). Keep in mind that this can be dangerous as it will delete all your variables and you won't be able to access them later in your program. So, make sure you use it with caution.
+O código acima deletará todas as variáveis dos espaços de nomes global e local, exceto pelas variáveis internas do Python (que começam com `__`). Tenha em mente que isso pode ser perigoso, pois irá deletar todas as suas variáveis e você não será capaz de acessá-las mais tarde em seu programa. Então, certifique-se de usá-lo com cautela.
 
-### Using the `__del__()` Method
+### Usando o Método `__del__()`
 
-The `__del__()` method is a special method that is called when an object is about to be destroyed or garbage collected. You can define this method in your class to perform any cleanup tasks that are required before the object is destroyed.
+O método `__del__()` é um método especial que é chamado quando um objeto está prestes a ser destruído ou coletado como lixo. Você pode definir esse método na sua classe para realizar quaisquer tarefas de limpeza necessárias antes que o objeto seja destruído.
 
-The `__del__()` method takes no arguments and has no return value. Here's an example:
+O método `__del__()` não recebe argumentos e não tem valor de retorno. Aqui está um exemplo:
 
 ```python
 class MyClass:
@@ -204,27 +204,27 @@ obj2 = MyClass("Object 2")
 del obj1
 ```
 
-In this example, we define a class `MyClass` with an `__init__()` method that initializes an instance variable name. We also define an `__del__()` method that prints a message when the object is deleted. We create two instances of the class `MyClass` and then delete one of them using the `del` statement.
+Neste exemplo, definimos uma classe `MyClass` com um método `__init__()` que inicializa uma variável de instância chamada name. Também definimos um método `__del__()` que imprime uma mensagem quando o objeto é deletado. Criamos duas instâncias da classe `MyClass` e então deletamos uma delas usando a instrução `del`.
 
-When we run this code, we get the following output:
+Quando executamos este código, obtemos a seguinte saída:
 
 ```python
 Object 1 has been deleted
 ```
 
-This output indicates that the `__del__()` method was called when the object `obj1` was deleted.
+Esta saída indica que o método `__del__()` foi chamado quando o objeto `obj1` foi deletado.
 
-Note that the `__del__()` method is not guaranteed to be called in all cases. For example, if the program terminates abruptly, the method may not be called. Therefore, it's generally not a good idea to rely on this method for critical cleanup tasks. Instead, it's better to use other cleanup mechanisms, such as `with` statements or context managers, where possible.
+Note que o método `__del__()` não é garantido ser chamado em todos os casos. Por exemplo, se o programa terminar abruptamente, o método pode não ser chamado. Portanto, geralmente não é uma boa ideia depender deste método para tarefas críticas de limpeza. Em vez disso, é melhor usar outros mecanismos de limpeza, como declarações `with` ou gerenciadores de contexto, quando possível.
 
-## Operations with Variables
+## Operações com Variáveis
 
-We have already covered the assignment of variables earlier. But let's also see what else we can do with variables.
+Já cobrimos a atribuição de variáveis anteriormente. Mas vamos ver o que mais podemos fazer com as variáveis.
 
-### Copying a variable
+### Copiando uma variável
 
-To copy variable in Python you can use assignment operator `=` or the `copy()` method. However, it is important to note that the behavior of these methods can be different depending on the type of the variable.
+Para copiar uma variável em Python, você pode usar o operador de atribuição `=` ou o método `copy()`. No entanto, é importante notar que o comportamento desses métodos pode ser diferente dependendo do tipo da variável.
 
-- Shallow copy: When you use the assignment operator to copy a list, dictionary, or other mutable objects, you create a shallow copy. This means that the new variable refers to the same object in memory as the original variable. Any changes made to the original variable will be reflected in the copy, and vice versa. For example:
+- Cópia rasa: Quando você usa o operador de atribuição para copiar uma lista, dicionário ou outros objetos mutáveis, você cria uma cópia rasa. Isso significa que a nova variável refere-se ao mesmo objeto na memória que a variável original. Quaisquer mudanças feitas na variável original serão refletidas na cópia, e vice-versa. Por exemplo:
 
 ```python3
 original_list = [1, 2, 3]
@@ -233,7 +233,7 @@ original_list[0] = 4
 print(copy_list)  # Output: [4, 2, 3]
 ```
 
-- Deep copy: If you want to create a new object in memory that is a copy of the original variable, you can use the `copy()` method. This creates a deep copy, which means that any changes made to the original variable will not be reflected in the copy, and vice versa. For example:
+- Cópia profunda: Se você quiser criar um novo objeto na memória que seja uma cópia da variável original, você pode usar o método `copy()`. Isso cria uma cópia profunda, o que significa que quaisquer alterações feitas na variável original não serão refletidas na cópia, e vice-versa. Por exemplo:
 
 ```python3
 import copy
@@ -244,13 +244,13 @@ original_list[0] = 4
 print(copy_list)  # Output: [1, 2, 3]
 ```
 
-It is important to use the appropriate method for copying variables in order to avoid unexpected behavior in your code.
+É importante usar o método apropriado para copiar variáveis a fim de evitar comportamentos inesperados no seu código.
 
-### Check if a Variable is Defined or not
+### Verificar se uma Variável está Definida ou não
 
-You can use the `in` operator to check if a variable has been defined or not.
+Você pode usar o operador `in` para verificar se uma variável foi definida ou não.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 if 'my_variable' in locals() or 'my_variable' in globals():
@@ -259,9 +259,9 @@ else:
     print('my_variable is not defined')
 ```
 
-This code checks if the variable `my_variable` is defined in either the local or global namespace. If it is defined, the code will print `'my_variable is defined'`, otherwise it will print `'my_variable is not defined'`.
+Este código verifica se a variável `my_variable` está definida no namespace local ou global. Se estiver definida, o código imprimirá `'my_variable is defined'`, caso contrário, imprimirá `'my_variable is not defined'`.
 
-Note that if the variable has been defined but has a value of `None`, this method will still consider it as defined. If you want to check specifically for a non-`None` value, you can modify the code like this:
+Observe que, se a variável foi definida mas tem um valor de `None`, este método ainda a considerará como definida. Se você quiser verificar especificamente por um valor não-`None`, você pode modificar o código assim:
 
 ```python3
 if 'my_variable' in locals() and locals()['my_variable'] is not None or 'my_variable' in globals() and globals()['my_variable'] is not None:
@@ -269,14 +269,14 @@ if 'my_variable' in locals() and locals()['my_variable'] is not None or 'my_vari
 else:
     print('my_variable is not defined or has a value of None')
 ```
- 
-This code checks both that the variable is defined and that it has a non-`None` value. If both conditions are met, it will print `'my_variable is defined and has a non-None value'`, otherwise it will print `'my_variable is not defined or has a value of None'`.
 
-### Check if a Variable is Empty
+Este código verifica tanto se a variável está definida quanto se ela possui um valor não-`None`. Se ambas as condições forem atendidas, ele imprimirá `'my_variable está definida e possui um valor não-None'`, caso contrário, ele imprimirá `'my_variable não está definida ou possui um valor None'`.
 
-In Python, there are several ways to check if a variable is empty:
+### Verificar se uma Variável está Vazia
 
-- Using the `if` statement with the variable name:
+Em Python, existem várias maneiras de verificar se uma variável está vazia:
+
+- Usando a instrução `if` com o nome da variável:
 
 ```python
 if my_variable:
@@ -287,9 +287,9 @@ else:
     pass
 ```
 
-If `my_variable` is empty or evaluates to `False`, the `else` block will be executed.
+Se `my_variable` estiver vazio ou avaliado como `False`, o bloco `else` será executado.
 
-- Using the `not` operator with the variable name:
+- Usando o operador `not` com o nome da variável:
 
 ```python
 if not my_variable:
@@ -300,9 +300,9 @@ else:
     pass
 ```
 
-If `my_variable` is empty or evaluates to `False`, the `if` block will be executed.
+Se `my_variable` estiver vazio ou resultar em `False`, o bloco `if` será executado.
 
-- Using the built-in `len()` function:
+- Usando a função integrada `len()`:
 
 ```python
 if len(my_variable) == 0:
@@ -313,9 +313,9 @@ else:
     pass
 ```
 
-If `my_variable` has a length of 0, it is considered empty.
+Se `my_variable` tem um comprimento de 0, é considerada vazia.
 
-- Using the `is` operator with `None`:
+- Usando o operador `is` com `None`:
 
 ```python
 if my_variable is None:
@@ -326,13 +326,13 @@ else:
     pass
 ```
 
-If `my_variable` is equal to `None`, it is considered empty. However, it's important to note that `None` is a specific value in Python and is not the same as an empty string, list, or other data types.
+Se `my_variable` for igual a `None`, ela é considerada vazia. No entanto, é importante ressaltar que `None` é um valor específico em Python e não é o mesmo que uma string vazia, lista ou outros tipos de dados.
 
-### Getting the Name of a Variable
+### Obtendo o Nome de uma Variável
 
-Variables are simply names that refer to objects in memory. In Python you can get the name of a variable using the `locals()` or `globals()` functions, depending on whether the variable is in the local or global namespace.
+Variáveis são simplesmente nomes que se referem a objetos na memória. Em Python, você pode obter o nome de uma variável usando as funções `locals()` ou `globals()`, dependendo se a variável está no namespace local ou global.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 x = 42
@@ -340,13 +340,13 @@ var_name = [k for k,v in locals().items() if v is x][0]
 print(var_name)
 ```
 
-This code assigns the value `42` to the variable `x`. Then it uses a list comprehension to iterate over all the items in the local namespace, and find the variable name that refers to the object with the value of `x`. Finally, it prints out that variable name, which in this case is `x`.
+Este código atribui o valor `42` à variável `x`. Em seguida, usa uma compreensão de lista para iterar sobre todos os itens no namespace local, e encontrar o nome da variável que se refere ao objeto com o valor de `x`. Finalmente, imprime o nome dessa variável, que neste caso é `x`.
 
-Note that this approach assumes that the variable has a unique value in the namespace, which may not always be the case. Also, it's generally not recommended to rely on variable names in your code logic, as it can make your code more brittle and harder to refactor.
+Note que essa abordagem pressupõe que a variável tenha um valor único no namespace, o que nem sempre pode ser o caso. Além disso, geralmente não é recomendado confiar em nomes de variáveis na lógica do seu código, pois isso pode tornar seu código mais frágil e difícil de refatorar.
 
-### Check if a Variable Exists
+### Verificar se uma Variável Existe
 
-You can check if a variable exists in Python by using the `in` keyword along with the `locals()` or `globals()` function. Here is an example:
+Você pode verificar se uma variável existe em Python usando a palavra-chave `in` junto com a função `locals()` ou `globals()`. Aqui está um exemplo:
 
 ```python3
 if 'my_variable' in locals():
@@ -356,9 +356,9 @@ if 'my_variable' in globals():
     print("my_variable exists in the global scope.")
 ```
 
-In the above example, we check if a variable named `my_variable` exists in either the local or global scope using the `in` keyword with the `locals()` or `globals()` function, respectively. If the variable exists, we print a message indicating that it exists in the specified scope.
+No exemplo acima, verificamos se uma variável chamada `my_variable` existe no escopo local ou global usando a palavra-chave `in` com a função `locals()` ou `globals()`, respectivamente. Se a variável existir, imprimimos uma mensagem indicando que ela existe no escopo especificado.
 
-Note that checking for the existence of a variable using the `in` keyword and `locals()` or `globals()` function will only work for variables that have already been defined in the program. If you are unsure if a variable has been defined or not, you can use a `try`-`except` block to catch a `NameError` exception that would be raised if the variable does not exist. Here is an example:
+Note que a verificação da existência de uma variável usando a palavra-chave `in` e a função `locals()` ou `globals()` só funcionará para variáveis que já foram definidas no programa. Se você não tem certeza se uma variável foi definida ou não, você pode usar um bloco `try`-`except` para capturar uma exceção de `NameError` que seria levantada se a variável não existir. Aqui está um exemplo:
 
 ```python3
 try:
@@ -368,4 +368,4 @@ except NameError:
     print("my_variable does not exist.")
 ```
 
-In this example, we try to access the `my_variable` variable, and if it does not exist, a `NameError` exception is raised. We catch the exception using the except block and print a message indicating that the variable does not exist.
+Neste exemplo, tentamos acessar a variável `my_variable`, e se ela não existir, uma exceção `NameError` é levantada. Capturamos a exceção usando o bloco except e imprimimos uma mensagem indicando que a variável não existe.

@@ -1,11 +1,11 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary/key-value-operations
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/dictionary/key-value-operations
 
-Quite often we face situations when we need to operate with keys or values of a dictionary. Fortunately, dictionaries offer a variety of operations for working with keys and values.
+Com bastante frequência, nos deparamos com situações quando precisamos operar com chaves ou valores de um dicionário. Felizmente, os dicionários oferecem uma variedade de operações para trabalhar com chaves e valores.
 
-## Getting Dictionary Keys
+## Obtendo Chaves do Dicionário
 
-To get dictionary keys in Python, you can use the `keys()` method. Here's an example of keyset getting:
+Para obter chaves do dicionário em Python, você pode usar o método `keys()`. Aqui está um exemplo de obtenção de conjunto de chaves:
 
 ```python3
 # Creating a dictionary
@@ -18,11 +18,11 @@ keys = my_dict.keys()
 print(keys) # Output: dict_keys(['name', 'age', 'city'])
 ```
 
-Note that `keys()` returns a view object, which is a dynamic view on the dictionary's keys. This means that if the dictionary is modified, the view object will reflect those changes. If you need to work with the keys as a list, you can convert the view object to a list.
+Observe que `keys()` retorna um objeto de visualização, que é uma visão dinâmica sobre as chaves do dicionário. Isso significa que se o dicionário for modificado, o objeto de visualização refletirá essas alterações. Se você precisar trabalhar com as chaves como uma lista, pode converter o objeto de visualização em uma lista.
 
-## Converting Dictionary Keys to List
+## Convertendo Chaves de Dicionário em Lista
 
-To convert dictionary keys to list in Python, you can use the `keys()` method and the `list()` function. Here's an example:
+Para converter chaves de dicionário em lista no Python, você pode usar o método `keys()` e a função `list()`. Aqui está um exemplo:
 
 ```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
@@ -30,11 +30,11 @@ keys_list = list(my_dict.keys())
 print(keys_list)  # Output: ['a', 'b', 'c']
 ```
 
-In the code above, `my_dict.keys()` returns a `dict_keys` object containing the keys of `my_dict`. The `list()` function is used to convert this object into a list, which is assigned to the variable `keys_list`. Finally, `keys_list` is printed to the console.
+No código acima, `my_dict.keys()` retorna um objeto `dict_keys` contendo as chaves de `my_dict`. A função `list()` é usada para converter este objeto em uma lista, que é atribuída à variável `keys_list`. Finalmente, `keys_list` é impresso no console.
 
-## Checking For the Key Presence
+## Verificando a Presença da Chave
 
-In Python, the `has_key()` method is not available for dictionaries. Instead, you can use the `in` operator to check if a dictionary has a key. Let's see how to check if key exists in dictionary in Python:
+Em Python, o método `has_key()` não está disponível para dicionários. Em vez disso, você pode usar o operador `in` para verificar se um dicionário possui uma chave. Vamos ver como verificar se a chave existe no dicionário em Python:
 
 ```python3
 # Creating a dictionary
@@ -52,20 +52,20 @@ else:
     print("The key 'country' is not present in the dictionary")
 ```
 
-This will output:
+Isso irá gerar:
 
 ```python
 The key 'name' is present in the dictionary
 The key 'country' is not present in the dictionary
 ```
 
-Note that the `in` operator checks if the key is present in the dictionary, not if the key's value is `None`. If you need to check for the presence of a key's value in a dictionary, you can use the `get()` method.
+Observe que o operador `in` verifica se a chave está presente no dicionário, não se o valor da chave é `None`. Se você precisar verificar a presença de um valor de chave em um dicionário, pode usar o método `get()`.
 
-## Deleting a Key from Dictionary
+## Deletando uma Chave de um Dicionário
 
-In Python, you can delete a key from a dictionary using the del statement or the pop() method.
+Em Python, você pode deletar uma chave de um dicionário usando a declaração del ou o método pop().
 
-Here is an example using the del statement to delete a key from a dictionary:
+Aqui está um exemplo usando a declaração del para deletar uma chave de um dicionário:
 
 ```python
 my_dict = {"a": 1, "b": 2, "c": 3}
@@ -75,9 +75,9 @@ del my_dict["b"]
 print(my_dict)  # Output: {"a": 1, "c": 3}
 ```
 
-In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `del` statement.
+No exemplo acima, a chave `"b"` é excluída do dicionário `my_dict` usando a instrução `del`.
 
-Here is an example using the `pop()` method to delete a key from a dictionary:
+Aqui está um exemplo usando o método `pop()` para excluir uma chave de um dicionário:
 
 ```python
 my_dict = {"a": 1, "b": 2, "c": 3}
@@ -87,13 +87,13 @@ my_dict.pop("b")
 print(my_dict)  # Output: {"a": 1, "c": 3}
 ```
 
-In the above example, the key `"b"` is deleted from the `my_dict` dictionary using the `pop()` method. The `pop()` method also returns the value associated with the deleted key, which can be useful if you need to perform some additional processing based on that value.
+No exemplo acima, a chave `"b"` é deletada do dicionário `my_dict` usando o método `pop()`. O método `pop()` também retorna o valor associado à chave deletada, o que pode ser útil se você precisar realizar algum processamento adicional baseado nesse valor.
 
-## Conversion of Dictionary Values to List
+## Conversão dos Valores do Dicionário em Lista
 
-You can use the `values()` method of a Python dictionary to get a list of its values.
+Você pode usar o método `values()` de um dicionário Python para obter uma lista dos seus valores.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
@@ -101,6 +101,6 @@ values_list = list(my_dict.values())
 print(values_list) # Output: [1, 2, 3]
 ```
 
-In the above code, we create a dictionary `my_dict` with three key-value pairs. We then call the `values()` method on the dictionary to get a view object of its values, and convert it into a list using the `list()` constructor. Finally, we print the resulting list of values.
+No código acima, criamos um dicionário `my_dict` com três pares chave-valor. Em seguida, chamamos o método `values()` no dicionário para obter um objeto de visualização de seus valores e convertê-lo em uma lista usando o construtor `list()`. Finalmente, imprimimos a lista resultante dos valores.
 
-> Note that the order of the values in the list is not guaranteed to be the same as the order of the keys in the dictionary, since dictionaries are unordered in Python.
+> Note que a ordem dos valores na lista não é garantida ser a mesma que a ordem das chaves no dicionário, já que dicionários são não ordenados em Python.

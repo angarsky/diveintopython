@@ -1,19 +1,19 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/read-from-file
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/string/read-from-file
 
-To read a file into a string in Python, you can use the built-in `open()` function to open the file and read its contents using the `read()` method. 
+Para ler um arquivo em uma string em Python, você pode usar a função integrada `open()` para abrir o arquivo e ler seu conteúdo usando o método `read()`.
 
-## Example of Code to Read a Text File
+## Exemplo de Código para Ler um Arquivo de Texto
 
 ```python
 with open('filename.txt', 'r') as file:
     data = file.read()
 ```
 
-In this example, replace `'filename.txt'` with the name of the file you want to read. The `'r'` argument specifies that the file should be opened in read mode.
+Neste exemplo, substitua `'filename.txt'` pelo nome do arquivo que você deseja ler. O argumento `'r'` especifica que o arquivo deve ser aberto no modo de leitura.
 
-The `with` statement is used to ensure that the file is closed automatically when the block inside the `with` statement is exited. This helps to prevent resource leaks.
+O comando `with` é usado para garantir que o arquivo seja fechado automaticamente quando o bloco dentro do comando `with` é finalizado. Isso ajuda a prevenir vazamentos de recursos.
 
-The contents of the file are then read into the `data` variable using the `read()` method.
+O conteúdo do arquivo é então lido para a variável `data` utilizando o método `read()`.
 
-You can then use the `data` variable as a string in your code.
+Você pode então usar a variável `data` como uma string em seu código.
