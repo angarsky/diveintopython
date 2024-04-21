@@ -38,7 +38,7 @@ print("Email Address Found:", match)
 
 ### Ejemplo: Validar Número de Teléfono
 
-```python
+```python3
 import re
 
 def validate_phone_number(number):
@@ -61,7 +61,7 @@ Explorar las capacidades de las expresiones regulares en Python abre una nueva d
 
 En este ejemplo, usamos `regex` para encontrar ocurrencias de una palabra específica en un texto, demostrando el uso del límite de palabra regex de Python.
 
-```python
+```python3
 import re
 
 text = "Python is powerful. Python is easy to learn."
@@ -75,7 +75,7 @@ print("Occurrences of 'Python':", len(matches))
 
 Aquí, validamos una dirección de `email` utilizando una expresión regular, mostrando la versatilidad de regex en Python.
 
-```python
+```python3
 import re
 
 def validate_email(email):
@@ -101,7 +101,7 @@ Aquí hay dos ejemplos que demuestran el uso de `re.match()` y `re.search()` en 
 
 ### Ejemplo: Usando `re.match()`
 
-```python
+```python3
 import re
 
 pattern = r"Python"
@@ -119,7 +119,7 @@ En este escenario, dado que Python no está al inicio, `re.match()` devolverá `
 
 ### Ejemplo: Usando `re.search()`
 
-```python
+```python3
 import re
 
 pattern = r"Python"
@@ -147,7 +147,7 @@ El módulo `re` en Python proporciona un método llamado `sub()` que significa s
 
 ### Ejemplo: Reemplazo Simple de Palabra
 
-```python
+```python3
 import re
 
 text = "Hello World! Welcome to the World of Python."
@@ -161,7 +161,7 @@ Este ejemplo demuestra cómo reemplazar todas las instancias de `World` con `Uni
 
 ### Ejemplo: Removiendo Puntuación
 
-```python
+```python3
 import re
 
 text = "Hello, World! How are you today?"
@@ -183,7 +183,7 @@ Recuerda, la clave para la competencia con **Python replaceall regex** es la pr�
 
 ### Ejemplo: Buscar correos electrónicos por patrón
 
-```python
+```python3
 import re
 
 text = "Contact us at support@example.com or sales@example.net"
@@ -198,7 +198,7 @@ for match in matches:
 
 ### Ejemplo: Buscar Números Telefónicos por Patrón
 
-```python
+```python3
 import re
 
 text = "Reach us at +1-555-123-4567 or +1-555-765-4321"
@@ -239,7 +239,7 @@ print(results)  # Output: ['3', '5', '9']
 
 La agrupación en regex te permite seleccionar partes del texto que coincide. Usa el método `group()` para acceder a patrones coincidentes.
 
-```python
+```python3
 import re
 pattern = re.compile(r'(\d+)([a-z]+)')
 match = pattern.search("123abc")
@@ -261,7 +261,7 @@ Para usar la división con regex en Python, primero necesitas `importar` el mód
 
 ### Ejemplo: Dividiendo la Cadena por Coma Seguida de un Espacio
 
-```python
+```python3
 import re
 
 # Example string
@@ -277,7 +277,7 @@ En este ejemplo, `\s` es un regex que coincide con cualquier carácter de espaci
 
 ### Ejemplo: Dividiendo por Múltiples Delimitadores
 
-```python
+```python3
 import re
 
 # Example string with multiple delimiters
@@ -305,7 +305,7 @@ La función `re.findall()` en Python está diseñada para recuperar todas las co
 
 Para una aplicación más práctica, usemos `re.findall()` para extraer direcciones de correo electrónico de un texto:
 
-```python
+```python3
 import re
 
 text = "For more information, contact us at info@example.com or support@example.org."
@@ -324,7 +324,7 @@ En Python, las regex (expresiones regulares) se utilizan para la búsqueda y man
 
 La función `re.sub()` en Python se utiliza para **sustitución de regex en Python**. Reemplaza ocurrencias de un patrón en una cadena con un reemplazo especificado. Es particularmente útil cuando quieres modificar cadenas de una manera sofisticada, incluyendo el uso de **grupos de captura de sub regex en Python** para manipular partes específicas del texto coincidente.
 
-```python
+```python3
 import re
 
 text = "2024 is the year of code"
@@ -337,7 +337,7 @@ print(result)  # Output: XXXX is the year of code
 
 La función `regex.search()` en Python escanea una cadena en busca de la primera ubicación donde se encuentra un patrón regex especificado. Devuelve un objeto de coincidencia si se encuentra una coincidencia y `None` si no se encuentra ninguna coincidencia. Esto es perfecto para verificar la presencia de patrones en cadenas.
 
-```python
+```python3
 import re
 
 text = "Reach me at email@example.com"
