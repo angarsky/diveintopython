@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/file-handling
 
-Python has a variety of built-in functions and libraries that make working with files a breeze, and in this article, we'll explore the different techniques and best practices for handling files in Python.   
-  
-## How to Open Files in Python
+Python dispose d'une variété de fonctions intégrées et de bibliothèques qui rendent le travail avec les fichiers très facile, et dans cet article, nous allons explorer les différentes techniques et les meilleures pratiques pour manipuler les fichiers en Python.
 
-With Python, you can easily read and write files to the system. To read a file in Python, you can use the `open()` function.
+## Comment ouvrir des fichiers en Python
 
-### Reading a File
+Avec Python, vous pouvez facilement lire et écrire des fichiers sur le système. Pour lire un fichier en Python, vous pouvez utiliser la fonction `open()`.
 
-In Python, you can read a file using the `open()` function. The following code example demonstrates how to read a file in Python:
+### Lire un Fichier
+
+En Python, vous pouvez lire un fichier en utilisant la fonction `open()`. L'exemple de code suivant montre comment lire un fichier en Python :
 
 ```python
 file = open('example.txt', 'r')
@@ -17,9 +17,9 @@ data = file.read()
 print(data)
 ```
 
-### Reading a File Line-By-Line
+### Lire un fichier ligne par ligne
 
-Sometimes, you may want to read a file line-by-line. To do that, you can use a `for` loop to loop through the file line-by-line. The following code demonstrates how to read a file line-by-line in Python:
+Parfois, vous pouvez vouloir lire un fichier ligne par ligne. Pour faire ça, vous pouvez utiliser une boucle `for` pour parcourir le fichier ligne par ligne. Le code suivant démontre comment lire un fichier ligne par ligne en Python :
 
 ```python
 file = open('example.txt', 'r')
@@ -27,9 +27,9 @@ for line in file:
     print(line)
 ```
 
-### Handling the `No such file or directory` Error
+### Gestion de l'erreur `No such file or directory`
 
-It's not uncommon to encounter a `No such file or directory` error when working with files in Python. To handle this error, you can use a `try` and `except` block to catch the error and handle it accordingly. The following code demonstrates how to handle a `No such file or directory` error in Python:
+Il n'est pas rare de rencontrer une erreur `No such file or directory` lorsque vous travaillez avec des fichiers en Python. Pour gérer cette erreur, vous pouvez utiliser un bloc `try` et `except` pour attraper l'erreur et la gérer en conséquence. Le code suivant montre comment gérer une erreur `No such file or directory` en Python :
 
 ```python3
 try:
@@ -38,19 +38,19 @@ except FileNotFoundError:
     print("File not found!")
 ```
 
-## Different Modes for a File Handling in Python  
+## Différents modes pour la manipulation de fichiers en Python
 
-In Python, there are several modes for file handling (file open modes) including:
+En Python, il existe plusieurs modes pour la manipulation de fichiers (modes d'ouverture de fichiers) incluant :
 
-- **Read mode ('r')**: This mode is used to read an existing file. 
+- **Mode lecture ('r')** : Ce mode est utilisé pour lire un fichier existant.
 
-- **Write mode ('w')**: This mode is used to write to a file. It will create a new file if the file does not exist, and overwrite the file if it does exist.
+- **Mode écriture ('w')** : Ce mode est utilisé pour écrire dans un fichier. Il créera un nouveau fichier si le fichier n'existe pas, et écrasera le fichier s'il existe.
 
-- **Append mode ('a')**: This mode is used to add new data to the end of an existing file (append to a file). If the file does not exist, a new file will be created.
+- **Mode ajout ('a')** : Ce mode est utilisé pour ajouter de nouvelles données à la fin d'un fichier existant (ajouter au fichier). Si le fichier n'existe pas, un nouveau fichier sera créé.
 
-- **Binary mode ('b')**: This mode is used to read or write binary data, like images or audio files.
+- **Mode binaire ('b')** : Ce mode est utilisé pour lire ou écrire des données binaires, comme des images ou des fichiers audio.
 
-### Open a file in the write mode
+### Ouvrir un fichier en mode écriture
 
 ```python
 file = open('example.txt', 'w')
@@ -62,9 +62,9 @@ file.write('Hello, World!')
 file.close()
 ```
 
-In this example, we first open a file named `example.txt` in write mode. We write the string `'Hello, World!'` to the file and then close it.
+Dans cet exemple, nous ouvrons d'abord un fichier nommé `example.txt` en mode écriture. Nous écrivons la chaîne `'Hello, World!'` dans le fichier puis nous le fermons.
 
-### Open a file in the read mode
+### Ouvrir un fichier en mode lecture
 
 ```python
 file = open('example.txt', 'r')
@@ -79,15 +79,15 @@ print(content)
 file.close()
 ```
 
-In this example, we open the same file, `example.txt`, but this time in read mode. We read the contents of the file using the `read()` method, save it to a variable named `content`, and then print the contents to the console. Finally, we `close()` the file.
+Dans cet exemple, nous ouvrons le même fichier, `example.txt`, mais cette fois en mode lecture. Nous lisons le contenu du fichier en utilisant la méthode `read()`, le sauvegardons dans une variable nommée `content`, puis imprimons le contenu sur la console. Finalement, nous `close()` le fichier.
 
-## File operations  
+## Opérations sur les fichiers
 
-Python provides important modules like `os` and `shutil` to perform file operations such as deleting, renaming, copying, and moving files. 
+Python fournit des modules importants comme `os` et `shutil` pour effectuer des opérations sur les fichiers telles que supprimer, renommer, copier et déplacer des fichiers.
 
-### File Deleting
+### Suppression de fichier
 
-You can use the `os.remove()` method to delete a file in Python. The following code snippet shows how remove file named `example.txt`.
+Vous pouvez utiliser la méthode `os.remove()` pour supprimer un fichier en Python. Le code suivant montre comment supprimer un fichier nommé `example.txt`.
 
 ```python
 import os
@@ -95,9 +95,9 @@ import os
 os.remove("example.txt")
 ```
 
-### File Renaming
+### Renommage de fichier
 
-You can use the `os.rename()` method to rename a file in Python. The following code snippet shows how to rename the file named `example.txt` to `new_example.txt`.
+Vous pouvez utiliser la méthode `os.rename()` pour renommer un fichier en Python. Le fragment de code suivant montre comment renommer le fichier nommé `example.txt` en `new_example.txt`.
 
 ```python
 import os
@@ -105,9 +105,9 @@ import os
 os.rename("example.txt", "new_example.txt")
 ```
 
-### File Copying
+### Copie de fichier
 
-You can use the `shutil.copy()` method to copy a file in Python. The following code snippet shows how to copy the file named `example.txt` to a new file named `new_example.txt`.
+Vous pouvez utiliser la méthode `shutil.copy()` pour copier un fichier en Python. Le morceau de code suivant montre comment copier le fichier nommé `example.txt` dans un nouveau fichier nommé `new_example.txt`.
 
 ```python
 import shutil
@@ -115,23 +115,23 @@ import shutil
 shutil.copy("example.txt", "new_example.txt")
 ```
 
-### File Moving
+### Déplacement de fichier
 
-You can use the `shutil.move()` method to move a file in Python. The following code snippet shows how to move the file named `example.txt` to a new location named `new_folder`.
+Vous pouvez utiliser la méthode `shutil.move()` pour déplacer un fichier en Python. Le morceau de code suivant montre comment déplacer le fichier nommé `example.txt` vers un nouvel emplacement nommé `new_folder`.
 
 ```python
 import shutil
 
 shutil.move("example.txt", "/path/to/new_folder/example.txt")
-```  
-  
-## File Methods in Python
+```
 
-When working with files in Python, there are several built-in methods that enable you to read, write, and manipulate file contents. These methods provide flexible options for file handling. Here's a guide to some commonly used Python file methods:
+## Méthodes de fichier en Python
 
-### How to Read a File
+Lorsque vous travaillez avec des fichiers en Python, il existe plusieurs méthodes intégrées qui vous permettent de lire, écrire et manipuler le contenu des fichiers. Ces méthodes fournissent des options flexibles pour la manipulation de fichiers. Voici un guide de certaines méthodes de fichiers Python couramment utilisées :
 
-The `read()` method reads the entire contents of a file and returns them as a string. On the other hand, the `readline()` method reads a single line from the file. It returns the line as a string and moves the file pointer to the next line.
+### Comment lire un fichier
+
+La méthode `read()` lit l'intégralité du contenu d'un fichier et le retourne sous forme de chaîne de caractères. D'autre part, la méthode `readline()` lit une seule ligne du fichier. Elle retourne la ligne sous forme de chaîne de caractères et déplace le pointeur de fichier à la ligne suivante.
 
 ```python
 file = open("example.txt", "w")
@@ -140,9 +140,9 @@ line = file.readline()
 file.close()
 ```
 
-### How to Write to file 
+### Comment écrire dans un fichier
 
-The `write()` method is used to write data to a file. It takes a string as an argument and writes it to the file. Alternatively, the `writelines()` method allows you to write multiple lines to a file by providing a list of strings.
+La méthode `write()` est utilisée pour écrire des données dans un fichier. Elle prend une chaîne de caractères en argument et l'écrit dans le fichier. Alternativement, la méthode `writelines()` vous permet d'écrire plusieurs lignes dans un fichier en fournissant une liste de chaînes de caractères.
 
 ```python
 file = open("example.txt", "w")
@@ -152,9 +152,9 @@ file.writelines(lines)
 file.close()
 ```
 
-### How to Close a File
+### Comment fermer un fichier
 
-The `close()` method is essential for proper file handling. It closes the file and releases any system resources associated with it. It is crucial to close the file after performing operations on it to avoid potential issues.
+La méthode `close()` est essentielle pour une bonne gestion des fichiers. Elle ferme le fichier et libère toutes les ressources système qui lui sont associées. Il est crucial de fermer le fichier après avoir effectué des opérations dessus pour éviter d'éventuels problèmes.
 
 ```python
 file = open("example.txt", "w")
@@ -162,15 +162,15 @@ file = open("example.txt", "w")
 file.close()
 ```
 
-These are just a few examples of Python file methods that enable you to read, write, and manipulate files. It's important to handle exceptions and close files properly to ensure efficient file management and resource utilization. By utilizing these file methods effectively, you can handle file operations with ease in your Python programs.
+Voici juste quelques exemples de méthodes de fichiers Python qui vous permettent de lire, écrire et manipuler des fichiers. Il est important de gérer les exceptions et de fermer correctement les fichiers pour assurer une gestion efficace des fichiers et une utilisation optimale des ressources. En utilisant efficacement ces méthodes de fichiers, vous pouvez gérer les opérations de fichiers facilement dans vos programmes Python.
 
-## File Size Operations
+## Opérations sur la Taille des Fichiers
 
-To get the size of a file in Python, you can use various methods provided by the Python standard library. Here are two examples that demonstrate how to retrieve the size of a file using different approaches.
+Pour obtenir la taille d'un fichier en Python, vous pouvez utiliser diverses méthodes fournies par la bibliothèque standard de Python. Voici deux exemples qui montrent comment récupérer la taille d'un fichier en utilisant différentes approches.
 
-### How to get a File Size
+### Comment obtenir la Taille d'un Fichier
 
-The `os.path` module provides a convenient method, `getsize()`, to retrieve the size of a file in bytes.
+Le module `os.path` fournit une méthode pratique, `getsize()`, pour récupérer la taille d'un fichier en octets.
 
 ```python3
 import os
@@ -184,11 +184,11 @@ except FileNotFoundError:
     print("File not found.")
 ```
 
-In this example, we use the `getsize()` function from the `os.path` module to obtain the size of the file specified by `file_path`. If the file is found, the size is printed in bytes. If the file is not found, a `FileNotFoundError` is raised.
+Dans cet exemple, nous utilisons la fonction `getsize()` du module `os.path` pour obtenir la taille du fichier spécifié par `file_path`. Si le fichier est trouvé, la taille est affichée en octets. Si le fichier n'est pas trouvé, une erreur `FileNotFoundError` est levée.
 
-### Get a File Size with the `os.stat` Function
+### Obtenir la taille d'un fichier avec la fonction `os.stat`
 
-Another way to retrieve the size of a file is by using the `os.stat()` function, which returns a named tuple containing file attributes, including the file size.
+Une autre manière de récupérer la taille d'un fichier est d'utiliser la fonction `os.stat()`, qui renvoie un tuple nommé contenant les attributs du fichier, y compris la taille du fichier.
 
 ```python3
 import os
@@ -203,13 +203,13 @@ except FileNotFoundError:
     print("File not found.")
 ```
 
-In this example, we call `os.stat()` to obtain the file attributes, including the size, which is accessed using the `st_size` attribute of the returned named tuple.
+Dans cet exemple, nous appelons `os.stat()` pour obtenir les attributs du fichier, y compris la taille, qui est accessible en utilisant l'attribut `st_size` du tuple nommé retourné.
 
-By using these approaches, you can easily retrieve the size of a file in Python. Remember to handle exceptions, such as `FileNotFoundError`, to account for cases where the file does not exist.
+En utilisant ces approches, vous pouvez facilement récupérer la taille d'un fichier en Python. N'oubliez pas de gérer les exceptions, telles que `FileNotFoundError`, pour prendre en compte les cas où le fichier n'existe pas.
 
-## Operations with a File Extension
+## Opérations avec une Extension de Fichier
 
-When working with files in Python, you may often need to extract the file extension to determine the type of file you're dealing with. Python provides several ways to obtain the file extension from a file name or path. 
+Lorsque vous travaillez avec des fichiers en Python, vous aurez souvent besoin d'extraire l'extension du fichier pour déterminer le type de fichier avec lequel vous avez affaire. Python propose plusieurs manières d'obtenir l'extension d'un fichier à partir d'un nom de fichier ou d'un chemin.
 
 ```python
 import os
@@ -220,11 +220,11 @@ extension = os.path.splitext(filename)[1]
 print("File Extension:", extension)
 ```
 
-In this example, we use the `os.path` module, specifically the `splitext()` function, to separate the file extension from the given file name. It returns a tuple containing the base name and the extension, and we extract the `extension` using indexing.
+Dans cet exemple, nous utilisons le module `os.path`, spécifiquement la fonction `splitext()`, pour séparer l'extension du fichier du nom de fichier donné. Elle renvoie un tuple contenant le nom de base et l'extension, et nous extrayons l'`extension` en utilisant l'indexation.
 
-## How to Check if a File Exists with Python  
+## Comment vérifier si un fichier existe avec Python
 
-To check if a file exists, you can use the built-in [os](https://docs.python.org/3/library/os.html) module which provides functionality for interacting with the operating system. 
+Pour vérifier si un fichier existe, vous pouvez utiliser le module intégré [os](https://docs.python.org/3/library/os.html) qui fournit des fonctionnalités pour interagir avec le système d'exploitation.
 
 ```python3
 import os
@@ -239,7 +239,7 @@ else:
     print("File does not exist.")
 ```
 
-In this example, we first `import` the `os` module and then define the `file_path` variable with the path to the file we want to check. The `os.path.exists()` function is used to check if the file exists, and if so, we `print` a message indicating that the file exists. If the file does not exist, we `print` a message indicating that it does not exist.
+Dans cet exemple, nous `import`ons d'abord le module `os` puis nous définissons la variable `file_path` avec le chemin vers le fichier que nous souhaitons vérifier. La fonction `os.path.exists()` est utilisée pour vérifier si le fichier existe, et si c'est le cas, nous `print`ons un message indiquant que le fichier existe. Si le fichier n'existe pas, nous `print`ons un message indiquant qu'il n'existe pas.
 
 ```python
 import os
@@ -255,30 +255,30 @@ except FileNotFoundError:
     print("File does not exist.")
 ```
 
-In this example, we use a `try` and `except` block to catch the `FileNotFoundError` exception that is raised if the file does not exist. We try to open the file: `with open(file_path) as f:` and if the file exists, we `print` a message indicating that the file exists. If the file does not exist, we catch the `FileNotFoundError` exception and `print` a message indicating that the file does not exist.
+Dans cet exemple, nous utilisons un bloc `try` et `except` pour attraper l'exception `FileNotFoundError` qui est levée si le fichier n'existe pas. Nous essayons d'ouvrir le fichier : `with open(file_path) as f:` et si le fichier existe, nous `print` un message indiquant que le fichier existe. Si le fichier n'existe pas, nous attrapons l'exception `FileNotFoundError` et `print` un message indiquant que le fichier n'existe pas.
 
-By using one of these two code examples, you can easily check if a file exists in Python and take the appropriate action depending on the result.  
-  
-## How to Create a Simple File  
+En utilisant l'un de ces deux exemples de code, vous pouvez facilement vérifier si un fichier existe en Python et prendre l'action appropriée en fonction du résultat.
 
-To create a file in Python, use the built-in `open()` function. You can specify the file name and the mode in which you want to open the file (read, write, or append). 
+## Comment créer un fichier simple
 
-To print to a file in Python, you can use the `print()` function with the `file` parameter:
+Pour créer un fichier en Python, utilisez la fonction intégrée `open()`. Vous pouvez spécifier le nom du fichier et le mode dans lequel vous voulez ouvrir le fichier (lecture, écriture ou ajout).
+
+Pour écrire dans un fichier en Python, vous pouvez utiliser la fonction `print()` avec le paramètre `file` :
 
 ```python
 with open("example.txt", "w") as file:
   print("Hello, World!", file=file)
 ```
 
-This code creates a new file named `example.txt` in write mode, and writes the string `Hello, World!` to the file.
+Ce code crée un nouveau fichier nommé `example.txt` en mode écriture, et écrit la chaîne `Hello, World!` dans le fichier.
 
-To write to a file in Python, you can use the `.write()` method:
+Pour écrire dans un fichier en Python, vous pouvez utiliser la méthode `.write()` :
 
 ```python
 with open("example.txt", "w") as file:
   file.write("Hello, World!")
 ```
 
-This code creates a new file named `example.txt` in write mode, and writes the string `Hello, World!` to the file using the `write()` method. 
+Ce code crée un nouveau fichier nommé `example.txt` en mode écriture et écrit la chaîne de caractères `Hello, World!` dans le fichier en utilisant la méthode `write()`.
 
-Remember to close the file after you are done writing. Using the `with` statement handles this automatically.  
+N'oubliez pas de fermer le fichier après avoir terminé l'écriture. L'utilisation de l'instruction `with` gère cela automatiquement.

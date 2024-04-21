@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/recursion
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/functions/recursion
 
-**Recursive programming** is a technique in programming where a function **calls itself repeatedly** until it reaches a base or terminal case. It is a powerful tool when dealing with certain types of problems that can be naturally defined in a recursive manner. In Python, we can implement this technique through recursive functions.
+**La programmation récursive** est une technique de programmation où une fonction **s'appelle elle-même de manière répétée** jusqu'à ce qu'elle atteigne un cas de base ou terminal. C'est un outil puissant lorsqu'il s'agit de traiter certains types de problèmes qui peuvent être naturellement définis de manière récursive. En Python, nous pouvons mettre en œuvre cette technique grâce aux fonctions récursives.
 
-## Python Recursive Functions
+## Fonctions récursives en Python
 
-Recursive functions are functions that **call themselves** during execution to solve a problem by breaking it down into smaller sub-problems. Recursion in Python involves two main steps: defining the base case(s) and the recursive case(s).
+Les fonctions récursives sont des fonctions qui **s'appellent elles-mêmes** pendant l'exécution pour résoudre un problème en le décomposant en sous-problèmes plus petits. La récursivité en Python implique deux étapes principales : définir le ou les cas de base et le ou les cas récursifs.
 
-### Example 1: Factorial Calculation Using Recursion
+### Exemple 1 : Calcul de factorielle en utilisant la récursivité
 
 ```python3
 def factorial(n):
@@ -21,9 +21,9 @@ num = 5
 print("Factorial of", num, "is", factorial(num))
 ```
 
-In this example, the `factorial()` function takes an integer `n` as input and **recursively** calculates the **factorial** of `n` by multiplying it with the factorial of `n-1`. The base case is when `n` is equal to `0`, in which case the function returns `1`.
+Dans cet exemple, la fonction `factorial()` prend un entier `n` en entrée et calcule **récursivement** le **factoriel** de `n` en le multipliant par le factoriel de `n-1`. Le cas de base est lorsque `n` est égal à `0`, auquel cas la fonction retourne `1`.
 
-### Example 2: Fibonacci Series Calculation Using Recursion
+### Exemple 2 : Calcul de la série de Fibonacci en utilisant la récursivité
 
 ```python3
 def fibonacci(n):
@@ -43,19 +43,19 @@ else:
         print(fibonacci(i), end=" ")
 ```
 
-In this example, the `fibonacci()` function takes an integer `n` as input and recursively calculates the `n` term of the **Fibonacci series** by adding the previous two terms. The base case is when `n` is `0` or `1`, in which case the function returns `n`. The driver code prints the first `num_terms` of the Fibonacci series, where `num_terms` is a user-inputted value.
+Dans cet exemple, la fonction `fibonacci()` prend un entier `n` en entrée et calcule de manière récursive le terme `n` de la **série Fibonacci** en ajoutant les deux termes précédents. Le cas de base est lorsque `n` est `0` ou `1`, auquel cas la fonction retourne `n`. Le code conducteur imprime les premiers `num_terms` de la série Fibonacci, où `num_terms` est une valeur saisie par l'utilisateur.
 
-## Tips and Best Practices for Python Recursive Programming  
+## Conseils et meilleures pratiques pour la programmation récursive en Python
 
-1. **Clearly define the base case**: The base case is the condition under which the function should stop calling itself recursively and return a value. Make sure that the base case is clearly defined and that the function eventually reaches it to avoid infinite recursion.
+1. **Définissez clairement le cas de base** : Le cas de base est la condition sous laquelle la fonction doit arrêter de s'appeler elle-même de manière récursive et renvoyer une valeur. Assurez-vous que le cas de base est clairement défini et que la fonction l'atteint finalement pour éviter la récursion infinie.
 
-2. **Watch out for recursion depth**: Recursion depth refers to the number of times a function calls itself recursively. Python has a default recursion depth **limit of 1000**, so make sure to keep your recursive functions within the limit or adjust the recursion depth limit using the sys module.
+2. **Attention à la profondeur de récursion** : La profondeur de récursion fait référence au nombre de fois qu'une fonction s'appelle elle-même de manière récursive. Python a une **limite de profondeur de récursion par défaut de 1000**, donc assurez-vous de garder vos fonctions récursives dans la limite ou ajustez la limite de profondeur de récursion à l'aide du module sys.
 
-3. **Consider using memoization**: Memoization is a technique used to cache the results of expensive function calls and reuse them when the same inputs occur again. This can significantly improve the performance of recursive functions in Python by avoiding duplicate computations.
+3. **Envisagez d'utiliser la mémoïsation** : La mémoïsation est une technique utilisée pour mettre en cache les résultats d'appels de fonction coûteux et les réutiliser lorsque les mêmes entrées se produisent à nouveau. Cela peut améliorer de manière significative la performance des fonctions récursives en Python en évitant les calculs en double.
 
-4. **Test and debug carefully**: Recursive functions can be difficult to debug due to their complex nature. Make sure to test your function with various input values and take time to understand how it works before deploying it to production.
+4. **Testez et déboguez avec soin** : Les fonctions récursives peuvent être difficiles à déboguer en raison de leur nature complexe. Assurez-vous de tester votre fonction avec différentes valeurs d'entrée et prenez le temps de comprendre comment elle fonctionne avant de la déployer en production.
 
-## Example: Binary Search
+## Exemple : Recherche binaire
 
 ```python
 def binary_search(arr, target, low, high):
@@ -72,25 +72,25 @@ def binary_search(arr, target, low, high):
         return binary_search(arr, target, mid+1, high)
 ```
 
-This recursive function performs **binary search** on a sorted array by **calling itself** with smaller subarrays until it finds the target or reaches the base case where the low index is greater than the high index.
+Cette fonction récursive effectue une **recherche binaire** sur un tableau trié en **s'appelant elle-même** avec des sous-tableaux plus petits jusqu'à ce qu'elle trouve la cible ou atteigne le cas de base où l'indice bas est supérieur à l'indice haut.
 
-## Common Mistakes and Pitfalls in Python Recursion
+## Erreurs communes et pièges dans la récursivité en Python
 
-Python recursive functions can be a powerful tool in solving complex problems, but they can also be prone to common mistakes and pitfalls. Here are some common mistakes to avoid when using Python recursion:
+Les fonctions récursives en Python peuvent être un outil puissant pour résoudre des problèmes complexes, mais elles peuvent aussi être sujettes à des erreurs communes et des pièges. Voici quelques erreurs à éviter lors de l'utilisation de la récursivité en Python :
 
-1. **Infinite loops**: It is easy to create infinite loops in recursive functions if you don't have a base case that ultimately breaks the recursion. Be sure to define a base case that will stop the recursion.
+1. **Boucles infinies** : Il est facile de créer des boucles infinies dans les fonctions récursives si vous n'avez pas de cas de base qui interrompt finalement la récursion. Assurez-vous de définir un cas de base qui arrêtera la récursion.
 
-2. **Stack overflow**: Recursion can create a lot of memory overhead, which can lead to stack overflow errors. Be careful when using recursion with large datasets.
+2. **Débordement de pile** : La récursion peut créer beaucoup de surcharge mémoire, ce qui peut conduire à des erreurs de débordement de pile. Soyez prudent lorsque vous utilisez la récursion avec de grands ensembles de données.
 
-## Enhancing Python Recursive Functions for Greater Efficiency and Performance
+## Améliorer les fonctions récursives en Python pour une plus grande efficacité et performance
 
-Recursive enhancing refers to the process of optimizing a Python recursive function for better efficiency and performance. This involves identifying areas that can be fine-tuned, such as reducing space complexity or using memoization to reduce the number of recursive calls.
+L'amélioration récursive se réfère au processus d'optimisation d'une fonction récursive en Python pour une meilleure efficacité et performance. Cela implique d'identifier les domaines pouvant être peaufinés, comme réduire la complexité spatiale ou utiliser la mémoïsation pour réduire le nombre d'appels récursifs.
 
-Below are two examples of how to enhance Python recursive functions for greater efficiency:
+Ci-dessous se trouvent deux exemples de comment améliorer les fonctions récursives en Python pour une plus grande efficacité :
 
-### Memoization
+### Mémoïsation
 
-Memoization is the process of storing previously computed results to avoid repeated calculation. This can significantly reduce the runtime of a recursive function. 
+La mémoïsation est le processus de stockage de résultats précédemment calculés pour éviter un recalcul répété. Cela peut réduire considérablement le temps d'exécution d'une fonction récursive.
 
 ```python
 def fibonacci(n, memo={}):
@@ -103,11 +103,11 @@ def fibonacci(n, memo={}):
         return memo[n]
 ```
 
-In the above code, the `memo` dictionary is used to store previously computed Fibonacci numbers. When the function is called with a previously calculated `n`, the `memo` value is returned instead of the function making another recursive call.
+Dans le code ci-dessus, le dictionnaire `memo` est utilisé pour stocker les nombres de Fibonacci déjà calculés. Lorsque la fonction est appelée avec un `n` précédemment calculé, la valeur `memo` est retournée au lieu que la fonction effectue un autre appel récursif.
 
-### Tail Recursion Optimization
+### Optimisation de la récursion terminale
 
-Tail recursion optimization is a way to optimize recursive functions so that they use less space on the call stack. 
+L'optimisation de la récursion terminale est une manière d'optimiser les fonctions récursives de sorte qu'elles utilisent moins d'espace sur la pile d'appels.
 
 ```python3
 def sum_n(n, acc=0):
@@ -120,8 +120,8 @@ def sum_n(n, acc=0):
 print(sum_n(5)) # Outputs: 15
 ```
 
-In the above code, `sum_n()` is a **recursive function** that calculates the sum of all numbers from `1` to `n`. The acc argument is an **accumulator** that stores the intermediate results of the computation.
+Dans le code ci-dessus, `sum_n()` est une **fonction récursive** qui calcule la somme de tous les nombres de `1` à `n`. L'argument acc est un **accumulateur** qui stocke les résultats intermédiaires du calcul.
 
-In each recursive call, the function adds the current value of `n` to the accumulator and passes the result to the next recursive call, without keeping the previous call's stack frame in memory. This way, the function uses a constant amount of memory on the call stack, and avoids the risk of stack overflow for large values of `n`.
+À chaque appel récursif, la fonction ajoute la valeur actuelle de `n` à l'accumulateur et passe le résultat à l'appel récursif suivant, sans conserver le cadre de pile de l'appel précédent en mémoire. De cette façon, la fonction utilise une quantité constante de mémoire sur la pile d'appels, et évite le risque de débordement de pile pour de grandes valeurs de `n`.
 
-> Note that tail recursion optimization can only be applied to recursive functions that have a tail call, i.e., a recursive call that occurs at the end of the function's execution.
+> Notez que l'optimisation de la récursion terminale ne peut être appliquée qu'aux fonctions récursives qui ont un appel terminal, c'est-à-dire, un appel récursif qui se produit à la fin de l'exécution de la fonction.

@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/pdf
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/file-handling/pdf
 
-PDF is a widely-used document format `for` digital publications. Python, on the other hand, is a versatile programming language with a vast `range` of applications in today's digital world. When used together, Python can become an efficient tool in manipulating and extracting information from [PDF](https://en.wikipedia.org/wiki/PDF) documents. In this article, we will explore the different ways Python can be used `for` PDF processing, and how it can help us improve our productivity and efficiency.  
-  
-## Python PDF Libraries
+Le PDF est un format de document largement utilisé pour les publications numériques. Python, d'autre part, est un langage de programmation polyvalent avec une vaste `range` d'applications dans le monde numérique d'aujourd'hui. Utilisés ensemble, Python peut devenir un outil efficace pour manipuler et extraire des informations des documents [PDF](https://en.wikipedia.org/wiki/PDF). Dans cet article, nous explorerons les différentes manières dont Python peut être utilisé pour le traitement des PDF, et comment cela peut nous aider à améliorer notre productivité et efficacité.
 
-To work with PDF files in Python, there are various libraries available. Some of the popular libraries to use Python with PDF are PyPDF2, reportlab, and fpdf. 
+## Bibliothèques Python pour PDF
 
-## Reading PDF with Python
+Pour travailler avec des fichiers PDF en Python, il existe diverses bibliothèques disponibles. Parmi les bibliothèques populaires pour utiliser Python avec PDF figurent PyPDF2, reportlab et fpdf.
 
-To read a PDF `file`, you can use the [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example:
+## Lire un PDF avec Python
+
+Pour lire un fichier PDF, vous pouvez utiliser la bibliothèque [PyPDF2](https://pypi.org/project/PyPDF2/). Voici un exemple :
 
 ```python
 import json
@@ -33,9 +33,9 @@ for page in range(num_pages):
 pdf_file.close()
 ```
 
-## Generating PDF with Python
+## Générer des PDF avec Python
 
-To generate new PDF files from scratch, you can use the [reportlab](https://pypi.org/project/reportlab/) or `fpdf` library. Here's an example using `reportlab`:
+Pour générer de nouveaux fichiers PDF à partir de zéro, vous pouvez utiliser la bibliothèque [reportlab](https://pypi.org/project/reportlab/) ou `fpdf`. Voici un exemple utilisant `reportlab` :
 
 ```python
 from reportlab.pdfgen import canvas
@@ -50,11 +50,11 @@ pdf_file.drawString(100, 750, "Hello World")
 pdf_file.save()
 ```
 
-Similarly, you can use `fpdf` library to create PDF. 
+De même, vous pouvez utiliser la bibliothèque `fpdf` pour créer des PDF.
 
-## Editing PDF with Python
+## Édition de PDF avec Python
 
-To edit existing PDF files, you can use [PyPDF2](https://pypi.org/project/PyPDF2/) library. Here's an example to rotate the pages in a PDF file:
+Pour modifier des fichiers PDF existants, vous pouvez utiliser la bibliothèque [PyPDF2](https://pypi.org/project/PyPDF2/). Voici un exemple pour faire pivoter les pages dans un fichier PDF :
 
 ```python
 import PyPDF2
@@ -83,13 +83,13 @@ pdf_file.close()
 pdf_output.close()
 ```
 
-In summary, Python provides multiple libraries to work with PDF files, enabling you to read, generate, and edit PDFs programmatically.  
-  
-## How to Extract Text from PDF with Python
+En résumé, Python propose plusieurs bibliothèques pour travailler avec des fichiers PDF, vous permettant de lire, générer et modifier des PDF de manière programmatique.
 
-To extract `text` from a PDF with Python, you can use the `PyPDF2` or [pdfminer](https://pypi.org/project/pdfminer/) libraries. These libraries allow you to parse the PDF and extract the `text` content.
+## Comment extraire du texte d'un PDF avec Python
 
-### Example 1: Using `PyPDF2`
+Pour extraire du `texte` d'un PDF avec Python, vous pouvez utiliser les bibliothèques `PyPDF2` ou [pdfminer](https://pypi.org/project/pdfminer/). Ces bibliothèques vous permettent d'analyser le PDF et d'extraire le contenu du `texte`.
+
+### Exemple 1 : Utilisation de `PyPDF2`
 
 ```python
 import PyPDF2
@@ -105,7 +105,7 @@ for page_num in range(pdf_reader.numPages):
 print(text)
 ```
 
-### Example 2: Using `pdfminer`
+### Exemple 2 : Utilisation de `pdfminer`
 
 ```python
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -129,13 +129,13 @@ def pdf_to_text(pdf_path):
     return text
 ```
 
-Both of these methods will allow you to extract `text` content from a PDF with Python.  
-  
-## How to Combine PDF Pages
+Ces deux méthodes vous permettront d'extraire le contenu de `text` d'un PDF avec Python.
 
-Merging multiple PDF files into a single document is a common task in document processing. The `PyPDF2` library in Python makes it easy to merge multiple PDF files into a single document.
+## Comment combiner des pages PDF
 
-### Merge Two PDF Pages Using `PyPDF2`
+Fusionner plusieurs fichiers PDF en un seul document est une tâche courante dans le traitement de documents. La bibliothèque `PyPDF2` en Python facilite la fusion de plusieurs fichiers PDF en un seul document.
+
+### Fusionner deux pages PDF en utilisant `PyPDF2`
 
 ```python
 import PyPDF2
@@ -156,7 +156,7 @@ with open('merged.pdf', 'wb') as f:
     output.write(f)
 ```
 
-### Merge entire PDF files Using `PyPDF2`
+### Fusionner des fichiers PDF entiers en utilisant `PyPDF2`
 
 ```python
 from PyPDF2 import PdfFileMerger
@@ -171,11 +171,11 @@ with open('merged_pdf.pdf', 'wb') as f:
     merger.write(f)
 ```
 
-Using the above code examples, you can merge multiple PDF pages or entire PDF files in Python using the `PyPDF2` library. By combining PDF files, you can easily create a single document that is easier to manage and distribute.  
-  
-## How to Remove Watermark from PDF
+En utilisant les exemples de code ci-dessus, vous pouvez fusionner plusieurs pages PDF ou des fichiers PDF entiers en Python en utilisant la bibliothèque `PyPDF2`. En combinant des fichiers PDF, vous pouvez facilement créer un document unique qui est plus facile à gérer et à distribuer.
 
-Removing watermark from PDF files in Python is easy and can be done using a number of libraries. Here are some solutions to remove watermarks using `PyPDF2` and `PyMuPDF` libraries.
+## Comment supprimer un filigrane d'un PDF
+
+Supprimer un filigrane de fichiers PDF en Python est facile et peut être réalisé en utilisant un certain nombre de bibliothèques. Voici quelques solutions pour supprimer les filigranes en utilisant les bibliothèques `PyPDF2` et `PyMuPDF`.
 
 ```python
 # Solution 1
@@ -223,13 +223,13 @@ for page in pdf:
 pdf.save('filename_nw.pdf')
 ```
 
-With these simple solutions, you can easily remove watermarks from PDF files using Python and the `PyPDF2` and PyMuPDF libraries.  
-  
-## How to convert `HTML` to PDF
+Avec ces solutions simples, vous pouvez facilement supprimer les filigranes des fichiers PDF en utilisant Python et les bibliothèques `PyPDF2` et PyMuPDF.
 
-Converting `HTML` to PDF is a common task in web development. Fortunately, Python provides several libraries to accomplish this task effortlessly. Here are two examples of how to convert `HTML` to PDF using popular Python libraries:
+## Comment convertir `HTML` en PDF
 
-### Using the `pdfkit` library
+Convertir `HTML` en PDF est une tâche courante dans le développement web. Heureusement, Python propose plusieurs bibliothèques pour accomplir cette tâche sans effort. Voici deux exemples de comment convertir `HTML` en PDF en utilisant des bibliothèques Python populaires :
+
+### En utilisant la bibliothèque `pdfkit`
 
 ```python
 import pdfkit
@@ -237,7 +237,7 @@ import pdfkit
 pdfkit.from_file('path/to/file.html', 'path/to/output.pdf')
 ```
 
-### Using the `weasyprint` library
+### Utilisation de la bibliothèque `weasyprint`
 
 ```python
 from weasyprint import HTML
@@ -245,4 +245,4 @@ from weasyprint import HTML
 HTML('path/to/file.html').write_pdf('path/to/output.pdf')
 ```
 
-Both libraries provide the ability to convert `HTML` to PDF with just a few lines of code, making it easy to incorporate into any Python project. Don't forget to install the required libraries using pip before implementing the solution.
+Les deux bibliothèques offrent la capacité de convertir `HTML` en PDF avec juste quelques lignes de code, facilitant ainsi son intégration dans tout projet Python. N'oubliez pas d'installer les bibliothèques requises en utilisant pip avant de mettre en œuvre la solution.
