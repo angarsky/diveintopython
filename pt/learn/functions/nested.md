@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/functions/nested
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/functions/nested
 
-Nested functions are a **powerful tool** available in Python programming that allows one to define functions inside other functions. Such a concept of nesting one function inside another can create more organized and manageable code. With the help of nested functions, the code becomes easier to read and is also more efficient. In this article, we will take a closer look at what are nested functions and why they are used in Python.  
-  
-## Understanding Python's Nested Functions  
+Funções aninhadas são uma **ferramenta poderosa** disponível na programação Python que permite definir funções dentro de outras funções. Tal conceito de aninhar uma função dentro de outra pode criar um código mais organizado e gerenciável. Com a ajuda de funções aninhadas, o código se torna mais fácil de ler e também mais eficiente. Neste artigo, vamos dar uma olhada mais de perto no que são funções aninhadas e por que elas são usadas em Python.
 
-Nested functions in Python refer to creating functions inside another function. In other words, a function can be defined inside another function, and it can access the variables declared in its outer function.
+## Entendendo as Funções Aninhadas do Python
 
-Nested functions are useful in situations where we need to define a helper function that is only needed within the scope of the outer function. Nested functions improve readability and help modularize code.
+Funções aninhadas no Python referem-se a criar funções dentro de outra função. Em outras palavras, uma função pode ser definida dentro de outra função, e ela pode acessar as variáveis declaradas em sua função externa.
 
-### Two Examples of Nested Functions in Python
+Funções aninhadas são úteis em situações onde precisamos definir uma função auxiliar que só é necessária dentro do escopo da função externa. Funções aninhadas melhoram a legibilidade e ajudam a modularizar o código.
+
+### Dois Exemplos de Funções Aninhadas no Python
 
 ```python3
 def outer_function(x):
@@ -21,9 +21,9 @@ add_five = outer_function(5)
 print(add_five(3)) # Output: 8
 ```
 
-In this example, we define two functions: the `outer_function` and the `inner_function`. The `outer_function` takes one argument `x` and returns the `inner_function`. The `inner_function`, in turn, takes one argument `y` and returns the sum of `x` and `y`. 
+Neste exemplo, definimos duas funções: a `outer_function` e a `inner_function`. A `outer_function` recebe um argumento `x` e retorna a `inner_function`. A `inner_function`, por sua vez, recebe um argumento `y` e retorna a soma de `x` e `y`.
 
-We assign the output of `outer_function(5)` to the variable `add_five`, which becomes a function that adds `5` to its argument. When we call `add_five(3)`, we get `8` as the result.
+Atribuímos a saída de `outer_function(5)` à variável `add_five`, que se torna uma função que adiciona `5` ao seu argumento. Quando chamamos `add_five(3)`, obtemos `8` como resultado.
 
 ```python3
 def outer_function():
@@ -36,17 +36,17 @@ def outer_function():
 print(outer_function()) # Output: 3
 ```
 
-In this example, we define an `outer_function` that initializes a variable `x` to 1 and returns the output of the `inner_function`. The `inner_function` initializes a variable `y` to `2` and returns the sum of `x` and `y`.
+Neste exemplo, definimos uma `outer_function` que inicializa uma variável `x` como 1 e retorna o resultado da `inner_function`. A `inner_function` inicializa uma variável `y` como `2` e retorna a soma de `x` e `y`.
 
-When we call `outer_function()`, we get `3` as the result, which is the sum of `x` and `y`. The `inner_function` is called within the scope of the `outer_function`, and it has access to the variable `x` declared in the `outer_function`.  
-  
-## Advantages of Using Nested Functions in Python  
+Quando chamamos `outer_function()`, obtemos `3` como resultado, que é a soma de `x` e `y`. A `inner_function` é chamada dentro do escopo da `outer_function`, e ela tem acesso à variável `x` declarada na `outer_function`.
 
-Nested functions within Python code offer a range of benefits, empowering developers to create a more robust and adaptable programming structure, enhance code readability, and craft modular code that is simpler to maintain.
+## Vantagens de Usar Funções Aninhadas em Python
 
-### Encapsulation and Modularity
+Funções aninhadas dentro do código Python oferecem uma gama de benefícios, capacitando desenvolvedores a criar uma estrutura de programação mais robusta e adaptável, melhorar a legibilidade do código, e elaborar código modular que é mais simples de manter.
 
-A primary advantage of nested functions lies in their capacity to define helper functions within a specific function's scope. By doing so, it prevents cluttering the global namespace and promotes code organization. Consider the following example:
+### Encapsulamento e Modularidade
+
+Uma vantagem primária das funções aninhadas reside em sua capacidade de definir funções auxiliares dentro do escopo de uma função específica. Ao fazer isso, evita-se poluir o namespace global e promove-se a organização do código. Considere o seguinte exemplo:
 
 ```python
 def double_odd_numbers(numbers):
@@ -59,11 +59,11 @@ def double_odd_numbers(numbers):
     return [double(num) for num in numbers if is_odd(num)]
 ```
 
-In this instance, `double_odd_numbers` encompasses `is_odd` and `double` functions, streamlining comprehension as these functions are solely utilized within the main function's context.
+Nesta instância, `double_odd_numbers` abrange as funções `is_odd` e `double`, simplificando a compreensão, pois essas funções são utilizadas exclusivamente no contexto da função principal.
 
-### Closure Creation
+### Criação de Closures
 
-Another notable advantage of nested functions is their ability to generate closures. This enables nested functions to access and manipulate variables from their enclosing function. For instance:
+Outra vantagem notável das funções aninhadas é a capacidade de gerar closures. Isso permite que as funções aninhadas acessem e manipulem variáveis da sua função de encapsulamento. Por exemplo:
 
 ```python3
 def power_function(base):
@@ -82,23 +82,23 @@ print(square(3))  # Output: 8
 print(cube(2))    # Output: 9
 ```
 
-In this scenario, `power_function` produces a new function, `exponent_power`, capable of computing the power of a base raised to a given exponent. Utilizing this nested structure, functions like `square` and `cube` acquire access to the base variable from the enclosing function, simplifying the creation of new functions with different base values.
+Neste cenário, `power_function` produz uma nova função, `exponent_power`, capaz de computar a potência de uma base elevada a um determinado expoente. Utilizando esta estrutura aninhada, funções como `square` e `cube` obtêm acesso à variável base da função que as envolve, simplificando a criação de novas funções com diferentes valores de base.
 
-By leveraging nested functions, Python developers can enhance code modularity, readability, and exploit powerful closure functionalities to create more versatile and efficient code structures.  
-  
-## Creating Nested Functions in Python
+Ao aproveitar funções aninhadas, desenvolvedores Python podem melhorar a modularidade do código, sua legibilidade, e explorar poderosas funcionalidades de fechamento para criar estruturas de código mais versáteis e eficientes.
 
-Nested functions in Python refer to the process of creating a function inside another function. This process allows for better organization and readability of code. To create a nested function in Python, follow these steps:
+## Criando Funções Aninhadas em Python
 
-1. **Create** the outer function.
-2. **Define** the inner function within the outer function.
-3. **Call** the inner function within the outer function or return it.
+Funções aninhadas em Python se referem ao processo de criar uma função dentro de outra função. Esse processo permite uma melhor organização e legibilidade do código. Para criar uma função aninhada em Python, siga estes passos:
 
-In conclusion, creating nested functions in Python is a useful technique for organizing and streamlining code. It allows for better readability and can streamline complex processes.  
-  
-## Examples of Python Nested Functions in Real-World Applications  
+1. **Crie** a função externa.
+2. **Defina** a função interna dentro da função externa.
+3. **Chame** a função interna dentro da função externa ou retorne-a.
 
-Nested functions are functions **inside other functions**. These functions are particularly useful in programming. They can be used in real-world applications in Python. For instance, a nested function could define a function that calls another function. Or, a nested function could define a function that uses a previously defined function. In addition, a nested function could provide a local scope.
+Em conclusão, criar funções aninhadas em Python é uma técnica útil para organizar e otimizar o código. Ela permite uma melhor legibilidade e pode simplificar processos complexos.
+
+## Exemplos de Funções Aninhadas em Python em Aplicações do Mundo Real
+
+Funções aninhadas são funções **dentro de outras funções**. Estas funções são particularmente úteis na programação. Elas podem ser utilizadas em aplicações do mundo real em Python. Por exemplo, uma função aninhada poderia definir uma função que chama outra função. Ou, uma função aninhada poderia definir uma função que utiliza uma função previamente definida. Além disso, uma função aninhada poderia fornecer um escopo local.
 
 ```python3
 def parent_function(x):
@@ -109,7 +109,7 @@ def parent_function(x):
 print(parent_function(5))
 ```
 
-In this example, `child_function` is a nested function. It is defined inside `parent_function`. `parent_function` takes in a parameter `x`. Then it uses `child_function` to double `x`. Finally, it returns the sum of `x` and `child_function(x)`. When we run `parent_function(5)`, we get 15 as the result.
+Neste exemplo, `child_function` é uma função aninhada. Ela é definida dentro de `parent_function`. `parent_function` recebe um parâmetro `x`. Em seguida, ela usa `child_function` para dobrar `x`. Por fim, retorna a soma de `x` e `child_function(x)`. Quando executamos `parent_function(5)`, obtemos 15 como resultado.
 
 ```python3
 def adder(a):
@@ -123,7 +123,7 @@ print(x(5))
 print(y(5))
 ```
 
-In this example, `inner` is a nested function. It is defined inside `adder`. `adder` takes in a parameter a. `adder` returns `inner`. `inner` takes in a parameter `x`. It returns the sum of `x` and `a`. When we call `adder(3)`, we get `inner`. We store the `inner` as `x`. The same is true for `adder(5)` which we store as `y`. When we call `x(5)`, we get 8 as the result. When we call `y(5)`, we get 10 as the result.
+Neste exemplo, `inner` é uma função aninhada. Ela é definida dentro de `adder`. `adder` recebe um parâmetro `a`. `adder` retorna `inner`. `inner` recebe um parâmetro `x`. Ela retorna a soma de `x` e `a`. Quando chamamos `adder(3)`, obtemos `inner`. Armazenamos `inner` como `x`. O mesmo é verdade para `adder(5)` que armazenamos como `y`. Quando chamamos `x(5)`, obtemos 8 como resultado. Quando chamamos `y(5)`, obtemos 10 como resultado.
 
 ```python
 def exponential(x):
@@ -134,13 +134,13 @@ def exponential(x):
 print(exponential(2))
 ```
 
-In this example, `square` is a nested function. It is defined inside `exponential`. `exponential` takes in a parameter `x`. `exponential` returns the square of `x` raised to the fourth power. `square` takes in a parameter `y`. It returns the square of `y`. When we run `exponential(2)`, we get 16 as the result.  
-  
-## Best Practices for Using Nested Functions in Python  
+Neste exemplo, `square` é uma função aninhada. Ela é definida dentro de `exponential`. `exponential` recebe um parâmetro `x`. `exponential` retorna o quadrado de `x` elevado à quarta potência. `square` recebe um parâmetro `y`. Ela retorna o quadrado de `y`. Quando executamos `exponential(2)`, obtemos 16 como resultado.
 
-Nested functions refer to defining a function within another function in Python. This can be useful for code organization and encapsulation. Best practices for using nested functions include avoiding excessive nesting, ensuring each function has a clear and specific purpose, and using appropriate variable scopes.
+## Melhores Práticas para Usar Funções Aninhadas em Python
 
-To use nested functions in Python, define the outer function and then define the inner function within it. The inner function has access to the variables within the outer function, but not vice versa. Here are two examples:
+Funções aninhadas se referem a definir uma função dentro de outra função em Python. Isso pode ser útil para organização do código e encapsulamento. As melhores práticas para usar funções aninhadas incluem evitar aninhamentos excessivos, garantir que cada função tenha um propósito claro e específico, e usar escopos de variáveis apropriados.
+
+Para usar funções aninhadas em Python, defina a função externa e então defina a função interna dentro dela. A função interna tem acesso às variáveis dentro da função externa, mas não o inverso. Aqui estão dois exemplos:
 
 ```python3
 # Example 1: Power function using nested functions
@@ -172,15 +172,15 @@ for j, f in enumerate(functions_list):
     print(f(j))  # Output: 4 5 6 7 8
 ```
 
-In the first example, a power function is created using nested functions. The outer function takes a number and returns the inner function, which calculates the power of that number. The inner function is defined within the scope of the outer function, allowing it to access the `num` parameter and calculate the power.
+No primeiro exemplo, uma função de potência é criada usando funções aninhadas. A função externa recebe um número e retorna a função interna, que calcula a potência desse número. A função interna é definida dentro do escopo da função externa, permitindo que ela acesse o parâmetro `num` e calcule a potência.
 
-In the second example, a list of functions is generated using a loop and nested functions. The inner function is defined within the loop, giving it access to the loop variable `i`. The resulting list of functions can then be used to perform calculations using different values of `i`.  
-  
-## Differences Between Nested Functions and Anonymous Functions in Python  
+No segundo exemplo, uma lista de funções é gerada usando um loop e funções aninhadas. A função interna é definida dentro do loop, dando-lhe acesso à variável do loop `i`. A lista resultante de funções pode então ser usada para realizar cálculos usando diferentes valores de `i`.
 
-Nested functions are functions that are defined inside another function. These functions are only accessible from within the outer containing function. On the other hand, anonymous functions are functions without names that are defined using the lambda keyword. These functions can be defined anywhere in the program and can be passed as arguments to other functions.
+## Diferenças Entre Funções Aninhadas e Funções Anônimas em Python
 
-### Nested Function
+Funções aninhadas são funções que são definidas dentro de outra função. Essas funções só são acessíveis de dentro da função externa que as contém. Por outro lado, funções anônimas são funções sem nomes que são definidas usando a palavra-chave lambda. Essas funções podem ser definidas em qualquer lugar do programa e podem ser passadas como argumentos para outras funções.
+
+### Função Aninhada
 
 ```python3
 def outer_func(x):
@@ -192,9 +192,9 @@ result = outer_func(5)
 print(result(7))  # Output: 35
 ```
 
-In this example, the function `inner_func` is defined inside `outer_func`, making it a nested function. We then return `inner_func` as the result of calling `outer_func`. The variable `result` is assigned to the inner function with `x` set to `5`. We then call `result` with `y` equal to `7` to get the output of `35`.
+Neste exemplo, a função `inner_func` é definida dentro de `outer_func`, tornando-a uma função aninhada. Em seguida, retornamos `inner_func` como o resultado da chamada de `outer_func`. A variável `result` é atribuída à função interna com `x` definido como `5`. Em seguida, chamamos `result` com `y` igual a `7` para obter a saída de `35`.
 
-### Anonymous Function
+### Função Anônima
 
 ```python
 list_nums = [1, 2, 3, 4, 5]
@@ -202,15 +202,15 @@ new_list = list(map(lambda x: x*2, list_nums))
 print(new_list)  # Output: [2, 4, 6, 8, 10]
 ```
 
-In this example, we use an anonymous function defined by the `lambda` keyword and passed it as an argument to the `map` function. This function multiplies each element of `list_nums` by `2` and returns a new list with the mapped results stored in `new_list`.  
-  
-## Common Errors to Avoid When Using Nested Functions in Python Programming  
+Neste exemplo, utilizamos uma função anônima definida pela palavra-chave `lambda` e a passamos como argumento para a função `map`. Esta função multiplica cada elemento de `list_nums` por `2` e retorna uma nova lista com os resultados mapeados armazenados em `new_list`.
 
-To avoid common errors when using nested functions in Python programming, it is important to ensure that function names and variables are **not repeated** within a nested function and its parent function, as this may cause confusion and errors.
+## Erros Comuns a Evitar ao Usar Funções Aninhadas na Programação Python
 
-Other common errors to avoid include improperly calling a function within another function, and using loops incorrectly within nested functions. Additionally, care must be taken when using functional programming techniques and power functions in nested functions.
+Para evitar erros comuns ao usar funções aninhadas na programação Python, é importante garantir que nomes de funções e variáveis **não sejam repetidos** dentro de uma função aninhada e sua função pai, pois isso pode causar confusão e erros.
 
-For example, the following code illustrates a common error when a variable is defined in both a parent and nested function:
+Outros erros comuns a evitar incluem chamar uma função de maneira imprópria dentro de outra função e usar loops incorretamente dentro de funções aninhadas. Além disso, deve-se ter cuidado ao usar técnicas de programação funcional e funções de potência em funções aninhadas.
+
+Por exemplo, o seguinte código ilustra um erro comum quando uma variável é definida tanto em uma função pai quanto em uma função aninhada:
 
 ```python
 def parent_func():

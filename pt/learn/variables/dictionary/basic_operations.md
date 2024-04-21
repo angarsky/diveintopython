@@ -1,23 +1,23 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary/basic-operations
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/dictionary/basic-operations
 
-Dictionaries are a powerful and flexible data structure that allows you to store and manipulate key-value pairs. Let's review some common operations and methods you can perform on dictionaries in Python.
+Dicionários são uma estrutura de dados poderosa e flexível que permite armazenar e manipular pares chave-valor. Vamos revisar algumas operações comuns e métodos que você pode executar em dicionários no Python.
 
-## Adding an Element to a Dictionary
+## Adicionando um Elemento a um Dicionário
 
-There are several ways of item adding to a dictionary.
+Existem várias maneiras de adicionar itens a um dicionário.
 
-### Value Assignment
+### Atribuição de Valor
 
-To add a key-value pair to a Python dictionary, you can use the following syntax:
+Para adicionar um par chave-valor a um dicionário Python, você pode usar a seguinte sintaxe:
 
 ```python
 my_dict[key] = value
 ```
 
-Here, `my_dict` is the dictionary you want to add an element to, `key` is the key for the new element, and `value` is the value for the new element.
+Aqui, `my_dict` é o dicionário ao qual você deseja adicionar um elemento, `key` é a chave para o novo elemento, e `value` é o valor para o novo elemento.
 
-For example, if you have an empty dictionary and you want to add a new item to it with the key `"name"` and the value `"John"`, you can do the following:
+Por exemplo, se você tem um dicionário vazio e quer adicionar um novo item a ele com a chave `"name"` e o valor `"John"`, você pode fazer o seguinte:
 
 ```python3
 my_dict = {}
@@ -25,13 +25,13 @@ my_dict["name"] = "John"
 print(my_dict) # Output: {'name': 'John'}.
 ```
 
-If the key already exists in the dictionary, its value will be updated to the new value. If the key does not exist, a new key-value pair will be added to the dictionary.
+Se a chave já existir no dicionário, seu valor será atualizado para o novo valor. Se a chave não existir, um novo par chave-valor será adicionado ao dicionário.
 
-### The `update()` Method
+### O Método `update()`
 
-The `update()` method takes another dictionary as an argument and adds its key-value pairs to the original dictionary. If a key already exists in the original dictionary, its value will be updated to the value from the new dictionary.
+O método `update()` recebe outro dicionário como argumento e adiciona seus pares chave-valor ao dicionário original. Se uma chave já existir no dicionário original, seu valor será atualizado para o valor do novo dicionário.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python
 my_dict = {'a': 1, 'b': 2}
@@ -42,13 +42,13 @@ my_dict.update(new_dict)
 print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 ```
 
-> Note: There is no built-in `append()` method for dictionaries, as dictionaries do not have an inherent order. So you can not append an element using `append()` method.
+> Nota: Não existe um método `append()` integrado para dicionários, pois dicionários não possuem uma ordem inerente. Então você não pode adicionar um elemento usando o método `append()`.
 
-## Deleting an Element From a Dictionary
+## Deletando um Elemento de um Dicionário
 
-To delete an item from a dictionary in Python, you can use the `del` keyword along with the dictionary key.
+Para deletar um item de um dicionário em Python, você pode usar a palavra-chave `del` junto com a chave do dicionário.
 
-Here is an example of how to remove a key from dictionary along with its value:
+Aqui está um exemplo de como remover uma chave do dicionário junto com seu valor:
 
 ```python3
 # create a dictionary
@@ -61,13 +61,13 @@ del my_dict['b']
 print(my_dict) # Output: {'a': 1, 'c': 3}
 ```
 
-In the example above, the `del` keyword is used to delete the key-value pair with key `'b'` from the dictionary `my_dict`. The resulting dictionary only contains the elements with keys `'a'` and `'c'`.
+No exemplo acima, a palavra-chave `del` é usada para deletar o par chave-valor com chave `'b'` do dicionário `my_dict`. O dicionário resultante contém apenas os elementos com chaves `'a'` e `'c'`.
 
-## Dictionary Iteration or Looping in Python
+## Iteração ou Looping em Dicionários em Python
 
-We will show you how to iterate over a dictionary in Python using a `for` loop. Here are a few ways of iterating:
+Vamos mostrar como iterar sobre um dicionário em Python usando um loop `for`. Aqui estão algumas maneiras de iterar:
 
-- Iterate over the keys:
+- Iterar sobre as chaves:
 
 ```python3
 # create a dictionary
@@ -78,7 +78,7 @@ for key in my_dict:
     print(key)
 ```
 
-Output:
+Saída:
 
 ```python
 a
@@ -86,7 +86,7 @@ b
 c
 ```
 
-- Iterate over the values:
+- Iterar sobre os valores:
 
 ```python3
 # create a dictionary
@@ -97,7 +97,7 @@ for value in my_dict.values():
     print(value)
 ```
 
-Output:
+Saída:
 
 ```python
 1
@@ -105,7 +105,7 @@ Output:
 3
 ```
 
-- Iterate over the key-value pairs:
+- Iterar sobre os pares chave-valor:
 
 ```python3
 # create a dictionary
@@ -116,7 +116,7 @@ for key, value in my_dict.items():
     print(key, value)
 ```
 
-Output:
+Saída:
 
 ```python
 a 1
@@ -124,15 +124,15 @@ b 2
 c 3
 ```
 
-In the third example, we use the `items()` method of the dictionary to get a list of the key-value pairs. We then use tuple unpacking to extract the key and value from each pair and print them.
+No terceiro exemplo, usamos o método `items()` do dicionário para obter uma lista dos pares chave-valor. Em seguida, usamos a desempacotamento de tuplas para extrair a chave e o valor de cada par e imprimi-los.
 
-We used `for` in our examples, but, of course, you can use also `while` to python loop through a dictionary in Python.
+Usamos `for` nos nossos exemplos, mas, claro, você também pode usar `while` para percorrer um dicionário em Python.
 
-## Merging Dictionaries in Python
+## Mesclando Dicionários em Python
 
-You can merge two dictionaries using the `update()` method which we mentioned earlier. The `update()` method adds the key-value pairs from one dictionary into another dictionary. If a key already exists in the target dictionary, the corresponding value will be updated with the new value.
+Você pode mesclar dois dicionários usando o método `update()` que mencionamos anteriormente. O método `update()` adiciona os pares chave-valor de um dicionário a outro dicionário. Se uma chave já existir no dicionário alvo, o valor correspondente será atualizado com o novo valor.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python
 dict1 = {'a': 1, 'b': 2}
@@ -143,17 +143,17 @@ dict1.update(dict2)
 print(dict1) # Output: {'a': 1, 'b': 3, 'c': 4}
 ```
 
-In this example, we have two dictionaries `dict1` and `dict2`. We use the `update()` method to merge `dict2` into `dict1`. The resulting dictionary is `{'a': 1, 'b': 3, 'c': 4}`.
+Neste exemplo, temos dois dicionários `dict1` e `dict2`. Utilizamos o método `update()` para mesclar `dict2` em `dict1`. O dicionário resultante é `{'a': 1, 'b': 3, 'c': 4}`.
 
-> Note: when the `update()` method is called, it modifies the dictionary on which it is called. If you don't want to modify the original dictionary, you can create a new dictionary and use the `update()` method to merge the two dictionaries.
+> Nota: quando o método `update()` é chamado, ele modifica o dicionário no qual é chamado. Se você não deseja modificar o dicionário original, você pode criar um novo dicionário e usar o método `update()` para mesclar os dois dicionários.
 
-## Ordered or Sorted Dictionary
+## Dicionário Ordenado ou Classificado
 
-In Python 3.7 and later versions, dictionaries are guaranteed to maintain the order of their items as they were added. This means that the items in a dictionary will be iterated over in the same order as they were inserted.
+No Python 3.7 e versões posteriores, os dicionários garantem manter a ordem de seus itens conforme foram adicionados. Isso significa que os itens em um dicionário serão iterados na mesma ordem em que foram inseridos.
 
-Prior to Python 3.7, dictionaries did not preserve the order of their items, and iterating over a dictionary would return its items in an arbitrary order.
+Antes do Python 3.7, os dicionários não preservavam a ordem de seus itens, e iterar sobre um dicionário retornaria seus itens em uma ordem arbitrária.
 
-You can get dictionary sorted its keys or values. Dictionary ordering can be done using the built-in `sorted()` function, which returns a list of the dictionary's keys or values in sorted order. For example:
+Você pode obter um dicionário ordenado por suas chaves ou valores. A ordenação de dicionários pode ser feita usando a função embutida `sorted()`, que retorna uma lista das chaves ou valores do dicionário em ordem ordenada. Por exemplo:
 
 ```python
 my_dict = {'c': 3, 'a': 1, 'b': 2}
@@ -165,13 +165,13 @@ sorted_dict_by_keys = {k: my_dict[k] for k in sorted(my_dict)}
 sorted_dict_by_values = {k: v for k, v in sorted(my_dict.items(), key=lambda item: item[1])}
 ```
 
-Note that in the above example, the original dictionary `my_dict` is not modified, and two new dictionaries `sorted_dict_by_keys` and `sorted_dict_by_values` are created instead.
+Observe que no exemplo acima, o dicionário original `my_dict` não é modificado, e dois novos dicionários `sorted_dict_by_keys` e `sorted_dict_by_values` são criados em vez disso.
 
-## Printing a Dictionary
+## Imprimindo um Dicionário
 
-To print a dictionary in Python, you can use the built-in `print()` function. There are different ways to print a dictionary depending on how you want to format the output.
+Para imprimir um dicionário em Python, você pode usar a função integrada `print()`. Existem diferentes maneiras de imprimir um dicionário, dependendo de como você deseja formatar a saída.
 
-Here is an example of how to print a dictionary:
+Aqui está um exemplo de como imprimir um dicionário:
 
 ```python
 my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
@@ -180,13 +180,13 @@ my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
 print(my_dict)
 ```
 
-This will output the following:
+Isso irá gerar o seguinte:
 
 ```python
 {'apple': 1, 'pineapple': 2, 'orange': 3}
 ```
 
-If you want to print each key-value pair of the dictionary on a separate line, you can use a `for` loop to iterate over the dictionary and print each item:
+Se você quiser imprimir cada par de chave-valor do dicionário em uma linha separada, você pode usar um loop `for` para iterar sobre o dicionário e imprimir cada item:
 
 ```python
 my_dict = {'apple': 1, 'pineapple': 2, 'orange': 3}
@@ -196,7 +196,7 @@ for key, value in my_dict.items():
     print(key, ":", value)
 ```
 
-This will output the following:
+Isso produzirá o seguinte:
 
 ```python
 apple : 1
@@ -204,11 +204,11 @@ pineapple : 2
 orange : 3
 ```
 
-## Dictionary to JSON Conversion in Python
+## Conversão de dicionário para JSON em Python
 
-You can use the built-in `json` module in Python to convert a dictionary to JSON format.
+Você pode usar o módulo `json` embutido em Python para converter um dicionário para o formato JSON.
 
-Here is an example code snippet:
+Aqui está um exemplo de trecho de código:
 
 ```python3
 import json
@@ -223,15 +223,15 @@ json_obj = json.dumps(my_dict)
 print(json_obj)
 ```
 
-In this example, the `json.dumps()` function is used to convert the dictionary `my_dict` to a JSON object `json_obj`. The `print()` function is used to display the JSON object on the console.
+Neste exemplo, a função `json.dumps()` é utilizada para converter o dicionário `my_dict` em um objeto JSON `json_obj`. A função `print()` é utilizada para exibir o objeto JSON no console.
 
-Output:
+Saída:
 
 ```python
 {"name": "John", "age": 30, "city": "New York"}
 ```
 
-You can also save the JSON object to a file by using the `json.dump()` function. Here is an example:
+Você também pode salvar o objeto JSON em um arquivo usando a função `json.dump()`. Aqui está um exemplo:
 
 ```python
 import json
@@ -244,4 +244,4 @@ with open('data.json', 'w') as f:
     json.dump(my_dict, f)
 ```
 
-In this example, the `json.dump()` function is used to save the dictionary `my_dict` to a file named `data.json`. The file is opened in write mode using the with statement.
+Neste exemplo, a função `json.dump()` é usada para salvar o dicionário `my_dict` em um arquivo chamado `data.json`. O arquivo é aberto no modo de escrita usando a instrução with.

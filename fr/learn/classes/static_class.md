@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/static-class
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/classes/static-class
 
-Python offers various class types, including Python static classes, which allow you to define class-level functionality without the need to create instances. One of the advantages of using a static class is that it allows you to group related functions together within a class, by integrating Python static classes into your Python projects, you can harness the benefits of organized, class-level functionality that doesn't depend on class instances. To create a static method in a class, you can use the `@staticmethod` decorator. Once created, you can call the static method directly from the class without creating an instance of it. In this article, we will explore the concept of static classes and how to create and call a static method in a class.  
-  
-## Understanding Python Static Classes  
+Python propose différents types de classes, notamment les classes statiques Python, qui vous permettent de définir des fonctionnalités au niveau de la classe sans avoir besoin de créer des instances. L'un des avantages de l'utilisation d'une classe statique est qu'elle vous permet de regrouper des fonctions liées au sein d'une classe, en intégrant des classes statiques Python dans vos projets Python, vous pouvez tirer parti des avantages d'une fonctionnalité organisée au niveau de la classe qui ne dépend pas des instances de classe. Pour créer une méthode statique dans une classe, vous pouvez utiliser le décorateur `@staticmethod`. Une fois créée, vous pouvez appeler la méthode statique directement à partir de la classe sans créer une instance de celle-ci. Dans cet article, nous allons explorer le concept de classes statiques et comment créer et appeler une méthode statique dans une classe.
 
-Python static class is a class that does not require an instance to be created. It is created using the `@staticmethod` decorator in a class definition. A static method doesn't have access to the instance, and it also can't modify the class itself. 
+## Comprendre les Classes Statiques Python
 
-### How to Use a Python Static Class and Call Static Method in Class
+Une classe statique Python est une classe qui ne nécessite pas qu'une instance soit créée. Elle est créée en utilisant le décorateur `@staticmethod` dans une définition de classe. Une méthode statique n'a pas accès à l'instance, et elle ne peut pas non plus modifier la classe elle-même.
 
-In addition to understanding the concept of a static method, it's crucial to grasp the significance of a static class in Python.
+### Comment Utiliser une Classe Statique Python et Appeler une Méthode Statique dans une Classe
+
+En plus de comprendre le concept d'une méthode statique, il est crucial de saisir l'importance d'une classe statique en Python.
 
 ```python3
 class MyClass:
@@ -20,7 +20,7 @@ class MyClass:
 MyClass.static_method()   # Output: This is a static method in a class
 ```
 
-In the above example, `static_method()` is a static method in `MyClass`. It can be called using the class name without an instance of the class.
+Dans l'exemple ci-dessus, `static_method()` est une méthode statique dans `MyClass`. Elle peut être appelée en utilisant le nom de la classe sans une instance de la classe.
 
 ```python3
 class Calculator:
@@ -32,15 +32,15 @@ result = Calculator.add_numbers(3, 5)
 print(result)   # Output: 8
 ```
 
-In the above example, the `add_numbers()` static method of `Calculator` class can be called directly using the class name `Calculator`. It takes two arguments `x` and `y` and returns their sum. 
+Dans l'exemple ci-dessus, la méthode statique `add_numbers()` de la classe `Calculator` peut être appelée directement en utilisant le nom de la classe `Calculator`. Elle prend deux arguments `x` et `y` et retourne leur somme.
 
-Overall, static classes and static methods provide a way to represent functionality that doesn't depend on any instance or class variables, and can be used without creating an instance of a class.  
-  
-## What is a Static Method in Python  
+Globalement, les classes et méthodes statiques fournissent une manière de représenter des fonctionnalités qui ne dépendent d'aucune instance ou variable de classe, et peuvent être utilisées sans créer une instance de classe.
 
-Python allows us to create static classes and static methods within a class. A static method in Python doesn't require an instance of the class to be created before it is used. Meanwhile, a Python class static method is a method whose first parameter is the class itself rather than the instance of the class.
+## Qu'est-ce qu'une Méthode Statique en Python
 
-To create static classes and static methods, we simply use the `@staticmethod` decorator in Python. 
+Python nous permet de créer des classes statiques et des méthodes statiques au sein d'une classe. Une méthode statique en Python ne nécessite pas qu'une instance de la classe soit créée avant d'être utilisée. Pendant ce temps, une méthode statique de classe en Python est une méthode dont le premier paramètre est la classe elle-même plutôt que l'instance de la classe.
+
+Pour créer des classes et méthodes statiques, nous utilisons simplement le décorateur `@staticmethod` en Python.
 
 ```python3
 class Math:
@@ -57,7 +57,7 @@ print(Math.add(2, 3))       # Output: 5
 print(Math.subtract(5, 2))  # Output: 3
 ```
 
-In the above example, we created a **static class** called **Math** that contains two **static methods** called **add** and **subtract**. We can call these methods directly from the class without the need to create an instance of the class.
+Dans l'exemple ci-dessus, nous avons créé une **classe statique** appelée **Math** qui contient deux **méthodes statiques** appelées **add** et **subtract**. Nous pouvons appeler ces méthodes directement à partir de la classe sans avoir besoin de créer une instance de la classe.
 
 ```python
 class Person:
@@ -80,11 +80,11 @@ person3 = Person("Jack")
 print(Person.total_people())  # Output: There are 3 people.
 ```
 
-In this example, we created a `Person` class with a **class variable** called `count` that will track the number of instances of the class created. We also created a **Python class static method** called `total_people` that will return the total number of people created. We can call this static method directly from the class.
-  
-## How to Call a Static Method in a Class  
+Dans cet exemple, nous avons créé une classe `Person` avec une **variable de classe** appelée `count` qui va suivre le nombre d'instances de la classe créées. Nous avons également créé une **méthode statique de classe Python** appelée `total_people` qui retournera le nombre total de personnes créées. Nous pouvons appeler cette méthode statique directement depuis la classe.
 
-To call a static method in a class, you need to define a static method using a built-in decorator `@staticmethod`. A static method doesn't require any instance to be called, instead, it is associated with the class itself. 
+## Comment appeler une méthode statique dans une classe
+
+Pour appeler une méthode statique dans une classe, vous devez définir une méthode statique en utilisant un décorateur intégré `@staticmethod`. Une méthode statique ne nécessite aucune instance pour être appelée, à la place, elle est associée à la classe elle-même.
 
 ```python
 class MyClass:
@@ -118,15 +118,15 @@ print(Math.multiply(2, 3)) ### Output 6
 
 ```
 
-In the above examples, we can see how to define and call a static method using the `@staticmethod` decorator in Python.  
+Dans les exemples ci-dessus, nous pouvons voir comment définir et appeler une méthode statique en utilisant le décorateur `@staticmethod` en Python.
 
-## When to Use Static Methods
+## Quand Utiliser les Méthodes Statiques
 
-Static methods in Python are a powerful feature that can significantly improve code organization and maintainability. However, it's essential to understand when and where to use them effectively. Here are some common scenarios where static methods can be beneficial:
+Les méthodes statiques en Python sont une fonctionnalité puissante qui peut améliorer significativement l'organisation du code et sa maintenabilité. Cependant, il est essentiel de comprendre quand et où les utiliser efficacement. Voici quelques scénarios courants où les méthodes statiques peuvent être bénéfiques :
 
-### Utility Functions
+### Fonctions Utilitaires
 
-Static methods are ideal for utility functions that are not tied to a specific instance of a class. These functions provide functionality that can be used across various parts of your codebase. By encapsulating them in a static method, you ensure a clean and modular structure, making your code more maintainable.
+Les méthodes statiques sont idéales pour les fonctions utilitaires qui ne sont pas liées à une instance spécifique d'une classe. Ces fonctions fournissent des fonctionnalités qui peuvent être utilisées dans diverses parties de votre base de code. En les encapsulant dans une méthode statique, vous assurez une structure propre et modulaire, rendant votre code plus maintenable.
 
 ```python
 class StringUtils:
@@ -135,11 +135,11 @@ class StringUtils:
         return string[::-1]
 ```
 
-In this example, the `reverse_string` method is a utility function that can be used to reverse a string. It doesn't require access to instance-specific data and can be called directly on the class.
+Dans cet exemple, la méthode `reverse_string` est une fonction utilitaire qui peut être utilisée pour inverser une chaîne. Elle ne nécessite pas d'accès à des données spécifiques à une instance et peut être appelée directement sur la classe.
 
-### Factory Methods
+### Méthodes de Fabrique
 
-Static methods can be used to create instances of a class. This is particularly useful when you want to encapsulate the logic for object creation within the class itself. Factory methods simplify the process of object initialization and provide clear and concise interfaces for creating objects.
+Les méthodes statiques peuvent être utilisées pour créer des instances d'une classe. Cela est particulièrement utile lorsque vous souhaitez encapsuler la logique de création d'objets au sein de la classe elle-même. Les méthodes de fabrique simplifient le processus d'initialisation d'objets et fournissent des interfaces claires et concises pour créer des objets.
 
 ```python
 class Rectangle:
@@ -152,11 +152,11 @@ class Rectangle:
         return Rectangle(side_length, side_length)
 ```
 
-In this example, the `create_square` static method is a factory method that simplifies the creation of square `Rectangle` instances.
+Dans cet exemple, la méthode statique `create_square` est une méthode de fabrique qui simplifie la création d'instances de carré `Rectangle`.
 
-### Caching and Memoization
+### Mise en cache et Mémoïsation
 
-Static methods can be used for caching or memoization purposes. When you need to store and reuse calculated results, static methods can help maintain a cache within the class, making subsequent calculations more efficient.
+Les méthodes statiques peuvent être utilisées à des fins de mise en cache ou de mémoïsation. Lorsque vous avez besoin de stocker et de réutiliser des résultats calculés, les méthodes statiques peuvent aider à maintenir un cache au sein de la classe, rendant les calculs ultérieurs plus efficaces.
 
 ```python
 class MathUtils:
@@ -169,11 +169,11 @@ class MathUtils:
         return MathUtils._fib_cache[n]
 ```
 
-In this example, the `fibonacci` static method calculates Fibonacci numbers with memoization to optimize performance.
+Dans cet exemple, la méthode statique `fibonacci` calcule les nombres de Fibonacci avec de la mémoïsation pour optimiser les performances.
 
-### Code Organization
+### Organisation du code
 
-Use static methods to group related functions within a class. This improves code organization and readability. When functions share a common purpose but don't depend on instance-specific data, encapsulating them as static methods within the same class keeps your codebase structured.
+Utilisez des méthodes statiques pour regrouper les fonctions liées au sein d'une classe. Cela améliore l'organisation du code et sa lisibilité. Lorsque les fonctions partagent un objectif commun mais ne dépendent pas de données spécifiques à une instance, les encapsuler en tant que méthodes statiques au sein de la même classe maintient votre base de code structurée.
 
 ```python
 class FileUtils:
@@ -186,15 +186,15 @@ class FileUtils:
         # Write content to a file
 ```
 
-In this example, the `FileUtils` class groups methods related to file operations, providing a clear and organized way to work with files.
+Dans cet exemple, la classe `FileUtils` regroupe des méthodes liées aux opérations sur les fichiers, offrant une manière claire et organisée de travailler avec les fichiers.
 
-By recognizing these scenarios, you can effectively harness the power of static methods in your Python codebase and create more maintainable and organized software. Static methods offer a clean and concise way to encapsulate functionality that doesn't depend on instance-specific data while improving code readability and maintainability.
-  
-## Static Classes vs Regular Classes  
+En reconnaissant ces scénarios, vous pouvez efficacement exploiter la puissance des méthodes statiques dans votre base de code Python et créer un logiciel plus maintenable et organisé. Les méthodes statiques offrent une manière propre et concise d'encapsuler une fonctionnalité qui ne dépend pas des données spécifiques à une instance, tout en améliorant la lisibilité et la maintenabilité du code.
 
-Static classes in Python are classes that have class-level attributes and methods that can be accessed without creating an instance of the class. They are defined using the `@staticmethod` decorator. On the other hand, regular classes in Python are the ones that require an object of the class to access attribute or methods.
+## Classes Statiques vs Classes Régulières
 
-### Python Static Class
+Les classes statiques en Python sont des classes qui possèdent des attributs et des méthodes au niveau de la classe qui peuvent être accédés sans créer une instance de la classe. Elles sont définies en utilisant le décorateur `@staticmethod`. D'autre part, les classes régulières en Python sont celles qui nécessitent un objet de la classe pour accéder aux attributs ou méthodes.
+
+### Classe Statique Python
 
 ```python3
 class StaticClass:
@@ -206,17 +206,17 @@ class StaticClass:
 StaticClass.my_static_method()
 ```
 
-In the above example, we have defined a static class `StaticClass` with a static method `my_static_method`. We can call this method without creating an instance of the class.
-  
-## How to use Static Classes in Python
+Dans l'exemple ci-dessus, nous avons défini une classe statique `StaticClass` avec une méthode statique `my_static_method`. Nous pouvons appeler cette méthode sans créer une instance de la classe.
 
-Static classes in Python are classes that are used to group functions that cannot be classified under existing classes. These classes do not require an instance of the class to be created in order to be accessed. Instead, static methods can be called directly from the class itself. Here are some of the top benefits of using static classes:
+## Comment utiliser les classes statiques en Python
 
-1. **Namespace organization** - Static classes can be used to organize functions that do not fit well under any existing class. This helps in maintaining a clean and organized code structure.
+Les classes statiques en Python sont des classes utilisées pour regrouper des fonctions qui ne peuvent pas être classifiées sous les classes existantes. Ces classes ne nécessitent pas la création d'une instance de la classe pour être accédées. Au lieu de cela, les méthodes statiques peuvent être appelées directement depuis la classe elle-même. Voici certains des principaux avantages de l'utilisation des classes statiques :
 
-2. **Code reusability** - Static classes can be reused across multiple modules and functions, making the code reusable and easy to maintain.
+1. **Organisation de l'espace de noms** - Les classes statiques peuvent être utilisées pour organiser des fonctions qui ne se classent pas bien sous une classe existante. Cela aide à maintenir une structure de code propre et organisée.
 
-3. **Improved code readability** - Static classes make it easier to read and understand the code, as the functions are grouped under a single class and can be accessed directly.
+2. **Réutilisabilité du code** - Les classes statiques peuvent être réutilisées à travers plusieurs modules et fonctions, rendant le code réutilisable et facile à maintenir.
+
+3. **Amélioration de la lisibilité du code** - Les classes statiques rendent le code plus facile à lire et à comprendre, car les fonctions sont regroupées sous une seule classe et peuvent être accédées directement.
 
 ```python
 class MathUtils:
@@ -228,7 +228,7 @@ result = MathUtils.add_numbers(2, 3)
 print(result)
 ```
 
-In this example, we have created a static class `MathUtils` and defined a static method `add_numbers` that takes two arguments and returns their sum. The static method can be called directly from the class `MathUtils` without creating an instance of the class.
+Dans cet exemple, nous avons créé une classe statique `MathUtils` et défini une méthode statique `add_numbers` qui prend deux arguments et retourne leur somme. La méthode statique peut être appelée directement à partir de la classe `MathUtils` sans créer une instance de la classe.
 
 ```python3
 class StringUtils:
@@ -246,17 +246,17 @@ result = TextUtils.reverse_and_uppercase("Hello World")
 print(result)
 ```
 
-In this example, we have created two static classes `StringUtils` and `TextUtils`. The `StringUtils` class contains a static method `reverse_string` that returns a reversed string. The `TextUtils` class contains a static method `reverse_and_uppercase` that calls the `reverse_string` method from the `StringUtils` class and returns the reversed string in uppercase. 
+Dans cet exemple, nous avons créé deux classes statiques `StringUtils` et `TextUtils`. La classe `StringUtils` contient une méthode statique `reverse_string` qui retourne une chaîne inversée. La classe `TextUtils` contient une méthode statique `reverse_and_uppercase` qui appelle la méthode `reverse_string` de la classe `StringUtils` et retourne la chaîne inversée en majuscules.
 
-## Static Variables in Class
- 
-In Python, static variables are class-level variables that are shared among all instances of the class. These variables are defined within the class but outside any method, and they retain their value across different instances of the class.
+## Variables statiques dans la classe
 
-Static variables are useful when you want to store data that is shared by all instances of a class or when you want to maintain a count or a common configuration across all instances.
+En Python, les variables statiques sont des variables au niveau de la classe qui sont partagées entre toutes les instances de la classe. Ces variables sont définies à l'intérieur de la classe mais en dehors de toute méthode, et elles conservent leur valeur à travers différentes instances de la classe.
 
-Here are two code examples that demonstrate the usage of static variables in Python classes:
+Les variables statiques sont utiles lorsque vous souhaitez stocker des données qui sont partagées par toutes les instances d'une classe ou lorsque vous souhaitez maintenir un comptage ou une configuration commune à travers toutes les instances.
 
-### Example 1: Counting Instances
+Voici deux exemples de code qui démontrent l'utilisation des variables statiques dans les classes Python :
+
+### Exemple 1 : Comptage d'Instances
 
 ```python3
 class Car:
@@ -277,9 +277,9 @@ car3 = Car("Audi")
 print("Total cars:", Car.count)  # Output: Total cars: 3
 ```
 
-In the above example, the `count` variable is a static variable that keeps track of the number of `Car` instances created. It is incremented in the constructor (`__init__`) whenever a new instance is created. The static variable is accessed using the class name (`Car.count`).
+Dans l'exemple ci-dessus, la variable `count` est une variable statique qui garde le compte du nombre d'instances de `Car` créées. Elle est incrémentée dans le constructeur (`__init__`) chaque fois qu'une nouvelle instance est créée. La variable statique est accédée en utilisant le nom de la classe (`Car.count`).
 
-### Example 2: Common Configuration
+### Exemple 2 : Configuration Commune
 
 ```python3
 class Circle:
@@ -307,31 +307,31 @@ print("Area 2:", area2)  # Output: Area 2: 153.93791
 
 ```
 
-In this example, the `PI` variable is a static variable that stores the value of `pi`. It is used inside the calculate_area method to calculate the area of a circle. The static variable is accessed using the class name (`Circle.PI`).
+Dans cet exemple, la variable `PI` est une variable statique qui stocke la valeur de `pi`. Elle est utilisée à l'intérieur de la méthode calculate_area pour calculer l'aire d'un cercle. La variable statique est accédée en utilisant le nom de la classe (`Circle.PI`).
 
-Static variables are shared among all instances of a class and can be accessed using the class name or through an instance of the class. They are a useful tool for managing data that is common to all instances or for maintaining shared configuration across objects.
+Les variables statiques sont partagées parmi toutes les instances d'une classe et peuvent être accédées en utilisant le nom de la classe ou à travers une instance de la classe. Elles constituent un outil utile pour gérer des données communes à toutes les instances ou pour maintenir une configuration partagée à travers les objets.
 
-## The Difference between a Class Method and a Static Method
+## La différence entre une méthode de classe et une méthode statique
 
-Now that you're familiar with class methods and static methods, it's time to delve into the world of Python's static class and its distinctive properties.
+Maintenant que vous êtes familier avec les méthodes de classe et les méthodes statiques, il est temps de plonger dans le monde de la classe statique de Python et ses propriétés distinctives.
 
-Abstract class method is defined as a method that is declared but contains no implementation. It is up to the subclass to provide the implementation. An abstract method is defined using the **@abstractmethod** decorator in Python.
+La méthode de classe abstraite est définie comme une méthode qui est déclarée mais ne contient pas d'implémentation. Il appartient à la sous-classe de fournir l'implémentation. Une méthode abstraite est définie en utilisant le décorateur **@abstractmethod** en Python.
 
-Class methods are used to modify the class or its properties. They are defined using the `@classmethod` decorator and are passed the class as its first argument instead of the instance.
+Les méthodes de classe sont utilisées pour modifier la classe ou ses propriétés. Elles sont définies en utilisant le décorateur `@classmethod` et le premier argument passé est la classe elle-même au lieu de l'instance.
 
-Python static methods are called on the class and do not take any special first argument. They are defined using the `@staticmethod` decorator.
+Les méthodes statiques Python sont appelées sur la classe et ne prennent aucun argument spécial en premier. Elles sont définies en utilisant le décorateur `@staticmethod`.
 
-### Key Differences Between Class Method vs Static Method in Python
+### Différences clés entre méthode de classe et méthode statique en Python
 
-| Class method  | Static method  |
+| Méthode de classe  | Méthode statique  |
 |---|---|
-| Decorator: **@classmethod** | Decorator: **@staticmethod** |
-| First argument: **cls** (class itself) | No special first argument |
-| Can modify class state or properties | Cannot modify class state or properties |
-| Useful for class-specific operations | Useful for utility operations unrelated to the class |
-| Can access class-level variables | Cannot access class-level variables |
+| Décorateur : **@classmethod** | Décorateur : **@staticmethod** |
+| Premier argument : **cls** (la classe elle-même) | Pas d'argument spécial en premier |
+| Peut modifier l'état ou les propriétés de la classe | Ne peut pas modifier l'état ou les propriétés de la classe |
+| Utile pour les opérations spécifiques à la classe | Utile pour les opérations utilitaires non liées à la classe |
+| Peut accéder aux variables au niveau de la classe | Ne peut pas accéder aux variables au niveau de la classe |
 
-### Example 1: Class method
+### Exemple 1 : Méthode de classe
 
 ```python3
 class Car:
@@ -351,7 +351,7 @@ Car.set_wheels(3)
 print(car1.wheels) # Output: 3
 ```
 
-### Example 2: Static method
+### Exemple 2 : Méthode statique
 
 ```python
 class Formatter:
@@ -360,4 +360,4 @@ class Formatter:
         return string.upper()
 
 print(Formatter.format_string('hello')) # Output: 'HELLO'
-```  
+```

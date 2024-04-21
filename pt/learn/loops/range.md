@@ -1,37 +1,37 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/loops/range
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/loops/range
 
-The `range` statement is a crucial feature in Python that enables developers to define a sequence of numbers within a specified range. It is often used in various programming applications to create loops and iterate over specific subsets of elements in a list or tuple. Range statement is a simple yet powerful tool that can enhance the functionality of your Python code. In this article, we will explore the different applications and functionalities of the range statement and how it can be used to boost the efficiency and effectiveness of your Python scripts.  
-  
-## What is the `range` in Python?
+O comando `range` é uma característica crucial em Python que permite aos desenvolvedores definir uma sequência de números dentro de um intervalo especificado. É frequentemente usado em várias aplicações de programação para criar laços e iterar sobre subconjuntos específicos de elementos em uma lista ou tupla. O comando range é uma ferramenta simples, porém poderosa, que pode aprimorar a funcionalidade do seu código Python. Neste artigo, exploraremos as diferentes aplicações e funcionalidades do comando range e como ele pode ser usado para aumentar a eficiência e eficácia dos seus scripts Python.
 
-The `range` function in Python generates a sequence of numbers within a given range. It is a built-in function in Python that can be used to create an iterable range object. 
+## O que é o `range` em Python?
 
-The `range` function takes three parameters: `start`, `stop`, and range `step`. The `start` parameter is the beginning of the range, `stop` is the end of the range (exclusive), and `step` is the difference between each number in the sequence. 
+A função `range` em Python gera uma sequência de números dentro de um intervalo dado. É uma função integrada em Python que pode ser usada para criar um objeto range iterável.
 
-### Example 1: Printing Numbers from 0 to 9
+A função `range` aceita três parâmetros: `start`, `stop` e `step` do intervalo. O parâmetro `start` é o início do intervalo, `stop` é o fim do intervalo (exclusivo) e `step` é a diferença entre cada número na sequência.
+
+### Exemplo 1: Imprimindo Números de 0 a 9
 
 ```python
 for i in range(10):
     print(i)
 ```
 
-### Example 2: Printing Even Numbers from 2 to 10
+### Exemplo 2: Imprimindo Números Pares de 2 a 10
 
 ```python3
 for i in range(2, 11, 2):
     print(i)
 ```
 
-In the second example, the `start` parameter is set as 2, the `stop` parameter is set as 11 (exclusive), and the `step` parameter is set as 2, which creates a sequence of even numbers from 2 to 10 (inclusive range). 
+No segundo exemplo, o parâmetro `start` é definido como 2, o parâmetro `stop` é definido como 11 (exclusivo), e o parâmetro `step` é definido como 2, o que cria uma sequência de números pares de 2 a 10 (intervalo inclusivo).
 
-Using the `range` function can be useful in many programming scenarios, such as looping through a set of numbers or generating a list of elements.  
-  
-## How to use `range` with `for` Loop  
+Usar a função `range` pode ser útil em muitos cenários de programação, como percorrer um conjunto de números ou gerar uma lista de elementos.
 
-This function can be used with a `for` loop to iterate through a certain range of numbers. 
+## Como usar `range` com o Loop `for`
 
-Here is an example of using `range` with a `for` loop to print out a sequence of integers:
+Esta função pode ser usada com um loop `for` para iterar através de uma certa faixa de números.
+
+Aqui está um exemplo de uso de `range` com um loop `for` para imprimir uma sequência de inteiros:
 
 ```python3
 for num in range(1, 10):
@@ -50,9 +50,9 @@ for num in range(1, 10):
 # 9
 ```
 
-### How to Use `range` with Float Numbers
+### Como Usar `range` com Números Flutuantes
 
-You can also use `range` to loop over a sequence of float numbers.
+Você também pode usar `range` para iterar sobre uma sequência de números flutuantes.
 
 ```python
 for i in range(0, 10):
@@ -72,13 +72,13 @@ for i in range(0, 10):
 # 0.9
 ```
 
-In summary, `range` is a useful Python function that can be combined with a `for` loop to iterate over a sequence of numbers, including float values.  
-  
-## How to Reverse a `range`  
+Em resumo, `range` é uma função útil do Python que pode ser combinada com um laço `for` para iterar sobre uma sequência de números, incluindo valores flutuantes.
 
-To reverse a range in Python, you can make use of the `list` function. First, create a range using the `range` function, and then pass it as an argument to the `list` function to convert `range` in list. After that, you can use the `[::-1]` slice notation to get the **range backwards**. Alternatively, you can also use the `reversed` function to get the reversed range.
+## Como Inverter um `range`
 
-### Using the `list` Function and Slice Notation
+Para inverter um range no Python, você pode fazer uso da função `list`. Primeiro, crie um range usando a função `range`, e então passe-o como argumento para a função `list` para converter `range` em lista. Após isso, você pode usar a notação de fatia `[::-1]` para obter o **range ao contrário**. Alternativamente, você também pode usar a função `reversed` para obter o range invertido.
+
+### Usando a Função `list` e Notação de Fatia
 
 ```python
 my_range = range(1, 6)
@@ -87,7 +87,7 @@ print(reversed_range)  ### Output
 
 ```
 
-### Using the `reversed` Function
+### Utilizando a Função `reversed`
 
 ```python
 my_range = range(1, 6)
@@ -96,15 +96,15 @@ print(reversed_range)  ### Output
 
 ```
 
-In both examples, we first create a range from `1` to `6` using the `range` function. Then, we pass it as an argument to the `list` function to convert it into a list. Finally, we use either slice notation or the `reversed` function to get the **range backwards**.  
-  
-## Range and Xrange  
+Em ambos os exemplos, primeiro criamos um intervalo de `1` a `6` usando a função `range`. Depois, passamos ele como argumento para a função `list` para convertê-lo em uma lista. Finalmente, usamos ou a notação de fatiamento ou a função `reversed` para obter o **intervalo ao contrário**.
 
-In Python 2, `range()` and `xrange()` are used to generate a sequence of numbers between two values. However, there is a difference between these two methods.
+## Range e Xrange
 
-`range()` returns a list while `xrange()` returns an iterator. This means that `range()` generates the entire sequence and stores it in memory while `xrange()` generates the values on-the-fly as needed. Therefore, `xrange()` requires less memory and is more efficient for large sequences.
+No Python 2, `range()` e `xrange()` são usados para gerar uma sequência de números entre dois valores. No entanto, há uma diferença entre esses dois métodos.
 
-Here is an example of using `range()`:
+`range()` retorna uma lista enquanto `xrange()` retorna um iterador. Isso significa que `range()` gera toda a sequência e a armazena na memória enquanto `xrange()` gera os valores conforme necessário. Portanto, `xrange()` requer menos memória e é mais eficiente para grandes sequências.
+
+Aqui está um exemplo de uso do `range()`:
 
 ```python3
 for i in range(5):
@@ -119,7 +119,7 @@ for i in range(5):
 # 4
 ```
 
-And here is the same example using `xrange()` in Python 2:
+E aqui está o mesmo exemplo usando `xrange()` no Python 2:
 
 ```python
 for i in xrange(5):
@@ -134,11 +134,11 @@ for i in xrange(5):
 # 4
 ```
 
-Overall, `xrange()` is recommended for large sequences in Python 2 as it is more memory efficient.
+Em geral, `xrange()` é recomendado para sequências grandes em Python 2, pois é mais eficiente em termos de memória.
   
-## Using `random` with `range` function  
+## Usando `random` com a função `range`  
 
-Python's [random](https://docs.python.org/3/library/random.html) module is a powerful tool for generating random numbers. One of the common use cases for `random` is to generate random integers within a specific range. This can be achieved by using the `range` function in conjunction with `random`.
+O módulo [random](https://docs.python.org/3/library/random.html) do Python é uma ferramenta poderosa para gerar números aleatórios. Um dos casos de uso comuns para `random` é gerar inteiros aleatórios dentro de um intervalo específico. Isso pode ser alcançado usando a função `range` em conjunto com `random`.
 
 ```python3
 import random
@@ -149,7 +149,7 @@ num = random.randint(0, 9)
 print(num)
 ```
 
-In the example above, we `import` the `random` module and use the `randint` function to generate a random integer between 0 and 9 (inclusive).
+No exemplo acima, nós `import` o módulo `random` e usamos a função `randint` para gerar um inteiro aleatório entre 0 e 9 (inclusive).
 
 ```python3
 import random
@@ -160,6 +160,6 @@ nums = [random.randint(0, 9) for _ in range(10)]
 print(nums)
 ```
 
-In the example above, we use a list comprehension with the `range` function to generate a list of 10 random integers between 0 and 9 (inclusive).
+No exemplo acima, usamos uma compreensão de lista com a função `range` para gerar uma lista de 10 inteiros aleatórios entre 0 e 9 (inclusive).
 
-Using `random` with `range` function in Python is an easy way to generate random integers within a specific range. This can be useful in a variety of applications, from generating random test data to simulating gameplay or statistical processes.  
+Usar `random` com a função `range` no Python é uma maneira fácil de gerar inteiros aleatórios dentro de um intervalo específico. Isso pode ser útil em uma variedade de aplicações, desde gerar dados de teste aleatórios até simular jogos ou processos estatísticos.

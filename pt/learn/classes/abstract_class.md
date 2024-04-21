@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/abstract-class
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/classes/abstract-class
 
-In object-oriented programming, an abstract class is a class that cannot be instantiated and is designed to be subclass, providing a basic interface for its derived classes. Python is an object-oriented language that supports abstract classes through its [Abstract Base Class](https://docs.python.org/3/library/abc.html) (ABC) module. This module provides a way to define abstract classes and enforce their interface on their subclasses. This article will explore the concept of abstract classes in Python and how they are implemented using Python abstract base class.  
-  
-## Introduction to Python Abstract Class  
+Em programação orientada a objetos, uma classe abstrata é uma classe que não pode ser instanciada e é projetada para ser uma subclasse, fornecendo uma interface básica para suas classes derivadas. Python é uma linguagem orientada a objetos que suporta classes abstratas por meio do seu módulo [Abstract Base Class](https://docs.python.org/3/library/abc.html) (ABC). Este módulo oferece uma maneira de definir classes abstratas e impor sua interface em suas subclasses. Este artigo explorará o conceito de classes abstratas em Python e como elas são implementadas usando a classe base abstrata de Python.
 
-In Python, an **abstract class** is a class that is designed to be inherited by other classes. It cannot be instantiated on its own and its purpose is to provide a template for other classes to build on. 
+## Introdução à Classe Abstrata em Python
 
-An abstract base class in Python is defined using the `abc` module. It allows us to specify that a class must implement specific methods, but it doesn't provide an implementation for those methods. Any class that inherits from an abstract base class must implement all the abstract methods. 
+Em Python, uma **classe abstrata** é uma classe que é projetada para ser herdada por outras classes. Ela não pode ser instanciada por conta própria e seu propósito é fornecer um modelo para outras classes construírem em cima.
+
+Uma classe base abstrata em Python é definida usando o módulo `abc`. Ele nos permite especificar que uma classe deve implementar métodos específicos, mas não fornece uma implementação para esses métodos. Qualquer classe que herde de uma classe base abstrata deve implementar todos os métodos abstratos.
 
 ```python3
 from abc import ABC, abstractmethod
@@ -30,7 +30,7 @@ print(r.area())    ### Output 30
 
 ```
 
-In the above example, `Shape` is an abstract base class that defines an abstract method `area`. `Rectangle` is a concrete class that inherits from `Shape` and implements the `area` method. 
+No exemplo acima, `Shape` é uma classe base abstrata que define um método abstrato `area`. `Rectangle` é uma classe concreta que herda de `Shape` e implementa o método `area`.
 
 ```python3
 from abc import ABC, abstractmethod
@@ -56,19 +56,19 @@ print(d.talk())    ### Output Woof!
 
 ```
 
-In this example, `Animal` is an abstract base class that defines an abstract method `talk`. `Dog` and `Cat` are concrete classes that inherit from `Animal` and implement the `talk` method. 
+Neste exemplo, `Animal` é uma classe base abstrata que define um método abstrato `talk`. `Dog` e `Cat` são classes concretas que herdam de `Animal` e implementam o método `talk`.
 
-In conclusion, abstract classes in Python provide a way to define a template for other classes to build on. They cannot be instantiated on their own and they provide a way to ensure that subclasses implement specific methods. The `abc` module provides a way to define abstract base classes in Python.  
-  
-## Creating Python Abstract Base Class  
+Em conclusão, classes abstratas em Python fornecem uma maneira de definir um modelo para outras classes construírem em cima. Elas não podem ser instanciadas por si mesmas e fornecem uma maneira de garantir que subclasses implementem métodos específicos. O módulo `abc` oferece uma maneira de definir classes base abstratas em Python.
 
-An abstract class is a class that cannot be instantiated and is meant to be used as a base class for other classes.
+## Criando Classe Base Abstrata em Python
 
-In Python, the `abc` module provides `ABC` class. It is used to create abstract base classes.
+Uma classe abstrata é uma classe que não pode ser instanciada e é destinada a ser usada como uma classe base para outras classes.
 
-To create an abstract base class, we need to inherit from `ABC` class and use the `@abstractmethod` decorator to declare abstract methods.
+Em Python, o módulo `abc` fornece a classe `ABC`. Ela é usada para criar classes base abstratas.
 
-### Example of Abstract Class
+Para criar uma classe base abstrata, precisamos herdar da classe `ABC` e usar o decorador `@abstractmethod` para declarar métodos abstratos.
+
+### Exemplo de Classe Abstrata
 
 ```python
 from abc import ABC, abstractmethod
@@ -84,9 +84,9 @@ class Shape(ABC):
         pass
 ```
 
-In this example, we have created an abstract base class `Shape` with two abstract methods `area` and `perimeter`. Any class that inherits from `Shape` has to implement these two methods.
+Neste exemplo, criamos uma classe base abstrata `Shape` com dois métodos abstratos `area` e `perimeter`. Qualquer classe que herda de `Shape` tem que implementar esses dois métodos.
 
-### Example of Abstract Class with Inheritance
+### Exemplo de Classe Abstrata com Herança
 
 ```python
 
@@ -104,15 +104,15 @@ class Dog(Animal):
         return 'Woof'
 ```
 
-In this example, we have created an abstract base class `Animal` with an abstract method `sound`. We have also created a class `Dog` that inherits from `Animal` and implements the `sound` method.
+Neste exemplo, criamos uma classe base abstrata `Animal` com um método abstrato `sound`. Também criamos uma classe `Dog` que herda de `Animal` e implementa o método `sound`.
 
-> A class that inherits from an abstract base class must implement all the abstract methods declared in the base class, unless it is also an abstract class.  
-  
-## Python Abstract Class vs Interface  
+> Uma classe que herda de uma classe base abstrata deve implementar todos os métodos abstratos declarados na classe base, a menos que ela também seja uma classe abstrata.
 
-An abstract class is a Python class that cannot be instantiated, and it is used to define common properties and behaviors that subclasses can inherit. It is defined using the abc module, which stands for abstract base class. An abstract class is used when we want to define a base class, and we don't want it to be instantiated. Instead, we want it to be subclassed by other classes that will provide specific implementations of its abstract methods.
+## Classe Abstrata vs Interface em Python
 
-### Example of a Python Abstract Base Class
+Uma classe abstrata é uma classe Python que não pode ser instanciada, e é usada para definir propriedades e comportamentos comuns que subclasses podem herdar. É definida usando o módulo abc, que significa classe base abstrata. Uma classe abstrata é usada quando queremos definir uma classe base e não queremos que ela seja instanciada. Em vez disso, queremos que ela seja subclasseada por outras classes que fornecerão implementações específicas de seus métodos abstratos.
+
+### Exemplo de uma Classe Base Abstrata em Python
 
 ```python3
 from abc import ABC, abstractmethod
@@ -140,13 +140,13 @@ s = Snake()
 s.move()
 ```
 
-In the above example, Animal is an abstract base class with an abstract method called move(). Dog and Snake are two subclasses of the Animal class, and they provide their specific implementations of the move() method.
+No exemplo acima, Animal é uma classe base abstrata com um método abstrato chamado move(). Dog e Snake são duas subclasses da classe Animal, e elas fornecem suas implementações específicas do método move().
 
-### Interfaces in Python
+### Interfaces em Python
 
-An interface is a collection of abstract methods that defines the behavior of a class. In Python, there is no strict definition of an interface like in other programming languages like Java. Instead, we use abstract classes to define interfaces. An interface can be considered as a contract between the class and the outside world. A class that implements an interface must provide an implementation for all the methods defined in the interface.
+Uma interface é uma coleção de métodos abstratos que define o comportamento de uma classe. Em Python, não há uma definição estrita de interface como em outras linguagens de programação como Java. Em vez disso, usamos classes abstratas para definir interfaces. Uma interface pode ser considerada como um contrato entre a classe e o mundo externo. Uma classe que implementa uma interface deve fornecer uma implementação para todos os métodos definidos na interface.
 
-#### Example of a Python Interface
+#### Exemplo de uma Interface em Python
 
 ```python3
 from abc import ABC, abstractmethod
@@ -178,11 +178,11 @@ print("Area of Rectangle:", r.area())  # Area of Rectangle: 50
 print("Perimeter of Rectangle:", r.perimeter()) # Perimeter of Rectangle: 30
 ```
 
-In the above example, `Shape`is an interface with two abstract methods called `area()` and `perimeter()`. `Rectangle` is a class that implements the Shape interface and provides its implementation for the `area()` and `perimeter()` methods.  
-  
-## Polymorphism in Python Abstract Classes  
+No exemplo acima, `Shape` é uma interface com dois métodos abstratos chamados `area()` e `perimeter()`. `Rectangle` é uma classe que implementa a interface Shape e fornece sua implementação para os métodos `area()` e `perimeter()`.
 
-An abstract class is a class that cannot be instantiated, but it can be used as a base for other classes. It is a way to define a common interface for a group of related classes. Polymorphism is the ability of an object to take on many forms. In Python, abstract classes can be used to implement polymorphism.
+## Polimorfismo em Classes Abstratas Python
+
+Uma classe abstrata é uma classe que não pode ser instanciada, mas pode ser usada como base para outras classes. É uma maneira de definir uma interface comum para um grupo de classes relacionadas. Polimorfismo é a capacidade de um objeto assumir muitas formas. Em Python, classes abstratas podem ser usadas para implementar polimorfismo.
 
 ```python3
 from abc import ABC, abstractmethod
@@ -207,14 +207,14 @@ d.move() ### This will print "dog is running"
 c.move() ### This will print "cat is jumping"
 
 ```
-  
-## Usage of Python Abstract Base Classes (ABC)
 
-Abstract classes in Python are classes that cannot be instantiated, and are meant to be inherited by other classes. They are useful for defining common methods and properties that should be implemented by their concrete subclasses. 
+## Uso de Classes Base Abstratas (ABC) em Python
 
-One way to implement abstract classes in Python is to use abstract base classes (ABCs) from the `abc` module. An ABC is a special type of class that cannot be instantiated directly, but can be subclassed. ABCs define one or more abstract methods, which are methods that must be implemented by any concrete subclass. 
+Classes abstratas em Python são classes que não podem ser instanciadas e são feitas para serem herdadas por outras classes. Elas são úteis para definir métodos e propriedades comuns que devem ser implementados pelas suas subclasses concretas.
 
-The following code example shows how to define an abstract base class `Animal`, which defines two abstract methods `speak` and `move` that must be implemented by any concrete subclass:
+Uma maneira de implementar classes abstratas em Python é usar classes base abstratas (ABCs) do módulo `abc`. Uma ABC é um tipo especial de classe que não pode ser instanciada diretamente, mas pode ser subclassificada. ABCs definem um ou mais métodos abstratos, que são métodos que devem ser implementados por qualquer subclasse concreta.
+
+O exemplo de código a seguir mostra como definir uma classe base abstrata `Animal`, que define dois métodos abstratos `speak` e `move` que devem ser implementados por qualquer subclasse concreta:
 
 ```python3
 from abc import ABC, abstractmethod
@@ -236,11 +236,11 @@ class Cat(Animal):
         print('running')
 ```
 
-Now, any concrete subclass of `Animal` must implement both `speak` and `move`.
+Agora, qualquer subclasse concreta de `Animal` deve implementar tanto `speak` quanto `move`.
 
-Another benefit of using ABCs in Python is that they can be used to enforce certain interface contract on classes, without specifying their implementation details. 
+Outra vantagem do uso de ABCs em Python é que eles podem ser usados para impor um certo contrato de interface nas classes, sem especificar os detalhes de sua implementação.
 
-For example, if you want to define a function that accepts only objects that have a `draw` method, you could define an ABC called `Drawable`, which defines an abstract method `draw`:
+Por exemplo, se você deseja definir uma função que aceite apenas objetos que possuam um método `draw`, você poderia definir um ABC chamado `Drawable`, que define um método abstrato `draw`:
 
 ```python3
 from abc import ABC, abstractmethod
@@ -266,15 +266,15 @@ class Circle(Drawable):
 draw_all([Rectangle(), Circle()])
 ```
 
-In this example, the `draw_all` function accepts a list of `Drawable` objects, which it draws by calling their `draw` method. The `Rectangle` and `Circle` classes both implement the `draw` method, so they can be used with `draw_all` function.
+Neste exemplo, a função `draw_all` aceita uma lista de objetos `Drawable`, que desenha chamando o método `draw` deles. As classes `Rectangle` e `Circle` implementam o método `draw`, portanto, podem ser usadas com a função `draw_all`.
 
-Overall, abstract base classes in Python provide a powerful tool for code design, by allowing you to define common functionality that can be easily extended and customized by concrete subclasses.  
-   
-## Best Practices for Designing Python Abstract Classes  
+No geral, classes base abstratas em Python proporcionam uma ferramenta poderosa para o design de código, permitindo que você defina funcionalidades comuns que podem ser facilmente estendidas e personalizadas por subclasses concretas.
 
-When designing abstract classes in Python, it is important to follow best practices to ensure a maintainable and readable codebase. 
+## Melhores Práticas para Projetar Classes Abstratas em Python
 
-1. Use the `abc` module to define an abstract base class (ABC).
+Ao projetar classes abstratas em Python, é importante seguir as melhores práticas para assegurar uma base de código sustentável e legível.
+
+1. Use o módulo `abc` para definir uma classe base abstrata (ABC).
 
 ```python
 import abc
@@ -292,7 +292,7 @@ class Circle(Shape):
         return 3.14 * self.radius ** 2
 ```
 
-2. Use abstract methods to specify the contract that derived classes must follow.
+2. Use métodos abstratos para especificar o contrato que as classes derivadas devem seguir.
 
 ```python
 import abc
@@ -315,4 +315,4 @@ my_car.start_engine()    # "Engine started"
 # my_bike = Bike()    TypeError: Can't instantiate abstract class Bike with abstract methods start_engine
 ```
 
-Following these best practices will ensure that your abstract classes are easily understandable and maintainable, with clear contracts for derived classes to follow.  
+Seguir essas melhores práticas garantirá que suas classes abstratas sejam facilmente compreensíveis e mantidas, com contratos claros para que as classes derivadas sigam.

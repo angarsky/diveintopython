@@ -1,29 +1,29 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/list
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/list
 
-A list in Python is a collection of values or items that are ordered, changeable, and allow duplicates. Lists are one of the most commonly used data structures in Python.
+Uma lista em Python é uma coleção de valores ou itens que são ordenados, modificáveis e permitem duplicatas. Listas são uma das estruturas de dados mais comumente usadas em Python.
 
-## Creating a List
+## Criando uma Lista
 
-Here's an example of how to create a list in Python:
+Aqui está um exemplo de como criar uma lista em Python:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 ```
 
-As you can see, creation of list is a fairly simple process. To create an empty list, you can simply use the following syntax:
+Como você pode ver, a criação de lista é um processo relativamente simples. Para criar uma lista vazia, você pode simplesmente usar a seguinte sintaxe:
 
 ```python
 my_list = []
 ```
 
-Let's review some basic operations that can be performed on lists in Python.
+Vamos revisar algumas operações básicas que podem ser realizadas em listas em Python.
 
-## Indices of List & Items Accessing
+## Índices da Lista & Acesso aos Itens
 
-The indices of a list are the numerical positions of the elements within the list. The index of the first element in a list is always `0`, the index of the second element is `1`, and so on. You can access the element at a specific index by using square brackets and specifying the index number.
+Os índices de uma lista são as posições numéricas dos elementos dentro da lista. O índice do primeiro elemento em uma lista é sempre `0`, o índice do segundo elemento é `1`, e assim por diante. Você pode acessar o elemento em um índice específico usando colchetes e especificando o número do índice.
 
-Here's an example of indexing usage:
+Aqui está um exemplo de uso de indexação:
 
 ```python
 my_list = ['apple', 'banana', 'orange']
@@ -32,9 +32,9 @@ print(my_list[1])  # output: 'banana'
 print(my_list[2])  # output: 'orange'
 ```
 
-If the list index is out of range, Python will return an error.
+Se o índice da lista estiver fora do intervalo, o Python retornará um erro.
 
-## Changing or Replacing an Item of a List
+## Mudando ou Substituindo um Item de uma Lista
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -42,13 +42,13 @@ my_list[0] = 0
 print(my_list) # Output: [0, 2, 3, 4, 5]
 ```
 
-## Adding Items to List in Python
+## Adicionando Itens à Lista em Python
 
-There are several methods which can help you to add an item to a list
+Há vários métodos que podem ajudá-lo a adicionar um item a uma lista
 
-### The `insert()` Method
+### O Método `insert()`
 
-Here's an example which shows how to add an element to a list using `insert()` method:
+Aqui está um exemplo que mostra como adicionar um elemento a uma lista usando o método `insert()`:
 
 ```python3
 my_list = [1, 2, 3, 4]
@@ -56,9 +56,9 @@ my_list.insert(2, "hello")
 print(my_list)  # [1, 2, 'hello', 3, 4]
 ```
 
-### The `append()` Method
+### O Método `append()`
 
-To insert an element to the end of a Python list, you can use the `append()` method. Here's an example:
+Para inserir um elemento no final de uma lista Python, você pode usar o método `append()`. Aqui está um exemplo:
 
 ```python3
 my_list = [1, 2, 3, 4]
@@ -66,17 +66,17 @@ my_list.append(5)
 print(my_list)  # [1, 2, 3, 4, 5]
 ```
 
-The `insert()` method can be used to append an element into a list at a specified index. The syntax for using the `insert()` method is as follows:
+O método `insert()` pode ser usado para adicionar um elemento em uma lista em um índice especificado. A sintaxe para usar o método `insert()` é a seguinte:
 
 ```python
 list.insert(index, element)
 ```
 
-### The `extend()` Method
+### O método `extend()`
 
-The `extend()` method in Python is used to append elements from an iterable (such as a list, tuple, set, or string) to the end of an existing list.
+O método `extend()` em Python é usado para adicionar elementos de um iterável (como uma lista, tupla, conjunto ou string) ao final de uma lista existente.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 # Create a list
@@ -90,11 +90,11 @@ print(my_list)
 # Output: [1, 2, 3, 4, 5, 6]
 ```
 
-Note that the `extend()` method modifies the original list in place and returns `None`. It does not create a new list.
+Observe que o método `extend()` modifica a lista original no local e retorna `None`. Ele não cria uma nova lista.
 
-## Removing an Item from a List
+## Removendo um Item de uma Lista
 
-To remove an item from a list in Python, you can use the `remove()` method of the list object. Here is an example:
+Para remover um item de uma lista no Python, você pode usar o método `remove()` do objeto lista. Aqui está um exemplo:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -102,7 +102,7 @@ my_list.remove(3)
 print(my_list) # Output: [1, 2, 4, 5]
 ```
 
-There is also the `del` statement, whic can be used to remove an item from a list. Here is an example of item deleting:
+Existe também a declaração `del`, que pode ser usada para remover um item de uma lista. Aqui está um exemplo de exclusão de item:
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -110,22 +110,23 @@ del my_list[2]
 print(my_list)
 ```
 
-In this example, we have a list `my_list` with five elements. We want to remove the element with index 2, which has the value 3. We use the `del` statement and specify the index of the item we want to remove. After removing the element, we print the updated list.
+Neste exemplo, temos uma lista `my_list` com cinco elementos. Queremos remover o elemento com índice 2, que tem o valor 3. Usamos a instrução `del` e especificamos o índice do item que queremos remover. Após remover o elemento, imprimimos a lista atualizada.
 
-The output of this code will be:
+A saída deste código será:
 
 ```python
 [1, 2, 4, 5]
 ```
 
-So if you want to remove the first element from a list in Python, you can use the `del` statement which we reviewd before, or the `pop()` method. Here are example of pop() method:
+Portanto, se você deseja remover o primeiro elemento de uma lista em Python, pode usar a instrução `del` que revisamos antes, ou o método `pop()`. Aqui estão exemplos do método pop():
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
 my_list.pop(0)
 print(my_list) # Output: [2, 3, 4, 5]
 ```
-Let's also see on the example how to remove `None` from list in Python useing a list comprehension:
+
+Vamos também ver no exemplo como remover `None` de uma lista em Python usando uma compreensão de lista:
 
 ```python3
 original_list = [1, None, "hello", None, 5.7, None, "world"]
@@ -133,9 +134,9 @@ new_list = [item for item in original_list if item is not None]
 print(new_list) # Output: [1, 'hello', 5.7, 'world']
 ```
 
-## How to Sort a List in Python
+## Como Ordenar uma Lista em Python
 
-You can sort a list in Python using the `sort()` method, which sorts the elements of the list in ascending order by default. Here's an example:
+Você pode ordenar uma lista em Python usando o método `sort()`, que ordena os elementos da lista em ordem ascendente por padrão. Aqui está um exemplo:
 
 ```python
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -145,7 +146,7 @@ my_list.sort()
 print(my_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 ```
 
-If you want to sort the list in descending order, you can pass the `reverse=True` argument to the `sort()` method:
+Se você quiser ordenar a lista em ordem decrescente, pode passar o argumento `reverse=True` para o método `sort()`:
 
 ```python3
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -155,7 +156,7 @@ my_list.sort(reverse=True)
 print(my_list) # Output: [9, 6, 5, 5, 5, 4, 3, 3, 2, 1, 1]
 ```
 
-You can also use the built-in `sorted()` function to sort a list, which returns a new sorted list and leaves the original list unchanged:
+Você também pode usar a função interna `sorted()` para ordenar uma lista, que retorna uma nova lista ordenada e deixa a lista original inalterada:
 
 ```python3
 my_list = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5]
@@ -165,9 +166,9 @@ sorted_list = sorted(my_list)
 print(sorted_list) # Output: [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 ```
 
-## List Copying
+## Copiando Listas
 
-To copy a list in Python, you can use the slice operator or the `copy()` method. Here's an example using both methods:
+Para copiar uma lista em Python, você pode usar o operador de fatiamento ou o método `copy()`. Aqui está um exemplo usando ambos os métodos:
 
 ```python3
 # Using the slice operator
@@ -181,13 +182,13 @@ new_list = original_list.copy()
 print(new_list)  # Output: [1, 2, 3, 4, 5]
 ```
 
-Both methods create a new list object that contains the same elements as the original list. However, it's important to note that if the original list contains mutable objects (e.g. other lists or dictionaries), the copy will only be shallow, meaning that the new list will contain references to the same mutable objects as the original list, rather than new copies of those objects. In such cases, you may need to use a deep copy to ensure that all nested objects are also copied.
+Ambos os métodos criam um novo objeto de lista que contém os mesmos elementos que a lista original. No entanto, é importante notar que se a lista original contiver objetos mutáveis (por exemplo, outras listas ou dicionários), a cópia será apenas rasa, o que significa que a nova lista conterá referências aos mesmos objetos mutáveis que a lista original, em vez de novas cópias desses objetos. Nesses casos, você pode precisar usar uma cópia profunda para garantir que todos os objetos aninhados também sejam copiados.
 
-## List Clearing
+## Limpando Listas
 
-In Python, `list.clear()` is a built-in method that removes all items from a list.
+Em Python, `list.clear()` é um método embutido que remove todos os itens de uma lista.
 
-Here's an example og how to clear a list:
+Aqui está um exemplo de como limpar uma lista:
 
 ```python3
 my_list = [1, 2, 3, 4]
@@ -195,9 +196,9 @@ my_list.clear()
 print(my_list)  # Output: []
 ```
 
-## How to Delete a List
+## Como Deletar uma Lista
 
-In Python, you can delete a list using the `del` keyword. Here's an example:
+Em Python, você pode deletar uma lista usando a palavra-chave `del`. Aqui está um exemplo:
 
 ```python
 my_list = [1, 2, 3, 4, 5]

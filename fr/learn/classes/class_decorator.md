@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/classes/class-decorator
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/classes/class-decorator
 
-Class decorators are a powerful programming tool used to modify the behavior of classes. One such decorator is the class decorator, which can be used to add functionality to a class. Another type of decorator is the class method decorator, which can be used to modify class methods. Additionally, the class property decorator can be used to create computed properties for classes. These decorators can quickly and easily modify the behavior of classes, making them invaluable to developers.  
-  
-## Introduction to Python Class Decorator  
+Les décorateurs de classes sont un puissant outil de programmation utilisé pour modifier le comportement des classes. Un tel décorateur est le décorateur de classe, qui peut être utilisé pour ajouter des fonctionnalités à une classe. Un autre type de décorateur est le décorateur de méthode de classe, qui peut être utilisé pour modifier les méthodes de classe. De plus, le décorateur de propriété de classe peut être utilisé pour créer des propriétés calculées pour les classes. Ces décorateurs peuvent modifier rapidement et facilement le comportement des classes, les rendant inestimables pour les développeurs.
 
-A class decorator is a type of decorator that is used to modify or enhance the behavior of a class. It is used to add or remove functionality from a class without changing its definition. 
+## Introduction au Décorateur de Classe Python
 
-Some common types of class decorators include:
+Un décorateur de classe est un type de décorateur qui est utilisé pour modifier ou améliorer le comportement d'une classe. Il est utilisé pour ajouter ou supprimer des fonctionnalités d'une classe sans changer sa définition.
 
-- **Class decorator**: A class decorator that modifies the behavior of a class by adding or removing properties, methods, or attributes. 
+Quelques types courants de décorateurs de classe incluent :
 
-- **Class method decorator**: A Python decorator that modifies a class method by changing its behavior or adding additional functionality.
+- **Décorateur de classe** : Un décorateur de classe qui modifie le comportement d'une classe en ajoutant ou en supprimant des propriétés, des méthodes ou des attributs.
 
-- **Class property decorator**: A class decorator that modifies a class property by adding or removing attributes or methods.
+- **Décorateur de méthode de classe** : Un décorateur Python qui modifie une méthode de classe en changeant son comportement ou en ajoutant des fonctionnalités supplémentaires.
 
-Here are two examples of using class decorators:
+- **Décorateur de propriété de classe** : Un décorateur de classe qui modifie une propriété de classe en ajoutant ou en supprimant des attributs ou des méthodes.
+
+Voici deux exemples d'utilisation de décorateurs de classe :
 
 ```python3
 def add_method(cls):
@@ -54,11 +54,11 @@ obj.class_method()
 
 ```
 
-In the first example, a class decorator is used to add a new method, `square()`, to the `MyClass` object. In the second example, a `class_method_decorator` is used to modify the behavior of the `class_method()` method in the `MyClass` object.  
-  
-## Understanding Class Method Decorator  
+Dans le premier exemple, un décorateur de classe est utilisé pour ajouter une nouvelle méthode, `square()`, à l'objet `MyClass`. Dans le second exemple, un `class_method_decorator` est utilisé pour modifier le comportement de la méthode `class_method()` dans l'objet `MyClass`.  
 
-The class method decorator is used to define a method that is bound to the class and not the instance of the class. It takes a `cls` parameter instead of `self`. This decorator is used to define methods that are related to the class and not an instance of the class.
+## Comprendre le décorateur de méthode de classe  
+
+Le décorateur de méthode de classe est utilisé pour définir une méthode qui est liée à la classe et non à l'instance de la classe. Il prend un paramètre `cls` au lieu de `self`. Ce décorateur est utilisé pour définir des méthodes qui sont liées à la classe et non à une instance de la classe.
 
 ```python
 class MyClass:
@@ -72,13 +72,13 @@ MyClass.increment_counter()
 print(MyClass.counter)  # Output: 1
 ```
 
-In the above example, `increment_counter` method is decorated with `@classmethod` which makes it a class method. It increments the `counter` class variable by 1.
-  
-## Exploring Class Property Decorator  
+Dans l'exemple ci-dessus, la méthode `increment_counter` est décorée avec `@classmethod` ce qui en fait une méthode de classe. Elle incrémente la variable de classe `counter` de 1.
 
-In Python, a class decorator is a function that can be used to modify or add new functionality to a class. There are different types of class decorators including class method decorator and class property decorator.
+## Explorer le décorateur de propriété de classe
 
-A class method decorator is a function that modifies a method of a class and expects the first argument to be the class object. Here's an example:
+En Python, un décorateur de classe est une fonction qui peut être utilisée pour modifier ou ajouter de nouvelles fonctionnalités à une classe. Il existe différents types de décorateurs de classe, y compris le décorateur de méthode de classe et le décorateur de propriété de classe.
+
+Un décorateur de méthode de classe est une fonction qui modifie une méthode d'une classe et s'attend à ce que le premier argument soit l'objet de classe. Voici un exemple :
 
 ```python3
 class MyClass:
@@ -92,7 +92,7 @@ MyClass.my_method()
 
 ```
 
-A class property decorator is a function that modifies a class property and returns a new property object. Here's an example:
+Un décorateur de propriété de classe est une fonction qui modifie une propriété de classe et retourne un nouvel objet propriété. Voici un exemple :
 
 ```python3
 class MyClass:
@@ -115,15 +115,15 @@ print(my_obj.my_var)
 
 ```
 
-In summary, class decorator, class method decorator, and class property decorator are powerful tools that can be used to modify or extend the functionality of classes.  
-  
-## Benefits of Using Class Decorator  
+En résumé, le décorateur de classe, le décorateur de méthode de classe et le décorateur de propriété de classe sont des outils puissants qui peuvent être utilisés pour modifier ou étendre la fonctionnalité des classes.
 
-A Class decorator is a feature which is simply a function that alters a class definition, so it is returned as the modified class. **Class decorators** have become popular for its ability to add functionality to an existing class without modifying the original class directly.
+## Avantages de l'utilisation du décorateur de classe
 
-Python decorators are used to extend and modify the behavior or properties of a function, method, or class. Here are some benefits of using class decorator:
+Un décorateur de classe est une fonctionnalité qui est simplement une fonction qui modifie une définition de classe, de sorte qu'elle est renvoyée en tant que classe modifiée. Les **décorateurs de classe** sont devenus populaires pour leur capacité à ajouter des fonctionnalités à une classe existante sans modifier directement la classe originale.
 
-1. **Class Method Decorator:** Python decorators provide an easy way to modify the behavior of a class method in some manner. Class method decorators can be used to verify inputs, output or modify behavior before class method responses.
+Les décorateurs Python sont utilisés pour étendre et modifier le comportement ou les propriétés d'une fonction, d'une méthode ou d'une classe. Voici quelques avantages de l'utilisation du décorateur de classe :
+
+1. **Décorateur de méthode de classe :** Les décorateurs Python fournissent un moyen facile de modifier le comportement d'une méthode de classe d'une manière ou d'une autre. Les décorateurs de méthode de classe peuvent être utilisés pour vérifier les entrées, les sorties ou modifier le comportement avant les réponses de la méthode de classe.
 
 ```python3
 class Pizza:
@@ -139,7 +139,7 @@ print(Pizza.recommend().toppings)
 
 ```
 
-2. **Class Property Decorator:** class decorator can be used to define class properties in a concise and easy to read manner. For instance, they can be used to compute attributes that are not available when the class is first defined.
+2. **Décorateur de propriété de classe :** le décorateur de classe peut être utilisé pour définir les propriétés d'une classe de manière concise et facile à lire. Par exemple, ils peuvent être utilisés pour calculer des attributs qui ne sont pas disponibles lorsque la classe est définie pour la première fois.
 
 ```python3
 class Person:
@@ -160,14 +160,14 @@ person = Person('jessica')
 print(person.name)
 
 ```
-  
-## Best Practices for Using Class Method Decorator  
 
-Class decorator is widely used to extend the behavior of a class or its method. Class method Python decorators are used to modify the existing behavior of a class method by adding additional functionality. Python class property decorator allows you to define a class-level property that will be available to all instances of that class.
+## Meilleures pratiques pour utiliser le décorateur de méthode de classe
 
-Here are some best practices to keep in mind while using class method decorator and class property decorator:
+Le décorateur de classe est largement utilisé pour étendre le comportement d'une classe ou de sa méthode. Les décorateurs de méthode de classe Python sont utilisés pour modifier le comportement existant d'une méthode de classe en ajoutant des fonctionnalités supplémentaires. Le décorateur de propriété de classe Python vous permet de définir une propriété au niveau de la classe qui sera disponible pour toutes les instances de cette classe.
 
-1. Use `@classmethod` to define a class method decorator.
+Voici quelques meilleures pratiques à garder à l'esprit lors de l'utilisation du décorateur de méthode de classe et du décorateur de propriété de classe :
+
+1. Utilisez `@classmethod` pour définir un décorateur de méthode de classe.
 
 ```python3
 class MyClass:
@@ -185,7 +185,7 @@ print(obj.value)
 
 ```
 
-2. Use `@property` to define a class property decorator.
+2. Utilisez `@property` pour définir un décorateur de propriété de classe.
 
 ```python3
 class MyClass:
@@ -211,11 +211,11 @@ print(obj.value) # Output 10
 
 ```
 
-In conclusion, class decorator, class method decorator, and class property decorator are powerful tools that can help you modify the behavior of a class or its methods. Keep these best practices in mind to write clean, readable, and maintainable code.  
-  
-## Usage of Class Property Decorator  
+En conclusion, le décorateur de classe, le décorateur de méthode de classe et le décorateur de propriété de classe sont des outils puissants qui peuvent vous aider à modifier le comportement d'une classe ou de ses méthodes. Gardez ces meilleures pratiques à l'esprit pour écrire du code propre, lisible et maintenable.
 
-One of the most common real-world applications of class property decorator is working with database queries. 
+## Utilisation du Décorateur de Propriété de Classe
+
+L'une des applications les plus courantes du décorateur de propriété de classe dans le monde réel est le travail avec les requêtes de base de données.
 
 ```python3
 class User:
@@ -231,9 +231,9 @@ user = User('Foo', 'foo@example.com')
 print(user.email_id) # Outputs foo
 ```
 
-In the above example, the `email_id property` only exposes the user's email address without the `@domain.com` part. This can be useful when working with databases, where it is often necessary to filter or group data based on an identifier.
+Dans l'exemple ci-dessus, la `propriété email_id` expose uniquement l'adresse e-mail de l'utilisateur sans la partie `@domain.com`. Cela peut être utile lors du travail avec des bases de données, où il est souvent nécessaire de filtrer ou de regrouper les données sur la base d'un identifiant.
 
-Another common example of using class property decorator is for validation purposes. 
+Un autre exemple courant de l'utilisation du décorateur de propriété de classe est pour des fins de validation.
 
 ```python3
 class User:
@@ -259,4 +259,4 @@ print(user.age) # Outputs 25
 # user.age = 150 Throws ValueError: Age must be between 0 and 130
 ```
 
-In the above example, the `age` property is validated to ensure that it is within a valid range.
+Dans l'exemple ci-dessus, la propriété `age` est validée pour s'assurer qu'elle se trouve dans une plage valide.

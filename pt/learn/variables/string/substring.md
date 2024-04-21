@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/string/substring
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/string/substring
 
-A substring is a sequence of characters that is part of a larger string. It is a contiguous sequence of characters within a string, which can be extracted or manipulated independently.
+Uma substring é uma sequência de caracteres que faz parte de uma string maior. É uma sequência contígua de caracteres dentro de uma string, que pode ser extraída ou manipulada independentemente.
 
-For example, in the string "Hello, World!", the substrings "Hello", "World", and "!" are all substrings of the original string.
+Por exemplo, na string "Hello, World!", as substrings "Hello", "World" e "!" são todas substrings da string original.
 
-Let's review the most common operations and methods related to substring.
+Vamos revisar as operações e métodos mais comuns relacionados à substring.
 
-## String Slicing
+## Fatiamento de String
 
-String slicing is the process of creating a new substring from an existing string in Python. You can slice a string using the syntax `[start:end]` to extract a portion of the string that starts at the `start` index and ends at the `end` index (not inclusive). Here are some examples:
+Fatiamento de string é o processo de criar uma nova substring a partir de uma string existente em Python. Você pode fatiar uma string usando a sintaxe `[início:fim]` para extrair uma porção da string que começa no índice `início` e termina no índice `fim` (não inclusivo). Aqui estão alguns exemplos:
 
 ```python3
 my_string = "Hello, world!"
@@ -27,15 +27,15 @@ print(my_string[2:8:2])  # Output: "lo,"
 print(my_string[2:-1])  # Output: "llo, world"
 ```
 
-In the first example, we use slicing to extract the substring `"Hell"` from the `my_string` variable by specifying the starting index `0` and the ending index `4` (not inclusive).
+No primeiro exemplo, usamos o fatiamento para extrair a substring `"Hell"` da variável `my_string` especificando o índice inicial `0` e o índice final `4` (não incluso).
 
-In the second example, we use slicing to extract the substring `"world!"` from the `my_string` variable by specifying only the starting index `7` and leaving the ending index blank. This tells Python to extract the substring from the starting index to the end of the string.
+No segundo exemplo, usamos o fatiamento para extrair a substring `"world!"` da variável `my_string` especificando apenas o índice inicial `7` e deixando o índice final em branco. Isso indica ao Python para extrair a substring do índice inicial até o final da string.
 
-In the third example, we use slicing to extract every other character from the substring `"lo, "`. We do this by specifying the starting index `2`, the ending index `8` (not inclusive), and a step of `2`.
+No terceiro exemplo, usamos o fatiamento para extrair um caractere sim, um caractere não da substring `"lo, "`. Fazemos isso especificando o índice inicial `2`, o índice final `8` (não incluso) e um passo de `2`.
 
-In the fourth example, we use slicing to extract the substring `"llo, world"` from the `my_string` variable by specifying the starting index `2` and the ending index `-1`. The `-1` specifies the second-to-last character in the string as the ending index.
+No quarto exemplo, usamos o fatiamento para extrair a substring `"llo, world"` da variável `my_string` especificando o índice inicial `2` e o índice final `-1`. O `-1` especifica o penúltimo caractere da string como o índice final.
 
-To split a string on a delimiter, you can also use the `split()` method. This method takes one argument, which is the delimiter character or string that you want to use to split the string. Here's an example:
+Para dividir uma string em um delimitador, você também pode usar o método `split()`. Este método aceita um argumento, que é o caractere delimitador ou string que você deseja usar para dividir a string. Aqui está um exemplo:
 
 ```python
 my_string = "Hello,world"
@@ -43,7 +43,7 @@ my_list = my_string.split(",")
 print(my_list) # Output: ['Hello', 'world']
 ```
 
-You can remove the first character from a string in Python using string slicing. Here's an example:
+Você pode remover o primeiro caractere de uma string em Python usando o fatiamento de string. Aqui está um exemplo:
 
 ```python
 string = "hello"
@@ -51,7 +51,7 @@ new_string = string[1:]
 print(new_string) # Output: ello
 ```
 
-String slicing also can be used to remove the last character from a string. Here is an example:
+O fatiamento de string também pode ser usado para remover o último caractere de uma string. Aqui está um exemplo:
 
 ```python
 my_string = "Hello World!"
@@ -59,11 +59,11 @@ new_string = my_string[:-1]
 print(new_string)  # Output: "Hello World"
 ```
 
-## String Subset
+## Subconjunto de uma String
 
-To check if a Python string contains a specific substring, you can use the `in` keyword or the `find()` method.
+Para verificar se uma string Python contém uma substring específica, você pode usar a palavra-chave `in` ou o método `find()`.
 
-Here's an example using the in keyword:
+Aqui está um exemplo usando a palavra-chave in:
 
 ```python3
 my_string = "Hello, world!"
@@ -74,7 +74,7 @@ else:
 # Output: Substring found!
 ```
 
-Here's an example using the `find()` method:
+Aqui está um exemplo usando o método `find()`:
 
 ```python3
 my_string = "Hello, world!"
@@ -85,15 +85,15 @@ else:
 # Output: Substring found!
 ```
 
-In both examples, we check if the substring `"world"` is present in the string `my_string`. If the substring is found, we print `"Substring found!"`, otherwise we print `"Substring not found."`.
+Em ambos os exemplos, verificamos se a substring `"world"` está presente na string `my_string`. Se a substring for encontrada, imprimimos `"Substring encontrada!"`, caso contrário, imprimimos `"Substring não encontrada."`.
 
-## String Reverse
+## Reversão de String
 
-There are several ways of reversing a string in Python. 
+Há várias maneiras de reverter uma string no Python.
 
-Let's see how to reverse a string in python with examples::
+Vamos ver como reverter uma string no python com exemplos::
 
-- Using slicing:
+- Usando fatiamento:
 
 ```python
 string = "hello"
@@ -101,7 +101,7 @@ reversed_string = string[::-1]
 print(reversed_string)  # Output: "olleh"
 ```
 
-- Using a loop:
+- Usando um loop:
 
 ```python3
 string = "hello"
@@ -111,7 +111,7 @@ for char in string:
 print(reversed_string)  # Output: "olleh"
 ```
 
-- Using the reversed() function:
+- Utilizando a função `reversed()`:
 
 ```python
 string = "hello"
@@ -119,25 +119,25 @@ reversed_string = "".join(reversed(string))
 print(reversed_string)  # Output: "olleh"
 ```
 
-All of these methods will produce the same result, which is the reversed version of the original string.
+Todos esses métodos produzirão o mesmo resultado, que é a versão invertida da string original.
 
-## The `startswith()` and `endswith()` Methods
+## Os Métodos `startswith()` e `endswith()`
 
-In Python, `startswith()` and `endswith()` are two string methods that are used to check whether a string starts or ends with a specific prefix or suffix, respectively. Here is an overview of these methods:
+Em Python, `startswith()` e `endswith()` são dois métodos de string que são usados para verificar se uma string começa ou termina com um prefixo ou sufixo específico, respectivamente. Aqui está uma visão geral desses métodos:
 
-The `startswith()` method is used to check whether a string starts with a specific prefix. The method takes one or more prefixes as an argument and returns `True` if the string starts with any of them, and `False` otherwise. Here's the syntax for the `startswith()` method:
+O método `startswith()` é usado para verificar se uma string começa com um prefixo específico. O método aceita um ou mais prefixos como argumento e retorna `True` se a string começar com qualquer um deles, e `False` caso contrário. Aqui está a sintaxe para o método `startswith()`:
 
 ```python
 string.startswith(prefix, start=0, end=len(string))
 ```
 
-where:
+onde:
 
-- `prefix` is the prefix to check.
-- `start` is an optional parameter that specifies the starting index of the string to search. By default, `start` is set to 0, which means the entire string will be searched.
-- `end` is an optional parameter that specifies the ending index of the string to search. By default, `end` is set to the length of the string.
+- `prefix` é o prefixo a ser verificado.
+- `start` é um parâmetro opcional que especifica o índice inicial da string a ser pesquisada. Por padrão, `start` é definido como 0, o que significa que toda a string será pesquisada.
+- `end` é um parâmetro opcional que especifica o índice final da string a ser pesquisada. Por padrão, `end` é definido como o comprimento da string.
 
-Here's an example of using the startswith() method:
+Aqui está um exemplo de uso do método startswith():
 
 ```python
 s = "Python is a great programming language"
@@ -146,18 +146,18 @@ print(s.startswith("Java"))    # False
 print(s.startswith(("Java", "Python")))  # True (checking multiple prefixes)
 ```
 
-`The endswith()` method is used to check whether a string ends with a specific suffix. The method takes one or more suffixes as an argument and returns `True` if the string ends with any of them, and `False` otherwise. Here's the syntax for the `endswith()` method:
+O método `endswith()` é usado para verificar se uma string termina com um sufixo específico. O método recebe um ou mais sufixos como argumento e retorna `True` se a string terminar com qualquer um deles, e `False` caso contrário. Veja a sintaxe do método `endswith()`:
 
 ```python
 string.endswith(suffix, start=0, end=len(string))
 ```
 
-where:
+onde:
 
-- `suffix` is the suffix to check.
-- `start` and `end` parameters have the same meaning as in the `startswith()` method.
+- `suffix` é o sufixo a ser verificado.
+- os parâmetros `start` e `end` têm o mesmo significado que no método `startswith()`.
 
-Here's an example of using the endswith() method:
+Aqui está um exemplo de uso do método endswith():
 
 ```python3
 s = "Python is a great programming language"
@@ -166,13 +166,13 @@ print(s.endswith("Python"))    # False
 print(s.endswith(("Python", "language")))  # True (checking multiple suffixes)
 ```
 
-In both methods, you can pass a tuple of prefixes or suffixes to check multiple possibilities. The `start` and `end` parameters are optional and can be used to search only a part of the string.
+Em ambos os métodos, você pode passar uma tupla de prefixos ou sufixos para verificar múltiplas possibilidades. Os parâmetros `start` e `end` são opcionais e podem ser usados para procurar apenas uma parte da string.
 
-## The `split()` Method
+## O Método `split()`
 
-It is also a built-in method in Python that is used for splitting and parsing a string into a list of substrings based on a specified separator. By default, the separator used is whitespace.
+Também é um método integrado em Python que é usado para dividir e analisar uma string em uma lista de substrings baseada em um separador especificado. Por padrão, o separador usado é o espaço em branco.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 s = "Hello World! How are you?"
@@ -182,9 +182,9 @@ words = s.split()
 print(words)   # Output: ['Hello', 'World!', 'How', 'are', 'you?']
 ```
 
-In the above example, the `split()` method is called on the string `s`, which contains whitespace-separated words. The resulting list words contains all the words in the original string as separate elements.
+No exemplo acima, o método `split()` é chamado na string `s`, que contém palavras separadas por espaços em branco. A lista resultante words contém todas as palavras na string original como elementos separados.
 
-You can also specify a different separator using the `split()` method. For example:
+Você também pode especificar um separador diferente usando o método `split()`. Por exemplo:
 
 ```python3
 s = "mango,pineapple,banana"
@@ -194,19 +194,19 @@ fruits = s.split(",")
 print(fruits)   # Output: ['mango', 'pineapple', 'banana']
 ```
 
-In this example, the `split()` method is called on the string `s`, which contains comma-separated fruit names. The resulting list fruits contains all the fruit names as separate elements, with the comma used as the separator.
+Neste exemplo, o método `split()` é chamado na string `s`, que contém nomes de frutas separados por vírgulas. A lista resultante fruits contém todos os nomes de frutas como elementos separados, com a vírgula usada como separador.
 
-## The `string.find()` Function
+## A Função `string.find()`
 
-This is built-in Python function that returns the index of the first occurrence of a substring within a given string. If the substring is not found, it returns `-1`. The syntax for using `string.find()` is as follows:
+Esta é uma função embutida do Python que retorna o índice da primeira ocorrência de uma substring dentro de uma string dada. Se a substring não for encontrada, ela retorna `-1`. A sintaxe para usar `string.find()` é a seguinte:
 
 ```python
 string.find(substring, start=0, end=len(string))
 ```
 
-where `string` is the string to search in, `substring` is the string to search for, `start` is the starting index of the search (default is 0), and `end` is the ending index of the search (default is the length of the string).
+onde `string` é a string na qual pesquisar, `substring` é a string a ser procurada, `start` é o índice inicial da pesquisa (o padrão é 0) e `end` é o índice final da pesquisa (o padrão é o comprimento da string).
 
-Here is an example:
+Aqui está um exemplo:
 
 ```python
 sentence = "The quick brown fox jumps over the lazy dog"
@@ -214,15 +214,15 @@ print(sentence.find("fox"))   # Output: 16
 print(sentence.find("cat"))   # Output: -1
 ```
 
-In the first line, we define a string sentence. Then we use the `find()` function to search for the substring `"fox"` in the `sentence` string. Since `"fox"` is found at index 16 in the `sentence` string, the `find()` function returns `16`. In the second line, we search for the substring `"cat"`, which is not found in the `sentence` string, so the `find()` function returns `-1`.
+Na primeira linha, definimos uma string chamada sentence. Em seguida, usamos a função `find()` para procurar a substring `"fox"` na string `sentence`. Como `"fox"` é encontrado no índice 16 na string `sentence`, a função `find()` retorna `16`. Na segunda linha, procuramos pela substring `"cat"`, que não é encontrada na string `sentence`, então a função `find()` retorna `-1`.
 
-## The `replace()` Method
+## O Método `replace()`
 
-In Python, strings are immutable, which means that you cannot change a string once it has been created. However, you can create a new string that contains a modified version of the original string.
+Em Python, as strings são imutáveis, o que significa que você não pode alterar uma string depois que ela foi criada. No entanto, você pode criar uma nova string que contém uma versão modificada da string original.
 
-To remove a specific character or a substring from a string in Python, you can use the `replace()` method or string slicing.
+Para remover um caractere específico ou uma substring de uma string em Python, você pode usar o método `replace()` ou fatiamento de strings.
 
-Here is an example of using the replace() method to remove a specific character:
+Aqui está um exemplo de uso do método replace() para remover um caractere específico:
 
 ```python3
 my_string = "Hello, World!"
@@ -230,13 +230,13 @@ new_string = my_string.replace("o", "")
 print(new_string) # Output: Hell, Wrld!
 ```
 
-Here, we replaced the character `"o"` with an empty string, effectively removing it from the original string.
+Aqui, substituímos o caractere `"o"` por uma string vazia, efetivamente removendo-o da string original.
 
-## String Truncation
+## Truncamento de String
 
-You can truncate a string by specifying the maximum length of the string you want to keep.
+Você pode truncar uma string especificando o comprimento máximo da string que deseja manter.
 
-Here's an example:
+Aqui está um exemplo:
 
 ```python3
 text = "This is a long text that needs to be truncated."
@@ -245,17 +245,17 @@ truncated_text = text[:max_length] + "..." if len(text) > max_length else text
 print(truncated_text) # Output: This is a long text...
 ```
 
-In this example, we first define a string `text` that we want to truncate. We also specify the maximum length of the truncated string using the `max_length` variable.
+Neste exemplo, definimos primeiro uma string `text` que queremos truncar. Também especificamos o comprimento máximo da string truncada usando a variável `max_length`.
 
-We then use slicing to get the first `max_length` characters of the string. If the length of the original string is greater than `max_length`, we append an ellipsis to the end of the truncated string using string concatenation. If the length of the original string is less than or equal to `max_length`, we simply assign the original string to the `truncated_text` variable.
+Em seguida, usamos o fatiamento para obter os primeiros caracteres `max_length` da string. Se o comprimento da string original for maior que `max_length`, acrescentamos uma elipse ao final da string truncada usando a concatenação de strings. Se o comprimento da string original for menor ou igual a `max_length`, simplesmente atribuímos a string original à variável `truncated_text`.
 
-Finally, we print the truncated string using the `print()` function.
+Finalmente, imprimimos a string truncada usando a função `print()`.
 
-## The `count()` Method
+## O Método `count()`
 
-You can use the built-in `count` method to count the number of occurrences of a substring within a string.
+Você pode usar o método embutido `count` para contar o número de ocorrências de uma substring dentro de uma string.
 
-Here's a counter of substring `"is"`:
+Aqui está um contador da substring `"is"`:
 
 ```python3
 string = "Hello, world! This is a sample string."
@@ -266,6 +266,6 @@ count = string.count(substring)
 print(count) # Output: 2
 ```
 
-In this example, we have a string `"Hello, world! This is a sample string."` and we want to count the number of occurrences of the substring `"is"`. We use the count method to count the number of times the substring appears in the string.
+Neste exemplo, temos uma string `"Hello, world! This is a sample string."` e queremos contar o número de ocorrências da substring `"is"`. Usamos o método count para contar o número de vezes que a substring aparece na string.
 
-The output of this program will be `2`, because the substring `"is"` appears twice in the string.
+A saída deste programa será `2`, porque a substring `"is"` aparece duas vezes na string.

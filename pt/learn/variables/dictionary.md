@@ -1,22 +1,22 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/dictionary
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/dictionary
 
-Python provides several built-in collection types to store and manipulate data. Some of the commonly used collection types in Python are:
+Python oferece vários tipos de coleções integradas para armazenar e manipular dados. Alguns dos tipos de coleção comumente usados ​​em Python são:
 
-* Lists
-* Tuples
-* Sets
-* Dictionaries
+* Listas
+* Tuplas
+* Conjuntos
+* Dicionários
 * Arrays
 * Deques
 
-There are also other less commonly used collection types in Python, such as namedtuples, default dictionaries, and heaps, which are specialized versions of the basic collection types listed above.
+Existem também outros tipos de coleção menos comumente usados ​​em Python, como namedtuples, dicionários padrão e heaps, que são versões especializadas dos tipos de coleção básicos listados acima.
 
-## Definition of Dictionary
+## Definição de Dicionário
 
-A dictionary in Python is a collection of key-value pairs, where each key is associated with a value. It is an unordered data structure, and each key in the dictionary must be unique.
+Um dicionário em Python é uma coleção de pares chave-valor, onde cada chave está associada a um valor. É uma estrutura de dados não ordenada, e cada chave no dicionário deve ser única.
 
-Here is a dictionary example in Python:
+Aqui está um exemplo de dicionário em Python:
 
 ```python
 # Define a dictionary with key-value pairs
@@ -28,11 +28,11 @@ student = {
 }
 ```
 
-## How to Create a Dictionary in Python
+## Como Criar um Dicionário em Python
 
-Let's take a look at how to create or initialize a dictionary in Python. You can do it using curly braces `{}` or by using the `dict()` function. Here are some examples:
+Vamos dar uma olhada em como criar ou inicializar um dicionário em Python. Você pode fazer isso usando chaves `{}` ou utilizando a função `dict()`. Aqui estão alguns exemplos:
 
-- Using curly braces:
+- Usando chaves:
 
 ```python
 # Create an empty dictionary
@@ -45,7 +45,7 @@ my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
 mixed_dict = {'name': 'John', 'age': 30, 'scores': [85, 90, 95]}
 ```
 
-- Using the `dict()` function:
+- Usando a função `dict()`:
 
 ```python
 # Create an empty dictionary
@@ -58,24 +58,24 @@ my_dict = dict(name='John', age=30, city='New York')
 mixed_dict = dict(name='John', age=30, scores=[85, 90, 95])
 ```
 
-In both cases, the dictionary is created with a set of key-value pairs. The keys must be unique and immutable data types (such as strings, numbers, or tuples), while the values can be any data type, including lists, dictionaries, and other objects.
+Em ambos os casos, o dicionário é criado com um conjunto de pares chave-valor. As chaves devem ser únicas e de tipos de dados imutáveis (como strings, números ou tuplas), enquanto os valores podem ser de qualquer tipo de dado, incluindo listas, dicionários e outros objetos.
 
-## Deleting a Dictionary
+## Deletando um Dicionário
 
-In Python, you can delete a dictionary using the `del` keyword followed by the dictionary variable name. Here's an example:
+Em Python, você pode deletar um dicionário usando a palavra-chave `del` seguida pelo nome da variável do dicionário. Aqui está um exemplo:
 
 ```python
 my_dict = {'key1': 'value1', 'key2': 'value2'}
 del my_dict
 ```
 
-In the above example, we created a dictionary `my_dict` with two key-value pairs. The `del` keyword is used to delete the dictionary by specifying the variable name `my_dict`.
+No exemplo acima, criamos um dicionário `my_dict` com dois pares de chave-valor. A palavra-chave `del` é usada para deletar o dicionário especificando o nome da variável `my_dict`.
 
-After executing the `del` statement, the dictionary `my_dict` will be completely removed from memory, and any attempts to access it will result in a `NameError` because the variable no longer exists.
+Após executar a instrução `del`, o dicionário `my_dict` será completamente removido da memória, e qualquer tentativa de acessá-lo resultará em um `NameError` porque a variável não existe mais.
 
-## Dictionary Access in Python
+## Acesso a Dicionários em Python
 
-You can get value from dictionary using its keys. Here's an example:
+Você pode obter valor de um dicionário usando suas chaves. Aqui está um exemplo:
 
 ```python3
 # Creating a dictionary
@@ -86,7 +86,7 @@ print(my_dict['apple'])  # Output: 3
 print(my_dict['banana']) # Output: 5
 ```
 
-You can also get the value associated with a key in a dictionary using the `get()` method. Here's an example:
+Você também pode obter o valor associado a uma chave em um dicionário utilizando o método `get()`. Aqui está um exemplo:
 
 ```python3
 # create a dictionary
@@ -99,11 +99,11 @@ apple_value = my_dict.get('apple')
 print(apple_value) # Output: 1
 ```
 
-If the key is not found in the dictionary, `get()` returns None by default.
+Se a chave não for encontrada no dicionário, `get()` retorna None por padrão.
 
-## Dictionary of Dictionaries
+## Dicionário de Dicionários
 
-You can nest a dictionary into a dictionary by simply using a dictionary as a value in another dictionary. Here's an example:
+Você pode aninhar um dicionário dentro de outro dicionário simplesmente usando um dicionário como valor em outro dicionário. Aqui está um exemplo:
 
 ```python3
 # create a dictionary of dictionaries
@@ -117,9 +117,9 @@ print(my_dict['person1']['name']) # output: 'John'
 print(my_dict['person2']['age']) # output: 32
 ```
 
-To access the values in the nested dictionaries, we use two sets of square brackets. The first set of brackets is used to access the outer dictionary, and the second set of brackets is used to access the inner dictionary.
+Para acessar os valores nos dicionários aninhados, usamos dois conjuntos de colchetes. O primeiro conjunto de colchetes é usado para acessar o dicionário externo, e o segundo conjunto de colchetes é usado para acessar o dicionário interno.
 
-You can also add new dictionaries to the nested dictionary, like this:
+Você também pode adicionar novos dicionários ao dicionário aninhado, assim:
 
 ```python
 # adding a new person to the dictionary of dictionaries
@@ -129,7 +129,7 @@ my_dict['person3'] = {'name': 'Alex', 'age': 25}
 print(my_dict['person3']['name']) # output: 'Alex'
 ```
 
-Similarly, you can update values in the nested dictionaries:
+Da mesma forma, você pode atualizar valores nos dicionários aninhados:
 
 ```python3
 # create a dictionary of dictionaries
@@ -145,11 +145,11 @@ my_dict['person1']['age'] = 30
 print(my_dict['person1']['age']) # output: 30
 ```
 
-Overall, combining dictionaries in Python is a simple and powerful way to store and access hierarchical data structures.
+De modo geral, combinar dicionários em Python é uma maneira simples e poderosa de armazenar e acessar estruturas de dados hierárquicas.
 
-## Dictionary of Objects in Python
+## Dicionário de Objetos em Python
 
-This topic is quite similar to nested dictionaries - you can create a dictionary of objects by using the object instances as values and using unique keys to access the objects. Here's an example:
+Este tópico é bastante similar a dicionários aninhados - você pode criar um dicionário de objetos usando instâncias do objeto como valores e utilizando chaves únicas para acessar os objetos. Aqui está um exemplo:
 
 ```python3
 class Person:
@@ -174,9 +174,9 @@ print(people["person1"].name)   # outputs "Alice"
 print(people["person2"].age)    # outputs 30
 ```
 
-## Reverse of Keys and Values in Dictionary
+## Inversão de Chaves e Valores em Dicionário
 
-Let's review an example of how to reverse keys and values in dictionary in Python. For this purpose you can use a dictionary comprehension and swap the keys and values in each key-value pair:
+Vamos revisar um exemplo de como inverter chaves e valores em dicionário em Python. Para esse propósito, você pode usar uma compreensão de dicionário e trocar as chaves e valores em cada par chave-valor:
 
 ```python3
 my_dict = {'a': 1, 'b': 2, 'c': 3}
@@ -186,4 +186,4 @@ reversed_dict = {value: key for key, value in my_dict.items()}
 print(reversed_dict) # Output: {1: 'a', 2: 'b', 3: 'c'}
 ```
 
-In the above code, we first define a dictionary `my_dict` with some key-value pairs. Then we create a new dictionary `reversed_dict` by using a dictionary comprehension. In the comprehension, we iterate over the `my_dict` dictionary using the `items()` method, which returns a list of (key, value) pairs. For each key-value pair, we swap the positions of the key and value, and add the new (value, key) pair to the `reversed_dict`.
+No código acima, primeiro definimos um dicionário `my_dict` com alguns pares chave-valor. Em seguida, criamos um novo dicionário `reversed_dict` utilizando uma compreensão de dicionário. Na compreensão, iteramos sobre o dicionário `my_dict` usando o método `items()`, que retorna uma lista de pares (chave, valor). Para cada par chave-valor, trocamos as posições da chave e do valor, e adicionamos o novo par (valor, chave) ao `reversed_dict`.

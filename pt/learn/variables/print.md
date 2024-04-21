@@ -1,16 +1,16 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/print
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/print
 
-Printing refers to the process of displaying the output of a program on the console or terminal. It is an essential operation that allows you to communicate with the user or to debug your code by showing the values of variables, the results of calculations, or other information.
-There is also such a thing as formatting, which is often used in printing. String formatting (also known as interpolation) is the process of inserting variables or values into a string.
+Impressão se refere ao processo de exibir a saída de um programa no console ou terminal. É uma operação essencial que permite a você se comunicar com o usuário ou depurar seu código mostrando os valores das variáveis, os resultados de cálculos ou outras informações.
+Também existe algo como formatação, que é frequentemente usado na impressão. Formatação de strings (também conhecida como interpolação) é o processo de inserir variáveis ou valores em uma string.
 
-## Printing
+## Impressão
 
-To print variable in Python, you can use the `print()` function.
+Para imprimir uma variável em Python, você pode usar a função `print()`.
 
-The `print()` function takes one or more arguments separated by commas and displays them on the console or terminal.
+A função `print()` recebe um ou mais argumentos separados por vírgulas e os exibe no console ou terminal.
 
-Let's look at examples of how to print a variable and string in Python:
+Vamos olhar exemplos de como imprimir uma variável e uma string em Python:
 
 ```python
 # Print a string
@@ -23,20 +23,20 @@ print(43)
 print(3.14)
 ```
 
-Python also allows printing multiple variables:
+Python também permite imprimir várias variáveis:
 
 ```python
 # Print multiple items
 print("The answer is:", 42)
 ```
 
-You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
+Você também pode usar várias opções com a função `print()`, como especificar o separador entre itens, terminar a saída com um caractere de nova linha e redirecionar a saída para um arquivo ou outro fluxo.
 
-## Formatting
+## Formatação
 
-There are several ways to format strings in Python, let's go through this one by one with examples.
+Há várias maneiras de formatar strings em Python, vamos passar por cada uma delas com exemplos.
 
-- Using f-strings: This method involves using placeholders in a string, which are then replaced by values inside curly braces `{}` preceded by the letter `f`. For example:
+- Usando f-strings: Este método envolve o uso de espaços reservados em uma string, que são substituídos por valores dentro de chaves `{}` precedidas pela letra `f`. Por exemplo:
 
 ```python
 # Print using formatted strings
@@ -45,11 +45,11 @@ age = 32
 print(f"My name is {name} and I am {age} years old.")
 ```
 
-`f-strings` (or formatted string literals) are a feature introduced in Python 3.6 that provide a convenient way to embed expressions inside string literals, using a syntax that starts with the letter 'f'.
+`f-strings` (ou literais de string formatados) são um recurso introduzido no Python 3.6 que fornecem uma maneira conveniente de incorporar expressões dentro de literais de string, usando uma sintaxe que começa com a letra 'f'.
 
-With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces `{}`. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
+Com `f-strings`, você pode incorporar expressões dentro de literais de string ao envolvê-las em chaves `{}`. As expressões dentro das chaves são avaliadas em tempo de execução, e seus valores são inseridos na string. Assim, isso ajuda a imprimir várias variáveis em uma única string.
 
-- Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+- Usando o método `format()` e chaves: Você pode usar `{}` dentro de uma string para indicar onde deseja inserir os valores das variáveis e, em seguida, usar o método `format()` para substituir pelos valores reais. Aqui está um exemplo:
 
 ```python3
 name = "John"
@@ -59,11 +59,11 @@ location = "New York"
 print("My name is {}, I'm {} years old, and I live in {}.".format(name, age, location))
 ```
 
-This code will output: `My name is John, I'm 30 years old, and I live in New York.`
+Este código irá gerar: `My name is John, I'm 30 years old, and I live in New York.`
 
-In this example, the string `"My name is {}, I'm {} years old, and I live in {}."` contains three curly brackets `{}` to indicate where the variable values should be inserted. The `format()` method is called on the string, and the variables `name`, `age`, and `location` are passed as arguments to the method.
+Neste exemplo, a string `"My name is {}, I'm {} years old, and I live in {}."` contém três chaves `{}` para indicar onde os valores das variáveis devem ser inseridos. O método `format()` é chamado na string, e as variáveis `name`, `age` e `location` são passadas como argumentos para o método.
 
-- Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
+- Usando o operador `%`: Este método envolve o uso de espaços reservados em uma string, que são então substituídos por valores usando o operador `%`. Por exemplo:
 
 ```python3
 name = "John"
@@ -71,13 +71,13 @@ age = 25
 print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
 ```
 
-Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
+Aqui, `%s` é um espaço reservado para uma string, e `%d` é um espaço reservado para um inteiro.
 
-## String Template
+## Modelo de String
 
-String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
+Modelos de string fornecem uma maneira de criar strings que incluem espaços reservados para valores que serão preenchidos posteriormente. Isso pode ser útil quando você quer gerar strings dinâmicas com base em alguma entrada.
 
-To use string templates in Python, you can use the `string.Template` class. Here's an example:
+Para usar modelos de string em Python, você pode usar a classe `string.Template`. Aqui está um exemplo:
 
 ```python3
 from string import Template
@@ -97,6 +97,6 @@ result = template.substitute(name=name, age=age)
 print(result)  # Output: My name is Alice and I am 30 years old.
 ```
 
-In the above example, we first create a string template with placeholders for the name and age using the `${}` syntax. We then create a `Template` object from the template string and use the `substitute` method to replace the placeholders with actual values. Finally, we print the resulting string.
+No exemplo acima, primeiro criamos um template de string com espaços reservados para o nome e a idade usando a sintaxe `${}`. Em seguida, criamos um objeto `Template` a partir da string de template e usamos o método `substitute` para substituir os espaços reservados por valores reais. Finalmente, imprimimos a string resultante.
 
-Note that you need to pass the values for the placeholders as keyword arguments to the `substitute` method.
+Observe que você precisa passar os valores para os espaços reservados como argumentos de palavra-chave para o método `substitute`.

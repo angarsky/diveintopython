@@ -1,26 +1,25 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/variable-import
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/variables/variable-import
 
-This article focuses on the pivotal aspect of import in Python. Mastering the `import` statement is essential for seamlessly incorporating variables from one file to another. In other words you can easily import variables in Python with this statement. Let's explore the efficiency and modularity gained by leveraging import to access variables in Python files.
+Este artigo foca no aspecto crucial da importação em Python. Dominar a declaração `import` é essencial para incorporar variáveis de um arquivo para outro de maneira contínua. Em outras palavras, você pode facilmente importar variáveis em Python com esta declaração. Vamos explorar a eficiência e modularidade obtidas ao utilizar o import para acessar variáveis em arquivos Python.
 
-## How to Import a Variable from Another File in Python
+## Como Importar uma Variável de Outro Arquivo em Python
 
-To import a variable in Python, you need to use the `import` statement. Suppose you have a Python file named `file1.py` which contains a variable named `my_variable`.
+Para importar uma variável em Python, você precisa usar a declaração `import`. Suponha que você tenha um arquivo Python chamado `file1.py` que contém uma variável chamada `my_variable`.
 
 ```python
 # file2.py
 from file1 import my_variable
 
-
 # Now you can use the variable in this file
 print(my_variable)
 ```
 
-In the above code, we are importing the `my_variable` from `file1.py` using the `from ... import` syntax. After importing the variable, we can use it in `file2.py` just like any other variable. This method allows you to export variables from one file and utilize them in other Python files, promoting code reusability and organization.
+No código acima, estamos importando a variável `my_variable` do arquivo `file1.py` utilizando a sintaxe `from ... import`. Após importar a variável, podemos usá-la no `file2.py` como qualquer outra variável. Esse método permite que você exporte variáveis de um arquivo e as utilize em outros arquivos Python, promovendo a reutilização de código e organização.
 
-## Importing Variables from Another File via Module Import
+## Importando Variáveis de Outro Arquivo via Importação de Módulo
 
-Alternatively, you can load variables from another file by importing the entire module  - simply import `file1.py` and access the variable using the module name like this:
+Alternativamente, você pode carregar variáveis de outro arquivo importando o módulo inteiro - simplesmente importe `file1.py` e acesse a variável usando o nome do módulo assim:
 
 ```python
 # file2.py
@@ -30,11 +29,11 @@ import file1
 print(file1.my_variable)
 ```
 
-In this case, we are importing the entire `file1.py` module using the import statement. Then we access the `my_variable` variable using the module name prefix `file1`.
+Neste caso, estamos importando todo o módulo `file1.py` usando a instrução de importação. Em seguida, acessamos a variável `my_variable` usando o prefixo do nome do módulo `file1`.
 
-## Importing Multiple Variables from Another File
+## Importando Múltiplas Variáveis de Outro Arquivo
 
-Python allows importing multiple variables from a file using the `from ... import` syntax. Consider a scenario where `file1.py` contains multiple variables: `var1`, `var2`, and `var3`.
+Python permite importar múltiplas variáveis de um arquivo usando a sintaxe `from ... import`. Considere um cenário onde `file1.py` contém múltiplas variáveis: `var1`, `var2` e `var3`.
 
 ```python
 # file2.py
@@ -46,11 +45,11 @@ print(var2)
 print(var3)
 ```
 
-By specifying multiple variables separated by commas after the `from ... import` statement, you can directly import and use those variables within `file2.py`. This method enhances code readability by explicitly importing only the necessary variables.
+Ao especificar múltiplas variáveis separadas por vírgulas após a declaração `from ... import`, você pode importar e usar diretamente essas variáveis dentro de `file2.py`. Este método melhora a legibilidade do código ao importar explicitamente apenas as variáveis necessárias.
 
-## Importing with Alias for Clarity
+## Importando com Alias para Clareza
 
-Sometimes, variable names might clash or be ambiguous when imported from different files. To mitigate this, Python allows you to import variables with aliases.
+Às vezes, nomes de variáveis podem colidir ou ser ambíguos quando importados de arquivos diferentes. Para mitigar isso, Python permite que você importe variáveis com aliases.
 
 ```python
 # file2.py
@@ -60,11 +59,11 @@ from file1 import my_variable as alias_variable
 print(alias_variable)
 ```
 
-By assigning an alias during import (as `alias_variable`), you can provide a clearer name within the current file context, improving code understanding.
+Ao atribuir um alias durante a importação (como `alias_variable`), você pode fornecer um nome mais claro dentro do contexto do arquivo atual, melhorando a compreensão do código.
 
-## Importing Modules from Different Directories
+## Importando Módulos de Diretórios Diferentes
 
-Python supports importing modules from different directories using absolute or relative paths. Suppose `file1.py` resides in a separate folder named `module_folder`.
+Python suporta a importação de módulos de diferentes diretórios usando caminhos absolutos ou relativos. Suponha que `file1.py` reside em uma pasta separada chamada `module_folder`.
 
 ```python
 # file2.py
@@ -77,11 +76,11 @@ import file1
 print(file1.my_variable)
 ```
 
-By appending the path to the directory containing the module to `sys.path`, Python can locate and import the module, enabling access to its variables from within `file2.py`.
+Ao acrescentar o caminho para o diretório que contém o módulo em `sys.path`, Python pode localizar e importar o módulo, permitindo o acesso às suas variáveis a partir de `file2.py`.
 
-## Dynamic Imports Using `importlib`
+## Importações Dinâmicas Usando `importlib`
 
-Python's `importlib` library allows dynamic imports, enabling you to import modules or variables based on runtime conditions.
+A biblioteca `importlib` do Python permite importações dinâmicas, possibilitando que você importe módulos ou variáveis com base em condições de execução.
 
 ```python
 # file2.py
@@ -94,4 +93,4 @@ module = importlib.import_module(module_name)
 print(module.my_variable)
 ```
 
-Here, `importlib.import_module()` enables importing a module specified by a string (`module_name`), granting flexibility when determining imports during runtime.
+Aqui, `importlib.import_module()` permite importar um módulo especificado por uma string (`module_name`), concedendo flexibilidade ao determinar importações durante a execução.

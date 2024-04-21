@@ -1,25 +1,25 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/install/ubuntu
+> Leia este tutorial no site: https://diveintopython.org/pt/learn/install/ubuntu
 
-Installing Python on Ubuntu is an essential step for any developer who wants to work with Python. This guide provides a concise and straightforward tutorial on how to install Python on Ubuntu in just a few easy steps.  
-  
-## How to Install Python on Ubuntu  
+Instalar o Python no Ubuntu é um passo essencial para qualquer desenvolvedor que deseja trabalhar com Python. Este guia fornece um tutorial conciso e direto sobre como instalar o Python no Ubuntu em apenas alguns passos fáceis.
 
-To install Python on Ubuntu, you can use the command `apt-get install python` in your terminal. This will download and install the latest version of Python that is available for Ubuntu. Alternatively, you can also [download](https://www.python.org/downloads/) the Python package for Ubuntu from the official Python website and install it manually. Whichever method you choose, make sure to follow the instructions carefully to avoid any issues. To summarise, the steps to install Python on Ubuntu are: 
+## Como Instalar o Python no Ubuntu
 
-1. Open a terminal window 
-2. Run the command `apt-get install python` 
-3. Follow the prompts to complete the installation
-4. Alternatively, download the Python package for Ubuntu from the official Python website and install it manually.  
-  
-## How to Run a Python Script in Ubuntu  
+Para instalar o Python no Ubuntu, você pode usar o comando `apt-get install python` no seu terminal. Isso baixará e instalará a versão mais recente do Python disponível para o Ubuntu. Alternativamente, você também pode [baixar](https://www.python.org/downloads/) o pacote Python para Ubuntu do site oficial do Python e instalá-lo manualmente. Independentemente do método escolhido, certifique-se de seguir as instruções cuidadosamente para evitar quaisquer problemas. Resumindo, os passos para instalar o Python no Ubuntu são:
 
-To run a Python script in Ubuntu, follow these steps:
+1. Abra uma janela do terminal
+2. Execute o comando `apt-get install python`
+3. Siga as instruções para completar a instalação
+4. Alternativamente, baixe o pacote Python para Ubuntu do site oficial do Python e instale manualmente.
 
-1. Open the terminal by pressing `Ctrl + Alt + T`.
-2. Navigate to the directory where your Python script is located using the `cd` command.
-3. Type `python3 filename.py` and press `Enter`. Replace `filename` with the name of your Python script file.
+## Como Executar um Script Python no Ubuntu
 
-Make sure that Python is installed on your Ubuntu system before running the script. You can install it by typing `sudo apt install python3` in the terminal.
+Para executar um script Python no Ubuntu, siga estes passos:
 
-Running Python scripts in Ubuntu is simple and straightforward. Just follow these steps, and your script will run smoothly without any issues.
+1. Abra o terminal pressionando `Ctrl + Alt + T`.
+2. Navegue até o diretório onde o seu script Python está localizado usando o comando `cd`.
+3. Digite `python3 filename.py` e pressione `Enter`. Substitua `filename` pelo nome do seu arquivo de script Python.
+
+Certifique-se de que o Python está instalado no seu sistema Ubuntu antes de executar o script. Você pode instalá-lo digitando `sudo apt install python3` no terminal.
+
+Executar scripts Python no Ubuntu é simples e direto. Basta seguir esses passos, e seu script será executado sem problemas.

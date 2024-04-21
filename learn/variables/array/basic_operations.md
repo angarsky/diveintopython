@@ -372,7 +372,7 @@ print(filtered_list)  # Output: [6, 7, 8, 9, 10]
 
 2. Filter function:
 
-You can also use the `built-in filter()` function along with a lambda function or a custom function to filter elements from a list based on a given condition. Here's an example:
+You can also use the built-in `filter()` function along with a lambda function or a custom function to filter elements from a list based on a given condition. Here's an example:
 
 ```python
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
