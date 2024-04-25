@@ -1,15 +1,15 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/excel
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/file-handling/excel
 
-Excel in Python is a trending topic among data analysts and professionals, providing a powerful combination of two of the most essential tools for data manipulation and analysis. Python's flexible programming language can be used to automate repetitive [Excel](https://en.wikipedia.org/wiki/Microsoft_Excel) tasks, manipulate complex datasets, and create insightful data visualizations. By integrating Python with Excel, users can leverage the strengths of both applications to enhance productivity, streamline workflows, and gain deeper insights into their data. In this article, we will explore the benefits of Excel in Python and how it can improve your data analysis capabilities.  
-  
-## How to Read Excel File in Python
+L'excellence en Python est un sujet tendance parmi les analystes de données et les professionnels, offrant une combinaison puissante de deux des outils les plus essentiels pour la manipulation et l'analyse des données. Le langage de programmation flexible de Python peut être utilisé pour automatiser des tâches répétitives [Excel](https://en.wikipedia.org/wiki/Microsoft_Excel), manipuler des ensembles de données complexes et créer des visualisations de données perspicaces. En intégrant Python avec Excel, les utilisateurs peuvent tirer parti des forces des deux applications pour améliorer la productivité, rationaliser les flux de travail et obtenir des aperçus plus profonds de leurs données. Dans cet article, nous explorerons les avantages de Excel en Python et comment cela peut améliorer vos capacités d'analyse de données.
 
-Python is a great language to work with Excel. With the help of the Python Excel library, you can easily manipulate Excel files, analyze data, and automate tasks. Here are two examples of how to use Python with Excel:
+## Comment lire un fichier Excel en Python
 
-### Reading and Writing Excel Files with `pandas`
+Python est un excellent langage pour travailler avec Excel. Avec l'aide de la bibliothèque Excel de Python, vous pouvez facilement manipuler des fichiers Excel, analyser des données et automatiser des tâches. Voici deux exemples de comment utiliser Python avec Excel :
 
-To read and write Excel files with Python, you can use the [`pandas`](https://pypi.org/project/pandas/) library. To install use `pip install "pandas[excel]"`. Here's a code snippet that reads an Excel file and saves it as a new file:
+### Lire et écrire des fichiers Excel avec `pandas`
+
+Pour lire et écrire des fichiers Excel avec Python, vous pouvez utiliser la bibliothèque [pandas](https://pypi.org/project/pandas/). Pour installer utilisez `pip install "pandas[excel]"`. Voici un extrait de code qui lit un fichier Excel et le sauvegarde en tant que nouveau fichier :
 
 ```python
 import pandas as pd
@@ -19,11 +19,11 @@ df['new_column'] = df['old_column'] * 2
 df.to_excel('output_file.xlsx', index=False)
 ```
 
-In this example, we're using the `read_excel()` function to read an input file, then adding a new column and multiplying the old column with `2`, and finally saving the result to a new output file with the `to_excel()` function.
+Dans cet exemple, nous utilisons la fonction `read_excel()` pour lire un fichier d'entrée, puis ajouter une nouvelle colonne et multiplier l'ancienne colonne par `2`, et enfin enregistrer le résultat dans un nouveau fichier de sortie avec la fonction `to_excel()`.
 
-### Manipulating Excel Files with OpenPyXL
+### Manipuler les fichiers Excel avec OpenPyXL
 
-If you need more control over your Excel files, you can use the `OpenPyXL` library. To install use `pip install openpyxl`. Here's an example of how to add a new worksheet to an existing workbook:
+Si vous avez besoin de plus de contrôle sur vos fichiers Excel, vous pouvez utiliser la bibliothèque `OpenPyXL`. Pour l'installer, utilisez `pip install openpyxl`. Voici un exemple de comment ajouter une nouvelle feuille de calcul à un classeur existant :
 
 ```python
 from openpyxl import load_workbook, Workbook
@@ -34,11 +34,11 @@ new_ws['A1'] = 'Hello, world!'
 wb.save('existing_workbook.xlsx')
 ```
 
-In this example, we're loading an existing workbook with `load_workbook()`, creating a new worksheet with `create_sheet()`, adding a value to cell `A1`, and finally saving the changes with `save()`.
+Dans cet exemple, nous chargeons un classeur existant avec `load_workbook()`, créons une nouvelle feuille de calcul avec `create_sheet()`, ajoutons une valeur à la cellule `A1`, et enfin enregistrons les modifications avec `save()`.
 
-### Reading and Writing Excel Files with `xlrd`
+### Lire et écrire des fichiers Excel avec `xlrd`
 
-[Xlrd](https://pypi.org/project/xlrd/1.1.0/) is a library for reading data and formatting information from Excel files in the historical `.xls` format. Here is an example code snippet to read an Excel file using `xlrd`:
+[Xlrd](https://pypi.org/project/xlrd/1.0/) est une bibliothèque pour lire des données et des informations de formatage à partir de fichiers Excel dans le format historique `.xls`. Voici un extrait de code exemple pour lire un fichier Excel en utilisant `xlrd` :
 
 ```python
 import xlrd
@@ -56,14 +56,13 @@ worksheet = workbook.sheet_by_name('Sheet1')
 cell_value = worksheet.cell_value(0, 0)
 ```
 
-In the example above, `xlrd` library is used to open the Excel file. `workbook.sheet_by_name` function is used to access the sheet named 'Sheet1'. `worksheet.cell_value` function is used to read data from the cells of the sheet. In the example, the value of cell A1 is read.  
+Dans l'exemple ci-dessus, la bibliothèque `xlrd` est utilisée pour ouvrir le fichier Excel. La fonction `workbook.sheet_by_name` sert à accéder à la feuille nommée 'Sheet1'. La fonction `worksheet.cell_value` est utilisée pour lire les données des cellules de la feuille. Dans l'exemple, la valeur de la cellule A1 est lue.
 
- 
-## Create a New Excel Sheet in Python  
+## Créer une nouvelle feuille Excel en Python
 
-If you want to create a new Excel sheet in Python, you can use the `openpyxl` module. This module allows you to create, read, and modify Excel files.
+Si vous voulez créer une nouvelle feuille Excel en Python, vous pouvez utiliser le module `openpyxl`. Ce module vous permet de créer, lire et modifier des fichiers Excel.
 
-### Code Example 1: `openpyxl`
+### Exemple de code 1 : `openpyxl`
 
 ```python
 import openpyxl
@@ -81,7 +80,7 @@ sheet.title = "New Sheet"
 workbook.save("new_excel_sheet.xlsx")
 ```
 
-### Code Example 2: `xlwt`
+### Exemple de code 2 : `xlwt`
 
 ```python
 import xlwt
@@ -96,11 +95,11 @@ sheet = workbook.add_sheet("New Sheet")
 workbook.save("new_excel_sheet.xls")
 ```
 
-Both of these examples will create a new Excel sheet with the name `New Sheet` and save it to a file. You can modify the code to create sheets with different names or add data to the sheets.  
-  
-## Open Excel in Python Different Directory  
+Ces deux exemples vont créer une nouvelle feuille Excel nommée `New Sheet` et l'enregistrer dans un fichier. Vous pouvez modifier le code pour créer des feuilles avec différents noms ou ajouter des données aux feuilles.
 
-To open an Excel file from a different directory in Python, one can use the `os` module of Python and set the working directory to the desired directory. Then, use the `pandas` library to read the Excel file.
+## Ouvrir Excel dans un Répertoire Différent avec Python
+
+Pour ouvrir un fichier Excel depuis un répertoire différent en Python, on peut utiliser le module `os` de Python et définir le répertoire de travail sur le répertoire désiré. Ensuite, utilisez la bibliothèque `pandas` pour lire le fichier Excel.
 
 ```python
 import os
@@ -123,6 +122,6 @@ import pandas as pd
 df = pd.read_excel('/path/to/directory/excel_file.xlsx')
 ```
 
-In both examples, `pd.read_excel()` function is used to read the Excel file. The first example uses `os.chdir()` to change the working directory to the desired directory before reading the file. The second example directly reads the Excel file from a specific directory. 
+Dans les deux exemples, la fonction `pd.read_excel()` est utilisée pour lire le fichier Excel. Le premier exemple utilise `os.chdir()` pour changer le répertoire de travail vers le répertoire désiré avant de lire le fichier. Le deuxième exemple lit directement le fichier Excel à partir d'un répertoire spécifique.
 
-Using these codes, one can easily open an Excel file from a different directory in Python.  
+En utilisant ces codes, on peut facilement ouvrir un fichier Excel depuis un répertoire différent en Python.

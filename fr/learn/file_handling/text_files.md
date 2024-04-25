@@ -1,22 +1,22 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/file-handling/text-files
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/file-handling/text-files
 
-Text files are used to store and read data, such as a simple text document or database output. Python offers various ways to work with [Text Files](https://en.wikipedia.org/wiki/Text_file), including reading, writing, and appending to files. Understanding how to handle text files is important for any programmer working in Python, as it can help them to efficiently manage and manipulate data within their program.  
-  
-## How to read text file in Python  
+Les fichiers texte sont utilisés pour stocker et lire des données, telles qu'un document texte simple ou une sortie de base de données. Python offre diverses manières de travailler avec des [Fichiers Texte](https://en.wikipedia.org/wiki/Text_file), incluant la lecture, l'écriture et l'ajout à des fichiers. Comprendre comment gérer les fichiers texte est important pour tout programmeur travaillant en Python, car cela peut les aider à gérer et manipuler efficacement les données au sein de leur programme.
 
-To read a text file in Python, you can use the built-in function `open()` to open the file in read mode. Here are 2 code examples:
+## Comment lire un fichier texte en Python
 
-### Open Text File
+Pour lire un fichier texte en Python, vous pouvez utiliser la fonction intégrée `open()` pour ouvrir le fichier en mode lecture. Voici 2 exemples de code :
+
+### Ouvrir un fichier texte
 
 ```python
 with open('filename.txt', 'r') as file:
     content = file.read()
 ```
 
-Here, `open()` function opens the file `filename.txt` in read mode and returns a file object. The `with` statement is used to ensure that the file is properly closed after its use. `read()` function reads the contents of the file and stores it in the `content` variable.
+Ici, la fonction `open()` ouvre le fichier `filename.txt` en mode lecture et retourne un objet fichier. L'instruction `with` est utilisée pour garantir que le fichier est bien fermé après son utilisation. La fonction `read()` lit le contenu du fichier et le stocke dans la variable `content`.
 
-### Reading Text File Line by Line
+### Lire un fichier texte ligne par ligne
 
 ```python
 with open('filename.txt', 'r') as file:
@@ -24,13 +24,13 @@ with open('filename.txt', 'r') as file:
         print(line)
 ```
 
-Here, `open()` function opens the file `filename.txt` in read mode and returns a file object. The `with` statement is used to ensure that the file is properly closed after its use. `for` loop reads the file line by line and prints it on the console.
+Ici, la fonction `open()` ouvre le fichier `filename.txt` en mode lecture et retourne un objet fichier. L'instruction `with` est utilisée pour garantir que le fichier est correctement fermé après son utilisation. La boucle `for` lit le fichier ligne par ligne et l’imprime sur la console.
 
-In both the examples, you can replace `filename.txt` with the path of the actual text file you want to read.  
+Dans les deux exemples, vous pouvez remplacer `filename.txt` par le chemin du fichier texte réel que vous souhaitez lire.
 
-## Write to a Text File in Python  
+## Écrire dans un fichier texte en Python
 
-Writing to a text file in Python is a basic file operation that involves creating a new file, writing data to it, and optionally closing the file. Here are two examples of how to write to a text file in Python:
+Écrire dans un fichier texte en Python est une opération de fichier de base qui implique la création d'un nouveau fichier, l’écriture de données dedans, et éventuellement la fermeture du fichier. Voici deux exemples de comment écrire dans un fichier texte en Python :
 
 ```python
 file = open('example.txt', 'w')
@@ -38,7 +38,7 @@ file.write('Hello, world!')
 file.close()
 ```
 
-In this example, we create a new file called example.txt using the 'w' mode, which stands for write. Then, we use the `write()` method to add the string `Hello, world!` to the file. Finally, we close the file using the `close()` method.
+Dans cet exemple, nous créons un nouveau fichier appelé example.txt en utilisant le mode 'w', qui signifie écriture. Ensuite, nous utilisons la méthode `write()` pour ajouter la chaîne `Hello, world!` au fichier. Enfin, nous fermons le fichier en utilisant la méthode `close()`.
 
 ```python
 file = open('example.txt', 'w')
@@ -47,11 +47,11 @@ file.writelines(lines)
 file.close()
 ```
 
-Here, we create a new file called example.txt and assign it to the `file` variable with the `w` mode. Then, we define three lines of text as a list of strings and assign it to the `lines` variable. We use the `writelines()` method to write all the lines to the text file. Finally, we close the file using the `close()` method.
+Ici, nous créons un nouveau fichier appelé example.txt et l'assignons à la variable `file` avec le mode `w`. Ensuite, nous définissons trois lignes de texte comme une liste de chaînes et l'assignons à la variable `lines`. Nous utilisons la méthode `writelines()` pour écrire toutes les lignes dans le fichier texte. Finalement, nous fermons le fichier en utilisant la méthode `close()`.
 
-### How to Get Python Output in Text File  
+### Comment obtenir la sortie Python dans un fichier texte
 
-If you want to save the output of your Python code into a text file, you can use the `open()` function in Python.
+Si vous souhaitez sauvegarder la sortie de votre code Python dans un fichier texte, vous pouvez utiliser la fonction `open()` en Python.
 
 ```python
 output = "Hello, world!"
@@ -59,15 +59,15 @@ with open("output.txt", "w") as file:
     file.write(output)
 ```
 
-In this example, we have a string `output` that contains the text we want to save in the file. We open a file called `output.txt` in write mode using the `open()` function. Then, we use the `write()` method of the file object to save the contents of `output` into the file.
+Dans cet exemple, nous avons une chaîne `output` qui contient le texte que nous voulons sauvegarder dans le fichier. Nous ouvrons un fichier appelé `output.txt` en mode écriture en utilisant la fonction `open()`. Ensuite, nous utilisons la méthode `write()` de l'objet fichier pour sauvegarder le contenu de `output` dans le fichier.
 
-In either case, you can now open the file and see the text that was written. Although the examples are simple, you can modify them to suit more complex scenarios.  
-  
-## How to Convert Numpy Files to Text Files
+Dans les deux cas, vous pouvez maintenant ouvrir le fichier et voir le texte qui a été écrit. Bien que les exemples soient simples, vous pouvez les modifier pour les adapter à des scénarios plus complexes.
 
-When working with numerical data, `numpy` is one of the most popular libraries to manipulate arrays in Python. Sometimes, you may need to convert a `numpy` file to a text file for sharing and collaboration purposes. Here are two ways to convert a `numpy` file to a text file in Python:
+## Comment Convertir des Fichiers Numpy en Fichiers Texte
 
-The `savetxt()` function from the `Numpy` library can be used to save the data from an array to a text file. Here's how to do it:
+Lorsque vous travaillez avec des données numériques, `numpy` est l'une des bibliothèques les plus populaires pour manipuler les tableaux en Python. Parfois, vous pourriez avoir besoin de convertir un fichier `numpy` en fichier texte pour le partage et la collaboration. Voici deux façons de convertir un fichier `numpy` en un fichier texte en Python :
+
+La fonction `savetxt()` de la bibliothèque `Numpy` peut être utilisée pour sauvegarder les données d'un tableau dans un fichier texte. Voici comment faire :
 
 ```python
 ### Method 1
@@ -77,7 +77,7 @@ data = np.load('file.npy') # load the Numpy file
 np.savetxt('file.txt', data) # save the data from the Numpy file to a text file
 ```
 
-You can also use the `tofile()` method of the array object to save the data to a text file.
+Vous pouvez également utiliser la méthode `tofile()` de l'objet tableau pour enregistrer les données dans un fichier texte.
 
 ```python
 ### Method 2
@@ -87,4 +87,4 @@ data = np.load('file.npy') # load the Numpy file
 data.tofile('file.txt', sep=',', format='%10.5f') # save the data to a text file
 ```
 
-In the above example, the `sep` parameter specifies the separator between the data values (a comma in this case) and the `format` parameter specifies the format of the output values.
+Dans l'exemple ci-dessus, le paramètre `sep` spécifie le séparateur entre les valeurs de données (une virgule dans ce cas) et le paramètre `format` spécifie le format des valeurs de sortie.
