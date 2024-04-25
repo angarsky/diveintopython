@@ -263,7 +263,7 @@ This will output: `Hello, John!`.
 
 2. **Create a folder with an `__init__.py` file:** You can create a folder with an `__init__.py` file that defines the functions and classes you want to use as a module. Here's an example:
 
-```
+```python
 my_module/
     __init__.py
     greet.py

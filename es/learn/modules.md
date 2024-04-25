@@ -263,11 +263,12 @@ Esto producirá: `Hello, John!`.
 
 2. **Crear una carpeta con un archivo `__init__.py`:** Puedes crear una carpeta con un archivo `__init__.py` que define las funciones y clases que quieres usar como un módulo. Aquí tienes un ejemplo:
 
-```
+```python
 
 my_module/
     __init__.py
     greet.py
+```
 
 En el archivo `__init__.py`, puedes definir las funciones y clases que desees utilizar:
 
