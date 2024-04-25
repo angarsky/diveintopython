@@ -1,51 +1,51 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/install
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/install
 
-If you're new to programming or looking to dive into the world of Python, you'll need to install Python on your computer to get started.
+Si vous êtes nouveau dans la programmation ou que vous cherchez à plonger dans le monde de Python, vous aurez besoin d'installer Python sur votre ordinateur pour commencer.
 
-## How to install Python?
+## Comment installer Python ?
 
-To install Python on your computer, follow these steps:
+Pour installer Python sur votre ordinateur, suivez ces étapes :
 
-1. Visit the official Python website: https://www.python.org/
-2. Navigate to the `Downloads` section.
-3. Choose the version of Python you want to install. 
-4. Select the appropriate installer for your operating system. Python is available for [Windows](/learn/install/windows.md), [macOS](/learn/install/mac.md), and [Linux](/learn/install/linux.md).
-* For Windows: Download the executable installer (`.exe` file).
-* For macOS: Download the macOS installer (`.pkg` file).
-* For Linux: Most Linux distributions come with Python pre-installed. However, if you need a specific version or want to install Python from scratch, you can download the source code and follow the instructions provided.
-5. Once the installer is downloaded, run the executable file.
-6. On Windows, you may need to check the option "Add Python to PATH" during the installation.
-7. Follow the instructions in the installer to complete the installation process. You can generally accept the default settings.
-8. After the installation is complete, open the command prompt (on Windows) or the terminal (on macOS and Linux) and type `python --version`to verify that Python has been installed correctly. You should see the version number displayed.
+1. Visitez le site officiel de Python : https://www.python.org/
+2. Naviguez jusqu'à la section `Downloads`.
+3. Choisissez la version de Python que vous souhaitez installer.
+4. Sélectionnez l'installateur approprié pour votre système d'exploitation. Python est disponible pour [Windows](/fr/learn/install/windows.md), [macOS](/fr/learn/install/mac.md), et [Linux](/fr/learn/install/linux.md).
+* Pour Windows : Téléchargez l'installateur exécutable (fichier `.exe`).
+* Pour macOS : Téléchargez l'installateur macOS (fichier `.pkg`).
+* Pour Linux : La plupart des distributions Linux viennent avec Python pré-installé. Cependant, si vous avez besoin d'une version spécifique ou voulez installer Python à partir de zéro, vous pouvez télécharger le code source et suivre les instructions fournies.
+5. Une fois l'installateur téléchargé, exécutez le fichier exécutable.
+6. Sur Windows, vous pourriez avoir besoin de cocher l'option "Ajouter Python à PATH" durant l'installation.
+7. Suivez les instructions dans l'installateur pour compléter le processus d'installation. Vous pouvez généralement accepter les paramètres par défaut.
+8. Après que l'installation soit complète, ouvrez l'invite de commande (sur Windows) ou le terminal (sur macOS et Linux) et tapez `python --version` pour vérifier que Python a été correctement installé. Vous devriez voir le numéro de version affiché.
 
-That's it! You have successfully installed Python on your computer. You can now start writing and running Python programs.
+C'est tout ! Vous avez avec succès installé Python sur votre ordinateur. Vous pouvez maintenant commencer à écrire et exécuter des programmes Python.
 
-## How to Run a Python Script from a Command Line
+## Comment Exécuter un Script Python depuis une Ligne de Commande
 
-To run a Python script from the command line, follow these steps:
+Pour exécuter un script Python depuis la ligne de commande, suivez ces étapes :
 
-1. Open the command prompt (Windows) or the terminal (macOS/Linux).
-2. Navigate to the directory where your Python script is located. You can use the `cd` command followed by the directory path to change to the desired directory. For example, if your script is located in the `Documents` folder, you can use the following command:
+1. Ouvrez l'invite de commande (Windows) ou le terminal (macOS/Linux).
+2. Naviguez jusqu'au répertoire où votre script Python est situé. Vous pouvez utiliser la commande `cd` suivie du chemin du répertoire pour changer vers le répertoire désiré. Par exemple, si votre script est situé dans le dossier `Documents`, vous pouvez utiliser la commande suivante :
 
 ```shell 
 cd Documents
 ```
 
-3. Once you are in the correct directory, you can run the Python script by typing `python` followed by the name of the script file. For example, if your script file is named `script.py`, use the following command:
+Une fois que vous êtes dans le répertoire correct, vous pouvez exécuter le script Python en tapant `python` suivi du nom du fichier de script. Par exemple, si votre fichier de script s'appelle `script.py`, utilisez la commande suivante :
 
 ```shell
 python script.py
 ```
 
-   If you have multiple versions of Python installed on your system, you may need to specify the version explicitly. In that case, use the following command instead:
-   
+Si vous avez plusieurs versions de Python installées sur votre système, vous pourriez avoir besoin de spécifier explicitement la version. Dans ce cas, utilisez la commande suivante :
+
 ```shell
 python3 script.py
 ```
 
-> If you're using Python 2.x, the command would simply be `python` without the "3".
-   
-4. Press the Enter key, and the Python script will execute. You will see the output or any error messages displayed in the command prompt or terminal.
+> Si vous utilisez Python 2.x, la commande serait simplement `python` sans le "3".
 
-That's it! You have successfully run a Python script from the command line. Remember to navigate to the correct directory where your script is located before executing the `python` command.
+4. Appuyez sur la touche Entrée, et le script Python s'exécutera. Vous verrez le résultat ou les messages d'erreur s'afficher dans l'invite de commande ou le terminal.
+
+C'est tout ! Vous avez réussi à exécuter un script Python depuis la ligne de commande. N'oubliez pas de naviguer jusqu'au bon répertoire où votre script est situé avant d'exécuter la commande `python`.

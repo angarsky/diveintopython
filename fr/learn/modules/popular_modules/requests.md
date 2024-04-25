@@ -1,19 +1,19 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/modules/popular-modules/requests
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/modules/popular-modules/requests
 
-The `requests` module makes it easy to interact with web pages and APIs by streamlining the process of sending requests and handling responses. With requests, you can quickly and easily retrieve data from the web and use it in your Python projects. In this article, we will explore the requests module and its features, and demonstrate how to use it in your Python code.
+Le module `requests` facilite l'interaction avec les pages web et les API en simplifiant le processus d'envoi de requêtes et de gestion des réponses. Avec requests, vous pouvez rapidement et facilement récupérer des données du web et les utiliser dans vos projets Python. Dans cet article, nous allons explorer le module requests et ses fonctionnalités, et démontrer comment l'utiliser dans votre code Python.
 
-## A few Words about the `requests` Module  
+## Quelques mots sur le module `requests`
 
-The Requests module in Python is an HTTP library that allows you to send HTTP/1.1 requests using Python. However, if you encounter the error `no module named requests` when trying to use the `requests` module in Python, it means that the module is not installed or is not accessible in your environment.
+Le module Requests en Python est une bibliothèque HTTP qui vous permet d'envoyer des requêtes HTTP/1.1 en utilisant Python. Cependant, si vous rencontrez l'erreur `no module named requests` lors de la tentative d'utilisation du module `requests` en Python, cela signifie que le module n'est pas installé ou n'est pas accessible dans votre environnement.
 
-To install the [requests](https://pypi.org/project/requests/) module, you can simply run the following command in your terminal:
+Pour installer le module [requests](https://pypi.org/project/requests/), vous pouvez simplement exécuter la commande suivante dans votre terminal :
 
 ```shell
 pip install requests
 ```
 
-Once you’ve installed the Requests library, you can use it to send requests to web servers via Python. Below is a simple code example that demonstrates how to use the Requests module to request `data` from a website:
+Une fois que vous avez installé la bibliothèque Requests, vous pouvez l'utiliser pour envoyer des demandes à des serveurs web via Python. Ci-dessous, un exemple de code simple qui démontre comment utiliser le module Requests pour demander `data` à partir d'un site web :
 
 ```python3
 import requests
@@ -22,9 +22,9 @@ response = requests.get('https://www.example.com')
 print(response.text)
 ```
 
-In this example, we `import` the Requests module and use the `requests.get()` method to send a GET request to the website specified in the parameter. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.
+Dans cet exemple, nous `import` le module Requests et utilisons la méthode `requests.get()` pour envoyer une requête GET au site web spécifié dans le paramètre. L'attribut `response.text` contient les `data` renvoyées par le site web, que nous `print` dans la console.
 
-Here's another example showing how to send a POST request with some data:
+Voici un autre exemple montrant comment envoyer une requête POST avec des données :
 
 ```python3
 import requests
@@ -34,14 +34,13 @@ response = requests.post('https://www.example.com', data=data)
 print(response.text)
 ```
 
-In this example, we use the `requests.post()` method to send a POST request to the website specified in the parameter. We also pass in some `data` as a dictionary, which will be sent as form `data` with the request. The `response.text` attribute contains the `data` returned by the website, which we `print` to the console.  
+Dans cet exemple, nous utilisons la méthode `requests.post()` pour envoyer une requête POST au site Web spécifié dans le paramètre. Nous passons également des `data` sous forme de dictionnaire, qui seront envoyés comme données de formulaire `data` avec la requête. L'attribut `response.text` contient les `data` renvoyées par le site web, que nous `print`ons dans la console.
 
-  
-## Requests with JSON  
+## Requêtes avec JSON
 
-JSON is a popular data format used for data exchange between systems. In this context, we'll learn how to use Python requests to send and receive JSON data.
+JSON est un format de données populaire utilisé pour l'échange de données entre systèmes. Dans ce contexte, nous allons apprendre à utiliser les requêtes Python pour envoyer et recevoir des données JSON.
 
-To send a `POST` request with JSON using `requests`, use the `post` method and pass the JSON data using the `json` parameter.
+Pour envoyer une requête `POST` avec JSON en utilisant `requests`, utilisez la méthode `post` et passez les données JSON en utilisant le paramètre `json`.
 
 ```python
 import requests
@@ -58,7 +57,7 @@ print(response.status_code)
 print(response.json())
 ```
 
-To send a `GET` request with JSON, use the `get` method and pass the JSON data using the `params` parameter.
+Pour envoyer une demande `GET` avec JSON, utilisez la méthode `get` et passez les données JSON en utilisant le paramètre `params`.
 
 ```python
 import requests
@@ -74,7 +73,7 @@ print(response.status_code)
 print(response.json())
 ```
 
-To send JSON data as the request body, use the `data` parameter instead of the `params` parameter.
+Pour envoyer des données JSON dans le corps de la requête, utilisez le paramètre `data` au lieu du paramètre `params`.
 
 ```python
 import requests
@@ -92,11 +91,11 @@ print(response.status_code)
 print(response.json())
 ```
 
-In summary, `requests` makes it easy to send and receive JSON data. Use the `json` or `data` parameter depending on whether you're sending a `POST` or `GET` request. Keep in mind that the server must be able to process the JSON data you send.  
-  
-## How to Set `requests` Timeout  
+En résumé, `requests` facilite l'envoi et la réception de données JSON. Utilisez le paramètre `json` ou `data` selon que vous envoyez une requête `POST` ou `GET`. Gardez à l'esprit que le serveur doit être capable de traiter les données JSON que vous envoyez.
 
-If you are using Python `requests` to make HTTP requests, it is essential to set a timeout value to avoid requests that last too long. Setting a timeout value is easy with the [requests](https://pypi.org/project/requests/) library. Here are two code examples to set timeout value using the `get` method.
+## Comment définir le délai d'attente de `requests`
+
+Si vous utilisez Python `requests` pour effectuer des requêtes HTTP, il est essentiel de définir une valeur de délai d'attente pour éviter des requêtes qui durent trop longtemps. Définir une valeur de délai d'attente est facile avec la bibliothèque [requests](https://pypi.org/project/requests/). Voici deux exemples de code pour définir une valeur de délai d'attente en utilisant la méthode `get`.
 
 ```python
 import requests
@@ -104,8 +103,7 @@ import requests
 response = requests.get("https://www.example.com", timeout=5)
 ```
 
-In the above example, we set a timeout value of 5 seconds. Therefore, if the server doesn't respond within 5 seconds, the request will raise a `requests.exceptions.Timeout` exception.
-
+Dans l'exemple ci-dessus, nous avons défini une valeur de délai d'expiration de 5 secondes. Par conséquent, si le serveur ne répond pas dans les 5 secondes, la requête déclenchera une exception `requests.exceptions.Timeout`.
 
 ```python
 import requests
@@ -123,17 +121,17 @@ except requests.exceptions.RequestException as err:
     print("Something went wrong:", err)
 ```
 
-In the above example, we used a `try-except` block to handle exceptions. If the request takes more than 5 seconds, it will raise a `requests.exceptions.Timeout` exception.
+Dans l'exemple ci-dessus, nous avons utilisé un bloc `try-except` pour gérer les exceptions. Si la requête prend plus de 5 secondes, elle lèvera une exception `requests.exceptions.Timeout`.
 
-By setting the timeout value, we prevent the program from waiting indefinitely, and we can handle errors gracefully.  
-  
-## Requests Attributes  
+En définissant la valeur du délai d'attente, nous empêchons le programme d'attendre indéfiniment, et nous pouvons gérer les erreurs de manière élégante.
 
-`Requests` provides several attributes that can be used to customize and access different parts of a request, such as the request body, headers, response, and cookies.
+## Attributs de Requêtes
 
-### Request Body
+`Requests` fournit plusieurs attributs qui peuvent être utilisés pour personnaliser et accéder à différentes parties d'une requête, telles que le corps de la requête, les en-têtes, la réponse et les cookies.
 
-To send data in the request body, you can use the `data` parameter with a dictionary of key-value pairs. Here's an example:
+### Corps de la Requête
+
+Pour envoyer des données dans le corps de la requête, vous pouvez utiliser le paramètre `data` avec un dictionnaire de paires clé-valeur. Voici un exemple :
 
 ```python
 import requests
@@ -142,9 +140,9 @@ payload = {'key1': 'value1', 'key2': 'value2'}
 response = requests.post('https://example.com', data=payload)
 ```
 
-### Headers
+### En-têtes
 
-Headers can be added to a request using the `headers` parameter. This can be useful when sending authorization tokens or custom headers. Here's an example:
+Les en-têtes peuvent être ajoutés à une requête en utilisant le paramètre `headers`. Cela peut être utile lors de l'envoi de jetons d'autorisation ou d'en-têtes personnalisés. Voici un exemple :
 
 ```python
 import requests
@@ -153,9 +151,9 @@ headers = {'Authorization': 'Bearer my_token', 'Custom-Header': 'value'}
 response = requests.get('https://example.com', headers=headers)
 ```
 
-### Response
+### Réponse
 
-The `response` object contains the server's `response` to the request. It includes attributes such as the `response` status code, content, and headers. Here's an example:
+L'objet `response` contient la `response` du serveur à la requête. Il inclut des attributs tels que le code de statut de la `response`, le contenu et les en-têtes. Voici un exemple :
 
 ```python3
 import requests
@@ -168,7 +166,7 @@ print(response.headers)
 
 ### Cookies
 
-Cookies can be accessed and set using the `cookies` attribute. This can be useful for maintaining a `session` or setting persistent data. Here's an example:
+Les cookies peuvent être consultés et définis en utilisant l'attribut `cookies`. Cela peut être utile pour maintenir une `session` ou pour définir des données persistantes. Voici un exemple :
 
 ```python
 import requests
@@ -181,13 +179,13 @@ session_cookie = response.cookies['session']
 
 # Use the session cookie for subsequent requests
 response2 = requests.get('https://example.com/protected', cookies={'session': session_cookie})
-```  
-  
-## Requests Session  
+```
 
-The Python Requests Session is a powerful tool that allows you to maintain persistence of your HTTP requests within a single `session` object. This means that you can easily reuse the same connection for multiple requests, with each request building upon the previous one. 
+## Session de Requêtes  
 
-Using the built-in `requests` library in Python, the Sessions feature maintains `session` variables, including cookies. Thus, it allows one to have temporary storage on the client-side. Here is an example code snippet that illustrates the Python Requests Session:
+La Session de Requêtes Python est un outil puissant qui vous permet de maintenir la persistance de vos requêtes HTTP au sein d'un unique objet `session`. Cela signifie que vous pouvez facilement réutiliser la même connexion pour plusieurs requêtes, chaque requête se basant sur la précédente. 
+
+En utilisant la bibliothèque intégrée `requests` en Python, la fonctionnalité Sessions maintient les variables de `session`, y compris les cookies. Ainsi, cela permet d'avoir un stockage temporaire du côté client. Voici un exemple de morceau de code qui illustre la Session de Requêtes Python :
 
 ```python
 import requests
@@ -196,11 +194,11 @@ session = requests.Session()
 session.get('http://example.com')
 ```
 
-In this code, we create a new `Session` object and then use the `get()` method to make a GET request to the given URL. By default, this request will include the relevant headers and cookies that were set in the previous requests made with this `session` object. 
+Dans ce code, nous créons un nouvel objet `Session` puis utilisons la méthode `get()` pour effectuer une requête GET à l'URL donnée. Par défaut, cette requête inclura les en-têtes et les cookies pertinents qui ont été définis dans les requêtes précédentes effectuées avec cet objet `session`.
 
-Sessions are useful for emulating a stateful sessions, where HTTP cookies are used to remember the server-side state. Another example would be to speed up requests to the same server by re-using the same TCP connection. This means that the server can send the response immediately and doesn't need to spend time setting up a new TCP connection.
+Les sessions sont utiles pour émuler des sessions étatiques, où les cookies HTTP sont utilisés pour se souvenir de l'état côté serveur. Un autre exemple serait d'accélérer les requêtes vers le même serveur en réutilisant la même connexion TCP. Cela signifie que le serveur peut envoyer la réponse immédiatement et n'a pas besoin de passer du temps à établir une nouvelle connexion TCP.
 
-Here is an example of adding a header to the `session`, which will be present on all subsequent requests:
+Voici un exemple d'ajout d'un en-tête à la `session`, qui sera présent sur toutes les requêtes subséquentes :
 
 ```python
 import requests
@@ -211,13 +209,13 @@ session.headers.update({'x-test': 'true'})
 session.get('http://httpbin.org/headers')
 ```
 
-Within the `Session`, we set the header `x-test` to `true`. Then, any subsequent requests made with this `session` object to 'http://httpbin.org/headers' will include this header. 
+Au sein de la `Session`, nous définissons l'en-tête `x-test` à `true`. Ensuite, toute requête ultérieure effectuée avec cet objet `session` vers 'http://httpbin.org/headers' inclura cet en-tête.
 
-In conclusion, Python Requests Session provides a powerful and flexible way to persist connection state across multiple HTTP requests. It is a must-have tool for any developer who works with HTTP request/response data in Python.  
-  
-## How to Download File with Requests  
+En conclusion, la Session de Requests Python offre une manière puissante et flexible de maintenir l'état de connexion à travers de multiples requêtes HTTP. C'est un outil indispensable pour tout développeur qui travaille avec des données de requête/réponse HTTP en Python.
 
-To download a file using the `requests` module in Python, you can use the `get()` method. This method allows you to make a request to the specified URL and retrieve the content as a file-like object. You can then write the content to a file on your local machine. 
+## Comment télécharger un fichier avec Requests
+
+Pour télécharger un fichier en utilisant le module `requests` en Python, vous pouvez utiliser la méthode `get()`. Cette méthode vous permet de faire une requête à l'URL spécifiée et de récupérer le contenu comme un objet similaire à un fichier. Vous pouvez ensuite écrire le contenu dans un fichier sur votre machine locale.
 
 ```python
 import requests
@@ -229,9 +227,9 @@ with open('image.jpg', 'wb') as f:
     f.write(response.content)
 ```
 
-In this example, we are downloading an image from the URL `https://example.com/image.jpg` and saving it to a file named `image.jpg`. The `response.content` attribute contains the binary content of the image, which we write to the file using the `write()` method.
+Dans cet exemple, nous téléchargeons une image depuis l'URL `https://example.com/image.jpg` et la sauvegardons dans un fichier nommé `image.jpg`. L'attribut `response.content` contient le contenu binaire de l'image, que nous écrivons dans le fichier en utilisant la méthode `write()`.
 
-Another example is to download a CSV file and save it to disk:
+Un autre exemple consiste à télécharger un fichier CSV et à le sauvegarder sur le disque :
 
 ```python
 import requests
@@ -243,15 +241,15 @@ with open('data.csv', 'wb') as f:
     f.write(response.content)
 ```
 
-In this example, we are downloading a CSV file from `https://example.com/data.csv` and saving it to `data.csv`. Like before, we write the content to the file using the `write()` method.
+Dans cet exemple, nous téléchargeons un fichier CSV depuis `https://example.com/data.csv` et l'enregistrons sous `data.csv`. Comme précédemment, nous écrivons le contenu dans le fichier en utilisant la méthode `write()`.
 
-In both examples, we use the `requests` module to make a GET request to the specified URL, and we retrieve the binary content using the `response.content` attribute. We then write this binary content to a file on disk using the `open()` function in combination with a `with` block. 
+Dans les deux exemples, nous utilisons le module `requests` pour faire une requête GET à l'URL spécifiée, et nous récupérons le contenu binaire en utilisant l'attribut `response.content`. Nous écrivons ensuite ce contenu binaire dans un fichier sur le disque en utilisant la fonction `open()` en combinaison avec un bloc `with`.
 
-So, that's how you can download a file with `requests` in Python.  
-  
-## Using Proxy in Requests  
+Donc, voilà comment vous pouvez télécharger un fichier avec `requests` en Python.
 
-If you want to send HTTP requests in Python through a proxy, you can use the `requests` library. Here's how to do it:
+## Utilisation de Proxy dans les Requêtes
+
+Si vous souhaitez envoyer des requêtes HTTP en Python à travers un proxy, vous pouvez utiliser la bibliothèque `requests`. Voici comment faire :
 
 ```python
 import requests
@@ -267,23 +265,23 @@ response = requests.get(url, proxies=proxies)
 
 ```
 
-In the above code example, you need to replace `user`, `password`, `proxy`, and `port` with your actual credentials and proxy address and port number.
+Dans l'exemple de code ci-dessus, vous devez remplacer `user`, `password`, `proxy`, et `port` par vos véritables identifiants et adresse proxy ainsi que le numéro de port.
 
-By using these proxy settings in your Python HTTP requests, you can easily bypass any restrictions imposed on your network, and access the desired resources without any hassle. Moreover, you can scale your service to be more robust and independent, while securing your network from outside users.  
-  
-## How to Convert `curl` to Python request  
+En utilisant ces paramètres de proxy dans vos requêtes HTTP Python, vous pouvez facilement contourner toutes les restrictions imposées sur votre réseau et accéder aux ressources souhaitées sans aucun problème. De plus, vous pouvez échelonner votre service pour le rendre plus robuste et indépendant, tout en sécurisant votre réseau contre les utilisateurs extérieurs.
 
-Converting a `curl` command to Python request is a common task for those working with APIs or web requests.
+## Comment Convertir `curl` en requête Python
 
-Here are two examples of converting a `curl` command to Python request using the `requests` module:
+Convertir une commande `curl` en requête Python est une tâche courante pour ceux qui travaillent avec les API ou les requêtes web.
 
-### `curl` command
+Voici deux exemples de conversion d'une commande `curl` en requête Python en utilisant le module `requests` :
+
+### Commande `curl`
 
 ```shell
 curl https://jsonplaceholder.typicode.com/posts/1
 ```
 
-### Python Request Code
+### Code de requête Python
 
 ```python
 import requests
@@ -293,7 +291,7 @@ response = requests.get('https://jsonplaceholder.typicode.com/posts/1')
 print(response.json())
 ```
 
-### More Complex `curl` Command
+### Commande `curl` Plus Complexe
 
 ```shell
 curl -X POST \
@@ -302,7 +300,7 @@ curl -X POST \
   -d '{"name": "John Doe", "age": 25}'
 ```
 
-### Python `request` Code
+### Code `request` Python
 
 ```python3
 import requests
@@ -316,15 +314,15 @@ response = requests.post(url, headers=headers, data=data)
 print(response.json())
 ```
 
-In conclusion, converting `curl` to Python request can be easily done using the `requests` module. By understanding the correct syntax and structure of the `curl` command, it is possible to replicate the same request in Python with a few lines of code.  
-  
-## Rest API  
+En conclusion, convertir `curl` en requête Python peut être facilement réalisé en utilisant le module `requests`. En comprenant la syntaxe correcte et la structure de la commande `curl`, il est possible de reproduire la même requête en Python avec quelques lignes de code.
 
-Python is a popular language for building RESTful APIs due to its simple syntax and vast library collection. With Python, developers can easily make direct API calls and extract `data` from popular web services. 
+## API Rest
 
-### Python API Call Example
+Python est un langage populaire pour construire des API RESTful en raison de sa syntaxe simple et de sa vaste collection de bibliothèques. Avec Python, les développeurs peuvent facilement effectuer des appels API directs et extraire des `data` de services web populaires.
 
-Below is an example of how to make an API call using Python:
+### Exemple d'appel API Python
+
+Ci-dessous un exemple de comment effectuer un appel API en utilisant Python :
 
 ```python
 import requests
@@ -335,13 +333,13 @@ response = requests.get(url)
 print(response.json())
 ```
 
-In the code snippet above, we `import` the Python 'requests' module, use the URL of the API endpoint and execute the request using the 'get' method. Finally, we `print` the retrieved `data` in JSON format.
+Dans l'extrait de code ci-dessus, nous `import`ons le module 'requests' de Python, utilisons l'URL du point de terminaison de l'API et exécutons la requête en utilisant la méthode 'get'. Finalement, nous `print`ons les `data` récupérées au format JSON.
 
-### How to use RESTful APIs in Python
+### Comment utiliser les API RESTful en Python
 
-Python provides a library called `Flask` which is widely used for building REST APIs. To create a RESTful API using `Flask`, you need to install `Flask` and use the routing capabilities to define API endpoints. 
+Python fournit une bibliothèque appelée `Flask` qui est largement utilisée pour construire des API REST. Pour créer une API RESTful en utilisant `Flask`, vous devez installer `Flask` et utiliser les capacités de routage pour définir les points de terminaison de l'API.
 
-### How to create an API endpoint using Flask
+### Comment créer un point de terminaison d'API en utilisant Flask
 
 ```python
 from flask import Flask
@@ -357,6 +355,6 @@ if __name__ == '__main__':
     app.run(port=5000)
 ```
 
-In the code above, we define a simple `Flask` `app` with an endpoint for retrieving `data`. The 'get_data' function retrieves a sample `data` object and returns it as JSON.
+Dans le code ci-dessus, nous définissons une simple `app` `Flask` avec un point de terminaison pour récupérer des `data`. La fonction 'get_data' récupère un objet `data` d'exemple et le retourne au format JSON.
 
-In summary, Python is an excellent language for working with RESTful APIs due to its ease of use and a wide range of existing libraries available. By using Python and `Flask`, developers can quickly build high-performance REST APIs, making it a popular choice for many development projects.  
+En résumé, Python est un excellent langage pour travailler avec les API RESTful grâce à sa facilité d'utilisation et à la large gamme de bibliothèques existantes disponibles. En utilisant Python et `Flask`, les développeurs peuvent rapidement construire des API REST performantes, ce qui en fait un choix populaire pour de nombreux projets de développement.
