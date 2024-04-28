@@ -1,17 +1,17 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/array/basic-operations
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/variables/array/basic-operations
 
-Arrays allow us to store and manipulate data efficiently, enabling us to perform a wide range of tasks. In this article, we will explore the essential basic most common operations associated with arrays in Python.
+Les tableaux nous permettent de stocker et de manipuler des données efficacement, nous permettant d'effectuer une large gamme de tâches. Dans cet article, nous allons explorer les opérations de base essentielles les plus courantes associées aux tableaux en Python.
 
-## Sorting and Shuffling
+## Trier et Mélanger
 
-Sorting and shuffling are common operations in data manipulation and analysis. In Python, there are built-in functions and methods available to perform these tasks efficiently.
+Trier et mélanger sont des opérations courantes dans la manipulation et l'analyse des données. En Python, il existe des fonctions et des méthodes intégrées disponibles pour effectuer ces tâches de manière efficace.
 
-### How to Get a Sorted Array in Python
+### Comment Obtenir un Tableau Trié en Python
 
-In Python, you can sort an array (or list) using the `sorted()` function. The `sorted()` function takes an iterable as input and returns a new sorted list containing the elements of the original iterable.
+En Python, vous pouvez trier un tableau (ou une liste) en utilisant la fonction `sorted()`. La fonction `sorted()` prend un itérable en entrée et retourne une nouvelle liste triée contenant les éléments de l'itérable original.
 
-Here's an example of how to use `sorted()` for sorting an array:
+Voici un exemple de comment utiliser `sorted()` pour trier un tableau :
 
 ```python3
 my_array = [5, 2, 1, 4, 3]
@@ -19,9 +19,9 @@ sorted_array = sorted(my_array)
 print(sorted_array)  # Output: [1, 2, 3, 4, 5]
 ```
 
-In this example, `sorted(my_array)` returns a new list that contains the elements of `my_array` in sorted order. The `sorted_array` variable stores this sorted list, and it is then printed to the console.
+Dans cet exemple, `sorted(my_array)` renvoie une nouvelle liste contenant les éléments de `my_array` dans un ordre trié. La variable `sorted_array` stocke cette liste triée, et elle est ensuite affichée sur la console.
 
-It's important to note that the `sorted()` function returns a new sorted list and does not modify the original array in place. If you want to sort the original array itself, you can use the `sort()` method of the array instead:
+Il est important de noter que la fonction `sorted()` renvoie une nouvelle liste triée et ne modifie pas le tableau original sur place. Si vous souhaitez trier le tableau original lui-même, vous pouvez utiliser la méthode `sort()` du tableau à la place :
 
 ```python3
 my_array = [5, 2, 1, 4, 3]
@@ -29,11 +29,11 @@ my_array.sort()
 print(my_array)  # Output: [1, 2, 3, 4, 5]
 ```
 
-In this case, `my_array.sort()` sorts the elements of `my_array` in place, modifying the array directly. The sorted array is then printed to the console.
+Dans ce cas, `my_array.sort()` trie les éléments de `my_array` sur place, modifiant directement le tableau. Le tableau trié est ensuite affiché dans la console.
 
-### How to Shuffle an Array
+### Comment mélanger un tableau
 
-To shuffle an array in Python, you can use the `random.shuffle()` function from the `random` module. This function shuffles the elements of a sequence randomly, in-place. Here's an example:
+Pour mélanger un tableau en Python, vous pouvez utiliser la fonction `random.shuffle()` du module `random`. Cette fonction mélange aléatoirement les éléments d'une séquence, sur place. Voici un exemple :
 
 ```python3
 import random
@@ -45,13 +45,13 @@ random.shuffle(my_array)
 print(my_array)
 ```
 
-## Append, Push, Concatenate & Extend
+## Ajouter, Pousser, Concaténer & Étendre
 
-Let's review the way of appending or pushing elements to an array.
+Revoyons la manière d'ajouter ou de pousser des éléments dans un tableau.
 
-### How To Append an Element to an Array
+### Comment Ajouter un Élément à un Tableau
 
-Appending an element to an existing array in Python can be done using the `append()` method provided by the list data type. Here is an example of how to add an element to an array (or list):
+Ajouter un élément à un tableau existant en Python peut se faire en utilisant la méthode `append()` fournie par le type de données liste. Voici un exemple de comment ajouter un élément à un tableau (ou liste) :
 
 ```python3
 array = ['apple', 'banana', 'orange']
@@ -59,17 +59,17 @@ array.append('grape')
 print(array) # Output: ['apple', 'banana', 'orange', 'grape']
 ```
 
-The `append()` method allows to insert the specified element to the end of the array (or list). It modifies the original list in place and does not return a new list.
+La méthode `append()` permet d'insérer l'élément spécifié à la fin du tableau (ou de la liste). Elle modifie la liste originale sur place et ne retourne pas une nouvelle liste.
 
-You can append elements of any data type to a Python list, including strings, numbers, or even other lists.
+Vous pouvez ajouter des éléments de n'importe quel type de données à une liste Python, y compris des chaînes de caractères, des nombres, ou même d'autres listes.
 
-As you see, the `append()` method allows you easily expand the array (or list) by adding a new elements.
+Comme vous pouvez le voir, la méthode `append()` vous permet facilement d'élargir le tableau (ou la liste) en ajoutant de nouveaux éléments.
 
-> Note: The `append()` method can only add one element at a time. If you want to add multiple elements to the array, you can use the `extend()` method or concatenate lists using the `+` operator.
+> Note : La méthode `append()` ne peut ajouter qu'un seul élément à la fois. Si vous souhaitez ajouter plusieurs éléments au tableau, vous pouvez utiliser la méthode `extend()` ou concaténer des listes en utilisant l'opérateur `+`.
 
-### How to Push an Element into an Array
+### Comment insérer un élément dans un tableau
 
-In Python, the concept of "pushing" elements into an array is typically associated with mutable data structures like lists. Mutable data structures allow you to modify the elements by adding, removing, or modifying values. Therefore it is the same approach as `append()` method, you can "push" elements into an array using a list:
+En Python, le concept d'"insérer" des éléments dans un tableau est généralement associé aux structures de données modifiables comme les listes. Les structures de données modifiables vous permettent de modifier les éléments en ajoutant, en supprimant ou en modifiant des valeurs. Par conséquent, c'est la même approche que la méthode `append()`, vous pouvez "insérer" des éléments dans un tableau en utilisant une liste :
 
 ```python3
 my_list = []  # Initialize an empty list
@@ -82,13 +82,13 @@ my_list.append(3)
 print(my_list)  # Output: [1, 2, 3]
 ```
 
-> Note: This approach applies specifically to lists in Python. Other data structures, such as NumPy arrays or immutable tuples, have different methods or limitations for modifying their contents.
+> Remarque : Cette approche s'applique spécifiquement aux listes en Python. D'autres structures de données, comme les tableaux NumPy ou les tuples immuables, ont des méthodes ou des limites différentes pour modifier leur contenu.
 
-### How to Concatenate Arrays in Python
+### Comment concaténer des tableaux en Python
 
-To concatenate arrays in Python, you can use various methods, depending on the type of arrays you are working with. Here are a few examples of how to combine arrays:
+Pour concaténer des tableaux en Python, vous pouvez utiliser diverses méthodes, selon le type de tableaux avec lesquels vous travaillez. Voici quelques exemples de comment combiner des tableaux :
 
-1. Using the `+` operator with standard Python lists:
+1. En utilisant l'opérateur `+` avec des listes Python standard :
 
 ```python3
 array1 = [1, 2, 3]
@@ -97,7 +97,7 @@ concatenated = array1 + array2
 print(concatenated) # Output: [1, 2, 3, 4, 5, 6]
 ```
 
-2. Using the `concatenate()` function from NumPy:
+2. Utilisation de la fonction `concatenate()` de NumPy :
 
 ```python3
 import numpy as np
@@ -108,7 +108,7 @@ concatenated = np.concatenate((array1, array2))
 print(concatenated) # Output: [1 2 3 4 5 6]
 ```
 
-3. Using the `hstack()` or `vstack()` functions from NumPy for horizontal or vertical concatenation, respectively:
+3. Utilisation des fonctions `hstack()` ou `vstack()` de NumPy pour une concaténation horizontale ou verticale, respectivement :
 
 ```python3
 import numpy as np
@@ -119,7 +119,7 @@ concatenated = np.hstack((array1, array2))
 print(concatenated) # Output: [1 2 3 4 5 6]
 ```
 
-In this example, we use the `hstack()` function to horizontally stack `array1` and `array2`, resulting in a new array `concatenated` that contains the concatenated elements in a single row.
+Dans cet exemple, nous utilisons la fonction `hstack()` pour empiler horizontalement `array1` et `array2`, ce qui résulte en un nouveau tableau `concatenated` qui contient les éléments concaténés dans une seule rangée.
 
 ```python3
 import numpy as np
@@ -130,22 +130,22 @@ concatenated = np.vstack((array1, array2))
 print(concatenated)
 ```
 
-Output:
+Sortie :
 
 ```python
 [[1 2 3]
  [4 5 6]]
 ```
 
-In this example, we use the `vstack()` function to vertically stack `array1` and `array2`, resulting in a new array `concatenated` that contains the concatenated elements in two rows.
+Dans cet exemple, nous utilisons la fonction `vstack()` pour empiler verticalement `array1` et `array2`, ce qui résulte en un nouveau tableau `concatenated` qui contient les éléments concaténés en deux rangées.
 
-### How to Extend an Array in Python
+### Comment Étendre un Tableau en Python
 
-There are various methods which allow us to extend an array in Python. Here are a few approaches how to merge or combine arrays in Python:
+Il existe diverses méthodes qui nous permettent d'étendre un tableau en Python. Voici quelques approches pour fusionner ou combiner des tableaux en Python :
 
-1. List:
+1. Liste :
 
-If you have a list, you can use the `extend()` method to add elements from another iterable to the end of the list. Here's an example:
+Si vous avez une liste, vous pouvez utiliser la méthode `extend()` pour ajouter des éléments d'un autre itérable à la fin de la liste. Voici un exemple :
 
 ```python
 my_list = [1, 2, 3]
@@ -156,9 +156,9 @@ my_list.extend(new_elements)
 print(my_list)
 ```
 
-2. NumPy:
+2. NumPy :
 
-If you are working with NumPy arrays, you can use the `concatenate()` function to combine two arrays along a specified axis. Here's an example:
+Si vous travaillez avec des tableaux NumPy, vous pouvez utiliser la fonction `concatenate()` pour combiner deux tableaux le long d'un axe spécifié. Voici un exemple :
 
 ```python3
 import numpy as np
@@ -171,9 +171,9 @@ extended_array = np.concatenate((array1, array2))
 print(extended_array)
 ```
 
-3. Array module:
+3. Module Array :
 
-If you are using the built-in `array` module, you can use the `extend()` method to add elements from another iterable to the end of the array. Here's an example:
+Si vous utilisez le module `array` intégré, vous pouvez utiliser la méthode `extend()` pour ajouter des éléments d'un autre itérable à la fin du tableau. Voici un exemple :
 
 ```python3
 import array as arr
@@ -186,11 +186,11 @@ my_array.extend(new_elements)
 print(my_array)
 ```
 
-## `getsizeof()` Function
+## Fonction `getsizeof()`
 
-In Python, there is no built-in function called `sizeof()` to directly get the size of an array or list. However, you can use the `sys` module's `getsizeof()` function to get an estimate of the memory size occupied by an object.
+En Python, il n'y a pas de fonction intégrée appelée `sizeof()` pour obtenir directement la taille d'un tableau ou d'une liste. Cependant, vous pouvez utiliser la fonction `getsizeof()` du module `sys` pour obtenir une estimation de la taille de la mémoire occupée par un objet.
 
-Here's an example:
+Voici un exemple :
 
 ```python3
 import sys
@@ -201,18 +201,18 @@ size = sys.getsizeof(my_list)
 print(size)  # Output: 104 (the size in bytes)
 ```
 
-In the example above, we import the `sys` module and use the `getsizeof()` function to get the size of the `my_list` object in bytes. 
-> Note: The value returned by `getsizeof()` includes the overhead of the list object itself and may not provide an exact representation of the memory occupied by the array/list elements.
+Dans l'exemple ci-dessus, nous importons le module `sys` et utilisons la fonction `getsizeof()` pour obtenir la taille de l'objet `my_list` en octets.
+> Note : La valeur retournée par `getsizeof()` inclut la surcharge de l'objet liste lui-même et peut ne pas fournir une représentation exacte de la mémoire occupée par les éléments du tableau/liste.
 
-## Reverse and Transpose
+## Inverser et Transposer
 
-Quite often we come across situations in Python where we need to reverse or transpose an array.
+Assez souvent, nous rencontrons des situations en Python où nous avons besoin d'inverser ou de transposer un tableau.
 
-### How to Reverse an Array in Python
+### Comment inverser un tableau en Python
 
-You can reverse or flip an array (list) in Python using various methods. Here are a few common approaches for reversing an array in Python:
+Vous pouvez inverser ou retourner un tableau (liste) en Python en utilisant diverses méthodes. Voici quelques approches courantes pour inverser un tableau en Python :
 
-1. Using the `reverse()` method:
+1. En utilisant la méthode `reverse()` :
 
 ```python3
 my_list = [10, 20, 30, 40, 50]
@@ -220,7 +220,7 @@ my_list.reverse()
 print(my_list)  # Output: [50, 40, 30, 20, 10]
 ```
 
-2. Using the slicing technique:
+2. En utilisant la technique de découpage :
 
 ```python
 my_list = [10, 20, 30, 40, 50]
@@ -228,7 +228,7 @@ reversed_list = my_list[::-1]
 print(reversed_list)  # Output: [50, 40, 30, 20, 10]
 ```
 
-3. Using the `reversed()` function:
+3. Utilisation de la fonction `reversed()`:
 
 ```python
 my_list = [10, 20, 30, 40, 50]
@@ -236,19 +236,19 @@ reversed_list = list(reversed(my_list))
 print(reversed_list)  # Output: [50, 40, 30, 20, 10]
 ```
 
-All three methods achieve the same result. The first method uses the `reverse()` method, which reverses the elements of the list in-place, modifying the original list.The second method utilizes slicing with a step value of -1 (`[::-1]`), which creates a new list with the elements in reverse order. The third method uses the `reversed()` function to create a reverse iterator, which is then converted to a list using the `list()` function.
+Les trois méthodes atteignent le même résultat. La première méthode utilise la méthode `reverse()`, qui inverse les éléments de la liste sur place, modifiant la liste originale. La deuxième méthode utilise le découpage avec une valeur de pas de -1 (`[::-1]`), ce qui crée une nouvelle liste avec les éléments dans l'ordre inverse. La troisième méthode utilise la fonction `reversed()` pour créer un itérateur inverse, qui est ensuite converti en liste à l'aide de la fonction `list()`.
 
-### How to Transpose Array in Python
+### Comment transposer un tableau en Python
 
-To transpose a list and a NumPy array in Python, you can follow the steps below:
+Pour transposer une liste et un tableau NumPy en Python, vous pouvez suivre les étapes ci-dessous :
 
-Transposing a List:
+Transposer une liste :
 
-1. Create a list of lists where each inner list represents a row of the original matrix.
+1. Créez une liste de listes où chaque liste intérieure représente une ligne de la matrice originale.
 
-2. Use the `zip(*list)` function to transpose the list.
+2. Utilisez la fonction `zip(*list)` pour transposer la liste.
 
-Here's an example:
+Voici un exemple :
 
 ```python
 # Create a sample list
@@ -261,9 +261,9 @@ transposed_list = list(zip(*list_of_lists))
 print(transposed_list) # Output: [(1, 4), (2, 5), (3, 6)]
 ```
 
-Transposing a NumPy Array:
+Transposer un tableau NumPy :
 
-To transpose a NumPy array, you can use the `transpose()` function provided by the NumPy library, as shown in the previous example. Here's an example specific to a NumPy array:
+Pour transposer un tableau NumPy, vous pouvez utiliser la fonction `transpose()` fournie par la bibliothèque NumPy, comme montré dans l'exemple précédent. Voici un exemple spécifique à un tableau NumPy :
 
 ```python3
 import numpy as np
@@ -278,7 +278,7 @@ transposed_array = np.transpose(array)
 print(transposed_array)
 ```
 
-Output:
+Sortie :
 
 ```python
 [[1 4]
@@ -286,11 +286,11 @@ Output:
  [3 6]]
 ```
 
-## How to Check if an Array is Empty
+## Comment vérifier si un tableau est vide
 
-To check if an array is empty in Python, you can use the `len()` function or direct comparison with an empty array. Here's how you can do it for different types of arrays:
+Pour vérifier si un tableau est vide en Python, vous pouvez utiliser la fonction `len()` ou une comparaison directe avec un tableau vide. Voici comment vous pouvez le faire pour différents types de tableaux :
 
-1. List:
+1. Liste :
 
 ```python
 my_list = []  # Empty list
@@ -304,7 +304,7 @@ if my_list == []:
     print("Array is empty")
 ```
 
-2. NumPy array:
+2. Tableau NumPy :
 
 ```python3
 import numpy as np
@@ -320,31 +320,31 @@ if np.array_equal(my_array, np.array([])):
     print("Array is empty")
 ```
 
-## How to Copy an Array
+## Comment copier un tableau
 
-You can copy an array in Python using several approaches. Here are some common methods to copy arrays:
+Vous pouvez copier un tableau en Python en utilisant plusieurs approches. Voici quelques méthodes courantes pour copier des tableaux :
 
-1. List:
+1. Liste :
 
-For a standard Python list, you can use the slicing syntax `[:]` or the `copy()` method to create a copy:
+Pour une liste Python standard, vous pouvez utiliser la syntaxe de tranchage `[:]` ou la méthode `copy()` pour créer une copie :
 
-Using slicing:
+En utilisant le tranchage :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 my_list_copy = my_list[:]
 ```
 
-Using the `copy()` method:
+En utilisant la méthode `copy()`:
 
 ```python
 my_list = [1, 2, 3, 4, 5]
 my_list_copy = my_list.copy()
 ```
 
-2. NumPy array:
+2. Tableau NumPy :
 
-For a NumPy array, you can use the `copy()` function to create a copy:
+Pour un tableau NumPy, vous pouvez utiliser la fonction `copy()` pour créer une copie :
 
 ```python
 import numpy as np
@@ -353,13 +353,13 @@ my_array = np.array([1, 2, 3, 4, 5])
 my_array_copy = np.copy(my_array)
 ```
 
-## How to Filter an Array
+## Comment filtrer un tableau
 
-To filter an array in Python, you can use various methods depending on the type of array you are working with. Here are a few common approaches:
+Pour filtrer un tableau en Python, vous pouvez utiliser diverses méthodes selon le type de tableau avec lequel vous travaillez. Voici quelques approches courantes :
 
-1. List comprehension:
+1. Compréhension de liste :
 
-For a standard Python list, you can use list comprehension to create a new list that contains only the desired elements based on a specific condition. Here's an example:
+Pour une liste Python standard, vous pouvez utiliser la compréhension de liste pour créer une nouvelle liste qui contient uniquement les éléments souhaités basés sur une condition spécifique. Voici un exemple :
 
 ```python
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -370,9 +370,9 @@ filtered_list = [x for x in my_list if x > 5]
 print(filtered_list)  # Output: [6, 7, 8, 9, 10]
 ```
 
-2. Filter function:
+2. Fonction de filtrage :
 
-You can also use the `built-in filter()` function along with a lambda function or a custom function to filter elements from a list based on a given condition. Here's an example:
+Vous pouvez également utiliser la fonction intégrée `filter()` avec une fonction lambda ou une fonction personnalisée pour filtrer des éléments d'une liste basée sur une condition donnée. Voici un exemple :
 
 ```python
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -383,9 +383,9 @@ filtered_list = list(filter(lambda x: x > 5, my_list))
 print(filtered_list)  # Output: [6, 7, 8, 9, 10]
 ```
 
-3. NumPy array:
+3. Tableau NumPy :
 
-For a NumPy array, you can use boolean indexing to filter elements based on a condition. Here's an example:
+Pour un tableau NumPy, vous pouvez utiliser l'indexation booléenne pour filtrer les éléments basés sur une condition. Voici un exemple :
 
 ```python
 import numpy as np
@@ -398,13 +398,13 @@ filtered_array = my_array[my_array > 5]
 print(filtered_array)  # Output: [ 6  7  8  9 10]
 ```
 
-## How to Join an Array in Python
+## Comment joindre un tableau en Python
 
-You can join an array in Python using several different methods. Here are a few common approaches:
+Vous pouvez joindre un tableau en Python en utilisant plusieurs méthodes différentes. Voici quelques approches communes :
 
-1. Joining List Elements:
+1. Joindre les éléments d'une liste :
 
-For a standard Python list, you can use the `join()` method of strings to join the elements of the list into a single string. Here's an example:
+Pour une liste Python standard, vous pouvez utiliser la méthode `join()` des chaînes pour joindre les éléments de la liste en une seule chaîne. Voici un exemple :
 
 ```python3
 my_list = ['Hello', 'World', 'Python']
@@ -415,11 +415,11 @@ joined_string = ' '.join(my_list)
 print(joined_string)  # Output: 'Hello World Python'
 ```
 
-In this example, the `join()` method is used with a space `' '` as the separator to join the elements of the list into a single string.
+Dans cet exemple, la méthode `join()` est utilisée avec un espace `' '` comme séparateur pour joindre les éléments de la liste en une seule chaîne.
 
-2. Joining NumPy Array Elements:
+2. Jointure des éléments d'un tableau NumPy :
 
-For a NumPy array, you can use the join() method of NumPy's char object to join the elements of the array into a single string. Here's an example:
+Pour un tableau NumPy, vous pouvez utiliser la méthode join() de l'objet char de NumPy pour joindre les éléments du tableau en une seule chaîne. Voici un exemple :
 
 ```python3
 import numpy as np
@@ -432,15 +432,15 @@ joined_string = np.char.join(' ', my_array)
 print(joined_string)  # Output: ['H e l l o' 'W o r l d' 'P y t h o n']
 ```
 
-In this example, the `join()` method from `np.char` is used with a space `' '` as the separator to join the elements of the array into a single string.
+Dans cet exemple, la méthode `join()` de `np.char` est utilisée avec un espace `' '` comme séparateur pour joindre les éléments du tableau en une seule chaîne.
 
-## The Sum of Array Calculation
+## Le Calcul de la Somme du Tableau
 
-You can use different methods to calculate the sum of an array elements in Python. Here are some common approaches:
+Vous pouvez utiliser différentes méthodes pour calculer la somme des éléments d'un tableau en Python. Voici quelques approches courantes :
 
-1. List:
+1. Liste :
 
-For a standard Python list, you can use the built-in `sum()` function to calculate the sum of all elements:
+Pour une liste Python standard, vous pouvez utiliser la fonction intégrée `sum()` pour calculer la somme de tous les éléments :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -448,9 +448,9 @@ array_sum = sum(my_list)
 print(array_sum)
 ```
 
-2. NumPy array:
+2. Tableau NumPy :
 
-For a NumPy array, you can use the sum() function from the NumPy library to compute the sum of all elements:
+Pour un tableau NumPy, vous pouvez utiliser la fonction `sum()` de la bibliothèque NumPy pour calculer la somme de tous les éléments :
 
 ```python
 import numpy as np
@@ -460,11 +460,11 @@ array_sum = np.sum(my_array)
 print(array_sum)
 ```
 
-## Max Element of an Array
+## Élément maximal d'un tableau
 
-To find the maximum value in an array in Python, you can use the built-in `max()` function or the numpy library's `max()` function. Here's how you can use both approaches:
+Pour trouver la valeur maximale dans un tableau en Python, vous pouvez utiliser la fonction intégrée `max()` ou la fonction `max()` de la bibliothèque numpy. Voici comment vous pouvez utiliser les deux approches :
 
-Using the built-in `max()` function:
+En utilisant la fonction intégrée `max()` :
 
 ```python
 my_array = [5, 2, 9, 1, 7]
@@ -475,7 +475,7 @@ max_value = max(my_array)
 print(max_value)  # Output: 9
 ```
 
-Using the numpy library:
+En utilisant la bibliothèque numpy :
 
 ```python
 import numpy as np
@@ -488,17 +488,17 @@ max_value = np.max(my_array)
 print(max_value)  # Output: 9
 ```
 
-## Flattening, Splitting, Slicing & Converting & to 2D Array
+## Aplatir, Fractionner, Découper & Convertir en tableau 2D
 
-In Python, flattening, splitting, and converting to a 2D array are common operations when dealing with multidimensional data structures. Let's review the basics.
+En Python, aplatir, fractionner et convertir en tableau 2D sont des opérations courantes lorsque l'on traite des structures de données multidimensionnelles. Passons en revue les bases.
 
-### How to Flatten an Array
+### Comment aplatir un tableau
 
-You can use various methods to flatten an array in Python. Here are a few approaches for different types of arrays:
+Vous pouvez utiliser différentes méthodes pour aplatir un tableau en Python. Voici quelques approches pour différents types de tableaux :
 
-1. Flattening a nested list:
+1. Aplatir une liste imbriquée :
 
-You can use list comprehension and recursion to flatten a nested list. Here's an example:
+Vous pouvez utiliser la compréhension de liste et la récursion pour aplatir une liste imbriquée. Voici un exemple :
 
 ```python3
 def flatten_list(nested_list):
@@ -515,9 +515,9 @@ flattened_list = flatten_list(nested_list)
 print(flattened_list) # Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-2. Flattening a NumPy array:
+2. Aplatir un tableau NumPy :
 
-You can use the `flatten()` method provided by NumPy to flatten an array. Here's an example:
+Vous pouvez utiliser la méthode `flatten()` fournie par NumPy pour aplatir un tableau. Voici un exemple :
 
 ```python
 import numpy as np
@@ -527,9 +527,9 @@ flattened_array = array.flatten()
 print(flattened_array) # Output: [1 2 3 4 5 6]
 ```
 
-3. Flattening a multidimensional array with NumPy:
+3. Aplatir un tableau multidimensionnel avec NumPy :
 
-If you have a multidimensional NumPy array and want to flatten it, you can use the ravel() method. Here's an example:
+Si vous avez un tableau NumPy multidimensionnel et souhaitez l'aplatir, vous pouvez utiliser la méthode ravel(). Voici un exemple :
 
 ```python
 import numpy as np
@@ -539,9 +539,9 @@ flattened_array = array.ravel()
 print(flattened_array) # Output: [1 2 3 4 5 6]
 ```
 
-### How to Convert a 1d Array to a 2d Array in Python
+### Comment convertir un tableau 1d en tableau 2d en Python
 
-To convert a 1d array to a 2d array in Python, you can use the `reshape()` method provided by the NumPy library. The `reshape()` method allows you to change the shape of an array without modifying its data. Here's an example how to reshape an array:
+Pour convertir un tableau 1d en tableau 2d en Python, vous pouvez utiliser la méthode `reshape()` fournie par la bibliothèque NumPy. La méthode `reshape()` vous permet de changer la forme d'un tableau sans modifier ses données. Voici un exemple de comment remodeler un tableau :
 
 ```python3
 import numpy as np
@@ -555,24 +555,24 @@ arr_2d = arr_1d.reshape((2, 3))
 print(arr_2d)
 ```
 
-Output:
+Sortie :
 
 ```python
 [[1 2 3]
  [4 5 6]]
 ```
 
-The `reshape()` method takes the desired shape of the array as its argument. In this case, we pass `(2, 3)` to reshape the array into a 2x3 matrix. The number of elements in the original 1d array must match the number of elements in the specified shape. If the number of elements is not compatible, a `ValueError` will be raised.
+La méthode `reshape()` prend la forme souhaitée du tableau comme argument. Dans ce cas, nous passons `(2, 3)` pour remodeler le tableau en une matrice 2x3. Le nombre d'éléments dans le tableau 1d original doit correspondre au nombre d'éléments dans la forme spécifiée. Si le nombre d'éléments n'est pas compatible, une `ValueError` sera levée.
 
-> Note: The `reshape()` method returns a new array with the desired shape; it does not modify the original array.
+> Note : La méthode `reshape()` renvoie un nouveau tableau avec la forme souhaitée ; elle ne modifie pas le tableau original.
 
-### How to Split an Array into Chunks
+### Comment diviser un tableau en morceaux
 
-To split an array into chunks in Python, you can use various methods depending on the type of array or data structure you are working with. Here are a few approaches:
+Pour diviser un tableau en morceaux en Python, vous pouvez utiliser différentes méthodes en fonction du type de tableau ou de structure de données avec lesquels vous travaillez. Voici quelques approches :
 
-1. List comprehension:
+1. Compréhension de liste :
 
-If you have a list, you can use list comprehension to split it into chunks of a specific size. Here's an example:
+Si vous avez une liste, vous pouvez utiliser la compréhension de liste pour la diviser en morceaux d'une taille spécifique. Voici un exemple :
 
 ```python3
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -583,9 +583,9 @@ chunks = [my_list[i:i+chunk_size] for i in range(0, len(my_list), chunk_size)]
 print(chunks)
 ```
 
-2. NumPy:
+2. NumPy :
 
-If you are working with NumPy arrays, you can use the `array_split()` function to split the array into equal-sized chunks. Here's an example:
+Si vous travaillez avec des tableaux NumPy, vous pouvez utiliser la fonction `array_split()` pour diviser le tableau en morceaux de taille égale. Voici un exemple :
 
 ```python
 import numpy as np
@@ -598,9 +598,9 @@ chunks = np.array_split(my_array, len(my_array) // chunk_size)
 print(chunks)
 ```
 
-3. Array module:
+3. Module de tableau : 
 
-If you are using the built-in `array` module, you can use a loop to split the array into chunks. Here's an example:
+Si vous utilisez le module `array` intégré, vous pouvez utiliser une boucle pour diviser le tableau en morceaux. Voici un exemple :
 
 ```python3
 import array as arr
@@ -613,15 +613,15 @@ chunks = [my_array[i:i+chunk_size] for i in range(0, len(my_array), chunk_size)]
 print(chunks)
 ```
 
-### Slicing an Array in Python
+### Découper un tableau en Python
 
-To slice an array (or list) in Python, you can use the slice notation `array[start:stop:step]`, where:
+Pour découper un tableau (ou une liste) en Python, vous pouvez utiliser la notation de découpe `array[start:stop:step]`, où :
 
-- **start** is the index where the slice starts (inclusive).
-- **stop** is the index where the slice ends (exclusive).
-- **step** is the interval between indices (optional, default value is 1).
+- **start** est l'indice où commence la découpe (inclus).
+- **stop** est l'indice où se termine la découpe (exclus).
+- **step** est l'intervalle entre les indices (optionnel, la valeur par défaut est 1).
 
-Here are some examples of slicing an array in Python:
+Voici quelques exemples de découpage d'un tableau en Python :
 
 ```python3
 my_array = [10, 20, 30, 40, 50, 60, 70, 80]
@@ -647,17 +647,17 @@ slice_5 = my_array[::-1]
 print(slice_5)  # Output: [80, 70, 60, 50, 40, 30, 20, 10]
 ```
 
-In the examples above, we have an array called `my_array`. By specifying the appropriate `start`, `stop`, and `step` values, we can split the array creating different slices of it.
+Dans les exemples ci-dessus, nous avons un tableau appelé `my_array`. En spécifiant les valeurs `start`, `stop` et `step` appropriées, nous pouvons diviser le tableau en créant différentes tranches de celui-ci.
 
-The first example creates a slice from index 2 to 5 (exclusive), resulting in `[30, 40, 50]`. The second example creates a slice from index 1 to the end of the array, resulting in `[20, 30, 40, 50, 60, 70, 80]`. The third example creates a slice from the beginning to index 4 (exclusive), resulting in `[10, 20, 30, 40]`. The fourth example creates a slice with a step of 2, resulting in `[20, 40, 60]`. The fifth example creates a slice in reverse order by using a negative step value (`[::-1]`), resulting in `[80, 70, 60, 50, 40, 30, 20, 10]`.
+Le premier exemple crée une tranche de l'indice 2 à 5 (exclus), résultant en `[30, 40, 50]`. Le deuxième exemple crée une tranche de l'indice 1 à la fin du tableau, résultant en `[20, 30, 40, 50, 60, 70, 80]`. Le troisième exemple crée une tranche du début à l'indice 4 (exclus), résultant en `[10, 20, 30, 40]`. Le quatrième exemple crée une tranche avec un pas de 2, résultant en `[20, 40, 60]`. Le cinquième exemple crée une tranche dans l'ordre inverse en utilisant une valeur de pas négative (`[::-1]`), résultant en `[80, 70, 60, 50, 40, 30, 20, 10]`.
 
-## How to Plot an Array in Python
+## Comment tracer un tableau en Python
 
-To plot an array in Python, you can use various libraries depending on the type of array and the desired plot. Here are examples using popular libraries:
+Pour tracer un tableau en Python, vous pouvez utiliser différentes bibliothèques en fonction du type de tableau et du tracé souhaité. Voici des exemples utilisant des bibliothèques populaires :
 
-1. Matplotlib (for 1D and 2D arrays):
+1. Matplotlib (pour les tableaux 1D et 2D) :
 
-Matplotlib is a widely used plotting library in Python. You can use it to plot 1D and 2D arrays. Here's an example:
+Matplotlib est une bibliothèque de tracé largement utilisée en Python. Vous pouvez l'utiliser pour tracer des tableaux 1D et 2D. Voici un exemple :
 
 ```python3
 import numpy as np
@@ -674,9 +674,9 @@ plt.imshow(array_2d, cmap='gray')
 plt.show()
 ```
 
-2. Seaborn (for statistical visualization):
+2. Seaborn (pour la visualisation statistique) :
 
-Seaborn is a statistical data visualization library based on Matplotlib. It provides higher-level functions to create informative plots. Here's an example:
+Seaborn est une bibliothèque de visualisation de données statistiques basée sur Matplotlib. Elle fournit des fonctions de niveau supérieur pour créer des graphiques informatifs. Voici un exemple :
 
 ```python
 import numpy as np
@@ -693,13 +693,13 @@ sns.heatmap(array_2d, annot=True, cmap='coolwarm')
 plt.show()
 ```
 
-## Array Dimensions
+## Dimensions de tableau
 
-You can determine the dimensions of an array with different libraries and data structures. Here are a few approaches:
+Vous pouvez déterminer les dimensions d'un tableau avec différentes bibliothèques et structures de données. Voici quelques approches :
 
-1. NumPy:
+1. NumPy :
 
-If you are working with NumPy arrays, you can use the `shape` attribute to obtain the dimensions of the array. Here's an example:
+Si vous travaillez avec des tableaux NumPy, vous pouvez utiliser l'attribut `shape` pour obtenir les dimensions du tableau. Voici un exemple :
 
 ```python
 import numpy as np
@@ -712,9 +712,9 @@ dimensions = array.shape
 print(dimensions)  # Output: (2, 3)
 ```
 
-2. List of Lists:
+Liste de Listes :
 
-If you have an array represented as a list of lists, you can use the `len()` function to determine the dimensions. Here's an example of how to determine the shape of an array:
+Si vous avez un tableau représenté comme une liste de listes, vous pouvez utiliser la fonction `len()` pour déterminer les dimensions. Voici un exemple de comment déterminer la forme d'un tableau :
 
 ```python
 array = [[1, 2, 3], [4, 5, 6]]
@@ -726,9 +726,9 @@ columns = len(array[0])
 print(rows, columns)  # Output: 2 3
 ```
 
-3. Array module:
+3. Module de tableau :
 
-If you are using the built-in array module, you can use the len() function to determine the size of the array. Here's an example:
+Si vous utilisez le module de tableau intégré, vous pouvez utiliser la fonction len() pour déterminer la taille du tableau. Voici un exemple :
 
 ```python
 import array as arr
@@ -741,13 +741,13 @@ size = len(array)
 print(size)  # Output: 5
 ```
 
-## Does an Array Contain a Particular Element?
+## Un tableau contient-il un élément particulier ?
 
-To check if a value is present in an array in Python, you can use different approaches depending on the type of array or data structure you are working with. Here are a few examples:
+Pour vérifier si une valeur est présente dans un tableau en Python, vous pouvez utiliser différentes approches en fonction du type de tableau ou de structure de données avec lequel vous travaillez. Voici quelques exemples :
 
-1. List:
+1. Liste :
 
-If you have a list, you can use the `in` operator to check if a value is present. Here's an example:
+Si vous avez une liste, vous pouvez utiliser l'opérateur `in` pour vérifier si une valeur est présente. Voici un exemple :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -757,9 +757,9 @@ if 3 in my_list:
     print("Value 3 is present in the list")
 ```
 
-2. NumPy array:
+2. Tableau NumPy :
 
-If you are working with a NumPy array, you can use the `np.isin()` function to check if a value is present. Here's an example:
+Si vous travaillez avec un tableau NumPy, vous pouvez utiliser la fonction `np.isin()` pour vérifier si une valeur est présente. Voici un exemple :
 
 ```python
 import numpy as np
@@ -771,9 +771,9 @@ if np.isin(3, my_array):
     print("Value 3 is present in the array")
 ```
 
-3. Array module:
+3. Module de tableau :
 
-If you are using the built-in `array` module, you can use a loop or the `index()` method to check if a value is present. Here's an example:
+Si vous utilisez le module intégré `array`, vous pouvez utiliser une boucle ou la méthode `index()` pour vérifier si une valeur est présente. Voici un exemple :
 
 ```python
 import array as arr
@@ -785,13 +785,13 @@ if 3 in my_array:
     print("Value 3 is present in the array")
 ```
 
-## Array Operations
+## Opérations sur les Tableaux
 
-In Python, you can perform various operations on arrays using different libraries and data structures. Here are some commonly used operations:
+En Python, vous pouvez effectuer différentes opérations sur les tableaux en utilisant différentes bibliothèques et structures de données. Voici quelques opérations couramment utilisées :
 
-1. Mathematical Operations with NumPy:
+1. Opérations Mathématiques avec NumPy :
 
-NumPy provides a wide range of mathematical operations for arrays, such as element-wise operations, linear algebra, statistical operations, and more. Here are a few examples:
+NumPy offre une large gamme d'opérations mathématiques pour les tableaux, telles que les opérations élément par élément, l'algèbre linéaire, les opérations statistiques, et plus encore. Voici quelques exemples :
 
 ```python
 import numpy as np
@@ -820,9 +820,9 @@ median = np.median(data)
 std_deviation = np.std(data)
 ```
 
-2. List Operations:
+2. Opérations sur les listes :
 
-For arrays represented as Python lists, you can perform basic operations like concatenation, slicing, appending, and more. Here are a few examples:
+Pour les tableaux représentés en tant que listes Python, vous pouvez effectuer des opérations de base telles que la concaténation, le découpage, l'ajout, et plus encore. Voici quelques exemples :
 
 ```python
 # Concatenation
@@ -840,15 +840,15 @@ array = [1, 2, 3]
 array.append(4)
 ```
 
-These are just a few examples of the operations you can perform on arrays in Python.
+Ce ne sont que quelques exemples des opérations que vous pouvez effectuer sur les tableaux en Python.
 
-## How to Compare Arrays
+## Comment comparer des tableaux
 
-Let's revew how to compare arrays in Python. Here are a few approaches:
+Voyons comment comparer des tableaux en Python. Voici quelques approches :
 
-1. NumPy:
+1. NumPy :
 
-If you are working with NumPy arrays, you can use the element-wise comparison operators provided by NumPy. Here's an example:
+Si vous travaillez avec des tableaux NumPy, vous pouvez utiliser les opérateurs de comparaison élément par élément fournis par NumPy. Voici un exemple :
 
 ```python3
 import numpy as np
@@ -862,11 +862,11 @@ result = array1 == array2
 print(result)
 ```
 
-You can also use other element-wise comparison operators such as `<`, `>`, `<=`, `>=`, `!=`, etc., to perform different types of comparisons.
+Vous pouvez également utiliser d'autres opérateurs de comparaison élément par élément tels que `<`, `>`, `<=`, `>=`, `!=`, etc., pour effectuer différents types de comparaisons.
 
-2. List:
+2. Liste :
 
-If you have lists, you can compare them using the `==` operator. Here's an example:
+Si vous avez des listes, vous pouvez les comparer en utilisant l'opérateur `==`. Voici un exemple :
 
 ```python3
 list1 = [1, 2, 3]
@@ -878,11 +878,11 @@ result = list1 == list2
 print(result)
 ```
 
-> Note: The `==` operator compares the elements and the order of elements in the lists. If you want to check whether the lists have the same elements (ignoring the order), you can use the `set()` function to convert the lists into sets and then compare them.
+> Note : L'opérateur `==` compare les éléments et l'ordre des éléments dans les listes. Si vous souhaitez vérifier si les listes ont les mêmes éléments (en ignorant l'ordre), vous pouvez utiliser la fonction `set()` pour convertir les listes en ensembles, puis les comparer.
 
-3. Array module:
+3. Module de tableau :
 
-If you are using the built-in `array` module, you can compare arrays element-wise using a loop. Here's an example:
+Si vous utilisez le module `array` intégré, vous pouvez comparer les tableaux élément par élément en utilisant une boucle. Voici un exemple :
 
 ```python3
 import array as arr
@@ -896,13 +896,13 @@ result = [a == b for a, b in zip(array1, array2)]
 print(result)
 ```
 
-## Multiplication of Arrays
+## Multiplication de Tableaux
 
-To perform element-wise multiplication of arrays in Python, you can use the `*` operator for NumPy arrays or list comprehension for regular Python lists. Here's how you can perform array multiplication using both approaches:
+Pour effectuer la multiplication élément par élément de tableaux en Python, vous pouvez utiliser l'opérateur `*` pour les tableaux NumPy ou la compréhension de liste pour les listes Python régulières. Voici comment vous pouvez effectuer une multiplication de tableaux en utilisant ces deux approches :
 
-1. NumPy arrays:
+1. Tableaux NumPy :
 
-If you are working with NumPy arrays, you can use the `*` operator to perform element-wise multiplication. Here's an example:
+Si vous travaillez avec des tableaux NumPy, vous pouvez utiliser l'opérateur `*` pour effectuer une multiplication élément par élément. Voici un exemple :
 
 ```python
 import numpy as np
@@ -915,9 +915,9 @@ result = array1 * array2
 print(result) # Output will be: [ 4 10 18]
 ```
 
-2. Python lists using list comprehension:
+2. Listes Python utilisant la compréhension de liste :
 
-If you are working with regular Python lists, you can use list comprehension to perform element-wise multiplication. Here's an example:
+Si vous travaillez avec des listes Python régulières, vous pouvez utiliser la compréhension de liste pour effectuer une multiplication élément par élément. Voici un exemple :
 
 ```python
 list1 = [1, 2, 3]
@@ -928,15 +928,15 @@ result = [a * b for a, b in zip(list1, list2)]
 print(result) # Output will be: [4, 10, 18]
 ```
 
-## Delete an Element or Clear an Array
+## Supprimer un élément ou vider un tableau
 
-Let's look at the ways of deleting elements from an array.
+Voyons les manières de supprimer des éléments d'un tableau.
 
-### How to Remove First Element from Array in Python
+### Comment supprimer le premier élément d'un tableau en Python
 
-There are several ways to remove the first element from an array in Python. Here are a few examples:
+Il existe plusieurs façons de supprimer le premier élément d'un tableau en Python. Voici quelques exemples :
 
-1. Removing the first element of a standard Python list using slicing:
+1. Suppression du premier élément d'une liste Python standard en utilisant le découpage :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -944,7 +944,7 @@ new_list = my_list[1:]
 print(new_list) # Output: [2, 3, 4, 5]
 ```
 
-2. Removing the first element of a NumPy array using slicing:
+2. Supprimer le premier élément d'un tableau NumPy en utilisant le slicing :
 
 ```python
 import numpy as np
@@ -954,7 +954,7 @@ new_array = my_array[1:]
 print(new_array) # Output: [2 3 4 5]
 ```
 
-3. Modifying the original array in-place using NumPy's `delete()` function:
+3. Modification du tableau original sur place en utilisant la fonction `delete()` de NumPy :
 
 ```python
 import numpy as np
@@ -964,17 +964,17 @@ new_array = np.delete(my_array, 0)
 print(new_array) # Output: [2 3 4 5]
 ```
 
-> Note: In the first two examples, we create a new list or array without modifying the original one. In the third example, the `delete()` function returns a new array, but it modifies the original array in-place.
+> Remarque : Dans les deux premiers exemples, nous créons une nouvelle liste ou un nouveau tableau sans modifier l'original. Dans le troisième exemple, la fonction `delete()` renvoie un nouveau tableau, mais elle modifie le tableau original sur place.
 
-Choose the method that suits your needs based on whether you want to create a new array without the first element or modify the original array itself.
+Choisissez la méthode qui convient à vos besoins en fonction de si vous souhaitez créer un nouveau tableau sans le premier élément ou modifier le tableau original lui-même.
 
-### `pop()` Method for Array
+### Méthode `pop()` pour tableau
 
-In Python, you can use the `pop()` method to remove and return an element from an array or list. The `pop()` method removes the last element by default, but you can also specify the index of the element you want to remove. Here are a few examples:
+En Python, vous pouvez utiliser la méthode `pop()` pour supprimer et renvoyer un élément d'un tableau ou d'une liste. La méthode `pop()` supprime par défaut le dernier élément, mais vous pouvez également spécifier l'indice de l'élément que vous souhaitez supprimer. Voici quelques exemples :
 
-1. List:
+1. Liste :
 
-If you are working with a list, you can use the `pop()` method to remove and return the last element. Here's an example:
+Si vous travaillez avec une liste, vous pouvez utiliser la méthode `pop()` pour supprimer et renvoyer le dernier élément. Voici un exemple :
 
 ```python3
 my_list = [1, 2, 3, 4, 5]
@@ -985,7 +985,7 @@ print(popped_element)  # Output: 5
 print(my_list)         # Output: [1, 2, 3, 4]
 ```
 
-You can also pass an index to the `pop()` method to remove and return an element at a specific position. For example:
+Vous pouvez également passer un index à la méthode `pop()` pour supprimer et retourner un élément à une position spécifique. Par exemple :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -996,9 +996,9 @@ print(popped_element)  # Output: 3
 print(my_list)         # Output: [1, 2, 4, 5]
 ```
 
-2. Array module:
+2. Module Array :
 
-If you are using the built-in `array` module, you can use the `pop()` method to remove and return the last element. Here's an example:
+Si vous utilisez le module `array` intégré, vous pouvez utiliser la méthode `pop()` pour supprimer et retourner le dernier élément. Voici un exemple :
 
 ```python
 import array as arr
@@ -1011,15 +1011,15 @@ print(popped_element)  # Output: 5
 print(my_array)        # Output: array('i', [1, 2, 3, 4])
 ```
 
-> Note: The `pop() method is available only for lists and not for NumPy arrays.
+> Note : La méthode `pop()` est disponible uniquement pour les listes et non pour les tableaux NumPy.
 
-### How to Clear an Array
+### Comment vider un tableau
 
-To clear an array in Python, you can assign an empty array or list to the variable representing the array. Here's how you can clear an array using both approaches:
+Pour vider un tableau en Python, vous pouvez assigner un tableau ou une liste vide à la variable représentant le tableau. Voici comment vous pouvez vider un tableau en utilisant ces deux approches :
 
-1. Clearing a NumPy array:
+1. Vider un tableau NumPy :
 
-If you're working with a NumPy array, you can assign an empty NumPy array to the variable. Here's an example:
+Si vous travaillez avec un tableau NumPy, vous pouvez assigner un tableau NumPy vide à la variable. Voici un exemple :
 
 ```python
 import numpy as np
@@ -1031,9 +1031,9 @@ my_array = np.array([])
 print(my_array) # Output: []
 ```
 
-2. Clearing a regular Python list:
+2. Effacer une liste Python régulière :
 
-If you're working with a regular Python list, you can assign an empty list to the variable. Here's an example:
+Si vous travaillez avec une liste Python régulière, vous pouvez assigner une liste vide à la variable. Voici un exemple :
 
 ```python
 my_list = [1, 2, 3, 4, 5]
@@ -1043,9 +1043,9 @@ my_list = []
 print(my_list) # Output: []
 ```
 
-## How to Remove Duplicates from Sorted Array in Python
+## Comment supprimer les doublons d'un tableau trié en Python
 
-Let's look at how to remove duplicates from a sorted array in Python. Here's a common method using a list:
+Voyons comment supprimer les doublons d'un tableau trié en Python. Voici une méthode courante utilisant une liste :
 
 ```python3
 sorted_array = [1, 1, 2, 2, 3, 4, 4, 5, 5, 5]
@@ -1059,7 +1059,7 @@ for num in sorted_array:
 print(unique_array)  # Output: [1, 2, 3, 4, 5]
 ```
 
-Alternatively, if you are working with a NumPy array, you can use the `np.unique()` function to achieve the same result:
+Alternativement, si vous travaillez avec un tableau NumPy, vous pouvez utiliser la fonction `np.unique()` pour obtenir le même résultat :
 
 ```python3
 import numpy as np

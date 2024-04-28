@@ -1,37 +1,37 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/tuple
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/variables/tuple
 
-What is a tuple in Python? A tuple in Python is an immutable sequence of values, similar to a list. However, tuples cannot be modified once they are created, which means you cannot add, remove or change elements in a tuple. 
+Qu'est-ce qu'un tuple en Python ? Un tuple en Python est une séquence immuable de valeurs, similaire à une liste. Cependant, les tuples ne peuvent pas être modifiés une fois qu'ils sont créés, ce qui signifie que vous ne pouvez ni ajouter, ni retirer, ni changer des éléments dans un tuple.
 
-## Creating Tuple in Python
+## Création d'un Tuple en Python
 
-To create a tuple, you can use parentheses `()` and separate the elements with commas `,`.
+Pour créer un tuple, vous pouvez utiliser les parenthèses `()` et séparer les éléments avec des virgules `,`.
 
-Here's an example of how to create a tuple in Python with three elements:
+Voici un exemple de comment créer un tuple en Python avec trois éléments :
 
 ```python
 my_tuple = (1, "hello", 3.14)
 ```
 
-You can also create an empty tuple by using empty parentheses ():
+Vous pouvez également créer un tuple vide en utilisant des parenthèses vides `()`.
 
 ```python
 empty_tuple = ()
 ```
 
-If you want to create a tuple with only one element, you need to add a comma after the element, because without it, Python will interpret the parentheses as just grouping operators, not as a tuple:
+Si vous souhaitez créer un tuple contenant uniquement un élément, vous devez ajouter une virgule après l'élément, car sans cela, Python interprétera les parenthèses simplement comme des opérateurs de regroupement, et non comme un tuple :
 
 ```python
 single_tuple = (1,)
 ```
 
-## Tuple Indices
+## Indices des tuples
 
-You can access elements of tuple in Python using indexing, just like in lists.
+Vous pouvez accéder aux éléments d'un tuple en Python en utilisant l'indexation, tout comme dans les listes.
 
-As we already mentioned, the indexing in Python starts from 0. It means that the first element in a tuple has an index of 0, the second element has an index of 1, and so on. Negative indexing is also supported, which means the last element in a tuple has an index of -1, the second to last element has an index of -2, and so on.
+Comme nous l'avons déjà mentionné, l'indexation en Python commence à partir de 0. Cela signifie que le premier élément d'un tuple a un indice de 0, le deuxième élément a un indice de 1, et ainsi de suite. L'indexation négative est également prise en charge, ce qui signifie que le dernier élément d'un tuple a un indice de -1, l'avant-dernier élément a un indice de -2, et ainsi de suite.
 
-Here is an example of accessing tuple elements using indexing:
+Voici un exemple d'accès aux éléments d'un tuple en utilisant l'indexation :
 
 ```python3
 my_tuple = ('apple', 'banana', 'cherry')
@@ -40,11 +40,11 @@ print(my_tuple[1])   # Output: 'banana'
 print(my_tuple[-1])  # Output: 'cherry'
 ```
 
-## How to Append to a Tuple in Python
+## Comment ajouter à un tuple en Python
 
-In Python, tuples are immutable, meaning once they are created, their elements cannot be changed. However, you can create a new tuple by combining existing tuples and other elements. So to "append" or to "add" an element to a tuple, you would essentially create a new tuple that includes the existing elements along with the new element. Here are a couple of ways to achieve this:
+En Python, les tuples sont immuables, ce qui signifie que une fois qu'ils sont créés, leurs éléments ne peuvent pas être modifiés. Cependant, vous pouvez créer un nouveau tuple en combinant des tuples existants et d'autres éléments. Donc pour "ajouter" ou pour "ajouter" un élément à un tuple, vous créeriez essentiellement un nouveau tuple qui inclut les éléments existants ainsi que le nouvel élément. Voici quelques façons d'atteindre cet objectif :
 
-**Using the `+` operator to create a new tuple**:
+**Utiliser l'opérateur `+` pour créer un nouveau tuple** :
 
 ```python3
 existing_tuple = (1, 2, 3)
@@ -56,7 +56,7 @@ new_tuple = existing_tuple + (new_element,)
 print(new_tuple)
 ```
 
-**Using the `+=` augmented assignment operator**:
+**Utilisation de l'opérateur de l'affectation augmentée `+=`** :
 
 ```python3
 existing_tuple = (1, 2, 3)
@@ -68,11 +68,11 @@ existing_tuple += (new_element,)
 print(existing_tuple)
 ```
 
-Both of these methods create a new tuple by combining the elements of the existing tuple with the new element, effectively "appending" the element to the tuple. Remember, tuples are immutable, so you're actually creating a new tuple rather than modifying the original one.
+Ces deux méthodes créent un nouveau tuple en combinant les éléments du tuple existant avec le nouvel élément, ajoutant ainsi efficacement l'élément au tuple. Rappelez-vous, les tuples sont immuables, donc vous créez réellement un nouveau tuple plutôt que de modifier l'original.
 
-## Sorted List of Tuples
+## Liste triée de Tuples
 
-You can sort a list of tuples in Python using the sorted function, and passing a key argument that specifies how to compare the elements in each tuple. Here's an example:
+Vous pouvez trier une liste de tuples en Python en utilisant la fonction sorted, et en passant un argument clé qui spécifie comment comparer les éléments de chaque tuple. Voici un exemple :
 
 ```python3
 # define a list of tuples
@@ -84,7 +84,7 @@ sorted_list = sorted(my_list, key=lambda x: x[0])
 print(sorted_list) # Output: [(1, 2), (2, 4), (3, 1)]
 ```
 
-You can also sort the list of tuples in reverse order by setting the reverse argument to True:
+Vous pouvez également trier la liste de tuples dans l'ordre inverse en définissant l'argument `reverse` sur `True` :
 
 ```python3
 # define a list of tuples
@@ -96,11 +96,11 @@ sorted_list = sorted(my_list, key=lambda x: x[1], reverse=True)
 print(sorted_list) # Output: [(2, 4), (1, 2), (3, 1)]
 ```
 
-## Named Tuple in Python
+## Tuple nommé en Python
 
-A named tuple is a subclass of the built-in tuple data type that allows for fields to be accessed by name as well as by index position.
+Un tuple nommé est une sous-classe du type de données tuple intégré qui permet d'accéder aux champs par leur nom ainsi que par leur position d'indice.
 
-Named tuples are created using the `collections.namedtuple` function. Here's an example:
+Les tuples nommés sont créés en utilisant la fonction `collections.namedtuple`. Voici un exemple :
 
 ```python3
 from collections import namedtuple
@@ -119,31 +119,31 @@ print(p.x)   # prints 1
 print(p.y)   # prints 2
 ```
 
-Named tuples are similar to regular tuples, but with the added benefit of having named fields that can make the code more readable and self-documenting. They are immutable, like regular tuples, so their fields cannot be changed once they are created.
+Les tuples nommés sont similaires aux tuples réguliers, mais avec l'avantage supplémentaire d'avoir des champs nommés qui peuvent rendre le code plus lisible et auto-documenté. Ils sont immuables, comme les tuples réguliers, donc leurs champs ne peuvent pas être changés une fois qu'ils sont créés.
 
-## Tuple Inside a List in Python
+## Tuple à l'intérieur d'une liste en Python
 
-In some cases we need to make a list of tuples, for example for grouping related data. So you can create a list that contains tuples using the following syntax:
+Dans certains cas, nous devons faire une liste de tuples, par exemple pour regrouper des données liées. Ainsi, vous pouvez créer une liste contenant des tuples en utilisant la syntaxe suivante :
 
 ```python
 my_list = [(item1, item2), (item3, item4), (item5, item6)]
 ```
 
-Each tuple in the list can contain multiple items, which can be of any data type, including strings, numbers, and other tuples. Here's an example of a list containing tuples with different data types:
+Chaque tuple de la liste peut contenir plusieurs éléments, qui peuvent être de n'importe quel type de données, y compris des chaînes de caractères, des nombres et d'autres tuples. Voici un exemple d'une liste contenant des tuples avec différents types de données :
 
 ```python
 my_list = [("apple", 2), ("orange", 3), ("banana", 4.5), ("grape", ("red", "green"))]
 ```
 
-You can access the items in a tuple inside a list using indexing. For example, to access the second item in the first tuple in the list above, you can use the following code:
+Vous pouvez accéder aux éléments d'un tuple à l'intérieur d'une liste en utilisant l'indexation. Par exemple, pour accéder au deuxième élément du premier tuple dans la liste ci-dessus, vous pouvez utiliser le code suivant :
 
 ```python
 print(my_list[0][1])   # Output: 2
 ```
 
-## Appending a Tuple
+## Ajout d'un Tuple
 
-To append a tuple to a list in Python, you can use the `append()` method. Here's an example:
+Pour ajouter un tuple à une liste en Python, vous pouvez utiliser la méthode `append()`. Voici un exemple :
 
 ```python3
 my_list = [(1, 2), (3, 4)]

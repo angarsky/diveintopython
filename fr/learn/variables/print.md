@@ -1,16 +1,16 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/print
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/variables/print
 
-Printing refers to the process of displaying the output of a program on the console or terminal. It is an essential operation that allows you to communicate with the user or to debug your code by showing the values of variables, the results of calculations, or other information.
-There is also such a thing as formatting, which is often used in printing. String formatting (also known as interpolation) is the process of inserting variables or values into a string.
+L'impression se réfère au processus d'affichage de la sortie d'un programme sur la console ou le terminal. C'est une opération essentielle qui vous permet de communiquer avec l'utilisateur ou de déboguer votre code en affichant les valeurs des variables, les résultats de calculs ou d'autres informations.
+Il existe également ce qu'on appelle le formatage, qui est souvent utilisé dans l'impression. Le formatage de chaîne (également connu sous le nom d'interpolation) est le processus d'insertion de variables ou de valeurs dans une chaîne.
 
-## Printing
+## Impression
 
-To print variable in Python, you can use the `print()` function.
+Pour imprimer une variable en Python, vous pouvez utiliser la fonction `print()`.
 
-The `print()` function takes one or more arguments separated by commas and displays them on the console or terminal.
+La fonction `print()` prend un ou plusieurs arguments séparés par des virgules et les affiche sur la console ou le terminal.
 
-Let's look at examples of how to print a variable and string in Python:
+Voyons des exemples de comment imprimer une variable et une chaîne en Python :
 
 ```python
 # Print a string
@@ -23,20 +23,20 @@ print(43)
 print(3.14)
 ```
 
-Python also allows printing multiple variables:
+Python permet également d'imprimer plusieurs variables :
 
 ```python
 # Print multiple items
 print("The answer is:", 42)
 ```
 
-You can also use various options with the `print()` function, such as specifying the separator between items, ending the output with a newline character, and redirecting the output to a file or other stream.
+Vous pouvez également utiliser diverses options avec la fonction `print()`, telles que spécifier le séparateur entre les éléments, terminer la sortie avec un caractère de nouvelle ligne et rediriger la sortie vers un fichier ou un autre flux.
 
-## Formatting
+## Mise en Forme
 
-There are several ways to format strings in Python, let's go through this one by one with examples.
+Il existe plusieurs façons de formater les chaînes de caractères en Python, examinons-les une par une avec des exemples.
 
-- Using f-strings: This method involves using placeholders in a string, which are then replaced by values inside curly braces `{}` preceded by the letter `f`. For example:
+- Utiliser les f-strings : Cette méthode implique l'utilisation de placeholders dans une chaîne, qui sont ensuite remplacés par des valeurs à l'intérieur des accolades `{}` précédées par la lettre `f`. Par exemple :
 
 ```python
 # Print using formatted strings
@@ -45,11 +45,11 @@ age = 32
 print(f"My name is {name} and I am {age} years old.")
 ```
 
-`f-strings` (or formatted string literals) are a feature introduced in Python 3.6 that provide a convenient way to embed expressions inside string literals, using a syntax that starts with the letter 'f'.
+Les `f-strings` (ou littéraux de chaîne formatée) sont une fonctionnalité introduite dans Python 3.6 qui offre un moyen pratique d'incorporer des expressions à l'intérieur de littéraux de chaîne, en utilisant une syntaxe qui commence par la lettre 'f'.
 
-With `f-strings`, you can embed expressions inside string literals by enclosing them in curly braces `{}`. The expressions inside the curly braces are evaluated at runtime, and their values are inserted into the string. So this helps to print to help multiple variables in one string.
+Avec les `f-strings`, vous pouvez incorporer des expressions à l'intérieur des littéraux de chaîne en les entourant d'accolades `{}`. Les expressions à l'intérieur des accolades sont évaluées à l'exécution, et leurs valeurs sont insérées dans la chaîne. Cela aide donc à imprimer plusieurs variables dans une seule chaîne.
 
-- Using the `format()` method and curly braces: You can use `{}` inside a string to indicate where you want to insert variable values, and then use the `format()` method to substitute the actual values. Here's an example:
+- Utilisation de la méthode `format()` et des accolades : Vous pouvez utiliser `{}` à l'intérieur d'une chaîne pour indiquer où vous souhaitez insérer les valeurs des variables, puis utiliser la méthode `format()` pour substituer les valeurs réelles. Voici un exemple :
 
 ```python3
 name = "John"
@@ -59,11 +59,11 @@ location = "New York"
 print("My name is {}, I'm {} years old, and I live in {}.".format(name, age, location))
 ```
 
-This code will output: `My name is John, I'm 30 years old, and I live in New York.`
+Ce code produira : `My name is John, I'm 30 years old, and I live in New York.`
 
-In this example, the string `"My name is {}, I'm {} years old, and I live in {}."` contains three curly brackets `{}` to indicate where the variable values should be inserted. The `format()` method is called on the string, and the variables `name`, `age`, and `location` are passed as arguments to the method.
+Dans cet exemple, la chaîne `"Mon nom est {}, j'ai {} ans, et je vis à {}."` contient trois accolades `{}` pour indiquer où les valeurs des variables doivent être insérées. La méthode `format()` est appelée sur la chaîne, et les variables `name`, `age`, et `location` sont passées en arguments à la méthode.
 
-- Using the `%` operator: This method involves using placeholders in a string, which are then replaced by values using the `%` operator. For example:
+- En utilisant l'opérateur `%` : Cette méthode implique l'utilisation de placeholders dans une chaîne, qui sont ensuite remplacés par des valeurs en utilisant l'opérateur `%`. Par exemple :
 
 ```python3
 name = "John"
@@ -71,13 +71,13 @@ age = 25
 print("My name is %s and I'm %d years old." % (name, age)) # Output: My name is John and I'm 25 years old.
 ```
 
-Here, `%s` is a placeholder for a string, and `%d` is a placeholder for an integer.
+Ici, `%s` est un espace réservé pour une chaîne de caractères, et `%d` est un espace réservé pour un entier.
 
-## String Template
+## Modèle de chaîne de caractères
 
-String templates provide a way to create strings that include placeholders for values that will be filled in later. This can be useful when you want to generate dynamic strings based on some input.
+Les modèles de chaîne de caractères offrent un moyen de créer des chaînes qui incluent des espaces réservés pour des valeurs qui seront remplies plus tard. Cela peut être utile lorsque vous souhaitez générer des chaînes dynamiques en fonction de certaines entrées.
 
-To use string templates in Python, you can use the `string.Template` class. Here's an example:
+Pour utiliser les modèles de chaîne de caractères en Python, vous pouvez utiliser la classe `string.Template`. Voici un exemple :
 
 ```python3
 from string import Template
@@ -97,6 +97,6 @@ result = template.substitute(name=name, age=age)
 print(result)  # Output: My name is Alice and I am 30 years old.
 ```
 
-In the above example, we first create a string template with placeholders for the name and age using the `${}` syntax. We then create a `Template` object from the template string and use the `substitute` method to replace the placeholders with actual values. Finally, we print the resulting string.
+Dans l'exemple ci-dessus, nous créons d'abord un modèle de chaîne avec des emplacements réservés pour le nom et l'âge en utilisant la syntaxe `${}`. Nous créons ensuite un objet `Template` à partir de la chaîne de modèle et utilisons la méthode `substitute` pour remplacer les emplacements réservés par les valeurs réelles. Enfin, nous imprimons la chaîne résultante.
 
-Note that you need to pass the values for the placeholders as keyword arguments to the `substitute` method.
+Notez que vous devez passer les valeurs pour les emplacements réservés en tant qu'arguments de mot-clé à la méthode `substitute`.

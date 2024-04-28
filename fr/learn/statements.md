@@ -1,21 +1,21 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/statements
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/statements
 
-In Python, statements are instructions or commands that you write to perform specific actions or tasks. They are the building blocks of a Python program. 
-  
-## What is a Statement in Python?  
+En Python, les instructions sont des instructions ou des commandes que vous écrivez pour effectuer des actions ou des tâches spécifiques. Elles sont les blocs de construction d'un programme Python.
 
-A [statement](https://en.wikipedia.org/wiki/Statement_(computer_science)) is a line of code that performs a specific action. It is the smallest unit of code that can be executed by the Python interpreter. 
+## Qu'est-ce qu'une Instruction en Python?
 
-### Assignment Statement
+Une [instruction](https://en.wikipedia.org/wiki/Statement_(computer_science)) est une ligne de code qui effectue une action spécifique. C'est la plus petite unité de code qui peut être exécutée par l'interpréteur Python.
+
+### Instruction d'Affectation
 
 ```python
 x = 10
 ```
 
-In this example, the value `10` is assigned to the variable `x` using the assignment statement. 
+Dans cet exemple, la valeur `10` est attribuée à la variable `x` en utilisant l'instruction d'affectation.
 
-### Conditional Statement
+### Instruction conditionnelle
 
 ```python3
 x = 3
@@ -25,33 +25,33 @@ else:
     print("x is greater than or equal to 5")
 ```
 
-In this example, the if-else statement is used to check the value of `x` and `print` a corresponding message. 
+Dans cet exemple, l'instruction if-else est utilisée pour vérifier la valeur de `x` et `print` un message correspondant.
 
-By using statements, programmers can instruct the computer to perform a variety of tasks, from simple arithmetic operations to complex decision-making processes. Proper use of statements is crucial to writing efficient and effective Python code.  
+En utilisant des instructions, les programmeurs peuvent instruire l'ordinateur à effectuer une variété de tâches, allant d'opérations arithmétiques simples à des processus de prise de décision complexes. L'utilisation appropriée des instructions est cruciale pour écrire un code Python efficace et efficace.
 
-## Statement Set  
+## Ensemble d'Instructions
 
-Here's a table summarizing various types of statements in Python:
+Voici un tableau résumant les différents types d'instructions dans Python :
 
-| Statement                | Description                                                       |
-|--------------------------|-------------------------------------------------------------------|
-| Multi-Line Statements    | Statements spanning multiple lines using line continuation or braces.|
-| Compound Statements      | Statements that contain other statements (e.g., [if](/learn/statements/if.md), while, for).   |
-| Simple Statements        | Basic standalone statements that perform a single action.          |
-| Expression Statements    | Statements that evaluate and produce a value.                      |
-| `pass` Statement           | A placeholder statement that does nothing.                        |
-| `del` Statement            | Used to delete references to objects.                              |
-| `return` Statement         | Terminates a function and returns a value (optional).              |
-| `import` Statement         | Imports modules or specific objects from modules.                  |
-| `continue` and `break` Statements | Control flow statements used in loops (`continue` skips to the next iteration, `break` exits the loop). |
+| Instruction                | Description                                                       |
+|----------------------------|-------------------------------------------------------------------|
+| Instructions Multi-Lignes  | Instructions s'étendant sur plusieurs lignes utilisant la continuation de ligne ou des accolades.|
+| Instructions Composées     | Instructions qui contiennent d'autres instructions (par ex., [if](/fr/learn/statements/if.md), while, for).   |
+| Instructions Simples       | Instructions autonomes de base qui effectuent une action unique.          |
+| Instructions d'Expression  | Instructions qui évaluent et produisent une valeur.                      |
+| Instruction `pass`         | Une instruction substitut qui ne fait rien.                        |
+| Instruction `del`          | Utilisée pour supprimer les références à des objets.                              |
+| Instruction `return`       | Termine une fonction et renvoie une valeur (facultatif).              |
+| Instruction `import`       | Importe des modules ou des objets spécifiques de modules.                  |
+| Instructions `continue` et `break` | Instructions de contrôle de flux utilisées dans les boucles (`continue` passe à l'itération suivante, `break` sort de la boucle). |
 
-Please note that this table provides a brief overview of each statement type, and there may be additional details and variations for each statement.
+Veuillez noter que ce tableau fournit un aperçu succinct de chaque type d'instruction, et il peut y avoir des détails et variations supplémentaires pour chaque instruction.
 
-## Multi-Line Statements  
+## Instructions Multi-Lignes
 
-Multi-line statements are a convenient way to write long code in Python without making it cluttered. They allow you to write several lines of code as a single statement, making it easier for developers to read and understand the code. Here are two examples of multi-line statements in Python:
+Les instructions multi-lignes sont un moyen pratique d'écrire un long code en Python sans le rendre encombré. Elles vous permettent d'écrire plusieurs lignes de code comme une seule instruction, facilitant ainsi la lecture et la compréhension du code par les développeurs. Voici deux exemples d'instructions multi-lignes en Python :
 
-1. Using backslash:
+1. Utilisation du backslash :
 
 ```python
 total = 10 + \
@@ -61,7 +61,7 @@ print(total) ### Output
 
 ```
 
-2. Using parentheses:
+2. Utilisation des parenthèses :
 
 ```python
 fruit_list = ('Apple',
@@ -72,11 +72,11 @@ print(fruit_list) ### Output
 
 ```
 
-## Simple Statements  
+## Déclarations Simples
 
-Simple statements are the smallest unit of execution in Python programming language and they do not contain any logical or conditional expressions. They are usually composed of a single line of code and can perform basic operations such as assigning values to variables, printing out values, or calling functions.
+Les déclarations simples sont la plus petite unité d'exécution dans le langage de programmation Python et elles ne contiennent aucune expression logique ou conditionnelle. Elles sont généralement composées d'une seule ligne de code et peuvent effectuer des opérations de base telles que l'assignation de valeurs aux variables, l'affichage de valeurs ou l'appel de fonctions.
 
-Examples of simple statements in Python:
+Exemples de déclarations simples en Python :
 
 ```python
 ### Assigning a value to a variable
@@ -88,12 +88,11 @@ x = 5
 print(x)
 ```
 
-Simple statements are essential to programming in Python and are often used in combination with more complex statements to create robust programs and applications.
+Les déclarations simples sont essentielles à la programmation en Python et sont souvent utilisées en combinaison avec des déclarations plus complexes pour créer des programmes et des applications robustes.
 
-  
-## Expression statements  
+## Déclarations d'expression
 
-Expression statements in Python are lines of code that evaluate and produce a value. They are used to assign values to variables, call functions, and perform other operations that produce a result.
+Les déclarations d'expression en Python sont des lignes de code qui évaluent et produisent une valeur. Elles sont utilisées pour assigner des valeurs aux variables, appeler des fonctions et effectuer d'autres opérations qui produisent un résultat.
 
 ```python
 x = 5
@@ -101,7 +100,7 @@ y = x + 3
 print(y)
 ```
 
-In this example, we assign the value `5` to the variable `x`, then add `3` to `x` and assign the result (`8`) to the variable `y`. Finally, we `print` the value of `y`.
+Dans cet exemple, nous attribuons la valeur `5` à la variable `x`, puis ajoutons `3` à `x` et attribuons le résultat (`8`) à la variable `y`. Enfin, nous `print` la valeur de `y`.
 
 ```python3
 def square(x):
@@ -111,26 +110,26 @@ result = square(5)
 print(result)
 ```
 
-In this example, we define a function `square` that takes one argument (`x`) and returns its square. We then call the function with the argument `5` and assign the result (`25`) to the variable `result`. Finally, we `print` the value of `result`.
+Dans cet exemple, nous définissons une fonction `square` qui prend un argument (`x`) et renvoie son carré. Nous appelons ensuite la fonction avec l'argument `5` et assignons le résultat (`25`) à la variable `result`. Enfin, nous `print` la valeur de `result`.
 
-Overall, expression statements are an essential part of Python programming and allow for the execution of mathematical and computational operations.
+Globalement, les instructions d'expression constituent une partie essentielle de la programmation Python et permettent l'exécution d'opérations mathématiques et computationnelles.
 
-## The `assert` Statement  
+## L'instruction `assert`
 
-The `assert` statement in Python is used to test conditions and trigger an error if the condition is not met. It is often used for debugging and testing purposes.
+L'instruction `assert` en Python est utilisée pour tester les conditions et déclencher une erreur si la condition n'est pas remplie. Elle est souvent utilisée à des fins de débogage et de test.
 
 ```python
 assert condition, message
 ```
 
-Where `condition` is the expression that is tested, and `message` is the optional error message that is displayed when the condition is not met.
+Où `condition` est l'expression qui est testée, et `message` est le message d'erreur optionnel qui est affiché lorsque la condition n'est pas remplie.
 
 ```python
 x = 5
 assert x == 5, "x should be 5"
 ```
 
-In this example, the `assert` statement tests whether `x` is equal to `5`. If the condition is met, the statement has no effect. If the condition is not met, an error will be raised with the message `x should be 5`.
+Dans cet exemple, l'instruction `assert` teste si `x` est égal à `5`. Si la condition est remplie, l'instruction n'a aucun effet. Si la condition n'est pas remplie, une erreur sera soulevée avec le message `x should be 5`.
 
 ```python
 def divide(x, y):
@@ -138,13 +137,13 @@ def divide(x, y):
     return x / y
 ```
 
-In this example, the `assert` statement tests whether `y` is not equal to `0` before performing the division. If the condition is met, the division proceeds as normal. If the condition is not met, an error will be raised with the message `Cannot divide by zero`.
+Dans cet exemple, l'instruction `assert` teste si `y` n'est pas égal à `0` avant de procéder à la division. Si la condition est remplie, la division se poursuit comme prévu. Si la condition n'est pas remplie, une erreur sera générée avec le message `Cannot divide by zero`.
 
-Overall, `assert` statements are a useful tool in Python for debugging and testing, as they can help catch errors early on. They are also easily disabled in production code to avoid any unnecessary overhead.  
-  
-## The `try` Statement  
+Globalement, les instructions `assert` sont un outil utile en Python pour le débogage et les tests, car elles peuvent aider à détecter les erreurs dès le début. Elles peuvent également être facilement désactivées dans le code de production pour éviter toute surcharge inutile.
 
-The `try` statement in Python is used to catch exceptions that may occur during the execution of a block of code. It ensures that even when an error occurs, the code does not stop running.
+## L'instruction `try`
+
+L'instruction `try` en Python est utilisée pour attraper les exceptions qui peuvent survenir lors de l'exécution d'un bloc de code. Elle garantit que même lorsqu'une erreur se produit, le code ne s'arrête pas de s'exécuter.
 
 ```python
 try:
@@ -157,7 +156,7 @@ finally:
     # Block of code that is always executed regardless of whether an exception was thrown or not
 ```
 
-### Examples of Error Processing
+### Exemples de traitement des erreurs
 
 ```python3
 try:

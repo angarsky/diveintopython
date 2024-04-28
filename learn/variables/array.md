@@ -432,7 +432,7 @@ Output:
 5
 ```
 
-2. Using a "for" loop with a NumPy array:
+2. Using a `for` loop with a NumPy array:
 
 ```python
 import numpy as np
@@ -452,7 +452,7 @@ Output:
 5
 ```
 
-3. Using a "for" loop with a multidimensional NumPy array:
+3. Using a `for` loop with a multidimensional NumPy array:
 
 ```python
 import numpy as np

@@ -1,17 +1,17 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/number
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/variables/number
 
-Python supports several numeric data types that are used for various mathematical operations in programming. These data types include integers, floating-point numbers, and complex numbers. Understanding these data types and their characteristics is essential for any programmer who wants to work with numeric data in Python.
+Python prend en charge plusieurs types de données numériques qui sont utilisés pour diverses opérations mathématiques en programmation. Ces types de données incluent les entiers, les nombres à virgule flottante et les nombres complexes. Comprendre ces types de données et leurs caractéristiques est essentiel pour tout programmeur qui souhaite travailler avec des données numériques en Python.
 
-## Number Types in Python
+## Types de nombres en Python
 
-In Python, there are several number types that can be used for different purposes. The most common number types in Python are:
+En Python, il existe plusieurs types de nombres qui peuvent être utilisés à différentes fins. Les types de nombres les plus courants en Python sont :
 
-- **Integer number** (int): This is a whole number without any decimal point. For example, `1`, `2`, `3`, etc. are integers.
-- **Float number**: This is a decimal number. For example, `1.2`, `3.14159`, etc. are floats.
-- **Complex number**: This is a number with a real and imaginary part. For example, `1 + 2j`, `3.14 - 4j`, etc. are complex numbers.
+- **Nombre entier** (int) : C'est un nombre entier sans aucun point décimal. Par exemple, `1`, `2`, `3`, etc. sont des entiers.
+- **Nombre flottant** : C'est un nombre décimal. Par exemple, `1.2`, `3.14159`, etc. sont des flottants.
+- **Nombre complexe** : C'est un nombre avec une partie réelle et une partie imaginaire. Par exemple, `1 + 2j`, `3.14 - 4j`, etc. sont des nombres complexes.
 
-Here are some examples of how to define these number types in Python:
+Voici quelques exemples de comment définir ces types de nombres en Python :
 
 ```python
 # Integer
@@ -27,9 +27,9 @@ z = 2 + 3j
 print(type(z))  # Output: <class 'complex'>
 ```
 
-## The `isinstance()` Function
+## La fonction `isinstance()`
 
-To check whether a variable is a number in Python, you can use the `isinstance()` function to check if the variable belongs to the int, float or complex data type. Here's an example:
+Pour vérifier si une variable est un nombre en Python, vous pouvez utiliser la fonction `isinstance()` pour vérifier si la variable appartient au type de données int, float ou complexe. Voici un exemple :
 
 ```python3
 x = 10
@@ -42,11 +42,11 @@ print(isinstance(z, (int, float, complex)))  # Output: True
 print(isinstance('hello', (int, float, complex)))  # Output: False
 ```
 
-## Rounding a Number in Python
+## Arrondir un nombre en Python
 
-You can round a number using the built-in `round()` function. The `round()` function takes two arguments: the number to be rounded and the number of decimal places to round to.
+Vous pouvez arrondir un nombre en utilisant la fonction intégrée `round()`. La fonction `round()` prend deux arguments : le nombre à arrondir et le nombre de décimales à arrondir.
 
-Here's an example:
+Voici un exemple :
 
 ```python3
 x = 3.14159
@@ -54,7 +54,7 @@ rounded_x = round(x, 2)
 print(rounded_x) # Output: 3.14
 ```
 
-Note that if the number to be rounded ends in 5, the `round()` function will round to the nearest even number. This is known as "bankers rounding". For example:
+Notez que si le nombre à arrondir se termine par 5, la fonction `round()` arrondira au nombre pair le plus proche. Cela est connu sous le nom d'"arrondi bancaire". Par exemple :
 
 ```python
 x = 2.5
@@ -62,40 +62,42 @@ rounded_x = round(x)
 print(rounded_x) # Output: 2
 ```
 
-## Number Formatting
+## Formatage des nombres
 
-In Python, there are several ways to format numbers. Here are some examples:
+En Python, il existe plusieurs manières de formater des nombres. Voici quelques exemples :
 
-### Using the built-in `format()` function
+### Utiliser la fonction intégrée `format()`
 
 ```python3
 x = 3.14159
 print("{:.2f}".format(x))  # Output: 3.14
 ```
-The `"{:.2f}"` string inside the `format()` function tells Python to format the number as a float with 2 decimal places.
 
-### Using f-strings (Python 3.6 and above)
+La chaîne `"{:.2f}"` à l'intérieur de la fonction `format()` indique à Python de formater le nombre en tant que nombre flottant avec 2 décimales.
+
+### Utilisation des f-strings (Python 3.6 et ultérieur)
 
 ```python
 x = 3.14159
 print(f"{x:.2f}")  # Output: 3.14
 ```
-The `f` before the string indicates that it is an f-string, and the `"{x:.2f}"` inside the string tells Python to format the value of `x` as a float with 2 decimal places.
 
-### Using the `%` operator
+Le `f` avant la chaîne indique qu'il s'agit d'une chaîne f, et le `"{x:.2f}"` à l'intérieur de la chaîne indique à Python de formater la valeur de `x` en tant que flottant avec 2 chiffres après la virgule.
+
+### En utilisant l'opérateur `%`
 
 ```python3
 x = 3.14159
 print("%.2f" % x)  # Output: 3.14
 ```
 
-The `%.2f` string inside the `%` operator tells Python to format the number as a float with 2 decimal places.
+La chaîne `%.2f` à l'intérieur de l'opérateur `%` indique à Python de formater le nombre en tant que flottant avec 2 chiffres après la virgule.
 
-## Checking If a String Is a Number
+## Vérifier si une chaîne est un nombre
 
-You can check if a string is a number in Python using various methods. Here are a few examples:
+Vous pouvez vérifier si une chaîne est un nombre en Python en utilisant différentes méthodes. Voici quelques exemples :
 
-### Using `isnumeric()` method
+### En utilisant la méthode `isnumeric()`
 
 ```python
 my_string = "123"
@@ -104,8 +106,8 @@ if my_string.isnumeric():
 else:
     print("String is not a number") # Output: String is a number
 ```
-    
-### Using `isdigit()` method
+
+### Utilisant la méthode `isdigit()`
 
 ```python
 my_string = "456"
@@ -115,7 +117,7 @@ else:
     print("String is not a number") # Output: String is a number
  ```
 
-### Using try-except block to convert string to float
+### Utiliser le bloc try-except pour convertir une chaîne en nombre flottant
 
 ```python
 my_string = "789.12"
@@ -126,13 +128,13 @@ except ValueError:
     print("String is not a number") # Output: String is a number
 ```
 
-> Note that if the string contains a non-numeric character, the first two methods will return `False` and the third method will raise a `ValueError`.
+> Notez que si la chaîne contient un caractère non numérique, les deux premières méthodes retourneront `False` et la troisième méthode lèvera une `ValueError`.
 
-## Check If a Number is Whole
+## Vérifier si un nombre est entier
 
-You can use the modulo operator `%` to check if a number is whole or not. If the result of dividing the number by 1 is equal to 0, then the number is a whole number.
+Vous pouvez utiliser l'opérateur modulo `%` pour vérifier si un nombre est entier ou non. Si le résultat de la division du nombre par 1 est égal à 0, alors le nombre est un nombre entier.
 
-Here's an example:
+Voici un exemple :
 
 ```python
 num = 5.0  # the number you want to check
@@ -141,11 +143,11 @@ if num % 1 == 0:
     print("The number is whole.")
 else:
     print("The number is not whole.") # Output: "The number is whole."
- ``` 
- 
-## Generating a Random Number
+ ```
 
-To get a random number in Python, you can use the random module. Here's an example of how to generate a random integer between 0 and 10:
+## Générer un Nombre Aléatoire
+
+Pour obtenir un nombre aléatoire en Python, vous pouvez utiliser le module `random`. Voici un exemple de comment générer un entier aléatoire entre 0 et 10 :
 
 ```python
 import random
@@ -154,7 +156,7 @@ random_number = random.randint(0, 10)
 print(random_number)
 ```
 
-This will print a random integer between 0 and 10 (inclusive) each time you run the script. If you want to generate a random floating-point number, you can use the `random.uniform()` function instead:
+Cela affichera un entier aléatoire entre 0 et 10 (inclus) chaque fois que vous exécutez le script. Si vous souhaitez générer un nombre flottant aléatoire, vous pouvez utiliser la fonction `random.uniform()` à la place :
 
 ```python
 import random
@@ -163,10 +165,10 @@ random_number = random.uniform(0, 1)
 print(random_number)
 ```
 
-## Squaring a Number in Python
+## Carré d'un Nombre en Python
 
-Let's see how to square a number in Python.
-The first method is using the exponent operator `**`. Here is an example:
+Voyons comment calculer le carré d'un nombre en Python.
+La première méthode utilise l'opérateur d'exponentiation `**`. Voici un exemple :
 
 ```python
 x = 5
@@ -174,7 +176,7 @@ squared = x ** 2
 print(squared) # Output: 25
 ```
 
-Alternatively, you can also use the `pow()` function to calculate the square of a number. Here is an example:
+Alternativement, vous pouvez également utiliser la fonction `pow()` pour calculer le carré d'un nombre. Voici un exemple :
 
 ```python
 x = 5
@@ -182,11 +184,11 @@ squared = pow(x, 2)
 print(squared)
 ```
 
-## Negating a Number
+## Inversion d'un Nombre
 
-You can negate a number by using the `-` (minus) operator.
+Vous pouvez inverser un nombre en utilisant l'opérateur `-` (moins).
 
-Here's an example:
+Voici un exemple :
 
 ```python
 number = 10
@@ -194,11 +196,11 @@ negated_number = -number
 print(negated_number) # Output: -10
 ```
 
-## Prime Number
+## Nombre Premier
 
-A prime number is a positive integer greater than 1 that has no positive integer divisors other than 1 and itself. In Python, you can check if a number is prime by testing whether it is divisible by any number other than 1 and itself.
+Un nombre premier est un entier positif supérieur à 1 qui n'a pas d'autres diviseurs entiers positifs que 1 et lui-même. En Python, vous pouvez vérifier si un nombre est premier en testant s'il est divisible par un nombre autre que 1 et lui-même.
 
-Here's an example of a function that checks whether a number is prime or not:
+Voici un exemple de fonction qui vérifie si un nombre est premier ou non :
 
 ```python
 def is_prime(n):
@@ -210,13 +212,13 @@ def is_prime(n):
     return True
 ```
 
-This function takes a positive integer `n` as input and returns `True` if `n` is prime, and `False` otherwise.
+Cette fonction prend un entier positif `n` en entrée et retourne `True` si `n` est premier, et `False` sinon.
 
-The function first checks whether `n` is less than or equal to 1, which is not a prime number by definition. If `n` is less than or equal to 1, the function returns `False`.
+La fonction vérifie d'abord si `n` est inférieur ou égal à 1, ce qui n'est pas un nombre premier par définition. Si `n` est inférieur ou égal à 1, la fonction retourne `False`.
 
-If `n` is greater than 1, the function checks whether it is divisible by any number from 2 to the square root of `n`. If `n` is divisible by any number in this range, it is not prime and the function returns `False`. Otherwise, `n` is prime and the function returns `True`.
+Si `n` est supérieur à 1, la fonction vérifie s'il est divisible par un nombre quelconque de 2 à la racine carrée de `n`. Si `n` est divisible par un nombre quelconque dans cette plage, il n'est pas premier et la fonction retourne `False`. Sinon, `n` est premier et la fonction retourne `True`.
 
-Here's an example of how to use the `is_prime` function:
+Voici un exemple d'utilisation de la fonction `is_prime` :
 
 ```python
 print(is_prime(7)) # True
@@ -225,7 +227,7 @@ print(is_prime(23)) # True
 print(is_prime(1)) # False
 ```
 
-Output:
+Sortie :
 
 ```python
 True
@@ -234,13 +236,13 @@ True
 False
 ```
 
-In this example, we called the `is_prime` function with different input values and printed the output.
+Dans cet exemple, nous avons appelé la fonction `is_prime` avec différentes valeurs d'entrée et imprimé le résultat.
 
-## Euler's Number in Python
+## Le Nombre d'Euler en Python
 
-Euler's number, also known as the mathematical constant `e`, is a mathematical constant that is approximately equal to 2.71828. In Python, you can calculate Euler's number using the `math` module.
+Le nombre d'Euler, également connu sous le nom de constante mathématique `e`, est une constante mathématique qui est approximativement égale à 2.71828. En Python, vous pouvez calculer le nombre d'Euler en utilisant le module `math`.
 
-Here's an example of how to calculate Euler's number:
+Voici un exemple de comment calculer le nombre d'Euler :
 
 ```python3
 import math
@@ -250,9 +252,9 @@ e = math.e
 print(e) # Output: 2.718281828459045
 ```
 
-## Extracting Number from String
+## Extraire un Nombre d'une Chaîne de Caractères
 
-To extract a number from a string in Python, you can use regular expressions with the `re` module. Here's an example:
+Pour extraire un nombre d'une chaîne de caractères en Python, vous pouvez utiliser des expressions régulières avec le module `re`. Voici un exemple :
 
 ```python3
 import re
@@ -264,22 +266,22 @@ number = re.findall(r'\d+\.\d+', string)[0]
 print(number) # Output: 12.34
 ```
 
-In this example, we first imported the `re` module, which provides support for regular expressions. We then defined a `string` variable string that contains a sentence with a number.
+Dans cet exemple, nous avons d'abord importé le module `re`, qui fournit un support pour les expressions régulières. Nous avons ensuite défini une variable `string` qui contient une phrase avec un nombre.
 
-To extract the number from the string, we used the `re.findall` function with a regular expression pattern `\d+\.\d+`. This pattern matches one or more digits `\d+` followed by a dot `\.` followed by one or more digits `\d+`. The resulting match is a string that represents the number in the sentence.
+Pour extraire le nombre de la chaîne, nous avons utilisé la fonction `re.findall` avec un motif d'expression régulière `\d+\.\d+`. Ce motif correspond à un ou plusieurs chiffres `\d+` suivis d'un point `\.` suivi d'un ou plusieurs chiffres `\d+`. Le résultat correspondant est une chaîne de caractères qui représente le nombre dans la phrase.
 
-Since `re.findall` returns a list of matches, we accessed the first element `[0]` of the list to get the number as a string.
+Puisque `re.findall` retourne une liste de correspondances, nous avons accédé au premier élément `[0]` de la liste pour obtenir le nombre sous forme de chaîne de caractères.
 
-If you need to convert the extracted number from a string to a numerical value, you can use the float or int function:
+Si vous avez besoin de convertir le nombre extrait d'une chaîne en une valeur numérique, vous pouvez utiliser la fonction float ou int :
 
 ```python
 number = float(number)
 print(number) # Output: 12.34
 ```
 
-## Digits of a Number
+## Chiffres d'un nombre
 
-To find the digits of a number in Python, you can convert the number to a string and then iterate over the string to extract each digit. Here's an example:
+Pour trouver les chiffres d'un nombre en Python, vous pouvez convertir le nombre en chaîne de caractères puis itérer sur la chaîne pour extraire chaque chiffre. Voici un exemple :
 
 ```python3
 num = 12345
