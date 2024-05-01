@@ -1,13 +1,13 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/statements/match
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/statements/match
 
-Switch statements are a popular feature in many programming languages, allowing developers to cleanly and efficiently handle multiple conditional cases. However, Python does not include a built-in switch statement. In this article, we will explore several ways to implement switch-like functionality in Python, using various techniques and libraries. Whether you're a seasoned developer or just starting out, this guide will provide valuable insights into this important programming concept.  
-  
-## Match Statement  
+Les instructions switch sont une fonctionnalité populaire dans de nombreux langages de programmation, permettant aux développeurs de gérer de manière propre et efficace de multiples cas conditionnels. Cependant, Python n'inclut pas d'instruction switch intégrée. Dans cet article, nous explorerons plusieurs manières d'implémenter une fonctionnalité semblable au switch dans Python, en utilisant diverses techniques et bibliothèques. Que vous soyez un développeur expérimenté ou débutant, ce guide vous fournira des aperçus précieux sur ce concept de programmation important.
 
-The `match` statement was introduced in Python 3.10 to provide a concise and readable way to express conditional logic. It allows you to compare a value against a set of patterns and execute corresponding code based on the match.
+## Instruction Match
 
-To use `match` in Python, you can create a `case` statement for each pattern to match against. Here is an example code snippet that demonstrates the python match case statement:
+L'instruction `match` a été introduite dans Python 3.10 pour fournir un moyen concis et lisible d'exprimer la logique conditionnelle. Elle vous permet de comparer une valeur à un ensemble de motifs et d'exécuter le code correspondant en fonction de la correspondance.
+
+Pour utiliser `match` dans Python, vous pouvez créer une instruction `case` pour chaque motif à comparer. Voici un exemple de code qui démontre l'instruction de cas de correspondance Python :
 
 ```python
 def describe_number(num):
@@ -20,9 +20,9 @@ def describe_number(num):
             return "Multiple"
 ```
 
-In this example, the `describe_number` function takes a `num` parameter and returns a string based on the value of `num`. If `num` is `0`, it returns ``Zero``. If `num` is `1`, it returns `Single`. Otherwise, it returns `Multiple` using a wildcard match pattern with `_`.
+Dans cet exemple, la fonction `describe_number` prend un paramètre `num` et retourne une chaîne de caractères basée sur la valeur de `num`. Si `num` est `0`, elle retourne ``Zero``. Si `num` est `1`, elle retourne `Single`. Sinon, elle retourne `Multiple` en utilisant un motif de correspondance générique avec `_`.
 
-Here is another Python case statement example:
+Voici un autre exemple de cas d’instruction en Python :
 
 ```python
 def calculate_discount(total_amount):
@@ -35,13 +35,13 @@ def calculate_discount(total_amount):
             return amount * 0.15
 ```
 
-In this example, the `calculate_discount` function takes a `total_amount` parameter and returns the corresponding discount based on the value of `total_amount`. The `match` statement has three `case` statements with specific conditions, each returning the applicable discount percentage.
+Dans cet exemple, la fonction `calculate_discount` prend un paramètre `total_amount` et retourne la remise correspondante basée sur la valeur de `total_amount`. L'instruction `match` comprend trois instructions `case` avec des conditions spécifiques, chacune retournant le pourcentage de remise applicable.
 
-In conclusion, the `match` statement is a powerful addition to the Python language that simplifies conditional statements. It can improve readability and help you write more concise code.  
-  
-## Switch Statement  
+En conclusion, l'instruction `match` est un ajout puissant au langage Python qui simplifie les déclarations conditionnelles. Elle peut améliorer la lisibilité et vous aider à écrire du code plus concis.
 
-Unfortunately, Python does not have a native switch case statement. However, there are several methods to emulate its functionality through other constructs such as if-elif-else statements or dictionaries.
+## Instruction Switch
+
+Malheureusement, Python ne dispose pas d'une instruction switch case native. Cependant, il existe plusieurs méthodes pour émuler sa fonctionnalité à travers d'autres constructions telles que les instructions if-elif-else ou les dictionnaires.
 
 ```python3
 def switch_case(argument):
@@ -68,4 +68,4 @@ def switch_case(argument):
 print(switch_case(2)) # Output: Two
 ```
 
-Although not as concise as a switch case statement, these alternatives can provide similar logic and readability in your Python code.  
+Bien que n'étant pas aussi concises qu'une instruction `switch case`, ces alternatives peuvent fournir une logique et une lisibilité similaires dans votre code Python.

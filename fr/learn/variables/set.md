@@ -1,77 +1,77 @@
 > [!NOTE]
-> Read this tutorial on the website: https://diveintopython.org/learn/variables/set
+> Lisez ce tutoriel sur le site: https://diveintopython.org/fr/learn/variables/set
 
-Python set is a data structure that allows you to work with collections of unique elements. Sets are useful for tasks such as removing duplicates from a list, testing membership of an element, and performing set operations such as union and intersection. In Python, sets are mutable and iterable, making them versatile and easy to work with. Let's explore the basics of Python sets as well as main python set methods to help you make the most of this data structure in your programming projects.
+L'ensemble Python est une structure de données qui vous permet de travailler avec des collections d'éléments uniques. Les ensembles sont utiles pour des tâches telles que l'élimination des doublons d'une liste, le test d'appartenance d'un élément et l'exécution d'opérations sur les ensembles telles que l'union et l'intersection. En Python, les ensembles sont mutables et itérables, ce qui les rend polyvalents et faciles à manipuler. Explorons les bases des ensembles Python ainsi que les principales méthodes d'ensemble Python pour vous aider à tirer le meilleur parti de cette structure de données dans vos projets de programmation.
 
-## What is a Set?
+## Qu'est-ce qu'un Ensemble ?
 
-A set is a collection of unique elements, much like a mathematical set. A set is an unordered and mutable collection of distinct elements enclosed in curly braces {}. Sets can contain any hashable elements such as integers, floats, strings, and even other sets.
+Un ensemble est une collection d'éléments uniques, un peu comme un ensemble mathématique. Un ensemble est une collection non ordonnée et mutable d'éléments distincts encadrée par des accolades {}. Les ensembles peuvent contenir tout élément hachable tel que des entiers, des flottants, des chaînes de caractères, et même d'autres ensembles.
 
-For example, you can create a set of integers as follows:
+Par exemple, vous pouvez créer un ensemble d'entiers comme suit :
 
 ```python
 my_set = {1, 2, 3, 4, 5}
 ```
 
-Or, you can create a set of strings as follows:
+Ou, vous pouvez créer un ensemble de chaînes de caractères comme suit :
 
 ```python
 my_set = {'apple', 'banana', 'orange', 'grape'}
 ```
 
-You can perform various operations on sets, such as adding or removing elements, finding the intersection or union of sets, or checking if an element is a member of a set.
+Vous pouvez effectuer diverses opérations sur les ensembles, telles que l'ajout ou la suppression d'éléments, la recherche de l'intersection ou de l'union des ensembles, ou vérifier si un élément est membre d'un ensemble.
 
-You can use Python's set operations and methods for data manipulation. Here are some of the most commonly used ones:
+Vous pouvez utiliser les opérations et méthodes de set de Python pour la manipulation de données. Voici certaines des plus couramment utilisées :
 
-### Set Operations
+### Opérations sur les ensembles
 
-- `union()` or `|`: Returns a set containing all the elements from both sets (or other iterable objects), with duplicates removed.
-Example: `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.union(set2); print(set3)` will output `{1, 2, 3, 4, 5}`.
-- `intersection()` or `&`: Returns a set containing only the elements that are common to both sets.
-Example: `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.intersection(set2); print(set3)` will output `{3}`.
-- `difference()` or `-`: Returns a set containing the elements that are in the first set but not in the second set.
-Example: `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.difference(set2); print(set3)` will output `{1, 2}`.
-- `symmetric_difference()` or `^`: Returns a set containing the elements that are in either of the sets but not in both.
-Example: `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.symmetric_difference(set2); print(set3)` will output `{1, 2, 4, 5}`.
-- `issubset()`: Returns True if all the elements of one set are contained in the other set.
-Example: `set1 = {1, 2, 3}; set2 = {1, 2}; print(set2.issubset(set1))` will output `True`.
-- `issuperset()`: Returns True if a set contains all the elements of another set.
-Example: `set1 = {1, 2, 3}; set2 = {1, 2}; print(set1.issuperset(set2))` will output `True`.
+- `union()` ou `|` : Renvoie un ensemble contenant tous les éléments des deux ensembles (ou autres objets itérables), avec les doublons supprimés.
+Exemple : `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.union(set2); print(set3)` affichera `{1, 2, 3, 4, 5}`.
+- `intersection()` ou `&` : Renvoie un ensemble contenant uniquement les éléments communs aux deux ensembles.
+Exemple : `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.intersection(set2); print(set3)` affichera `{3}`.
+- `difference()` ou `-` : Renvoie un ensemble contenant les éléments qui sont dans le premier ensemble mais pas dans le deuxième.
+Exemple : `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.difference(set2); print(set3)` affichera `{1, 2}`.
+- `symmetric_difference()` ou `^` : Renvoie un ensemble contenant les éléments qui sont dans l'un des ensembles mais pas dans les deux.
+Exemple : `set1 = {1, 2, 3}; set2 = {3, 4, 5}; set3 = set1.symmetric_difference(set2); print(set3)` affichera `{1, 2, 4, 5}`.
+- `issubset()` : Renvoie True si tous les éléments d'un ensemble sont contenus dans l'autre ensemble.
+Exemple : `set1 = {1, 2, 3}; set2 = {1, 2}; print(set2.issubset(set1))` affichera `True`.
+- `issuperset()` : Renvoie True si un ensemble contient tous les éléments d'un autre ensemble.
+Exemple : `set1 = {1, 2, 3}; set2 = {1, 2}; print(set1.issuperset(set2))` affichera `True`.
 
-### Set Methods
+### Méthodes des ensembles
 
-- `add()`: Adds an element to the set. If the element already exists in the set, the set remains unchanged.
-Example: `my_set = {1, 2, 3}; my_set.add(4); print(my_set)` will output `{1, 2, 3, 4}`.
-- `remove()`: Removes the specified element from the set. Raises a KeyError if the element is not in the set.
-Example: `my_set = {1, 2, 3}; my_set.remove(2); print(my_set)` will output `{1, 3}`.
-- `discard()`: Removes the specified element from the set. Does not raise an error if the element is not in the set.
-Example: `my_set = {1, 2, 3}; my_set.discard(2); print(my_set)` will output `{1, 3}`.
-- `pop()`: Removes and returns an arbitrary element from the set. Raises a KeyError if the set is empty.
-Example: `my_set = {1, 2, 3}; x = my_set.pop(); print(my_set, x)` will output `{2, 3}, 1`.
-- `clear()`: Removes all elements from the set.
-Example: `my_set = {1, 2, 3}; my_set.clear(); print(my_set)` will `output set()`.
+- `add()` : Ajoute un élément à l'ensemble. Si l'élément existe déjà dans l'ensemble, l'ensemble reste inchangé.
+Exemple : `my_set = {1, 2, 3}; my_set.add(4); print(my_set)` affichera `{1, 2, 3, 4}`.
+- `remove()` : Supprime l'élément spécifié de l'ensemble. Soulève une KeyError si l'élément n'est pas dans l'ensemble.
+Exemple : `my_set = {1, 2, 3}; my_set.remove(2); print(my_set)` affichera `{1, 3}`.
+- `discard()` : Supprime l'élément spécifié de l'ensemble. Ne soulève pas d'erreur si l'élément n'est pas dans l'ensemble.
+Exemple : `my_set = {1, 2, 3}; my_set.discard(2); print(my_set)` affichera `{1, 3}`.
+- `pop()` : Supprime et renvoie un élément arbitraire de l'ensemble. Soulève une KeyError si l'ensemble est vide.
+Exemple : `my_set = {1, 2, 3}; x = my_set.pop(); print(my_set, x)` affichera `{2, 3}, 1`.
+- `clear()` : Supprime tous les éléments de l'ensemble.
+Exemple : `my_set = {1, 2, 3}; my_set.clear(); print(my_set)` affichera `set()`.
 
-Next we will look at the most commonly used in detail.
+Ensuite, nous examinerons les plus couramment utilisés en détail.
 
-## Creating Sets in Python
+## Créer des ensembles en Python
 
-In Python, an empty set can be created using the `set()` function. Here's an example:
+En Python, un ensemble vide peut être créé en utilisant la fonction `set()`. Voici un exemple :
 
 ```python
 empty_set = set()
 ```
 
-To initialize a set with values, you can use a set literal. Here's a set example:
+Pour initialiser un ensemble avec des valeurs, vous pouvez utiliser un littéral de type ensemble. Voici un exemple d'ensemble :
 
 ```python
 my_set = {1, 2, 3}
 ```
 
-As above, you can create a set in Python by using a set literal or the `set()` function.
+Comme mentionné ci-dessus, vous pouvez créer un ensemble en Python en utilisant un littéral d'ensemble ou la fonction `set()`.
 
-## How to Add to a Set in Python
+## Comment ajouter à un ensemble en Python
 
-In Python, you can add to a set an element using the `add()` method. Here's an example of adding to a set:
+En Python, vous pouvez ajouter un élément à un ensemble en utilisant la méthode `add()`. Voici un exemple d'ajout à un ensemble :
 
 ```python3
 my_set = {1, 2, 3}  # create a set with initial values
@@ -79,13 +79,13 @@ my_set.add(4)  # add a new value to the set
 print(my_set)  # output: {1, 2, 3, 4}
 ```
 
-> Note: set objects do not have an `append()` method since they are unordered collections of unique elements.
+> Remarque : les objets de type `set` n'ont pas de méthode `append()` puisqu'il s'agit de collections non ordonnées d'éléments uniques.
 
-## Removing an Element to a Set
+## Supprimer un élément d'un ensemble
 
-In Python, the `set` data type represents a collection of unique elements. The `remove` method is used to remove a specific element from a set.
+En Python, le type de données `set` représente une collection d'éléments uniques. La méthode `remove` est utilisée pour supprimer un élément spécifique d'un ensemble.
 
-Here is an example of how to remove from a set:
+Voici un exemple de comment supprimer un élément d'un ensemble :
 
 ```python3
 # create a set
@@ -97,9 +97,9 @@ my_set.remove(3)
 print(my_set) # Output: {1, 2, 4, 5}
 ```
 
-It's important to note that if the element to be removed is not in the set, the `remove` method will raise a `KeyError` exception. If you want to avoid this, you can use the `discard` method instead, which removes an element from the set if it is present, and does nothing if the element is not in the set.
+Il est important de noter que si l'élément à supprimer n'est pas dans l'ensemble, la méthode `remove` va lever une exception `KeyError`. Si vous souhaitez éviter cela, vous pouvez utiliser la méthode `discard` à la place, qui supprime un élément de l'ensemble s'il est présent, et ne fait rien si l'élément n'est pas dans l'ensemble.
 
-Here's an example of using the discard method in Python:
+Voici un exemple d'utilisation de la méthode discard en Python :
 
 ```python3
 # create a set
@@ -116,13 +116,13 @@ my_set.discard(10)
 print(my_set) # Output: {1, 2, 4, 5}
 ```
 
-## Access to Set Elements
+## Accès aux éléments d'un ensemble
 
-Sets are unordered collections of unique elements. Therefore, they do not support indexing by integer values like lists or tuples.
+Les ensembles sont des collections non ordonnées d'éléments uniques. Par conséquent, ils ne prennent pas en charge l'indexation par des valeurs entières comme les listes ou les tuples.
 
-If you need to access a specific element in a set, you can use the `in` keyword to check if python set contains an element, or you can use the `for` loop to iterate over the elements of the set.
+Si vous avez besoin d'accéder à un élément spécifique dans un ensemble, vous pouvez utiliser le mot-clé `in` pour vérifier si l'ensemble python contient un élément, ou vous pouvez utiliser la boucle `for` pour itérer sur les éléments de l'ensemble.
 
-Here are some examples:
+Voici quelques exemples :
 
 ```python3
 # Creating a set
@@ -137,7 +137,7 @@ for element in my_set:
     print(element)
 ```
 
-Output:
+Sortie :
 
 ```python
 3 is in the set
@@ -148,24 +148,24 @@ Output:
 5
 ```
 
-## Python's Set Length
+## Longueur d'un ensemble en Python
 
-In Python, you can use the built-in `len()` function to get the number of elements in a set.
+En Python, vous pouvez utiliser la fonction intégrée `len()` pour obtenir le nombre d'éléments dans un ensemble.
 
-For example, consider the following set:
+Par exemple, considérez l'ensemble suivant :
 
 ```python3
 my_set = {1, 2, 3, 4, 5}
 print(len(my_set)) # Output: 5
 ```
 
-## Sorting a Set in Python
+## Trier un ensemble en Python
 
-Sets are unordered collections of unique elements, which means the order of elements is not preserved in a set, so final output can not be a sorted set.
+Les ensembles sont des collections non ordonnées d'éléments uniques, ce qui signifie que l'ordre des éléments n'est pas préservé dans un ensemble, donc le résultat final ne peut pas être un ensemble trié.
 
-In Python, you can sort a set using the built-in `sorted()` function or the `sort()` method. So using this method we convert a set to a list.
+En Python, vous pouvez trier un ensemble en utilisant la fonction intégrée `sorted()` ou la méthode `sort()`. Ainsi, en utilisant cette méthode, nous convertissons un ensemble en liste.
 
-Using `sorted()` function:
+En utilisant la fonction `sorted()`:
 
 ```python3
 my_set = {4, 1, 3, 2, 5}
@@ -173,9 +173,9 @@ sorted_set = sorted(my_set)
 print(sorted_set)   # Output: [1, 2, 3, 4, 5]
 ```
 
-When `sorted()` is applied to a set, it returns a new sorted list containing all the elements of the original set.
+Quand `sorted()` est appliqué à un ensemble, cela renvoie une nouvelle liste triée contenant tous les éléments de l'ensemble original.
 
-Using `sort()` method:
+En utilisant la méthode `sort()` :
 
 ```python3
 my_set = {4, 1, 3, 2, 5}
@@ -185,9 +185,9 @@ sorted_set = set(sorted_list)
 print(sorted_set)   # Output: {1, 2, 3, 4, 5}
 ```
 
-> Note: the `sort()` method is only available for lists and cannot be used directly with a set. So, you need to first convert the set to a list, then use the `sort()` method, and then convert it back to a set.
+> Note : la méthode `sort()` est uniquement disponible pour les listes et ne peut pas être utilisée directement avec un ensemble. Ainsi, vous devez d'abord convertir l'ensemble en liste, puis utiliser la méthode `sort()`, et ensuite le reconvertir en ensemble.
 
-In both cases, the resulting set will be sorted in ascending order. If you want to sort in descending order of a set, you can use the `reverse=True` argument in `sorted()` function or the `sort()` method's reverse parameter.
+Dans les deux cas, l'ensemble résultant sera trié par ordre croissant. Si vous souhaitez trier un ensemble en ordre décroissant, vous pouvez utiliser l'argument `reverse=True` dans la fonction `sorted()` ou le paramètre reverse de la méthode `sort()`.
 
 ```python3
 my_set = {4, 1, 3, 2, 5}
@@ -201,19 +201,19 @@ sorted_set_desc = set(sorted_list_desc)
 print(sorted_set_desc)   # Output: {5, 4, 3, 2, 1}
 ```
 
-## The `update` Method for Set in Python
+## La méthode `update` pour Set en Python
 
-The `update` method of a set allows you to add multiple elements to a set at once.
+La méthode `update` d'un ensemble vous permet d'ajouter plusieurs éléments à un ensemble en une seule fois.
 
-Here is the syntax for using the update method:
+Voici la syntaxe pour utiliser la méthode update :
 
 ```python
 set.update(iterable)
 ```
 
-The `iterable` argument can be any iterable object, such as a list, tuple, set, or even a string. The `update` method adds all the elements in the `iterable` to the set, while removing any duplicates.
+L'argument `iterable` peut être n'importe quel objet itérable, comme une liste, un tuple, un ensemble, ou même une chaîne de caractères. La méthode `update` ajoute tous les éléments dans l'`iterable` à l'ensemble, tout en supprimant les doublons.
 
-Here's an example that demonstrates the update method:
+Voici un exemple qui montre la méthode de mise à jour :
 
 ```python
 >>> s1 = {1, 2, 3}
@@ -223,11 +223,11 @@ Here's an example that demonstrates the update method:
 {1, 2, 3, 4, 5}
 ```
 
-##  Intersection of Sets in Python
+## Intersection d'ensembles en Python
 
-In Python intersection of sets can be found using the `intersection()` method.
+En Python, l'intersection d'ensembles peut se trouver en utilisant la méthode `intersection()`.
 
-Let's see how to get intersection of two sets in Python:
+Voyons comment obtenir l'intersection de deux ensembles en Python :
 
 ```python3
 set1 = {1, 2, 3, 4}
@@ -239,9 +239,9 @@ intersection_set = set1.intersection(set2, set3)
 print(intersection_set)  # Output: {4}
 ```
 
-## Sets' Difference in Python
+## Différence de ensembles en Python
 
-The difference of sets in Python ca be find using the "-" operator or the `difference()` method. Here's an example:
+La différence des ensembles en Python peut se trouver en utilisant l'opérateur "-" ou la méthode `difference()`. Voici un exemple :
 
 ```python3
 set1 = {1, 2, 3, 4, 5}
@@ -256,11 +256,11 @@ diff = set1.difference(set2)
 print(diff) # Output: {1, 2}
 ```
 
-## Sets' Union in Python
+## Union de ensembles en Python
 
-Uion of sets in Python can be obtained using the `union()` method or the pipe (`|`) operator.
+L'union des ensembles en Python peut être obtenue en utilisant la méthode `union()` ou l'opérateur pipe (`|`).
 
-Here is an example of using the `union()` method:
+Voici un exemple d'utilisation de la méthode `union()`:
 
 ```python3
 set1 = {1, 2, 3}
@@ -271,7 +271,7 @@ union_set = set1.union(set2, set3)
 print(union_set)  # Output: {1, 2, 3, 4, 5}
 ```
 
-Alternatively, we can use the pipe (`|`) operator to achieve the same result:
+Alternativement, nous pouvons utiliser l'opérateur pipe (`|`) pour obtenir le même résultat :
 
 ```python3
 set1 = {1, 2, 3}
@@ -282,11 +282,11 @@ union_set = set1 | set2 | set3
 print(union_set)  # Output: {1, 2, 3, 4, 5}
 ```
 
-## The `pop()` Method
+## La méthode `pop()`
 
-The `pop()` method in Python's set data type removes and returns an arbitrary element from the set. If the set is empty, a `KeyError` is raised.
+La méthode `pop()` dans le type de données set de Python supprime et retourne un élément arbitraire du set. Si le set est vide, une `KeyError` est levée.
 
-Here is an example usage:
+Voici un exemple d'utilisation :
 
 ```python3
 my_set = {1, 2, 3, 4}

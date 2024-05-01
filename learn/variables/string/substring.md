@@ -157,7 +157,7 @@ where:
 - `suffix` is the suffix to check.
 - `start` and `end` parameters have the same meaning as in the `startswith()` method.
 
-Here's an example of using the endswith() method:
+Here's an example of using the `endswith()` method:
 
 ```python3
 s = "Python is a great programming language"
