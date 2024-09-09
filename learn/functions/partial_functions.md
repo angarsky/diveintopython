@@ -27,12 +27,12 @@ We can also use partial functions to modify an existing function by passing a ne
 ```python3
 from functools import partial
 
-mod = partial(pow, 2)
+power_of_2 = partial(pow, 2)
 
-print(mod(3)) # Output: 8
+print(power_of_2(3)) # Output: 8
 ```
 
-In this example, we have created a new partial function called `mod` which takes a number and computes its modulo with 2. 
+In this example, we have created a new partial function called `power_of_2` which takes a number and computes 2 to the power of this number.
   
 ## How to use partial functions in Python to simplify recurring code snippets  
 
