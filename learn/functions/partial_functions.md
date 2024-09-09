@@ -33,6 +33,19 @@ print(power_of_2(3)) # Output: 8
 ```
 
 In this example, we have created a new partial function called `power_of_2` which takes a number and computes 2 to the power of this number.
+
+We can also use partial functions to modify an existing function by passing new values for more than one of its arguments, specifying which arguments are being passed:
+
+```python3
+from functools import partial
+
+modulo_2 = partial(pow, exp=1, mod=2)
+
+print(modulo_2(3)) # Output: 1
+print(modulo_2(8)) # Output: 0
+```
+
+In this example, we have created a new partial function called `modulo_2` which takes a number and computes its modulo with 2 using the built-in function `pow`.
   
 ## How to use partial functions in Python to simplify recurring code snippets  
 
@@ -163,7 +176,7 @@ add = lambda x, y: x + y
 
 print(add(2, 3))   # Output: 5
 ```  
-  
+
 ## How to Create Partial Functions in Python: a Step-by-step Tutorial  
 
 To create a partial function in Python, you need to follow the following steps:
