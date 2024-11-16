@@ -249,7 +249,7 @@ print(match.group(2))  # Output: abc
 
 ## Test Your Regex Online
 
-Before integrating complex expressions into your code, leverage a python regex online tester such as [Regex101](https://regex101.com/). These tools provide real-time feedback and helpful explanations on your regex patterns and their matches.
+Before integrating complex expressions into your code, leverage a python regex online tester such as [Regex101](https://regex101.com/) or [Pyrexp](https://pythonium.net/regex). These tools provide real-time feedback and helpful explanations on your regex patterns and their matches.
 
 Incorporating these regex Python cheat sheet tips and functions into your programming arsenal will streamline your text processing and data analysis tasks. Remember, practice makes perfect, especially when mastering the art of regex in Python.  
   
