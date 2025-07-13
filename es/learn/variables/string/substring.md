@@ -21,7 +21,7 @@ print(my_string[0:4])  # Output: "Hell"
 print(my_string[7:])  # Output: "world!"
 
 # Get the substring from index 2 to index 8 (not inclusive) with a step of 2
-print(my_string[2:8:2])  # Output: "lo,"
+print(my_string[2:8:2])  # Output: "lo"
 
 # Get the substring from index 2 to the second-to-last character
 print(my_string[2:-1])  # Output: "llo, world"
